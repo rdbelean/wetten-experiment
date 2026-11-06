@@ -31,7 +31,7 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
 body {
   margin: 0; background: var(--paper); color: var(--ink);
   font-family: var(--f); font-size: 16px; line-height: 1.55; font-variation-settings: "wdth" 100;
@@ -120,7 +120,7 @@ h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 4px; }
 .lb-row:nth-child(2) .lb-rank { color: var(--live); }
 .lb-name { gap: 10px; }
 .lb-name i { width: 12px; height: 12px; border-radius: 50%; background: var(--c); flex: none; }
-.lb-name span { display: flex; flex-direction: column; min-width: 0; }
+.lb-name > span { display: flex; flex-direction: column; min-width: 0; }
 .lb-name b { font-weight: 700; }
 .lb-name small { color: var(--board-ink-2); font-size: .75rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .lb-num { justify-content: flex-end; font-weight: 800; font-variation-settings: "wdth" 72; font-size: 1.25rem; white-space: nowrap; }
@@ -417,4 +417,172 @@ h3 { font-size: 1.05rem; font-weight: 700; margin: 0 0 4px; }
   *, *::before, *::after { animation-duration: .001s !important; animation-iteration-count: 1 !important; transition-duration: .001s !important; }
   .ticker-track { animation: none !important; }
   .ticker-viewport { overflow-x: auto; }
+}
+
+/* =====================================================================
+   Agentur-Durchgang: Struktur, Rhythmus, Navigation, Mobile
+   ===================================================================== */
+:root {
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px; --s-7: 48px; --s-8: 64px;
+  --sec: 56px;           /* Abstand zwischen Abschnitten */
+  --tap: 44px;           /* Mindestgröße für Touch-Ziele */
+  --shadow-1: 0 1px 2px rgba(22, 35, 63, .04), 0 2px 8px rgba(22, 35, 63, .05);
+}
+html { scroll-padding-top: 120px; }
+body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+.skip { position: absolute; left: 12px; top: -60px; z-index: 100; background: #fff; color: var(--ink); padding: 10px 14px; border-radius: 8px; font-weight: 700; }
+.skip:focus { top: 12px; }
+
+/* Kopfzeile bleibt oben, Tabs immer erreichbar */
+.appbar { position: sticky; top: 0; z-index: 40; background: rgba(18, 29, 54, .96); color: var(--board-ink);
+  backdrop-filter: saturate(1.4) blur(10px); -webkit-backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--board-line); padding-top: env(safe-area-inset-top); }
+.appbar .board-top { height: 52px; border-bottom: 0; }
+.appbar .tabs { padding-top: 0; padding-bottom: 12px; scroll-snap-type: x proximity; }
+.tab { min-height: 36px; scroll-snap-align: start; transition: background .15s, color .15s, border-color .15s; }
+.tab:focus-visible { outline-color: var(--live); }
+.board .board-main, .board .board-compare { padding-top: var(--s-6); }
+.st-short { display: none; }
+
+/* Abschnitts-Köpfe einheitlich */
+.sec-head { margin-bottom: var(--s-5); max-width: 70ch; }
+.sec-head h2 { margin: 0 0 var(--s-1); }
+.sec-head p { margin: 0; color: var(--ink-2); font-size: .9375rem; }
+.week, .slips, .analysis-sec, .method, .players-sec, .live { padding-top: var(--s-6); padding-bottom: var(--s-6); }
+.analysis-sec, .method { padding-top: var(--sec); }
+.panel-row { padding: var(--s-6) 0 var(--s-5); }
+.panel, .slip, .days, .pcard, .evidence, .research-note, .empty { box-shadow: var(--shadow-1); }
+.panel { padding: var(--s-4) var(--s-5) var(--s-4); }
+.panel-head { margin-bottom: var(--s-3); }
+
+/* Legende unter der Vergleichsgrafik (Handy) */
+.chart-legend { display: none; flex-wrap: wrap; gap: 6px 14px; margin-top: var(--s-3); font-size: .8125rem; color: var(--ink-2); }
+.chart-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart-legend i { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.chart-legend b { color: var(--ink); font-variation-settings: "wdth" 80; }
+.chart-legend.is-on { display: flex; }
+
+/* Wettschein: Aufklapp-Pfeil */
+.s-state { display: flex; align-items: center; gap: 10px; }
+.s-chev { width: 22px; height: 22px; border-radius: 50%; display: inline-grid; place-items: center; color: var(--ink-3); flex: none; transition: transform .2s, background .2s; }
+.s-chev::before { content: ""; width: 7px; height: 7px; border-right: 2px solid currentColor; border-bottom: 2px solid currentColor; transform: translateY(-2px) rotate(45deg); }
+.slip-row:hover .s-chev { background: #EEF1F5; color: var(--ink); }
+.slip-row[aria-expanded="true"] .s-chev { transform: rotate(180deg); }
+.slip-row { grid-template-columns: 96px minmax(0, 1fr) 150px 104px 172px; }
+
+/* Rangliste: Unterzeilen nur mobil */
+.lb-sub, .lb-risk-m { display: none; }
+
+/* Spielerkarten */
+.pcard .pc-tag { color: var(--ink); font-weight: 600; font-size: .9375rem; }
+.pc-desc summary { cursor: pointer; color: var(--pen-ink); font-weight: 600; font-size: .875rem; list-style: none; min-height: var(--tap); display: flex; align-items: center; }
+.pc-desc summary::-webkit-details-marker { display: none; }
+.pc-desc summary::after { content: "+"; margin-left: 6px; font-weight: 700; }
+.pc-desc[open] summary::after { content: "–"; }
+.pc-desc p { margin-top: 0; }
+
+.foot { padding-bottom: calc(32px + env(safe-area-inset-bottom)); }
+
+/* ------------------------------------------------------------- Tablet */
+@media (max-width: 1000px) {
+  :root { --sec: 44px; }
+  .board-kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+/* ------------------------------------------------------------- Handy */
+@media (max-width: 720px) {
+  :root { --sec: 36px; }
+  html { scroll-padding-top: 112px; }
+  body { font-size: 15px; }
+  h2 { font-size: 1.3125rem; }
+  .wrap { padding-left: max(16px, env(safe-area-inset-left)); padding-right: max(16px, env(safe-area-inset-right)); }
+
+  .appbar .board-top { height: 48px; }
+  .brand { font-size: .9375rem; }
+  .st-long { display: none; }
+  .st-short { display: inline; }
+  .appbar .tabs { gap: 6px; padding-bottom: 10px; }
+  .tab { min-height: 40px; padding: 8px 12px; font-size: .8125rem; }
+
+  /* Tafel */
+  .board .board-main, .board .board-compare { padding-top: var(--s-5); padding-bottom: var(--s-5); }
+  .board-kicker { font-size: .875rem; }
+  .balance { font-size: clamp(4.25rem, 22vw, 6rem); }
+  .board-line { font-size: .9375rem; margin: 10px 0 14px; }
+  .budget-legend { gap: 6px 14px; font-size: .75rem; }
+  .board-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .board-kpis div { padding: 12px 12px 10px; }
+  .board-kpis dd { font-size: 1.375rem; }
+  .ticker { height: 42px; }
+  .ticker-label { font-size: .75rem; padding: 0 10px 0 16px; }
+  .t-item { font-size: .8125rem; padding: 0 18px; }
+
+  /* Rangliste als kompakte Zeilen: Platz, Name, Kontostand */
+  .leaderboard { grid-template-columns: 34px minmax(0, 1fr) auto; }
+  .leaderboard .lb-hide-s, .leaderboard .lb-roi { display: none !important; }
+  .lb-row > * { padding: 12px 10px; }
+  .lb-rank { font-size: 1.375rem; padding-left: 6px !important; padding-right: 0 !important; }
+  .lb-name b { font-size: .9375rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .lb-name .lb-tagline { display: none; }
+  .lb-num.big { font-size: 1.25rem; flex-direction: column; align-items: flex-end; justify-content: center; line-height: 1.15; }
+  .lb-sub { display: block; font-size: .75rem; font-weight: 600; font-variation-settings: "wdth" 100; }
+  .lb-head .lb-num.big { flex-direction: row; }
+
+  /* Panels & Charts */
+  .panel-row { gap: var(--s-4); padding-top: var(--s-5); }
+  .panel { padding: var(--s-3) var(--s-4); border-radius: 12px; }
+  .panel-title { font-size: .9375rem; }
+  .chart-lg { height: 240px; }
+  .chart-md { height: 200px; }
+  .hbars { grid-template-columns: 96px minmax(0, 1fr) auto; gap: 8px 10px; font-size: .8125rem; }
+
+  /* Woche als wischbare Karten */
+  .days { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; border-radius: 12px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .days::-webkit-scrollbar { display: none; }
+  .day { flex: 0 0 128px; scroll-snap-align: start; min-height: 112px; }
+
+  /* Wettscheine als klare Karten */
+  .slip { border-radius: 12px; }
+  .slip-row::before { display: none; }
+  .slip-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "t st" "m m" "o s";
+    row-gap: 10px; column-gap: 12px; padding: 14px 14px 14px 16px;
+  }
+  .s-time { grid-area: t; padding-left: 0; display: flex; align-items: baseline; gap: 6px; font-size: .8125rem; }
+  .s-time b { display: inline; font-size: 1rem; }
+  .s-main { grid-area: m; padding-left: 0; }
+  .s-league { font-size: .75rem; }
+  .s-match { white-space: normal; font-size: 1rem; line-height: 1.3; }
+  .s-odds { grid-area: o; text-align: left; padding-left: 0; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 8px; }
+  .s-odds b, .s-stake b { display: inline; font-size: 1.375rem; }
+  .s-odds .s-edge { margin-left: 0; }
+  .s-stake { grid-area: s; align-self: end; }
+  .s-stake b { display: block; }
+  .s-state { grid-area: st; justify-self: end; padding-left: 0; }
+  .stamp { font-size: .8125rem; padding: 2px 8px; }
+  .stamp small { font-size: .75rem; }
+  .slip-detail { padding: 14px 16px 18px; gap: 20px; }
+  .books { grid-template-columns: 96px minmax(0, 1fr) 44px; }
+  .research-note { font-size: .875rem; padding: 10px 14px; }
+
+  /* Live, Spieler, Methode */
+  .live-strip { grid-template-columns: 1fr; }
+  .chart-legend { display: flex; }
+  .pcard { padding: 14px 16px; }
+  .steps { gap: 20px; }
+  .steps li { padding-top: 30px; }
+  .evidence { padding: 14px 16px; }
+  .foot { font-size: .8125rem; }
+}
+
+@media (max-width: 380px) {
+  .board-kpis dd { font-size: 1.25rem; }
+  .day { flex-basis: 118px; }
+  .s-odds b, .s-stake b { font-size: 1.25rem; }
+}
+
+@media (hover: none) {
+  .ticker:hover .ticker-track { animation-play-state: running; }
+  .slip:hover { box-shadow: var(--shadow-1); }
 }

@@ -2,7 +2,15 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#121D36">
+<meta name="color-scheme" content="light">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Projekt Value">
+<meta property="og:title" content="Projekt Value – Wett-Experiment mit Spielgeld">
+<meta property="og:description" content="Sechs Strategien, 100 € Spielgeld pro Tag, eine Woche. Live und komplett transparent.">
+<meta property="og:type" content="website">
 <title>Projekt Value – Wett-Experiment mit Spielgeld</title>
 <meta name="description" content="Live-Experiment: 7 Tage, 100 € Spielgeld pro Tag, Wetten nach Value-Modell. Alles transparent.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,15 +21,19 @@
 </head>
 <body>
 
-<!-- Anzeigetafel wie im Wettbüro -->
-<section class="board" aria-labelledby="balanceTitle">
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<!-- Kopfzeile + Spieler-Navigation (bleibt beim Scrollen oben) -->
+<header class="appbar">
   <div class="wrap board-top">
     <div class="brand"><span class="brand-mark" aria-hidden="true">€</span> Projekt Value</div>
     <div class="top-status" id="topStatus">Lade Daten …</div>
   </div>
-
   <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Spieler"></nav>
+</header>
 
+<!-- Anzeigetafel wie im Wettbüro -->
+<section class="board" aria-labelledby="balanceTitle">
   <div class="wrap board-compare" id="boardCompare" hidden>
     <h1 class="board-kicker">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
     <div class="leaderboard" id="leaderboard" role="table" aria-label="Rangliste"></div>
@@ -46,13 +58,14 @@
   </div>
 </section>
 
-<main class="wrap">
+<main class="wrap" id="main">
   <div id="compareView" hidden>
     <section class="panel-row" aria-label="Vergleich">
       <figure class="panel panel-wide">
         <figcaption class="panel-head"><span class="panel-title">Kontostand der Spieler nach jedem Tag</span>
           <span class="panel-sub">Gewinn oder Verlust der abgerechneten Wetten, jeder Spieler mit 100 € pro Tag</span></figcaption>
         <div class="chart chart-lg" id="compareChart" role="img" aria-label="Kontostand je Spieler"></div>
+        <div class="chart-legend" id="compareLegend"></div>
       </figure>
       <figure class="panel">
         <figcaption class="panel-head"><span class="panel-title">Risiko gegen Rendite</span>
@@ -61,7 +74,7 @@
       </figure>
     </section>
     <section aria-labelledby="playersTitle" class="players-sec">
-      <h2 id="playersTitle">Die Spieler</h2>
+      <div class="sec-head"><h2 id="playersTitle">Die Spieler</h2><p>Jeder bekommt jeden Tag 100 € und dieselben Spiele. Nur die Strategie unterscheidet sich.</p></div>
       <div class="player-cards" id="playerCards"></div>
     </section>
   </div>
@@ -89,7 +102,7 @@
   </section>
 
   <section class="week" aria-labelledby="weekTitle">
-    <h2 id="weekTitle">Die Woche</h2>
+    <div class="sec-head"><h2 id="weekTitle">Die Woche</h2><p>Tag antippen, um die Wetten dieses Tages zu sehen.</p></div>
     <div class="days" id="days" role="tablist"></div>
   </section>
 
@@ -106,7 +119,7 @@
   </section>
 
   <section class="analysis-sec" aria-labelledby="anaTitle">
-    <h2 id="anaTitle">Auswertung</h2>
+    <div class="sec-head"><h2 id="anaTitle">Auswertung</h2><p>Wo wurde gewonnen, wo verloren, und war es Können oder Glück?</p></div>
     <div class="panel-grid">
       <figure class="panel">
         <figcaption class="panel-head"><span class="panel-title">Einsatz und Ergebnis je Wettbewerb</span></figcaption>
@@ -133,7 +146,7 @@
   </div>
 
   <section class="method" aria-labelledby="methodTitle">
-    <h2 id="methodTitle">So entscheidet das System</h2>
+    <div class="sec-head"><h2 id="methodTitle">So entscheidet das System</h2><p>Der Weg von 25 Buchmachern zu den 100 € des Tages, Schritt für Schritt.</p></div>
     <ol class="steps">
       <li><h3>Quoten von rund 25 Anbietern</h3><p>Jeden Morgen um 8:30 Uhr holt das System die Quoten für alle Spiele des Tages: Bundesliga, Premier League, weitere europäische Ligen, Nations League, NBA, NHL, NFL und EuroLeague. Dabei sind unter anderem Tipico, Pinnacle, Betfair, Unibet, William Hill und 1xBet.</p></li>
       <li><h3>Faire Wahrscheinlichkeit</h3><p>Pinnacle gilt als genauester Buchmacher der Welt. Wir rechnen seine Marge heraus (Power-Methode) und mischen den Durchschnitt aller Anbieter sowie die Börsenkurse von Betfair dazu. Das ergibt den fairen Preis eines Spiels.</p></li>

@@ -199,11 +199,12 @@
     const today = berlinDate();
     const i = state.days.findIndex((d) => d.date === today);
     const lv = state.bets.filter(isLive).length;
-    let txt;
-    if (i >= 0) txt = `<b>Tag ${i + 1}</b> von ${state.experiment.days}`;
-    else if (today < state.days[0].date) txt = `Start am ${fmt(state.days[0].date + "T12:00:00", { weekday: "long", day: "numeric", month: "long" })}`;
-    else txt = "Experiment beendet";
-    $("topStatus").innerHTML = `<span class="dot ${lv ? "is-live" : ""}"></span>${txt}${lv ? `, <b>${lv} live</b>` : ""}, aktualisiert ${hhmm(state.generated_at)} Uhr`;
+    let txt, short;
+    if (i >= 0) { txt = `<b>Tag ${i + 1}</b> von ${state.experiment.days}`; short = `<b>Tag ${i + 1}</b>/${state.experiment.days}`; }
+    else if (today < state.days[0].date) { txt = `Start am ${fmt(state.days[0].date + "T12:00:00", { weekday: "long", day: "numeric", month: "long" })}`; short = `Start ${fmt(state.days[0].date + "T12:00:00", { weekday: "short", day: "numeric", month: "numeric" })}`; }
+    else { txt = "Experiment beendet"; short = "Beendet"; }
+    const lvTxt = lv ? `, <b>${lv} live</b>` : "";
+    $("topStatus").innerHTML = `<span class="dot ${lv ? "is-live" : ""}"></span><span class="st-long">${txt}${lvTxt}, aktualisiert ${hhmm(state.generated_at)} Uhr</span><span class="st-short">${short}${lvTxt}, ${hhmm(state.generated_at)}</span>`;
   }
 
   // Zahlenwalzen für den Kontostand
@@ -251,7 +252,7 @@
     $("heroLine").innerHTML = line;
     $("bSettled").style.width = `${(t.staked_settled / total) * 100}%`;
     $("bOpen").style.width = `${(t.open_stake / total) * 100}%`;
-    $("budgetLegend").innerHTML = `<span style="--c:var(--pen)">abgerechnet ${eur0(t.staked_settled)}</span><span style="--c:var(--live)">offen ${eur0(t.open_stake)}</span><span style="--c:var(--board-2)">noch nicht gesetzt ${eur0(Math.max(0, total - t.staked))}</span>`;
+    $("budgetLegend").innerHTML = `<span style="--c:var(--pen)">abgerechnet ${eur0(t.staked_settled)}</span><span style="--c:var(--live)">offen ${eur0(t.open_stake)}</span><span style="--c:var(--board-2)">übrig ${eur0(Math.max(0, total - t.staked))}</span>`;
 
     const next = myBets().filter((b) => b.status === "open" && new Date(b.commence) > new Date()).sort((a, b) => a.commence.localeCompare(b.commence))[0];
     const roiCls = t.roi > 0 ? "k-gain" : t.roi < 0 ? "k-loss" : "";
@@ -518,7 +519,7 @@
     const box = $("hitChart");
     const settled = myBets().filter((b) => b.status === "won" || b.status === "lost");
     if (!settled.length) { box.innerHTML = `<div class="empty-small">Erscheint nach den ersten Ergebnissen.</div>`; return; }
-    const buckets = [["unter 1,60", 0, 1.6], ["1,60 bis 2,20", 1.6, 2.2], ["2,20 bis 3,00", 2.2, 3.0], ["über 3,00", 3.0, 99]];
+    const buckets = [["bis 1,60", 0, 1.6], ["1,60–2,20", 1.6, 2.2], ["2,20–3,00", 2.2, 3.0], ["über 3,00", 3.0, 99]];
     const rows = buckets.map(([name, a, z]) => {
       const bs = settled.filter((b) => b.odds >= a && b.odds < z);
       return { name, n: bs.length, exp: bs.reduce((s, b) => s + (b.p || 1 / b.odds), 0), real: bs.filter((b) => b.status === "won").length };
@@ -549,7 +550,7 @@
       else {
         const cls = d.profit > 0 ? "d-pos" : d.profit < 0 ? "d-neg" : "";
         val = `<span class="d-profit ${cls}">${d.settled ? eur(d.profit, true) : "offen"}</span>`;
-        meta = `${d.n_bets} Wetten, ${d.settled} abgerechnet`;
+        meta = d.settled === d.n_bets ? `${d.n_bets} Wetten, fertig` : `${d.settled} von ${d.n_bets} fertig`;
       }
       const dbets = myBets().filter((x) => x.day === d.date);
       const spark = dbets.length ? `<span class="d-spark">${dbets.map((x) => `<i class="${x.status === "won" ? "w" : x.status === "lost" ? "l" : isLive(x) ? "o" : ""}"></i>`).join("")}</span>` : "";
@@ -565,9 +566,9 @@
     const d = state.days.find((x) => x.date === selectedDay);
     const idx = state.days.indexOf(d);
     const bets = myBets().filter((b) => b.day === selectedDay).sort((a, b) => a.commence.localeCompare(b.commence));
-    $("dayTitle").textContent = `${P().name}: Wetten an Tag ${idx + 1}`;
+    $("dayTitle").textContent = `Wetten an Tag ${idx + 1}`;
     const dt = d.date + "T12:00:00";
-    let meta = `${fmt(dt, { weekday: "long", day: "numeric", month: "long" })}, Spiele von 12 Uhr bis 12 Uhr am Folgetag.`;
+    let meta = `${P().name}, ${fmt(dt, { weekday: "long", day: "numeric", month: "long" })}. Spiele von 12 Uhr bis 12 Uhr am Folgetag.`;
     if (d.n_outcomes) meta += ` Geprüft: ${d.n_outcomes} Wettmöglichkeiten, davon ${d.n_value} mit Vorteil.`;
     $("dayMeta").textContent = meta;
     const box = $("slips");
@@ -606,7 +607,7 @@
         <div class="s-pick">${esc(b.label)}${b.kind === "filler" ? `<span class="s-filler">Füllwette</span>` : ""}</div></div>
       <div class="s-odds"><b>${odds(b.odds)}</b><span>${esc(b.book_name)}</span>${b.ev > 0 ? `<span class="s-edge" title="Erwartungswert">${pct(b.ev, true)}</span>` : ""}</div>
       <div class="s-stake"><b>${eur0(b.stake)}</b><span>möglich ${eur(b.potential_payout)}</span></div>
-      <div class="s-state">${stamp(b)}</div>`;
+      <div class="s-state">${stamp(b)}<span class="s-chev" aria-hidden="true"></span></div>`;
     const det = el("div", "slip-detail");
     det.hidden = !open.has(b.id);
     det.innerHTML = detail(b);
@@ -730,21 +731,23 @@
       const val = t && t.staked_settled ? `<b class="${t.profit > 0 ? "t-pos" : t.profit < 0 ? "t-neg" : ""}">${eur(t.profit, true)}</b>` : "";
       return `<button class="tab" role="tab" aria-selected="${id === view}" data-v="${id}" style="--c:${pl ? pl.color : "#fff"}">${pl ? "<i></i>" : ""}${esc(name)} ${val}</button>`;
     }).join("");
-    box.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => setView(b.dataset.v)));
+    box.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => { setView(b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
+    const act = box.querySelector('.tab[aria-selected="true"]');
+    if (act) box.scrollTo({ left: act.offsetLeft - box.clientWidth / 2 + act.clientWidth / 2, behavior: firstRender ? "auto" : "smooth" });
   }
 
   function renderCompare() {
     const rows = ranked();
     const anyBets = rows.some((p) => p.totals.n_bets);
-    const head = `<div class="lb-row lb-head" role="row"><span class="lb-rank">#</span><span>Spieler</span><span class="lb-num">Kontostand</span><span class="lb-num">Rendite</span><span class="lb-num lb-hide-s">Treffer</span><span class="lb-num lb-hide-m lb-hide-s">Ø Quote</span><span class="lb-num lb-hide-m lb-hide-s">Größter Rückgang</span></div>`;
+    const head = `<div class="lb-row lb-head" role="row"><span class="lb-rank">#</span><span>Spieler</span><span class="lb-num">Kontostand</span><span class="lb-num lb-roi">Rendite</span><span class="lb-num lb-hide-s">Treffer</span><span class="lb-num lb-hide-m lb-hide-s">Ø Quote</span><span class="lb-num lb-hide-m lb-hide-s">Größter Rückgang</span></div>`;
     $("leaderboard").innerHTML = head + rows.map((p, i) => {
       const t = p.totals;
       const cls = t.profit > 0.004 ? "lb-pos" : t.profit < -0.004 ? "lb-neg" : "";
       return `<div class="lb-row is-link ${anim("slide-in")}" role="row" data-v="${p.id}" style="--d:${i * 80}ms">
         <span class="lb-rank">${anyBets ? i + 1 : "–"}</span>
-        <span class="lb-name" style="--c:${p.color}"><i></i><span><b>${esc(p.name)}</b><small>Risiko ${esc(p.risk)}. ${esc(p.tagline)}</small></span></span>
-        <span class="lb-num big ${cls}">${t.staked_settled ? eur(t.profit, true) : "–"}</span>
-        <span class="lb-num ${cls}">${t.roi == null ? "–" : pct(t.roi, true)}</span>
+        <span class="lb-name" style="--c:${p.color}"><i></i><span><b>${esc(p.name)}</b><small>Risiko ${esc(p.risk)}<span class="lb-tagline">. ${esc(p.tagline)}</span></small></span></span>
+        <span class="lb-num big ${cls}">${t.staked_settled ? eur(t.profit, true) : "–"}<small class="lb-sub">${t.roi == null ? "" : `Rendite ${pct(t.roi, true)}`}</small></span>
+        <span class="lb-num lb-roi ${cls}">${t.roi == null ? "–" : pct(t.roi, true)}</span>
         <span class="lb-num lb-hide-s">${t.won + t.lost ? `${t.won}<small>von ${t.won + t.lost}</small>` : "–"}</span>
         <span class="lb-num lb-hide-m lb-hide-s">${t.avg_odds ? odds(t.avg_odds) : "–"}</span>
         <span class="lb-num lb-hide-m lb-hide-s">${t.staked_settled ? eur(-t.max_drawdown) : "–"}</span></div>`;
@@ -755,7 +758,8 @@
     $("playerCards").innerHTML = state.order.map((id) => {
       const p = state.players[id], t = p.totals;
       return `<article class="pcard" style="--c:${p.color}"><h3>${esc(p.name)} <small>Risiko ${esc(p.risk)}</small></h3>
-        <p>${esc(p.desc)}</p>
+        <p class="pc-tag">${esc(p.tagline)}</p>
+        <details class="pc-desc"><summary>So spielt er</summary><p>${esc(p.desc)}</p></details>
         <div class="pc-stats"><span><b>${t.n_bets}</b>Wetten</span><span><b>${t.staked_settled ? eur(t.profit, true) : "–"}</b>Ergebnis</span><span><b>${t.avg_ev == null ? "–" : pct(t.avg_ev, true)}</b>Ø Erwartung</span></div>
         <button class="linkish" data-v="${id}">Alle Wetten ansehen</button></article>`;
     }).join("");
@@ -770,13 +774,16 @@
     const lastIdx = Math.max(-1, ...state.order.map((id) => state.players[id].days.reduce((m, d, i) => (d.settled ? i : m), -1)));
     if (lastIdx < 0) {
       box.innerHTML = `<div class="chart-empty">Sobald die ersten Wetten abgerechnet sind, läuft hier für jeden Spieler eine Linie: Wer liegt vorn?</div>`;
+      $("compareLegend").innerHTML = "";
       return;
     }
     const n = lastIdx + 1;
     const lines = state.order.map((id) => { const p = state.players[id]; return { p, v: [0, ...p.days.slice(0, n).map((d) => d.cum_profit)] }; });
     const W = box.clientWidth || 700, H = box.clientHeight || 280;
-    const m = { l: 52, r: 124, t: 12, b: 26 };
+    const narrow = W < 520;
+    const m = { l: narrow ? 44 : 52, r: narrow ? 12 : 124, t: 12, b: 26 };
     const { lo, hi, step } = scale(lines.flatMap((l) => l.v));
+    $("compareLegend").innerHTML = [...lines].sort((a, b) => b.v[n] - a.v[n]).map((l) => `<span style="--c:${l.p.color}"><i></i>${esc(l.p.name.replace("Der ", ""))} <b>${eur(l.v[n], true)}</b></span>`).join("");
     const x = (i) => m.l + (i / n) * (W - m.l - m.r);
     const y = (v) => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
     let s = gridAxis(lo, hi, step, y, m, W, " €") + `<g class="axis">`;
@@ -791,7 +798,7 @@
       s += `<path class="${anim("draw")}" d="${d}" fill="none" stroke="${l.p.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
       s += `<circle cx="${x(n)}" cy="${y(l.v[n])}" r="4" fill="${l.p.color}" class="hoverdot"/>`;
     });
-    ends.forEach((e) => { s += `<text class="lbl" x="${x(n) + 10}" y="${e.y + 4}"><tspan class="lbl-strong">${eur(e.l.v[n], true)}</tspan> ${esc(e.l.p.name.replace("Der ", ""))}</text>`; });
+    if (!narrow) ends.forEach((e) => { s += `<text class="lbl" x="${x(n) + 10}" y="${e.y + 4}"><tspan class="lbl-strong">${eur(e.l.v[n], true)}</tspan> ${esc(e.l.p.name.replace("Der ", ""))}</text>`; });
     s += `<g class="hover" style="display:none"><line class="cross" y1="${m.t}" y2="${H - m.b}"/></g>`;
     const { svg, tip } = svgIn(box, W, H, s);
     svg.querySelectorAll(".draw").forEach((p) => p.style.setProperty("--len", p.getTotalLength()));
@@ -827,10 +834,14 @@
     let s = gridAxis(ys.lo, ys.hi, ys.step, y, m, W, " %") + `<g class="axis">`;
     for (let v = 0; v <= xmax + 1e-9; v += xmax / 4) s += `<text x="${x(v)}" y="${H - 8}" text-anchor="middle">${Math.round(v)} €</text>`;
     s += `</g><line class="zero" x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/>`;
-    pl.forEach((p, i) => {
-      const cx = x(p.totals.max_drawdown), cy = y(p.totals.roi * 100);
-      s += `<circle class="mark ${anim("grow")}" style="--origin:center;--d:${i * 80}ms" data-i="${i}" cx="${cx}" cy="${cy}" r="7" fill="${p.color}" stroke="var(--sheet)" stroke-width="2"/>`;
-      s += `<text class="lbl" x="${cx + (cx > W - 90 ? -11 : 11)}" y="${cy + 4}" text-anchor="${cx > W - 90 ? "end" : "start"}">${esc(p.name.replace("Der ", ""))}</text>`;
+    // Beschriftungen ohne Überlappung: nach y sortieren und auseinanderschieben
+    const pts = pl.map((p, i) => ({ p, i, cx: x(p.totals.max_drawdown), cy: y(p.totals.roi * 100) }));
+    const lab = [...pts].sort((a, b) => a.cy - b.cy);
+    lab.forEach((q, k) => { q.ly = q.cy; if (k && q.ly - lab[k - 1].ly < 14 && Math.abs(q.cx - lab[k - 1].cx) < 110) q.ly = lab[k - 1].ly + 14; });
+    pts.forEach(({ p, i, cx, cy, ly }) => {
+      s += `<circle class="mark" data-i="${i}" cx="${cx}" cy="${cy}" r="7" fill="${p.color}" stroke="var(--sheet)" stroke-width="2"/>`;
+      const right = cx > W - 100;
+      s += `<text class="lbl" x="${cx + (right ? -12 : 12)}" y="${ly + 4}" text-anchor="${right ? "end" : "start"}">${esc(p.name.replace("Der ", ""))}</text>`;
       s += `<circle class="hit" data-i="${i}" data-x="${cx}" data-y="${cy - 6}" cx="${cx}" cy="${cy}" r="16"/>`;
     });
     const { svg, tip } = svgIn(box, W, H, s);
