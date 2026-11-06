@@ -138,7 +138,9 @@ def auto_analysis(b):
     else:
         price_txt = (f"Unsere Quote war {abs(clv) * 100:.1f} % {'besser' if good_price else 'schlechter'} als der faire Schlusskurs"
                      + (" – der Markt hat sich in unsere Richtung bewegt." if good_price else " – der Markt hat gegen uns gearbeitet."))
-    if st == "won":
+    if clv is None:
+        verdict = "Gewonnen." if st == "won" else "Verloren."
+    elif st == "won":
         verdict = "Verdienter Treffer." if good_price else "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut."
     else:
         verdict = ("Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel."
