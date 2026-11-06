@@ -12,35 +12,52 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233B5BDB'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>€</text></svg>">
 </head>
 <body>
-<header class="top">
-  <div class="wrap top-inner">
+
+<!-- Anzeigetafel wie im Wettbüro -->
+<section class="board" aria-labelledby="balanceTitle">
+  <div class="wrap board-top">
     <div class="brand"><span class="brand-mark" aria-hidden="true">€</span> Projekt Value</div>
     <div class="top-status" id="topStatus">Lade Daten …</div>
   </div>
-</header>
+
+  <div class="wrap board-main">
+    <div class="board-balance">
+      <h1 id="balanceTitle" class="board-kicker"><span id="heroKicker">Gewinn nach abgerechneten Wetten</span></h1>
+      <p class="balance" id="balance" aria-live="polite">0,00 €</p>
+      <p class="board-line" id="heroLine"></p>
+      <div class="budget" aria-hidden="true">
+        <div class="budget-bar"><i class="b-settled" id="bSettled"></i><i class="b-open" id="bOpen"></i></div>
+        <div class="budget-legend" id="budgetLegend"></div>
+      </div>
+    </div>
+    <dl class="board-kpis" id="facts"></dl>
+  </div>
+
+  <div class="ticker" id="ticker" aria-label="Quoten-Ticker">
+    <div class="ticker-label">Heute gesetzt</div>
+    <div class="ticker-viewport"><div class="ticker-track" id="tickerTrack"></div></div>
+  </div>
+</section>
 
 <main class="wrap">
-  <section class="hero" aria-labelledby="balanceTitle">
-    <div class="hero-figure">
-      <h1 id="balanceTitle" class="sr-only">Kontostand des Experiments</h1>
-      <p class="hero-kicker" id="heroKicker">Gewinn nach abgerechneten Wetten</p>
-      <p class="balance" id="balance">–</p>
-      <p class="hero-line" id="heroLine"></p>
-      <dl class="facts" id="facts"></dl>
-    </div>
-    <figure class="hero-chart">
-      <figcaption>
-        <span class="chart-title">Echter Verlauf gegen den mathematisch erwarteten</span>
-        <span class="legend"><span class="sw sw-real"></span>Echt <span class="sw sw-exp"></span>Erwartet</span>
+  <section class="panel-row" aria-label="Verlauf">
+    <figure class="panel panel-wide">
+      <figcaption class="panel-head">
+        <span class="panel-title">Kontoverlauf</span>
+        <span class="legend"><span class="sw sw-real"></span>Echt <span class="sw sw-exp"></span>Mathematisch erwartet</span>
         <button class="linkish" id="tableToggle" aria-expanded="false">Als Tabelle</button>
       </figcaption>
-      <div class="chart" id="chart" role="img" aria-label="Kumulierter Gewinn"></div>
+      <div class="chart chart-lg" id="chart" role="img" aria-label="Kumulierter Gewinn nach jeder abgerechneten Wette"></div>
       <div class="chart-table" id="chartTable" hidden></div>
+    </figure>
+    <figure class="panel">
+      <figcaption class="panel-head"><span class="panel-title">Bilanz pro Tag</span></figcaption>
+      <div class="chart chart-lg" id="dayChart" role="img" aria-label="Gewinn oder Verlust je Tag"></div>
     </figure>
   </section>
 
   <section id="liveSection" class="live" hidden aria-labelledby="liveTitle">
-    <h2 id="liveTitle">Läuft gerade</h2>
+    <h2 id="liveTitle"><span class="live-dot" aria-hidden="true"></span>Läuft gerade</h2>
     <div class="live-strip" id="liveStrip"></div>
   </section>
 
@@ -61,14 +78,28 @@
     </details>
   </section>
 
-  <section class="skill" aria-labelledby="skillTitle">
-    <h2 id="skillTitle">Können oder Glück?</h2>
-    <div class="skill-grid">
-      <div class="skill-text">
-        <p>Eine Woche ist zu kurz, um am Kontostand allein zu erkennen, ob das System etwas taugt. Ein paar Tore mehr oder weniger drehen das Ergebnis. Deshalb messen wir zusätzlich den <strong>Closing Line Value</strong>: Kurz vor Anpfiff holen wir die Quoten erneut. War unsere Quote besser als der faire Schlusskurs, hatten wir zum Zeitpunkt der Wette einen echten Vorteil – egal, wie das Spiel ausgeht.</p>
-        <p>Wer dauerhaft besser als die Schlussquote wettet, gewinnt langfristig. Wer das nicht schafft, verliert langfristig – auch nach einer Glückswoche.</p>
-      </div>
-      <dl class="skill-stats" id="skillStats"></dl>
+  <section class="analysis-sec" aria-labelledby="anaTitle">
+    <h2 id="anaTitle">Auswertung</h2>
+    <div class="panel-grid">
+      <figure class="panel">
+        <figcaption class="panel-head"><span class="panel-title">Einsatz und Ergebnis je Wettbewerb</span></figcaption>
+        <div id="leagueChart" class="hbars"></div>
+      </figure>
+      <figure class="panel">
+        <figcaption class="panel-head"><span class="panel-title">Closing Line Value je Wette</span>
+          <span class="panel-sub">Über null: Quote war besser als der faire Schlusskurs</span></figcaption>
+        <div class="chart chart-md" id="clvChart" role="img" aria-label="Closing Line Value je Wette"></div>
+      </figure>
+      <figure class="panel">
+        <figcaption class="panel-head"><span class="panel-title">Treffer: erwartet gegen echt</span>
+          <span class="panel-sub">Nach Quotenbereich, abgerechnete Wetten</span></figcaption>
+        <div id="hitChart" class="hbars"></div>
+      </figure>
+      <figure class="panel">
+        <figcaption class="panel-head"><span class="panel-title">Können oder Glück?</span></figcaption>
+        <dl class="skill-stats" id="skillStats"></dl>
+        <p class="panel-note">Eine Woche ist zu kurz, um am Kontostand allein die Qualität zu erkennen. Der <strong>Closing Line Value</strong> misst, ob unsere Quote besser war als der faire Kurs kurz vor Anpfiff. Wer das dauerhaft schafft, gewinnt langfristig, auch nach einer Pechwoche.</p>
+      </figure>
     </div>
   </section>
 
@@ -93,6 +124,7 @@
   </div>
 </footer>
 
+<div class="fx-layer" id="fx" aria-hidden="true"></div>
 <script src="app.js" defer></script>
 </body>
 </html>
