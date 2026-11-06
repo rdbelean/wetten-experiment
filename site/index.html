@@ -20,7 +20,14 @@
     <div class="top-status" id="topStatus">Lade Daten …</div>
   </div>
 
-  <div class="wrap board-main">
+  <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Spieler"></nav>
+
+  <div class="wrap board-compare" id="boardCompare" hidden>
+    <h1 class="board-kicker">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
+    <div class="leaderboard" id="leaderboard" role="table" aria-label="Rangliste"></div>
+  </div>
+
+  <div class="wrap board-main" id="boardPlayer">
     <div class="board-balance">
       <h1 id="balanceTitle" class="board-kicker"><span id="heroKicker">Gewinn nach abgerechneten Wetten</span></h1>
       <p class="balance" id="balance" aria-live="polite">0,00 €</p>
@@ -40,6 +47,26 @@
 </section>
 
 <main class="wrap">
+  <div id="compareView" hidden>
+    <section class="panel-row" aria-label="Vergleich">
+      <figure class="panel panel-wide">
+        <figcaption class="panel-head"><span class="panel-title">Kontostand der Spieler nach jedem Tag</span>
+          <span class="panel-sub">Gewinn oder Verlust der abgerechneten Wetten, jeder Spieler mit 100 € pro Tag</span></figcaption>
+        <div class="chart chart-lg" id="compareChart" role="img" aria-label="Kontostand je Spieler"></div>
+      </figure>
+      <figure class="panel">
+        <figcaption class="panel-head"><span class="panel-title">Risiko gegen Rendite</span>
+          <span class="panel-sub">Rechts: größter zwischenzeitlicher Rückgang. Oben: Rendite.</span></figcaption>
+        <div class="chart chart-lg" id="riskChart" role="img" aria-label="Risiko gegen Rendite je Spieler"></div>
+      </figure>
+    </section>
+    <section aria-labelledby="playersTitle" class="players-sec">
+      <h2 id="playersTitle">Die Spieler</h2>
+      <div class="player-cards" id="playerCards"></div>
+    </section>
+  </div>
+
+  <div id="playerView">
   <section class="panel-row" aria-label="Verlauf">
     <figure class="panel panel-wide">
       <figcaption class="panel-head">
@@ -102,6 +129,8 @@
       </figure>
     </div>
   </section>
+
+  </div>
 
   <section class="method" aria-labelledby="methodTitle">
     <h2 id="methodTitle">So entscheidet das System</h2>

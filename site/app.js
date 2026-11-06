@@ -23,6 +23,10 @@
 
   let state = null;
   let selectedDay = null;
+  let view = decodeURIComponent(location.hash.slice(1)) || "vergleich";
+  const P = () => state.players[view] || state.players.analyst;
+  const myBets = () => (view === "vergleich" ? state.bets : state.bets.filter((b) => b.player === P().id));
+  const pName = (id) => state.players[id]?.name || id;
   let firstRender = true;
   const open = new Set();
   const live = {};          // betId -> {home_score, away_score, detail, state}
@@ -55,15 +59,17 @@
       if (seen && b.status !== "open" && seen[b.id] !== b.status) news.push(b);
     }
     try { localStorage.setItem("pv_seen", JSON.stringify(now)); } catch (_) { /* egal */ }
-    if (!news.length) return;
     news.forEach((b) => fresh.add(b.id));
-    const won = news.filter((b) => b.status === "won");
-    const lost = news.filter((b) => b.status === "lost");
-    const sum = news.reduce((a, b) => a + (b.profit || 0), 0);
+    const mine = news.filter((b) => b.player === (state.players[view] ? view : "analyst"));
+    if (!mine.length) return;
+    const who = pName(state.players[view] ? view : "analyst");
+    const won = mine.filter((b) => b.status === "won");
+    const lost = mine.filter((b) => b.status === "lost");
+    const sum = mine.reduce((a, b) => a + (b.profit || 0), 0);
     const parts = [];
     if (won.length) parts.push(`${won.length} gewonnen`);
     if (lost.length) parts.push(`${lost.length} verloren`);
-    toast(`Neu abgerechnet: ${parts.join(", ") || `${news.length} Wetten`}, zusammen <b>${eur(sum, true)}</b>`, sum < 0);
+    toast(`${who}: ${parts.join(", ") || `${mine.length} Wetten`} neu abgerechnet, zusammen <b>${eur(sum, true)}</b>`, sum < 0);
     if (won.length) setTimeout(() => coins(won.length), 500);
   }
 
@@ -168,7 +174,12 @@
 
   // ------------------------------------------------------------------ Render
   function render() {
+    const cmp = view === "vergleich";
+    $("boardCompare").hidden = !cmp; $("compareView").hidden = !cmp;
+    $("boardPlayer").hidden = cmp; $("playerView").hidden = cmp;
+    renderTabs();
     renderTop();
+    if (cmp) { renderCompare(); renderTicker(); renderMethod(); renderSys(); return; }
     renderBoard();
     renderTicker();
     renderChart();
@@ -226,13 +237,13 @@
   }
 
   function renderBoard() {
-    const t = state.totals;
+    const t = P().totals;
     const settled = t.won + t.lost + t.push;
     const bal = $("balance");
     bal.className = "balance" + (t.profit > 0.004 ? " pos" : t.profit < -0.004 ? " neg" : "");
     bal.setAttribute("aria-label", `Gewinn ${eur(t.profit, true)}`);
     odometer(bal, sgn(t.profit) + nf2.format(Math.abs(t.profit)));
-    $("heroKicker").textContent = settled ? `Gewinn nach ${settled} abgerechneten ${settled === 1 ? "Wette" : "Wetten"}` : "Noch keine Wette abgerechnet";
+    $("heroKicker").textContent = settled ? `${P().name}: Gewinn nach ${settled} abgerechneten ${settled === 1 ? "Wette" : "Wetten"}` : `${P().name}: noch keine Wette abgerechnet`;
     const total = state.experiment.total_budget;
     let line = `<b>${eur0(total)} Spielgeld</b>, ${state.experiment.days} Tage, jeden Tag genau ${eur0(state.experiment.daily_budget)} gesetzt.`;
     if (t.staked) line += ` Bisher ${eur(t.staked)} im Spiel, <b>${eur(t.returned)}</b> kamen zurück.`;
@@ -242,7 +253,7 @@
     $("bOpen").style.width = `${(t.open_stake / total) * 100}%`;
     $("budgetLegend").innerHTML = `<span style="--c:var(--pen)">abgerechnet ${eur0(t.staked_settled)}</span><span style="--c:var(--live)">offen ${eur0(t.open_stake)}</span><span style="--c:var(--board-2)">noch nicht gesetzt ${eur0(Math.max(0, total - t.staked))}</span>`;
 
-    const next = state.bets.filter((b) => b.status === "open" && new Date(b.commence) > new Date()).sort((a, b) => a.commence.localeCompare(b.commence))[0];
+    const next = myBets().filter((b) => b.status === "open" && new Date(b.commence) > new Date()).sort((a, b) => a.commence.localeCompare(b.commence))[0];
     const roiCls = t.roi > 0 ? "k-gain" : t.roi < 0 ? "k-loss" : "";
     const clvCls = t.avg_clv > 0 ? "k-gain" : t.avg_clv < 0 ? "k-loss" : "";
     const kpis = [
@@ -260,8 +271,10 @@
   function renderTicker() {
     if (!state) return;
     const today = berlinDate();
-    const day = state.days.find((d) => d.date === today && d.n_bets) || [...state.days].reverse().find((d) => d.n_bets);
-    const bets = day ? state.bets.filter((b) => b.day === day.date).sort((a, b) => a.commence.localeCompare(b.commence)) : [];
+    const all = view === "vergleich" ? state.bets.filter((b) => b.player === "analyst" || b.market === "combo" || b.player === "zocker") : myBets();
+    const hasBets = (d) => all.some((b) => b.day === d.date);
+    const day = state.days.find((d) => d.date === today && hasBets(d)) || [...state.days].reverse().find(hasBets);
+    const bets = day ? all.filter((b) => b.day === day.date).sort((a, b) => a.commence.localeCompare(b.commence)) : [];
     $("ticker").querySelector(".ticker-label").textContent = !day ? "Ticker" : day.date === today ? "Heute gesetzt" : `Gesetzt am ${wd(day.date + "T12:00:00")}`;
     let items;
     if (!bets.length) {
@@ -278,7 +291,9 @@
           st = `<b>${lv.home_score}:${lv.away_score}</b> <span class="${g === "won" ? "t-up" : "t-down"}">${g === "won" ? "▲ liegt vorn" : "▼ liegt hinten"}</span>`;
         } else st = `Anstoß ${wd(b.commence)} ${hhmm(b.commence)}`;
         const tip = b.tipico_odds && b.book_name !== "Tipico" ? ` <span>Tipico ${odds(b.tipico_odds)}</span>` : "";
-        return `<span class="t-item">${esc(b.league)} <b>${esc(b.home)} – ${esc(b.away)}</b> ${esc(b.label)} <span class="t-odds">${odds(b.odds)}</span> ${esc(b.book_name)}${tip} <span>${eur0(b.stake)}</span> ${st}</span>`;
+        const who = view === "vergleich" ? `<span style="color:${state.players[b.player].color}">●</span> ${esc(pName(b.player))}: ` : "";
+        const match = b.market === "combo" ? b.legs.map((l) => esc(l.label)).join(" + ") : `${esc(b.home)} – ${esc(b.away)}`;
+        return `<span class="t-item">${who}${esc(b.league)} <b>${match}</b> ${esc(b.label)} <span class="t-odds">${odds(b.odds)}</span> ${esc(b.book_name)}${tip} <span>${eur0(b.stake)}</span> ${st}</span>`;
       });
     }
     const html = items.join("");
@@ -338,7 +353,7 @@
 
   // ------------------------------------------------------------------ Kontoverlauf
   function series() {
-    const done = state.bets.filter((b) => b.status !== "open")
+    const done = myBets().filter((b) => b.status !== "open")
       .sort((a, b) => (a.result?.t || a.commence).localeCompare(b.result?.t || b.commence) || a.commence.localeCompare(b.commence));
     const pts = [{ i: 0, real: 0, exp: 0, bet: null }];
     let r = 0, e = 0;
@@ -416,7 +431,7 @@
   function renderDayChart() {
     const box = $("dayChart");
     box.innerHTML = "";
-    const days = state.days;
+    const days = P().days;
     if (!days.some((d) => d.settled)) {
       box.innerHTML = `<div class="chart-empty">Hier erscheint für jeden der 7 Tage ein Balken: grün im Plus, orange im Minus.</div>`;
       return;
@@ -452,7 +467,7 @@
   // ------------------------------------------------------------------ Wettbewerbe
   function renderLeagues() {
     const box = $("leagueChart");
-    const settled = state.bets.filter((b) => b.status !== "open");
+    const settled = myBets().filter((b) => b.status !== "open");
     if (!settled.length) { box.innerHTML = `<div class="empty-small">Erscheint nach den ersten Ergebnissen.</div>`; return; }
     const by = {};
     for (const b of settled) {
@@ -475,7 +490,7 @@
   function renderClv() {
     const box = $("clvChart");
     box.innerHTML = "";
-    const bets = state.bets.filter((b) => b.clv != null).sort((a, b) => a.commence.localeCompare(b.commence));
+    const bets = myBets().filter((b) => b.clv != null).sort((a, b) => a.commence.localeCompare(b.commence));
     if (!bets.length) { box.innerHTML = `<div class="chart-empty">Kurz vor jedem Anpfiff wird der faire Schlusskurs erfasst. Dann erscheint hier je Wette ein Balken.</div>`; return; }
     const W = box.clientWidth || 500, H = box.clientHeight || 230;
     const m = { l: 44, r: 6, t: 10, b: 10 };
@@ -501,7 +516,7 @@
   // ------------------------------------------------------------------ Treffer nach Quotenbereich
   function renderHits() {
     const box = $("hitChart");
-    const settled = state.bets.filter((b) => b.status === "won" || b.status === "lost");
+    const settled = myBets().filter((b) => b.status === "won" || b.status === "lost");
     if (!settled.length) { box.innerHTML = `<div class="empty-small">Erscheint nach den ersten Ergebnissen.</div>`; return; }
     const buckets = [["unter 1,60", 0, 1.6], ["1,60 bis 2,20", 1.6, 2.2], ["2,20 bis 3,00", 2.2, 3.0], ["über 3,00", 3.0, 99]];
     const rows = buckets.map(([name, a, z]) => {
@@ -519,12 +534,12 @@
   function renderDays() {
     const today = berlinDate();
     if (!selectedDay) {
-      const withBets = state.days.filter((d) => d.n_bets);
+      const withBets = P().days.filter((d) => d.n_bets);
       selectedDay = state.days.find((d) => d.date === today)?.date || withBets.at(-1)?.date || state.days[0].date;
     }
     const box = $("days");
     box.innerHTML = "";
-    state.days.forEach((d, i) => {
+    P().days.forEach((d, i) => {
       const b = el("button", "day" + (d.date === today ? " d-today" : ""));
       b.setAttribute("role", "tab");
       b.setAttribute("aria-selected", d.date === selectedDay);
@@ -536,7 +551,7 @@
         val = `<span class="d-profit ${cls}">${d.settled ? eur(d.profit, true) : "offen"}</span>`;
         meta = `${d.n_bets} Wetten, ${d.settled} abgerechnet`;
       }
-      const dbets = state.bets.filter((x) => x.day === d.date);
+      const dbets = myBets().filter((x) => x.day === d.date);
       const spark = dbets.length ? `<span class="d-spark">${dbets.map((x) => `<i class="${x.status === "won" ? "w" : x.status === "lost" ? "l" : isLive(x) ? "o" : ""}"></i>`).join("")}</span>` : "";
       b.innerHTML = `<span class="d-name">Tag ${i + 1}</span><span class="d-date">${wd(dt)}, ${fmt(dt, { day: "numeric", month: "short" })}</span>${val}<span class="d-meta">${meta}</span>${spark}`;
       b.addEventListener("click", () => { selectedDay = d.date; renderDays(); renderSlips(); });
@@ -549,8 +564,8 @@
     if (!state) return;
     const d = state.days.find((x) => x.date === selectedDay);
     const idx = state.days.indexOf(d);
-    const bets = state.bets.filter((b) => b.day === selectedDay).sort((a, b) => a.commence.localeCompare(b.commence));
-    $("dayTitle").textContent = `Wetten an Tag ${idx + 1}`;
+    const bets = myBets().filter((b) => b.day === selectedDay).sort((a, b) => a.commence.localeCompare(b.commence));
+    $("dayTitle").textContent = `${P().name}: Wetten an Tag ${idx + 1}`;
     const dt = d.date + "T12:00:00";
     let meta = `${fmt(dt, { weekday: "long", day: "numeric", month: "long" })}, Spiele von 12 Uhr bis 12 Uhr am Folgetag.`;
     if (d.n_outcomes) meta += ` Geprüft: ${d.n_outcomes} Wettmöglichkeiten, davon ${d.n_value} mit Vorteil.`;
@@ -572,7 +587,7 @@
       if (r.top < window.innerHeight && r.bottom > 0) coins(1, { x: r.left + r.width / 2, y: r.top + r.height / 2 });
     }, 450 + i * 250));
     fresh.clear();
-    const near = d.near_misses || [];
+    const near = P().id === "analyst" ? d.near_misses || [] : [];
     $("nearWrap").hidden = !near.length;
     $("near").innerHTML = near.length ? `<table><thead><tr><th>Spiel</th><th>Wette</th><th class="num">Quote</th><th class="num">Unsere Wkt.</th><th class="num">Vorteil</th></tr></thead><tbody>${near.map((n) =>
       `<tr><td>${esc(n.home)} – ${esc(n.away)}<br><small>${esc(n.league)}, ${wd(n.commence)} ${hhmm(n.commence)}</small></td><td>${esc(n.label)}</td><td class="num">${odds(n.odds)}<br><small>${esc(n.book_name)}</small></td><td class="num">${pct(n.p)}</td><td class="num">${pct(n.ev, true)}</td></tr>`).join("")}</tbody></table>` : "";
@@ -585,7 +600,9 @@
     row.setAttribute("aria-expanded", open.has(b.id));
     row.innerHTML = `
       <div class="s-time">${wd(b.commence)}<b>${hhmm(b.commence)}</b></div>
-      <div class="s-main"><div class="s-league">${esc(b.league)}</div><div class="s-match">${esc(b.home)} – ${esc(b.away)}</div>
+      <div class="s-main"><div class="s-league">${esc(b.league)}</div>${b.market === "combo"
+        ? `<ul class="legs">${b.legs.map((l) => `<li><span class="lg-st ${l.status === "won" ? "lg-won" : l.status === "lost" ? "lg-lost" : ""}">${l.status === "won" ? "✓" : l.status === "lost" ? "✗" : "·"}</span>${esc(l.home)} – ${esc(l.away)}: ${esc(l.label)} (${odds(l.odds)})</li>`).join("")}</ul>`
+        : `<div class="s-match">${esc(b.home)} – ${esc(b.away)}</div>`}
         <div class="s-pick">${esc(b.label)}${b.kind === "filler" ? `<span class="s-filler">Füllwette</span>` : ""}</div></div>
       <div class="s-odds"><b>${odds(b.odds)}</b><span>${esc(b.book_name)}</span>${b.ev > 0 ? `<span class="s-edge" title="Erwartungswert">${pct(b.ev, true)}</span>` : ""}</div>
       <div class="s-stake"><b>${eur0(b.stake)}</b><span>möglich ${eur(b.potential_payout)}</span></div>
@@ -634,7 +651,8 @@
 
   // ------------------------------------------------------------------ Live-Karten
   function renderLive(goals = new Set()) {
-    const bets = liveBets().filter((b) => live[b.id] && live[b.id].state === "in");
+    const pid = state.players[view] ? view : "analyst";
+    const bets = liveBets().filter((b) => b.player === pid && live[b.id] && live[b.id].state === "in");
     $("liveSection").hidden = !bets.length;
     $("liveStrip").innerHTML = bets.map((b) => {
       const lv = live[b.id];
@@ -649,8 +667,8 @@
 
   // ------------------------------------------------------------------ Können/Glück, Methode, System
   function renderSkill() {
-    const t = state.totals;
-    const expSettled = state.bets.filter((b) => b.status !== "open").reduce((a, b) => a + (b.ev || 0) * b.stake, 0);
+    const t = P().totals;
+    const expSettled = myBets().filter((b) => b.status !== "open").reduce((a, b) => a + (b.ev || 0) * b.stake, 0);
     const items = [
       ["Ø Closing Line Value", t.avg_clv == null ? "–" : pct(t.avg_clv, true), t.n_clv ? `aus ${t.n_clv} Schlusskursen` : "noch keine Schlusskurse"],
       ["Besser als Schlusskurs", t.n_clv ? `${t.clv_positive} von ${t.n_clv}` : "–", "Wetten mit echtem Vorteil"],
@@ -689,6 +707,139 @@
     $("sys").textContent = parts.join(". ") + ".";
   }
 
+  // ------------------------------------------------------------------ Spieler-Tabs & Vergleich
+  const ranked = () => state.order.map((id) => state.players[id])
+    .sort((a, b) => (b.totals.profit - a.totals.profit) || ((b.totals.expected_profit || 0) - (a.totals.expected_profit || 0)));
+
+  function setView(v) {
+    view = v;
+    history.replaceState(null, "", v === "vergleich" ? location.pathname : `#${v}`);
+    selectedDay = null;
+    open.clear();
+    firstRender = true;
+    render();
+    firstRender = false;
+    pollLive();
+  }
+
+  function renderTabs() {
+    const box = $("tabs");
+    const tabs = [["vergleich", "Vergleich", null], ...state.order.map((id) => [id, state.players[id].name, state.players[id]])];
+    box.innerHTML = tabs.map(([id, name, pl]) => {
+      const t = pl?.totals;
+      const val = t && t.staked_settled ? `<b class="${t.profit > 0 ? "t-pos" : t.profit < 0 ? "t-neg" : ""}">${eur(t.profit, true)}</b>` : "";
+      return `<button class="tab" role="tab" aria-selected="${id === view}" data-v="${id}" style="--c:${pl ? pl.color : "#fff"}">${pl ? "<i></i>" : ""}${esc(name)} ${val}</button>`;
+    }).join("");
+    box.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => setView(b.dataset.v)));
+  }
+
+  function renderCompare() {
+    const rows = ranked();
+    const anyBets = rows.some((p) => p.totals.n_bets);
+    const head = `<div class="lb-row lb-head" role="row"><span class="lb-rank">#</span><span>Spieler</span><span class="lb-num">Kontostand</span><span class="lb-num">Rendite</span><span class="lb-num lb-hide-s">Treffer</span><span class="lb-num lb-hide-m lb-hide-s">Ø Quote</span><span class="lb-num lb-hide-m lb-hide-s">Größter Rückgang</span></div>`;
+    $("leaderboard").innerHTML = head + rows.map((p, i) => {
+      const t = p.totals;
+      const cls = t.profit > 0.004 ? "lb-pos" : t.profit < -0.004 ? "lb-neg" : "";
+      return `<div class="lb-row is-link ${anim("slide-in")}" role="row" data-v="${p.id}" style="--d:${i * 80}ms">
+        <span class="lb-rank">${anyBets ? i + 1 : "–"}</span>
+        <span class="lb-name" style="--c:${p.color}"><i></i><span><b>${esc(p.name)}</b><small>Risiko ${esc(p.risk)}. ${esc(p.tagline)}</small></span></span>
+        <span class="lb-num big ${cls}">${t.staked_settled ? eur(t.profit, true) : "–"}</span>
+        <span class="lb-num ${cls}">${t.roi == null ? "–" : pct(t.roi, true)}</span>
+        <span class="lb-num lb-hide-s">${t.won + t.lost ? `${t.won}<small>von ${t.won + t.lost}</small>` : "–"}</span>
+        <span class="lb-num lb-hide-m lb-hide-s">${t.avg_odds ? odds(t.avg_odds) : "–"}</span>
+        <span class="lb-num lb-hide-m lb-hide-s">${t.staked_settled ? eur(-t.max_drawdown) : "–"}</span></div>`;
+    }).join("");
+    $("leaderboard").querySelectorAll(".lb-row.is-link").forEach((r) => r.addEventListener("click", () => setView(r.dataset.v)));
+    renderCompareChart();
+    renderRiskChart();
+    $("playerCards").innerHTML = state.order.map((id) => {
+      const p = state.players[id], t = p.totals;
+      return `<article class="pcard" style="--c:${p.color}"><h3>${esc(p.name)} <small>Risiko ${esc(p.risk)}</small></h3>
+        <p>${esc(p.desc)}</p>
+        <div class="pc-stats"><span><b>${t.n_bets}</b>Wetten</span><span><b>${t.staked_settled ? eur(t.profit, true) : "–"}</b>Ergebnis</span><span><b>${t.avg_ev == null ? "–" : pct(t.avg_ev, true)}</b>Ø Erwartung</span></div>
+        <button class="linkish" data-v="${id}">Alle Wetten ansehen</button></article>`;
+    }).join("");
+    $("playerCards").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { setView(b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
+  }
+
+  function renderCompareChart() {
+    const box = $("compareChart");
+    box.innerHTML = "";
+    const today = berlinDate();
+    // Punkte: Start (0) + Ende jedes Tages, der schon Ergebnisse hat
+    const lastIdx = Math.max(-1, ...state.order.map((id) => state.players[id].days.reduce((m, d, i) => (d.settled ? i : m), -1)));
+    if (lastIdx < 0) {
+      box.innerHTML = `<div class="chart-empty">Sobald die ersten Wetten abgerechnet sind, läuft hier für jeden Spieler eine Linie: Wer liegt vorn?</div>`;
+      return;
+    }
+    const n = lastIdx + 1;
+    const lines = state.order.map((id) => { const p = state.players[id]; return { p, v: [0, ...p.days.slice(0, n).map((d) => d.cum_profit)] }; });
+    const W = box.clientWidth || 700, H = box.clientHeight || 280;
+    const m = { l: 52, r: 124, t: 12, b: 26 };
+    const { lo, hi, step } = scale(lines.flatMap((l) => l.v));
+    const x = (i) => m.l + (i / n) * (W - m.l - m.r);
+    const y = (v) => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+    let s = gridAxis(lo, hi, step, y, m, W, " €") + `<g class="axis">`;
+    s += `<text x="${x(0)}" y="${H - 6}" text-anchor="middle">Start</text>`;
+    for (let i = 1; i <= n; i++) s += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">${wd(state.days[i - 1].date + "T12:00:00")}</text>`;
+    s += `</g><line class="zero" x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/>`;
+    // Endlabels ohne Überlappung
+    const ends = lines.map((l) => ({ l, y: y(l.v[n]) })).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 14) ends[i].y = ends[i - 1].y + 14;
+    lines.forEach((l) => {
+      const d = l.v.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("");
+      s += `<path class="${anim("draw")}" d="${d}" fill="none" stroke="${l.p.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+      s += `<circle cx="${x(n)}" cy="${y(l.v[n])}" r="4" fill="${l.p.color}" class="hoverdot"/>`;
+    });
+    ends.forEach((e) => { s += `<text class="lbl" x="${x(n) + 10}" y="${e.y + 4}"><tspan class="lbl-strong">${eur(e.l.v[n], true)}</tspan> ${esc(e.l.p.name.replace("Der ", ""))}</text>`; });
+    s += `<g class="hover" style="display:none"><line class="cross" y1="${m.t}" y2="${H - m.b}"/></g>`;
+    const { svg, tip } = svgIn(box, W, H, s);
+    svg.querySelectorAll(".draw").forEach((p) => p.style.setProperty("--len", p.getTotalLength()));
+    const hover = svg.querySelector(".hover");
+    svg.addEventListener("pointermove", (ev) => {
+      const rect = svg.getBoundingClientRect();
+      const px = ((ev.clientX - rect.left) / rect.width) * W;
+      const i = Math.max(0, Math.min(n, Math.round(((px - m.l) / (W - m.l - m.r)) * n)));
+      hover.style.display = "";
+      hover.querySelector(".cross").setAttribute("x1", x(i)); hover.querySelector(".cross").setAttribute("x2", x(i));
+      tip.hidden = false;
+      tip.style.left = `${(x(i) / W) * 100}%`; tip.style.top = `${(m.t / H) * 100 + 8}%`;
+      const label = i ? `Nach Tag ${i}` : "Start";
+      tip.innerHTML = `${label}<br>` + [...lines].sort((a, b) => b.v[i] - a.v[i]).map((l) => `<span style="color:${l.p.color}">●</span> ${esc(l.p.name)}: <b>${eur(l.v[i], true)}</b>`).join("<br>");
+      tip.style.transform = "translate(-50%, 0)";
+    });
+    svg.addEventListener("pointerleave", () => { hover.style.display = "none"; tip.hidden = true; });
+    void today;
+  }
+
+  function renderRiskChart() {
+    const box = $("riskChart");
+    box.innerHTML = "";
+    const pl = state.order.map((id) => state.players[id]).filter((p) => p.totals.staked_settled);
+    if (!pl.length) { box.innerHTML = `<div class="chart-empty">Zeigt nach den ersten Ergebnissen, welche Strategie wie viel Rendite für wie viel Risiko bringt.</div>`; return; }
+    const W = box.clientWidth || 340, H = box.clientHeight || 280;
+    const m = { l: 50, r: 16, t: 14, b: 30 };
+    const rois = pl.map((p) => p.totals.roi * 100), dds = pl.map((p) => p.totals.max_drawdown);
+    const ys = scale(rois);
+    const xmax = niceStep(Math.max(...dds, 10) / 4) * 4;
+    const x = (v) => m.l + (v / xmax) * (W - m.l - m.r);
+    const y = (v) => m.t + (1 - (v - ys.lo) / (ys.hi - ys.lo)) * (H - m.t - m.b);
+    let s = gridAxis(ys.lo, ys.hi, ys.step, y, m, W, " %") + `<g class="axis">`;
+    for (let v = 0; v <= xmax + 1e-9; v += xmax / 4) s += `<text x="${x(v)}" y="${H - 8}" text-anchor="middle">${Math.round(v)} €</text>`;
+    s += `</g><line class="zero" x1="${m.l}" x2="${W - m.r}" y1="${y(0)}" y2="${y(0)}"/>`;
+    pl.forEach((p, i) => {
+      const cx = x(p.totals.max_drawdown), cy = y(p.totals.roi * 100);
+      s += `<circle class="mark ${anim("grow")}" style="--origin:center;--d:${i * 80}ms" data-i="${i}" cx="${cx}" cy="${cy}" r="7" fill="${p.color}" stroke="var(--sheet)" stroke-width="2"/>`;
+      s += `<text class="lbl" x="${cx + (cx > W - 90 ? -11 : 11)}" y="${cy + 4}" text-anchor="${cx > W - 90 ? "end" : "start"}">${esc(p.name.replace("Der ", ""))}</text>`;
+      s += `<circle class="hit" data-i="${i}" data-x="${cx}" data-y="${cy - 6}" cx="${cx}" cy="${cy}" r="16"/>`;
+    });
+    const { svg, tip } = svgIn(box, W, H, s);
+    bindMarkTips(svg, tip, W, H, (i) => {
+      const t = pl[i].totals;
+      return `<b>${esc(pl[i].name)}</b><br>Rendite ${pct(t.roi, true)}, Ergebnis ${eur(t.profit, true)}<br>größter Rückgang ${eur(-t.max_drawdown)}`;
+    });
+  }
+
   // ------------------------------------------------------------------ Start
   $("tableToggle").addEventListener("click", (e) => {
     const t = $("chartTable"), c = $("chart");
@@ -700,7 +851,7 @@
   let rt;
   window.addEventListener("resize", () => {
     clearTimeout(rt);
-    rt = setTimeout(() => { if (state) { renderChart(); renderDayChart(); renderClv(); } }, 150);
+    rt = setTimeout(() => { if (!state) return; if (view === "vergleich") { renderCompareChart(); renderRiskChart(); } else { renderChart(); renderDayChart(); renderClv(); } }, 150);
   });
   setInterval(() => document.querySelectorAll("[data-countdown]").forEach((n) => { n.textContent = countdownText(n.dataset.countdown); }), 1000);
   load();

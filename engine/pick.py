@@ -235,32 +235,59 @@ def pick(d: date, ledger):
         raw = {**raw, **fresh}
         outcomes, _ = evaluate_all(raw, d, adjustments)
 
-    chosen = select(outcomes, now)
-    allocate(chosen)
-    bets = []
-    for i, o in enumerate(chosen, 1):
-        cfg = C.SPORTS[o["sport"]]
-        e = espn.find_event(cfg.get("espn"), o["home"], o["away"], o["commence"])
-        notes = (adjustments.get(o["event_id"]) or {}).get("notes")
-        bet = {
-            "id": f"{d.isoformat()}-{i:02d}", "day": d.isoformat(), "placed_at": iso(now), "status": "open",
-            **{k: o[k] for k in ("event_id", "sport", "league", "group", "home", "away", "commence", "market", "point",
-                                 "key", "label", "odds", "book", "book_name", "median_odds", "tipico_odds", "pinnacle_odds",
-                                 "n_books", "fair_market", "model_p", "adj", "p", "ev", "kelly", "books", "kind", "stake")},
-            "potential_payout": round(o["stake"] * o["odds"], 2),
-            "reason": _reason(o, notes), "research": notes,
-            "espn": {"path": cfg.get("espn"), "id": e["id"]} if e else None,
-            "closing": None, "result": None, "payout": None, "profit": None, "clv": None, "analysis": None,
-        }
-        bets.append(bet)
-    near = sorted((o for o in outcomes if o["event_id"] not in {b["event_id"] for b in bets}),
-                  key=lambda o: -o["ev"])[:12]
+    from .strategies import ORDER, PLAYERS, STRATEGIES
+    all_bets, by_player = [], {}
+    for pid in ORDER:
+        try:
+            chosen = STRATEGIES[pid](outcomes, now, d.isoformat())
+        except Exception as ex:  # noqa: BLE001 — ein Spieler darf die anderen nicht blockieren
+            log("Strategie-Fehler", pid, ex)
+            chosen = []
+        bets = [_make_bet(o, d, now, pid, i, adjustments) for i, o in enumerate(chosen, 1)]
+        by_player[pid] = [b["id"] for b in bets]
+        all_bets += bets
+        log(f"pick {d} {PLAYERS[pid]['name']}: {len(bets)} Wetten, Einsatz {sum(b['stake'] for b in bets):.2f} €")
+    analyst_events = {b["event_id"] for b in all_bets if b["player"] == "analyst"}
+    near = sorted((o for o in outcomes if o["event_id"] not in analyst_events), key=lambda o: -o["ev"])[:12]
     write_json(dd / "picks.json", {
         "day": d.isoformat(), "placed_at": iso(now), "n_outcomes": len(outcomes),
         "n_value": sum(1 for o in outcomes if passes(o)), "adjustments_used": bool(adjustments),
-        "bets": [b["id"] for b in bets],
+        "bets": by_player.get("analyst", []), "by_player": by_player,
         "near_misses": [{k: o[k] for k in ("home", "away", "league", "label", "odds", "book_name", "p", "ev", "commence")} for o in near],
     })
-    ledger["bets"].extend(bets)
-    log(f"pick {d}: {len(bets)} Wetten, Einsatz {sum(b['stake'] for b in bets):.2f} €")
+    ledger["bets"].extend(all_bets)
     return True
+
+
+BET_KEYS = ("event_id", "sport", "league", "group", "home", "away", "commence", "market", "point", "key", "label", "odds",
+            "book", "book_name", "median_odds", "tipico_odds", "pinnacle_odds", "n_books", "fair_market", "model_p", "adj",
+            "p", "ev", "kelly", "books", "kind", "stake")
+
+
+def _make_bet(o, d, now, pid, i, adjustments):
+    bid = f"{d.isoformat()}-{i:02d}" if pid == "analyst" else f"{d.isoformat()}-{pid}-{i:02d}"
+    bet = {"id": bid, "player": pid, "day": d.isoformat(), "placed_at": iso(now), "status": "open",
+           **{k: o.get(k) for k in BET_KEYS},
+           "potential_payout": round(o["stake"] * o["odds"], 2),
+           "closing": None, "result": None, "payout": None, "profit": None, "clv": None, "analysis": None}
+    if o.get("market") == "combo":
+        legs = []
+        for l in o["legs"]:
+            cfg = C.SPORTS[l["sport"]]
+            e = espn.find_event(cfg.get("espn"), l["home"], l["away"], l["commence"])
+            legs.append({**l, "espn": {"path": cfg.get("espn"), "id": e["id"]} if e else None, "status": "open", "result": None})
+        bet.update(legs=legs, last_commence=o["last_commence"], espn=None, research=None,
+                   reason=f"{len(legs)} Value-Tipps kombiniert. Gesamtquote {str(o['odds']).replace('.', ',')}, "
+                          f"Trefferchance {str(round(o['p'] * 100, 1)).replace('.', ',')} %, Erwartungswert "
+                          + f"{o['ev'] * 100:+.1f}".replace(".", ",") + " %. Alle Spiele müssen gewinnen.")
+        return bet
+    cfg = C.SPORTS[o["sport"]]
+    e = espn.find_event(cfg.get("espn"), o["home"], o["away"], o["commence"])
+    notes = (adjustments.get(o["event_id"]) or {}).get("notes") if pid in ("analyst", "banker", "zocker") else None
+    reason = _reason(o, notes)
+    if pid == "stammtisch":
+        reason = f"Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote {str(o['odds']).replace('.', ',')} ({o['book_name']}) ohne Quotenvergleich. Mathematischer Erwartungswert " + f"{o['ev'] * 100:+.1f}".replace(".", ",") + " %."
+    elif pid == "affe":
+        reason = f"Zufällig gezogen. Quote {str(o['odds']).replace('.', ',')} ({o['book_name']}), Erwartungswert " + f"{o['ev'] * 100:+.1f}".replace(".", ",") + " %."
+    bet.update(reason=reason, research=notes, espn={"path": cfg.get("espn"), "id": e["id"]} if e else None)
+    return bet

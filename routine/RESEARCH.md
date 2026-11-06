@@ -25,7 +25,12 @@ Das Experiment läuft vom 2026-11-07 bis 2026-11-13 (Wett-Tage). Ist `TODAY` nac
 
 ## 1. Analyse der abgerechneten Wetten (zuerst, dauert nicht lange)
 
-Lies `data/ledger.json`. Für jede Wette mit `status` in won/lost/push/void, für die
+Es gibt sechs Spieler mit eigener Strategie (Feld `player` im Ledger, Beschreibung in
+`engine/strategies.py`): `analyst` (Hauptstrategie), `banker`, `zocker`, `kombi`,
+`stammtisch` und `affe` (die letzten beiden sind Kontrollgruppen). Einzelanalysen schreibst
+du **nur für Wetten des Analysten** (`player` fehlt oder ist `analyst`).
+
+Lies `data/ledger.json`. Für jede Analysten-Wette mit `status` in won/lost/push/void, für die
 noch **keine** Datei `data/analyses/<bet_id>.json` existiert:
 
 - Recherchiere kurz im Web, wie das Spiel gelaufen ist (Spielbericht, xG/Torschüsse,
@@ -45,7 +50,7 @@ Wenn **alle** Wetten von `YESTERDAY` abgerechnet sind und `data/analyses/day-$YE
 fehlt, schreibe eine Tagesauswertung:
 
 ```json
-{"text": "3–5 Sätze: Tagesbilanz, was funktioniert hat, was nicht.",
+{"text": "3–5 Sätze: Tagesbilanz des Analysten, was funktioniert hat, was nicht, und ein Satz zum Vergleich der sechs Spieler an diesem Tag (wer vorn lag und warum).",
  "lessons": "Konkrete Muster (z. B. 'Unentschieden-Wetten bei Abstiegskandidaten hatten negativen CLV').",
  "written_at": "ISO-Zeit"}
 ```
@@ -108,7 +113,7 @@ Schreibe `data/days/$TODAY/adjustments.json`:
 Wenn alle Wetten abgerechnet sind und `data/analyses/weekly.json` fehlt:
 
 ```json
-{"text": "Ehrliches Fazit der Woche in 5–8 Sätzen: Ergebnis, Können vs. Glück (CLV!), beste und schlechteste Entscheidungen.",
+{"text": "Ehrliches Fazit der Woche in 6–10 Sätzen: Ergebnis des Analysten, Können vs. Glück (CLV!), beste und schlechteste Entscheidungen, und der Vergleich aller sechs Spieler: welche Strategie war vorn, war das Können oder Varianz (Stichprobe!), was lernen wir daraus.",
  "lessons": ["3–6 konkrete Verbesserungen für Woche 2"],
  "written_at": "ISO-Zeit"}
 ```

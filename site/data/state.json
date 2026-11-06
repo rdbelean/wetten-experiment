@@ -6,26 +6,551 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-06T16:56:17Z",
- "totals": {
-  "staked": 0,
-  "staked_settled": 0,
-  "returned": 0,
-  "profit": 0,
-  "roi": null,
-  "open_stake": 0,
-  "open_potential": 0,
-  "won": 0,
-  "lost": 0,
-  "push": 0,
-  "hit_rate": null,
-  "avg_odds": null,
-  "avg_ev": null,
-  "expected_profit": 0,
-  "avg_clv": null,
-  "n_clv": 0,
-  "clv_positive": 0
+ "generated_at": "2026-11-06T17:31:05Z",
+ "players": {
+  "analyst": {
+   "name": "Der Analyst",
+   "risk": "mittel",
+   "color": "#2a78d6",
+   "tagline": "Nur Wetten mit mathematischem Vorteil, Einsatz nach Kelly.",
+   "desc": "Die Hauptstrategie des Experiments: faire Wahrscheinlichkeit aus Pinnacle, Börse und Marktschnitt, dazu Tor-Modell und News. Gesetzt wird nur bei mindestens +2 % Erwartungswert, der Einsatz richtet sich nach der Größe des Vorteils (Viertel-Kelly), höchstens 40 € pro Wette.",
+   "id": "analyst",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "banker": {
+   "name": "Der Banker",
+   "risk": "niedrig",
+   "color": "#eb6834",
+   "tagline": "Nur klare Favoriten, kleine Quoten, flache Einsätze.",
+   "desc": "Setzt nur auf Ausgänge mit mindestens 62 % Wahrscheinlichkeit bei Quoten von 1,25 bis 1,75, und nur, wenn die beste Quote mindestens fair ist. Bis zu 5 Wetten, das Budget wird gleichmäßig verteilt. Gewinnt oft, aber wenig.",
+   "id": "banker",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "zocker": {
+   "name": "Der Zocker",
+   "risk": "hoch",
+   "color": "#1baf7a",
+   "tagline": "Außenseiter mit Vorteil, große Quoten, mutige Einsätze.",
+   "desc": "Sucht Außenseiter mit Quoten von 3 bis 12, bei denen der Markt sie unterschätzt (mindestens +4 % Erwartungswert). Einsatz nach halbem Kelly, bis zu 60 € auf eine Wette. Verliert oft, aber ein Treffer bringt viel.",
+   "id": "zocker",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "kombi": {
+   "name": "Der Kombi-König",
+   "risk": "sehr hoch",
+   "color": "#eda100",
+   "tagline": "Zwei Kombiwetten pro Tag aus den besten Einzeltipps.",
+   "desc": "Baut aus den besten Value-Tipps des Tages zwei Kombiwetten (3 und 4 Spiele, je 50 €). Die Quoten multiplizieren sich, damit auch der kleine Vorteil jedes Tipps. Eine einzige falsche Partie und die ganze Kombi ist verloren.",
+   "id": "kombi",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "stammtisch": {
+   "name": "Der Stammtisch",
+   "risk": "mittel",
+   "color": "#e87ba4",
+   "tagline": "Kontrollgruppe: Bauchgefühl, Favorit der großen Spiele, Tipico-Quote.",
+   "desc": "So wettet ein typischer Hobby-Tipper: auf den Favoriten der 5 bekanntesten Spiele des Tages, immer zur Tipico-Quote, ohne Quotenvergleich und ohne Mathe, je 20 €. Zeigt, was die Buchmacher-Marge kostet.",
+   "id": "stammtisch",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "affe": {
+   "name": "Der Affe",
+   "risk": "Zufall",
+   "color": "#008300",
+   "tagline": "Kontrollgruppe: 4 zufällige Tipps zur Tipico-Quote.",
+   "desc": "Wählt per Zufall 4 Siegwetten aus dem Tagesangebot (Quote bis 5), je 25 € zur Tipico-Quote. Wenn eine Strategie nicht besser ist als der Affe, taugt sie nichts.",
+   "id": "affe",
+   "totals": {
+    "staked": 0,
+    "staked_settled": 0,
+    "returned": 0,
+    "profit": 0,
+    "roi": null,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 0,
+    "lost": 0,
+    "push": 0,
+    "n_bets": 0,
+    "hit_rate": null,
+    "avg_odds": null,
+    "max_odds_won": null,
+    "avg_ev": null,
+    "expected_profit": 0,
+    "expected_settled": 0,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
+    "max_drawdown": 0.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": 0.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  }
  },
+ "order": [
+  "analyst",
+  "banker",
+  "zocker",
+  "kombi",
+  "stammtisch",
+  "affe"
+ ],
  "days": [
   {
    "date": "2026-11-07",
@@ -33,12 +558,7 @@
     "2026-11-07T11:00:00Z",
     "2026-11-08T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -56,12 +576,7 @@
     "2026-11-08T11:00:00Z",
     "2026-11-09T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -79,12 +594,7 @@
     "2026-11-09T11:00:00Z",
     "2026-11-10T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -102,12 +612,7 @@
     "2026-11-10T11:00:00Z",
     "2026-11-11T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -125,12 +630,7 @@
     "2026-11-11T11:00:00Z",
     "2026-11-12T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -148,12 +648,7 @@
     "2026-11-12T11:00:00Z",
     "2026-11-13T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,
@@ -171,12 +666,7 @@
     "2026-11-13T11:00:00Z",
     "2026-11-14T11:00:00Z"
    ],
-   "status": "geplant",
-   "staked": 0,
-   "profit": 0,
-   "cum_profit": 0.0,
-   "settled": 0,
-   "n_bets": 0,
+   "placed": false,
    "n_candidates": null,
    "n_outcomes": null,
    "n_value": null,

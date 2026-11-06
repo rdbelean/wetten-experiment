@@ -17,8 +17,9 @@ def capture_closing(ledger):
     """Kurz vor Anpfiff Quoten erneut holen -> Closing Line Value messen."""
     now = now_utc()
     due = defaultdict(list)
+    low = (odds_api.credits_remaining() or 999) < 120
     for b in ledger["bets"]:
-        if b["status"] != "open" or b.get("closing"):
+        if b["status"] != "open" or b.get("closing") or b.get("market") == "combo":
             continue
         t = parse_ts(b["commence"])
         if now < t - timedelta(minutes=50):
@@ -28,6 +29,8 @@ def capture_closing(ledger):
             continue
         due[b["sport"]].append(b)
     changed = False
+    if low:  # Credits knapp: nur noch für den Analysten Schlusskurse holen
+        due = {sk: bets for sk, bets in due.items() if any(b.get("player", "analyst") == "analyst" for b in bets)}
     for sk, bets in due.items():
         markets = ",".join(sorted({b["market"] for b in bets}))
         data = odds_api.odds(sk, markets, event_ids=sorted({b["event_id"] for b in bets}))
@@ -78,12 +81,58 @@ def _close(b, status, hs=None, as_=None, source=None):
     log(f"Abgerechnet {b['id']} {b['label']}: {status} {hs}:{as_} → {b['profit']:+.2f} €")
 
 
+def _settle_combo(b, now):
+    """Kombi: jedes Bein einzeln über ESPN abrechnen; verloren, sobald ein Bein verliert."""
+    changed = False
+    for leg in b["legs"]:
+        if leg["status"] != "open" or not leg.get("espn"):
+            continue
+        t = parse_ts(leg["commence"])
+        if now < t + timedelta(hours=C.SPORTS[leg["sport"]]["dur"]):
+            continue
+        e = espn.get_event(leg["espn"]["path"], leg["espn"]["id"], leg["commence"])
+        if e and (e["status"] in FINAL or e["completed"]) and e["home_score"] is not None:
+            leg["status"] = grade(leg, e["home_score"], e["away_score"])
+            leg["result"] = {"home": e["home_score"], "away": e["away_score"]}
+            changed = True
+        elif e and e["status"] in VOID:
+            leg["status"] = "void"
+            changed = True
+    # Beine ohne ESPN-Zuordnung: nach 72 h als Push werten (Quote 1)
+    for leg in b["legs"]:
+        if leg["status"] == "open" and now > parse_ts(leg["commence"]) + timedelta(hours=72):
+            leg["status"] = "void"
+            changed = True
+    sts = [l["status"] for l in b["legs"]]
+    if "lost" in sts:
+        b["status"] = "lost"; b["payout"] = 0.0
+    elif all(s_ != "open" for s_ in sts):
+        odds = 1.0
+        for l in b["legs"]:
+            if l["status"] == "won":
+                odds *= l["odds"]
+        b["status"] = "won" if "won" in sts else "void"
+        b["payout"] = round(b["stake"] * odds, 2)
+    else:
+        return changed
+    b["profit"] = round(b["payout"] - b["stake"], 2)
+    b["result"] = {"legs": sts, "t": iso(now_utc())}
+    won = sts.count("won")
+    b["auto_analysis"] = (f"{won} von {len(sts)} Tipps gingen auf. "
+                          + ("Kombi gewonnen." if b["status"] == "won" else "Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."))
+    log(f"Abgerechnet {b['id']} Kombi: {b['status']} → {b['profit']:+.2f} €")
+    return True
+
+
 def settle(ledger):
     now = now_utc()
     changed = False
     fallback = defaultdict(list)
     for b in ledger["bets"]:
         if b["status"] != "open":
+            continue
+        if b.get("market") == "combo":
+            changed = _settle_combo(b, now) or changed
             continue
         t = parse_ts(b["commence"])
         dur = C.SPORTS[b["sport"]]["dur"]
