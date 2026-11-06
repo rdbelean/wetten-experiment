@@ -1,0 +1,525 @@
+{
+ "experiment": {
+  "name": "Projekt Value — 7 Tage, 700 € Spielgeld",
+  "start": "2026-11-07",
+  "days": 7,
+  "daily_budget": 100.0,
+  "total_budget": 700.0
+ },
+ "generated_at": "2026-11-06T16:56:17Z",
+ "totals": {
+  "staked": 0,
+  "staked_settled": 0,
+  "returned": 0,
+  "profit": 0,
+  "roi": null,
+  "open_stake": 0,
+  "open_potential": 0,
+  "won": 0,
+  "lost": 0,
+  "push": 0,
+  "hit_rate": null,
+  "avg_odds": null,
+  "avg_ev": null,
+  "expected_profit": 0,
+  "avg_clv": null,
+  "n_clv": 0,
+  "clv_positive": 0
+ },
+ "days": [
+  {
+   "date": "2026-11-07",
+   "window": [
+    "2026-11-07T11:00:00Z",
+    "2026-11-08T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-08",
+   "window": [
+    "2026-11-08T11:00:00Z",
+    "2026-11-09T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-09",
+   "window": [
+    "2026-11-09T11:00:00Z",
+    "2026-11-10T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-10",
+   "window": [
+    "2026-11-10T11:00:00Z",
+    "2026-11-11T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-11",
+   "window": [
+    "2026-11-11T11:00:00Z",
+    "2026-11-12T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-12",
+   "window": [
+    "2026-11-12T11:00:00Z",
+    "2026-11-13T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  },
+  {
+   "date": "2026-11-13",
+   "window": [
+    "2026-11-13T11:00:00Z",
+    "2026-11-14T11:00:00Z"
+   ],
+   "status": "geplant",
+   "staked": 0,
+   "profit": 0,
+   "cum_profit": 0.0,
+   "settled": 0,
+   "n_bets": 0,
+   "n_candidates": null,
+   "n_outcomes": null,
+   "n_value": null,
+   "research": {
+    "used": false,
+    "summary": null,
+    "n_events": 0
+   },
+   "near_misses": [],
+   "summary": null
+  }
+ ],
+ "bets": [],
+ "weekly": null,
+ "backtest": {
+  "model": [
+   {
+    "league": "D1",
+    "season": "2526",
+    "matches": 104,
+    "logloss": {
+     "0.0": 0.91411,
+     "0.05": 0.91586,
+     "0.1": 0.9177,
+     "0.15": 0.91962,
+     "0.2": 0.92162,
+     "0.3": 0.92589,
+     "0.5": 0.93544,
+     "1.0": 0.96616
+    },
+    "value_sim": {
+     "0.2": {
+      "bets": 10,
+      "roi": -0.378
+     },
+     "0.3": {
+      "bets": 23,
+      "roi": -0.3939
+     },
+     "0.5": {
+      "bets": 43,
+      "roi": -0.5607
+     },
+     "1.0": {
+      "bets": 80,
+      "roi": -0.4788
+     },
+     "0.05": {
+      "bets": 2,
+      "roi": -0.37
+     },
+     "0.1": {
+      "bets": 2,
+      "roi": -0.37
+     },
+     "0.15": {
+      "bets": 4,
+      "roi": -0.335
+     }
+    }
+   },
+   {
+    "league": "E0",
+    "season": "2526",
+    "matches": 170,
+    "logloss": {
+     "0.0": 0.99549,
+     "0.05": 0.99478,
+     "0.1": 0.99421,
+     "0.15": 0.99377,
+     "0.2": 0.99346,
+     "0.3": 0.99321,
+     "0.5": 0.99417,
+     "1.0": 1.00548
+    },
+    "value_sim": {
+     "1.0": {
+      "bets": 173,
+      "roi": -0.0087
+     },
+     "0.3": {
+      "bets": 62,
+      "roi": 0.0758
+     },
+     "0.5": {
+      "bets": 115,
+      "roi": -0.0964
+     },
+     "0.2": {
+      "bets": 29,
+      "roi": -0.1614
+     },
+     "0.15": {
+      "bets": 13,
+      "roi": -0.3823
+     },
+     "0.05": {
+      "bets": 4,
+      "roi": -1.0
+     },
+     "0.1": {
+      "bets": 6,
+      "roi": -1.0
+     }
+    }
+   },
+   {
+    "league": "D2",
+    "season": "2526",
+    "matches": 45,
+    "logloss": {
+     "0.0": 0.98146,
+     "0.05": 0.9818,
+     "0.1": 0.98233,
+     "0.15": 0.98304,
+     "0.2": 0.98392,
+     "0.3": 0.98626,
+     "0.5": 0.99333,
+     "1.0": 1.0287
+    },
+    "value_sim": {
+     "0.3": {
+      "bets": 16,
+      "roi": -0.2731
+     },
+     "0.5": {
+      "bets": 26,
+      "roi": -0.0038
+     },
+     "1.0": {
+      "bets": 42,
+      "roi": 0.0631
+     },
+     "0.05": {
+      "bets": 5,
+      "roi": -0.582
+     },
+     "0.1": {
+      "bets": 6,
+      "roi": -0.6517
+     },
+     "0.15": {
+      "bets": 8,
+      "roi": -0.43
+     },
+     "0.2": {
+      "bets": 8,
+      "roi": -0.4
+     }
+    }
+   },
+   {
+    "league": "E1",
+    "season": "2526",
+    "matches": 223,
+    "logloss": {
+     "0.0": 1.04717,
+     "0.05": 1.0473,
+     "0.1": 1.04751,
+     "0.15": 1.04782,
+     "0.2": 1.04822,
+     "0.3": 1.0493,
+     "0.5": 1.05255,
+     "1.0": 1.06743
+    },
+    "value_sim": {
+     "0.15": {
+      "bets": 18,
+      "roi": -0.1722
+     },
+     "0.2": {
+      "bets": 29,
+      "roi": -0.0652
+     },
+     "0.3": {
+      "bets": 56,
+      "roi": 0.0371
+     },
+     "0.5": {
+      "bets": 111,
+      "roi": -0.0287
+     },
+     "1.0": {
+      "bets": 215,
+      "roi": 0.009
+     },
+     "0.05": {
+      "bets": 16,
+      "roi": 0.2556
+     },
+     "0.1": {
+      "bets": 17,
+      "roi": 0.1818
+     }
+    }
+   },
+   {
+    "league": "SP1",
+    "season": "2526",
+    "matches": 148,
+    "logloss": {
+     "0.0": 0.936,
+     "0.05": 0.93617,
+     "0.1": 0.93648,
+     "0.15": 0.93694,
+     "0.2": 0.93754,
+     "0.3": 0.93913,
+     "0.5": 0.94387,
+     "1.0": 0.96502
+    },
+    "value_sim": {
+     "0.5": {
+      "bets": 96,
+      "roi": -0.1027
+     },
+     "1.0": {
+      "bets": 152,
+      "roi": -0.1682
+     },
+     "0.15": {
+      "bets": 16,
+      "roi": -0.48
+     },
+     "0.2": {
+      "bets": 24,
+      "roi": -0.2413
+     },
+     "0.3": {
+      "bets": 49,
+      "roi": -0.2961
+     },
+     "0.05": {
+      "bets": 5,
+      "roi": -0.73
+     },
+     "0.1": {
+      "bets": 4,
+      "roi": -0.6625
+     }
+    }
+   },
+   {
+    "league": "I1",
+    "season": "2526",
+    "matches": 150,
+    "logloss": {
+     "0.0": 0.99495,
+     "0.05": 0.99546,
+     "0.1": 0.99612,
+     "0.15": 0.99693,
+     "0.2": 0.99789,
+     "0.3": 1.00023,
+     "0.5": 1.00659,
+     "1.0": 1.03238
+    },
+    "value_sim": {
+     "0.3": {
+      "bets": 60,
+      "roi": -0.1858
+     },
+     "0.5": {
+      "bets": 107,
+      "roi": -0.3101
+     },
+     "1.0": {
+      "bets": 156,
+      "roi": -0.1998
+     },
+     "0.1": {
+      "bets": 5,
+      "roi": 0.678
+     },
+     "0.15": {
+      "bets": 8,
+      "roi": 0.0488
+     },
+     "0.2": {
+      "bets": 19,
+      "roi": -0.4247
+     },
+     "0.05": {
+      "bets": 1,
+      "roi": -1.0
+     }
+    }
+   }
+  ],
+  "sharp_vs_soft": {
+   "season": "2425",
+   "leagues": 10,
+   "by_threshold": {
+    "0.02": {
+     "bets": 550,
+     "roi": 0.0573,
+     "clv": 0.026
+    },
+    "0.04": {
+     "bets": 136,
+     "roi": 0.0141,
+     "clv": 0.0458
+    }
+   }
+  }
+ },
+ "rules": {
+  "min_ev": 0.02,
+  "coinflip_band": [
+   0.4,
+   0.6
+  ],
+  "coinflip_min_ev": 0.045,
+  "min_odds": 1.2,
+  "max_odds": 6.0,
+  "max_stake": 40.0,
+  "min_bets": 3,
+  "max_bets": 8,
+  "kelly_fraction": 0.25,
+  "model_weight": {
+   "1": 0.05,
+   "2": 0.08
+  },
+  "adj_cap": 0.05,
+  "sports": {
+   "soccer_germany_bundesliga": "Bundesliga",
+   "soccer_epl": "Premier League",
+   "soccer_germany_bundesliga2": "2. Bundesliga",
+   "soccer_germany_liga3": "3. Liga",
+   "soccer_efl_champ": "Championship",
+   "soccer_england_league1": "League One",
+   "soccer_england_league2": "League Two",
+   "soccer_spain_la_liga": "La Liga",
+   "soccer_italy_serie_a": "Serie A",
+   "soccer_france_ligue_one": "Ligue 1",
+   "soccer_netherlands_eredivisie": "Eredivisie",
+   "soccer_uefa_nations_league": "Nations League",
+   "basketball_nba": "NBA",
+   "basketball_euroleague": "EuroLeague",
+   "icehockey_nhl": "NHL",
+   "americanfootball_nfl": "NFL"
+  }
+ },
+ "system": {
+  "credits_remaining": 448,
+  "last_actions": []
+ }
+}

@@ -1,0 +1,261 @@
+{
+ "credits_remaining": 448,
+ "credits_used": 52,
+ "api_calls": [
+  {
+   "t": "2026-11-06T16:48:49Z",
+   "path": "/sports/soccer_germany_bundesliga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:49Z",
+   "path": "/sports/soccer_germany_bundesliga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:50Z",
+   "path": "/sports/soccer_epl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:50Z",
+   "path": "/sports/soccer_epl/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:50Z",
+   "path": "/sports/soccer_germany_bundesliga2/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:50Z",
+   "path": "/sports/soccer_germany_bundesliga2/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:51Z",
+   "path": "/sports/soccer_germany_liga3/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:51Z",
+   "path": "/sports/soccer_germany_liga3/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:51Z",
+   "path": "/sports/soccer_efl_champ/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:52Z",
+   "path": "/sports/soccer_efl_champ/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:52Z",
+   "path": "/sports/soccer_england_league1/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:52Z",
+   "path": "/sports/soccer_england_league2/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:52Z",
+   "path": "/sports/soccer_spain_la_liga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:53Z",
+   "path": "/sports/soccer_spain_la_liga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:53Z",
+   "path": "/sports/soccer_italy_serie_a/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:53Z",
+   "path": "/sports/soccer_italy_serie_a/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:54Z",
+   "path": "/sports/soccer_france_ligue_one/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:54Z",
+   "path": "/sports/soccer_france_ligue_one/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:54Z",
+   "path": "/sports/soccer_netherlands_eredivisie/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:54Z",
+   "path": "/sports/soccer_netherlands_eredivisie/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:55Z",
+   "path": "/sports/soccer_uefa_nations_league/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:55Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:55Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-06T16:48:56Z",
+   "path": "/sports/basketball_euroleague/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:56Z",
+   "path": "/sports/basketball_euroleague/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:56Z",
+   "path": "/sports/icehockey_nhl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:48:56Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:48:57Z",
+   "path": "/sports/americanfootball_nfl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:03Z",
+   "path": "/sports/soccer_germany_bundesliga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:04Z",
+   "path": "/sports/soccer_germany_bundesliga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:04Z",
+   "path": "/sports/soccer_epl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:04Z",
+   "path": "/sports/soccer_epl/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:04Z",
+   "path": "/sports/soccer_germany_bundesliga2/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:05Z",
+   "path": "/sports/soccer_germany_bundesliga2/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:05Z",
+   "path": "/sports/soccer_efl_champ/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:05Z",
+   "path": "/sports/soccer_efl_champ/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:05Z",
+   "path": "/sports/soccer_spain_la_liga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:06Z",
+   "path": "/sports/soccer_spain_la_liga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:06Z",
+   "path": "/sports/soccer_italy_serie_a/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:06Z",
+   "path": "/sports/soccer_italy_serie_a/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:06Z",
+   "path": "/sports/soccer_france_ligue_one/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:07Z",
+   "path": "/sports/soccer_france_ligue_one/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:07Z",
+   "path": "/sports/soccer_netherlands_eredivisie/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:07Z",
+   "path": "/sports/soccer_netherlands_eredivisie/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:07Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:08Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-06T16:49:08Z",
+   "path": "/sports/basketball_euroleague/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:08Z",
+   "path": "/sports/basketball_euroleague/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:49:09Z",
+   "path": "/sports/icehockey_nhl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-06T16:49:09Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-06T16:50:02Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 2
+  }
+ ]
+}

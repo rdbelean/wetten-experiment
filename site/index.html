@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projekt Value – Wett-Experiment mit Spielgeld</title>
+<meta name="description" content="Live-Experiment: 7 Tage, 100 € Spielgeld pro Tag, Wetten nach Value-Modell. Alles transparent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233B5BDB'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>€</text></svg>">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">€</span> Projekt Value</div>
+    <div class="top-status" id="topStatus">Lade Daten …</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" aria-labelledby="balanceTitle">
+    <div class="hero-figure">
+      <h1 id="balanceTitle" class="sr-only">Kontostand des Experiments</h1>
+      <p class="hero-kicker" id="heroKicker">Gewinn nach abgerechneten Wetten</p>
+      <p class="balance" id="balance">–</p>
+      <p class="hero-line" id="heroLine"></p>
+      <dl class="facts" id="facts"></dl>
+    </div>
+    <figure class="hero-chart">
+      <figcaption>
+        <span class="chart-title">Echter Verlauf gegen den mathematisch erwarteten</span>
+        <span class="legend"><span class="sw sw-real"></span>Echt <span class="sw sw-exp"></span>Erwartet</span>
+        <button class="linkish" id="tableToggle" aria-expanded="false">Als Tabelle</button>
+      </figcaption>
+      <div class="chart" id="chart" role="img" aria-label="Kumulierter Gewinn"></div>
+      <div class="chart-table" id="chartTable" hidden></div>
+    </figure>
+  </section>
+
+  <section id="liveSection" class="live" hidden aria-labelledby="liveTitle">
+    <h2 id="liveTitle">Läuft gerade</h2>
+    <div class="live-strip" id="liveStrip"></div>
+  </section>
+
+  <section class="week" aria-labelledby="weekTitle">
+    <h2 id="weekTitle">Die Woche</h2>
+    <div class="days" id="days" role="tablist"></div>
+  </section>
+
+  <section class="slips" aria-labelledby="dayTitle">
+    <div class="slips-head">
+      <h2 id="dayTitle">Wetten</h2>
+      <p class="day-meta" id="dayMeta"></p>
+    </div>
+    <div id="slips"></div>
+    <details class="near" id="nearWrap" hidden>
+      <summary>Was das Modell an diesem Tag noch geprüft und verworfen hat</summary>
+      <div id="near"></div>
+    </details>
+  </section>
+
+  <section class="skill" aria-labelledby="skillTitle">
+    <h2 id="skillTitle">Können oder Glück?</h2>
+    <div class="skill-grid">
+      <div class="skill-text">
+        <p>Eine Woche ist zu kurz, um am Kontostand allein zu erkennen, ob das System etwas taugt. Ein paar Tore mehr oder weniger drehen das Ergebnis. Deshalb messen wir zusätzlich den <strong>Closing Line Value</strong>: Kurz vor Anpfiff holen wir die Quoten erneut. War unsere Quote besser als der faire Schlusskurs, hatten wir zum Zeitpunkt der Wette einen echten Vorteil – egal, wie das Spiel ausgeht.</p>
+        <p>Wer dauerhaft besser als die Schlussquote wettet, gewinnt langfristig. Wer das nicht schafft, verliert langfristig – auch nach einer Glückswoche.</p>
+      </div>
+      <dl class="skill-stats" id="skillStats"></dl>
+    </div>
+  </section>
+
+  <section class="method" aria-labelledby="methodTitle">
+    <h2 id="methodTitle">So entscheidet das System</h2>
+    <ol class="steps">
+      <li><h3>Quoten von rund 25 Anbietern</h3><p>Jeden Morgen um 8:30 Uhr holt das System die Quoten für alle Spiele des Tages: Bundesliga, Premier League, weitere europäische Ligen, Nations League, NBA, NHL, NFL und EuroLeague. Dabei sind unter anderem Tipico, Pinnacle, Betfair, Unibet, William Hill und 1xBet.</p></li>
+      <li><h3>Faire Wahrscheinlichkeit</h3><p>Pinnacle gilt als genauester Buchmacher der Welt. Wir rechnen seine Marge heraus (Power-Methode) und mischen den Durchschnitt aller Anbieter sowie die Börsenkurse von Betfair dazu. Das ergibt den fairen Preis eines Spiels.</p></li>
+      <li><h3>Tor-Modell mit xG</h3><p>Für Club-Fußball schätzt ein Dixon-Coles-Modell aus Toren und Expected Goals die Stärke jedes Teams. Im Backtest war es der Pinnacle-Quote nicht überlegen. Es zählt deshalb nur mit <span id="mw">5–8 %</span> als Tie-Breaker.</p></li>
+      <li><h3>News-Recherche durch Claude</h3><p>Vor jedem Spieltag recherchiert Claude Verletzungen, Sperren, Aufstellungen und Rotation. Nur wenn eine Nachricht offenbar noch nicht in den Quoten steckt, darf sie die Wahrscheinlichkeit um höchstens <span id="adjcap">5</span> Prozentpunkte verschieben. Claude kann eine Wette auch blockieren.</p></li>
+      <li><h3>Nur Wetten mit Vorteil</h3><p>Gewettet wird, wenn die beste Quote am Markt über dem fairen Preis liegt: mindestens <span id="minev">+2 %</span> Erwartungswert, bei knappen Spielen (40–60 %) mindestens +4,5 %. Angebliche Vorteile über 15 % gelten als Datenfehler.</p></li>
+      <li><h3>Einsatz nach Kelly</h3><p>Pro Tag werden genau 100 € gesetzt. Wo der Vorteil am größten ist, kommt mehr Geld hin (Viertel-Kelly). Höchstens 40 € gehen auf eine Wette, und wenn möglich gibt es mindestens 3 Wetten. Gewinne werden nicht wieder eingesetzt.</p></li>
+    </ol>
+    <div class="evidence" id="evidence"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <p><strong>Nur Spielgeld.</strong> Dieses Experiment platziert keine echten Wetten und ist keine Wettempfehlung. Sportwetten bleiben Glücksspiel. Hilfe bei Spielsucht: <a href="https://www.check-dein-spiel.de" rel="noopener">check-dein-spiel.de</a> oder 0800 1 37 27 00.</p>
+    <p class="sys" id="sys"></p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>
