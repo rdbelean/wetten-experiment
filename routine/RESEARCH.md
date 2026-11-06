@@ -16,6 +16,10 @@ TODAY=$(TZ=Europe/Berlin date +%F)
 YESTERDAY=$(TZ=Europe/Berlin date -d yesterday +%F)
 ```
 
+**Ist `TODAY` vor dem 2026-11-07 (Testlauf):** Schreibe nur `data/analyses/healthcheck.json` mit
+`{"ok": true, "written_at": "<ISO-Zeit>", "note": "Routine kann Repo lesen und pushen"}`,
+committe, pushe (siehe Schritt 4) und beende dich.
+
 Das Experiment läuft vom 2026-11-07 bis 2026-11-13 (Wett-Tage). Ist `TODAY` nach
 2026-11-14, mach nur noch Schritt 3, falls `data/analyses/weekly.json` fehlt, und beende dich.
 
