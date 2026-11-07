@@ -1,0 +1,114 @@
+{
+  "written_at": "2026-11-07T09:17:32+01:00",
+  "summary": "Wichtigste News: PSG rotiert vor der Länderspielpause massiv (Hakimi geschont, Dembélé, Kvaratskhelia, Mendes, Marquinhos und Akliouche fehlen), daher −0,02 auf den PSG-Sieg. Bei Leeds sind Calvert-Lewin, Okafor und Stach fraglich (−0,015 auf den Leeds-Sieg). Kleine Korrekturen gibt es auch für Paderborn (Götze fehlt bei Frankfurt) und Telstar (fünf Fortuna-Ausfälle). Bayerns Ausfälle (Kompany, Díaz, Musiala, Gnabry) und Morants Ausfall bei Portland sind öffentlich und eingepreist, daher keine Korrektur.",
+  "events": {
+    "08d47dd5e50e83839e395e49870d6a0d": {
+      "confidence": "mittel",
+      "notes": "Portland ohne Ja Morant (Oberschenkel, seit Freitag offiziell ~4 Wochen raus), Sharpe und Krejci. Bei den Spurs fehlen Tobias Harris und Quaintance. Morants Ausfall ist offiziell bekannt und vermutlich schon eingepreist. Der hohe EV kommt von einer Ausreißer-Quote bei Everygame (Tipico 1.47), daher keine Korrektur.",
+      "veto": false
+    },
+    "463c2870517b0ad28afcbd8775287064": {
+      "confidence": "niedrig",
+      "notes": "Cardiff zu Hause in 7 Spielen ungeschlagen, Osho ist nach Sperre zurück, Bielik fraglich. Burnley steht unter neuem Trainer Celestini im Abstiegskampf, Broja fällt lange aus, Amdouni ist fraglich. Keine frische, nicht eingepreiste News.",
+      "veto": false
+    },
+    "33c5cad848eb423e163a9bf5631ccefe": {
+      "h2h": {
+        "home": -0.01,
+        "away": 0.01
+      },
+      "confidence": "niedrig",
+      "notes": "Fortuna fehlen laut Vereinsumfeld Guth, Michut, Romeny, Sinkgraven und Zeefuik (Angaben zu Guth und Zeefuik widersprüchlich). Telstar bis auf Alders (fraglich) komplett. Deshalb eine leichte Korrektur Richtung Telstar.",
+      "veto": false
+    },
+    "262c2c99c38456b8a70cb9daa32f2f6d": {
+      "confidence": "niedrig",
+      "notes": "Espanyol-Trainer Sarabia ist gesperrt, Hinojo ebenfalls gesperrt, Kike García und Jofre Carreras verletzt. Depor hat zwei Siege in Folge, Aubameyang ist wieder im Kader. Die Ausfälle sind seit der Pressekonferenz bekannt, daher keine Korrektur.",
+      "veto": false
+    },
+    "5c87852253fd11eea5d34ad723356607": {
+      "h2h": {
+        "home": -0.015,
+        "draw": 0.005,
+        "away": 0.01
+      },
+      "confidence": "niedrig",
+      "notes": "Bei Leeds sind Okafor und Stach (gebrochener Zeh) große Fragezeichen, Top-Scorer Calvert-Lewin fehlte mit Fußproblemen im Training. Rodon ist zurück. Tottenham fehlen u. a. Simons, Odobert, Bergvall und Mudryk. Die Aufstellung kommt erst nach 11 Uhr, daher eine leichte Korrektur gegen Leeds.",
+      "veto": false
+    },
+    "4ca4c7a2a1c15e9121f9a7eaa7f42ddb": {
+      "h2h": {
+        "home": 0.01,
+        "away": -0.01
+      },
+      "confidence": "niedrig",
+      "notes": "Frankfurt ohne Götze (Ohrentzündung, Antibiotika), Koch (Knie) trainierte nur teilweise. Paderborn fehlen Hoffmeier und Gayret. Leichte Korrektur Richtung Paderborn.",
+      "veto": false
+    },
+    "59c5f635cfe11613c07e9a5520ced5c1": {
+      "confidence": "niedrig",
+      "notes": "Forest ohne Dominguez und Savona, Igor Jesus ist zurück im Training. City (Maresca) ohne Semenyo, O'Reilly fraglich, zuletzt zwei Liga-Niederlagen. Nichts Uneingepreistes, daher keine Korrektur.",
+      "veto": false
+    },
+    "f7b240389fa5ec055c58a48ab153dcdd": {
+      "h2h": {
+        "home": -0.02,
+        "draw": 0.012,
+        "away": 0.008
+      },
+      "confidence": "mittel",
+      "notes": "PSG mit massiver Rotation vor der Länderspielpause: Hakimi bewusst geschont, dazu fehlen Dembélé, Kvaratskhelia, Mendes, Marquinhos und Akliouche. Die erwartete Elf ist weitgehend B-Elf. Bei Quote 1.18 ist kaum Puffer, daher eine Korrektur gegen PSG.",
+      "veto": false
+    },
+    "fe97f5adf397dd6b0a8a9e0a5272f307": {
+      "confidence": "mittel",
+      "notes": "Bayern ohne Trainer Kompany (Hirnhautreizung, Danks coacht) und ohne Díaz, Gnabry, Musiala und Saibari. Mainz zuletzt mit 1:4 in Elversberg. Die Ausfälle sind seit Donnerstag öffentlich und eingepreist, das Modell liegt schon unter dem Markt. Keine Korrektur.",
+      "veto": false
+    },
+    "cdb5f9dd39e79db69659c76cd96d0bbe": {
+      "confidence": "niedrig",
+      "notes": "Augsburg fehlen drei Innenverteidiger (Bah gesperrt, Banks und Brackelmann verletzt), dazu Mounié. Bei Leipzig fehlen Guiu und Ouédraogo, Nusa ist fraglich. Das stützt eher torreiche Szenarien, ist aber öffentlich bekannt. Keine Korrektur.",
+      "veto": false
+    },
+    "3903e98a54db0f2cc23095407fe9dad8": {
+      "confidence": "niedrig",
+      "notes": "Newcastle ohne Joelinton, Ramsey (gesperrt), Livramento und Jaouen, Miley und Fernandez-Pardo fraglich. Bei Fulham fehlt nur Cairney. Bekannt und eingepreist, keine Korrektur.",
+      "veto": false
+    },
+    "4330962b4e3ef6768d90008d6befb10d": {
+      "confidence": "niedrig",
+      "notes": "Preston ohne Stürmer Johnny Kenny (Oberschenkel) und den gesperrten Leroy. Southampton seit sechs Spielen ungeschlagen. Keine Korrektur.",
+      "veto": false
+    },
+    "71ca5141a1c532e390c6fa14e080d8bd": {
+      "confidence": "niedrig",
+      "notes": "Osasuna ohne Herrando, Aimar und Del Castillo. Zum Athletic-Kader nichts Verlässliches gefunden. Keine Korrektur.",
+      "veto": false
+    },
+    "e1b2a10bfd51e1716202de92f585f502": {
+      "confidence": "niedrig",
+      "notes": "Sheffield United mit Rückkehrer Kalvin Phillips, Rothwell fällt nach Leisten-OP aus. Charlton hat viermal in Folge verloren. Keine Korrektur.",
+      "veto": false
+    },
+    "52b256088d29b4abb82e0c63ea9852fe": {
+      "confidence": "niedrig",
+      "notes": "Cagliari ohne Mina, Obert (gesperrt), Idrissi, Felici, Fadera und Nzola. Frosinone ohne Raimondo und Grillitsch. Die Cagliari-Ausfälle passen zur Modell-Tendenz, sind aber bekannt. Keine Korrektur.",
+      "veto": false
+    },
+    "a30b201e4df636949371d73491c620b5": {
+      "confidence": "niedrig",
+      "notes": "Keine verlässlichen Personalnews gefunden. Keine Korrektur.",
+      "veto": false
+    },
+    "6faeaee3bdf2a167eb67f93c44d3ef37": {
+      "confidence": "niedrig",
+      "notes": "OKC spielt Back-to-back (Freitag NBA-Cup gegen Memphis) und hat einen dünnen Kader, SGA trägt die Offensive. Keine belastbare Info zu Load Management, keine Korrektur.",
+      "veto": false
+    },
+    "af8d920f175d73f12933c64ae296573f": {
+      "confidence": "niedrig",
+      "notes": "Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
+      "veto": false
+    }
+  }
+}
