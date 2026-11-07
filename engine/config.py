@@ -40,6 +40,7 @@ OUTLIER_RATIO = 1.12          # beste Quote > 12 % über Median -> vermutlich ve
 MIN_BOOKS = 4                 # mind. so viele Buchmacher für einen Markt
 FILLER_MIN_EV = -0.035        # Füllwetten (falls zu wenig Value) dürfen max. so schlecht sein
 ADJ_CAP = 0.05                # Claude-News-Korrektur max. ±5 Prozentpunkte
+CLOSING_WINDOW_MIN = 15       # Schlussquote frühestens 15 min vor Anpfiff holen (Takt: 5 min)
 START_BUFFER_MIN = 10         # keine Wetten auf Spiele, die in <10 min starten
 
 # Gewichte für die faire Wahrscheinlichkeit aus dem Markt

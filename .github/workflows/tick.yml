@@ -1,10 +1,7 @@
 name: tick
 
-# Alle 20 Minuten: fällige Schritte ausführen (Quoten holen, Wetten platzieren,
-# Schlussquoten erfassen, abrechnen) und Ergebnisse ins Repo committen.
+# Nur noch manuell: einzelnen Schritt von Hand anstoßen (der Dauer-Job in runner.yml macht den Rest).
 on:
-  schedule:
-    - cron: "*/20 * * * *"
   workflow_dispatch:
     inputs:
       cmd:
@@ -40,16 +37,7 @@ jobs:
       # Die Claude-Routine pusht Recherche/Analysen evtl. auf claude/*-Branches:
       # nur diese Dateien nach main übernehmen.
       - name: Claude-Ergebnisse übernehmen
-        run: |
-          git fetch origin '+refs/heads/claude/*:refs/remotes/origin/claude/*' || true
-          for b in $(git for-each-ref --sort=committerdate --format='%(refname:short)' refs/remotes/origin/claude/); do
-            files=$(git diff --name-only HEAD "$b" -- 'data/days/*/adjustments.json' 'data/analyses/*.json' || true)
-            for f in $files; do
-              if git cat-file -e "$b:$f" 2>/dev/null; then
-                mkdir -p "$(dirname "$f")"; git show "$b:$f" > "$f"; echo "übernommen: $f aus $b"
-              fi
-            done
-          done
+        run: bash scripts/merge_claude.sh
 
       - name: Engine
         env:

@@ -22,7 +22,7 @@ def capture_closing(ledger):
         if b["status"] != "open" or b.get("closing") or b.get("market") == "combo":
             continue
         t = parse_ts(b["commence"])
-        if now < t - timedelta(minutes=50):
+        if now < t - timedelta(minutes=C.CLOSING_WINDOW_MIN):
             continue
         if now > t:
             b["closing"] = {"missed": True}
