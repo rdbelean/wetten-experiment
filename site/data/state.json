@@ -1,12 +1,12 @@
 {
  "experiment": {
-  "name": "Projekt Value — 7 Tage, 700 € Spielgeld",
+  "name": "Quotenlabor — 7 Tage, 700 € Spielgeld",
   "start": "2026-11-07",
   "days": 7,
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-07T18:07:24Z",
+ "generated_at": "2026-11-07T18:24:17Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
