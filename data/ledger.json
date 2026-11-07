@@ -227,7 +227,7 @@
    "player": "banker",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "won",
    "event_id": "5b386dfdf6f76705116fbb4120ee8493",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -285,9 +285,14 @@
     "best_odds": 1.27,
     "fair_odds": 1.259
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-07T22:00:37Z"
+   },
+   "payout": 25.8,
+   "profit": 5.8,
    "clv": 0.0249,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,3 % (Pinnacle 1,26). Tor-Modell 60,8 %. Unser Wert: 77,4 %. Beste Quote 1,29 bei 1xBet (Median 1,26, 21 Anbieter), Erwartungswert -0,1 %.",
@@ -295,7 +300,8 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882808"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 2.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-07-banker-02",
