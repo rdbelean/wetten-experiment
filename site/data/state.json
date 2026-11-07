@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-07T19:54:55Z",
+ "generated_at": "2026-11-07T20:40:09Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -462,22 +462,22 @@
    "id": "affe",
    "totals": {
     "staked": 100.0,
-    "staked_settled": 50.0,
+    "staked_settled": 75.0,
     "returned": 90.0,
-    "profit": 40.0,
-    "roi": 0.8,
-    "open_stake": 50.0,
-    "open_potential": 94.25,
+    "profit": 15.0,
+    "roi": 0.2,
+    "open_stake": 25.0,
+    "open_potential": 44.25,
     "won": 1,
-    "lost": 1,
+    "lost": 2,
     "push": 0,
     "n_bets": 4,
-    "hit_rate": 0.5,
+    "hit_rate": 0.3333,
     "avg_odds": 2.843,
     "max_odds_won": 3.6,
     "avg_ev": -0.065,
     "expected_profit": -6.5,
-    "expected_settled": -4.32,
+    "expected_settled": -5.85,
     "avg_clv": -0.0916,
     "n_clv": 1,
     "clv_positive": 0,
@@ -487,16 +487,16 @@
     {
      "date": "2026-11-07",
      "staked": 100.0,
-     "profit": 40.0,
-     "cum_profit": 40.0,
-     "settled": 2,
+     "profit": 15.0,
+     "cum_profit": 15.0,
+     "settled": 3,
      "n_bets": 4
     },
     {
      "date": "2026-11-08",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -504,7 +504,7 @@
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -512,7 +512,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -520,7 +520,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 40.0,
+     "cum_profit": 15.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -1900,7 +1900,7 @@
    "player": "affe",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "422f0f2b990a051c35afd2ea6e9abe24",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -1944,9 +1944,14 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-07T20:40:09Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,0 (Marktschnitt), Erwartungswert -6,1 %.",
@@ -1954,7 +1959,8 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892662"
-   }
+   },
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-07-banker-02",
@@ -2903,6 +2909,10 @@
    {
     "t": "2026-11-07T19:54:55Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-07T20:40:09Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }

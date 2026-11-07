@@ -1667,7 +1667,7 @@
    "player": "affe",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "422f0f2b990a051c35afd2ea6e9abe24",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -1711,9 +1711,14 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-07T20:40:09Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,0 (Marktschnitt), Erwartungswert -6,1 %.",
@@ -1721,7 +1726,8 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892662"
-   }
+   },
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   }
  ]
 }
