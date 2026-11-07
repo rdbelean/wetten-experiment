@@ -1,6 +1,6 @@
 {
- "credits_remaining": 378,
- "credits_used": 122,
+ "credits_remaining": 377,
+ "credits_used": 123,
  "api_calls": [
   {
    "t": "2026-11-06T16:48:49Z",
@@ -631,6 +631,11 @@
    "t": "2026-11-07T14:28:13Z",
    "path": "/sports/soccer_efl_champ/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-07T19:34:40Z",
+   "path": "/sports/soccer_italy_serie_a/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
@@ -652,6 +657,14 @@
   },
   {
    "t": "2026-11-07T19:04:30Z",
+   "a": "Wetten abgerechnet"
+  },
+  {
+   "t": "2026-11-07T19:34:42Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-07T19:34:43Z",
    "a": "Wetten abgerechnet"
   }
  ]
