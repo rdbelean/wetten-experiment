@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-07T19:49:50Z",
+ "generated_at": "2026-11-07T19:54:55Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -211,8 +211,8 @@
     "avg_ev": 0.0855,
     "expected_profit": 8.55,
     "expected_settled": 5.18,
-    "avg_clv": null,
-    "n_clv": 0,
+    "avg_clv": -0.2013,
+    "n_clv": 1,
     "clv_positive": 0,
     "max_drawdown": 60.0
    },
@@ -2166,11 +2166,17 @@
    "kind": "value",
    "stake": 40.0,
    "potential_payout": 366.8,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-07T19:54:53Z",
+    "fair_p": 0.0871,
+    "pinnacle_odds": 9.75,
+    "best_odds": 10.5,
+    "fair_odds": 11.481
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.2013,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 10,5 % (Pinnacle 8,34). Tor-Modell 13,7 %. News-Korrektur +1,2 Prozentpunkte. Unser Wert: 11,8 %. Beste Quote 9,17 bei Betfair Exchange (Median 8,00, 22 Anbieter), Erwartungswert +8,4 %. Recherche: PSG mit massiver Rotation vor der Länderspielpause: Hakimi bewusst geschont, dazu fehlen Dembélé, Kvaratskhelia, Mendes, Marquinhos und Akliouche. Die erwartete Elf ist weitgehend B-Elf. Bei Quote 1.18 ist kaum Puffer, daher eine Korrektur gegen PSG.",
    "research": "PSG mit massiver Rotation vor der Länderspielpause: Hakimi bewusst geschont, dazu fehlen Dembélé, Kvaratskhelia, Mendes, Marquinhos und Akliouche. Die erwartete Elf ist weitgehend B-Elf. Bei Quote 1.18 ist kaum Puffer, daher eine Korrektur gegen PSG.",
@@ -2860,7 +2866,7 @@
   }
  },
  "system": {
-  "credits_remaining": 376,
+  "credits_remaining": 375,
   "last_actions": [
    {
     "t": "2026-11-07T07:44:12Z",
@@ -2892,6 +2898,10 @@
    },
    {
     "t": "2026-11-07T19:49:50Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-07T19:54:55Z",
     "a": "Schlussquoten erfasst"
    }
   ]
