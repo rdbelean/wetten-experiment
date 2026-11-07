@@ -1,0 +1,181 @@
+{
+ "day": "2026-11-07",
+ "placed_at": "2026-11-07T14:27:45Z",
+ "n_outcomes": 236,
+ "n_value": 3,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-07-01",
+  "2026-11-07-02",
+  "2026-11-07-03"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-07-01",
+   "2026-11-07-02",
+   "2026-11-07-03"
+  ],
+  "banker": [
+   "2026-11-07-banker-01",
+   "2026-11-07-banker-02",
+   "2026-11-07-banker-03",
+   "2026-11-07-banker-04",
+   "2026-11-07-banker-05"
+  ],
+  "zocker": [
+   "2026-11-07-zocker-01",
+   "2026-11-07-zocker-02"
+  ],
+  "kombi": [
+   "2026-11-07-kombi-01",
+   "2026-11-07-kombi-02"
+  ],
+  "stammtisch": [
+   "2026-11-07-stammtisch-01",
+   "2026-11-07-stammtisch-02",
+   "2026-11-07-stammtisch-03",
+   "2026-11-07-stammtisch-04",
+   "2026-11-07-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-07-affe-01",
+   "2026-11-07-affe-02",
+   "2026-11-07-affe-03",
+   "2026-11-07-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "Paris Saint Germain",
+   "away": "Troyes",
+   "league": "Ligue 1",
+   "label": "Sieg Troyes",
+   "odds": 18.0,
+   "book_name": "LeoVegas",
+   "p": 0.0626,
+   "ev": 0.1264,
+   "commence": "2026-11-07T20:05:00Z"
+  },
+  {
+   "home": "Paris Saint Germain",
+   "away": "Troyes",
+   "league": "Ligue 1",
+   "label": "Unentschieden",
+   "odds": 9.17,
+   "book_name": "Betfair Exchange",
+   "p": 0.1182,
+   "ev": 0.0843,
+   "commence": "2026-11-07T20:05:00Z"
+  },
+  {
+   "home": "Parma",
+   "away": "Bologna",
+   "league": "Serie A",
+   "label": "Unter 2.5 Tore",
+   "odds": 1.83,
+   "book_name": "1xBet",
+   "p": 0.5662,
+   "ev": 0.0362,
+   "commence": "2026-11-07T17:00:00Z"
+  },
+  {
+   "home": "Charlton Athletic",
+   "away": "Sheffield United",
+   "league": "Championship",
+   "label": "Sieg Sheffield United",
+   "odds": 2.0,
+   "book_name": "LeoVegas",
+   "p": 0.5132,
+   "ev": 0.0264,
+   "commence": "2026-11-07T15:00:00Z"
+  },
+  {
+   "home": "Cardiff City",
+   "away": "Burnley",
+   "league": "Championship",
+   "label": "Sieg Cardiff City",
+   "odds": 2.06,
+   "book_name": "LeoVegas",
+   "p": 0.4966,
+   "ev": 0.023,
+   "commence": "2026-11-07T15:00:00Z"
+  },
+  {
+   "home": "CA Osasuna",
+   "away": "Athletic Bilbao",
+   "league": "La Liga",
+   "label": "Sieg Athletic Bilbao",
+   "odds": 2.18,
+   "book_name": "1xBet",
+   "p": 0.4688,
+   "ev": 0.0221,
+   "commence": "2026-11-07T17:30:00Z"
+  },
+  {
+   "home": "Valencia",
+   "away": "Real Madrid",
+   "league": "La Liga",
+   "label": "Unentschieden",
+   "odds": 7.0,
+   "book_name": "Unibet SE",
+   "p": 0.1447,
+   "ev": 0.0131,
+   "commence": "2026-11-07T20:00:00Z"
+  },
+  {
+   "home": "Fulham",
+   "away": "Newcastle United",
+   "league": "Premier League",
+   "label": "Unter 2.5 Tore",
+   "odds": 2.35,
+   "book_name": "Tipico",
+   "p": 0.4304,
+   "ev": 0.0114,
+   "commence": "2026-11-07T15:00:00Z"
+  },
+  {
+   "home": "Watford",
+   "away": "Middlesbrough",
+   "league": "Championship",
+   "label": "Sieg Middlesbrough",
+   "odds": 1.55,
+   "book_name": "LeoVegas",
+   "p": 0.6524,
+   "ev": 0.0112,
+   "commence": "2026-11-07T15:00:00Z"
+  },
+  {
+   "home": "Indiana Pacers",
+   "away": "Denver Nuggets",
+   "league": "NBA",
+   "label": "Sieg Denver Nuggets",
+   "odds": 1.38,
+   "book_name": "1xBet",
+   "p": 0.7324,
+   "ev": 0.0107,
+   "commence": "2026-11-07T22:10:00Z"
+  },
+  {
+   "home": "Nottingham Forest",
+   "away": "Manchester City",
+   "league": "Premier League",
+   "label": "Sieg Manchester City",
+   "odds": 1.78,
+   "book_name": "1xBet",
+   "p": 0.5678,
+   "ev": 0.0106,
+   "commence": "2026-11-07T17:30:00Z"
+  },
+  {
+   "home": "Cleveland Cavaliers",
+   "away": "New York Knicks",
+   "league": "NBA",
+   "label": "New York Knicks +4.5 (Handicap)",
+   "odds": 1.93,
+   "book_name": "1xBet",
+   "p": 0.5234,
+   "ev": 0.0102,
+   "commence": "2026-11-08T01:10:00Z"
+  }
+ ]
+}
