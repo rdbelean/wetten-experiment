@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-07T22:00:37Z",
+ "generated_at": "2026-11-07T22:05:40Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -195,14 +195,14 @@
    "id": "zocker",
    "totals": {
     "staked": 100.0,
-    "staked_settled": 60.0,
+    "staked_settled": 100.0,
     "returned": 0,
-    "profit": -60.0,
+    "profit": -100.0,
     "roi": -1.0,
-    "open_stake": 40.0,
-    "open_potential": 366.8,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 0,
-    "lost": 1,
+    "lost": 2,
     "push": 0,
     "n_bets": 2,
     "hit_rate": 0.0,
@@ -210,26 +210,26 @@
     "max_odds_won": null,
     "avg_ev": 0.0855,
     "expected_profit": 8.55,
-    "expected_settled": 5.18,
+    "expected_settled": 8.55,
     "avg_clv": -0.2013,
     "n_clv": 1,
     "clv_positive": 0,
-    "max_drawdown": 60.0
+    "max_drawdown": 100.0
    },
    "days": [
     {
      "date": "2026-11-07",
      "staked": 100.0,
-     "profit": -60.0,
-     "cum_profit": -60.0,
-     "settled": 1,
+     "profit": -100.0,
+     "cum_profit": -100.0,
+     "settled": 2,
      "n_bets": 2
     },
     {
      "date": "2026-11-08",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -237,7 +237,7 @@
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -245,7 +245,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -253,7 +253,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -261,7 +261,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -269,7 +269,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -60.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -2132,7 +2132,7 @@
    "player": "zocker",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "f7b240389fa5ec055c58a48ab153dcdd",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -2191,9 +2191,14 @@
     "best_odds": 10.5,
     "fair_odds": 11.481
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-07T22:05:40Z"
+   },
+   "payout": 0.0,
+   "profit": -40.0,
    "clv": -0.2013,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 10,5 % (Pinnacle 8,34). Tor-Modell 13,7 %. News-Korrektur +1,2 Prozentpunkte. Unser Wert: 11,8 %. Beste Quote 9,17 bei Betfair Exchange (Median 8,00, 22 Anbieter), Erwartungswert +8,4 %. Recherche: PSG mit massiver Rotation vor der Länderspielpause: Hakimi bewusst geschont, dazu fehlen Dembélé, Kvaratskhelia, Mendes, Marquinhos und Akliouche. Die erwartete Elf ist weitgehend B-Elf. Bei Quote 1.18 ist kaum Puffer, daher eine Korrektur gegen PSG.",
@@ -2201,7 +2206,8 @@
    "espn": {
     "path": "soccer/fra.1",
     "id": "401876407"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 20.1 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-07-affe-01",
@@ -2948,6 +2954,10 @@
    },
    {
     "t": "2026-11-07T22:00:37Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-07T22:05:40Z",
     "a": "Wetten abgerechnet"
    }
   ]
