@@ -78,7 +78,7 @@
    "player": "analyst",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "won",
    "event_id": "842fcc5b9feb8c63054a661ad1fc8926",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -126,9 +126,14 @@
     "best_odds": 1.8,
     "fair_odds": 1.742
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:23Z"
+   },
+   "payout": 72.0,
+   "profit": 32.0,
    "clv": 0.0332,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 57,4 %. Tor-Modell 76,6 %. Unser Wert: 58,4 %. Beste Quote 1,80 bei Tipico (Median 1,67, 11 Anbieter), Erwartungswert +5,1 %.",
@@ -136,14 +141,15 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401878760"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-07-03",
    "player": "analyst",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "33c5cad848eb423e163a9bf5631ccefe",
    "sport": "soccer_netherlands_eredivisie",
    "league": "Eredivisie",
@@ -195,10 +201,17 @@
    "kind": "value",
    "stake": 20.0,
    "potential_payout": 74.0,
-   "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "closing": {
+    "missed": true
+   },
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,4 % (Pinnacle 3,50). Tor-Modell 39,7 %. News-Korrektur +1,0 Prozentpunkte. Unser Wert: 29,4 %. Beste Quote 3,70 bei Unibet NL (Median 3,41, 22 Anbieter), Erwartungswert +8,6 %. Recherche: Fortuna fehlen laut Vereinsumfeld Guth, Michut, Romeny, Sinkgraven und Zeefuik (Angaben zu Guth und Zeefuik widersprüchlich). Telstar bis auf Alders (fraglich) komplett. Deshalb eine leichte Korrektur Richtung Telstar.",
@@ -206,7 +219,8 @@
    "espn": {
     "path": "soccer/ned.1",
     "id": "401875555"
-   }
+   },
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-07-banker-01",
@@ -573,7 +587,7 @@
    "player": "zocker",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "33c5cad848eb423e163a9bf5631ccefe",
    "sport": "soccer_netherlands_eredivisie",
    "league": "Eredivisie",
@@ -625,10 +639,17 @@
    "kind": "value",
    "stake": 60.0,
    "potential_payout": 222.0,
-   "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "closing": {
+    "missed": true
+   },
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -60.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,4 % (Pinnacle 3,50). Tor-Modell 39,7 %. News-Korrektur +1,0 Prozentpunkte. Unser Wert: 29,4 %. Beste Quote 3,70 bei Unibet NL (Median 3,41, 22 Anbieter), Erwartungswert +8,6 %. Recherche: Fortuna fehlen laut Vereinsumfeld Guth, Michut, Romeny, Sinkgraven und Zeefuik (Angaben zu Guth und Zeefuik widersprüchlich). Telstar bis auf Alders (fraglich) komplett. Deshalb eine leichte Korrektur Richtung Telstar.",
@@ -636,7 +657,8 @@
    "espn": {
     "path": "soccer/ned.1",
     "id": "401875555"
-   }
+   },
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-07-zocker-02",
@@ -769,8 +791,11 @@
       "path": "soccer/eng.1",
       "id": "401878760"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 1,
+      "away": 0
+     }
     },
     {
      "event_id": "af8d920f175d73f12933c64ae296573f",
@@ -829,7 +854,7 @@
    "player": "kombi",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "e1b2a10bfd51e1716202de92f585f502+a30b201e4df636949371d73491c620b5+e76682ca6c25a37b0a53cec226b91aab+59c5f635cfe11613c07e9a5520ced5c1",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -859,9 +884,17 @@
    "stake": 50.0,
    "potential_payout": 380.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "lost",
+     "lost",
+     "open",
+     "open"
+    ],
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -885,8 +918,11 @@
       "path": "soccer/eng.2",
       "id": "401880168"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 2,
+      "away": 1
+     }
     },
     {
      "event_id": "a30b201e4df636949371d73491c620b5",
@@ -908,8 +944,11 @@
       "path": "soccer/eng.2",
       "id": "401880163"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 0,
+      "away": 0
+     }
     },
     {
      "event_id": "e76682ca6c25a37b0a53cec226b91aab",
@@ -961,7 +1000,8 @@
    "last_commence": "2026-11-07T22:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 7,61, Trefferchance 13,9 %, Erwartungswert +6,0 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 7,61, Trefferchance 13,9 %, Erwartungswert +6,0 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "0 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-07-stammtisch-01",
@@ -1021,7 +1061,9 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 36.6,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
@@ -1039,7 +1081,7 @@
    "player": "stammtisch",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "won",
    "event_id": "842fcc5b9feb8c63054a661ad1fc8926",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -1101,9 +1143,14 @@
     "best_odds": 1.17,
     "fair_odds": 1.158
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 22.2,
+   "profit": 2.2,
    "clv": -0.0416,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,11 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,1 %.",
@@ -1111,14 +1158,15 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401878760"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 4.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-07-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "3903e98a54db0f2cc23095407fe9dad8",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -1180,9 +1228,14 @@
     "best_odds": 2.09,
     "fair_odds": 2.1
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0619,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,97 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,3 %.",
@@ -1190,7 +1243,8 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401879241"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 6.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-07-stammtisch-04",
@@ -1252,7 +1306,9 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 33.0,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
@@ -1270,7 +1326,7 @@
    "player": "stammtisch",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "262c2c99c38456b8a70cb9daa32f2f6d",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -1328,9 +1384,14 @@
     "best_odds": 2.607,
     "fair_odds": 2.593
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0553,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,9 %.",
@@ -1338,7 +1399,8 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882813"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 5.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-07-affe-01",
@@ -1404,7 +1466,7 @@
    "player": "affe",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "228a3fca36f1fc8943ab0b7c54f06860",
    "sport": "soccer_efl_champ",
    "league": "Championship",
@@ -1463,9 +1525,14 @@
     "best_odds": 4.2,
     "fair_odds": 4.403
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0916,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,0 (Tipico), Erwartungswert -9,5 %.",
@@ -1473,14 +1540,15 @@
    "espn": {
     "path": "soccer/eng.2",
     "id": "401880171"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 9.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-07-affe-03",
    "player": "affe",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "won",
    "event_id": "33c5cad848eb423e163a9bf5631ccefe",
    "sport": "soccer_netherlands_eredivisie",
    "league": "Eredivisie",
@@ -1532,10 +1600,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 90.0,
-   "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "closing": {
+    "missed": true
+   },
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-07T18:07:24Z"
+   },
+   "payout": 90.0,
+   "profit": 65.0,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,6 (Tipico), Erwartungswert -7,8 %.",
@@ -1543,7 +1618,8 @@
    "espn": {
     "path": "soccer/ned.1",
     "id": "401875555"
-   }
+   },
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-07-affe-04",
@@ -1591,7 +1667,9 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 50.0,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
