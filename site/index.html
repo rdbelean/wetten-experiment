@@ -7,17 +7,28 @@
 <meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Projekt Value">
-<meta property="og:title" content="Projekt Value – Wett-Experiment mit Spielgeld">
+<meta name="apple-mobile-web-app-title" content="Quotenlabor">
+<meta property="og:title" content="Quotenlabor – Wetten als Experiment, nicht als Bauchgefühl">
+<meta property="og:site_name" content="Quotenlabor">
+<meta property="og:url" content="https://quotenlabor.vercel.app/">
+<meta property="og:image" content="https://quotenlabor.vercel.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="de_DE">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://quotenlabor.vercel.app/og.png">
 <meta property="og:description" content="Sechs Strategien, 100 € Spielgeld pro Tag, eine Woche. Live und komplett transparent.">
 <meta property="og:type" content="website">
-<title>Projekt Value – Wett-Experiment mit Spielgeld</title>
-<meta name="description" content="Live-Experiment: 7 Tage, 100 € Spielgeld pro Tag, Wetten nach Value-Modell. Alles transparent.">
+<title>Quotenlabor – Wetten als Experiment, nicht als Bauchgefühl</title>
+<meta name="description" content="Quotenlabor: Wetten als Experiment, nicht als Bauchgefühl. Sechs Strategien, 100 € Spielgeld pro Tag, eine Woche, live und transparent.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%233B5BDB'/><text x='16' y='23' font-size='19' text-anchor='middle' fill='white' font-family='Arial' font-weight='700'>€</text></svg>">
+<link rel="stylesheet" href="styles.css?v=7">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
 </head>
 <body>
 
@@ -26,7 +37,10 @@
 <!-- Kopfzeile + Spieler-Navigation (bleibt beim Scrollen oben) -->
 <header class="appbar">
   <div class="wrap board-top">
-    <div class="brand"><span class="brand-mark" aria-hidden="true">€</span> Projekt Value</div>
+    <a class="brand" href="/" aria-label="Quotenlabor, zur Startseite">
+      <svg class="brand-logo" viewBox="0 0 46 54" aria-hidden="true"><path d="M15 3 H31 M18 3 V18 L5 46 Q3 51 9 51 H37 Q43 51 41 46 L28 18 V3" fill="none" stroke="#fff" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path class="brand-line" d="M10 42 L18 34 L24 38 L35 27" fill="none" stroke="#8FA4F5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><circle class="brand-dot" cx="35" cy="27" r="4" fill="#F5D547"/></svg>
+      <span class="brand-word">quoten<span>labor</span></span>
+    </a>
     <div class="top-status" id="topStatus">Lade Daten …</div>
   </div>
   <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Spieler"></nav>
@@ -161,12 +175,13 @@
 
 <footer class="foot">
   <div class="wrap foot-inner">
+    <p class="foot-brand"><img src="/brand/logo-light.svg" width="18" height="21" alt=""> <strong>quoten<span>labor</span></strong> <span class="foot-tag">Wetten als Experiment, nicht als Bauchgefühl.</span></p>
     <p><strong>Nur Spielgeld.</strong> Dieses Experiment platziert keine echten Wetten und ist keine Wettempfehlung. Sportwetten bleiben Glücksspiel. Hilfe bei Spielsucht: <a href="https://www.check-dein-spiel.de" rel="noopener">check-dein-spiel.de</a> oder 0800 1 37 27 00.</p>
     <p class="sys" id="sys"></p>
   </div>
 </footer>
 
 <div class="fx-layer" id="fx" aria-hidden="true"></div>
-<script src="app.js" defer></script>
+<script src="app.js?v=7" defer></script>
 </body>
 </html>

@@ -15,7 +15,7 @@ META = DATA / "meta.json"
 TZ = ZoneInfo("Europe/Berlin")
 
 # --- Experiment -----------------------------------------------------------
-EXPERIMENT_NAME = "Projekt Value — 7 Tage, 700 € Spielgeld"
+EXPERIMENT_NAME = "Quotenlabor — 7 Tage, 700 € Spielgeld"
 START_DAY = date(2026, 11, 7)
 NUM_DAYS = 7
 DAILY_BUDGET = 100.0

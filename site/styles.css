@@ -586,3 +586,20 @@ body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; 
   .ticker:hover .ticker-track { animation-play-state: running; }
   .slip:hover { box-shadow: var(--shadow-1); }
 }
+
+/* ================================================================ Marke: Quotenlabor */
+.brand { color: #fff; text-decoration: none; gap: 9px; }
+.brand-logo { width: 22px; height: 26px; flex: none; overflow: visible; }
+.brand-word { font-weight: 800; font-variation-settings: "wdth" 100; font-size: 1.1875rem; letter-spacing: -0.02em; line-height: 1; }
+.brand-word span { color: #8FA4F5; }
+.brand-line { stroke-dasharray: 40; stroke-dashoffset: 40; animation: brandline 1.2s .3s cubic-bezier(.3, .7, .2, 1) forwards; }
+.brand-dot { transform-box: fill-box; transform-origin: center; animation: branddot .5s 1.3s cubic-bezier(.2, 1.6, .4, 1) both; }
+@keyframes brandline { to { stroke-dashoffset: 0; } }
+@keyframes branddot { from { transform: scale(0); } }
+.brand:hover .brand-dot { animation: branddot .5s cubic-bezier(.2, 1.6, .4, 1); }
+@media (max-width: 720px) { .brand-word { font-size: 1.0625rem; } .brand-logo { width: 20px; height: 24px; } }
+.foot-brand { display: flex; align-items: center; gap: 8px; color: var(--board-ink-2); margin-bottom: 14px !important; }
+.foot-brand strong { font-weight: 800; letter-spacing: -0.02em; font-size: 1rem; }
+.foot-brand strong span { color: #8FA4F5; }
+.foot-brand { flex-wrap: wrap; }
+@media (max-width: 720px) { .foot-tag { flex-basis: 100%; } }

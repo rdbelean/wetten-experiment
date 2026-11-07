@@ -1,4 +1,6 @@
-# Projekt Value
+# Quotenlabor
+
+Wetten als Experiment, nicht als Bauchgefühl. Live: https://quotenlabor.vercel.app
 
 Spielgeld-Experiment: 7 Tage (7.–13. November 2026), jeden Tag genau 100 € auf Sportwetten mit
 mathematischem Vorteil. Es werden **keine echten Wetten** platziert.

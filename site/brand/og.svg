@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#121D36"/>
+  <rect x="0" y="560" width="1200" height="70" fill="#0D1629"/>
+  <rect x="0" y="560" width="262" height="70" fill="#F5D547"/>
+  <text x="34" y="604" font-family="Helvetica Neue, Helvetica, Arial" font-weight="700" font-size="26" fill="#121D36">Live-Experiment</text>
+  <text x="292" y="604" font-family="Helvetica Neue, Helvetica, Arial" font-size="26" fill="#A9B5D3">Sechs Strategien. 100 € Spielgeld pro Tag. Eine Woche.</text>
+  <g transform="translate(96 150) scale(5.6)">
+    <path d="M15 3 H31 M18 3 V18 L5 46 Q3 51 9 51 H37 Q43 51 41 46 L28 18 V3" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M10 42 L18 34 L24 38 L35 27" fill="none" stroke="#8FA4F5" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="35" cy="27" r="3.6" fill="#F5D547"/>
+  </g>
+  <text x="400" y="318" font-family="Helvetica Neue, Helvetica, Arial" font-weight="700" font-size="124" letter-spacing="-4" fill="#FFFFFF">quoten<tspan fill="#8FA4F5">labor</tspan></text>
+  <text x="404" y="390" font-family="Helvetica Neue, Helvetica, Arial" font-size="34" fill="#A9B5D3">Wetten als Experiment, nicht als Bauchgefühl.</text>
+</svg>

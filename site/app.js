@@ -1,4 +1,4 @@
-/* Projekt Value – Dashboard. Liest data/state.json (von GitHub Actions geschrieben)
+/* Quotenlabor – Dashboard. Liest data/state.json (von GitHub Actions geschrieben)
    und Live-Stände direkt von der öffentlichen ESPN-Scoreboard-API. */
 (() => {
   "use strict";
@@ -138,7 +138,7 @@
       live[b.id] = nv;
     }
     renderLive(goals);
-    renderSlips();
+    if (view !== "vergleich") { renderSlips(); renderDays(); }
     renderTop();
     renderTicker();
   }
@@ -564,6 +564,7 @@
   function renderSlips() {
     if (!state) return;
     const d = state.days.find((x) => x.date === selectedDay);
+    if (!d) return;
     const idx = state.days.indexOf(d);
     const bets = myBets().filter((b) => b.day === selectedDay).sort((a, b) => a.commence.localeCompare(b.commence));
     $("dayTitle").textContent = `Wetten an Tag ${idx + 1}`;
