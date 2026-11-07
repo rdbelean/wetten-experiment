@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-07T18:24:17Z",
+ "generated_at": "2026-11-07T19:04:30Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -284,14 +284,14 @@
    "id": "kombi",
    "totals": {
     "staked": 100.0,
-    "staked_settled": 50.0,
+    "staked_settled": 100.0,
     "returned": 0,
-    "profit": -50.0,
+    "profit": -100.0,
     "roi": -1.0,
-    "open_stake": 50.0,
-    "open_potential": 235.5,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 0,
-    "lost": 1,
+    "lost": 2,
     "push": 0,
     "n_bets": 2,
     "hit_rate": 0.0,
@@ -299,26 +299,26 @@
     "max_odds_won": null,
     "avg_ev": 0.0918,
     "expected_profit": 9.18,
-    "expected_settled": 3.01,
+    "expected_settled": 9.18,
     "avg_clv": null,
     "n_clv": 0,
     "clv_positive": 0,
-    "max_drawdown": 50.0
+    "max_drawdown": 100.0
    },
    "days": [
     {
      "date": "2026-11-07",
      "staked": 100.0,
-     "profit": -50.0,
-     "cum_profit": -50.0,
-     "settled": 1,
+     "profit": -100.0,
+     "cum_profit": -100.0,
+     "settled": 2,
      "n_bets": 2
     },
     {
      "date": "2026-11-08",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -326,7 +326,7 @@
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -334,7 +334,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -342,7 +342,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -350,7 +350,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -358,7 +358,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -50.0,
+     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -971,7 +971,7 @@
    "player": "kombi",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "842fcc5b9feb8c63054a661ad1fc8926+af8d920f175d73f12933c64ae296573f+813cc4970b2dcab8457490a332fb5a6c",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -1001,9 +1001,16 @@
    "stake": 50.0,
    "potential_payout": 235.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "open",
+     "lost"
+    ],
+    "t": "2026-11-07T19:04:30Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -1076,14 +1083,18 @@
       "path": "soccer/ita.1",
       "id": "401874974"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 1,
+      "away": 2
+     }
     }
    ],
    "last_commence": "2026-11-08T02:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,71, Trefferchance 23,8 %, Erwartungswert +12,3 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,71, Trefferchance 23,8 %, Erwartungswert +12,3 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "1 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-07-kombi-02",
@@ -2841,6 +2852,10 @@
    },
    {
     "t": "2026-11-07T18:07:24Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-07T19:04:30Z",
     "a": "Wetten abgerechnet"
    }
   ]

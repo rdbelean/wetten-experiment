@@ -735,7 +735,7 @@
    "player": "kombi",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "842fcc5b9feb8c63054a661ad1fc8926+af8d920f175d73f12933c64ae296573f+813cc4970b2dcab8457490a332fb5a6c",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -765,9 +765,16 @@
    "stake": 50.0,
    "potential_payout": 235.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "open",
+     "lost"
+    ],
+    "t": "2026-11-07T19:04:30Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -840,14 +847,18 @@
       "path": "soccer/ita.1",
       "id": "401874974"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 1,
+      "away": 2
+     }
     }
    ],
    "last_commence": "2026-11-08T02:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,71, Trefferchance 23,8 %, Erwartungswert +12,3 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,71, Trefferchance 23,8 %, Erwartungswert +12,3 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "1 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-07-kombi-02",
