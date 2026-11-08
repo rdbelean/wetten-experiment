@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T18:34:32Z",
+ "generated_at": "2026-11-08T19:34:49Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -195,14 +195,14 @@
    "id": "zocker",
    "totals": {
     "staked": 200.0,
-    "staked_settled": 150.0,
+    "staked_settled": 200.0,
     "returned": 0,
-    "profit": -150.0,
+    "profit": -200.0,
     "roi": -1.0,
-    "open_stake": 50.0,
-    "open_potential": 400.0,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 0,
-    "lost": 3,
+    "lost": 4,
     "push": 0,
     "n_bets": 4,
     "hit_rate": 0.0,
@@ -210,10 +210,99 @@
     "max_odds_won": null,
     "avg_ev": 0.0703,
     "expected_profit": 14.05,
-    "expected_settled": 11.11,
+    "expected_settled": 14.05,
     "avg_clv": 0.001,
     "n_clv": 3,
     "clv_positive": 2,
+    "max_drawdown": 200.0
+   },
+   "days": [
+    {
+     "date": "2026-11-07",
+     "staked": 100.0,
+     "profit": -100.0,
+     "cum_profit": -100.0,
+     "settled": 2,
+     "n_bets": 2
+    },
+    {
+     "date": "2026-11-08",
+     "staked": 100.0,
+     "profit": -100.0,
+     "cum_profit": -200.0,
+     "settled": 2,
+     "n_bets": 2
+    },
+    {
+     "date": "2026-11-09",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": -200.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-10",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": -200.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-11",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": -200.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-12",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": -200.0,
+     "settled": 0,
+     "n_bets": 0
+    },
+    {
+     "date": "2026-11-13",
+     "staked": 0,
+     "profit": 0,
+     "cum_profit": -200.0,
+     "settled": 0,
+     "n_bets": 0
+    }
+   ]
+  },
+  "kombi": {
+   "name": "Der Kombi-König",
+   "risk": "sehr hoch",
+   "color": "#eda100",
+   "tagline": "Zwei Kombiwetten pro Tag aus den besten Einzeltipps.",
+   "desc": "Baut aus den besten Value-Tipps des Tages zwei Kombiwetten (3 und 4 Spiele, je 50 €). Die Quoten multiplizieren sich, damit auch der kleine Vorteil jedes Tipps. Eine einzige falsche Partie und die ganze Kombi ist verloren.",
+   "id": "kombi",
+   "totals": {
+    "staked": 200.0,
+    "staked_settled": 150.0,
+    "returned": 0,
+    "profit": -150.0,
+    "roi": -1.0,
+    "open_stake": 50.0,
+    "open_potential": 179.0,
+    "won": 0,
+    "lost": 3,
+    "push": 0,
+    "n_bets": 4,
+    "hit_rate": 0.0,
+    "avg_odds": 6.95,
+    "max_odds_won": null,
+    "avg_ev": 0.0939,
+    "expected_profit": 18.79,
+    "expected_settled": 12.98,
+    "avg_clv": null,
+    "n_clv": 0,
+    "clv_positive": 0,
     "max_drawdown": 150.0
    },
    "days": [
@@ -270,95 +359,6 @@
      "staked": 0,
      "profit": 0,
      "cum_profit": -150.0,
-     "settled": 0,
-     "n_bets": 0
-    }
-   ]
-  },
-  "kombi": {
-   "name": "Der Kombi-König",
-   "risk": "sehr hoch",
-   "color": "#eda100",
-   "tagline": "Zwei Kombiwetten pro Tag aus den besten Einzeltipps.",
-   "desc": "Baut aus den besten Value-Tipps des Tages zwei Kombiwetten (3 und 4 Spiele, je 50 €). Die Quoten multiplizieren sich, damit auch der kleine Vorteil jedes Tipps. Eine einzige falsche Partie und die ganze Kombi ist verloren.",
-   "id": "kombi",
-   "totals": {
-    "staked": 200.0,
-    "staked_settled": 100.0,
-    "returned": 0,
-    "profit": -100.0,
-    "roi": -1.0,
-    "open_stake": 100.0,
-    "open_potential": 774.0,
-    "won": 0,
-    "lost": 2,
-    "push": 0,
-    "n_bets": 4,
-    "hit_rate": 0.0,
-    "avg_odds": 6.95,
-    "max_odds_won": null,
-    "avg_ev": 0.0939,
-    "expected_profit": 18.79,
-    "expected_settled": 9.18,
-    "avg_clv": null,
-    "n_clv": 0,
-    "clv_positive": 0,
-    "max_drawdown": 100.0
-   },
-   "days": [
-    {
-     "date": "2026-11-07",
-     "staked": 100.0,
-     "profit": -100.0,
-     "cum_profit": -100.0,
-     "settled": 2,
-     "n_bets": 2
-    },
-    {
-     "date": "2026-11-08",
-     "staked": 100.0,
-     "profit": 0,
-     "cum_profit": -100.0,
-     "settled": 0,
-     "n_bets": 2
-    },
-    {
-     "date": "2026-11-09",
-     "staked": 0,
-     "profit": 0,
-     "cum_profit": -100.0,
-     "settled": 0,
-     "n_bets": 0
-    },
-    {
-     "date": "2026-11-10",
-     "staked": 0,
-     "profit": 0,
-     "cum_profit": -100.0,
-     "settled": 0,
-     "n_bets": 0
-    },
-    {
-     "date": "2026-11-11",
-     "staked": 0,
-     "profit": 0,
-     "cum_profit": -100.0,
-     "settled": 0,
-     "n_bets": 0
-    },
-    {
-     "date": "2026-11-12",
-     "staked": 0,
-     "profit": 0,
-     "cum_profit": -100.0,
-     "settled": 0,
-     "n_bets": 0
-    },
-    {
-     "date": "2026-11-13",
-     "staked": 0,
-     "profit": 0,
-     "cum_profit": -100.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -462,26 +462,26 @@
    "id": "affe",
    "totals": {
     "staked": 200.0,
-    "staked_settled": 175.0,
+    "staked_settled": 200.0,
     "returned": 134.25,
-    "profit": -40.75,
-    "roi": -0.2329,
-    "open_stake": 25.0,
-    "open_potential": 112.5,
+    "profit": -65.75,
+    "roi": -0.3287,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 2,
-    "lost": 5,
+    "lost": 6,
     "push": 0,
     "n_bets": 8,
-    "hit_rate": 0.2857,
+    "hit_rate": 0.25,
     "avg_odds": 2.971,
     "max_odds_won": 3.6,
     "avg_ev": -0.0553,
     "expected_profit": -11.05,
-    "expected_settled": -9.98,
+    "expected_settled": -11.05,
     "avg_clv": -0.0329,
     "n_clv": 6,
     "clv_positive": 1,
-    "max_drawdown": 80.75
+    "max_drawdown": 105.75
    },
    "days": [
     {
@@ -495,16 +495,16 @@
     {
      "date": "2026-11-08",
      "staked": 100.0,
-     "profit": -75.0,
-     "cum_profit": -40.75,
-     "settled": 3,
+     "profit": -100.0,
+     "cum_profit": -65.75,
+     "settled": 4,
      "n_bets": 4
     },
     {
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -40.75,
+     "cum_profit": -65.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -512,7 +512,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -40.75,
+     "cum_profit": -65.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -520,7 +520,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -40.75,
+     "cum_profit": -65.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -40.75,
+     "cum_profit": -65.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -40.75,
+     "cum_profit": -65.75,
      "settled": 0,
      "n_bets": 0
     }
@@ -3361,7 +3361,7 @@
    "player": "kombi",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4288fbe018e6e6fb223e389bcf3e57dd+547e4e8cf5577a50926272e0e1a7e677+0d2e199bfba0db42871696c10037bad3+39aeac43cea7b12558b91cdab1255a10",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -3391,9 +3391,17 @@
    "stake": 50.0,
    "potential_payout": 595.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "lost",
+     "open"
+    ],
+    "t": "2026-11-08T19:34:49Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -3469,8 +3477,11 @@
       "path": "soccer/esp.1",
       "id": "401882815"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 0,
+      "away": 0
+     }
     },
     {
      "event_id": "39aeac43cea7b12558b91cdab1255a10",
@@ -3499,7 +3510,8 @@
    "last_commence": "2026-11-08T21:05:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 11,9, Trefferchance 9,0 %, Erwartungswert +7,6 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 11,9, Trefferchance 9,0 %, Erwartungswert +7,6 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-08-stammtisch-04",
@@ -4205,7 +4217,7 @@
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "81ad04996f63fb60b494d243b13ac586",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -4263,9 +4275,26 @@
     "best_odds": 4.43,
     "fair_odds": 4.623
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T19:34:49Z",
+    "goals": [
+     {
+      "min": 80,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0267,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,5 (Tipico), Erwartungswert -4,3 %.",
@@ -4273,14 +4302,15 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882807"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 2.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-zocker-01",
    "player": "zocker",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "81ad04996f63fb60b494d243b13ac586",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -4338,9 +4368,26 @@
     "best_odds": 6.684,
     "fair_odds": 6.702
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T19:34:49Z",
+    "goals": [
+     {
+      "min": 80,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": 0.1936,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 13,3 % (Pinnacle 6,97). Tor-Modell 12,3 %. Unser Wert: 13,2 %. Beste Quote 8,00 bei Unibet NL (Median 6,80, 21 Anbieter), Erwartungswert +5,9 %.",
@@ -4348,7 +4395,8 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882807"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 19.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-01",
@@ -5518,10 +5566,6 @@
   "credits_remaining": 316,
   "last_actions": [
    {
-    "t": "2026-11-08T12:16:02Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-08T13:47:19Z",
     "a": "Schlussquoten erfasst"
    },
@@ -5575,6 +5619,10 @@
    },
    {
     "t": "2026-11-08T18:34:32Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T19:34:49Z",
     "a": "Wetten abgerechnet"
    }
   ]

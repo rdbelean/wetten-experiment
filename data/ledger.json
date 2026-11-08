@@ -2879,7 +2879,7 @@
    "player": "zocker",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "81ad04996f63fb60b494d243b13ac586",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -2937,9 +2937,26 @@
     "best_odds": 6.684,
     "fair_odds": 6.702
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T19:34:49Z",
+    "goals": [
+     {
+      "min": 80,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": 0.1936,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 13,3 % (Pinnacle 6,97). Tor-Modell 12,3 %. Unser Wert: 13,2 %. Beste Quote 8,00 bei Unibet NL (Median 6,80, 21 Anbieter), Erwartungswert +5,9 %.",
@@ -2947,7 +2964,8 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882807"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 19.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-zocker-02",
@@ -3189,7 +3207,7 @@
    "player": "kombi",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4288fbe018e6e6fb223e389bcf3e57dd+547e4e8cf5577a50926272e0e1a7e677+0d2e199bfba0db42871696c10037bad3+39aeac43cea7b12558b91cdab1255a10",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -3219,9 +3237,17 @@
    "stake": 50.0,
    "potential_payout": 595.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "lost",
+     "open"
+    ],
+    "t": "2026-11-08T19:34:49Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -3297,8 +3323,11 @@
       "path": "soccer/esp.1",
       "id": "401882815"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 0,
+      "away": 0
+     }
     },
     {
      "event_id": "39aeac43cea7b12558b91cdab1255a10",
@@ -3327,7 +3356,8 @@
    "last_commence": "2026-11-08T21:05:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 11,9, Trefferchance 9,0 %, Erwartungswert +7,6 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 11,9, Trefferchance 9,0 %, Erwartungswert +7,6 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-08-stammtisch-01",
@@ -3805,7 +3835,7 @@
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "81ad04996f63fb60b494d243b13ac586",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -3863,9 +3893,26 @@
     "best_odds": 4.43,
     "fair_odds": 4.623
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T19:34:49Z",
+    "goals": [
+     {
+      "min": 80,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0267,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,5 (Tipico), Erwartungswert -4,3 %.",
@@ -3873,7 +3920,8 @@
    "espn": {
     "path": "soccer/esp.1",
     "id": "401882807"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 2.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-affe-02",
