@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T12:16:02Z",
+ "generated_at": "2026-11-08T13:47:19Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,9 +33,9 @@
     "avg_ev": 0.0445,
     "expected_profit": 8.89,
     "expected_settled": 5.03,
-    "avg_clv": 0.0254,
-    "n_clv": 2,
-    "clv_positive": 2,
+    "avg_clv": 0.0805,
+    "n_clv": 5,
+    "clv_positive": 5,
     "max_drawdown": 60.0
    },
    "days": [
@@ -389,8 +389,8 @@
     "avg_ev": -0.0564,
     "expected_profit": -11.28,
     "expected_settled": -5.8,
-    "avg_clv": -0.0529,
-    "n_clv": 3,
+    "avg_clv": -0.0559,
+    "n_clv": 5,
     "clv_positive": 0,
     "max_drawdown": 43.4
    },
@@ -478,9 +478,9 @@
     "avg_ev": -0.0553,
     "expected_profit": -11.05,
     "expected_settled": -6.5,
-    "avg_clv": -0.0458,
-    "n_clv": 3,
-    "clv_positive": 0,
+    "avg_clv": -0.0341,
+    "n_clv": 5,
+    "clv_positive": 1,
     "max_drawdown": 25.0
    },
    "days": [
@@ -2907,11 +2907,17 @@
    "kind": "value",
    "stake": 5.0,
    "potential_payout": 19.45,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.3091,
+    "pinnacle_odds": 3.13,
+    "best_odds": 3.37,
+    "fair_odds": 3.235
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.2027,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 26,3 % (Pinnacle 3,59). Tor-Modell 33,8 %. Unser Wert: 26,7 %. Beste Quote 3,89 bei Matchbook (Median 3,65, 25 Anbieter), Erwartungswert +3,9 %.",
    "research": null,
@@ -2979,11 +2985,17 @@
    "kind": "value",
    "stake": 4.0,
    "potential_payout": 18.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.2326,
+    "pinnacle_odds": 4.14,
+    "best_odds": 4.4,
+    "fair_odds": 4.299
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.07,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 22,5 % (Pinnacle 4,26). Tor-Modell 23,7 %. Unser Wert: 22,6 %. Beste Quote 4,60 bei Unibet NL (Median 4,20, 24 Anbieter), Erwartungswert +3,7 %.",
    "research": null,
@@ -3048,11 +3060,17 @@
    "kind": "value",
    "stake": 3.5,
    "potential_payout": 13.23,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.2854,
+    "pinnacle_odds": 3.35,
+    "best_odds": 3.58,
+    "fair_odds": 3.504
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0788,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,3 % (Pinnacle 3,50). Tor-Modell 24,8 %. Unser Wert: 27,2 %. Beste Quote 3,78 bei 1xBet (Median 3,47, 21 Anbieter), Erwartungswert +2,8 %.",
    "research": null,
@@ -3121,11 +3139,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 95.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.2752,
+    "pinnacle_odds": 3.52,
+    "best_odds": 3.7,
+    "fair_odds": 3.634
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0458,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,8 (Tipico), Erwartungswert -1,3 %.",
    "research": null,
@@ -3190,11 +3214,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 55.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.4187,
+    "pinnacle_odds": 2.35,
+    "best_odds": 2.38,
+    "fair_odds": 2.388
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0789,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,2 (Tipico), Erwartungswert -9,4 %.",
    "research": null,
@@ -3402,11 +3432,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 37.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.4927,
+    "pinnacle_odds": 1.99,
+    "best_odds": 2.02,
+    "fair_odds": 2.03
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0885,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,85 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,6 %.",
    "research": null,
@@ -3475,11 +3511,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 37.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T13:46:30Z",
+    "fair_p": 0.5231,
+    "pinnacle_odds": 1.88,
+    "best_odds": 1.92,
+    "fair_odds": 1.912
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0323,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,85 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
    "research": null,
@@ -5105,12 +5147,8 @@
   }
  },
  "system": {
-  "credits_remaining": 326,
+  "credits_remaining": 323,
   "last_actions": [
-   {
-    "t": "2026-11-07T19:54:55Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-07T20:40:09Z",
     "a": "Wetten abgerechnet"
@@ -5165,6 +5203,10 @@
    },
    {
     "t": "2026-11-08T12:16:02Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-08T13:47:19Z",
     "a": "Schlussquoten erfasst"
    }
   ]
