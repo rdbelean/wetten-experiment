@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T19:34:49Z",
+ "generated_at": "2026-11-08T20:25:04Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,9 +122,9 @@
     "avg_ev": 0.0132,
     "expected_profit": 2.63,
     "expected_settled": 0.98,
-    "avg_clv": 0.0192,
-    "n_clv": 7,
-    "clv_positive": 7,
+    "avg_clv": 0.0168,
+    "n_clv": 8,
+    "clv_positive": 8,
     "max_drawdown": 20.0
    },
    "days": [
@@ -5027,11 +5027,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 25.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T20:25:03Z",
+    "fair_p": 0.7876,
+    "pinnacle_odds": 1.26,
+    "best_odds": 1.26,
+    "fair_odds": 1.27
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0003,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,9 % (Pinnacle 1,25). Unser Wert: 78,9 %. Beste Quote 1,27 bei 1xBet (Median 1,24, 24 Anbieter), Erwartungswert +0,2 %.",
    "research": null,
@@ -5563,12 +5569,8 @@
   }
  },
  "system": {
-  "credits_remaining": 316,
+  "credits_remaining": 315,
   "last_actions": [
-   {
-    "t": "2026-11-08T13:47:19Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-08T14:17:38Z",
     "a": "Schlussquoten erfasst"
@@ -5624,6 +5626,10 @@
    {
     "t": "2026-11-08T19:34:49Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T20:25:04Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
