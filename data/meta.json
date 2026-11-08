@@ -1,6 +1,6 @@
 {
- "credits_remaining": 347,
- "credits_used": 153,
+ "credits_remaining": 327,
+ "credits_used": 173,
  "api_calls": [
   {
    "t": "2026-11-06T16:48:49Z",
@@ -801,6 +801,96 @@
    "t": "2026-11-08T07:33:58Z",
    "path": "/sports/americanfootball_nfl/odds",
    "cost": 3
+  },
+  {
+   "t": "2026-11-08T10:04:57Z",
+   "path": "/sports/soccer_germany_bundesliga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:57Z",
+   "path": "/sports/soccer_germany_bundesliga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:57Z",
+   "path": "/sports/soccer_epl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:58Z",
+   "path": "/sports/soccer_epl/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:58Z",
+   "path": "/sports/soccer_germany_bundesliga2/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:58Z",
+   "path": "/sports/soccer_germany_bundesliga2/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:58Z",
+   "path": "/sports/soccer_spain_la_liga/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:58Z",
+   "path": "/sports/soccer_spain_la_liga/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:59Z",
+   "path": "/sports/soccer_italy_serie_a/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:59Z",
+   "path": "/sports/soccer_italy_serie_a/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:59Z",
+   "path": "/sports/soccer_france_ligue_one/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:04:59Z",
+   "path": "/sports/soccer_france_ligue_one/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:04:59Z",
+   "path": "/sports/soccer_netherlands_eredivisie/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:05:00Z",
+   "path": "/sports/soccer_netherlands_eredivisie/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-08T10:05:00Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:05:00Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-08T10:05:00Z",
+   "path": "/sports/americanfootball_nfl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-08T10:05:00Z",
+   "path": "/sports/americanfootball_nfl/odds",
+   "cost": 3
   }
  ],
  "last_actions": [
@@ -887,6 +977,10 @@
   {
    "t": "2026-11-08T07:34:22Z",
    "a": "Kandidaten für 2026-11-08 vorbereitet"
+  },
+  {
+   "t": "2026-11-08T10:05:02Z",
+   "a": "Wetten für 2026-11-08 platziert"
   }
  ]
 }
