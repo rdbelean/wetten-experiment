@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T14:32:44Z",
+ "generated_at": "2026-11-08T15:33:07Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -211,9 +211,9 @@
     "avg_ev": 0.0703,
     "expected_profit": 14.05,
     "expected_settled": 8.55,
-    "avg_clv": -0.2013,
-    "n_clv": 1,
-    "clv_positive": 0,
+    "avg_clv": -0.0953,
+    "n_clv": 2,
+    "clv_positive": 1,
     "max_drawdown": 100.0
    },
    "days": [
@@ -3692,11 +3692,17 @@
    "kind": "value",
    "stake": 50.0,
    "potential_payout": 324.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T15:33:03Z",
+    "fair_p": 0.1558,
+    "pinnacle_odds": 5.91,
+    "best_odds": 6.5,
+    "fair_odds": 6.418
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0108,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 15,4 % (Pinnacle 5,98). Tor-Modell 25,6 %. Unser Wert: 16,2 %. Beste Quote 6,49 bei Matchbook (Median 5,81, 22 Anbieter), Erwartungswert +5,1 %.",
    "research": null,
@@ -5181,12 +5187,8 @@
   }
  },
  "system": {
-  "credits_remaining": 322,
+  "credits_remaining": 321,
   "last_actions": [
-   {
-    "t": "2026-11-07T21:55:34Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-07T22:00:37Z",
     "a": "Wetten abgerechnet"
@@ -5242,6 +5244,10 @@
    {
     "t": "2026-11-08T14:32:44Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T15:33:07Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
