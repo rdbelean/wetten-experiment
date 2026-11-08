@@ -3216,7 +3216,7 @@
    "player": "stammtisch",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "c70f9f21f48464daa93973147502e183",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -3276,9 +3276,31 @@
     "best_odds": 1.77,
     "fair_odds": 1.736
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T16:33:30Z",
+    "goals": [
+     {
+      "min": 7,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 35.0,
+   "profit": 15.0,
    "clv": 0.008,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,75 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -7,0 %.",
@@ -3286,7 +3308,8 @@
    "espn": {
     "path": "soccer/ger.1",
     "id": "401884738"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-stammtisch-02",
