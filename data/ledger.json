@@ -2072,11 +2072,17 @@
    "kind": "value",
    "stake": 5.5,
    "potential_payout": 19.3,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T16:03:17Z",
+    "fair_p": 0.2945,
+    "pinnacle_odds": 3.29,
+    "best_odds": 3.41,
+    "fair_odds": 3.396
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0337,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,6 % (Pinnacle 3,24). Tor-Modell 30,6 %. Unser Wert: 29,6 %. Beste Quote 3,51 bei 1xBet (Median 3,25, 21 Anbieter), Erwartungswert +4,0 %.",
    "research": null,
@@ -2090,7 +2096,7 @@
    "player": "analyst",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3a4608abdf257d2a0024b944757d9dc9",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -2152,9 +2158,21 @@
     "best_odds": 3.37,
     "fair_odds": 3.235
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:17Z",
+    "goals": [
+     {
+      "min": 36,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 19.45,
+   "profit": 14.45,
    "clv": 0.2027,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 26,3 % (Pinnacle 3,59). Tor-Modell 33,8 %. Unser Wert: 26,7 %. Beste Quote 3,89 bei Matchbook (Median 3,65, 25 Anbieter), Erwartungswert +3,9 %.",
@@ -2162,14 +2180,15 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401879239"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 20.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-06",
    "player": "analyst",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "7a68b099b47ed7724062b661cd9af464",
    "sport": "soccer_italy_serie_a",
    "league": "Serie A",
@@ -2230,9 +2249,31 @@
     "best_odds": 4.4,
     "fair_odds": 4.299
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 13,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 19,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 88,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -4.0,
    "clv": 0.07,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 22,5 % (Pinnacle 4,26). Tor-Modell 23,7 %. Unser Wert: 22,6 %. Beste Quote 4,60 bei Unibet NL (Median 4,20, 24 Anbieter), Erwartungswert +3,7 %.",
@@ -2240,14 +2281,15 @@
    "espn": {
     "path": "soccer/ita.1",
     "id": "401875018"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 7.0 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-07",
    "player": "analyst",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4288fbe018e6e6fb223e389bcf3e57dd",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -2305,9 +2347,31 @@
     "best_odds": 3.58,
     "fair_odds": 3.504
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 68,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -3.5,
    "clv": 0.0788,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,3 % (Pinnacle 3,50). Tor-Modell 24,8 %. Unser Wert: 27,2 %. Beste Quote 3,78 bei 1xBet (Median 3,47, 21 Anbieter), Erwartungswert +2,8 %.",
@@ -2315,7 +2379,8 @@
    "espn": {
     "path": "soccer/fra.1",
     "id": "401876406"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 7.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-08",
@@ -2373,11 +2438,17 @@
    "kind": "value",
    "stake": 3.0,
    "potential_payout": 11.16,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T16:03:17Z",
+    "fair_p": 0.2765,
+    "pinnacle_odds": 3.5,
+    "best_odds": 3.6,
+    "fair_odds": 3.617
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0286,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,5 % (Pinnacle 3,51). Tor-Modell 27,6 %. Unser Wert: 27,5 %. Beste Quote 3,72 bei 1xBet (Median 3,40, 21 Anbieter), Erwartungswert +2,3 %.",
    "research": null,
@@ -3059,8 +3130,11 @@
       "path": "soccer/fra.1",
       "id": "401876406"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 1,
+      "away": 2
+     }
     },
     {
      "event_id": "547e4e8cf5577a50926272e0e1a7e677",
@@ -3361,7 +3435,7 @@
    "player": "stammtisch",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "79ed3df594d7b352ef027128b1ba5d0a",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -3423,9 +3497,31 @@
     "best_odds": 2.02,
     "fair_odds": 2.03
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 5,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 46,
+      "side": "away",
+      "og": true
+     },
+     {
+      "min": 73,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 37.0,
+   "profit": 17.0,
    "clv": -0.0885,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,85 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,6 %.",
@@ -3433,14 +3529,15 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401878759"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 8.8 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8e3ca98e29be84dd4a882ed05f50fa79",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -3502,9 +3599,26 @@
     "best_odds": 1.92,
     "fair_odds": 1.912
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 15,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 42,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 37.0,
+   "profit": 17.0,
    "clv": -0.0323,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,85 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
@@ -3512,7 +3626,8 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401879244"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 3.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-affe-01",
@@ -3588,7 +3703,7 @@
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "3a4608abdf257d2a0024b944757d9dc9",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -3650,9 +3765,21 @@
     "best_odds": 3.7,
     "fair_odds": 3.634
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 36,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": 0.0458,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,8 (Tipico), Erwartungswert -1,3 %.",
@@ -3660,14 +3787,15 @@
    "espn": {
     "path": "soccer/eng.1",
     "id": "401879239"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 4.6 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-affe-03",
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4288fbe018e6e6fb223e389bcf3e57dd",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -3725,9 +3853,31 @@
     "best_odds": 2.38,
     "fair_odds": 2.388
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T16:03:18Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 68,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0789,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,2 (Tipico), Erwartungswert -9,4 %.",
@@ -3735,7 +3885,8 @@
    "espn": {
     "path": "soccer/fra.1",
     "id": "401876406"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 7.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-affe-04",
