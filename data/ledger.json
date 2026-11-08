@@ -1962,7 +1962,7 @@
    "player": "analyst",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8963081c3457212ee238b498bbc33a03",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -2022,9 +2022,31 @@
     "best_odds": 1.56,
     "fair_odds": 1.574
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-08T20:30:06Z",
+    "goals": [
+     {
+      "min": 10,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 26,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 81,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 27.39,
+   "profit": 10.89,
    "clv": 0.0546,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 61,8 % (Pinnacle 1,59). Tor-Modell 65,9 %. Unser Wert: 62,0 %. Beste Quote 1,66 bei Unibet SE (Median 1,58, 23 Anbieter), Erwartungswert +3,0 %.",
@@ -2032,7 +2054,8 @@
    "espn": {
     "path": "soccer/ger.1",
     "id": "401884742"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 5.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-04",
@@ -3199,8 +3222,11 @@
       "path": "soccer/ger.1",
       "id": "401884742"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 1
+     }
     }
    ],
    "last_commence": "2026-11-08T18:30:00Z",
@@ -3565,7 +3591,7 @@
    "player": "stammtisch",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8963081c3457212ee238b498bbc33a03",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -3625,9 +3651,31 @@
     "best_odds": 1.56,
     "fair_odds": 1.574
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-08T20:30:06Z",
+    "goals": [
+     {
+      "min": 10,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 26,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 81,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 31.0,
+   "profit": 11.0,
    "clv": -0.0153,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,8 %.",
@@ -3635,7 +3683,8 @@
    "espn": {
     "path": "soccer/ger.1",
     "id": "401884742"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-stammtisch-04",
