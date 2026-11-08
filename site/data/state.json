@@ -6,12 +6,12 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T11:55:51Z",
+ "generated_at": "2026-11-08T12:00:53Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
    "risk": "mittel",
-   "color": "#3987e5",
+   "color": "#2a78d6",
    "tagline": "Nur Wetten mit mathematischem Vorteil, Einsatz nach Kelly.",
    "desc": "Die Hauptstrategie des Experiments: faire Wahrscheinlichkeit aus Pinnacle, Börse und Marktschnitt, dazu Tor-Modell und News. Gesetzt wird nur bei mindestens +2 % Erwartungswert, der Einsatz richtet sich nach der Größe des Vorteils (Viertel-Kelly), höchstens 40 € pro Wette.",
    "id": "analyst",
@@ -100,7 +100,7 @@
   "banker": {
    "name": "Der Banker",
    "risk": "niedrig",
-   "color": "#d95926",
+   "color": "#eb6834",
    "tagline": "Nur klare Favoriten, kleine Quoten, flache Einsätze.",
    "desc": "Setzt nur auf Ausgänge mit mindestens 62 % Wahrscheinlichkeit bei Quoten von 1,25 bis 1,75, und nur, wenn die beste Quote mindestens fair ist. Bis zu 5 Wetten, das Budget wird gleichmäßig verteilt. Gewinnt oft, aber wenig.",
    "id": "banker",
@@ -189,7 +189,7 @@
   "zocker": {
    "name": "Der Zocker",
    "risk": "hoch",
-   "color": "#199e70",
+   "color": "#1baf7a",
    "tagline": "Außenseiter mit Vorteil, große Quoten, mutige Einsätze.",
    "desc": "Sucht Außenseiter mit Quoten von 3 bis 12, bei denen der Markt sie unterschätzt (mindestens +4 % Erwartungswert). Einsatz nach halbem Kelly, bis zu 60 € auf eine Wette. Verliert oft, aber ein Treffer bringt viel.",
    "id": "zocker",
@@ -278,7 +278,7 @@
   "kombi": {
    "name": "Der Kombi-König",
    "risk": "sehr hoch",
-   "color": "#c98500",
+   "color": "#eda100",
    "tagline": "Zwei Kombiwetten pro Tag aus den besten Einzeltipps.",
    "desc": "Baut aus den besten Value-Tipps des Tages zwei Kombiwetten (3 und 4 Spiele, je 50 €). Die Quoten multiplizieren sich, damit auch der kleine Vorteil jedes Tipps. Eine einzige falsche Partie und die ganze Kombi ist verloren.",
    "id": "kombi",
@@ -367,7 +367,7 @@
   "stammtisch": {
    "name": "Der Stammtisch",
    "risk": "mittel",
-   "color": "#d55181",
+   "color": "#e87ba4",
    "tagline": "Kontrollgruppe: Bauchgefühl, Favorit der großen Spiele, Tipico-Quote.",
    "desc": "So wettet ein typischer Hobby-Tipper: auf den Favoriten der 5 bekanntesten Spiele des Tages, immer zur Tipico-Quote, ohne Quotenvergleich und ohne Mathe, je 20 €. Zeigt, was die Buchmacher-Marge kostet.",
    "id": "stammtisch",
@@ -456,7 +456,7 @@
   "affe": {
    "name": "Der Affe",
    "risk": "Zufall",
-   "color": "#3F9B2B",
+   "color": "#008300",
    "tagline": "Kontrollgruppe: 4 zufällige Tipps zur Tipico-Quote.",
    "desc": "Wählt per Zufall 4 Siegwetten aus dem Tagesangebot (Quote bis 5), je 25 € zur Tipico-Quote. Wenn eine Strategie nicht besser ist als der Affe, taugt sie nichts.",
    "id": "affe",
