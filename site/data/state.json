@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T00:26:39Z",
+ "generated_at": "2026-11-08T00:56:48Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -106,22 +106,22 @@
    "id": "banker",
    "totals": {
     "staked": 100.0,
-    "staked_settled": 40.0,
-    "returned": 52.8,
-    "profit": 12.8,
-    "roi": 0.32,
-    "open_stake": 60.0,
-    "open_potential": 84.6,
-    "won": 2,
+    "staked_settled": 60.0,
+    "returned": 80.4,
+    "profit": 20.4,
+    "roi": 0.34,
+    "open_stake": 40.0,
+    "open_potential": 57.0,
+    "won": 3,
     "lost": 0,
     "push": 0,
     "n_bets": 5,
     "hit_rate": 1.0,
     "avg_odds": 1.374,
-    "max_odds_won": 1.35,
+    "max_odds_won": 1.38,
     "avg_ev": 0.0098,
     "expected_profit": 0.98,
-    "expected_settled": -0.07,
+    "expected_settled": 0.14,
     "avg_clv": 0.0152,
     "n_clv": 4,
     "clv_positive": 4,
@@ -131,16 +131,16 @@
     {
      "date": "2026-11-07",
      "staked": 100.0,
-     "profit": 12.8,
-     "cum_profit": 12.8,
-     "settled": 2,
+     "profit": 20.4,
+     "cum_profit": 20.4,
+     "settled": 3,
      "n_bets": 5
     },
     {
      "date": "2026-11-08",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     },
@@ -148,7 +148,7 @@
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     },
@@ -156,7 +156,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     },
@@ -164,7 +164,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     },
@@ -172,7 +172,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     },
@@ -180,7 +180,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 12.8,
+     "cum_profit": 20.4,
      "settled": 0,
      "n_bets": 0
     }
@@ -2279,7 +2279,7 @@
    "player": "banker",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "won",
    "event_id": "e76682ca6c25a37b0a53cec226b91aab",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -2341,9 +2341,14 @@
     "best_odds": 1.353,
     "fair_odds": 1.361
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 114,
+    "source": "ESPN",
+    "t": "2026-11-08T00:56:48Z"
+   },
+   "payout": 27.6,
+   "profit": 7.6,
    "clv": 0.0143,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 73,2 % (Pinnacle 1,34). Unser Wert: 73,2 %. Beste Quote 1,38 bei 1xBet (Median 1,33, 25 Anbieter), Erwartungswert +1,1 %.",
@@ -2351,7 +2356,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909938"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-07-banker-05",
@@ -2911,10 +2917,6 @@
   "credits_remaining": 372,
   "last_actions": [
    {
-    "t": "2026-11-07T07:44:12Z",
-    "a": "Kandidaten für 2026-11-07 vorbereitet"
-   },
-   {
     "t": "2026-11-07T14:28:13Z",
     "a": "Wetten für 2026-11-07 platziert"
    },
@@ -2969,6 +2971,10 @@
    {
     "t": "2026-11-08T00:26:39Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-08T00:56:48Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }
