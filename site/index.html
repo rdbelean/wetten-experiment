@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=7">
+<link rel="stylesheet" href="styles.css?v=9">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -48,6 +48,18 @@
 
 <!-- Anzeigetafel wie im Wettbüro -->
 <section class="board" aria-labelledby="balanceTitle">
+  <section class="wrap hub" id="hub" aria-labelledby="hubTitle">
+    <div class="hub-head">
+      <h2 class="hub-title" id="hubTitle"><span class="live-dot" id="hubDot" aria-hidden="true"></span><span id="hubTitleText">Jetzt live</span></h2>
+      <p class="hub-sum" id="hubSum"></p>
+      <div class="hub-nav" id="hubNav" hidden>
+        <button type="button" id="hubPrev" aria-label="Zurück blättern"></button>
+        <button type="button" id="hubNext" aria-label="Weiter blättern"></button>
+      </div>
+    </div>
+    <div class="hub-track" id="hubTrack" tabindex="0" aria-label="Laufende und nächste Spiele"></div>
+  </section>
+
   <div class="wrap board-compare" id="boardCompare" hidden>
     <h1 class="board-kicker">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
     <div class="leaderboard" id="leaderboard" role="table" aria-label="Rangliste"></div>
@@ -108,11 +120,6 @@
       <figcaption class="panel-head"><span class="panel-title">Bilanz pro Tag</span></figcaption>
       <div class="chart chart-lg" id="dayChart" role="img" aria-label="Gewinn oder Verlust je Tag"></div>
     </figure>
-  </section>
-
-  <section id="liveSection" class="live" hidden aria-labelledby="liveTitle">
-    <h2 id="liveTitle"><span class="live-dot" aria-hidden="true"></span>Läuft gerade</h2>
-    <div class="live-strip" id="liveStrip"></div>
   </section>
 
   <section class="week" aria-labelledby="weekTitle">
@@ -182,6 +189,6 @@
 </footer>
 
 <div class="fx-layer" id="fx" aria-hidden="true"></div>
-<script src="app.js?v=7" defer></script>
+<script src="app.js?v=9" defer></script>
 </body>
 </html>
