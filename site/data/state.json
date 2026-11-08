@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T07:34:22Z",
+ "generated_at": "2026-11-08T08:19:33Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -701,7 +701,11 @@
      "commence": "2026-11-08T01:10:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst schloss den 07.11. mit −28 € bei 100 € Einsatz ab (1 Sieg, 2 Niederlagen). Die beiden Wetten mit gemessenem CLV waren positiv (Rockets +1,8 %, Arsenal Unter 3,5 +3,3 %). Rockets verlor nur durch einen vergebenen Dreier in den Schlusssekunden, Telstar kam nach 0:2 noch zum 2:2. Die Entscheidungen waren also besser als das Ergebnis. Im Spielervergleich lag der Affe vorn (+34,25 €, getragen von einem einzigen Unentschieden-Treffer zu 3,6 bei Fortuna–Telstar), knapp gefolgt vom Banker (+8,80 €, vier von fünf Favoriten durch). Zocker und Kombi verloren je den vollen Einsatz von 100 €, der Stammtisch −41,20 €. Das ist bei einem einzigen Tag reine Varianz.",
+    "lessons": "Positive CLV-Werte bei Favoriten- und Unter-Wetten. Hohe Quoten mit großer Lücke zwischen Modell und Markt (Telstar, PSG-Remis beim Zocker mit CLV −20 %) bleiben das größte Risiko. Für Telstar wurde kein Schlusskurs erfasst, die Erfassung sollte geprüft werden.",
+    "written_at": "2026-11-08T09:17:36+01:00"
+   }
   },
   {
    "date": "2026-11-08",
@@ -715,7 +719,7 @@
    "n_value": null,
    "research": {
     "used": false,
-    "summary": null,
+    "summary": "Vorläufige Fassung: Die Recherche läuft noch, bisher keine Korrekturen.",
     "n_events": 0
    },
    "near_misses": [],
@@ -875,7 +879,12 @@
    "payout": 72.0,
    "profit": 32.0,
    "clv": 0.0332,
-   "analysis": null,
+   "analysis": {
+    "text": "Arsenal gewann 1:0 gegen Hull. Ødegaard staubte in der 72. Minute nach einem abgeprallten Madueke-Schuss ab. Hull verteidigte tief, und Arsenal kassiert seit 444 Ligaminuten kein Gegentor. Unter 3,5 Tore war nie in Gefahr.",
+    "verdict": "können",
+    "lesson": "Unter-Wetten gegen tief stehende Außenseiter bei Arsenals Top-Defensive brachten positiven CLV (+3,3 %), das Muster lohnt sich.",
+    "written_at": "2026-11-08T09:17:36+01:00"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 57,4 %. Tor-Modell 76,6 %. Unser Wert: 58,4 %. Beste Quote 1,80 bei Tipico (Median 1,67, 11 Anbieter), Erwartungswert +5,1 %.",
    "research": null,
    "espn": {
@@ -1570,7 +1579,12 @@
    "payout": 0.0,
    "profit": -20.0,
    "clv": null,
-   "analysis": null,
+   "analysis": {
+    "text": "Fortuna führte durch einen Ihattaren-Elfmeter und ein Eigentor von Sem Valk (43.) mit 2:0. Telstar glich noch vor der Pause mit zwei Toren in der Nachspielzeit der ersten Hälfte aus (u. a. Brouwer). In der zweiten Halbzeit hatten beide Teams Chancen, die Torhüter hielten das 2:2. Die Aufholjagd zeigt, dass die Annahme einer geschwächten Fortuna nicht abwegig war, für den Sieg reichte es aber nicht.",
+    "verdict": "pech",
+    "lesson": "Es wurde keine Schlussquote erfasst, und das Modell lag 12 Prozentpunkte über dem Markt (39,7 % zu 27,4 %). Solche großen Abweichungen in der Eredivisie vorsichtig behandeln und die Erfassung des Schlusskurses prüfen.",
+    "written_at": "2026-11-08T09:17:36+01:00"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 27,4 % (Pinnacle 3,50). Tor-Modell 39,7 %. News-Korrektur +1,0 Prozentpunkte. Unser Wert: 29,4 %. Beste Quote 3,70 bei Unibet NL (Median 3,41, 22 Anbieter), Erwartungswert +8,6 %. Recherche: Fortuna fehlen laut Vereinsumfeld Guth, Michut, Romeny, Sinkgraven und Zeefuik (Angaben zu Guth und Zeefuik widersprüchlich). Telstar bis auf Alders (fraglich) komplett. Deshalb eine leichte Korrektur Richtung Telstar.",
    "research": "Fortuna fehlen laut Vereinsumfeld Guth, Michut, Romeny, Sinkgraven und Zeefuik (Angaben zu Guth und Zeefuik widersprüchlich). Telstar bis auf Alders (fraglich) komplett. Deshalb eine leichte Korrektur Richtung Telstar.",
    "espn": {
@@ -2526,7 +2540,12 @@
    "payout": 0.0,
    "profit": -40.0,
    "clv": 0.0176,
-   "analysis": null,
+   "analysis": {
+    "text": "Die Suns gewannen 102:99 in Phoenix. Booker (24 Punkte) entschied die Partie mit sieben Punkten in Folge nach einem späten Gleichstand, Durant (21 Punkte, 10 Rebounds) vergab in den letzten Sekunden einen Dreier zum Ausgleich. Sengun traf nur 5 von 16 Würfen. Ein knappes Spiel, das an einem einzelnen Wurf hing.",
+    "verdict": "pech",
+    "lesson": "Reine Varianz: Die Quote von 1,43 lag 1,8 % über dem fairen Schlusskurs, solche Wetten weiter spielen.",
+    "written_at": "2026-11-08T09:17:36+01:00"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 72,2 % (Pinnacle 1,36). Unser Wert: 72,2 %. Beste Quote 1,43 bei Unibet SE (Median 1,35, 25 Anbieter), Erwartungswert +3,2 %. Recherche: Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
    "research": "Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
    "espn": {
