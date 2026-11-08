@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T14:17:38Z",
+ "generated_at": "2026-11-08T14:32:44Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -462,26 +462,26 @@
    "id": "affe",
    "totals": {
     "staked": 200.0,
-    "staked_settled": 100.0,
+    "staked_settled": 125.0,
     "returned": 134.25,
-    "profit": 34.25,
-    "roi": 0.3425,
-    "open_stake": 100.0,
-    "open_potential": 310.0,
+    "profit": 9.25,
+    "roi": 0.074,
+    "open_stake": 75.0,
+    "open_potential": 262.5,
     "won": 2,
-    "lost": 2,
+    "lost": 3,
     "push": 0,
     "n_bets": 8,
-    "hit_rate": 0.5,
+    "hit_rate": 0.4,
     "avg_odds": 2.971,
     "max_odds_won": 3.6,
     "avg_ev": -0.0553,
     "expected_profit": -11.05,
-    "expected_settled": -6.5,
+    "expected_settled": -7.29,
     "avg_clv": -0.0341,
     "n_clv": 5,
     "clv_positive": 1,
-    "max_drawdown": 25.0
+    "max_drawdown": 30.75
    },
    "days": [
     {
@@ -495,16 +495,16 @@
     {
      "date": "2026-11-08",
      "staked": 100.0,
-     "profit": 0,
-     "cum_profit": 34.25,
-     "settled": 0,
+     "profit": -25.0,
+     "cum_profit": 9.25,
+     "settled": 1,
      "n_bets": 4
     },
     {
      "date": "2026-11-09",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 34.25,
+     "cum_profit": 9.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -512,7 +512,7 @@
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 34.25,
+     "cum_profit": 9.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -520,7 +520,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 34.25,
+     "cum_profit": 9.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 34.25,
+     "cum_profit": 9.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 34.25,
+     "cum_profit": 9.25,
      "settled": 0,
      "n_bets": 0
     }
@@ -2777,7 +2777,7 @@
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "7e748a8bdb13a55389b8e51876b9a504",
    "sport": "soccer_germany_bundesliga2",
    "league": "2. Bundesliga",
@@ -2835,9 +2835,36 @@
     "best_odds": 1.951,
     "fair_odds": 1.974
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T14:32:44Z",
+    "goals": [
+     {
+      "min": 43,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 55,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 63,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 66,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0377,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,9 (Tipico), Erwartungswert -3,2 %.",
@@ -2845,7 +2872,8 @@
    "espn": {
     "path": "soccer/ger.2",
     "id": "401885065"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 3.8 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-05",
@@ -5156,10 +5184,6 @@
   "credits_remaining": 322,
   "last_actions": [
    {
-    "t": "2026-11-07T21:45:30Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-07T21:55:34Z",
     "a": "Schlussquoten erfasst"
    },
@@ -5214,6 +5238,10 @@
    {
     "t": "2026-11-08T14:17:38Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-08T14:32:44Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }

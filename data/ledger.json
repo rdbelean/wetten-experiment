@@ -3736,7 +3736,7 @@
    "player": "affe",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "7e748a8bdb13a55389b8e51876b9a504",
    "sport": "soccer_germany_bundesliga2",
    "league": "2. Bundesliga",
@@ -3794,9 +3794,36 @@
     "best_odds": 1.951,
     "fair_odds": 1.974
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-08T14:32:44Z",
+    "goals": [
+     {
+      "min": 43,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 55,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 63,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 66,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0377,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,9 (Tipico), Erwartungswert -3,2 %.",
@@ -3804,7 +3831,8 @@
    "espn": {
     "path": "soccer/ger.2",
     "id": "401885065"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 3.8 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   }
  ]
 }
