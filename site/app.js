@@ -32,6 +32,8 @@
   const live = {};          // betId -> {home_score, away_score, detail, state}
   const matches = {};       // ESPN-Event-ID -> Live-Stand
   let hubUpdated = null;
+  let sportFilter = "Alle";
+  let showAllEvents = false;
   const fresh = new Set();  // in dieser Sitzung neu abgerechnete Wetten -> Stempel-Animation
 
   // ------------------------------------------------------------------ Laden
@@ -124,11 +126,15 @@
     return now >= t - 5 * 60e3 && now <= t + ((DUR[e.group] || 2.5) + 1.5) * 3600e3;
   };
 
+  let lastFullPoll = 0;
   async function pollLive() {
     if (!state) return;
-    const pool = matchEntries().filter((e) => e.espn && inPlayWindow(e));
+    const full = Date.now() - lastFullPoll > 5 * 60e3;
+    const soon = (e) => new Date(e.commence).getTime() - Date.now() < 36 * 3600e3;
+    const pool = [...matchEntries(), ...recentEntries()].filter((e) => e.espn && (inPlayWindow(e) || (full && soon(e))));
     const goals = new Set();
     if (pool.length) {
+      if (full) lastFullPoll = Date.now();
       const want = new Map();
       for (const e of pool) {
         const t = new Date(e.commence);
@@ -150,23 +156,30 @@
         if (!ev) continue;
         const c = ev.competitions[0];
         const side = (ha) => c.competitors.find((x) => x.homeAway === ha);
+        const h = side("home"), a = side("away");
         const nv = {
-          home_score: +side("home").score || 0, away_score: +side("away").score || 0,
+          home_score: +h.score || 0, away_score: +a.score || 0,
           detail: ev.status.type.shortDetail, state: ev.status.type.state, name: ev.status.type.name,
           clock: ev.status.displayClock, period: ev.status.period,
+          home_abbr: h.team.abbreviation, away_abbr: a.team.abbreviation,
+          home_color: h.team.color, away_color: a.team.color, home_id: h.team.id, away_id: a.team.id,
+          details: c.details || [],
         };
         const old = matches[e.espn.id];
-        if (old && old.state === "in" && (old.home_score !== nv.home_score || old.away_score !== nv.away_score)) goals.add(e.key);
+        if (old && old.state === "in" && (old.home_score !== nv.home_score || old.away_score !== nv.away_score)) { goals.add(e.key); localFeed(e, old, nv); }
+        if (old && old.state === "pre" && nv.state === "in") pushFeed({ id: `ko-${e.key}`, t: Date.now(), kind: "info", tag: "Anpfiff", text: `${e.home} – ${e.away}`, league: e.league });
+        if (old && old.state === "in" && nv.state === "post") pushFeed({ id: `ft-${e.key}`, t: Date.now(), kind: "info", tag: "Abpfiff", text: `${e.home} ${nv.home_score}:${nv.away_score} ${e.away}`, league: e.league });
         matches[e.espn.id] = nv;
       }
       for (const b of state.bets) if (b.espn && matches[b.espn.id]) live[b.id] = matches[b.espn.id];
       hubUpdated = new Date();
     }
     renderHub(goals);
+    renderScorebar();
+    renderFeed();
     if (pool.length) {
       if (view !== "vergleich") { renderSlips(); renderDays(); }
       renderTop();
-      renderTicker();
     }
   }
 
@@ -207,9 +220,10 @@
     renderTabs();
     renderTop();
     renderHub();
-    if (cmp) { renderCompare(); renderTicker(); renderMethod(); renderSys(); return; }
+    renderScorebar();
+    renderFeed();
+    if (cmp) { renderCompare(); renderMethod(); renderSys(); return; }
     renderBoard();
-    renderTicker();
     renderChart();
     renderDayChart();
     renderDays();
@@ -290,48 +304,155 @@
       ["Trefferquote", t.hit_rate == null ? "–" : pct(t.hit_rate), t.won + t.lost ? `${t.won} von ${t.won + t.lost} Wetten` : "noch keine", ""],
       ["Ø Quote", t.avg_odds ? odds(t.avg_odds) : "–", "über alle Wetten", ""],
       ["Ø Closing Line Value", t.avg_clv == null ? "–" : pct(t.avg_clv, true), t.n_clv ? `${t.clv_positive} von ${t.n_clv} besser als Schluss` : "noch keine Schlusskurse", clvCls],
-      ["Möglicher Gewinn offen", t.open_stake ? eur(t.open_potential) : "–", t.open_stake ? `bei ${eur0(t.open_stake)} Einsatz` : "nichts offen", ""],
+      ["Mögliche Auszahlung", t.open_stake ? eur(t.open_potential) : "–", t.open_stake ? `bei ${eur0(t.open_stake)} Einsatz` : "nichts offen", ""],
       ["Nächster Anpfiff", next ? `<span data-countdown="${next.commence}">${countdownText(next.commence)}</span>` : "–", next ? `${esc(next.home)} – ${esc(next.away)}` : "keine offenen Spiele", "k-count"],
     ];
     $("facts").innerHTML = kpis.map(([k, v, s, c]) => `<div><dt>${k}</dt><dd class="${c}">${v}<small>${s}</small></dd></div>`).join("");
   }
 
-  // ------------------------------------------------------------------ Ticker
-  function renderTicker() {
+  // ------------------------------------------------------------------ Score-Leiste
+  function recentEntries() {
+    const map = new Map();
+    const cut = Date.now() - 20 * 3600e3;
+    for (const b of state?.bets || []) {
+      if (b.status === "open" || b.market === "combo" || !b.result || b.result.home == null || new Date(b.commence).getTime() < cut) continue;
+      const key = b.espn ? `e${b.espn.id}` : `o${b.event_id}`;
+      if (!map.has(key)) map.set(key, { key, espn: b.espn || null, league: b.league, group: b.group, home: b.home, away: b.away, commence: b.commence, final: { home: b.result.home, away: b.result.away }, profit: 0, picks: [] });
+      const e = map.get(key);
+      if (b.player === "analyst") e.profit += b.profit || 0;
+      e.picks.push(b);
+    }
+    return [...map.values()].sort((x, y) => y.commence.localeCompare(x.commence));
+  }
+  const abbr = (name) => name.replace(/^(FC|SC|SV|VfB|VfL|TSG|FSV|1\.|AS|AC|RB)\s+/g, "").slice(0, 3).toUpperCase();
+  const hue = (t) => { let h = 0; for (const c of t) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h} 55% 38%)`; };
+  function teamBadge(name, m, side) {
+    const ab = m?.[`${side}_abbr`] || abbr(name);
+    const col = m?.[`${side}_color`] ? `#${m[`${side}_color`]}` : hue(name);
+    return `<i class="tm" style="--t:${col}">${esc(ab)}</i>`;
+  }
+  function sbTile(e, kind) {
+    const m = e.espn ? matches[e.espn.id] : null;
+    const hs = kind === "final" ? (e.final?.home ?? m?.home_score) : m?.home_score;
+    const as = kind === "final" ? (e.final?.away ?? m?.away_score) : m?.away_score;
+    const head = kind === "live" ? `<b class="sb-live">${esc(clockDe(m))}</b>` : kind === "final" ? "Endstand" : `${wd(e.commence)} ${hhmm(e.commence)}`;
+    let bet = "";
+    if (kind === "live") {
+      let sum = 0, n = 0;
+      for (const p of e.picks) if (!p.combo) { sum += betStory(p, e, hs, as).profit; n++; }
+      if (n) bet = `<span class="sb-bet ${sum > 0 ? "up" : sum < 0 ? "down" : ""}">${sum > 0 ? "▲" : sum < 0 ? "▼" : "■"} ${eur(sum, true)}</span>`;
+    } else if (kind === "next") bet = `<span class="sb-bet">${plural(e.picks.length, "Wette", "Wetten")}</span>`;
+    const score = (v) => (v == null || kind === "next" ? "" : `<b>${v}</b>`);
+    return `<a class="sb-tile ${kind === "live" ? "is-live" : ""}" href="#m-${esc(e.key)}">
+      <span class="sb-head"><span>${esc(e.league)}</span><span>${head}</span></span>
+      <span class="sb-row">${teamBadge(e.home, m, "home")}<span class="sb-name">${esc(e.home)}</span>${score(hs)}</span>
+      <span class="sb-row">${teamBadge(e.away, m, "away")}<span class="sb-name">${esc(e.away)}</span>${score(as)}</span>${bet}</a>`;
+  }
+  let sbOffset = 0, sbBase = 0, sbPaused = false, sbLast = 0, sbHtml = "";
+  function renderScorebar() {
     if (!state) return;
-    const today = berlinDate();
-    const all = view === "vergleich" ? state.bets.filter((b) => b.player === "analyst" || b.market === "combo" || b.player === "zocker") : myBets();
-    const hasBets = (d) => all.some((b) => b.day === d.date);
-    const day = state.days.find((d) => d.date === today && hasBets(d)) || [...state.days].reverse().find(hasBets);
-    const bets = day ? all.filter((b) => b.day === day.date).sort((a, b) => a.commence.localeCompare(b.commence)) : [];
-    $("ticker").querySelector(".ticker-label").textContent = !day ? "Ticker" : day.date === today ? "Heute gesetzt" : `Gesetzt am ${wd(day.date + "T12:00:00")}`;
-    let items;
-    if (!bets.length) {
-      items = [`<span class="t-item">Noch keine Wetten. Um 8:30 Uhr werden die Quoten von rund 25 Buchmachern geholt, um 11:00 Uhr wird gesetzt.</span>`];
+    const all = matchEntries();
+    const st = (e) => (e.espn && matches[e.espn.id] ? matches[e.espn.id].state : null);
+    const running = all.filter((e) => st(e) === "in");
+    const next = all.filter((e) => st(e) !== "in" && st(e) !== "post" && new Date(e.commence) > new Date()).slice(0, 10);
+    const done = recentEntries().slice(0, 8);
+    const tiles = [...running.map((e) => sbTile(e, "live")), ...next.map((e) => sbTile(e, "next")), ...done.map((e) => sbTile(e, "final"))];
+    $("sbLabel").textContent = running.length ? "Live" : "Scores";
+    $("sbLabel").classList.toggle("is-live", !!running.length);
+    const track = $("sbTrack");
+    if (!tiles.length) { track.innerHTML = `<span class="sb-empty">Die nächsten Wetten werden um 11:00 Uhr gesetzt.</span>`; sbBase = 0; sbHtml = ""; return; }
+    const repeat = Math.max(2, Math.ceil(window.innerWidth / (tiles.length * 190)) + 1);
+    const html = tiles.join("");
+    if (html === sbHtml && track.children.length) return;
+    sbHtml = html;
+    track.innerHTML = Array(repeat).fill(html).join("");
+    sbBase = track.scrollWidth / repeat;
+    if (sbOffset >= sbBase) sbOffset = 0;
+  }
+  function sbFrame(ts) {
+    if (sbLast && !sbPaused && sbBase) {
+      sbOffset += (ts - sbLast) * 0.04;
+      if (sbOffset >= sbBase) sbOffset -= sbBase;
+      $("sbTrack").style.transform = `translateX(${-sbOffset}px)`;
+    }
+    sbLast = ts;
+    requestAnimationFrame(sbFrame);
+  }
+
+  // ------------------------------------------------------------------ Live-Ticker (Tore, Karten, An-/Abpfiff)
+  const feedItems = new Map();
+  const feedSeen = new Set();
+  const pushFeed = (item) => { if (!feedItems.has(item.id)) feedItems.set(item.id, item); };
+  function localFeed(e, old, nv) {
+    if (e.group === "Fußball") return; // kommt aus den ESPN-Details
+    const lead = (m) => Math.sign(m.home_score - m.away_score);
+    if (e.group === "Basketball" && lead(old) === lead(nv)) return;
+    const tag = e.group === "Basketball" ? "Führungswechsel" : e.group === "Eishockey" ? "Tor" : "Punkte";
+    pushFeed({ id: `s-${e.key}-${nv.home_score}-${nv.away_score}`, t: Date.now(), kind: tag === "Führungswechsel" ? "info" : "goal", tag, text: `${e.home} ${nv.home_score}:${nv.away_score} ${e.away}`, league: e.league, ekey: e.key, clock: clockDe(nv) });
+  }
+  function collectDetails() {
+    for (const e of matchEntries()) {
+      const m = e.espn ? matches[e.espn.id] : null;
+      if (!m || m.state === "pre") continue;
+      const lastGoal = [...m.details].reverse().find((d) => d.scoringPlay);
+      for (const d of m.details) {
+        const kind = d.scoringPlay ? "goal" : d.redCard ? "red" : d.yellowCard ? "yellow" : null;
+        if (!kind) continue;
+        const min = parseInt(d.clock?.displayValue, 10) || 0;
+        const who = (d.athletesInvolved || []).map((a) => a.displayName).join(", ");
+        const team = d.team?.id === m.home_id ? e.home : e.away;
+        const tag = d.ownGoal ? "Eigentor" : d.penaltyKick && d.scoringPlay ? "Elfmeter" : kind === "goal" ? "Tor" : kind === "red" ? "Rot" : "Gelb";
+        const t = new Date(e.commence).getTime() + (min + (min > 45 ? 15 : 0)) * 60e3;
+        const id = `${e.key}-${kind}-${d.clock?.displayValue}-${who}`;
+        feedItems.set(id, { id, t, kind, tag, clock: d.clock?.displayValue, text: who ? `${who} (${team})` : team, league: `${e.home} – ${e.away}`, ekey: d === lastGoal ? e.key : null });
+      }
+    }
+  }
+  function goalImpact(ekey) {
+    const pid = state.players[view] ? view : null;
+    const e = matchEntries(pid).find((x) => x.key === ekey);
+    const m = e && e.espn ? matches[e.espn.id] : null;
+    if (!m) return "";
+    const parts = e.picks.filter((p) => !p.combo).slice(0, 3).map((p) => {
+      const s = betStory(p, e, m.home_score, m.away_score);
+      return `<span class="${s.g === "won" ? "up" : s.g === "lost" ? "down" : ""}">${esc(shortName(p.player))} ${s.g === "won" ? "▲" : s.g === "lost" ? "▼" : "■"} ${eur(s.profit, true)}</span>`;
+    });
+    return `<span class="fd-impact"><b>${m.home_score}:${m.away_score}</b> ${parts.join(" ")}</span>`;
+  }
+  function renderFeed() {
+    if (!state) return;
+    collectDetails();
+    const items = [...feedItems.values()].sort((a, b) => b.t - a.t).slice(0, 30);
+    const firstPaint = !feedSeen.size;
+    $("feed").innerHTML = items.length ? items.map((it) => {
+      const isNew = !firstPaint && !feedSeen.has(it.id);
+      return `<li class="fd fd-${it.kind} ${isNew ? "fd-new" : ""}"><span class="fd-min">${esc(it.clock || hhmm(new Date(it.t).toISOString()))}</span><div class="fd-body"><span class="fd-tag">${esc(it.tag)}</span> ${esc(it.text)}<small>${esc(it.league)}</small>${it.ekey ? goalImpact(it.ekey) : ""}</div></li>`;
+    }).join("") : `<li class="fd-empty">Sobald unsere Spiele laufen, erscheinen hier Tore, Karten und Abpfiffe.</li>`;
+    items.forEach((it) => feedSeen.add(it.id));
+  }
+
+  // ------------------------------------------------------------------ Wettschein-Spalte
+  function renderSlipRail() {
+    const pid = state.players[view] ? view : null;
+    const open = state.bets.filter((b) => b.status === "open" && (!pid || b.player === pid));
+    const stake = open.reduce((a, b) => a + b.stake, 0), pot = open.reduce((a, b) => a + b.potential_payout, 0);
+    let body;
+    if (!open.length) body = `<p class="fd-empty">Gerade sind keine Wetten offen.</p>`;
+    else if (!pid) {
+      body = `<ul class="rs-list">${state.order.map((id) => {
+        const bs = open.filter((b) => b.player === id);
+        if (!bs.length) return "";
+        return `<li><button type="button" class="rs-player" data-v="${id}"><i style="background:${state.players[id].color}"></i><span>${esc(pName(id))}<small>${plural(bs.length, "Wette", "Wetten")} offen</small></span><b>${eur(bs.reduce((a, b) => a + b.potential_payout, 0))}</b></button></li>`;
+      }).join("")}</ul>`;
     } else {
-      items = bets.map((b) => {
-        const lv = live[b.id];
-        let st;
-        if (b.status === "won") st = `<span class="t-won">gewonnen ${eur(b.profit, true)}</span>`;
-        else if (b.status === "lost") st = `<span class="t-lost">verloren ${eur(b.profit, true)}</span>`;
-        else if (b.status !== "open") st = "Einsatz zurück";
-        else if (lv && lv.state === "in") {
-          const g = grade(b, lv.home_score, lv.away_score);
-          st = `<b>${lv.home_score}:${lv.away_score}</b> <span class="${g === "won" ? "t-up" : "t-down"}">${g === "won" ? "▲ liegt vorn" : "▼ liegt hinten"}</span>`;
-        } else st = `Anstoß ${wd(b.commence)} ${hhmm(b.commence)}`;
-        const tip = b.tipico_odds && b.book_name !== "Tipico" ? ` <span>Tipico ${odds(b.tipico_odds)}</span>` : "";
-        const who = view === "vergleich" ? `<span style="color:${state.players[b.player].color}">●</span> ${esc(pName(b.player))}: ` : "";
-        const match = b.market === "combo" ? b.legs.map((l) => esc(l.label)).join(" + ") : `${esc(b.home)} – ${esc(b.away)}`;
-        return `<span class="t-item">${who}${esc(b.league)} <b>${match}</b> ${esc(b.label)} <span class="t-odds">${odds(b.odds)}</span> ${esc(b.book_name)}${tip} <span>${eur0(b.stake)}</span> ${st}</span>`;
-      });
+      const sorted = [...open].sort((a, b) => a.commence.localeCompare(b.commence));
+      body = `<ul class="rs-list">${sorted.slice(0, 10).map((b) => `<li class="rs-bet"><div><b>${esc(b.label)}</b><small>${b.market === "combo" ? esc(b.league) : `${esc(b.home)} – ${esc(b.away)}`}</small></div><span class="rs-odds">${odds(b.odds)}</span><span class="rs-stake">${eur0(b.stake)}</span></li>`).join("")}</ul>${sorted.length > 10 ? `<p class="fd-empty">und ${sorted.length - 10} weitere</p>` : ""}`;
     }
-    const html = items.join("");
-    const track = $("tickerTrack");
-    if (track.dataset.html !== html) {
-      track.dataset.html = html;
-      track.innerHTML = html + html; // doppelt für nahtlose Schleife
-      track.style.setProperty("--dur", `${Math.max(30, items.length * 9)}s`);
-    }
+    $("slipRail").innerHTML = `${body}<dl class="rs-total"><div><dt>Einsatz offen</dt><dd>${eur(stake)}</dd></div><div><dt>Mögliche Auszahlung</dt><dd class="rs-pot">${eur(pot)}</dd></div></dl>`;
+    $("slipRail").querySelectorAll("[data-v]").forEach((b) => b.addEventListener("click", () => { setView(b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
+    const bar = $("slipbar");
+    bar.hidden = !open.length;
+    bar.innerHTML = `<span>Wettschein: <b>${plural(open.length, "Wette", "Wetten")}</b> offen</span><span>Möglich <b>${eur(pot)}</b></span>`;
   }
 
   // ------------------------------------------------------------------ Chart-Hilfen
@@ -726,60 +847,77 @@
     return { g, text, profit };
   }
   const shortName = (id) => pName(id).replace(/^Der /, "");
-  function pickRow(p, e, m) {
+  function oddsChip(p, e, m) {
     const c = state.players[p.player].color;
-    const head = `<i style="background:${c}"></i><div class="hc-pick"><b>${esc(shortName(p.player))}</b> ${esc(p.label)} zu ${odds(p.odds)}`;
-    if (!m || m.state === "pre") return `<li>${head}<small>${p.combo ? `Teil der ${esc(p.combo)}` : `${eur0(p.stake)} Einsatz`}</small></div></li>`;
+    const head = `<span class="oc-who" style="--c:${c}">${esc(shortName(p.player))}</span><span class="oc-odds">${odds(p.odds)}</span><span class="oc-tip">${esc(p.label)}</span>`;
+    if (!m || m.state === "pre") return `<div class="oc">${head}<span class="oc-state">${p.combo ? `Teil der ${esc(p.combo)}` : `${eur0(p.stake)} Einsatz`}</span></div>`;
     const s = betStory(p, e, m.home_score, m.away_score);
-    const cls = s.g === "won" ? "is-win" : s.g === "lost" ? "is-lose" : "";
-    const arrow = s.g === "won" ? "▲" : s.g === "lost" ? "▼" : "■";
+    const cls = s.g === "won" ? "up" : s.g === "lost" ? "down" : "";
     const res = p.combo ? (s.g === "won" ? "passt" : s.g === "lost" ? "wackelt" : "offen") : s.g === "push" ? "0,00 €" : eur(s.profit, true);
-    return `<li class="${cls}">${head}<small>${esc(s.text)}${p.combo ? `, Teil der ${esc(p.combo)}` : ""}</small></div><span class="hc-res"><span aria-hidden="true">${arrow}</span> ${res}</span></li>`;
+    return `<div class="oc ${cls}">${head}<span class="oc-state"><span>${esc(s.text)}</span><b>${s.g === "won" ? "▲" : s.g === "lost" ? "▼" : "■"} ${res}</b></span></div>`;
   }
-  function matchCard(e, goals) {
+  function eventRow(e, goals) {
     const m = e.espn ? matches[e.espn.id] : null;
-    const picks = `<ul class="hc-picks">${e.picks.map((p) => pickRow(p, e, m)).join("")}</ul>`;
-    if (m && (m.state === "in" || m.state === "post")) {
-      const post = m.state === "post";
-      const goal = goals.has(e.key);
-      return `<article class="hc ${post ? "hc-post" : "hc-live"} ${goal ? "goal-flash" : ""}">
-        <div class="hc-top"><span>${esc(e.league)}</span><span class="hc-clock">${post ? "Abpfiff, wird abgerechnet" : esc(clockDe(m))}</span></div>
-        <div class="hc-score"><span class="hc-team">${esc(e.home)}</span><span class="hc-nums"><span class="${goal ? "score-pop" : ""}">${m.home_score} : ${m.away_score}</span></span><span class="hc-team away">${esc(e.away)}</span></div>
-        <div class="hc-progress" aria-hidden="true"><i style="width:${gameProgress(e, m).toFixed(0)}%"></i></div>${picks}</article>`;
-    }
+    const isLive = m?.state === "in", post = m?.state === "post";
     const started = new Date(e.commence).getTime() <= Date.now();
-    const when = started ? "läuft, kein Live-Stand verfügbar" : `Anstoß ${wd(e.commence)} ${hhmm(e.commence)}`;
-    return `<article class="hc hc-next">
-      <div class="hc-top"><span>${esc(e.league)}</span><span class="hc-when">${when}</span></div>
-      <div class="hc-score"><span class="hc-team">${esc(e.home)}</span><span class="hc-count">${started ? "–" : `<span data-countdown="${e.commence}">${countdownText(e.commence)}</span>`}</span><span class="hc-team away">${esc(e.away)}</span></div>${picks}</article>`;
+    const goal = goals.has(e.key);
+    let state_;
+    if (isLive) state_ = `<span class="badge-live">Live</span><span class="ev-clock">${esc(clockDe(m))}</span>`;
+    else if (post) state_ = `<span class="ev-final">Abpfiff</span><span class="ev-sub">wird abgerechnet</span>`;
+    else if (started) state_ = `<span class="ev-final">Läuft</span><span class="ev-sub">kein Live-Stand</span>`;
+    else state_ = `<span class="ev-time">${hhmm(e.commence)}</span><span class="ev-sub" data-countdown="${e.commence}">${countdownText(e.commence)}</span>`;
+    const score = (v) => (isLive || post ? `<b class="ev-score ${goal ? "score-pop" : ""}">${v}</b>` : "");
+    return `<article class="ev ${isLive ? "is-live" : ""} ${goal ? "goal-flash" : ""}" id="m-${esc(e.key)}">
+      <div class="ev-state">${state_}</div>
+      <div class="ev-teams">
+        <div class="ev-team">${teamBadge(e.home, m, "home")}<span>${esc(e.home)}</span>${score(m?.home_score)}</div>
+        <div class="ev-team">${teamBadge(e.away, m, "away")}<span>${esc(e.away)}</span>${score(m?.away_score)}</div>
+        ${isLive ? `<div class="ev-progress" aria-hidden="true"><i style="width:${gameProgress(e, m).toFixed(0)}%"></i></div>` : ""}
+      </div>
+      <div class="ev-bets">${e.picks.map((p) => oddsChip(p, e, m)).join("")}</div>
+    </article>`;
   }
   function renderHub(goals = new Set()) {
     if (!state) return;
     const pid = state.players[view] ? view : null;
     const all = matchEntries(pid);
     const st = (e) => (e.espn && matches[e.espn.id] ? matches[e.espn.id].state : null);
-    const running = all.filter((e) => st(e) === "in");
-    const ended = all.filter((e) => st(e) === "post");
-    const noFeed = all.filter((e) => !st(e) && !e.espn && inPlayWindow(e) && new Date(e.commence) <= new Date());
-    const next = all.filter((e) => new Date(e.commence) > new Date() && st(e) !== "in" && st(e) !== "post").slice(0, running.length ? 3 : 6);
-    const cards = [...running, ...noFeed, ...ended, ...next];
-    const track = $("hubTrack");
-    const left = track.scrollLeft;
-    track.innerHTML = cards.length ? cards.map((e) => matchCard(e, goals)).join("")
+    const rank = (e) => (st(e) === "in" ? 0 : st(e) === "post" ? 2 : new Date(e.commence) <= new Date() ? 1 : 3);
+    const visible = all.filter((e) => inPlayWindow(e) || new Date(e.commence) > new Date());
+    const groups = ["Fußball", "Basketball", "Eishockey", "American Football"].filter((g) => visible.some((e) => e.group === g));
+    if (sportFilter !== "Alle" && !groups.includes(sportFilter)) sportFilter = "Alle";
+    const liveCount = (g) => visible.filter((e) => st(e) === "in" && (g === "Alle" || e.group === g)).length;
+    $("sportChips").innerHTML = ["Alle", ...groups].map((g) => {
+      const n = visible.filter((e) => g === "Alle" || e.group === g).length, l = liveCount(g);
+      return `<button type="button" class="chip" role="tab" aria-selected="${g === sportFilter}" data-g="${g}">${g === "American Football" ? "Football" : g}<span>${n}</span>${l ? `<em>${l} live</em>` : ""}</button>`;
+    }).join("");
+    $("sportChips").querySelectorAll(".chip").forEach((b) => b.addEventListener("click", () => { sportFilter = b.dataset.g; renderHub(); }));
+    const sorted = visible.filter((e) => sportFilter === "Alle" || e.group === sportFilter).sort((a, b) => rank(a) - rank(b) || a.commence.localeCompare(b.commence));
+    const liveN = sorted.filter((e) => rank(e) < 3).length;
+    const limit = pid || showAllEvents ? sorted.length : liveN + 6;
+    const list = sorted.slice(0, limit);
+    const byLeague = new Map();
+    for (const e of list) { const k = `${rank(e) === 0 ? 0 : 1}|${e.league}`; if (!byLeague.has(k)) byLeague.set(k, []); byLeague.get(k).push(e); }
+    $("hubTrack").innerHTML = list.length ? [...byLeague.entries()].map(([k, evs]) => `<section class="ev-group"><h3 class="ev-league"><span>${esc(evs[0].league)}</span><span>${k[0] === "0" ? "Live" : plural(evs.length, "Spiel", "Spiele")}</span></h3>${evs.map((e) => eventRow(e, goals)).join("")}</section>`).join("")
       : `<p class="hub-empty">Gerade laufen keine Wetten. Die nächsten werden täglich um 11:00 Uhr gesetzt.</p>`;
-    track.scrollLeft = left;
+    if (!pid && sorted.length > liveN + 6) {
+      const more = el("button", "ev-more", showAllEvents ? "Weniger Spiele zeigen" : `Alle ${sorted.length} Spiele zeigen`);
+      more.type = "button";
+      more.addEventListener("click", () => { showAllEvents = !showAllEvents; renderHub(); });
+      $("hubTrack").appendChild(more);
+    }
+    const running = visible.filter((e) => st(e) === "in");
     $("hubDot").hidden = !running.length;
-    $("hubTitleText").textContent = running.length ? `Jetzt live: ${plural(running.length, "Spiel", "Spiele")}` : "Als Nächstes";
+    $("hubTitleText").textContent = running.length ? plural(running.length, "Spiel", "Spiele") : "Nächste Spiele";
     let sum = 0, stake = 0;
     for (const e of running) {
       const m = matches[e.espn.id];
       for (const p of e.picks) if (!p.combo) { sum += betStory(p, e, m.home_score, m.away_score).profit; stake += p.stake; }
     }
-    const upd = hubUpdated ? `, aktualisiert ${fmt(hubUpdated.toISOString(), { hour: "2-digit", minute: "2-digit", second: "2-digit" })}` : "";
     $("hubSum").innerHTML = running.length
-      ? `${pid ? esc(pName(pid)) : "Alle Spieler"}: <b class="${sum > 0 ? "lb-pos" : sum < 0 ? "lb-neg" : ""}">${eur(sum, true)}</b> Stand jetzt bei ${eur0(stake)} Einsatz${upd}`
-      : next.length ? `${pid ? esc(pName(pid)) : "Unsere Spieler"} ${pid ? "setzt" : "setzen"} auf diese Spiele` : "";
-    requestAnimationFrame(() => { $("hubNav").hidden = track.scrollWidth <= track.clientWidth + 4; });
+      ? `Stand jetzt <b class="${sum > 0 ? "lb-pos" : sum < 0 ? "lb-neg" : ""}">${eur(sum, true)}</b> bei ${eur0(stake)} Einsatz`
+      : "";
+    renderSlipRail();
   }
 
   // ------------------------------------------------------------------ Können/Glück, Methode, System
@@ -984,7 +1122,8 @@
   load();
   setInterval(load, 60_000);
   setInterval(pollLive, 20_000);
-  const hubScroll = (dir) => { const t = $("hubTrack"); t.scrollBy({ left: dir * Math.min(t.clientWidth, 720), behavior: REDUCED ? "auto" : "smooth" }); };
-  $("hubPrev").addEventListener("click", () => hubScroll(-1));
-  $("hubNext").addEventListener("click", () => hubScroll(1));
+  const sbV = $("sbView");
+  sbV.addEventListener("pointerenter", () => { sbPaused = true; });
+  sbV.addEventListener("pointerleave", () => { sbPaused = false; sbLast = 0; });
+  if (!REDUCED) requestAnimationFrame(sbFrame); else sbV.style.overflowX = "auto";
 })();

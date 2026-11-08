@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#121D36">
-<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#0B0E14">
+<meta name="color-scheme" content="dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Quotenlabor">
@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=9">
+<link rel="stylesheet" href="styles.css?v=13">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -46,19 +46,33 @@
   <nav class="wrap tabs" id="tabs" role="tablist" aria-label="Spieler"></nav>
 </header>
 
+<div class="scorebar" id="scorebar" aria-label="Spielstände">
+  <div class="sb-label" id="sbLabel">Scores</div>
+  <div class="sb-view" id="sbView"><div class="sb-track" id="sbTrack"></div></div>
+</div>
+
 <!-- Anzeigetafel wie im Wettbüro -->
 <section class="board" aria-labelledby="balanceTitle">
-  <section class="wrap hub" id="hub" aria-labelledby="hubTitle">
-    <div class="hub-head">
-      <h2 class="hub-title" id="hubTitle"><span class="live-dot" id="hubDot" aria-hidden="true"></span><span id="hubTitleText">Jetzt live</span></h2>
-      <p class="hub-sum" id="hubSum"></p>
-      <div class="hub-nav" id="hubNav" hidden>
-        <button type="button" id="hubPrev" aria-label="Zurück blättern"></button>
-        <button type="button" id="hubNext" aria-label="Weiter blättern"></button>
+  <div class="wrap book" id="hub">
+    <section class="book-main" aria-labelledby="hubTitle">
+      <div class="book-head">
+        <h2 class="hub-title" id="hubTitle"><span class="badge-live" id="hubDot" hidden>Live</span><span id="hubTitleText">Spiele</span></h2>
+        <p class="hub-sum" id="hubSum"></p>
       </div>
-    </div>
-    <div class="hub-track" id="hubTrack" tabindex="0" aria-label="Laufende und nächste Spiele"></div>
-  </section>
+      <div class="chips" id="sportChips" role="tablist" aria-label="Sportart"></div>
+      <div class="ev-list" id="hubTrack"></div>
+    </section>
+    <aside class="book-rail" aria-label="Live-Feed und Wettschein">
+      <section class="rail-card" aria-labelledby="feedTitle">
+        <h2 class="rail-title" id="feedTitle"><span class="feed-dot" aria-hidden="true"></span>Live-Ticker</h2>
+        <ol class="feed" id="feed" aria-live="polite"></ol>
+      </section>
+      <section class="rail-card" id="wettschein" aria-labelledby="slipTitle">
+        <h2 class="rail-title" id="slipTitle">Wettschein</h2>
+        <div id="slipRail"></div>
+      </section>
+    </aside>
+  </div>
 
   <div class="wrap board-compare" id="boardCompare" hidden>
     <h1 class="board-kicker">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
@@ -78,10 +92,6 @@
     <dl class="board-kpis" id="facts"></dl>
   </div>
 
-  <div class="ticker" id="ticker" aria-label="Quoten-Ticker">
-    <div class="ticker-label">Heute gesetzt</div>
-    <div class="ticker-viewport"><div class="ticker-track" id="tickerTrack"></div></div>
-  </div>
 </section>
 
 <main class="wrap" id="main">
@@ -180,6 +190,8 @@
   </section>
 </main>
 
+<a class="slipbar" id="slipbar" href="#wettschein" hidden></a>
+
 <footer class="foot">
   <div class="wrap foot-inner">
     <p class="foot-brand"><img src="/brand/logo-light.svg" width="18" height="21" alt=""> <strong>quoten<span>labor</span></strong> <span class="foot-tag">Wetten als Experiment, nicht als Bauchgefühl.</span></p>
@@ -189,6 +201,6 @@
 </footer>
 
 <div class="fx-layer" id="fx" aria-hidden="true"></div>
-<script src="app.js?v=9" defer></script>
+<script src="app.js?v=13" defer></script>
 </body>
 </html>
