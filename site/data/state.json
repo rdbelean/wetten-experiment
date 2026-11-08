@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T16:03:18Z",
+ "generated_at": "2026-11-08T16:18:24Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -389,8 +389,8 @@
     "avg_ev": -0.0564,
     "expected_profit": -11.28,
     "expected_settled": -8.21,
-    "avg_clv": -0.0453,
-    "n_clv": 6,
+    "avg_clv": -0.0434,
+    "n_clv": 7,
     "clv_positive": 1,
     "max_drawdown": 43.4
    },
@@ -4058,11 +4058,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 29.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T16:18:23Z",
+    "fair_p": 0.6673,
+    "pinnacle_odds": 1.49,
+    "best_odds": 1.49,
+    "fair_odds": 1.499
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0324,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,5 %.",
    "research": null,
@@ -5338,12 +5344,8 @@
   }
  },
  "system": {
-  "credits_remaining": 320,
+  "credits_remaining": 319,
   "last_actions": [
-   {
-    "t": "2026-11-08T00:26:39Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-08T00:56:48Z",
     "a": "Wetten abgerechnet"
@@ -5399,6 +5401,10 @@
    {
     "t": "2026-11-08T16:03:18Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T16:18:24Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
