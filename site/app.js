@@ -64,6 +64,12 @@
     }
     try { localStorage.setItem("pv_seen", JSON.stringify(now)); } catch (_) { /* egal */ }
     news.forEach((b) => fresh.add(b.id));
+    // Vollbild-Moment: im Vergleich der größte Knaller aller Spieler, sonst der des gewählten Spielers
+    const pool = news.filter((b) => !state.players[view] || b.player === view);
+    const bigWin = pool.filter((b) => b.status === "won" && (b.profit >= 40 || b.odds >= 3.5)).sort((a, b) => b.profit - a.profit)[0];
+    const beat = pool.filter((b) => nearMiss(b)).sort((a, b) => a.profit - b.profit)[0];
+    if (bigWin) setTimeout(() => showMoment("win", bigWin), 700);
+    else if (beat) setTimeout(() => showMoment("beat", beat), 700);
     const mine = news.filter((b) => b.player === (state.players[view] ? view : "analyst"));
     if (!mine.length) return;
     const who = pName(state.players[view] ? view : "analyst");
@@ -75,6 +81,7 @@
     if (lost.length) parts.push(`${lost.length} verloren`);
     toast(`${who}: ${parts.join(", ") || `${mine.length} Wetten`} neu abgerechnet, zusammen <b>${eur(sum, true)}</b>`, sum < 0);
     if (won.length) setTimeout(() => coins(won.length), 500);
+    if (won.length && !bigWin) sfx("win");
   }
 
   function toast(html, neg) {
@@ -159,7 +166,7 @@
         const h = side("home"), a = side("away");
         const nv = {
           home_score: +h.score || 0, away_score: +a.score || 0,
-          detail: ev.status.type.shortDetail, state: ev.status.type.state, name: ev.status.type.name,
+          detail: ev.status.type.shortDetail, state: /POSTPONED|CANCELED|SUSPENDED|ABANDONED|DELAYED/.test(ev.status.type.name) ? "pre" : ev.status.type.state, name: ev.status.type.name,
           clock: ev.status.displayClock, period: ev.status.period,
           home_abbr: h.team.abbreviation, away_abbr: a.team.abbreviation,
           home_color: h.team.color, away_color: a.team.color, home_id: h.team.id, away_id: a.team.id,
@@ -174,6 +181,7 @@
       for (const b of state.bets) if (b.espn && matches[b.espn.id]) live[b.id] = matches[b.espn.id];
       hubUpdated = new Date();
     }
+    if (goals.size) sfx("goal");
     renderStage(goals);
     renderHub(goals);
     renderScorebar();
@@ -221,6 +229,7 @@
     if (cmp) $("bookBand").after($("board")); else $("bookBand").before($("board"));
     renderTabs();
     renderTop();
+    renderJackpot();
     renderStage();
     renderMini();
     renderHub();
@@ -250,7 +259,7 @@
     else if (today < state.days[0].date) { txt = `Start am ${fmt(state.days[0].date + "T12:00:00", { weekday: "long", day: "numeric", month: "long" })}`; short = `Start ${fmt(state.days[0].date + "T12:00:00", { weekday: "short", day: "numeric", month: "numeric" })}`; }
     else { txt = "Experiment beendet"; short = "Beendet"; }
     const lvTxt = lv ? `, <b>${lv} ${lv === 1 ? "Spiel" : "Spiele"} live</b>` : "";
-    $("topStatus").innerHTML = `<span class="dot ${lv ? "is-live" : ""}"></span><span class="st-long">${txt}${lvTxt}, aktualisiert ${hhmm(state.generated_at)} Uhr</span><span class="st-short">${short}${lvTxt}, ${hhmm(state.generated_at)}</span>`;
+    $("topStatus").innerHTML = `<span class="dot ${lv ? "is-live" : ""}"></span><span class="st-long">${txt}${lvTxt}, aktualisiert ${hhmm(state.generated_at)} Uhr</span><span class="st-short">${short}${lvTxt}</span>`;
   }
 
   // Zahlenwalzen für den Kontostand
@@ -272,7 +281,7 @@
       node.dataset.shape = shape;
     }
     const strips = node.querySelectorAll(".reel-strip");
-    requestAnimationFrame(() => requestAnimationFrame(() => {
+    setTimeout(() => {
       let di = 0;
       chars.forEach((c) => {
         if (!/\d/.test(c)) return;
@@ -280,7 +289,7 @@
         s.style.transitionDelay = `${di * 70}ms`;
         s.style.transform = `translateY(-${(10 + +c) * 5}%)`;
       });
-    }));
+    }, 40);
   }
 
   function renderBoard() {
@@ -692,6 +701,250 @@
     $("simNote").textContent = `${N.toLocaleString("de-DE")} simulierte Wochen, ${plural(open, "offene Wette", "offene Wetten")} und ${plural(remaining, "weiterer Tag", "weitere Tage")}. Der Balken zeigt, wo 80 % der Simulationen enden, der Strich den Mittelwert. Grundlage sind unsere eigenen Wahrscheinlichkeiten, das echte Ergebnis kann deutlich abweichen.`;
   }
 
+  // ------------------------------------------------------------------ Casino: Sound
+  let audio = null, soundOn = false;
+  try { soundOn = localStorage.getItem("pv_sound") === "1"; } catch (_) { /* egal */ }
+  function tone(freq, start, dur, type = "square", vol = 0.05) {
+    const o = audio.createOscillator(), g = audio.createGain(), t = audio.currentTime + start;
+    o.type = type; o.frequency.setValueAtTime(freq, t);
+    g.gain.setValueAtTime(vol, t); g.gain.exponentialRampToValueAtTime(0.0008, t + dur);
+    o.connect(g).connect(audio.destination); o.start(t); o.stop(t + dur + 0.02);
+  }
+  function sfx(name) {
+    if (!soundOn || !audio || audio.state !== "running") return;
+    const seq = (notes, step, type, vol) => notes.forEach((n, i) => tone(n, i * step, step * 1.6, type, vol));
+    if (name === "tick") tone(1250, 0, 0.03, "square", 0.025);
+    else if (name === "chip") { tone(2300, 0, 0.04, "triangle", 0.09); tone(1700, 0.05, 0.05, "triangle", 0.07); }
+    else if (name === "win") seq([523, 659, 784, 1047], 0.09, "square", 0.05);
+    else if (name === "big") seq([523, 659, 784, 1047, 784, 1047, 1319, 1568], 0.09, "square", 0.06);
+    else if (name === "beat") seq([392, 349, 311, 233], 0.2, "sawtooth", 0.05);
+    else if (name === "goal") { seq([440, 554, 659, 880], 0.08, "sawtooth", 0.05); tone(220, 0, 0.7, "sawtooth", 0.05); }
+  }
+  function paintSound() {
+    const b = $("soundBtn");
+    b.setAttribute("aria-pressed", soundOn);
+    b.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/>${soundOn ? '<path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>' : '<path d="M16 9.5l5 5M21 9.5l-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'}</svg>`;
+  }
+  function unlockAudio() {
+    if (!audio) { const A = window.AudioContext || window.webkitAudioContext; if (A) audio = new A(); }
+    if (audio?.state === "suspended") audio.resume();
+  }
+  function initSound() {
+    paintSound();
+    $("soundBtn").addEventListener("click", () => {
+      soundOn = !soundOn;
+      try { localStorage.setItem("pv_sound", soundOn ? "1" : "0"); } catch (_) { /* egal */ }
+      unlockAudio(); paintSound();
+      setTimeout(() => sfx("chip"), 60);
+    });
+    document.addEventListener("pointerdown", () => { if (soundOn) unlockAudio(); }, { once: true });
+  }
+
+  // ------------------------------------------------------------------ Casino: Jackpot, Chips, Zittern, Momente
+  const pokerChip = (v) => `<span class="pchip" title="${eur0(v)} Einsatz"><b>${Math.round(v)}</b></span>`;
+  function renderJackpot() {
+    const open = state.bets.filter((b) => b.status === "open");
+    const pot = open.reduce((a, b) => a + b.potential_payout, 0);
+    const node = $("jpNum");
+    node.setAttribute("aria-label", `${eur(pot)} im Topf`);
+    odometer(node, nf2.format(pot));
+    const top = [...open].sort((a, b) => b.potential_payout - a.potential_payout)[0];
+    $("jpSide").innerHTML = top ? `<b>${plural(open.length, "Wette", "Wetten")}</b> laufen<br>Dickster Schein: <b>${eur(top.potential_payout)}</b> (${esc(shortName(top.player))}, Quote ${odds(top.odds)})` : "Der Topf füllt sich täglich um 11:00 Uhr";
+  }
+  function isSweating(p, e, m) {
+    if (gameProgress(e, m) < 70) return false;
+    const c = liveChance(p, e, m);
+    return c != null && c > 0.07 && c < 0.93;
+  }
+  function sweatCall(e, m) {
+    const hot = e.picks.filter((p) => isSweating(p, e, m));
+    if (!hot.length) return null;
+    const unit = e.group === "Fußball" || e.group === "Eishockey" ? "1 Tor" : "ein Korb";
+    const close = Math.abs(m.home_score - m.away_score) <= 1;
+    return close && (e.group === "Fußball" || e.group === "Eishockey") ? `Zittern! ${unit} entscheidet alles` : `Zittern! Noch ist alles drin`;
+  }
+  function nearMiss(b) {
+    if (b.status !== "lost") return false;
+    if (b.market === "combo") { const st = b.legs.map((l) => l.status); return st.filter((x) => x === "lost").length === 1 && st.includes("won"); }
+    const r = b.result; if (!r || r.home == null) return false;
+    if (b.market === "totals") return Math.abs(r.home + r.away - b.point) <= (b.group === "Basketball" || b.group === "American Football" ? 3 : 0.5);
+    if (b.market === "h2h") {
+      const d = r.home - r.away;
+      if (b.key === "draw") return Math.abs(d) === 1;
+      const ours = b.key === "home" ? d : -d;
+      return b.group === "Basketball" || b.group === "American Football" ? ours >= -3 : ours >= -1;
+    }
+    return false;
+  }
+  function showMoment(kind, b) {
+    const box = $("moment");
+    const win = kind === "win", jack = win && b.odds >= 5;
+    const line = b.market === "combo" ? b.league : `${b.home} – ${b.away}`;
+    box.className = `moment ${win ? "m-win" : "m-beat"}`;
+    box.hidden = false;
+    box.innerHTML = `<div class="m-card" role="status">${avatar(b.player, "av-l")}<p class="m-big">${jack ? "JACKPOT!" : win ? "BIG WIN!" : "BAD BEAT!"}</p><p class="m-sum" id="mSum">${eur(0, true)}</p><p class="m-info"><b>${esc(pName(b.player))}</b>: ${esc(b.label)} zu ${odds(b.odds)}<br>${esc(line)}${b.result?.home != null ? `, ${b.result.home}:${b.result.away}` : ""}</p>${win ? "" : `<p class="m-info">So knapp. Das tut weh.</p>`}</div>`;
+    sfx(win ? "big" : "beat");
+    if (win) { coins(6); setTimeout(() => coins(6), 500); }
+    const start = performance.now(), total = b.profit, sumEl = $("mSum");
+    const step = (t) => { const k = Math.min(1, (t - start) / 1200); sumEl.textContent = eur(total * (1 - Math.pow(1 - k, 3)), true); if (k < 1 && !box.hidden) requestAnimationFrame(step); };
+    if (REDUCED || document.hidden) sumEl.textContent = eur(total, true); else requestAnimationFrame(step);
+    const close = () => { box.hidden = true; };
+    box.onclick = close;
+    setTimeout(close, 4200);
+  }
+
+  // ------------------------------------------------------------------ Casino: Der Tisch
+  const CHIP_START = 1000;
+  let wallet = null, tableMkt = "day", tableDenom = 50;
+  function loadWallet() {
+    if (wallet) return wallet;
+    try { wallet = JSON.parse(localStorage.getItem("pv_wallet") || "null"); } catch (_) { wallet = null; }
+    if (!wallet || typeof wallet.chips !== "number") wallet = { chips: CHIP_START, bets: [] };
+    return wallet;
+  }
+  const saveWallet = () => { try { localStorage.setItem("pv_wallet", JSON.stringify(wallet)); } catch (_) { /* egal */ } };
+  const chipsFmt = (n) => Math.round(n).toLocaleString("de-DE");
+  let dayKey = "", dayResult = null;
+  function simulateDay() {
+    const idx = state.days.reduce((m, d, i) => (state.bets.some((b) => b.day === d.date && b.status === "open") ? i : m), -1);
+    if (idx < 0) return null;
+    const date = state.days[idx].date, settled = state.bets.filter((b) => b.status !== "open").length, key = `${date}|${settled}`;
+    if (key === dayKey && dayResult) return dayResult;
+    const N = 4000, rand = mulberry(settled * 104729 + idx + 7), ids = state.order;
+    const slotIdx = new Map(), probs = [];
+    const slot = (src) => { const k = `${src.event_id}|${src.market}|${src.key}|${src.point}`; if (!slotIdx.has(k)) { slotIdx.set(k, probs.length); probs.push(src.p ?? 0.5); } return slotIdx.get(k); };
+    const open = state.bets.filter((b) => b.status === "open" && b.day === date).map((b) => ({ player: b.player, stake: b.stake, odds: b.odds, slots: b.market === "combo" ? b.legs.filter((l) => l.status === "open").map(slot) : [slot(b)] }));
+    const base = Object.fromEntries(ids.map((id) => [id, state.players[id].days[idx].profit]));
+    const wins = Object.fromEntries(ids.map((id) => [id, 0])), draw = new Float32Array(probs.length), score = {};
+    for (let n = 0; n < N; n++) {
+      for (let i = 0; i < probs.length; i++) draw[i] = rand() < probs[i] ? 1 : 0;
+      for (const id of ids) score[id] = base[id];
+      for (const b of open) score[b.player] += b.slots.every((i) => draw[i]) ? b.stake * (b.odds - 1) : -b.stake;
+      let best = ids[0];
+      for (const id of ids) if (score[id] > score[best]) best = id;
+      wins[best]++;
+    }
+    dayKey = key;
+    dayResult = { date, idx, rows: Object.fromEntries(ids.map((id) => [id, wins[id] / N])) };
+    return dayResult;
+  }
+  const payoutOdds = (p) => Math.min(60, Math.max(1.05, Math.round((0.92 / Math.max(p, 0.012)) * 100) / 100));
+  function settleWallet() {
+    let won = 0, count = 0;
+    for (const w of loadWallet().bets) {
+      if (w.status) continue;
+      let winner = null;
+      if (w.mkt === "day") {
+        const i = state.days.findIndex((d) => d.date === w.day);
+        const rows = state.order.map((id) => ({ id, ...state.players[id].days[i] }));
+        if (i >= 0 && rows.every((r) => r.n_bets && r.settled === r.n_bets)) winner = rows.reduce((a, r) => (r.profit > a.profit ? r : a), rows[0]).id;
+      } else if (state.days.every((d) => d.placed) && state.bets.every((b) => b.status !== "open")) {
+        winner = ranked()[0].id;
+      }
+      if (!winner) continue;
+      w.status = winner === w.player ? "won" : "lost";
+      w.winner = winner;
+      if (w.status === "won") { const pay = Math.round(w.chips * w.odds); wallet.chips += pay; won += pay; }
+      count++;
+    }
+    if (count) {
+      saveWallet();
+      if (won) { toast(`Der Tisch zahlt: <b>+${chipsFmt(won)} Chips</b>`); coins(4); sfx("win"); } else toast("Deine Chips sind weg. Das Haus gewinnt.", true);
+    }
+  }
+  function renderTable() {
+    settleWallet();
+    const w = loadWallet();
+    const day = simulateDay();
+    const weekOpen = state.bets.some((b) => b.status === "open") || state.days.some((d) => !d.placed);
+    const probs = tableMkt === "day" ? day?.rows : weekOpen ? Object.fromEntries(simulate().rows.map((r) => [r.id, r.win])) : null;
+    const chipsOn = (id) => w.bets.filter((b) => !b.status && b.player === id && b.mkt === tableMkt && (tableMkt === "week" || b.day === day?.date)).reduce((a, b) => a + b.chips, 0);
+    const felt = $("felt");
+    const denoms = [10, 50, 100, "all"];
+    const stackN = Math.min(9, Math.ceil(w.chips / 200));
+    const openBets = w.bets.filter((b) => !b.status);
+    const recent = w.bets.filter((b) => b.status).slice(-4).reverse();
+    felt.innerHTML = `<div class="felt-top">
+        <div class="stack" aria-hidden="true">${Array(stackN).fill(0).map((_, i) => `<i style="--n:${i}"></i>`).join("")}</div>
+        <div class="stack-num"><b>${chipsFmt(w.chips)}</b><span>Chips</span></div>
+        <div class="mkts" role="tablist">${[["day", "Tagessieger"], ["week", "Wochensieger"]].map(([k, l]) => `<button type="button" role="tab" aria-selected="${k === tableMkt}" data-m="${k}">${l}</button>`).join("")}</div>
+      </div>
+      <div class="denoms" role="group" aria-label="Einsatz">${denoms.map((d) => `<button type="button" class="dn dn-${d}" aria-pressed="${d === tableDenom}" data-d="${d}">${d === "all" ? "All-in" : d}</button>`).join("")}</div>
+      <div class="spots">${probs ? state.order.map((id) => {
+        const on = chipsOn(id), odd = payoutOdds(probs[id] || 0);
+        return `<button type="button" class="spot" data-p="${id}" data-o="${odd}">${avatar(id, "av-m")}<span class="sp-name">${esc(shortName(id))}</span><span class="sp-odds">${nf2.format(odd)}</span>${on ? `<span class="sp-on">${chipsFmt(on)}</span>` : ""}</button>`;
+      }).join("") : `<p class="felt-empty">${tableMkt === "day" ? "Gerade läuft kein Spieltag. Um 11:00 Uhr öffnet der Tisch wieder." : "Die Woche ist entschieden."}</p>`}</div>
+      <div class="felt-foot">${openBets.length ? `<span>Im Spiel: ${openBets.map((b) => `${chipsFmt(b.chips)} auf ${esc(shortName(b.player))} (${b.mkt === "day" ? "Tag" : "Woche"})`).join(", ")}</span>` : "<span>Noch nichts gesetzt. Chips antippen, dann Spieler wählen.</span>"}${recent.length ? `<span class="felt-hist">${recent.map((b) => `<em class="${b.status}">${b.status === "won" ? "+" + chipsFmt(b.chips * b.odds) : "−" + chipsFmt(b.chips)}</em>`).join(" ")}</span>` : ""}${w.chips < 10 && !openBets.length ? `<button type="button" class="refill" id="refill">Pleite? Das Haus gibt 200 Chips aus</button>` : ""}</div>`;
+    felt.querySelectorAll("[data-m]").forEach((b) => b.addEventListener("click", () => { tableMkt = b.dataset.m; renderTable(); }));
+    felt.querySelectorAll("[data-d]").forEach((b) => b.addEventListener("click", () => { tableDenom = b.dataset.d === "all" ? "all" : +b.dataset.d; sfx("chip"); renderTable(); }));
+    felt.querySelectorAll(".spot").forEach((b) => b.addEventListener("click", () => {
+      const amt = tableDenom === "all" ? w.chips : Math.min(tableDenom, w.chips);
+      if (amt < 1) { toast("Keine Chips mehr. Der Automat oder das Haus hilft dir aus.", true); return; }
+      w.chips -= amt;
+      w.bets.push({ id: `${Date.now()}`, mkt: tableMkt, day: tableMkt === "day" ? day.date : null, player: b.dataset.p, chips: amt, odds: +b.dataset.o });
+      if (w.bets.length > 40) w.bets = w.bets.slice(-40);
+      saveWallet(); sfx("chip"); renderTable(); renderSlot();
+    }));
+    $("refill")?.addEventListener("click", () => { w.chips += 200; saveWallet(); sfx("chip"); renderTable(); renderSlot(); });
+  }
+
+  // ------------------------------------------------------------------ Casino: Einarmiger Bandit
+  const SLOT_COST = 10, SLOT_H = 62, COIN_SYM = '<span class="sym-coin">€</span>';
+  const symbols = () => [...state.order.map((id) => avatar(id, "av-sym")), COIN_SYM];
+  let spinning = false, slotBuilt = false;
+  function renderSlot() {
+    const box = $("slot");
+    if (!slotBuilt) {
+      const syms = symbols();
+      const strip = () => Array(24).fill(0).map((_, i) => `<div class="sym" data-s="${i % syms.length}">${syms[i % syms.length]}</div>`).join("");
+      box.innerHTML = `<div class="sl-head"><span class="sl-title">Einarmiger Bandit</span><span class="sl-cost">${SLOT_COST} Chips pro Dreh</span></div>
+        <div class="sl-window">${[0, 1, 2].map(() => `<div class="reel-col"><div class="reel-str">${strip()}</div></div>`).join("")}<span class="sl-line" aria-hidden="true"></span></div>
+        <p class="sl-msg" id="slMsg" aria-live="polite">Hebel ziehen und hoffen.</p>
+        <button type="button" class="lever" id="lever">Hebel ziehen</button>
+        <p class="sl-pay">3 gleiche: ×20, 3 Affen: ×40, 2 gleiche: ×1,4</p>`;
+      slotBuilt = true;
+      $("lever").addEventListener("click", spin);
+    }
+    $("lever").disabled = spinning || loadWallet().chips < SLOT_COST;
+  }
+  function spin() {
+    const w = loadWallet();
+    if (spinning || w.chips < SLOT_COST) return;
+    spinning = true;
+    w.chips -= SLOT_COST;
+    saveWallet();
+    renderTable();
+    $("lever").disabled = true;
+    $("slMsg").textContent = "Dreht …";
+    const n = symbols().length;
+    const picks = [0, 1, 2].map(() => { const a = new Uint32Array(1); crypto.getRandomValues(a); return a[0] % n; });
+    const cols = document.querySelectorAll(".reel-str");
+    cols.forEach((c, i) => {
+      const land = picks[i] + n * 2;
+      c.style.transition = "none";
+      c.style.transform = "translateY(0)";
+      void c.offsetHeight;
+      c.style.transition = REDUCED ? "none" : `transform ${900 + i * 450}ms cubic-bezier(.12, .8, .2, 1)`;
+      c.style.transform = `translateY(-${(land - 1) * SLOT_H}px)`;
+    });
+    if (!REDUCED) for (let t = 0; t < 14; t++) setTimeout(() => sfx("tick"), t * 130);
+    setTimeout(() => {
+      const [a, b, c] = picks, ape = state.order.indexOf("affe");
+      let mult = 0, msg;
+      if (a === b && b === c) { mult = a === ape ? 40 : 20; msg = a === ape ? "DREI AFFEN! Ook ook ook!" : "JACKPOT!"; }
+      else if (a === b || b === c || a === c) { mult = 1.4; msg = "Zwei gleiche. So knapp!"; }
+      else msg = "Nichts. Nochmal?";
+      const pay = Math.round(SLOT_COST * mult);
+      if (pay) w.chips += pay;
+      saveWallet();
+      spinning = false;
+      $("slMsg").textContent = pay ? `${msg} +${chipsFmt(pay)} Chips` : msg;
+      $("slMsg").className = `sl-msg ${mult >= 20 ? "is-jack" : ""}`;
+      if (mult >= 20) { coins(8); sfx("big"); } else if (mult) sfx("win");
+      renderTable(); renderSlot();
+    }, REDUCED ? 50 : 1950);
+  }
+
   // ------------------------------------------------------------------ Anzeigetafel (Spiel im Fokus)
   let stageKey = null, stagePinned = 0;
   function teamBg(m, side, name) {
@@ -725,7 +978,8 @@
       const ch = liveChance(p, e, m);
       if (ch != null) chanceHtml = `<span class="tk-chance"><span>Siegchance <b>${Math.round(ch * 100)} %</b></span>${p.combo ? "" : `<span>Cash-out <b>${eur(cashoutOf(p, ch))}</b></span>`}</span><span class="tk-bar"><i style="width:${(ch * 100).toFixed(0)}%"></i></span>`;
     }
-    return `<button type="button" class="tk ${cls} ${selected ? "is-sel" : ""}" data-pi="${idx}" style="--c:${c}"><span class="tk-who">${avatar(p.player, "av-xs")}${esc(shortName(p.player))}</span><span class="tk-tip">${esc(p.label)}</span><span class="tk-foot"><b>${odds(p.odds)}</b><span class="tk-res">${res}</span></span>${story}${chanceHtml}</button>`;
+    const hot = m?.state === "in" && isSweating(p, e, m);
+    return `<button type="button" class="tk ${cls} ${selected ? "is-sel" : ""} ${hot ? "is-hot" : ""}" data-pi="${idx}" style="--c:${c}">${p.combo ? "" : pokerChip(p.stake)}<span class="tk-who">${avatar(p.player, "av-xs")}${esc(shortName(p.player))}</span><span class="tk-tip">${esc(p.label)}</span><span class="tk-foot"><b>${odds(p.odds)}</b><span class="tk-res">${res}</span></span>${story}${chanceHtml}</button>`;
   }
   const stagePick = {};
   function tensionChart(e, m, p) {
@@ -775,9 +1029,11 @@
     const hueOf = (c) => parseInt(c.match(/hsl\((\d+)/)?.[1] || "0", 10);
     const diff = Math.abs(hueOf(bgH) - hueOf(bgA));
     if (Math.min(diff, 360 - diff) < 45) bgA = `hsl(${(hueOf(bgH) + 150) % 360} 62% 34%)`; // zu ähnlich: Gegenfarbe
-    box.innerHTML = `<article class="jumbo ${live ? "is-live" : "is-next"}" style="--h:${bgH};--a:${bgA}">
+    const sweat = live ? sweatCall(e, m) : null;
+    box.innerHTML = `<article class="jumbo ${live ? "is-live" : "is-next"} ${sweat ? "is-sweat" : ""}" style="--h:${bgH};--a:${bgA}">
       <div class="jb-bg" aria-hidden="true"><i></i><i></i></div>
       <div class="jb-top"><span class="jb-tag">${live ? "LIVE" : "ALS NÄCHSTES"}</span><span class="jb-league">${esc(e.league)}</span>${live ? `<span class="jb-clock">${esc(clockDe(m))}</span>` : ""}</div>
+      ${sweat ? `<div class="jb-sweat"><span>${esc(sweat)}</span></div>` : ""}
       <div class="jb-mid">
         <div class="jb-team"><span class="jb-crest">${esc(m?.home_abbr || abbr(e.home))}</span><span class="jb-name">${esc(e.home)}</span></div>
         ${center}
@@ -848,7 +1104,7 @@
       }).join("")}</ul>`;
     } else {
       const sorted = [...open].sort((a, b) => a.commence.localeCompare(b.commence));
-      body = `<ul class="rs-list">${sorted.slice(0, 10).map((b) => `<li class="rs-bet"><div><b>${esc(b.label)}</b><small>${b.market === "combo" ? esc(b.league) : `${esc(b.home)} – ${esc(b.away)}`}</small></div><span class="rs-odds">${odds(b.odds)}</span><span class="rs-stake">${eur0(b.stake)}</span></li>`).join("")}</ul>${sorted.length > 10 ? `<p class="fd-empty">und ${sorted.length - 10} weitere</p>` : ""}`;
+      body = `<ul class="rs-list">${sorted.slice(0, 10).map((b) => `<li class="rs-bet"><div><b>${esc(b.label)}</b><small>${b.market === "combo" ? esc(b.league) : `${esc(b.home)} – ${esc(b.away)}`}</small></div><span class="rs-odds">${odds(b.odds)}</span><span class="rs-stake">${pokerChip(b.stake)}</span></li>`).join("")}</ul>${sorted.length > 10 ? `<p class="fd-empty">und ${sorted.length - 10} weitere</p>` : ""}`;
     }
     $("slipRail").innerHTML = `${body}<dl class="rs-total"><div><dt>Einsatz offen</dt><dd>${eur(stake)}</dd></div><div><dt>Mögliche Auszahlung</dt><dd class="rs-pot">${eur(pot)}</dd></div></dl>`;
     $("slipRail").querySelectorAll("[data-v]").forEach((b) => b.addEventListener("click", () => { setView(b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
@@ -1159,7 +1415,7 @@
         <div class="s-pick">${esc(b.label)}${b.kind === "filler" ? `<span class="s-filler">Füllwette</span>` : ""}</div></div>
       <div class="s-odds"><b>${odds(b.odds)}</b><span>${esc(b.book_name)}</span>${b.ev > 0 ? `<span class="s-edge" title="Erwartungswert">${pct(b.ev, true)}</span>` : ""}</div>
       <div class="s-stake"><b>${eur0(b.stake)}</b><span>möglich ${eur(b.potential_payout)}</span></div>
-      <div class="s-state">${stamp(b)}<span class="s-chev" aria-hidden="true"></span></div>`;
+      <div class="s-state">${nearMiss(b) ? '<span class="near-tag">Knapp vorbei!</span>' : ""}${stamp(b)}<span class="s-chev" aria-hidden="true"></span></div>`;
     const det = el("div", "slip-detail");
     det.hidden = !open.has(b.id);
     det.innerHTML = detail(b);
@@ -1416,6 +1672,8 @@
         <span class="lb-num lb-hide-m lb-hide-s">${t.staked_settled ? eur(-t.max_drawdown) : "–"}</span></div>`;
     }).join("");
     $("leaderboard").querySelectorAll(".lb-row.is-link").forEach((r) => r.addEventListener("click", () => setView(r.dataset.v)));
+    renderTable();
+    renderSlot();
     renderTalk();
     renderAwards();
     renderSim();
@@ -1535,6 +1793,7 @@
   setInterval(load, 60_000);
   setInterval(pollLive, 20_000);
   setInterval(stageRotate, 9000);
+  initSound();
   const sbV = $("sbView");
   sbV.addEventListener("pointerenter", () => { sbPaused = true; });
   sbV.addEventListener("pointerleave", () => { sbPaused = false; sbLast = 0; });

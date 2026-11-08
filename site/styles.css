@@ -1039,3 +1039,122 @@ button.tk { font: inherit; border: 0; text-align: left; cursor: pointer; }
 .jb-t-head b { white-space: nowrap; flex: none; }
 .sim-l { transform: translateX(-80%); }
 .sim-r { transform: translateX(-20%); }
+
+/* =====================================================================
+   Casino: Jackpot, Pokerchips, Zittern, Momente, Der Tisch, Bandit
+   ===================================================================== */
+.top-right { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.snd { flex: none; width: 34px; height: 34px; border-radius: 50%; border: 1px solid var(--navy-line); background: transparent; color: #fff; cursor: pointer; display: grid; place-items: center; padding: 0; }
+.snd svg { width: 18px; height: 18px; display: block; }
+.snd[aria-pressed="true"] { background: var(--yel); color: var(--navy); border-color: var(--yel); }
+
+/* Jackpot */
+.jackpot { background: linear-gradient(180deg, #2A0F4E, #18072F); border-radius: 14px; margin-bottom: 10px; overflow: hidden; box-shadow: inset 0 0 0 2px #D9B44A; }
+.jp-bulbs { height: 12px; background-image: radial-gradient(circle at 9px 6px, #FFE27A 3.2px, transparent 3.8px), radial-gradient(circle at 27px 6px, #6E5A1F 3.2px, transparent 3.8px); background-size: 36px 12px; animation: bulbs .7s steps(2) infinite; }
+.jp-b2 { animation-direction: reverse; }
+@keyframes bulbs { to { background-position: 18px 0, 18px 0; } }
+.jp-body { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 14px; padding: 2px 20px; }
+.jp-label { font-style: italic; font-weight: 900; font-size: 1.125rem; color: #FFE27A; font-variation-settings: "wdth" 88; }
+.jp-num { margin: 0; display: flex; align-items: flex-start; height: 1em; overflow: hidden; font-style: italic; font-weight: 900; font-variation-settings: "wdth" 66; font-size: clamp(2.75rem, 5.2vw, 4rem); line-height: 1; color: #FFE27A; text-shadow: 0 0 18px rgba(255, 214, 10, .55); }
+.jp-num .cur { font-size: .5em; margin-left: .15em; padding-top: .1em; }
+.jp-side { justify-self: end; text-align: right; font-size: .8125rem; color: #D9CDEE; line-height: 1.35; }
+.jp-side b { color: #fff; font-weight: 800; }
+
+/* Pokerchips */
+.pchip { display: inline-grid; place-items: center; width: 30px; height: 30px; border-radius: 50%; background: repeating-conic-gradient(#fff 0 22.5deg, #C8102E 22.5deg 45deg); position: relative; flex: none; box-shadow: 0 1px 3px rgba(16, 26, 51, .35); }
+.pchip::before { content: ""; position: absolute; inset: 4px; border-radius: 50%; background: #C8102E; box-shadow: inset 0 0 0 1.5px #fff; }
+.pchip b { position: relative; color: #fff; font-size: .6875rem; font-weight: 900; font-style: normal; font-variation-settings: "wdth" 76; }
+.tk .pchip { position: absolute; top: 6px; right: 6px; }
+.tk { padding-right: 40px; }
+.rs-stake { display: inline-flex; }
+
+/* Zittern */
+.jumbo.is-sweat { animation: heartbeat 1.1s ease-in-out infinite; box-shadow: var(--shadow-2), 0 0 0 3px var(--red-live); }
+@keyframes heartbeat { 0%, 40%, 100% { box-shadow: var(--shadow-2), 0 0 0 3px var(--red-live); } 15%, 55% { box-shadow: var(--shadow-2), 0 0 0 7px rgba(240, 32, 60, .55); } }
+.jb-sweat { align-self: center; margin-top: 6px; background: var(--red-live); color: #fff; font-style: italic; font-weight: 900; font-size: 1.0625rem; padding: 3px 20px; clip-path: var(--slant); animation: sweatpulse 1.1s ease-in-out infinite; }
+@keyframes sweatpulse { 15%, 55% { transform: scale(1.06); } }
+.tk.is-hot { animation: tkhot 1.1s ease-in-out infinite; }
+@keyframes tkhot { 15%, 55% { transform: translateY(-2px) scale(1.015); } }
+.near-tag { flex: none; font-style: italic; font-weight: 900; font-size: .75rem; color: #fff; background: #7A1FA2; padding: 2px 12px 2px 10px; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); white-space: nowrap; }
+
+/* Vollbild-Momente */
+.moment { position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; background: rgba(8, 11, 24, .72); cursor: pointer; animation: mfade .25s ease; padding: 20px; }
+@keyframes mfade { from { opacity: 0; } }
+.m-card { text-align: center; padding: 26px 40px 28px; border-radius: 20px; max-width: 520px; animation: mpop .55s cubic-bezier(.2, 1.5, .4, 1); color: #fff; }
+@keyframes mpop { from { transform: scale(.4) rotate(-5deg); } }
+.m-win .m-card { background: linear-gradient(160deg, #1B7A4B, #0B4F31); box-shadow: 0 0 0 4px #FFD60A, 0 0 70px rgba(255, 214, 10, .55); }
+.m-beat .m-card { background: linear-gradient(160deg, #6A1426, #2D0A16); box-shadow: 0 0 0 4px var(--red-live); }
+.m-big { margin: 8px 0 0; font-style: italic; font-weight: 900; font-variation-settings: "wdth" 66; font-size: clamp(3.75rem, 13vw, 6.5rem); line-height: .95; color: var(--yel); }
+.m-beat .m-big { color: #fff; }
+.m-sum { margin: 4px 0 8px; font-style: italic; font-weight: 900; font-variation-settings: "wdth" 72; font-size: 2.5rem; line-height: 1; }
+.m-info { margin: 4px 0 0; font-size: .9375rem; color: #F3F6FB; }
+
+/* Der Tisch */
+.casino { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 14px; align-items: stretch; }
+.felt { background: radial-gradient(ellipse at 50% 30%, #17925F, #0B5F3D 80%); border-radius: 18px; padding: 16px 18px; color: #fff; box-shadow: inset 0 0 0 3px #D9B44A, var(--shadow-1); display: flex; flex-direction: column; gap: 12px; }
+.felt-top { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.stack { position: relative; width: 44px; height: 54px; flex: none; }
+.stack i { position: absolute; left: 0; bottom: calc(var(--n) * 5px); width: 44px; height: 13px; border-radius: 50%; background: repeating-linear-gradient(90deg, #C8102E 0 6px, #fff 6px 10px); box-shadow: inset 0 -2px 0 rgba(0, 0, 0, .25); }
+.stack-num { display: flex; align-items: baseline; gap: 6px; }
+.stack-num b { font-style: italic; font-weight: 900; font-size: 2.25rem; font-variation-settings: "wdth" 70; color: var(--yel); line-height: 1; }
+.stack-num span { font-size: .875rem; font-weight: 700; }
+.mkts { margin-left: auto; display: flex; gap: 4px; background: rgba(0, 0, 0, .25); padding: 3px; border-radius: 999px; }
+.mkts button { font: inherit; border: 0; background: none; color: #E6F5EC; font-weight: 750; font-size: .8125rem; padding: 6px 14px; border-radius: 999px; cursor: pointer; min-height: 34px; }
+.mkts button[aria-selected="true"] { background: var(--yel); color: var(--navy); font-style: italic; font-weight: 900; }
+.denoms { display: flex; gap: 8px; justify-content: center; }
+.dn { font: inherit; width: 56px; height: 56px; border-radius: 50%; border: 0; cursor: pointer; font-weight: 900; font-size: .875rem; font-variation-settings: "wdth" 78; color: #fff; background: repeating-conic-gradient(rgba(255, 255, 255, .95) 0 20deg, var(--d) 20deg 40deg); position: relative; box-shadow: 0 3px 6px rgba(0, 0, 0, .35); transition: transform .12s; isolation: isolate; }
+.dn::after { content: ""; position: absolute; inset: 8px; border-radius: 50%; background: var(--d); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .85); z-index: -1; }
+.dn-10 { --d: #2546E8; } .dn-50 { --d: #C8102E; } .dn-100 { --d: #111; } .dn-all { --d: #7A1FA2; font-size: .75rem; }
+.dn[aria-pressed="true"] { transform: translateY(-4px) scale(1.08); outline: 3px solid var(--yel); outline-offset: 2px; }
+.spots { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 8px; }
+.spot { font: inherit; position: relative; padding: 10px 4px 8px; border-radius: 12px; border: 2px dashed rgba(255, 255, 255, .55); background: rgba(0, 0, 0, .14); color: #fff; cursor: pointer; display: flex; flex-direction: column; align-items: center; gap: 2px; transition: transform .12s, background .12s; min-width: 0; }
+.spot:hover { transform: translateY(-3px); background: rgba(0, 0, 0, .28); border-color: var(--yel); }
+.av-m { width: 44px; height: 44px; }
+.sp-name { font-size: .8125rem; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.sp-odds { font-style: italic; font-weight: 900; font-size: 1.25rem; font-variation-settings: "wdth" 72; color: var(--yel); line-height: 1; }
+.sp-on { position: absolute; top: -8px; right: -4px; background: #C8102E; color: #fff; border-radius: 999px; font-size: .6875rem; font-weight: 900; padding: 1px 7px; box-shadow: 0 0 0 2px #fff; }
+.felt-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 12px; align-items: center; font-size: .8125rem; color: #E6F5EC; }
+.felt-hist em { font-style: italic; font-weight: 900; margin-left: 6px; }
+.felt-hist .won { color: var(--yel); }
+.felt-hist .lost { color: #FFB4A6; }
+.felt-empty { grid-column: 1 / -1; text-align: center; padding: 20px 0; margin: 0; font-weight: 700; }
+.refill { font: inherit; border: 0; background: var(--yel); color: var(--navy); font-weight: 900; padding: 6px 14px; border-radius: 999px; cursor: pointer; }
+
+/* Bandit */
+.slot { background: linear-gradient(180deg, #B3122B, #6E0A1B); border-radius: 18px; padding: 14px; color: #fff; box-shadow: inset 0 0 0 3px #D9B44A, var(--shadow-1); display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+.sl-head { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.sl-title { font-style: italic; font-weight: 900; font-size: 1.125rem; }
+.sl-cost { font-size: .75rem; font-weight: 700; color: #FFD9DF; }
+.sl-window { position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; height: 186px; background: #16080F; padding: 0 4px; border-radius: 10px; overflow: hidden; box-shadow: inset 0 0 0 2px #D9B44A; }
+.reel-col { overflow: hidden; background: linear-gradient(180deg, #BFC6D6 0%, #fff 30%, #fff 70%, #BFC6D6 100%); }
+.reel-str { will-change: transform; }
+.sym { height: 62px; display: grid; place-items: center; }
+.av-sym { width: 46px; height: 46px; }
+.sym-coin { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #FFF3B0, #E9B92E 60%, #B8860B); color: #7A5600; font-weight: 900; font-size: 1.5rem; }
+.sl-line { position: absolute; left: 0; right: 0; top: 50%; height: 62px; transform: translateY(-50%); border-top: 2px solid var(--yel); border-bottom: 2px solid var(--yel); pointer-events: none; }
+.sl-msg { margin: 0; text-align: center; font-weight: 800; min-height: 1.5em; font-size: .9375rem; }
+.sl-msg.is-jack { color: var(--yel); font-style: italic; font-weight: 900; font-size: 1.25rem; animation: sweatpulse .5s ease-in-out 4; }
+.lever { font: inherit; border: 0; min-height: 48px; border-radius: 12px; background: var(--yel); color: var(--navy); font-style: italic; font-weight: 900; font-size: 1.125rem; cursor: pointer; box-shadow: 0 4px 0 #A98600; transition: transform .08s, box-shadow .08s; }
+.lever:active:not(:disabled) { transform: translateY(4px); box-shadow: 0 0 0 #A98600; }
+.lever:disabled { opacity: .55; cursor: default; }
+.sl-pay { margin: 0; text-align: center; font-size: .6875rem; color: #FFD9DF; }
+
+@media (max-width: 1000px) {
+  .casino { grid-template-columns: 1fr; }
+  .spots { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 720px) {
+  .jp-body { grid-template-columns: 1fr auto; padding: 2px 14px 4px; gap: 4px 10px; }
+  .jp-side { grid-column: 1 / -1; justify-self: start; text-align: left; font-size: .75rem; }
+  .jp-label { font-size: .9375rem; }
+  .jp-num { font-size: 2.5rem; justify-self: end; }
+  .snd { width: 30px; height: 30px; }
+  .felt { padding: 14px 12px; }
+  .mkts { margin-left: 0; width: 100%; }
+  .mkts button { flex: 1; }
+  .m-card { padding: 20px 22px; }
+  .s-state { flex-wrap: wrap; justify-content: flex-end; }
+}
+@media (prefers-reduced-motion: reduce) { .jp-bulbs, .jumbo.is-sweat, .jb-sweat, .tk.is-hot { animation: none !important; } }
+.sl-head { flex-wrap: wrap; }
+.sl-title { white-space: nowrap; }
