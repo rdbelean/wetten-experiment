@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T16:33:30Z",
+ "generated_at": "2026-11-08T17:19:04Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -211,9 +211,9 @@
     "avg_ev": 0.0703,
     "expected_profit": 14.05,
     "expected_settled": 8.55,
-    "avg_clv": -0.0953,
-    "n_clv": 2,
-    "clv_positive": 1,
+    "avg_clv": 0.001,
+    "n_clv": 3,
+    "clv_positive": 2,
     "max_drawdown": 100.0
    },
    "days": [
@@ -478,8 +478,8 @@
     "avg_ev": -0.0553,
     "expected_profit": -11.05,
     "expected_settled": -9.98,
-    "avg_clv": -0.0341,
-    "n_clv": 5,
+    "avg_clv": -0.0329,
+    "n_clv": 6,
     "clv_positive": 1,
     "max_drawdown": 80.75
    },
@@ -4156,11 +4156,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 112.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T17:19:02Z",
+    "fair_p": 0.2163,
+    "pinnacle_odds": 4.43,
+    "best_odds": 4.43,
+    "fair_odds": 4.623
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0267,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,5 (Tipico), Erwartungswert -4,3 %.",
    "research": null,
@@ -4225,11 +4231,17 @@
    "kind": "value",
    "stake": 50.0,
    "potential_payout": 400.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T17:19:02Z",
+    "fair_p": 0.1492,
+    "pinnacle_odds": 6.24,
+    "best_odds": 6.684,
+    "fair_odds": 6.702
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.1936,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 13,3 % (Pinnacle 6,97). Tor-Modell 12,3 %. Unser Wert: 13,2 %. Beste Quote 8,00 bei Unibet NL (Median 6,80, 21 Anbieter), Erwartungswert +5,9 %.",
    "research": null,
@@ -5367,12 +5379,8 @@
   }
  },
  "system": {
-  "credits_remaining": 319,
+  "credits_remaining": 318,
   "last_actions": [
-   {
-    "t": "2026-11-08T01:11:54Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-08T01:57:07Z",
     "a": "Schlussquoten erfasst"
@@ -5428,6 +5436,10 @@
    {
     "t": "2026-11-08T16:33:30Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T17:19:04Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
