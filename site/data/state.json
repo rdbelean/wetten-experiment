@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T01:11:54Z",
+ "generated_at": "2026-11-08T01:57:07Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,9 +33,9 @@
     "avg_ev": 0.0503,
     "expected_profit": 5.03,
     "expected_settled": 3.75,
-    "avg_clv": 0.0332,
-    "n_clv": 1,
-    "clv_positive": 1,
+    "avg_clv": 0.0254,
+    "n_clv": 2,
+    "clv_positive": 2,
     "max_drawdown": 20.0
    },
    "days": [
@@ -122,9 +122,9 @@
     "avg_ev": 0.0098,
     "expected_profit": 0.98,
     "expected_settled": 0.14,
-    "avg_clv": 0.0152,
-    "n_clv": 4,
-    "clv_positive": 4,
+    "avg_clv": 0.0157,
+    "n_clv": 5,
+    "clv_positive": 5,
     "max_drawdown": 0.0
    },
    "days": [
@@ -2504,11 +2504,17 @@
    "kind": "value",
    "stake": 40.0,
    "potential_payout": 57.2,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T01:57:07Z",
+    "fair_p": 0.7116,
+    "pinnacle_odds": 1.38,
+    "best_odds": 1.4,
+    "fair_odds": 1.405
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0176,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,2 % (Pinnacle 1,36). Unser Wert: 72,2 %. Beste Quote 1,43 bei Unibet SE (Median 1,35, 25 Anbieter), Erwartungswert +3,2 %. Recherche: Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
    "research": "Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
@@ -2577,11 +2583,17 @@
    "kind": "value",
    "stake": 20.0,
    "potential_payout": 28.6,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T01:57:07Z",
+    "fair_p": 0.7116,
+    "pinnacle_odds": 1.38,
+    "best_odds": 1.4,
+    "fair_odds": 1.405
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0176,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,2 % (Pinnacle 1,36). Unser Wert: 72,2 %. Beste Quote 1,43 bei Unibet SE (Median 1,35, 25 Anbieter), Erwartungswert +3,2 %. Recherche: Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
    "research": "Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
@@ -2920,12 +2932,8 @@
   }
  },
  "system": {
-  "credits_remaining": 372,
+  "credits_remaining": 371,
   "last_actions": [
-   {
-    "t": "2026-11-07T14:28:13Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-07T18:07:24Z",
     "a": "Wetten abgerechnet"
@@ -2981,6 +2989,10 @@
    {
     "t": "2026-11-08T01:11:54Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-08T01:57:07Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
