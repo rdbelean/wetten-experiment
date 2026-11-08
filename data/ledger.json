@@ -5,7 +5,7 @@
    "player": "analyst",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "af8d920f175d73f12933c64ae296573f",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -67,9 +67,14 @@
     "best_odds": 1.4,
     "fair_odds": 1.405
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 99,
+    "source": "ESPN",
+    "t": "2026-11-08T04:57:58Z"
+   },
+   "payout": 0.0,
+   "profit": -40.0,
    "clv": 0.0176,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,2 % (Pinnacle 1,36). Unser Wert: 72,2 %. Beste Quote 1,43 bei Unibet SE (Median 1,35, 25 Anbieter), Erwartungswert +3,2 %. Recherche: Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
@@ -77,7 +82,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909943"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 1.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-07-02",
@@ -483,7 +489,7 @@
    "player": "banker",
    "day": "2026-11-07",
    "placed_at": "2026-11-07T14:27:45Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "af8d920f175d73f12933c64ae296573f",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -545,9 +551,14 @@
     "best_odds": 1.4,
     "fair_odds": 1.405
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 99,
+    "source": "ESPN",
+    "t": "2026-11-08T04:57:58Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": 0.0176,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,2 % (Pinnacle 1,36). Unser Wert: 72,2 %. Beste Quote 1,43 bei Unibet SE (Median 1,35, 25 Anbieter), Erwartungswert +3,2 %. Recherche: Suns ohne Mark Williams (Schulter-OP), Goodwin fraglich bis wahrscheinlich raus. Rockets ohne Adams und Capela. Beide Ausfälle bekannt, keine Korrektur.",
@@ -555,7 +566,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909943"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 1.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-07-banker-05",
