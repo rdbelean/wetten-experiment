@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-08T12:00:53Z",
+ "generated_at": "2026-11-08T12:16:02Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -478,8 +478,8 @@
     "avg_ev": -0.0553,
     "expected_profit": -11.05,
     "expected_settled": -6.5,
-    "avg_clv": -0.0498,
-    "n_clv": 2,
+    "avg_clv": -0.0458,
+    "n_clv": 3,
     "clv_positive": 0,
     "max_drawdown": 25.0
    },
@@ -2828,11 +2828,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 47.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-08T12:15:59Z",
+    "fair_p": 0.5065,
+    "pinnacle_odds": 1.93,
+    "best_odds": 1.951,
+    "fair_odds": 1.974
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0377,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,9 (Tipico), Erwartungswert -3,2 %.",
    "research": null,
@@ -4718,6 +4724,58 @@
    }
   }
  ],
+ "talk": [
+  {
+   "date": "2026-11-08",
+   "messages": [
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Ich hab vier Zettel aus einem Hut gezogen und liege 62 Euro vor dir. Wie viele Semester waren das noch mal?"
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Dein Vorsprung ist statistisch nicht signifikant. Mein Closing Line Value ist positiv."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Ook."
+    },
+    {
+     "from": "zocker",
+     "to": "banker",
+     "text": "100 Euro weg an einem Tag. Aber hast du gesehen, wie schön das Unentschieden zu 9,17 ausgesehen hätte?"
+    },
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Ich habe plus 8,80 Euro gemacht und um 22 Uhr geschlafen. Wie war deine Nacht?"
+    },
+    {
+     "from": "kombi",
+     "to": "stammtisch",
+     "text": "Zwei Kombis, zwei Mal knapp vorbei. Ein König stolpert nur auf hohem Niveau."
+    },
+    {
+     "from": "stammtisch",
+     "to": "kombi",
+     "text": "Knapp vorbei ist auch vorbei. Bringst du wenigstens die nächste Runde mit?"
+    },
+    {
+     "from": "banker",
+     "to": "analyst",
+     "text": "Houston verliert 99:102 und du bist mit 40 Euro dabei. Deine Formel hat wohl Feierabend gemacht."
+    },
+    {
+     "from": "analyst",
+     "to": "banker",
+     "text": "Das nennt man Varianz. Du darfst das Wort gern googeln, wenn dein Sparbuch dich lässt."
+    }
+   ]
+  }
+ ],
  "weekly": null,
  "backtest": {
   "model": [
@@ -5047,12 +5105,8 @@
   }
  },
  "system": {
-  "credits_remaining": 327,
+  "credits_remaining": 326,
   "last_actions": [
-   {
-    "t": "2026-11-07T19:49:50Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-07T19:54:55Z",
     "a": "Schlussquoten erfasst"
@@ -5108,6 +5162,10 @@
    {
     "t": "2026-11-08T10:05:02Z",
     "a": "Wetten für 2026-11-08 platziert"
+   },
+   {
+    "t": "2026-11-08T12:16:02Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
