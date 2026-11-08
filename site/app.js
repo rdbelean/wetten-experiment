@@ -174,6 +174,7 @@
       for (const b of state.bets) if (b.espn && matches[b.espn.id]) live[b.id] = matches[b.espn.id];
       hubUpdated = new Date();
     }
+    renderStage(goals);
     renderHub(goals);
     renderScorebar();
     renderFeed();
@@ -217,8 +218,11 @@
     const cmp = view === "vergleich";
     $("boardCompare").hidden = !cmp; $("compareView").hidden = !cmp;
     $("boardPlayer").hidden = cmp; $("playerView").hidden = cmp;
+    if (cmp) $("bookBand").after($("board")); else $("bookBand").before($("board"));
     renderTabs();
     renderTop();
+    renderStage();
+    renderMini();
     renderHub();
     renderScorebar();
     renderFeed();
@@ -426,9 +430,128 @@
     const firstPaint = !feedSeen.size;
     $("feed").innerHTML = items.length ? items.map((it) => {
       const isNew = !firstPaint && !feedSeen.has(it.id);
-      return `<li class="fd fd-${it.kind} ${isNew ? "fd-new" : ""}"><span class="fd-min">${esc(it.clock || hhmm(new Date(it.t).toISOString()))}</span><div class="fd-body"><span class="fd-tag">${esc(it.tag)}</span> ${esc(it.text)}<small>${esc(it.league)}</small>${it.ekey ? goalImpact(it.ekey) : ""}</div></li>`;
+      return `<li class="fd fd-${it.kind} ${isNew ? "fd-new" : ""}"><span class="fd-ico" aria-hidden="true"></span><span class="fd-min">${esc(it.clock || hhmm(new Date(it.t).toISOString()))}</span><div class="fd-body"><span class="fd-tag">${esc(it.tag)}</span> ${esc(it.text)}<small>${esc(it.league)}</small>${it.ekey ? goalImpact(it.ekey) : ""}</div></li>`;
     }).join("") : `<li class="fd-empty">Sobald unsere Spiele laufen, erscheinen hier Tore, Karten und Abpfiffe.</li>`;
     items.forEach((it) => feedSeen.add(it.id));
+  }
+
+  // ------------------------------------------------------------------ Anzeigetafel (Spiel im Fokus)
+  let stageKey = null, stagePinned = 0;
+  function teamBg(m, side, name) {
+    const raw = m?.[`${side}_color`];
+    if (!raw || raw.length !== 6) return hue(name);
+    const [r, g, b] = [0, 2, 4].map((i) => parseInt(raw.slice(i, i + 2), 16) / 255);
+    const max = Math.max(r, g, b), min = Math.min(r, g, b), l = (max + min) / 2, d = max - min;
+    if (d < 0.12) return hue(name); // Schwarz/Weiß/Grau: eigene Farbe aus dem Namen
+    const sat = d / (1 - Math.abs(2 * l - 1));
+    let h = max === r ? ((g - b) / d) % 6 : max === g ? (b - r) / d + 2 : (r - g) / d + 4;
+    h = (h * 60 + 360) % 360;
+    return `hsl(${h.toFixed(0)} ${Math.round(Math.max(sat, 0.55) * 100)}% ${Math.round(Math.min(40, Math.max(28, l * 100)))}%)`;
+  }
+  const entryStake = (e) => e.picks.reduce((a, p) => a + (p.combo ? 0 : p.stake), 0);
+  function stagePool() {
+    const pid = state.players[view] ? view : null;
+    const all = matchEntries(pid);
+    const st = (e) => (e.espn && matches[e.espn.id] ? matches[e.espn.id].state : null);
+    const running = all.filter((e) => st(e) === "in").sort((a, b) => entryStake(b) - entryStake(a));
+    const next = all.filter((e) => new Date(e.commence) > new Date() && st(e) !== "in" && st(e) !== "post");
+    return { running, next };
+  }
+  function ticket(p, e, m) {
+    const c = state.players[p.player].color;
+    let cls = "", res = p.combo ? `Teil der ${esc(p.combo)}` : `${eur0(p.stake)} Einsatz`, story = "";
+    if (m && m.state !== "pre") {
+      const s = betStory(p, e, m.home_score, m.away_score);
+      cls = s.g === "won" ? "up" : s.g === "lost" ? "down" : "";
+      res = `${s.g === "won" ? "▲" : s.g === "lost" ? "▼" : "■"} ${p.combo ? (s.g === "won" ? "passt" : s.g === "lost" ? "wackelt" : "offen") : s.g === "push" ? "0,00 €" : eur(s.profit, true)}`;
+      story = `<small>${esc(s.text)}</small>`;
+    }
+    return `<div class="tk ${cls}" style="--c:${c}"><span class="tk-who">${esc(shortName(p.player))}</span><span class="tk-tip">${esc(p.label)}</span><span class="tk-foot"><b>${odds(p.odds)}</b><span class="tk-res">${res}</span></span>${story}</div>`;
+  }
+  function timeline(e, m) {
+    const pct = gameProgress(e, m);
+    let marks = "";
+    if (e.group === "Fußball") for (const d of m.details || []) {
+      const kind = d.scoringPlay ? "goal" : d.redCard ? "red" : d.yellowCard ? "yellow" : null;
+      if (!kind) continue;
+      const min = parseInt(d.clock?.displayValue, 10) || 0;
+      marks += `<i class="tl-${kind}" style="left:${Math.min(100, (min / 90) * 100).toFixed(1)}%" title="${esc(d.clock?.displayValue || "")}"></i>`;
+    }
+    return `<div class="jb-line" aria-hidden="true"><span class="jb-fill" style="width:${pct.toFixed(1)}%"></span>${marks}</div>`;
+  }
+  function renderStage(goals = new Set()) {
+    if (!state) return;
+    const { running, next } = stagePool();
+    const goalE = running.find((e) => goals.has(e.key));
+    if (goalE) { stageKey = goalE.key; stagePinned = Date.now() + 15000; }
+    const pool = running.length ? running : next.slice(0, 1);
+    if (!pool.find((e) => e.key === stageKey)) stageKey = pool[0]?.key || null;
+    const box = $("stageMain");
+    const e = pool.find((x) => x.key === stageKey);
+    if (!e) {
+      box.innerHTML = `<article class="jumbo jumbo-empty"><p class="jb-idle">Gerade laufen keine Wetten</p><p class="jb-idle-sub">Täglich um 11:00 Uhr gehen 6 Spieler mit je 100 € an den Start.</p></article>`;
+      return;
+    }
+    const m = e.espn ? matches[e.espn.id] : null;
+    const live = m?.state === "in";
+    const hit = goals.has(e.key);
+    const center = live
+      ? `<div class="jb-nums ${hit ? "pop" : ""}"><span>${m.home_score}</span><em>:</em><span>${m.away_score}</span></div>`
+      : `<div class="jb-count"><small>Anstoß</small><b data-countdown="${e.commence}">${countdownText(e.commence)}</b><small>${wd(e.commence)} ${hhmm(e.commence)} Uhr</small></div>`;
+    const extra = e.picks.length > 4 ? `<div class="tk tk-more">+${e.picks.length - 4} weitere</div>` : "";
+    const banner = hit ? `<div class="jb-goal" aria-hidden="true"><span>${e.group === "Fußball" || e.group === "Eishockey" ? "TOR!" : "SCORE!"}</span></div>` : "";
+    const sw = running.length > 1 ? `<div class="jb-switch" role="tablist" aria-label="Live-Spiele">${running.map((x) => {
+      const mm = matches[x.espn.id];
+      return `<button type="button" role="tab" aria-selected="${x.key === stageKey}" data-k="${esc(x.key)}">${esc(mm.home_abbr || abbr(x.home))} <b>${mm.home_score}:${mm.away_score}</b> ${esc(mm.away_abbr || abbr(x.away))}</button>`;
+    }).join("")}</div>` : "";
+    const bgH = teamBg(m, "home", e.home);
+    let bgA = teamBg(m, "away", e.away);
+    const hueOf = (c) => parseInt(c.match(/hsl\((\d+)/)?.[1] || "0", 10);
+    const diff = Math.abs(hueOf(bgH) - hueOf(bgA));
+    if (Math.min(diff, 360 - diff) < 45) bgA = `hsl(${(hueOf(bgH) + 150) % 360} 62% 34%)`; // zu ähnlich: Gegenfarbe
+    box.innerHTML = `<article class="jumbo ${live ? "is-live" : "is-next"}" style="--h:${bgH};--a:${bgA}">
+      <div class="jb-bg" aria-hidden="true"><i></i><i></i></div>
+      <div class="jb-top"><span class="jb-tag">${live ? "LIVE" : "ALS NÄCHSTES"}</span><span class="jb-league">${esc(e.league)}</span>${live ? `<span class="jb-clock">${esc(clockDe(m))}</span>` : ""}</div>
+      <div class="jb-mid">
+        <div class="jb-team"><span class="jb-crest">${esc(m?.home_abbr || abbr(e.home))}</span><span class="jb-name">${esc(e.home)}</span></div>
+        ${center}
+        <div class="jb-team"><span class="jb-crest">${esc(m?.away_abbr || abbr(e.away))}</span><span class="jb-name">${esc(e.away)}</span></div>
+      </div>
+      ${live ? timeline(e, m) : ""}
+      <div class="jb-tickets">${e.picks.slice(0, 4).map((p) => ticket(p, e, m)).join("")}${extra}</div>
+      ${banner}
+    </article>${sw}`;
+    box.querySelectorAll(".jb-switch button").forEach((b) => b.addEventListener("click", () => { stageKey = b.dataset.k; stagePinned = Date.now() + 60000; renderStage(); }));
+  }
+  function stageRotate() {
+    if (!state || Date.now() < stagePinned || document.hidden) return;
+    const { running } = stagePool();
+    if (running.length < 2) return;
+    const i = running.findIndex((e) => e.key === stageKey);
+    stageKey = running[(i + 1) % running.length].key;
+    renderStage();
+  }
+
+  // ------------------------------------------------------------------ Rangliste neben der Tafel
+  function sparkline(p) {
+    const last = p.days.reduce((m, d, i) => (d.settled ? i : m), -1);
+    const v = [0, ...p.days.slice(0, last + 1).map((d) => d.cum_profit)];
+    if (v.length < 2) return `<svg class="spark" viewBox="0 0 64 22" aria-hidden="true"><line x1="0" x2="64" y1="11" y2="11"/></svg>`;
+    const lo = Math.min(...v), hi = Math.max(...v), span = hi - lo || 1;
+    const pts = v.map((x, i) => `${((i / (v.length - 1)) * 62 + 1).toFixed(1)},${(20 - ((x - lo) / span) * 18).toFixed(1)}`).join(" ");
+    return `<svg class="spark" viewBox="0 0 64 22" aria-hidden="true"><polyline points="${pts}" style="stroke:${p.color}"/></svg>`;
+  }
+  function renderMini() {
+    const rows = ranked();
+    const any = rows.some((p) => p.totals.staked_settled);
+    $("miniBoard").innerHTML = rows.map((p, i) => {
+      const t = p.totals;
+      return `<li><button type="button" class="mn ${i === 0 && any ? "is-top" : ""} ${view === p.id ? "is-me" : ""}" data-v="${p.id}">
+        <span class="mn-rank">${any ? i + 1 : "–"}</span><i style="background:${p.color}"></i>
+        <span class="mn-name">${esc(shortName(p.id))}</span>${sparkline(p)}
+        <b class="${t.profit > 0.004 ? "pos" : t.profit < -0.004 ? "neg" : ""}">${t.staked_settled ? eur(t.profit, true) : "–"}</b></button></li>`;
+    }).join("");
+    $("miniBoard").querySelectorAll("button").forEach((b) => b.addEventListener("click", () => { setView(view === b.dataset.v ? "vergleich" : b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
   }
 
   // ------------------------------------------------------------------ Wettschein-Spalte
@@ -1122,6 +1245,7 @@
   load();
   setInterval(load, 60_000);
   setInterval(pollLive, 20_000);
+  setInterval(stageRotate, 9000);
   const sbV = $("sbView");
   sbV.addEventListener("pointerenter", () => { sbPaused = true; });
   sbV.addEventListener("pointerleave", () => { sbPaused = false; sbLast = 0; });
