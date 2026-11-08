@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=21">
+<link rel="stylesheet" href="styles.css?v=32">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -110,6 +110,14 @@
 
 <main class="wrap" id="main">
   <div id="compareView" hidden>
+    <section class="fun-sec" aria-labelledby="talkTitle">
+      <div class="sec-head"><h2 id="talkTitle">Die Kabine</h2><p>Was sich die Spieler nach den Ergebnissen zu sagen haben.</p></div>
+      <div class="talk" id="talk"></div>
+    </section>
+    <section class="fun-sec" aria-labelledby="awardsTitle">
+      <div class="sec-head"><h2 id="awardsTitle">Der Pokalschrank</h2><p>Tagessiege, Serien und die größten Momente der Woche.</p></div>
+      <div class="awards" id="awards"></div>
+    </section>
     <section class="panel-row" aria-label="Vergleich">
       <figure class="panel panel-wide">
         <figcaption class="panel-head"><span class="panel-title">Kontostand der Spieler nach jedem Tag</span>
@@ -122,6 +130,10 @@
           <span class="panel-sub">Rechts: größter zwischenzeitlicher Rückgang. Oben: Rendite.</span></figcaption>
         <div class="chart chart-lg" id="riskChart" role="img" aria-label="Risiko gegen Rendite je Spieler"></div>
       </figure>
+    </section>
+    <section class="fun-sec" aria-labelledby="simTitle">
+      <div class="sec-head"><h2 id="simTitle">Die Zukunftsmaschine</h2><p>Die restliche Woche, 10.000-mal durchgespielt. Wer gewinnt, und wo landet jeder am Ende?</p></div>
+      <figure class="panel sim-panel"><div id="sim"></div><figcaption class="sim-note" id="simNote"></figcaption></figure>
     </section>
     <section aria-labelledby="playersTitle" class="players-sec">
       <div class="sec-head"><h2 id="playersTitle">Die Spieler</h2><p>Jeder bekommt jeden Tag 100 € und dieselben Spiele. Nur die Strategie unterscheidet sich.</p></div>
@@ -215,6 +227,6 @@
 </footer>
 
 <div class="fx-layer" id="fx" aria-hidden="true"></div>
-<script src="app.js?v=21" defer></script>
+<script src="app.js?v=32" defer></script>
 </body>
 </html>

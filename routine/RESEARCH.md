@@ -55,6 +55,24 @@ fehlt, schreibe eine Tagesauswertung:
  "written_at": "ISO-Zeit"}
 ```
 
+## 1b. Die Kabine: Trash-Talk der Spieler
+
+Die sechs Spieler sind erfundene Figuren. Schreibe jeden Tag `data/analyses/talk-$TODAY.json`, wenn die Datei
+noch nicht existiert. Grundlage sind die echten Ergebnisse aus `data/ledger.json` und der Spielstand aus
+`site/data/state.json`.
+
+```json
+{"date": "YYYY-MM-DD", "written_at": "ISO-Zeit",
+ "messages": [{"from": "affe", "to": "analyst", "text": "..."}]}
+```
+
+- 6–10 kurze Nachrichten (je höchstens 2 Sätze), die aufeinander antworten. `from` und `to` sind Spieler-IDs.
+- Figuren: `analyst` (eingebildeter Statistik-Professor, redet von Varianz und CLV), `banker` (spießig, risikoscheu,
+  stolz auf kleine Gewinne), `zocker` (großmäulig, unverbesserlich), `kombi` (adliger Größenwahn, redet von seiner Krone),
+  `stammtisch` (Kneipen-Experte, Bauchgefühl, eine Runde geht immer), `affe` (lakonisch, sagt manchmal nur „Ook.“).
+- Beziehe dich auf konkrete Wetten, Quoten und Beträge von gestern. Erfinde keine Ergebnisse.
+- Die Sticheleien richten sich nur gegen die sechs Figuren. Keine Beleidigungen von echten Spielern, Vereinen oder Personen.
+
 ## 2. News-Recherche für heute (Hauptaufgabe)
 
 Warte, bis `data/days/$TODAY/candidates.json` existiert (bis zu 25 Minuten lang alle

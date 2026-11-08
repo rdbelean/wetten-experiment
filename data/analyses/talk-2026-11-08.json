@@ -1,0 +1,15 @@
+{
+ "date": "2026-11-08",
+ "written_at": "2026-11-08T13:15:00+01:00",
+ "messages": [
+  {"from": "affe", "to": "analyst", "text": "Ich hab vier Zettel aus einem Hut gezogen und liege 62 Euro vor dir. Wie viele Semester waren das noch mal?"},
+  {"from": "analyst", "to": "affe", "text": "Dein Vorsprung ist statistisch nicht signifikant. Mein Closing Line Value ist positiv."},
+  {"from": "affe", "to": "analyst", "text": "Ook."},
+  {"from": "zocker", "to": "banker", "text": "100 Euro weg an einem Tag. Aber hast du gesehen, wie schön das Unentschieden zu 9,17 ausgesehen hätte?"},
+  {"from": "banker", "to": "zocker", "text": "Ich habe plus 8,80 Euro gemacht und um 22 Uhr geschlafen. Wie war deine Nacht?"},
+  {"from": "kombi", "to": "stammtisch", "text": "Zwei Kombis, zwei Mal knapp vorbei. Ein König stolpert nur auf hohem Niveau."},
+  {"from": "stammtisch", "to": "kombi", "text": "Knapp vorbei ist auch vorbei. Bringst du wenigstens die nächste Runde mit?"},
+  {"from": "banker", "to": "analyst", "text": "Houston verliert 99:102 und du bist mit 40 Euro dabei. Deine Formel hat wohl Feierabend gemacht."},
+  {"from": "analyst", "to": "banker", "text": "Das nennt man Varianz. Du darfst das Wort gern googeln, wenn dein Sparbuch dich lässt."}
+ ]
+}

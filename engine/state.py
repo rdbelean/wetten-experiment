@@ -61,6 +61,16 @@ def day_rows(bets):
     return rows
 
 
+def _talk():
+    """Sprüche der Spieler (von der Claude-Routine geschrieben), neueste zuerst."""
+    out = []
+    for f in sorted(C.ANALYSES.glob("talk-*.json"), reverse=True)[:7]:
+        doc = read_json(f) or {}
+        if doc.get("messages"):
+            out.append({"date": doc.get("date"), "messages": doc["messages"]})
+    return out
+
+
 def build(ledger):
     now = now_utc()
     bets = [_merge_analysis(dict(b)) for b in ledger["bets"]]
@@ -95,6 +105,7 @@ def build(ledger):
         "order": ORDER,
         "days": days,
         "bets": sorted(bets, key=lambda b: (b["commence"], b["id"])),
+        "talk": _talk(),
         "weekly": read_json(C.ANALYSES / "weekly.json"),
         "backtest": read_json(C.DATA / "backtest.json"),
         "rules": {"min_ev": C.MIN_EV, "coinflip_band": C.COINFLIP_BAND, "coinflip_min_ev": C.COINFLIP_MIN_EV,

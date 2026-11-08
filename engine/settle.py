@@ -144,6 +144,8 @@ def settle(ledger):
             if e and (e["status"] in FINAL or e["completed"]) and e["home_score"] is not None:
                 hs, as_ = e["home_score"], e["away_score"]
                 _close(b, grade(b, hs, as_), hs, as_, "ESPN")
+                if e.get("goals"):
+                    b["result"]["goals"] = e["goals"]
                 done = changed = True
             elif e and e["status"] in VOID:
                 _close(b, "void", source="ESPN")

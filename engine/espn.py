@@ -29,11 +29,32 @@ def scoreboard(path, day_str):
                 "detail": e["status"]["type"].get("shortDetail", ""),
                 "home": teams["home"]["team"]["displayName"], "away": teams["away"]["team"]["displayName"],
                 "home_score": _int(teams["home"].get("score")), "away_score": _int(teams["away"].get("score")),
+                "goals": _goals(c, teams),
             })
     except Exception as ex:  # noqa: BLE001
         log("espn Fehler", path, day_str, ex)
         out = []
     _cache[key] = out
+    return out
+
+
+def _goals(c, teams):
+    """Tore mit Minute und Seite (nur Fußball liefert das). Eigentore werden über das Endergebnis korrigiert."""
+    hid = teams["home"]["team"]["id"]
+    out = []
+    for d in c.get("details") or []:
+        if not d.get("scoringPlay"):
+            continue
+        try:
+            minute = int(str(d["clock"]["displayValue"]).split("'")[0])
+        except (KeyError, ValueError):
+            minute = 0
+        out.append({"min": minute, "side": "home" if d.get("team", {}).get("id") == hid else "away", "og": bool(d.get("ownGoal"))})
+    hs, as_ = _int(teams["home"].get("score")), _int(teams["away"].get("score"))
+    if out and sum(g["side"] == "home" for g in out) != hs:
+        for g in out:
+            if g["og"]:
+                g["side"] = "away" if g["side"] == "home" else "home"
     return out
 
 
