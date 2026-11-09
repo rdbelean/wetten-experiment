@@ -1,27 +1,7 @@
 {
- "credits_remaining": 305,
- "credits_used": 195,
+ "credits_remaining": 300,
+ "credits_used": 200,
  "api_calls": [
-  {
-   "t": "2026-11-06T16:48:52Z",
-   "path": "/sports/soccer_england_league2/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-06T16:48:52Z",
-   "path": "/sports/soccer_spain_la_liga/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-06T16:48:53Z",
-   "path": "/sports/soccer_spain_la_liga/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-06T16:48:53Z",
-   "path": "/sports/soccer_italy_serie_a/events",
-   "cost": 0
-  },
   {
    "t": "2026-11-06T16:48:53Z",
    "path": "/sports/soccer_italy_serie_a/odds",
@@ -1001,13 +981,29 @@
    "t": "2026-11-09T07:33:56Z",
    "path": "/sports/americanfootball_nfl/odds",
    "cost": 3
+  },
+  {
+   "t": "2026-11-09T10:05:00Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-09T10:05:00Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-09T10:05:00Z",
+   "path": "/sports/icehockey_nhl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-09T10:05:00Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 2
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-07T19:49:50Z",
-   "a": "Schlussquoten erfasst"
-  },
   {
    "t": "2026-11-07T19:54:55Z",
    "a": "Schlussquoten erfasst"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-09T07:33:56Z",
    "a": "Kandidaten für 2026-11-09 vorbereitet"
+  },
+  {
+   "t": "2026-11-09T10:05:01Z",
+   "a": "Wetten für 2026-11-09 platziert"
   }
  ]
 }
