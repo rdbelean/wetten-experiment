@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-09T10:05:01Z",
+ "generated_at": "2026-11-09T23:59:24Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,9 +33,9 @@
     "avg_ev": 0.0361,
     "expected_profit": 10.82,
     "expected_settled": 8.89,
-    "avg_clv": 0.0575,
-    "n_clv": 10,
-    "clv_positive": 10,
+    "avg_clv": 0.0618,
+    "n_clv": 12,
+    "clv_positive": 11,
     "max_drawdown": 61.55
    },
    "days": [
@@ -122,8 +122,8 @@
     "avg_ev": 0.0111,
     "expected_profit": 3.34,
     "expected_settled": 2.63,
-    "avg_clv": 0.0083,
-    "n_clv": 10,
+    "avg_clv": 0.0051,
+    "n_clv": 11,
     "clv_positive": 9,
     "max_drawdown": 20.0
    },
@@ -389,8 +389,8 @@
     "avg_ev": -0.058,
     "expected_profit": -17.4,
     "expected_settled": -11.28,
-    "avg_clv": -0.0399,
-    "n_clv": 8,
+    "avg_clv": -0.0653,
+    "n_clv": 11,
     "clv_positive": 1,
     "max_drawdown": 43.4
    },
@@ -478,9 +478,9 @@
     "avg_ev": -0.0536,
     "expected_profit": -16.07,
     "expected_settled": -11.05,
-    "avg_clv": -0.0329,
-    "n_clv": 6,
-    "clv_positive": 1,
+    "avg_clv": -0.0012,
+    "n_clv": 8,
+    "clv_positive": 3,
     "max_drawdown": 105.75
    },
    "days": [
@@ -5539,11 +5539,17 @@
    "kind": "filler",
    "stake": 39.0,
    "potential_payout": 82.68,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.5634,
+    "pinnacle_odds": 1.75,
+    "best_odds": 1.755,
+    "fair_odds": 1.775
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.1944,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 46,8 % (Pinnacle 2,05). News-Korrektur +2,0 Prozentpunkte. Unser Wert: 48,8 %. Beste Quote 2,12 bei Unibet SE (Median 2,05, 23 Anbieter), Erwartungswert +3,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück.",
    "research": "Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück.",
@@ -5611,11 +5617,17 @@
    "kind": "filler",
    "stake": 21.0,
    "potential_payout": 27.3,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.7482,
+    "pinnacle_odds": 1.32,
+    "best_odds": 1.333,
+    "fair_odds": 1.337
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0273,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,26). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
@@ -5682,11 +5694,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 51.25,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.5634,
+    "pinnacle_odds": 1.75,
+    "best_odds": 1.755,
+    "fair_odds": 1.775
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.155,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,05 (Tipico), Erwartungswert +0,1 %.",
    "research": null,
@@ -5754,11 +5772,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 102.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.2518,
+    "pinnacle_odds": 3.73,
+    "best_odds": 3.75,
+    "fair_odds": 3.971
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0324,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,1 (Tipico), Erwartungswert -7,0 %.",
    "research": null,
@@ -5826,11 +5850,17 @@
    "kind": "favorit",
    "stake": 33.0,
    "potential_payout": 42.9,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.7482,
+    "pinnacle_odds": 1.32,
+    "best_odds": 1.333,
+    "fair_odds": 1.337
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0273,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,26). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %.",
    "research": null,
@@ -6152,11 +6182,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 35.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.4366,
+    "pinnacle_odds": 2.23,
+    "best_odds": 2.235,
+    "fair_odds": 2.29
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.2359,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,75 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -10,5 %.",
    "research": null,
@@ -6224,11 +6260,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 24.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.7482,
+    "pinnacle_odds": 1.32,
+    "best_odds": 1.333,
+    "fair_odds": 1.337
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0872,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,22 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,7 %.",
    "research": null,
@@ -6296,11 +6338,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 23.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T23:59:24Z",
+    "fair_p": 0.7898,
+    "pinnacle_odds": 1.25,
+    "best_odds": 1.27,
+    "fair_odds": 1.266
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0759,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,17 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,3 %.",
    "research": null,
@@ -7236,12 +7284,8 @@
   }
  },
  "system": {
-  "credits_remaining": 300,
+  "credits_remaining": 299,
   "last_actions": [
-   {
-    "t": "2026-11-08T17:49:14Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-08T18:19:27Z",
     "a": "Schlussquoten erfasst"
@@ -7297,6 +7341,10 @@
    {
     "t": "2026-11-09T10:05:01Z",
     "a": "Wetten für 2026-11-09 platziert"
+   },
+   {
+    "t": "2026-11-09T23:59:24Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
