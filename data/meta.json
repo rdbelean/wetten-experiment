@@ -1,6 +1,6 @@
 {
- "credits_remaining": 314,
- "credits_used": 186,
+ "credits_remaining": 313,
+ "credits_used": 187,
  "api_calls": [
   {
    "t": "2026-11-06T16:48:49Z",
@@ -956,13 +956,14 @@
    "t": "2026-11-09T00:26:28Z",
    "path": "/sports/basketball_nba/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-09T01:06:40Z",
+   "path": "/sports/americanfootball_nfl/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-07T18:07:24Z",
-   "a": "Wetten abgerechnet"
-  },
   {
    "t": "2026-11-07T19:04:30Z",
    "a": "Wetten abgerechnet"
@@ -1117,6 +1118,10 @@
   },
   {
    "t": "2026-11-09T00:26:28Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-09T01:06:40Z",
    "a": "Schlussquoten erfasst"
   }
  ]

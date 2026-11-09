@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-09T00:26:28Z",
+ "generated_at": "2026-11-09T01:06:40Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,9 +122,9 @@
     "avg_ev": 0.0132,
     "expected_profit": 2.63,
     "expected_settled": 2.67,
-    "avg_clv": 0.0069,
-    "n_clv": 9,
-    "clv_positive": 8,
+    "avg_clv": 0.0083,
+    "n_clv": 10,
+    "clv_positive": 9,
     "max_drawdown": 20.0
    },
    "days": [
@@ -5273,11 +5273,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 28.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-09T01:06:40Z",
+    "fair_p": 0.7191,
+    "pinnacle_odds": 1.37,
+    "best_odds": 1.38,
+    "fair_odds": 1.391
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0211,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 70,3 % (Pinnacle 1,41). Unser Wert: 70,3 %. Beste Quote 1,42 bei Marathonbet (Median 1,37, 21 Anbieter), Erwartungswert -0,1 %.",
    "research": null,
@@ -5668,12 +5674,8 @@
   }
  },
  "system": {
-  "credits_remaining": 314,
+  "credits_remaining": 313,
   "last_actions": [
-   {
-    "t": "2026-11-08T16:03:18Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-08T16:18:24Z",
     "a": "Schlussquoten erfasst"
@@ -5728,6 +5730,10 @@
    },
    {
     "t": "2026-11-09T00:26:28Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-09T01:06:40Z",
     "a": "Schlussquoten erfasst"
    }
   ]
