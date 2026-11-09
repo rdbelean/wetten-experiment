@@ -2551,7 +2551,7 @@
    "player": "banker",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "c5b6599e8e4949749798dcdadceb68d4",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -2612,9 +2612,14 @@
     "best_odds": 1.363,
     "fair_odds": 1.359
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 130,
+    "away": 93,
+    "source": "ESPN",
+    "t": "2026-11-09T03:27:18Z"
+   },
+   "payout": 25.2,
+   "profit": 5.2,
    "clv": -0.0726,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 79,3 % (Pinnacle 1,24). Unser Wert: 79,3 %. Beste Quote 1,26 bei 1xBet (Median 1,23, 24 Anbieter), Erwartungswert -0,1 %.",
@@ -2622,7 +2627,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909948"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 7.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-08-banker-02",
