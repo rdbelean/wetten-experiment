@@ -2800,7 +2800,7 @@
    "player": "banker",
    "day": "2026-11-08",
    "placed_at": "2026-11-08T10:04:57Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9760d8f19f84bfee300a74ceb656c95d",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -2858,9 +2858,14 @@
     "best_odds": 1.38,
     "fair_odds": 1.391
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 27,
+    "away": 24,
+    "source": "ESPN",
+    "t": "2026-11-09T05:08:09Z"
+   },
+   "payout": 28.4,
+   "profit": 8.4,
    "clv": 0.0211,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 70,3 % (Pinnacle 1,41). Unser Wert: 70,3 %. Beste Quote 1,42 bei Marathonbet (Median 1,37, 21 Anbieter), Erwartungswert -0,1 %.",
@@ -2868,7 +2873,8 @@
    "espn": {
     "path": "football/nfl",
     "id": "401873050"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 2.1 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-08-banker-05",
