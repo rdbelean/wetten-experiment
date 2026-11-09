@@ -1,5 +1,40 @@
 {
-  "written_at": "2026-11-09T08:19:38+00:00",
-  "summary": "Vorläufige Fassung: Die Recherche läuft noch, bisher keine Korrekturen.",
-  "events": {}
+  "written_at": "2026-11-09T08:21:22+00:00",
+  "summary": "Größte News: Die Nuggets saßen nach Flugzeugproblemen rund 16 Stunden in Mexiko-Stadt fest, Shootaround abgesagt, Jokić (Ellbogen), Murray und alle Starter sind questionable – das Spiel in Houston bekommt ein Veto. Bei den Lakers ist Dončić (Rücken) im Back-to-back in Atlanta fraglich; die Lakers-Favoritenquote wirkt dafür etwas zu kurz, daher leichte Korrektur Richtung Hawks. Haliburton fehlt den Pacers weiter, Duren den Pistons – beides ist bekannt und eingepreist.",
+  "events": {
+    "dc61de43b5db9de357f48f44c8022494": {
+      "veto": true,
+      "confidence": "mittel",
+      "notes": "Veto: Nuggets nach 16-stündiger Reiseodyssee aus Mexiko-Stadt mit Jokić, Murray, Gordon, Johnson, Braun und DeRozan alle questionable, Shootaround abgesagt. Aufstellung völlig offen – Rockets ohne Adams und Capela."
+    },
+    "07361a8381206817e27bd2697fad7479": {
+      "h2h": {
+        "home": 0.02,
+        "away": -0.02
+      },
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück."
+    },
+    "9866fa22adc8509d487522ef4cf0fc24": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Pacers ohne Haliburton (Oberschenkel, mind. zwei Wochen), McConnell fraglich; bei Dallas fehlen Lively, de Larrea und Biberovic. Alles bekannt – die Pacers-Quote 2,50 ist ein Ausreißer eines einzelnen Buchmachers, keine Korrektur."
+    },
+    "3619e1cf4b0a325c3e0ba5b1fb7f3d91": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur."
+    },
+    "dc4eb6ae9979b3d3418c35b4210f0c72": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Kein aktueller Injury Report gefunden; Wembanyama stand zuletzt nicht mehr auf der Liste, bei den Suns fehlt Mark Williams. Keine Korrektur."
+    },
+    "929b863acedecaf614c6312e28a44837": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Pistons ohne Duren (mind. zwei weitere Wochen) und Isaiah Joe, dazu Back-to-back nach dem Lakers-Spiel. Bei Washington ist Anthony Davis (Knöchel) fraglich. Eingepreist, keine Korrektur."
+    }
+  }
 }
