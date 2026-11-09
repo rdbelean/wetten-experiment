@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-09T05:08:10Z",
+ "generated_at": "2026-11-09T07:33:56Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -865,7 +865,7 @@
     "2026-11-10T11:00:00Z"
    ],
    "placed": false,
-   "n_candidates": null,
+   "n_candidates": 12,
    "n_outcomes": null,
    "n_value": null,
    "research": {
@@ -5686,12 +5686,8 @@
   }
  },
  "system": {
-  "credits_remaining": 313,
+  "credits_remaining": 305,
   "last_actions": [
-   {
-    "t": "2026-11-08T17:19:04Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-08T17:49:13Z",
     "a": "Schlussquoten erfasst"
@@ -5747,6 +5743,10 @@
    {
     "t": "2026-11-09T05:08:09Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-09T07:33:56Z",
+    "a": "Kandidaten für 2026-11-09 vorbereitet"
    }
   ]
  }
