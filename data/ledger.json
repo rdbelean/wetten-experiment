@@ -4749,7 +4749,7 @@
    "player": "banker",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "dc4eb6ae9979b3d3418c35b4210f0c72",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4810,9 +4810,14 @@
     "best_odds": 1.294,
     "fair_odds": 1.301
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 96,
+    "away": 122,
+    "source": "ESPN",
+    "t": "2026-11-10T04:56:10Z"
+   },
+   "payout": 42.9,
+   "profit": 9.9,
    "clv": -0.0004,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,27). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Recherche: Kein aktueller Injury Report gefunden; Wembanyama stand zuletzt nicht mehr auf der Liste, bei den Suns fehlt Mark Williams. Keine Korrektur.",
@@ -4820,7 +4825,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909958"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 0.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-kombi-01",

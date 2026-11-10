@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T04:00:54Z",
+ "generated_at": "2026-11-10T04:56:10Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -106,22 +106,22 @@
    "id": "banker",
    "totals": {
     "staked": 300.0,
-    "staked_settled": 233.0,
-    "returned": 246.6,
-    "profit": 13.6,
-    "roi": 0.0584,
-    "open_stake": 67.0,
-    "open_potential": 86.76,
-    "won": 9,
+    "staked_settled": 266.0,
+    "returned": 289.5,
+    "profit": 23.5,
+    "roi": 0.0883,
+    "open_stake": 34.0,
+    "open_potential": 43.86,
+    "won": 10,
     "lost": 2,
     "push": 0,
     "n_bets": 13,
-    "hit_rate": 0.8182,
+    "hit_rate": 0.8333,
     "avg_odds": 1.358,
     "max_odds_won": 1.55,
     "avg_ev": 0.0111,
     "expected_profit": 3.34,
-    "expected_settled": 2.8,
+    "expected_settled": 2.97,
     "avg_clv": 0.0095,
     "n_clv": 13,
     "clv_positive": 10,
@@ -147,16 +147,16 @@
     {
      "date": "2026-11-09",
      "staked": 100.0,
-     "profit": -33.0,
-     "cum_profit": 13.6,
-     "settled": 1,
+     "profit": -23.1,
+     "cum_profit": 23.5,
+     "settled": 2,
      "n_bets": 3
     },
     {
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 13.6,
+     "cum_profit": 23.5,
      "settled": 0,
      "n_bets": 0
     },
@@ -164,7 +164,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 13.6,
+     "cum_profit": 23.5,
      "settled": 0,
      "n_bets": 0
     },
@@ -172,7 +172,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 13.6,
+     "cum_profit": 23.5,
      "settled": 0,
      "n_bets": 0
     },
@@ -180,7 +180,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 13.6,
+     "cum_profit": 23.5,
      "settled": 0,
      "n_bets": 0
     }
@@ -6664,7 +6664,7 @@
    "player": "banker",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "dc4eb6ae9979b3d3418c35b4210f0c72",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6725,9 +6725,14 @@
     "best_odds": 1.294,
     "fair_odds": 1.301
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 96,
+    "away": 122,
+    "source": "ESPN",
+    "t": "2026-11-10T04:56:10Z"
+   },
+   "payout": 42.9,
+   "profit": 9.9,
    "clv": -0.0004,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,27). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Recherche: Kein aktueller Injury Report gefunden; Wembanyama stand zuletzt nicht mehr auf der Liste, bei den Suns fehlt Mark Williams. Keine Korrektur.",
@@ -6735,7 +6740,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909958"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 0.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-02",
@@ -7403,10 +7409,6 @@
   "credits_remaining": 295,
   "last_actions": [
    {
-    "t": "2026-11-08T23:26:11Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-09T00:26:28Z",
     "a": "Schlussquoten erfasst"
    },
@@ -7460,6 +7462,10 @@
    },
    {
     "t": "2026-11-10T04:00:54Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-10T04:56:10Z",
     "a": "Wetten abgerechnet"
    }
   ]
