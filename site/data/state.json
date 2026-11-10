@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T07:32:01Z",
+ "generated_at": "2026-11-10T08:22:17Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -1011,7 +1011,11 @@
      "commence": "2026-11-10T02:10:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst verlor am 09.11. 48,40 € bei 100 € Einsatz (1 Sieg, 2 Niederlagen) und steht nach drei Tagen bei −37,16 €, obwohl sein Erwartungswert bei etwa +11 € liegt. Alle drei Wetten waren NBA-Lückenfüller. Die Hawks-Wette (CLV +19 %, getragen von der Dončić-Recherche) und die Warriors (CLV +6,9 %) waren gute Preise, die Cavaliers-Wette nicht (CLV −2,7 %). Verloren wurde durch eine gute (Hawks) und eine schlechte Entscheidung (Cavs). Tagessieger war mit großem Abstand die Kombi: Eine 4er-Kombi zu 10,46 (Bills, Oilers, Lakers +2, Raptors–Grizzlies unter 230,5) brachte +423,11 €, das ist reines Glück bei negativem Erwartungswert. Der Affe gewann +33 € dank Hornets zu 4,10, Banker (−13,24 €) und Stammtisch (−10,60 €) verloren knapp an den Cavs, der Zocker setzte nichts.",
+    "lessons": "Lückenfüller mit EV unter 1 % hatten gemischten CLV (+6,9 %, −2,7 %), wobei die negative Wette ausgerechnet auf einen Favoriten gegen einen dezimierten Gegner ging. Die gezielte Recherche-Korrektur (Hawks +0,02) bestätigte der Markt dagegen deutlich. Die Cavaliers waren für Analyst, Banker, Stammtisch und Kombi das gemeinsame Verlustspiel, das ist ein Klumpenrisiko.",
+    "written_at": "2026-11-10T08:19:53Z"
+   }
   },
   {
    "date": "2026-11-10",
@@ -1025,8 +1029,8 @@
    "n_value": null,
    "research": {
     "used": false,
-    "summary": null,
-    "n_events": 0
+    "summary": "Dünner Tag mit nur 13 NBA/NHL-Events und keinem Ausgang über der Wettschwelle. Die wichtigsten News (Herro und Hart fraglich bei Bucks–Knicks, OKC ohne Jalen Williams, Cason Wallace und wohl Holmgren, Orlando ohne Banchero und Suggs, Clippers ohne Beal und Ingram, Utah ohne George und Jackson Jr.) waren schon am Montag öffentlich und sind in den Pinnacle-Linien sichtbar eingepreist. Deshalb gibt es heute keine Korrekturen, nur Recherche-Notizen. NHL-Goalies sind zum Wettzeitpunkt noch nicht bestätigt.",
+    "n_events": 8
    },
    "near_misses": [],
    "summary": null
@@ -5555,7 +5559,12 @@
    "payout": 0.0,
    "profit": -39.0,
    "clv": 0.1944,
-   "analysis": null,
+   "analysis": {
+    "text": "Die Lakers gewannen 124:114 in Atlanta. Der befürchtete Dončić-Ausfall (Rücken) trat nicht ein, er kam auf 32 Punkte und 10 Assists, während den Lakers Austin Reaves krank fehlte. Atlanta verkürzte 3:30 Minuten vor Schluss auf 111:115, dann zog LA mit einem 6:0-Lauf davon. Die Wette zu 2,12 (inkl. Recherche-Aufschlag +0,02) war stark: Bis zum Anpfiff fiel die Hawks-Quote auf einen fairen Schlusskurs von 1,775 (CLV +19 %).",
+    "verdict": "pech",
+    "lesson": "Der Recherche-Aufschlag wegen eines fraglichen Stars wurde vom Markt klar bestätigt. Solche Korrekturen bei frischen Game-time-Entscheidungen sind sinnvoll, auch wenn der Spieler am Ende spielt.",
+    "written_at": "2026-11-10T08:19:53Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 46,8 % (Pinnacle 2,05). News-Korrektur +2,0 Prozentpunkte. Unser Wert: 48,8 %. Beste Quote 2,12 bei Unibet SE (Median 2,05, 23 Anbieter), Erwartungswert +3,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück.",
    "research": "Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück.",
    "espn": {
@@ -5639,7 +5648,12 @@
    "payout": 0.0,
    "profit": -21.0,
    "clv": -0.0273,
-   "analysis": null,
+   "analysis": {
+    "text": "Die Hornets gewannen trotz der Ausfälle von Brandon Miller, Kon Knueppel und Moussa Diabaté 124:112 gegen Cleveland: Sie trafen 23 Dreier, Grayson Allen machte 27 und Naz Reid 25 Punkte, zwischenzeitlich führten sie mit 33. Die Wette auf Cleveland zu 1,30 war nur ein Lückenfüller mit +0,5 % Erwartungswert. Vor dem Spiel stieg die Quote auf einen fairen Schlusskurs von 1,337 (CLV −2,7 %), der Markt hielt die Ausfälle also für überbewertet.",
+    "verdict": "fehler",
+    "lesson": "Lückenfüller-Wetten mit fast null Erwartungswert auf Favoriten gegen dezimierte Gegner bringen eher negativen CLV, weil der Markt Ausfall-Meldungen oft überreagiert einpreist. Solche Wetten lieber weglassen, als das Tagesbudget aufzufüllen.",
+    "written_at": "2026-11-10T08:19:53Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,26). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
    "espn": {
@@ -6841,7 +6855,12 @@
    "payout": 51.6,
    "profit": 11.6,
    "clv": 0.0685,
-   "analysis": null,
+   "analysis": {
+    "text": "Golden State zerlegte die Pelicans 138:87 (72:43 zur Pause) und holte den achten Sieg in Serie; Curry und Podziemski kamen auf je 25 Punkte. Die Quote 1,29 bei 1xBet lag klar über dem fairen Schlusskurs von 1,207 (CLV +6,9 %), und das Spiel war nie offen.",
+    "verdict": "können",
+    "lesson": "",
+    "written_at": "2026-11-10T08:19:53Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
    "research": "Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
    "espn": {
@@ -7018,6 +7037,56 @@
   }
  ],
  "talk": [
+  {
+   "date": "2026-11-10",
+   "messages": [
+    {
+     "from": "kombi",
+     "to": "analyst",
+     "text": "Bills, Oilers, Lakers +2, Unter 230,5: 50 Euro werden 523,11. Professor, deine Krone liegt bei minus 37."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Eine 4er-Kombi mit negativem Erwartungswert ist ein Lottoschein. Meine Hawks-Wette zu 2,12 schloss bei 1,775, das sind 19 Prozent CLV."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Hawks verloren. Hornets zu 4,10 gewonnen. Ook."
+    },
+    {
+     "from": "banker",
+     "to": "affe",
+     "text": "Ein blinder Treffer. Ich habe mit Warriors und Spurs immerhin 86,76 Euro zurückgeholt."
+    },
+    {
+     "from": "stammtisch",
+     "to": "banker",
+     "text": "Und mit den Cavs 33 Euro verbrannt, genau wie ich meine 20. Die Hornets ohne Miller, wer rechnet denn damit?"
+    },
+    {
+     "from": "affe",
+     "to": "stammtisch",
+     "text": "Ich."
+    },
+    {
+     "from": "zocker",
+     "to": "kombi",
+     "text": "Ich hab gestern gar nichts gesetzt und trotzdem nichts verloren. Das ist die beste Tagesbilanz meiner Woche."
+    },
+    {
+     "from": "kombi",
+     "to": "zocker",
+     "text": "Minus 200 bleibt minus 200, mein Lieber. Ich stehe bei plus 401,93."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Bei sieben Tagen entscheidet die Varianz. Am Sonntag reden wir über den Erwartungswert."
+    }
+   ]
+  },
   {
    "date": "2026-11-09",
    "messages": [
