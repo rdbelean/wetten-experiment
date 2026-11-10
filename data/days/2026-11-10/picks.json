@@ -1,0 +1,178 @@
+{
+ "day": "2026-11-10",
+ "placed_at": "2026-11-10T10:03:06Z",
+ "n_outcomes": 80,
+ "n_value": 0,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-10-01",
+  "2026-11-10-02",
+  "2026-11-10-03"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-10-01",
+   "2026-11-10-02",
+   "2026-11-10-03"
+  ],
+  "banker": [
+   "2026-11-10-banker-01",
+   "2026-11-10-banker-02",
+   "2026-11-10-banker-03"
+  ],
+  "zocker": [
+   "2026-11-10-zocker-01"
+  ],
+  "kombi": [
+   "2026-11-10-kombi-01",
+   "2026-11-10-kombi-02"
+  ],
+  "stammtisch": [
+   "2026-11-10-stammtisch-01",
+   "2026-11-10-stammtisch-02",
+   "2026-11-10-stammtisch-03",
+   "2026-11-10-stammtisch-04",
+   "2026-11-10-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-10-affe-01",
+   "2026-11-10-affe-02",
+   "2026-11-10-affe-03",
+   "2026-11-10-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "New York Knicks",
+   "away": "Milwaukee Bucks",
+   "league": "NBA",
+   "label": "Sieg New York Knicks",
+   "odds": 1.1,
+   "book_name": "Pinnacle",
+   "p": 0.9034,
+   "ev": -0.0063,
+   "commence": "2026-11-11T00:40:00Z"
+  },
+  {
+   "home": "Winnipeg Jets",
+   "away": "New Jersey Devils",
+   "league": "NHL",
+   "label": "Sieg New Jersey Devils",
+   "odds": 1.69,
+   "book_name": "Everygame",
+   "p": 0.5867,
+   "ev": -0.0085,
+   "commence": "2026-11-11T00:10:00Z"
+  },
+  {
+   "home": "Phoenix Suns",
+   "away": "Los Angeles Clippers",
+   "league": "NBA",
+   "label": "Sieg Phoenix Suns",
+   "odds": 1.64,
+   "book_name": "Unibet SE",
+   "p": 0.6039,
+   "ev": -0.0096,
+   "commence": "2026-11-11T02:10:00Z"
+  },
+  {
+   "home": "Sacramento Kings",
+   "away": "Orlando Magic",
+   "league": "NBA",
+   "label": "Sieg Orlando Magic",
+   "odds": 1.466,
+   "book_name": "Betfair Exchange",
+   "p": 0.6756,
+   "ev": -0.0096,
+   "commence": "2026-11-11T03:10:00Z"
+  },
+  {
+   "home": "Los Angeles Kings",
+   "away": "Nashville Predators",
+   "league": "NHL",
+   "label": "Sieg Nashville Predators",
+   "odds": 2.23,
+   "book_name": "BetOnline",
+   "p": 0.444,
+   "ev": -0.0098,
+   "commence": "2026-11-11T03:10:00Z"
+  },
+  {
+   "home": "Sacramento Kings",
+   "away": "Orlando Magic",
+   "league": "NBA",
+   "label": "Über 221.5 Punkte",
+   "odds": 1.93,
+   "book_name": "Unibet NL",
+   "p": 0.5128,
+   "ev": -0.0102,
+   "commence": "2026-11-11T03:10:00Z"
+  },
+  {
+   "home": "St Louis Blues",
+   "away": "Detroit Red Wings",
+   "league": "NHL",
+   "label": "Sieg Detroit Red Wings",
+   "odds": 2.25,
+   "book_name": "GTbets",
+   "p": 0.4392,
+   "ev": -0.0117,
+   "commence": "2026-11-11T01:10:00Z"
+  },
+  {
+   "home": "Columbus Blue Jackets",
+   "away": "Florida Panthers",
+   "league": "NHL",
+   "label": "Über 6 Tore",
+   "odds": 2.04,
+   "book_name": "BetOnline",
+   "p": 0.4842,
+   "ev": -0.0123,
+   "commence": "2026-11-11T00:40:00Z"
+  },
+  {
+   "home": "Los Angeles Kings",
+   "away": "Nashville Predators",
+   "league": "NHL",
+   "label": "Unter 6 Tore",
+   "odds": 2.05,
+   "book_name": "GTbets",
+   "p": 0.4814,
+   "ev": -0.0132,
+   "commence": "2026-11-11T03:10:00Z"
+  },
+  {
+   "home": "Toronto Maple Leafs",
+   "away": "Colorado Avalanche",
+   "league": "NHL",
+   "label": "Sieg Colorado Avalanche",
+   "odds": 1.67,
+   "book_name": "William Hill",
+   "p": 0.5899,
+   "ev": -0.0148,
+   "commence": "2026-11-11T00:10:00Z"
+  },
+  {
+   "home": "Phoenix Suns",
+   "away": "Los Angeles Clippers",
+   "league": "NBA",
+   "label": "Los Angeles Clippers -3.5 (Handicap)",
+   "odds": 1.97,
+   "book_name": "1xBet",
+   "p": 0.5,
+   "ev": -0.015,
+   "commence": "2026-11-11T02:10:00Z"
+  },
+  {
+   "home": "New York Knicks",
+   "away": "Milwaukee Bucks",
+   "league": "NBA",
+   "label": "Milwaukee Bucks -16 (Handicap)",
+   "odds": 1.941,
+   "book_name": "Matchbook",
+   "p": 0.5074,
+   "ev": -0.0151,
+   "commence": "2026-11-11T00:40:00Z"
+  }
+ ]
+}

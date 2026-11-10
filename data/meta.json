@@ -1,17 +1,7 @@
 {
- "credits_remaining": 290,
- "credits_used": 210,
+ "credits_remaining": 287,
+ "credits_used": 213,
  "api_calls": [
-  {
-   "t": "2026-11-06T16:49:06Z",
-   "path": "/sports/soccer_italy_serie_a/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-06T16:49:06Z",
-   "path": "/sports/soccer_italy_serie_a/odds",
-   "cost": 2
-  },
   {
    "t": "2026-11-06T16:49:06Z",
    "path": "/sports/soccer_france_ligue_one/events",
@@ -1001,13 +991,19 @@
    "t": "2026-11-10T07:32:01Z",
    "path": "/sports/americanfootball_nfl/events",
    "cost": 0
+  },
+  {
+   "t": "2026-11-10T10:03:06Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-10T10:03:07Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-08T07:34:22Z",
-   "a": "Kandidaten für 2026-11-08 vorbereitet"
-  },
   {
    "t": "2026-11-08T10:05:02Z",
    "a": "Wetten für 2026-11-08 platziert"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-10T07:32:01Z",
    "a": "Kandidaten für 2026-11-10 vorbereitet"
+  },
+  {
+   "t": "2026-11-10T10:03:07Z",
+   "a": "Wetten für 2026-11-10 platziert"
   }
  ]
 }
