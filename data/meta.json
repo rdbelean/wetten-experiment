@@ -1005,10 +1005,6 @@
  ],
  "last_actions": [
   {
-   "t": "2026-11-08T00:56:48Z",
-   "a": "Wetten abgerechnet"
-  },
-  {
    "t": "2026-11-08T01:11:54Z",
    "a": "Wetten abgerechnet"
   },
@@ -1162,6 +1158,10 @@
   },
   {
    "t": "2026-11-10T03:25:43Z",
+   "a": "Wetten abgerechnet"
+  },
+  {
+   "t": "2026-11-10T04:00:54Z",
    "a": "Wetten abgerechnet"
   }
  ]

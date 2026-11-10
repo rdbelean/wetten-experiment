@@ -5033,8 +5033,11 @@
       "path": "hockey/nhl",
       "id": "401892680"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 3,
+      "away": 1
+     }
     },
     {
      "event_id": "07361a8381206817e27bd2697fad7479",

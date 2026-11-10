@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T03:25:43Z",
+ "generated_at": "2026-11-10T04:00:54Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -6110,8 +6110,11 @@
       "path": "hockey/nhl",
       "id": "401892680"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 3,
+      "away": 1
+     }
     },
     {
      "event_id": "07361a8381206817e27bd2697fad7479",
@@ -7400,10 +7403,6 @@
   "credits_remaining": 295,
   "last_actions": [
    {
-    "t": "2026-11-08T21:45:27Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-08T23:26:11Z",
     "a": "Wetten abgerechnet"
    },
@@ -7457,6 +7456,10 @@
    },
    {
     "t": "2026-11-10T03:25:43Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-10T04:00:54Z",
     "a": "Wetten abgerechnet"
    }
   ]
