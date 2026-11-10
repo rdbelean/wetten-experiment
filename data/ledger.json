@@ -4960,7 +4960,7 @@
    "player": "kombi",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "17ad7eff2f7875e20a8109abe40470e3+c0de79c9c801e5fc0d1bb3873b10a164+07361a8381206817e27bd2697fad7479+56efae2815b3a18850f07a3781d652a2",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -4990,9 +4990,17 @@
    "stake": 50.0,
    "potential_payout": 523.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "won",
+     "won"
+    ],
+    "t": "2026-11-10T05:01:13Z"
+   },
+   "payout": 523.11,
+   "profit": 473.11,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -5016,8 +5024,11 @@
       "path": "football/nfl",
       "id": "401873051"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 6,
+      "away": 23
+     }
     },
     {
      "event_id": "c0de79c9c801e5fc0d1bb3873b10a164",
@@ -5101,14 +5112,15 @@
    "last_commence": "2026-11-10T01:15:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 10,46, Trefferchance 9,2 %, Erwartungswert -3,8 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 10,46, Trefferchance 9,2 %, Erwartungswert -3,8 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "4 von 4 Tipps gingen auf. Kombi gewonnen."
   },
   {
    "id": "2026-11-09-stammtisch-01",
    "player": "stammtisch",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "17ad7eff2f7875e20a8109abe40470e3",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -5166,9 +5178,14 @@
     "best_odds": 1.56,
     "fair_odds": 1.567
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 6,
+    "away": 23,
+    "source": "ESPN",
+    "t": "2026-11-10T05:01:13Z"
+   },
+   "payout": 31.0,
+   "profit": 11.0,
    "clv": -0.0111,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,9 %.",
@@ -5176,7 +5193,8 @@
    "espn": {
     "path": "football/nfl",
     "id": "401873051"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.1 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-stammtisch-02",
@@ -5518,7 +5536,7 @@
    "player": "affe",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "17ad7eff2f7875e20a8109abe40470e3",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -5576,9 +5594,14 @@
     "best_odds": 2.7,
     "fair_odds": 2.762
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 6,
+    "away": 23,
+    "source": "ESPN",
+    "t": "2026-11-10T05:01:13Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.1312,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,4 (Tipico), Erwartungswert -8,8 %.",
@@ -5586,7 +5609,8 @@
    "espn": {
     "path": "football/nfl",
     "id": "401873051"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 13.1 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-affe-02",
