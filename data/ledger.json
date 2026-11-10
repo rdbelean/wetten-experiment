@@ -4427,7 +4427,7 @@
    "player": "analyst",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4487,9 +4487,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 51.6,
+   "profit": 11.6,
    "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -4497,7 +4502,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-03",
@@ -4588,7 +4594,7 @@
    "player": "banker",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4648,9 +4654,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 43.86,
+   "profit": 9.86,
    "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -4658,7 +4669,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-banker-02",
@@ -5700,7 +5712,7 @@
    "player": "affe",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5760,9 +5772,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 30.5,
+   "profit": 5.5,
    "clv": 0.0105,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,22 (Tipico), Erwartungswert -4,4 %.",
@@ -5770,7 +5787,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.1 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-affe-04",

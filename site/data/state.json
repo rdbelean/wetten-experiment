@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T05:01:13Z",
+ "generated_at": "2026-11-10T05:56:30Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -17,22 +17,22 @@
    "id": "analyst",
    "totals": {
     "staked": 300.0,
-    "staked_settled": 260.0,
-    "returned": 211.24,
-    "profit": -48.76,
-    "roi": -0.1875,
-    "open_stake": 40.0,
-    "open_potential": 51.6,
-    "won": 5,
+    "staked_settled": 300.0,
+    "returned": 262.84,
+    "profit": -37.16,
+    "roi": -0.1239,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 6,
     "lost": 8,
     "push": 0,
     "n_bets": 14,
-    "hit_rate": 0.3846,
+    "hit_rate": 0.4286,
     "avg_odds": 2.553,
     "max_odds_won": 3.891,
     "avg_ev": 0.0361,
     "expected_profit": 10.82,
-    "expected_settled": 10.38,
+    "expected_settled": 10.82,
     "avg_clv": 0.0623,
     "n_clv": 13,
     "clv_positive": 12,
@@ -58,16 +58,16 @@
     {
      "date": "2026-11-09",
      "staked": 100.0,
-     "profit": -60.0,
-     "cum_profit": -48.76,
-     "settled": 2,
+     "profit": -48.4,
+     "cum_profit": -37.16,
+     "settled": 3,
      "n_bets": 3
     },
     {
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -48.76,
+     "cum_profit": -37.16,
      "settled": 0,
      "n_bets": 0
     },
@@ -75,7 +75,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -48.76,
+     "cum_profit": -37.16,
      "settled": 0,
      "n_bets": 0
     },
@@ -83,7 +83,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -48.76,
+     "cum_profit": -37.16,
      "settled": 0,
      "n_bets": 0
     },
@@ -91,7 +91,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -48.76,
+     "cum_profit": -37.16,
      "settled": 0,
      "n_bets": 0
     }
@@ -106,22 +106,22 @@
    "id": "banker",
    "totals": {
     "staked": 300.0,
-    "staked_settled": 266.0,
-    "returned": 289.5,
-    "profit": 23.5,
-    "roi": 0.0883,
-    "open_stake": 34.0,
-    "open_potential": 43.86,
-    "won": 10,
+    "staked_settled": 300.0,
+    "returned": 333.36,
+    "profit": 33.36,
+    "roi": 0.1112,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 11,
     "lost": 2,
     "push": 0,
     "n_bets": 13,
-    "hit_rate": 0.8333,
+    "hit_rate": 0.8462,
     "avg_odds": 1.358,
     "max_odds_won": 1.55,
     "avg_ev": 0.0111,
     "expected_profit": 3.34,
-    "expected_settled": 2.97,
+    "expected_settled": 3.34,
     "avg_clv": 0.0095,
     "n_clv": 13,
     "clv_positive": 10,
@@ -147,16 +147,16 @@
     {
      "date": "2026-11-09",
      "staked": 100.0,
-     "profit": -23.1,
-     "cum_profit": 23.5,
-     "settled": 2,
+     "profit": -13.24,
+     "cum_profit": 33.36,
+     "settled": 3,
      "n_bets": 3
     },
     {
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 23.5,
+     "cum_profit": 33.36,
      "settled": 0,
      "n_bets": 0
     },
@@ -164,7 +164,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 23.5,
+     "cum_profit": 33.36,
      "settled": 0,
      "n_bets": 0
     },
@@ -172,7 +172,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 23.5,
+     "cum_profit": 33.36,
      "settled": 0,
      "n_bets": 0
     },
@@ -180,7 +180,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 23.5,
+     "cum_profit": 33.36,
      "settled": 0,
      "n_bets": 0
     }
@@ -462,22 +462,22 @@
    "id": "affe",
    "totals": {
     "staked": 300.0,
-    "staked_settled": 275.0,
-    "returned": 236.75,
-    "profit": -38.25,
-    "roi": -0.1391,
-    "open_stake": 25.0,
-    "open_potential": 30.5,
-    "won": 3,
+    "staked_settled": 300.0,
+    "returned": 267.25,
+    "profit": -32.75,
+    "roi": -0.1092,
+    "open_stake": 0,
+    "open_potential": 0,
+    "won": 4,
     "lost": 8,
     "push": 0,
     "n_bets": 12,
-    "hit_rate": 0.2727,
+    "hit_rate": 0.3333,
     "avg_odds": 2.795,
     "max_odds_won": 4.1,
     "avg_ev": -0.0536,
     "expected_profit": -16.07,
-    "expected_settled": -14.97,
+    "expected_settled": -16.07,
     "avg_clv": -0.0131,
     "n_clv": 10,
     "clv_positive": 4,
@@ -503,16 +503,16 @@
     {
      "date": "2026-11-09",
      "staked": 100.0,
-     "profit": 27.5,
-     "cum_profit": -38.25,
-     "settled": 3,
+     "profit": 33.0,
+     "cum_profit": -32.75,
+     "settled": 4,
      "n_bets": 4
     },
     {
      "date": "2026-11-10",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -38.25,
+     "cum_profit": -32.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -520,7 +520,7 @@
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -38.25,
+     "cum_profit": -32.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -38.25,
+     "cum_profit": -32.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -38.25,
+     "cum_profit": -32.75,
      "settled": 0,
      "n_bets": 0
     }
@@ -6772,7 +6772,7 @@
    "player": "analyst",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6832,9 +6832,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 51.6,
+   "profit": 11.6,
    "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -6842,14 +6847,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-affe-03",
    "player": "affe",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6909,9 +6915,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 30.5,
+   "profit": 5.5,
    "clv": 0.0105,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,22 (Tipico), Erwartungswert -4,4 %.",
@@ -6919,14 +6930,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.1 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-banker-01",
    "player": "banker",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6986,9 +6998,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.207
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 138,
+    "away": 87,
+    "source": "ESPN",
+    "t": "2026-11-10T05:56:30Z"
+   },
+   "payout": 43.86,
+   "profit": 9.86,
    "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -6996,7 +7013,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909959"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   }
  ],
  "talk": [
@@ -7433,10 +7451,6 @@
   "credits_remaining": 295,
   "last_actions": [
    {
-    "t": "2026-11-09T01:06:40Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-09T03:27:18Z",
     "a": "Wetten abgerechnet"
    },
@@ -7490,6 +7504,10 @@
    },
    {
     "t": "2026-11-10T05:01:13Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-10T05:56:30Z",
     "a": "Wetten abgerechnet"
    }
   ]
