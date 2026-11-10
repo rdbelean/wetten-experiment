@@ -4344,7 +4344,7 @@
    "player": "analyst",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "07361a8381206817e27bd2697fad7479",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4404,9 +4404,14 @@
     "best_odds": 1.755,
     "fair_odds": 1.775
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 114,
+    "away": 124,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -39.0,
    "clv": 0.1944,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 46,8 % (Pinnacle 2,05). News-Korrektur +2,0 Prozentpunkte. Unser Wert: 48,8 %. Beste Quote 2,12 bei Unibet SE (Median 2,05, 23 Anbieter), Erwartungswert +3,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Dončić (Rückenverspannung) fehlte schon am Sonntag in Detroit und ist im Back-to-back Game-time decision, die Lakers dürften vorsichtig sein. Hawks mit vier Siegen in Serie und Jalen Johnson zurück.",
@@ -4414,7 +4419,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909952"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 19.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-02",
@@ -4474,11 +4480,17 @@
    "kind": "filler",
    "stake": 40.0,
    "potential_payout": 51.6,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T02:55:15Z",
+    "fair_p": 0.8283,
+    "pinnacle_odds": 1.2,
+    "best_odds": 1.2,
+    "fair_odds": 1.207
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
    "research": "Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -4492,7 +4504,7 @@
    "player": "analyst",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4553,9 +4565,14 @@
     "best_odds": 1.333,
     "fair_odds": 1.337
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 124,
+    "away": 112,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -21.0,
    "clv": -0.0273,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,26). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
@@ -4563,7 +4580,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909953"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 2.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-banker-01",
@@ -4623,11 +4641,17 @@
    "kind": "favorit",
    "stake": 34.0,
    "potential_payout": 43.86,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T02:55:15Z",
+    "fair_p": 0.8283,
+    "pinnacle_odds": 1.2,
+    "best_odds": 1.2,
+    "fair_odds": 1.207
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0685,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,4 % (Pinnacle 1,25). Unser Wert: 78,4 %. Beste Quote 1,29 bei 1xBet (Median 1,25, 23 Anbieter), Erwartungswert +1,1 %. Recherche: Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
    "research": "Curry nach 41 Punkten gegen Orlando fit, Warriors ohne Butler, Porziņģis und Will Richard. Bei den Pelicans fehlt nur Missi. Keine Korrektur.",
@@ -4641,7 +4665,7 @@
    "player": "banker",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -4702,9 +4726,14 @@
     "best_odds": 1.333,
     "fair_odds": 1.337
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 124,
+    "away": 112,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -33.0,
    "clv": -0.0273,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,26). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %.",
@@ -4712,7 +4741,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909953"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 2.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-banker-03",
@@ -4797,7 +4827,7 @@
    "player": "kombi",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "3619e1cf4b0a325c3e0ba5b1fb7f3d91+1df5ff8fe9c6d2dbff1d0ae176063b37+dc4eb6ae9979b3d3418c35b4210f0c72",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -4827,9 +4857,16 @@
    "stake": 50.0,
    "potential_payout": 109.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "open",
+     "lost",
+     "open"
+    ],
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -4876,8 +4913,11 @@
       "path": "basketball/nba",
       "id": "401909953"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 124,
+      "away": 112
+     }
     },
     {
      "event_id": "dc4eb6ae9979b3d3418c35b4210f0c72",
@@ -4906,7 +4946,8 @@
    "last_commence": "2026-11-10T03:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 2,18, Trefferchance 46,9 %, Erwartungswert +2,1 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 2,18, Trefferchance 46,9 %, Erwartungswert +2,1 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "0 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-09-kombi-02",
@@ -5015,8 +5056,11 @@
       "path": "basketball/nba",
       "id": "401909952"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 114,
+      "away": 124
+     }
     },
     {
      "event_id": "56efae2815b3a18850f07a3781d652a2",
@@ -5127,7 +5171,7 @@
    "player": "stammtisch",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "07361a8381206817e27bd2697fad7479",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5187,9 +5231,14 @@
     "best_odds": 2.235,
     "fair_odds": 2.29
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 114,
+    "away": 124,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 35.0,
+   "profit": 15.0,
    "clv": -0.2359,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,75 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -10,5 %.",
@@ -5197,14 +5246,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909952"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 23.6 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5265,9 +5315,14 @@
     "best_odds": 1.333,
     "fair_odds": 1.337
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 124,
+    "away": 112,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0872,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,22 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,7 %.",
@@ -5275,14 +5330,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909953"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 8.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "929b863acedecaf614c6312e28a44837",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5343,9 +5399,14 @@
     "best_odds": 1.27,
     "fair_odds": 1.266
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 122,
+    "away": 111,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 23.4,
+   "profit": 3.4,
    "clv": -0.0759,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,17 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,3 %.",
@@ -5353,7 +5414,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909954"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 7.6 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-09-stammtisch-05",
@@ -5513,7 +5575,7 @@
    "player": "affe",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "07361a8381206817e27bd2697fad7479",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5573,9 +5635,14 @@
     "best_odds": 1.755,
     "fair_odds": 1.775
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 114,
+    "away": 124,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": 0.155,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,05 (Tipico), Erwartungswert +0,1 %.",
@@ -5583,7 +5650,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909952"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 15.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-09-affe-03",
@@ -5643,11 +5711,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 30.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T02:55:15Z",
+    "fair_p": 0.8283,
+    "pinnacle_odds": 1.2,
+    "best_odds": 1.2,
+    "fair_odds": 1.207
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0105,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,22 (Tipico), Erwartungswert -4,4 %.",
    "research": null,
@@ -5661,7 +5735,7 @@
    "player": "affe",
    "day": "2026-11-09",
    "placed_at": "2026-11-09T10:05:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "1df5ff8fe9c6d2dbff1d0ae176063b37",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5722,9 +5796,14 @@
     "best_odds": 3.75,
     "fair_odds": 3.971
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 124,
+    "away": 112,
+    "source": "ESPN",
+    "t": "2026-11-10T02:55:15Z"
+   },
+   "payout": 102.5,
+   "profit": 77.5,
    "clv": 0.0324,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,1 (Tipico), Erwartungswert -7,0 %.",
@@ -5732,7 +5811,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909953"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.2 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   }
  ]
 }
