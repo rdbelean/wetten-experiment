@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T00:29:33Z",
+ "generated_at": "2026-11-10T01:04:44Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -389,8 +389,8 @@
     "avg_ev": -0.058,
     "expected_profit": -17.4,
     "expected_settled": -11.28,
-    "avg_clv": -0.0796,
-    "n_clv": 12,
+    "avg_clv": -0.0744,
+    "n_clv": 13,
     "clv_positive": 1,
     "max_drawdown": 43.4
    },
@@ -478,8 +478,8 @@
     "avg_ev": -0.0536,
     "expected_profit": -16.07,
     "expected_settled": -11.05,
-    "avg_clv": -0.0012,
-    "n_clv": 8,
+    "avg_clv": -0.0157,
+    "n_clv": 9,
     "clv_positive": 3,
     "max_drawdown": 105.75
    },
@@ -6491,11 +6491,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 60.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T01:04:43Z",
+    "fair_p": 0.362,
+    "pinnacle_odds": 2.66,
+    "best_odds": 2.7,
+    "fair_odds": 2.762
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.1312,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,4 (Tipico), Erwartungswert -8,8 %.",
    "research": null,
@@ -6560,11 +6566,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 31.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T01:04:43Z",
+    "fair_p": 0.638,
+    "pinnacle_odds": 1.54,
+    "best_odds": 1.56,
+    "fair_odds": 1.567
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0111,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,9 %.",
    "research": null,
@@ -7290,12 +7302,8 @@
   }
  },
  "system": {
-  "credits_remaining": 298,
+  "credits_remaining": 297,
   "last_actions": [
-   {
-    "t": "2026-11-08T18:19:27Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-08T18:34:32Z",
     "a": "Wetten abgerechnet"
@@ -7350,6 +7358,10 @@
    },
    {
     "t": "2026-11-10T00:29:33Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-10T01:04:44Z",
     "a": "Schlussquoten erfasst"
    }
   ]
