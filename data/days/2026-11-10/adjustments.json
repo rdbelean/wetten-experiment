@@ -1,0 +1,46 @@
+{
+  "written_at": "2026-11-10T08:19:13Z",
+  "summary": "Dünner Tag mit nur 13 NBA/NHL-Events und keinem Ausgang über der Wettschwelle. Die wichtigsten News (Herro und Hart fraglich bei Bucks–Knicks, OKC ohne Jalen Williams, Cason Wallace und wohl Holmgren, Orlando ohne Banchero und Suggs, Clippers ohne Beal und Ingram, Utah ohne George und Jackson Jr.) waren schon am Montag öffentlich und sind in den Pinnacle-Linien sichtbar eingepreist. Deshalb gibt es heute keine Korrekturen, nur Recherche-Notizen. NHL-Goalies sind zum Wettzeitpunkt noch nicht bestätigt.",
+  "events": {
+    "3689d555c9a1c81e3d300375b4c80530": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Bucks (1-9) mit Fragezeichen hinter Topscorer Tyler Herro (Knieprellung), dazu Trent Jr. und Kam Jones day-to-day; bei den Knicks ist Josh Hart (Knöchel) fraglich. Die Linie von etwa 15,5 Punkten preist das bereits ein, keine Korrektur."
+    },
+    "cfa503c66cd505776a910921875ef7dd": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Embiid steht laut Liberty Ballers nicht auf dem Injury Report der Sixers (Fußproblem wird gemanagt), ist aber nicht final bestätigt. Bei Boston ist Tatums Status nach dem Achillessehnenriss unklar. Markt nahe 50:50, keine Korrektur."
+    },
+    "9ac02cb22adf276b325b1e9c9c6c588e": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5)."
+    },
+    "8178ff2ec61f604b61dfe6d7b8d71103": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Clippers ohne Beal, Ingram, Jordan Miller und Niederhauser, Christie fraglich. Bei Phoenix fehlen Mark Williams und Goodwin, außerdem spielen die Suns Back-to-back nach der Niederlage gegen San Antonio am Montag. Keine Korrektur."
+    },
+    "78ab42ddb22b68903fd53a384d0fc616": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Orlando ohne Banchero, Suggs, Isaac und Penda, Bane nach Krankheit fraglich. Bei Sacramento sind Sabonis und Keegan Murray fraglich. Auf beiden Seiten viele offene Fragen, Status erst kurz vor dem Spiel klar, daher keine Korrektur."
+    },
+    "f5477c781c94e09e85374bbf9149c0f1": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist."
+    },
+    "11f3c6f0f406c5ffb575dbcd671cf964": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Laut Vorbericht starten die Devils bei Hellebuycks Rückkehr nach Winnipeg nicht ihn, sondern den Backup. Die Meldung ist von Montag und wohl eingepreist, ein Goalie ist noch nicht offiziell bestätigt. Keine Korrektur."
+    },
+    "54a0d86217b79fbc969d6fca0e1564e8": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Toronto zuletzt meist mit Bobrovsky (Fangquote .889), Colorados Starter noch nicht bestätigt. Keine verlässliche frische News, keine Korrektur."
+    }
+  }
+}
