@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-10T01:04:44Z",
+ "generated_at": "2026-11-10T01:59:59Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,8 +122,8 @@
     "avg_ev": 0.0111,
     "expected_profit": 3.34,
     "expected_settled": 2.63,
-    "avg_clv": 0.0051,
-    "n_clv": 11,
+    "avg_clv": 0.0046,
+    "n_clv": 12,
     "clv_positive": 9,
     "max_drawdown": 20.0
    },
@@ -6644,11 +6644,17 @@
    "kind": "favorit",
    "stake": 33.0,
    "potential_payout": 42.9,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-10T01:59:59Z",
+    "fair_p": 0.7689,
+    "pinnacle_odds": 1.29,
+    "best_odds": 1.294,
+    "fair_odds": 1.301
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0004,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,3 % (Pinnacle 1,27). Unser Wert: 77,3 %. Beste Quote 1,30 bei Unibet SE (Median 1,27, 24 Anbieter), Erwartungswert +0,5 %. Recherche: Kein aktueller Injury Report gefunden; Wembanyama stand zuletzt nicht mehr auf der Liste, bei den Suns fehlt Mark Williams. Keine Korrektur.",
    "research": "Kein aktueller Injury Report gefunden; Wembanyama stand zuletzt nicht mehr auf der Liste, bei den Suns fehlt Mark Williams. Keine Korrektur.",
@@ -7302,12 +7308,8 @@
   }
  },
  "system": {
-  "credits_remaining": 297,
+  "credits_remaining": 296,
   "last_actions": [
-   {
-    "t": "2026-11-08T18:34:32Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-08T19:34:49Z",
     "a": "Wetten abgerechnet"
@@ -7362,6 +7364,10 @@
    },
    {
     "t": "2026-11-10T01:04:44Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-10T01:59:59Z",
     "a": "Schlussquoten erfasst"
    }
   ]
