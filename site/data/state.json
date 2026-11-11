@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T00:58:11Z",
+ "generated_at": "2026-11-11T01:58:46Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,8 +33,8 @@
     "avg_ev": 0.0277,
     "expected_profit": 11.06,
     "expected_settled": 10.82,
-    "avg_clv": 0.0552,
-    "n_clv": 14,
+    "avg_clv": 0.0506,
+    "n_clv": 15,
     "clv_positive": 12,
     "max_drawdown": 80.76
    },
@@ -122,8 +122,8 @@
     "avg_ev": 0.0063,
     "expected_profit": 2.54,
     "expected_settled": 3.34,
-    "avg_clv": 0.0085,
-    "n_clv": 14,
+    "avg_clv": 0.007,
+    "n_clv": 15,
     "clv_positive": 10,
     "max_drawdown": 33.0
    },
@@ -211,8 +211,8 @@
     "avg_ev": 0.0394,
     "expected_profit": 11.81,
     "expected_settled": 14.05,
-    "avg_clv": 0.001,
-    "n_clv": 3,
+    "avg_clv": -0.0005,
+    "n_clv": 4,
     "clv_positive": 2,
     "max_drawdown": 200.0
    },
@@ -389,8 +389,8 @@
     "avg_ev": -0.0545,
     "expected_profit": -21.81,
     "expected_settled": -17.4,
-    "avg_clv": -0.0653,
-    "n_clv": 15,
+    "avg_clv": -0.0627,
+    "n_clv": 17,
     "clv_positive": 2,
     "max_drawdown": 43.4
    },
@@ -478,8 +478,8 @@
     "avg_ev": -0.0523,
     "expected_profit": -20.93,
     "expected_settled": -16.07,
-    "avg_clv": -0.024,
-    "n_clv": 13,
+    "avg_clv": -0.0282,
+    "n_clv": 14,
     "clv_positive": 4,
     "max_drawdown": 130.75
    },
@@ -7971,11 +7971,17 @@
    "kind": "filler",
    "stake": 30.0,
    "potential_payout": 38.7,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.7648,
+    "pinnacle_odds": 1.3,
+    "best_odds": 1.3,
+    "fair_odds": 1.308
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0134,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 76,9 % (Pinnacle 1,29). Unser Wert: 76,9 %. Beste Quote 1,29 bei Pinnacle (Median 1,25, 25 Anbieter), Erwartungswert -0,8 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
    "research": "Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -8044,11 +8050,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 60.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.3821,
+    "pinnacle_odds": 2.53,
+    "best_odds": 2.53,
+    "fair_odds": 2.617
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.083,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,4 (Tipico), Erwartungswert -4,9 %.",
    "research": null,
@@ -8117,11 +8129,17 @@
    "kind": "favorit",
    "stake": 33.0,
    "potential_payout": 42.57,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.7648,
+    "pinnacle_odds": 1.3,
+    "best_odds": 1.3,
+    "fair_odds": 1.308
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0134,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 76,9 % (Pinnacle 1,29). Unser Wert: 76,9 %. Beste Quote 1,29 bei Pinnacle (Median 1,25, 25 Anbieter), Erwartungswert -0,8 %. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
    "research": "Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -8190,11 +8208,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 31.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.6179,
+    "pinnacle_odds": 1.58,
+    "best_odds": 1.62,
+    "fair_odds": 1.618
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0423,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,4 %.",
    "research": null,
@@ -8263,11 +8287,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 25.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.7648,
+    "pinnacle_odds": 1.3,
+    "best_odds": 1.3,
+    "fair_odds": 1.308
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.044,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,25 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,9 %.",
    "research": null,
@@ -8336,11 +8366,17 @@
    "kind": "filler",
    "stake": 100.0,
    "potential_payout": 423.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T01:58:46Z",
+    "fair_p": 0.2352,
+    "pinnacle_odds": 3.95,
+    "best_odds": 4.136,
+    "fair_odds": 4.252
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0051,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 23,1 % (Pinnacle 3,81). Unser Wert: 23,1 %. Beste Quote 4,23 bei Betfair Exchange (Median 4,00, 25 Anbieter), Erwartungswert -2,2 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
    "research": "Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -9050,12 +9086,8 @@
   }
  },
  "system": {
-  "credits_remaining": 282,
+  "credits_remaining": 281,
   "last_actions": [
-   {
-    "t": "2026-11-10T00:29:33Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-10T01:04:44Z",
     "a": "Schlussquoten erfasst"
@@ -9110,6 +9142,10 @@
    },
    {
     "t": "2026-11-11T00:58:11Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-11T01:58:46Z",
     "a": "Schlussquoten erfasst"
    }
   ]
