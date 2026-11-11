@@ -5879,7 +5879,7 @@
    "player": "analyst",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "cfa503c66cd505776a910921875ef7dd",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -5941,9 +5941,14 @@
     "best_odds": 2.117,
     "fair_odds": 2.141
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 101,
+    "away": 123,
+    "source": "ESPN",
+    "t": "2026-11-11T03:59:26Z"
+   },
+   "payout": 0.0,
+   "profit": -40.0,
    "clv": -0.038,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 49,3 % (Pinnacle 1,95). Unser Wert: 49,3 %. Beste Quote 2,06 bei Unibet SE (Median 1,96, 25 Anbieter), Erwartungswert +1,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Embiid steht laut Liberty Ballers nicht auf dem Injury Report der Sixers (Fußproblem wird gemanagt), ist aber nicht final bestätigt. Bei Boston ist Tatums Status nach dem Achillessehnenriss unklar. Markt nahe 50:50, keine Korrektur.",
@@ -5951,7 +5956,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909961"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 3.8 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-02",
@@ -6013,11 +6019,17 @@
    "kind": "filler",
    "stake": 30.0,
    "potential_payout": 53.1,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T03:59:26Z",
+    "fair_p": 0.526,
+    "pinnacle_odds": 1.85,
+    "best_odds": 1.911,
+    "fair_odds": 1.901
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.069,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 56,3 % (Pinnacle 1,73). Unser Wert: 56,3 %. Beste Quote 1,77 bei Everygame (Median 1,72, 25 Anbieter), Erwartungswert -0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
    "research": "OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
@@ -6488,8 +6500,11 @@
       "path": "basketball/nba",
       "id": "401909961"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 101,
+      "away": 123
+     }
     },
     {
      "event_id": "f5477c781c94e09e85374bbf9149c0f1",
@@ -6760,7 +6775,7 @@
    "player": "stammtisch",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "cfa503c66cd505776a910921875ef7dd",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6822,9 +6837,14 @@
     "best_odds": 1.91,
     "fair_odds": 1.876
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 101,
+    "away": 123,
+    "source": "ESPN",
+    "t": "2026-11-11T03:59:26Z"
+   },
+   "payout": 38.6,
+   "profit": 18.6,
    "clv": 0.0287,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,93 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -2,1 %.",
@@ -6832,7 +6852,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909961"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 2.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-10-stammtisch-03",
