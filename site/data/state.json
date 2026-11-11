@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T07:30:35Z",
+ "generated_at": "2026-11-11T08:21:08Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -1166,7 +1166,11 @@
      "commence": "2026-11-11T00:40:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst verlor am 10.11. 61,30 € bei 100 € Einsatz (1 Sieg, 2 Niederlagen) und steht nach vier Tagen bei −98,46 €, bei einem erwarteten Gewinn von etwa +11 €. Alle drei Wetten waren NBA-Füllwetten ohne echten Vorteil, und alle drei hatten negativen CLV (−3,8 %, −6,9 %, −1,3 %). Damit war das der schwächste Entscheidungstag bisher, nicht nur Pech. Verloren wurde vor allem mit OKC (Portland gewann 123:103) und den Sixers (Celtics gewannen 123:101). Tagessieger war der Stammtisch (+43,80 €, 5 von 5 mit Favoriten wie Celtics, Suns und Magic), vor dem Banker (+28,35 €, drei kleine Favoriten-Siege). Zocker (Jazz zu 4,23) und Kombi (zwei 3er-Kombis) verloren jeweils alle 100 €, der Affe verlor 57,50 €.",
+    "lessons": "Füllwetten bei EV um null hatten heute durchweg negativen CLV, besonders bei Favoriten mit vielen Ausfällen (OKC). Die Pflicht, das Budget immer voll zu setzen, kostet den Analysten an dünnen Tagen messbar Geld. Der Banker und der Stammtisch profitierten an einem Tag ohne Überraschungen bei großen Favoriten, das ist Varianz und keine Strategie.",
+    "written_at": "2026-11-11T08:18:11Z"
+   }
   },
   {
    "date": "2026-11-11",
@@ -1180,8 +1184,8 @@
    "n_value": null,
    "research": {
     "used": false,
-    "summary": null,
-    "n_events": 0
+    "summary": "Wieder ein dünner Tag mit 18 NBA-, NHL- und EuroLeague-Events, aber ohne frische, vom Markt übersehene News. Die einzige Korrektur betrifft Partizan–Baskonia: Partizan fehlen zwei Big Men, zwei weitere sind fraglich, und der beste Kurs von 1xBet (1,32) liegt weit über Pinnacle (1,26), deshalb Partizan −0,01. Die NBA-Ausfälle (OKC-Lazarett, Haliburton, Boston im Back-to-back) sind seit Tagen bekannt und eingepreist. NHL-Goalies sind zum Wettzeitpunkt noch nicht bestätigt.",
+    "n_events": 9
    },
    "near_misses": [],
    "summary": null
@@ -7683,7 +7687,12 @@
    "payout": 0.0,
    "profit": -40.0,
    "clv": -0.038,
-   "analysis": null,
+   "analysis": {
+    "text": "Boston gewann 123:101 in Philadelphia. Paul George traf 36 Punkte (6/11 Dreier), Tatum kam auf 21, während Jaylen Brown bei seinem Wiedersehen mit den Celtics nur 13 Punkte und vier Ballverluste hatte. Bei Philly trug Maxey (24) fast allein die Offensive. Der Markt drehte vor dem Spiel gegen die Sixers (Schlusskurs fair 2,14 statt 2,06), die Wette hatte also negativen CLV.",
+    "verdict": "fehler",
+    "lesson": "Eine Füllwette auf einen Münzwurf ohne eigenen Informationsvorsprung bringt nur Varianz. Wenn sich danach der Kurs gegen uns bewegt, war auch der Preis schlecht.",
+    "written_at": "2026-11-11T08:18:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 49,3 % (Pinnacle 1,95). Unser Wert: 49,3 %. Beste Quote 2,06 bei Unibet SE (Median 1,96, 25 Anbieter), Erwartungswert +1,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Embiid steht laut Liberty Ballers nicht auf dem Injury Report der Sixers (Fußproblem wird gemanagt), ist aber nicht final bestätigt. Bei Boston ist Tatums Status nach dem Achillessehnenriss unklar. Markt nahe 50:50, keine Korrektur.",
    "research": "Embiid steht laut Liberty Ballers nicht auf dem Injury Report der Sixers (Fußproblem wird gemanagt), ist aber nicht final bestätigt. Bei Boston ist Tatums Status nach dem Achillessehnenriss unklar. Markt nahe 50:50, keine Korrektur.",
    "espn": {
@@ -8057,7 +8066,12 @@
    "payout": 38.7,
    "profit": 8.7,
    "clv": -0.0134,
-   "analysis": null,
+   "analysis": {
+    "text": "Miami gewann 115:109 in Utah. Giannis Antetokounmpo spielte trotz Handgelenkproblem und machte 30 Punkte und 11 Rebounds, ein 15:2-Lauf im dritten Viertel brachte den Vorsprung. Die Jazz ohne vier Starter blieben dran, späte Blocks von Thompson und Adebayo sicherten den Sieg. Der Preis von 1,29 lag leicht unter dem fairen Schlusskurs von 1,31.",
+    "verdict": "glück",
+    "lesson": "",
+    "written_at": "2026-11-11T08:18:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 76,9 % (Pinnacle 1,29). Unser Wert: 76,9 %. Beste Quote 1,29 bei Pinnacle (Median 1,25, 25 Anbieter), Erwartungswert -0,8 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
    "research": "Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
    "espn": {
@@ -8737,7 +8751,12 @@
    "payout": 0.0,
    "profit": -30.0,
    "clv": -0.069,
-   "analysis": null,
+   "analysis": {
+    "text": "Portland deklassierte OKC 123:103. Lillard (25) und Avdija (24 Punkte, 8 Assists) führten, Portland traf 19 von 50 Dreiern. Gilgeous-Alexander kam auf 26 Punkte bei schwachen 8/22 Würfen und saß das vierte Viertel aus. OKC fehlten Jalen Williams, Holmgren und Wallace, und bis zum Anpfiff fiel der Thunder-Kurs von 1,77 auf einen fairen Schlusskurs von 1,90 (CLV −6,9 %).",
+    "verdict": "fehler",
+    "lesson": "Bei einem Favoriten mit drei fehlenden Rotationsspielern hat der Markt bis zum Abend weiter gegen uns korrigiert. Ohne Value sollte bei solchen dezimierten Favoriten nicht gefüllt werden.",
+    "written_at": "2026-11-11T08:18:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 56,3 % (Pinnacle 1,73). Unser Wert: 56,3 %. Beste Quote 1,77 bei Everygame (Median 1,72, 25 Anbieter), Erwartungswert -0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
    "research": "OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
    "espn": {
@@ -8748,6 +8767,61 @@
   }
  ],
  "talk": [
+  {
+   "date": "2026-11-11",
+   "messages": [
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Fünf Tipps, fünf Treffer, plus 43,80. Herr Professor, meine Theke rechnet besser als deine Tabellen."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Fünf Favoriten mit negativem CLV, die zufällig durchkommen. Das ist eine Stichprobe von fünf, keine Methode."
+    },
+    {
+     "from": "banker",
+     "to": "analyst",
+     "text": "Knicks zu 1,10, Heat zu 1,29, Magic zu 1,466. Plus 28,35 Euro, und ich habe dabei nicht einmal geschwitzt."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Thunder 1,77. Verloren mit 20. Ook."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Das war eine Füllwette, das System zwingt mich, 100 Euro zu setzen. Meine Laufzeitstatistik liegt bei +4,3 % CLV."
+    },
+    {
+     "from": "zocker",
+     "to": "banker",
+     "text": "Hundert Euro auf Utah zu 4,23, und die waren sechs Punkte dran! Morgen hole ich das dreifach zurück."
+    },
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Du stehst bei minus 300. Das ist dein ganzes Wochenbudget bis gestern."
+    },
+    {
+     "from": "kombi",
+     "to": "stammtisch",
+     "text": "Zwei Kombis geplatzt, und doch trage ich mit +301,93 die Krone dieser Woche. Der Pöbel möge sich verneigen."
+    },
+    {
+     "from": "stammtisch",
+     "to": "kombi",
+     "text": "Krone hin oder her, deine 3er-Kombi ist an den Jets schon im ersten Spiel gestorben. Die nächste Runde geht auf dich."
+    },
+    {
+     "from": "affe",
+     "to": "kombi",
+     "text": "Ook."
+    }
+   ]
+  },
   {
    "date": "2026-11-10",
    "messages": [
