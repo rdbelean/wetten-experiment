@@ -1,0 +1,55 @@
+{
+  "written_at": "2026-11-11T08:18:33Z",
+  "summary": "Wieder ein dünner Tag mit 18 NBA-, NHL- und EuroLeague-Events, aber ohne frische, vom Markt übersehene News. Die einzige Korrektur betrifft Partizan–Baskonia: Partizan fehlen zwei Big Men, zwei weitere sind fraglich, und der beste Kurs von 1xBet (1,32) liegt weit über Pinnacle (1,26), deshalb Partizan −0,01. Die NBA-Ausfälle (OKC-Lazarett, Haliburton, Boston im Back-to-back) sind seit Tagen bekannt und eingepreist. NHL-Goalies sind zum Wettzeitpunkt noch nicht bestätigt.",
+  "events": {
+    "951ec54b2a3273a66541cbb1bebec15b": {
+      "h2h": {
+        "home": -0.01,
+        "away": 0.01
+      },
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Partizan ohne Center Kevarrius Hayes (Schulter) und Derek Willis (Knöchel), Tonye Jekiri (Leiste) und Luca Vildoza (Unterarm) entscheiden sich erst kurz vor dem Spiel. Die 1,32 bei 1xBet liegt deutlich über Pinnacle (1,26) und wirkt wie ein veralteter Kurs, deshalb Partizan leicht −0,01."
+    },
+    "d4f288eeb0132970825be17748f2b4f0": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Zweites Duell in Folge nach Portlands 123:103-Sieg am Dienstag. OKC weiter ohne Jalen Williams, Holmgren, Wallace, Jaylin Williams und Topic, bei Portland fehlen Morant, Sharpe und Krejci, Robert Williams III wohl ebenfalls. Alles bekannt und im Kurs, keine Korrektur."
+    },
+    "e9545a3084389f5f3429e19fea891124": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Indiana weiter ohne Haliburton (Oberschenkel), Furphy und Sheppard, McConnell fraglich. Washington ohne Vukcevic, Champagnie, Beekman und Watkins, Anthony Davis nach 44 Punkten in Form. Längst bekannt, keine Korrektur."
+    },
+    "37f4c00ff7ec01d5aa7c33dd1ac84bbc": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Boston spielt Back-to-back nach dem 123:101 in Philadelphia, ohne Devin Carter (Pfeiffersches Drüsenfieber). Toronto wohl ohne Scottie Barnes (Adduktoren), Quickley und Jackson-Davis fraglich, die Quellen widersprechen sich. Mögliche Rotation bei Boston ist öffentlich, keine Korrektur."
+    },
+    "095441822e3b9b1b84bff9e482b9057a": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Zum Wettzeitpunkt keine aktuellen Ausfallmeldungen für Knicks–Cavaliers gefunden. Keine Korrektur."
+    },
+    "c04e54e9e028676cd8b23259bb4364ff": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Keine frische Injury-Meldung zu Lakers und Bucks gefunden. Milwaukee hatte zuletzt Fragezeichen bei Herro und Trent Jr. und verlor am Dienstag 85:117 in New York. Keine Korrektur."
+    },
+    "f41d186dc7a7dcf01adab32579a82ca3": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Kein aktueller Injury Report für Rockets–Warriors gefunden. Keine Korrektur."
+    },
+    "21792501482fecfaacd3a4a24776c9e6": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Kein aktueller Injury Report für Grizzlies–Nuggets gefunden. Keine Korrektur."
+    },
+    "79041ec71c97248859299c4b6211cc17": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Laut Daily Faceoff ist für Tampa Bay Vasilevskiy vorgesehen, aber noch nicht bestätigt. Buffalos Goalie ist offen. Keine Korrektur."
+    }
+  }
+}

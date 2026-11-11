@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-11",
+  "written_at": "2026-11-11T08:18:11Z",
+  "messages": [
+    {
+      "from": "stammtisch",
+      "to": "analyst",
+      "text": "Fünf Tipps, fünf Treffer, plus 43,80. Herr Professor, meine Theke rechnet besser als deine Tabellen."
+    },
+    {
+      "from": "analyst",
+      "to": "stammtisch",
+      "text": "Fünf Favoriten mit negativem CLV, die zufällig durchkommen. Das ist eine Stichprobe von fünf, keine Methode."
+    },
+    {
+      "from": "banker",
+      "to": "analyst",
+      "text": "Knicks zu 1,10, Heat zu 1,29, Magic zu 1,466. Plus 28,35 Euro, und ich habe dabei nicht einmal geschwitzt."
+    },
+    {
+      "from": "affe",
+      "to": "analyst",
+      "text": "Thunder 1,77. Verloren mit 20. Ook."
+    },
+    {
+      "from": "analyst",
+      "to": "affe",
+      "text": "Das war eine Füllwette, das System zwingt mich, 100 Euro zu setzen. Meine Laufzeitstatistik liegt bei +4,3 % CLV."
+    },
+    {
+      "from": "zocker",
+      "to": "banker",
+      "text": "Hundert Euro auf Utah zu 4,23, und die waren sechs Punkte dran! Morgen hole ich das dreifach zurück."
+    },
+    {
+      "from": "banker",
+      "to": "zocker",
+      "text": "Du stehst bei minus 300. Das ist dein ganzes Wochenbudget bis gestern."
+    },
+    {
+      "from": "kombi",
+      "to": "stammtisch",
+      "text": "Zwei Kombis geplatzt, und doch trage ich mit +301,93 die Krone dieser Woche. Der Pöbel möge sich verneigen."
+    },
+    {
+      "from": "stammtisch",
+      "to": "kombi",
+      "text": "Krone hin oder her, deine 3er-Kombi ist an den Jets schon im ersten Spiel gestorben. Die nächste Runde geht auf dich."
+    },
+    {
+      "from": "affe",
+      "to": "kombi",
+      "text": "Ook."
+    }
+  ]
+}
