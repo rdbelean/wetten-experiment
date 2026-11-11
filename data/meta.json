@@ -1,17 +1,7 @@
 {
- "credits_remaining": 284,
- "credits_used": 216,
+ "credits_remaining": 282,
+ "credits_used": 218,
  "api_calls": [
-  {
-   "t": "2026-11-06T16:49:07Z",
-   "path": "/sports/soccer_netherlands_eredivisie/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-06T16:49:07Z",
-   "path": "/sports/basketball_nba/events",
-   "cost": 0
-  },
   {
    "t": "2026-11-06T16:49:08Z",
    "path": "/sports/basketball_nba/odds",
@@ -1001,13 +991,19 @@
    "t": "2026-11-11T00:28:01Z",
    "path": "/sports/icehockey_nhl/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-11T00:58:11Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 1
+  },
+  {
+   "t": "2026-11-11T00:58:11Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-08T13:47:19Z",
-   "a": "Schlussquoten erfasst"
-  },
   {
    "t": "2026-11-08T14:17:38Z",
    "a": "Schlussquoten erfasst"
@@ -1162,6 +1158,10 @@
   },
   {
    "t": "2026-11-11T00:28:01Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-11T00:58:11Z",
    "a": "Schlussquoten erfasst"
   }
  ]
