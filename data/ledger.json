@@ -6110,7 +6110,7 @@
    "player": "banker",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3689d555c9a1c81e3d300375b4c80530",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6172,9 +6172,14 @@
     "best_odds": 1.108,
     "fair_odds": 1.105
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 117,
+    "away": 85,
+    "source": "ESPN",
+    "t": "2026-11-11T03:29:15Z"
+   },
+   "payout": 37.4,
+   "profit": 3.4,
    "clv": -0.0046,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 90,3 % (Pinnacle 1,10). Unser Wert: 90,3 %. Beste Quote 1,10 bei Pinnacle (Median 1,08, 25 Anbieter), Erwartungswert -0,6 %. Recherche: Bucks (1-9) mit Fragezeichen hinter Topscorer Tyler Herro (Knieprellung), dazu Trent Jr. und Kam Jones day-to-day; bei den Knicks ist Josh Hart (Knöchel) fraglich. Die Linie von etwa 15,5 Punkten preist das bereits ein, keine Korrektur.",
@@ -6182,7 +6187,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909960"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 0.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-banker-02",
@@ -6669,7 +6675,7 @@
    "player": "stammtisch",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3689d555c9a1c81e3d300375b4c80530",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6731,9 +6737,14 @@
     "best_odds": 1.108,
     "fair_odds": 1.105
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 117,
+    "away": 85,
+    "source": "ESPN",
+    "t": "2026-11-11T03:29:15Z"
+   },
+   "payout": 21.2,
+   "profit": 1.2,
    "clv": -0.0408,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,06 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,2 %.",
@@ -6741,7 +6752,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909960"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 4.1 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-stammtisch-02",
