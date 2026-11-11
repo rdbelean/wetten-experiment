@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T01:58:46Z",
+ "generated_at": "2026-11-11T02:59:04Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,8 +122,8 @@
     "avg_ev": 0.0063,
     "expected_profit": 2.54,
     "expected_settled": 3.34,
-    "avg_clv": 0.007,
-    "n_clv": 15,
+    "avg_clv": 0.0045,
+    "n_clv": 16,
     "clv_positive": 10,
     "max_drawdown": 33.0
    },
@@ -389,8 +389,8 @@
     "avg_ev": -0.0545,
     "expected_profit": -21.81,
     "expected_settled": -17.4,
-    "avg_clv": -0.0627,
-    "n_clv": 17,
+    "avg_clv": -0.0635,
+    "n_clv": 18,
     "clv_positive": 2,
     "max_drawdown": 43.4
    },
@@ -8445,11 +8445,17 @@
    "kind": "favorit",
    "stake": 33.0,
    "potential_payout": 48.38,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T02:59:04Z",
+    "fair_p": 0.6592,
+    "pinnacle_odds": 1.5,
+    "best_odds": 1.51,
+    "fair_odds": 1.517
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0336,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 67,6 % (Pinnacle 1,45). Unser Wert: 67,6 %. Beste Quote 1,47 bei Betfair Exchange (Median 1,43, 25 Anbieter), Erwartungswert -1,0 %. Recherche: Orlando ohne Banchero, Suggs, Isaac und Penda, Bane nach Krankheit fraglich. Bei Sacramento sind Sabonis und Keegan Murray fraglich. Auf beiden Seiten viele offene Fragen, Status erst kurz vor dem Spiel klar, daher keine Korrektur.",
    "research": "Orlando ohne Banchero, Suggs, Isaac und Penda, Bane nach Krankheit fraglich. Bei Sacramento sind Sabonis und Keegan Murray fraglich. Auf beiden Seiten viele offene Fragen, Status erst kurz vor dem Spiel klar, daher keine Korrektur.",
@@ -8518,11 +8524,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 28.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T02:59:04Z",
+    "fair_p": 0.6592,
+    "pinnacle_odds": 1.5,
+    "best_odds": 1.51,
+    "fair_odds": 1.517
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0771,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,4 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,4 %.",
    "research": null,
@@ -9086,12 +9098,8 @@
   }
  },
  "system": {
-  "credits_remaining": 281,
+  "credits_remaining": 280,
   "last_actions": [
-   {
-    "t": "2026-11-10T01:04:44Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-10T01:59:59Z",
     "a": "Schlussquoten erfasst"
@@ -9146,6 +9154,10 @@
    },
    {
     "t": "2026-11-11T01:58:46Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-11T02:59:04Z",
     "a": "Schlussquoten erfasst"
    }
   ]
