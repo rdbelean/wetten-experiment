@@ -1,37 +1,7 @@
 {
- "credits_remaining": 272,
- "credits_used": 228,
+ "credits_remaining": 265,
+ "credits_used": 235,
  "api_calls": [
-  {
-   "t": "2026-11-07T07:43:48Z",
-   "path": "/sports/soccer_france_ligue_one/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-07T07:43:48Z",
-   "path": "/sports/soccer_france_ligue_one/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-07T07:43:48Z",
-   "path": "/sports/soccer_netherlands_eredivisie/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-07T07:43:49Z",
-   "path": "/sports/soccer_netherlands_eredivisie/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-07T07:43:49Z",
-   "path": "/sports/soccer_uefa_nations_league/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-07T07:43:49Z",
-   "path": "/sports/basketball_nba/events",
-   "cost": 0
-  },
   {
    "t": "2026-11-07T07:43:49Z",
    "path": "/sports/basketball_nba/odds",
@@ -1001,13 +971,39 @@
    "t": "2026-11-11T07:30:35Z",
    "path": "/sports/americanfootball_nfl/events",
    "cost": 0
+  },
+  {
+   "t": "2026-11-11T10:01:35Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-11T10:01:35Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-11T10:01:35Z",
+   "path": "/sports/basketball_euroleague/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-11T10:01:35Z",
+   "path": "/sports/basketball_euroleague/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-11T10:01:35Z",
+   "path": "/sports/icehockey_nhl/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-11T10:01:36Z",
+   "path": "/sports/icehockey_nhl/odds",
+   "cost": 2
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-08T18:34:32Z",
-   "a": "Wetten abgerechnet"
-  },
   {
    "t": "2026-11-08T19:34:49Z",
    "a": "Wetten abgerechnet"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-11T07:30:35Z",
    "a": "Kandidaten für 2026-11-11 vorbereitet"
+  },
+  {
+   "t": "2026-11-11T10:01:37Z",
+   "a": "Wetten für 2026-11-11 platziert"
   }
  ]
 }
