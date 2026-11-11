@@ -1,12 +1,7 @@
 {
- "credits_remaining": 264,
- "credits_used": 236,
+ "credits_remaining": 263,
+ "credits_used": 237,
  "api_calls": [
-  {
-   "t": "2026-11-07T07:43:49Z",
-   "path": "/sports/basketball_euroleague/events",
-   "cost": 0
-  },
   {
    "t": "2026-11-07T07:43:49Z",
    "path": "/sports/icehockey_nhl/events",
@@ -1001,13 +996,14 @@
    "t": "2026-11-11T19:34:55Z",
    "path": "/sports/basketball_euroleague/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-11T23:56:05Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-08T20:25:04Z",
-   "a": "Schlussquoten erfasst"
-  },
   {
    "t": "2026-11-08T20:30:06Z",
    "a": "Wetten abgerechnet"
@@ -1162,6 +1158,10 @@
   },
   {
    "t": "2026-11-11T19:34:55Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-11T23:56:05Z",
    "a": "Schlussquoten erfasst"
   }
  ]

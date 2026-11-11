@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T19:34:55Z",
+ "generated_at": "2026-11-11T23:56:05Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,9 +33,9 @@
     "avg_ev": 0.022,
     "expected_profit": 11.01,
     "expected_settled": 11.06,
-    "avg_clv": 0.0423,
-    "n_clv": 17,
-    "clv_positive": 13,
+    "avg_clv": 0.0429,
+    "n_clv": 18,
+    "clv_positive": 14,
     "max_drawdown": 130.46
    },
    "days": [
@@ -389,8 +389,8 @@
     "avg_ev": -0.054,
     "expected_profit": -27.01,
     "expected_settled": -21.81,
-    "avg_clv": -0.0635,
-    "n_clv": 18,
+    "avg_clv": -0.0639,
+    "n_clv": 21,
     "clv_positive": 2,
     "max_drawdown": 43.4
    },
@@ -9287,11 +9287,17 @@
    "kind": "filler",
    "stake": 33.0,
    "potential_payout": 53.13,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T23:56:05Z",
+    "fair_p": 0.6544,
+    "pinnacle_odds": 1.51,
+    "best_odds": 1.51,
+    "fair_odds": 1.528
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0536,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 62,0 % (Pinnacle 1,57). Unser Wert: 62,0 %. Beste Quote 1,61 bei 1xBet (Median 1,57, 25 Anbieter), Erwartungswert -0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Zum Wettzeitpunkt keine aktuellen Ausfallmeldungen für Knicks–Cavaliers gefunden. Keine Korrektur.",
    "research": "Zum Wettzeitpunkt keine aktuellen Ausfallmeldungen für Knicks–Cavaliers gefunden. Keine Korrektur.",
@@ -9498,11 +9504,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 26.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T23:56:05Z",
+    "fair_p": 0.6505,
+    "pinnacle_odds": 1.52,
+    "best_odds": 1.539,
+    "fair_odds": 1.537
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.1413,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,32 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,8 %.",
    "research": null,
@@ -9571,11 +9583,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 30.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T23:56:05Z",
+    "fair_p": 0.6544,
+    "pinnacle_odds": 1.51,
+    "best_odds": 1.51,
+    "fair_odds": 1.528
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0053,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,52 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,8 %.",
    "research": null,
@@ -9644,11 +9662,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 32.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-11T23:56:05Z",
+    "fair_p": 0.5847,
+    "pinnacle_odds": 1.68,
+    "best_odds": 1.71,
+    "fair_odds": 1.71
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0528,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,62 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,5 %.",
    "research": null,
@@ -10803,12 +10827,8 @@
   }
  },
  "system": {
-  "credits_remaining": 264,
+  "credits_remaining": 263,
   "last_actions": [
-   {
-    "t": "2026-11-11T00:58:11Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-11T01:58:46Z",
     "a": "Schlussquoten erfasst"
@@ -10863,6 +10883,10 @@
    },
    {
     "t": "2026-11-11T19:34:55Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-11T23:56:05Z",
     "a": "Schlussquoten erfasst"
    }
   ]
