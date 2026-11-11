@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T05:55:03Z",
+ "generated_at": "2026-11-11T06:55:21Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -17,26 +17,26 @@
    "id": "analyst",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 370.0,
+    "staked_settled": 400.0,
     "returned": 301.54,
-    "profit": -68.46,
-    "roi": -0.185,
-    "open_stake": 30.0,
-    "open_potential": 53.1,
+    "profit": -98.46,
+    "roi": -0.2461,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 7,
-    "lost": 9,
+    "lost": 10,
     "push": 0,
     "n_bets": 17,
-    "hit_rate": 0.4375,
+    "hit_rate": 0.4118,
     "avg_odds": 2.404,
     "max_odds_won": 3.891,
     "avg_ev": 0.0277,
     "expected_profit": 11.06,
-    "expected_settled": 11.18,
+    "expected_settled": 11.06,
     "avg_clv": 0.0431,
     "n_clv": 16,
     "clv_positive": 12,
-    "max_drawdown": 109.16
+    "max_drawdown": 130.46
    },
    "days": [
     {
@@ -66,16 +66,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": -31.3,
-     "cum_profit": -68.46,
-     "settled": 2,
+     "profit": -61.3,
+     "cum_profit": -98.46,
+     "settled": 3,
      "n_bets": 3
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -68.46,
+     "cum_profit": -98.46,
      "settled": 0,
      "n_bets": 0
     },
@@ -83,7 +83,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -68.46,
+     "cum_profit": -98.46,
      "settled": 0,
      "n_bets": 0
     },
@@ -91,7 +91,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -68.46,
+     "cum_profit": -98.46,
      "settled": 0,
      "n_bets": 0
     }
@@ -284,22 +284,22 @@
    "id": "kombi",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 350.0,
+    "staked_settled": 400.0,
     "returned": 701.93,
-    "profit": 351.93,
-    "roi": 1.0055,
-    "open_stake": 50.0,
-    "open_potential": 229.5,
+    "profit": 301.93,
+    "roi": 0.7548,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 2,
-    "lost": 5,
+    "lost": 6,
     "push": 0,
     "n_bets": 8,
-    "hit_rate": 0.2857,
+    "hit_rate": 0.25,
     "avg_odds": 6.136,
     "max_odds_won": 10.46,
     "avg_ev": 0.0405,
     "expected_profit": 16.21,
-    "expected_settled": 16.56,
+    "expected_settled": 16.21,
     "avg_clv": null,
     "n_clv": 0,
     "clv_positive": 0,
@@ -333,16 +333,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": -50.0,
-     "cum_profit": 351.93,
-     "settled": 1,
+     "profit": -100.0,
+     "cum_profit": 301.93,
+     "settled": 2,
      "n_bets": 2
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 351.93,
+     "cum_profit": 301.93,
      "settled": 0,
      "n_bets": 0
     },
@@ -350,7 +350,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 351.93,
+     "cum_profit": 301.93,
      "settled": 0,
      "n_bets": 0
     },
@@ -358,7 +358,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 351.93,
+     "cum_profit": 301.93,
      "settled": 0,
      "n_bets": 0
     }
@@ -7768,7 +7768,7 @@
    "player": "kombi",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "cfa503c66cd505776a910921875ef7dd+f5477c781c94e09e85374bbf9149c0f1+9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -7798,9 +7798,16 @@
    "stake": 50.0,
    "potential_payout": 229.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "lost",
+     "won"
+    ],
+    "t": "2026-11-11T06:55:21Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -7850,8 +7857,11 @@
       "path": "basketball/nba",
       "id": "401909965"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 123,
+      "away": 103
+     }
     },
     {
      "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
@@ -7883,7 +7893,8 @@
    "last_commence": "2026-11-11T04:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,59, Trefferchance 21,6 %, Erwartungswert -0,7 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,59, Trefferchance 21,6 %, Erwartungswert -0,7 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-10-stammtisch-02",
@@ -8655,7 +8666,7 @@
    "player": "analyst",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "f5477c781c94e09e85374bbf9149c0f1",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8717,9 +8728,14 @@
     "best_odds": 1.911,
     "fair_odds": 1.901
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 123,
+    "away": 103,
+    "source": "ESPN",
+    "t": "2026-11-11T06:55:21Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": -0.069,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 56,3 % (Pinnacle 1,73). Unser Wert: 56,3 %. Beste Quote 1,77 bei Everygame (Median 1,72, 25 Anbieter), Erwartungswert -0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
@@ -8727,7 +8743,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909965"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 6.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   }
  ],
  "talk": [
@@ -9214,10 +9231,6 @@
   "credits_remaining": 279,
   "last_actions": [
    {
-    "t": "2026-11-10T07:32:01Z",
-    "a": "Kandidaten für 2026-11-10 vorbereitet"
-   },
-   {
     "t": "2026-11-10T10:03:07Z",
     "a": "Wetten für 2026-11-10 platziert"
    },
@@ -9271,6 +9284,10 @@
    },
    {
     "t": "2026-11-11T05:55:03Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-11T06:55:21Z",
     "a": "Wetten abgerechnet"
    }
   ]

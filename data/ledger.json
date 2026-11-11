@@ -5964,7 +5964,7 @@
    "player": "analyst",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "f5477c781c94e09e85374bbf9149c0f1",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6026,9 +6026,14 @@
     "best_odds": 1.911,
     "fair_odds": 1.901
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 123,
+    "away": 103,
+    "source": "ESPN",
+    "t": "2026-11-11T06:55:21Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": -0.069,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 56,3 % (Pinnacle 1,73). Unser Wert: 56,3 %. Beste Quote 1,77 bei Everygame (Median 1,72, 25 Anbieter), Erwartungswert -0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: OKC ohne Jalen Williams (Knöchel/Wadenbein) und Cason Wallace (Labrum-OP), Holmgren laut Rip City Radio ebenfalls out; Shai Gilgeous-Alexander steht nicht auf dem Report. Portland ohne Sharpe, Krejci und Morant. Nur Thunder -2,5, die Ausfälle sind also klar eingepreist.",
@@ -6036,7 +6041,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909965"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 6.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-03",
@@ -6468,7 +6474,7 @@
    "player": "kombi",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "cfa503c66cd505776a910921875ef7dd+f5477c781c94e09e85374bbf9149c0f1+9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -6498,9 +6504,16 @@
    "stake": 50.0,
    "potential_payout": 229.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "lost",
+     "won"
+    ],
+    "t": "2026-11-11T06:55:21Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -6550,8 +6563,11 @@
       "path": "basketball/nba",
       "id": "401909965"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 123,
+      "away": 103
+     }
     },
     {
      "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
@@ -6583,7 +6599,8 @@
    "last_commence": "2026-11-11T04:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,59, Trefferchance 21,6 %, Erwartungswert -0,7 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,59, Trefferchance 21,6 %, Erwartungswert -0,7 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-10-kombi-02",

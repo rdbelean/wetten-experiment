@@ -1006,10 +1006,6 @@
  "last_actions": [
   {
    "t": "2026-11-08T18:19:27Z",
-   "a": "Schlussquoten erfasst"
-  },
-  {
-   "t": "2026-11-08T18:19:27Z",
    "a": "Wetten abgerechnet"
   },
   {
@@ -1162,6 +1158,10 @@
   },
   {
    "t": "2026-11-11T05:55:03Z",
+   "a": "Wetten abgerechnet"
+  },
+  {
+   "t": "2026-11-11T06:55:21Z",
    "a": "Wetten abgerechnet"
   }
  ]
