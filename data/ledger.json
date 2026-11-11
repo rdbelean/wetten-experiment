@@ -6298,7 +6298,7 @@
    "player": "banker",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "78ab42ddb22b68903fd53a384d0fc616",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -6360,9 +6360,14 @@
     "best_odds": 1.51,
     "fair_odds": 1.517
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 100,
+    "away": 107,
+    "source": "ESPN",
+    "t": "2026-11-11T05:55:03Z"
+   },
+   "payout": 48.38,
+   "profit": 15.38,
    "clv": -0.0336,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 67,6 % (Pinnacle 1,45). Unser Wert: 67,6 %. Beste Quote 1,47 bei Betfair Exchange (Median 1,43, 25 Anbieter), Erwartungswert -1,0 %. Recherche: Orlando ohne Banchero, Suggs, Isaac und Penda, Bane nach Krankheit fraglich. Bei Sacramento sind Sabonis und Keegan Murray fraglich. Auf beiden Seiten viele offene Fragen, Status erst kurz vor dem Spiel klar, daher keine Korrektur.",
@@ -6370,7 +6375,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909964"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 3.4 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-zocker-01",
@@ -7051,7 +7057,7 @@
    "player": "stammtisch",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "78ab42ddb22b68903fd53a384d0fc616",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -7113,9 +7119,14 @@
     "best_odds": 1.51,
     "fair_odds": 1.517
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 100,
+    "away": 107,
+    "source": "ESPN",
+    "t": "2026-11-11T05:55:03Z"
+   },
+   "payout": 28.0,
+   "profit": 8.0,
    "clv": -0.0771,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,4 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,4 %.",
@@ -7123,7 +7134,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909964"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 7.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-affe-01",
