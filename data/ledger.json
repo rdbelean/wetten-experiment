@@ -6542,7 +6542,7 @@
    "player": "kombi",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "11f3c6f0f406c5ffb575dbcd671cf964+8178ff2ec61f604b61dfe6d7b8d71103+78ab42ddb22b68903fd53a384d0fc616",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -6572,9 +6572,16 @@
    "stake": 50.0,
    "potential_payout": 203.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "lost",
+     "open",
+     "open"
+    ],
+    "t": "2026-11-11T03:14:10Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -6598,8 +6605,11 @@
       "path": "hockey/nhl",
       "id": "401892688"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 4,
+      "away": 2
+     }
     },
     {
      "event_id": "8178ff2ec61f604b61dfe6d7b8d71103",
@@ -6651,7 +6661,8 @@
    "last_commence": "2026-11-11T03:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,06, Trefferchance 23,9 %, Erwartungswert -2,7 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,06, Trefferchance 23,9 %, Erwartungswert -2,7 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "0 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-10-stammtisch-01",
@@ -7262,7 +7273,7 @@
    "player": "affe",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "18d63193c9a696acd715bc27d9fb65f6",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -7310,9 +7321,14 @@
     "best_odds": 2.14,
     "fair_odds": 2.18
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-11T03:14:10Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0734,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,02 (Marktschnitt), Erwartungswert -5,3 %.",
@@ -7320,7 +7336,8 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892684"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 7.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   }
  ]
 }

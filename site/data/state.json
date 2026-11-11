@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T02:59:04Z",
+ "generated_at": "2026-11-11T03:14:10Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -284,22 +284,22 @@
    "id": "kombi",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 300.0,
+    "staked_settled": 350.0,
     "returned": 701.93,
-    "profit": 401.93,
-    "roi": 1.3398,
-    "open_stake": 100.0,
-    "open_potential": 432.5,
+    "profit": 351.93,
+    "roi": 1.0055,
+    "open_stake": 50.0,
+    "open_potential": 229.5,
     "won": 2,
-    "lost": 4,
+    "lost": 5,
     "push": 0,
     "n_bets": 8,
-    "hit_rate": 0.3333,
+    "hit_rate": 0.2857,
     "avg_odds": 6.136,
     "max_odds_won": 10.46,
     "avg_ev": 0.0405,
     "expected_profit": 16.21,
-    "expected_settled": 17.93,
+    "expected_settled": 16.56,
     "avg_clv": null,
     "n_clv": 0,
     "clv_positive": 0,
@@ -333,16 +333,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": 0,
-     "cum_profit": 401.93,
-     "settled": 0,
+     "profit": -50.0,
+     "cum_profit": 351.93,
+     "settled": 1,
      "n_bets": 2
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 401.93,
+     "cum_profit": 351.93,
      "settled": 0,
      "n_bets": 0
     },
@@ -350,7 +350,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 401.93,
+     "cum_profit": 351.93,
      "settled": 0,
      "n_bets": 0
     },
@@ -358,7 +358,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 401.93,
+     "cum_profit": 351.93,
      "settled": 0,
      "n_bets": 0
     }
@@ -462,22 +462,22 @@
    "id": "affe",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 300.0,
+    "staked_settled": 325.0,
     "returned": 267.25,
-    "profit": -32.75,
-    "roi": -0.1092,
-    "open_stake": 100.0,
-    "open_potential": 203.0,
+    "profit": -57.75,
+    "roi": -0.1777,
+    "open_stake": 75.0,
+    "open_potential": 152.5,
     "won": 4,
-    "lost": 8,
+    "lost": 9,
     "push": 0,
     "n_bets": 16,
-    "hit_rate": 0.3333,
+    "hit_rate": 0.3077,
     "avg_odds": 2.604,
     "max_odds_won": 4.1,
     "avg_ev": -0.0523,
     "expected_profit": -20.93,
-    "expected_settled": -16.07,
+    "expected_settled": -17.4,
     "avg_clv": -0.0282,
     "n_clv": 14,
     "clv_positive": 4,
@@ -511,16 +511,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": 0,
-     "cum_profit": -32.75,
-     "settled": 0,
+     "profit": -25.0,
+     "cum_profit": -57.75,
+     "settled": 1,
      "n_bets": 4
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -32.75,
+     "cum_profit": -57.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -32.75,
+     "cum_profit": -57.75,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -32.75,
+     "cum_profit": -57.75,
      "settled": 0,
      "n_bets": 0
     }
@@ -7173,7 +7173,7 @@
    "player": "affe",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "18d63193c9a696acd715bc27d9fb65f6",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -7221,9 +7221,14 @@
     "best_odds": 2.14,
     "fair_odds": 2.18
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-11T03:14:10Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0734,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,02 (Marktschnitt), Erwartungswert -5,3 %.",
@@ -7231,14 +7236,15 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892684"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 7.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-kombi-02",
    "player": "kombi",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "11f3c6f0f406c5ffb575dbcd671cf964+8178ff2ec61f604b61dfe6d7b8d71103+78ab42ddb22b68903fd53a384d0fc616",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -7268,9 +7274,16 @@
    "stake": 50.0,
    "potential_payout": 203.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "lost",
+     "open",
+     "open"
+    ],
+    "t": "2026-11-11T03:14:10Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -7294,8 +7307,11 @@
       "path": "hockey/nhl",
       "id": "401892688"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 4,
+      "away": 2
+     }
     },
     {
      "event_id": "8178ff2ec61f604b61dfe6d7b8d71103",
@@ -7347,7 +7363,8 @@
    "last_commence": "2026-11-11T03:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,06, Trefferchance 23,9 %, Erwartungswert -2,7 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 4,06, Trefferchance 23,9 %, Erwartungswert -2,7 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "0 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-10-affe-02",
@@ -9101,10 +9118,6 @@
   "credits_remaining": 280,
   "last_actions": [
    {
-    "t": "2026-11-10T01:59:59Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-10T02:55:15Z",
     "a": "Schlussquoten erfasst"
    },
@@ -9159,6 +9172,10 @@
    {
     "t": "2026-11-11T02:59:04Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-11T03:14:10Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }
