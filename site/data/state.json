@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-11T04:14:32Z",
+ "generated_at": "2026-11-11T04:59:46Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -17,22 +17,22 @@
    "id": "analyst",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 340.0,
-    "returned": 262.84,
-    "profit": -77.16,
-    "roi": -0.2269,
-    "open_stake": 60.0,
-    "open_potential": 91.8,
-    "won": 6,
+    "staked_settled": 370.0,
+    "returned": 301.54,
+    "profit": -68.46,
+    "roi": -0.185,
+    "open_stake": 30.0,
+    "open_potential": 53.1,
+    "won": 7,
     "lost": 9,
     "push": 0,
     "n_bets": 17,
-    "hit_rate": 0.4,
+    "hit_rate": 0.4375,
     "avg_odds": 2.404,
     "max_odds_won": 3.891,
     "avg_ev": 0.0277,
     "expected_profit": 11.06,
-    "expected_settled": 11.42,
+    "expected_settled": 11.18,
     "avg_clv": 0.0431,
     "n_clv": 16,
     "clv_positive": 12,
@@ -66,16 +66,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": -40.0,
-     "cum_profit": -77.16,
-     "settled": 1,
+     "profit": -31.3,
+     "cum_profit": -68.46,
+     "settled": 2,
      "n_bets": 3
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -77.16,
+     "cum_profit": -68.46,
      "settled": 0,
      "n_bets": 0
     },
@@ -83,7 +83,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -77.16,
+     "cum_profit": -68.46,
      "settled": 0,
      "n_bets": 0
     },
@@ -91,7 +91,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -77.16,
+     "cum_profit": -68.46,
      "settled": 0,
      "n_bets": 0
     }
@@ -106,22 +106,22 @@
    "id": "banker",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 334.0,
-    "returned": 370.76,
-    "profit": 36.76,
-    "roi": 0.1101,
-    "open_stake": 66.0,
-    "open_potential": 90.95,
-    "won": 12,
+    "staked_settled": 367.0,
+    "returned": 413.33,
+    "profit": 46.33,
+    "roi": 0.1262,
+    "open_stake": 33.0,
+    "open_potential": 48.38,
+    "won": 13,
     "lost": 2,
     "push": 0,
     "n_bets": 16,
-    "hit_rate": 0.8571,
+    "hit_rate": 0.8667,
     "avg_odds": 1.344,
     "max_odds_won": 1.55,
     "avg_ev": 0.0063,
     "expected_profit": 2.54,
-    "expected_settled": 3.12,
+    "expected_settled": 2.86,
     "avg_clv": 0.0045,
     "n_clv": 16,
     "clv_positive": 10,
@@ -155,16 +155,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": 3.4,
-     "cum_profit": 36.76,
-     "settled": 1,
+     "profit": 12.97,
+     "cum_profit": 46.33,
+     "settled": 2,
      "n_bets": 3
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 36.76,
+     "cum_profit": 46.33,
      "settled": 0,
      "n_bets": 0
     },
@@ -172,7 +172,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 36.76,
+     "cum_profit": 46.33,
      "settled": 0,
      "n_bets": 0
     },
@@ -180,7 +180,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 36.76,
+     "cum_profit": 46.33,
      "settled": 0,
      "n_bets": 0
     }
@@ -195,14 +195,14 @@
    "id": "zocker",
    "totals": {
     "staked": 300.0,
-    "staked_settled": 200.0,
+    "staked_settled": 300.0,
     "returned": 0,
-    "profit": -200.0,
+    "profit": -300.0,
     "roi": -1.0,
-    "open_stake": 100.0,
-    "open_potential": 423.0,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 0,
-    "lost": 4,
+    "lost": 5,
     "push": 0,
     "n_bets": 5,
     "hit_rate": 0.0,
@@ -210,11 +210,11 @@
     "max_odds_won": null,
     "avg_ev": 0.0394,
     "expected_profit": 11.81,
-    "expected_settled": 14.05,
+    "expected_settled": 11.81,
     "avg_clv": -0.0005,
     "n_clv": 4,
     "clv_positive": 2,
-    "max_drawdown": 200.0
+    "max_drawdown": 300.0
    },
    "days": [
     {
@@ -244,16 +244,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": 0,
-     "cum_profit": -200.0,
-     "settled": 0,
+     "profit": -100.0,
+     "cum_profit": -300.0,
+     "settled": 1,
      "n_bets": 1
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -200.0,
+     "cum_profit": -300.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -261,7 +261,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -200.0,
+     "cum_profit": -300.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -269,7 +269,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -200.0,
+     "cum_profit": -300.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -373,22 +373,22 @@
    "id": "stammtisch",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 340.0,
-    "returned": 377.0,
-    "profit": 37.0,
-    "roi": 0.1088,
-    "open_stake": 60.0,
-    "open_potential": 84.0,
-    "won": 12,
+    "staked_settled": 380.0,
+    "returned": 433.0,
+    "profit": 53.0,
+    "roi": 0.1395,
+    "open_stake": 20.0,
+    "open_potential": 28.0,
+    "won": 14,
     "lost": 5,
     "push": 0,
     "n_bets": 20,
-    "hit_rate": 0.7059,
+    "hit_rate": 0.7368,
     "avg_odds": 1.597,
     "max_odds_won": 1.93,
     "avg_ev": -0.0545,
     "expected_profit": -21.81,
-    "expected_settled": -18.67,
+    "expected_settled": -20.73,
     "avg_clv": -0.0635,
     "n_clv": 18,
     "clv_positive": 2,
@@ -422,16 +422,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": 19.8,
-     "cum_profit": 37.0,
-     "settled": 2,
+     "profit": 35.8,
+     "cum_profit": 53.0,
+     "settled": 4,
      "n_bets": 5
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 37.0,
+     "cum_profit": 53.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -439,7 +439,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 37.0,
+     "cum_profit": 53.0,
      "settled": 0,
      "n_bets": 0
     },
@@ -447,7 +447,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 37.0,
+     "cum_profit": 53.0,
      "settled": 0,
      "n_bets": 0
     }
@@ -462,22 +462,22 @@
    "id": "affe",
    "totals": {
     "staked": 400.0,
-    "staked_settled": 375.0,
+    "staked_settled": 400.0,
     "returned": 309.75,
-    "profit": -65.25,
-    "roi": -0.174,
-    "open_stake": 25.0,
-    "open_potential": 60.0,
+    "profit": -90.25,
+    "roi": -0.2256,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 5,
-    "lost": 10,
+    "lost": 11,
     "push": 0,
     "n_bets": 16,
-    "hit_rate": 0.3333,
+    "hit_rate": 0.3125,
     "avg_odds": 2.604,
     "max_odds_won": 4.1,
     "avg_ev": -0.0523,
     "expected_profit": -20.93,
-    "expected_settled": -19.7,
+    "expected_settled": -20.93,
     "avg_clv": -0.0282,
     "n_clv": 14,
     "clv_positive": 4,
@@ -511,16 +511,16 @@
     {
      "date": "2026-11-10",
      "staked": 100.0,
-     "profit": -32.5,
-     "cum_profit": -65.25,
-     "settled": 3,
+     "profit": -57.5,
+     "cum_profit": -90.25,
+     "settled": 4,
      "n_bets": 4
     },
     {
      "date": "2026-11-11",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -65.25,
+     "cum_profit": -90.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -528,7 +528,7 @@
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -65.25,
+     "cum_profit": -90.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -65.25,
+     "cum_profit": -90.25,
      "settled": 0,
      "n_bets": 0
     }
@@ -7873,8 +7873,11 @@
       "path": "basketball/nba",
       "id": "401909963"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 109,
+      "away": 115
+     }
     }
    ],
    "last_commence": "2026-11-11T04:10:00Z",
@@ -7972,7 +7975,7 @@
    "player": "analyst",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8034,9 +8037,14 @@
     "best_odds": 1.3,
     "fair_odds": 1.308
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 109,
+    "away": 115,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 38.7,
+   "profit": 8.7,
    "clv": -0.0134,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 76,9 % (Pinnacle 1,29). Unser Wert: 76,9 %. Beste Quote 1,29 bei Pinnacle (Median 1,25, 25 Anbieter), Erwartungswert -0,8 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -8044,14 +8052,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909963"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-affe-03",
    "player": "affe",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "8178ff2ec61f604b61dfe6d7b8d71103",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8113,9 +8122,14 @@
     "best_odds": 2.53,
     "fair_odds": 2.617
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 133,
+    "away": 110,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.083,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,4 (Tipico), Erwartungswert -4,9 %.",
@@ -8123,14 +8137,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909962"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 8.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-banker-02",
    "player": "banker",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8192,9 +8207,14 @@
     "best_odds": 1.3,
     "fair_odds": 1.308
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 109,
+    "away": 115,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 42.57,
+   "profit": 9.57,
    "clv": -0.0134,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 76,9 % (Pinnacle 1,29). Unser Wert: 76,9 %. Beste Quote 1,29 bei Pinnacle (Median 1,25, 25 Anbieter), Erwartungswert -0,8 %. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -8202,14 +8222,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909963"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8178ff2ec61f604b61dfe6d7b8d71103",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8271,9 +8292,14 @@
     "best_odds": 1.62,
     "fair_odds": 1.618
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 133,
+    "away": 110,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 31.0,
+   "profit": 11.0,
    "clv": -0.0423,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,4 %.",
@@ -8281,14 +8307,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909962"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 4.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8350,9 +8377,14 @@
     "best_odds": 1.3,
     "fair_odds": 1.308
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 109,
+    "away": 115,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 25.0,
+   "profit": 5.0,
    "clv": -0.044,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,25 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,9 %.",
@@ -8360,14 +8392,15 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909963"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 4.4 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-zocker-01",
    "player": "zocker",
    "day": "2026-11-10",
    "placed_at": "2026-11-10T10:03:06Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "9ac02cb22adf276b325b1e9c9c6c588e",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -8429,9 +8462,14 @@
     "best_odds": 4.136,
     "fair_odds": 4.252
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 109,
+    "away": 115,
+    "source": "ESPN",
+    "t": "2026-11-11T04:59:46Z"
+   },
+   "payout": 0.0,
+   "profit": -100.0,
    "clv": -0.0051,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 23,1 % (Pinnacle 3,81). Unser Wert: 23,1 %. Beste Quote 4,23 bei Betfair Exchange (Median 4,00, 25 Anbieter), Erwartungswert -2,2 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Utah ohne Keyonte George, Jaren Jackson Jr. und Nurkić, Markkanen fraglich (Handgelenk). Miami mit Giannis Antetokounmpo nur 'probable' (Handgelenk). Alles bekannt und eingepreist (Heat -9,5).",
@@ -8439,7 +8477,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909963"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 0.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-10-banker-03",
@@ -9163,10 +9202,6 @@
   "credits_remaining": 279,
   "last_actions": [
    {
-    "t": "2026-11-10T05:01:13Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-10T05:56:30Z",
     "a": "Wetten abgerechnet"
    },
@@ -9220,6 +9255,10 @@
    },
    {
     "t": "2026-11-11T04:14:32Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-11T04:59:46Z",
     "a": "Wetten abgerechnet"
    }
   ]
