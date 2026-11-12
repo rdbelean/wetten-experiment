@@ -9022,7 +9022,7 @@
    "player": "analyst",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "030f628eb3a7ad16c3bca6884c18c56e",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9075,9 +9075,31 @@
     "best_odds": 1.3,
     "fair_odds": 1.288
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 70,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 72,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 52.0,
+   "profit": 12.0,
    "clv": 0.0096,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,9 % (Pinnacle 1,26). Unser Wert: 77,9 %. Beste Quote 1,30 bei Unibet SE (Median 1,25, 16 Anbieter), Erwartungswert +1,2 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
@@ -9085,14 +9107,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861152"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.0 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-02",
    "player": "analyst",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "87441c4ff41ea3d37812826345450408",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9147,9 +9170,26 @@
     "best_odds": 1.25,
     "fair_odds": 1.235
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 50.0,
+   "profit": 10.0,
    "clv": 0.0124,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,6 % (Pinnacle 1,22). Unser Wert: 80,6 %. Beste Quote 1,25 bei Unibet SE (Median 1,22, 18 Anbieter), Erwartungswert +0,8 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Spanien ist schon für das Viertelfinale qualifiziert und ohne Lamine Yamal (Knie), Oyarzabal ist wohl krank. Tschechien fehlen Sadílek (gesperrt), Hranáč, Karabec und Kričfaluši. Etwas Rotationsrisiko bei Spanien, aber das Team will Gruppenerster werden. Keine Korrektur.",
@@ -9157,7 +9197,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861148"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.2 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-03",
@@ -9221,7 +9262,7 @@
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "87441c4ff41ea3d37812826345450408",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9276,9 +9317,26 @@
     "best_odds": 1.25,
     "fair_odds": 1.235
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 25.0,
+   "profit": 5.0,
    "clv": 0.0124,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,6 % (Pinnacle 1,22). Unser Wert: 80,6 %. Beste Quote 1,25 bei Unibet SE (Median 1,22, 18 Anbieter), Erwartungswert +0,8 %. Recherche: Spanien ist schon für das Viertelfinale qualifiziert und ohne Lamine Yamal (Knie), Oyarzabal ist wohl krank. Tschechien fehlen Sadílek (gesperrt), Hranáč, Karabec und Kričfaluši. Etwas Rotationsrisiko bei Spanien, aber das Team will Gruppenerster werden. Keine Korrektur.",
@@ -9286,7 +9344,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861148"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.2 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-banker-02",
@@ -9436,7 +9495,7 @@
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "030f628eb3a7ad16c3bca6884c18c56e",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9489,9 +9548,31 @@
     "best_odds": 1.3,
     "fair_odds": 1.288
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 70,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 72,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 26.0,
+   "profit": 6.0,
    "clv": 0.0096,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,9 % (Pinnacle 1,26). Unser Wert: 77,9 %. Beste Quote 1,30 bei Unibet SE (Median 1,25, 16 Anbieter), Erwartungswert +1,2 %.",
@@ -9499,14 +9580,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861152"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.0 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-banker-05",
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8a1174de9079b530bd6612e3fde6e2fa",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9561,9 +9643,31 @@
     "best_odds": 1.3,
     "fair_odds": 1.278
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 59,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 64,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 25.8,
+   "profit": 5.8,
    "clv": 0.0094,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,6 % (Pinnacle 1,27). Unser Wert: 77,6 %. Beste Quote 1,29 bei 1xBet (Median 1,26, 18 Anbieter), Erwartungswert +0,2 %. Recherche: Tuchel bestätigt Kane in der Startelf. Guéhi ist verletzt (Dan Burn nachnominiert). England reicht ein Punkt fürs Viertelfinale. Keine Korrektur.",
@@ -9571,7 +9675,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861150"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-zocker-01",
@@ -9817,8 +9922,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861152"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 1
+     }
     },
     {
      "event_id": "87441c4ff41ea3d37812826345450408",
@@ -9840,8 +9948,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861148"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 0,
+      "away": 2
+     }
     },
     {
      "event_id": "ac858403bd96563aa897a9bb7554f103",
@@ -9930,8 +10041,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861150"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 1
+     }
     },
     {
      "event_id": "b2c881e252c7e0a61cb2e73eeb683885",
@@ -10190,7 +10304,7 @@
    "player": "stammtisch",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "21f1d732a768ec97ab405050ec9be408",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10243,9 +10357,26 @@
     "best_odds": 2.159,
     "fair_odds": 2.182
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 35,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 42.8,
+   "profit": 22.8,
    "clv": -0.0195,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,14 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,4 %.",
@@ -10253,14 +10384,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861147"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3caa30ea2ac5a1be30724132ba10d82b",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10313,9 +10445,26 @@
     "best_odds": 1.12,
     "fair_odds": 1.103
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 12,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 17,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 22.4,
+   "profit": 2.4,
    "clv": 0.0152,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,12 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,0 %.",
@@ -10323,14 +10472,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861149"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8a1174de9079b530bd6612e3fde6e2fa",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10385,9 +10535,31 @@
     "best_odds": 1.3,
     "fair_odds": 1.278
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 59,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 64,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 25.26,
+   "profit": 5.26,
    "clv": -0.0117,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,263 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -1,9 %.",
@@ -10395,7 +10567,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861150"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-affe-01",
@@ -10473,7 +10646,7 @@
    "player": "affe",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8a1174de9079b530bd6612e3fde6e2fa",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10528,9 +10701,31 @@
     "best_odds": 1.3,
     "fair_odds": 1.278
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 59,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 64,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 31.57,
+   "profit": 6.57,
    "clv": -0.0117,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,263 (Marktschnitt), Erwartungswert -1,9 %.",
@@ -10538,7 +10733,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861150"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-affe-03",
@@ -10604,7 +10800,7 @@
    "player": "affe",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "c096e9bfabbbb93326413433b7c63511",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10659,9 +10855,36 @@
     "best_odds": 4.234,
     "fair_odds": 4.292
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T21:49:04Z",
+    "goals": [
+     {
+      "min": 10,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 26,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 63,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 75,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 89.38,
+   "profit": 64.38,
    "clv": -0.167,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,575 (Marktschnitt), Erwartungswert -7,8 %.",
@@ -10669,7 +10892,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861151"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 16.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   }
  ]
 }
