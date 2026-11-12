@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T21:49:04Z",
+ "generated_at": "2026-11-12T23:49:54Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -478,8 +478,8 @@
     "avg_ev": -0.0539,
     "expected_profit": -32.33,
     "expected_settled": -30.78,
-    "avg_clv": -0.0345,
-    "n_clv": 21,
+    "avg_clv": -0.0357,
+    "n_clv": 22,
     "clv_positive": 5,
     "max_drawdown": 190.25
    },
@@ -12408,11 +12408,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 56.25,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T23:49:54Z",
+    "fair_p": 0.4179,
+    "pinnacle_odds": 2.32,
+    "best_odds": 2.33,
+    "fair_odds": 2.393
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0597,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,25 (Marktschnitt), Erwartungswert -6,2 %.",
    "research": null,
@@ -13080,12 +13086,8 @@
   }
  },
  "system": {
-  "credits_remaining": 232,
+  "credits_remaining": 231,
   "last_actions": [
-   {
-    "t": "2026-11-12T02:57:17Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-12T02:57:17Z",
     "a": "Wetten abgerechnet"
@@ -13141,6 +13143,10 @@
    {
     "t": "2026-11-12T21:49:04Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-12T23:49:54Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
