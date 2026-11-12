@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T07:33:59Z",
+ "generated_at": "2026-11-12T08:24:16Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -1321,7 +1321,11 @@
      "commence": "2026-11-12T00:40:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst verlor am 11.11. 55,46 € bei 100 € Einsatz (1 Sieg, 2 Niederlagen) und steht nach fünf Tagen bei −153,92 €. Anders als am Vortag waren die Entscheidungen diesmal ordentlich: Partizan (+2,9 %) und die Knicks (+5,4 %) hatten klar positiven CLV, nur die NHL-Over-Wette in Anaheim lag leicht im Minus. Verloren wurde trotzdem, weil Harden die Knicks in der Schlussphase allein schlug und in Anaheim das siebte Tor fehlte. Tagessieger war der Zocker, der mit 100 € auf Paris gegen Fenerbahçe (3,26, 111:109) +226 € holte, vor dem Banker (+30,17 €, drei Favoriten-Siege). Der Stammtisch (−20 €), der Affe (−35 €) und die Kombi (−100 €, beide Kombis geplatzt, unter anderem an den Knicks) verloren.",
+    "lessons": "Positiver CLV und Tagesergebnis laufen an einzelnen Tagen völlig auseinander: zwei von drei Wetten mit klar besserem Preis als der Schlusskurs, trotzdem −55 €. Totals-Füllwetten ohne Pinnacle-Referenz bei nur sieben Anbietern sind die schwächste Kategorie. Der Zocker-Treffer zu 3,26 ist reine Varianz (CLV +0,3 %).",
+    "written_at": "2026-11-12T08:19:11Z"
+   }
   },
   {
    "date": "2026-11-12",
@@ -1335,8 +1339,8 @@
    "n_value": null,
    "research": {
     "used": false,
-    "summary": null,
-    "n_events": 0
+    "summary": "Ein Fußball-Abend mit der Nations League: Frankreich muss in Mailand ohne Mbappé (von Zidane bestätigt), Thuram und Tchouaméni auskommen, Spanien ohne Lamine Yamal, Belgien ohne Lukaku. Diese News sind seit gestern öffentlich und stecken im Kurs, deshalb keine Korrekturen. Einziger Eingriff: ein Veto für 76ers–Raptors, weil Embiid und LeBron James fraglich sind und erst nach dem Wettzeitpunkt entschieden wird. NHL-Goalies waren beim Schreiben noch nicht bestätigt.",
+    "n_events": 10
    },
    "near_misses": [],
    "summary": null
@@ -8970,7 +8974,12 @@
    "payout": 44.54,
    "profit": 10.54,
    "clv": 0.0286,
-   "analysis": null,
+   "analysis": {
+    "text": "Partizan schlug das kriselnde Baskonia (jetzt 1–10) in Belgrad 80:66. Nach einem engen Spiel (65:60 nach drei Vierteln) erzielte Baskonia im Schlussviertel nur sechs Punkte. Ausgerechnet der fragliche Center Tonye Jekiri kehrte zurück und war mit 17 Punkten bester Werfer, Carlik Jones kam auf 16. Die Quote 1,31 lag über dem fairen Schlusskurs (1,27), der CLV war mit +2,9 % positiv.",
+    "verdict": "können",
+    "lesson": "Der Kurs bei 1xBet war tatsächlich besser als der Markt, unsere vorsichtige −0,01 wegen der Verletzungssorgen hat die Wette nicht verhindert und war im Nachhinein unnötig, aber harmlos.",
+    "written_at": "2026-11-12T08:19:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 77,4 % (Pinnacle 1,26). News-Korrektur -1,0 Prozentpunkte. Unser Wert: 76,4 %. Beste Quote 1,31 bei 1xBet (Median 1,27, 21 Anbieter), Erwartungswert +0,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Partizan ohne Center Kevarrius Hayes (Schulter) und Derek Willis (Knöchel), Tonye Jekiri (Leiste) und Luca Vildoza (Unterarm) entscheiden sich erst kurz vor dem Spiel. Die 1,32 bei 1xBet liegt deutlich über Pinnacle (1,26) und wirkt wie ein veralteter Kurs, deshalb Partizan leicht −0,01.",
    "research": "Partizan ohne Center Kevarrius Hayes (Schulter) und Derek Willis (Knöchel), Tonye Jekiri (Leiste) und Luca Vildoza (Unterarm) entscheiden sich erst kurz vor dem Spiel. Die 1,32 bei 1xBet liegt deutlich über Pinnacle (1,26) und wirkt wie ein veralteter Kurs, deshalb Partizan leicht −0,01.",
    "espn": null,
@@ -9332,7 +9341,12 @@
    "payout": 0.0,
    "profit": -33.0,
    "clv": 0.0536,
-   "analysis": null,
+   "analysis": {
+    "text": "Cleveland gewann im Madison Square Garden 115:107. James Harden machte mit 32 Punkten seinen Saisonbestwert und traf beim 101:101 gut vier Minuten vor Schluss den Dreier zur Führung. Die Knicks holten im letzten Viertel einen 10-Punkte-Rückstand auf, Brunson (27) und Towns (21 Punkte, 11 Rebounds) reichten aber nicht, bei den Freiwürfen lag Cleveland 25:11 vorn. Die Quote 1,61 war deutlich besser als der faire Schlusskurs von 1,53 (CLV +5,4 %).",
+    "verdict": "pech",
+    "lesson": "",
+    "written_at": "2026-11-12T08:19:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 62,0 % (Pinnacle 1,57). Unser Wert: 62,0 %. Beste Quote 1,61 bei 1xBet (Median 1,57, 25 Anbieter), Erwartungswert -0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Zum Wettzeitpunkt keine aktuellen Ausfallmeldungen für Knicks–Cavaliers gefunden. Keine Korrektur.",
    "research": "Zum Wettzeitpunkt keine aktuellen Ausfallmeldungen für Knicks–Cavaliers gefunden. Keine Korrektur.",
    "espn": {
@@ -10454,7 +10468,12 @@
    "payout": 0.0,
    "profit": -33.0,
    "clv": -0.0132,
-   "analysis": null,
+   "analysis": {
+    "text": "Nashville gewann in Anaheim 4:2, insgesamt also nur sechs Tore, die Über-6,5-Wette verlor. Annunen hielt 27 Schüsse, Brossoit 18, Stamkos machte in der 57. Minute (16:04 im dritten Drittel) das 4:2. Es fiel kein Empty-Net-Tor, das den siebten Treffer gebracht hätte. Der Schlusskurs ging leicht gegen uns (CLV −1,3 %), eine Füllwette ohne Vorteil.",
+    "verdict": "pech",
+    "lesson": "Totals-Füllwetten bei Nischenbüchern wie Everygame (nur 7 Anbieter, kein Pinnacle) haben keinen verlässlichen fairen Preis und sollten nachrangig behandelt werden.",
+    "written_at": "2026-11-12T08:19:11Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 53,5 %. Unser Wert: 53,5 %. Beste Quote 1,87 bei Everygame (Median 1,80, 7 Anbieter), Erwartungswert -0,0 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
    "espn": {
@@ -10465,6 +10484,56 @@
   }
  ],
  "talk": [
+  {
+   "date": "2026-11-12",
+   "messages": [
+    {
+     "from": "zocker",
+     "to": "banker",
+     "text": "Hundert Euro auf Paris zu 3,26, 111:109, plus 226! Wer hat gestern noch von meinem Wochenbudget geredet?"
+    },
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Du stehst immer noch bei minus 74. Ich habe gestern mit Partizan, Edmonton und den Spurs ganz ruhig 30,17 Euro verdient und liege bei plus 91,88."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Knicks zu 1,61 bei fairem Schlusskurs von 1,53, das sind 5,4 Prozent CLV. Dass Harden dann 32 Punkte wirft, ist Varianz, kein Fehler."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Ich hatte die Knicks auch, Herr Professor, und hab meine Runde trotzdem bezahlt. Du stehst nach fünf Tagen bei minus 153,92, da hilft dir kein CLV an der Theke."
+    },
+    {
+     "from": "kombi",
+     "to": "analyst",
+     "text": "Meine 3er-Kombi stürzte über deine Knicks. Ich verlange Wiedergutmachung für die Krone."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Deine 4er-Kombi ist am Über 216,5 in Toronto gestorben, nicht an mir. Und mit plus 201,93 sitzt die Krone ohnehin noch fest."
+    },
+    {
+     "from": "affe",
+     "to": "stammtisch",
+     "text": "Nets 2,60. Gewonnen, 145:111. Ook."
+    },
+    {
+     "from": "stammtisch",
+     "to": "affe",
+     "text": "Und ich hatte die Pelicans zu 1,47. Gegen einen Affen verloren, das bleibt aber unter uns."
+    },
+    {
+     "from": "affe",
+     "to": "zocker",
+     "text": "Ook."
+    }
+   ]
+  },
   {
    "date": "2026-11-11",
    "messages": [
