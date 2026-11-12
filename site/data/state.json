@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T05:12:53Z",
+ "generated_at": "2026-11-12T05:43:02Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -462,26 +462,26 @@
    "id": "affe",
    "totals": {
     "staked": 500.0,
-    "staked_settled": 475.0,
+    "staked_settled": 500.0,
     "returned": 374.75,
-    "profit": -100.25,
-    "roi": -0.2111,
-    "open_stake": 25.0,
-    "open_potential": 50.98,
+    "profit": -125.25,
+    "roi": -0.2505,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 6,
-    "lost": 13,
+    "lost": 14,
     "push": 0,
     "n_bets": 20,
-    "hit_rate": 0.3158,
+    "hit_rate": 0.3,
     "avg_odds": 2.562,
     "max_odds_won": 4.1,
     "avg_ev": -0.0521,
     "expected_profit": -26.04,
-    "expected_settled": -24.72,
+    "expected_settled": -26.04,
     "avg_clv": -0.0259,
     "n_clv": 18,
     "clv_positive": 5,
-    "max_drawdown": 140.25
+    "max_drawdown": 165.25
    },
    "days": [
     {
@@ -519,16 +519,16 @@
     {
      "date": "2026-11-11",
      "staked": 100.0,
-     "profit": -10.0,
-     "cum_profit": -100.25,
-     "settled": 3,
+     "profit": -35.0,
+     "cum_profit": -125.25,
+     "settled": 4,
      "n_bets": 4
     },
     {
      "date": "2026-11-12",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -100.25,
+     "cum_profit": -125.25,
      "settled": 0,
      "n_bets": 0
     },
@@ -536,7 +536,7 @@
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -100.25,
+     "cum_profit": -125.25,
      "settled": 0,
      "n_bets": 0
     }
@@ -10330,7 +10330,7 @@
    "player": "affe",
    "day": "2026-11-11",
    "placed_at": "2026-11-11T10:01:34Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "81ee484309522975fbb4df2f859fa136",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -10378,9 +10378,14 @@
     "best_odds": 2.28,
     "fair_odds": 2.295
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 5,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-12T05:43:02Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.1116,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,039 (Marktschnitt), Erwartungswert -5,3 %.",
@@ -10388,7 +10393,8 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892693"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 11.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-11-02",
@@ -10991,10 +10997,6 @@
   "credits_remaining": 256,
   "last_actions": [
    {
-    "t": "2026-11-11T05:55:03Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-11T06:55:21Z",
     "a": "Wetten abgerechnet"
    },
@@ -11048,6 +11050,10 @@
    },
    {
     "t": "2026-11-12T05:12:53Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-12T05:43:02Z",
     "a": "Wetten abgerechnet"
    }
   ]
