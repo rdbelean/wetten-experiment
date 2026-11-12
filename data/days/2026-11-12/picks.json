@@ -1,0 +1,181 @@
+{
+ "day": "2026-11-12",
+ "placed_at": "2026-11-12T10:04:48Z",
+ "n_outcomes": 152,
+ "n_value": 0,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-12-01",
+  "2026-11-12-02",
+  "2026-11-12-03"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-12-01",
+   "2026-11-12-02",
+   "2026-11-12-03"
+  ],
+  "banker": [
+   "2026-11-12-banker-01",
+   "2026-11-12-banker-02",
+   "2026-11-12-banker-03",
+   "2026-11-12-banker-04",
+   "2026-11-12-banker-05"
+  ],
+  "zocker": [
+   "2026-11-12-zocker-01",
+   "2026-11-12-zocker-02"
+  ],
+  "kombi": [
+   "2026-11-12-kombi-01",
+   "2026-11-12-kombi-02"
+  ],
+  "stammtisch": [
+   "2026-11-12-stammtisch-01",
+   "2026-11-12-stammtisch-02",
+   "2026-11-12-stammtisch-03",
+   "2026-11-12-stammtisch-04",
+   "2026-11-12-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-12-affe-01",
+   "2026-11-12-affe-02",
+   "2026-11-12-affe-03",
+   "2026-11-12-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "San Marino",
+   "away": "Belarus",
+   "league": "Nations League",
+   "label": "Sieg Belarus",
+   "odds": 1.16,
+   "book_name": "1xBet",
+   "p": 0.8752,
+   "ev": 0.0152,
+   "commence": "2026-11-12T19:45:00Z"
+  },
+  {
+   "home": "Philadelphia 76ers",
+   "away": "Toronto Raptors",
+   "league": "NBA",
+   "label": "Sieg Philadelphia 76ers",
+   "odds": 1.27,
+   "book_name": "Marathonbet",
+   "p": 0.791,
+   "ev": 0.0046,
+   "commence": "2026-11-13T00:10:00Z"
+  },
+  {
+   "home": "Armenia",
+   "away": "Cyprus",
+   "league": "Nations League",
+   "label": "Sieg Cyprus",
+   "odds": 2.85,
+   "book_name": "1xBet",
+   "p": 0.3521,
+   "ev": 0.0035,
+   "commence": "2026-11-12T17:00:00Z"
+  },
+  {
+   "home": "England",
+   "away": "Croatia",
+   "league": "Nations League",
+   "label": "Sieg England",
+   "odds": 1.29,
+   "book_name": "1xBet",
+   "p": 0.7764,
+   "ev": 0.0016,
+   "commence": "2026-11-12T19:45:00Z"
+  },
+  {
+   "home": "Valencia Basket",
+   "away": "FC Bayern München",
+   "league": "EuroLeague",
+   "label": "Sieg Valencia Basket",
+   "odds": 1.27,
+   "book_name": "Unibet SE",
+   "p": 0.7873,
+   "ev": -0.0002,
+   "commence": "2026-11-12T19:30:00Z"
+  },
+  {
+   "home": "Washington Wizards",
+   "away": "Detroit Pistons",
+   "league": "NBA",
+   "label": "Sieg Detroit Pistons",
+   "odds": 1.26,
+   "book_name": "Unibet SE",
+   "p": 0.7934,
+   "ev": -0.0003,
+   "commence": "2026-11-13T00:10:00Z"
+  },
+  {
+   "home": "Maccabi Tel Aviv",
+   "away": "Hapoel Tel Aviv",
+   "league": "EuroLeague",
+   "label": "Sieg Hapoel Tel Aviv",
+   "odds": 1.51,
+   "book_name": "1xBet",
+   "p": 0.6611,
+   "ev": -0.0018,
+   "commence": "2026-11-12T19:05:00Z"
+  },
+  {
+   "home": "Phoenix Suns",
+   "away": "Charlotte Hornets",
+   "league": "NBA",
+   "label": "Sieg Phoenix Suns",
+   "odds": 1.451,
+   "book_name": "Matchbook",
+   "p": 0.6876,
+   "ev": -0.0023,
+   "commence": "2026-11-13T02:10:00Z"
+  },
+  {
+   "home": "Turkey",
+   "away": "Belgium",
+   "league": "Nations League",
+   "label": "Sieg Turkey",
+   "odds": 3.842,
+   "book_name": "Matchbook",
+   "p": 0.2594,
+   "ev": -0.0034,
+   "commence": "2026-11-12T17:00:00Z"
+  },
+  {
+   "home": "San Marino",
+   "away": "Belarus",
+   "league": "Nations League",
+   "label": "Unter 2.5 Tore",
+   "odds": 2.35,
+   "book_name": "Unibet SE",
+   "p": 0.4239,
+   "ev": -0.0038,
+   "commence": "2026-11-12T19:45:00Z"
+  },
+  {
+   "home": "Washington Wizards",
+   "away": "Detroit Pistons",
+   "league": "NBA",
+   "label": "Detroit Pistons +10.5 (Handicap)",
+   "odds": 2.0,
+   "book_name": "Marathonbet",
+   "p": 0.498,
+   "ev": -0.0041,
+   "commence": "2026-11-13T00:10:00Z"
+  },
+  {
+   "home": "Phoenix Suns",
+   "away": "Charlotte Hornets",
+   "league": "NBA",
+   "label": "Charlotte Hornets -6.5 (Handicap)",
+   "odds": 1.95,
+   "book_name": "Coolbet",
+   "p": 0.5101,
+   "ev": -0.0052,
+   "commence": "2026-11-13T02:10:00Z"
+  }
+ ]
+}
