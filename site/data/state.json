@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T23:49:54Z",
+ "generated_at": "2026-11-12T23:59:59Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,9 +122,9 @@
     "avg_ev": 0.0045,
     "expected_profit": 2.7,
     "expected_settled": 2.71,
-    "avg_clv": 0.0027,
-    "n_clv": 23,
-    "clv_positive": 14,
+    "avg_clv": 0.0028,
+    "n_clv": 24,
+    "clv_positive": 15,
     "max_drawdown": 33.0
    },
    "days": [
@@ -12486,11 +12486,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 25.2,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T23:59:59Z",
+    "fair_p": 0.7979,
+    "pinnacle_odds": 1.24,
+    "best_odds": 1.245,
+    "fair_odds": 1.253
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0054,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 79,3 % (Pinnacle 1,24). Unser Wert: 79,3 %. Beste Quote 1,26 bei Unibet SE (Median 1,23, 24 Anbieter), Erwartungswert -0,0 %.",
    "research": null,
@@ -13086,12 +13092,8 @@
   }
  },
  "system": {
-  "credits_remaining": 231,
+  "credits_remaining": 230,
   "last_actions": [
-   {
-    "t": "2026-11-12T02:57:17Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-12T03:57:33Z",
     "a": "Wetten abgerechnet"
@@ -13146,6 +13148,10 @@
    },
    {
     "t": "2026-11-12T23:49:54Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-12T23:59:59Z",
     "a": "Schlussquoten erfasst"
    }
   ]
