@@ -9536,7 +9536,7 @@
    "player": "zocker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "c25477408b57267248b491fa5eab2572",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9589,9 +9589,26 @@
     "best_odds": 2.43,
     "fair_odds": 2.447
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T19:03:20Z",
+    "goals": [
+     {
+      "min": 9,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 58,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": 0.1648,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,2 % (Pinnacle 2,75). Unser Wert: 35,2 %. Beste Quote 2,85 bei 1xBet (Median 2,62, 16 Anbieter), Erwartungswert +0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Armenien hat eine große Verletztenliste: Spielmacher Eduard Spertsyan fehlt, dazu Avagyan, Muradyan, Bueno und Geragusian, nur vier Innenverteidiger im Kader. Zypern fehlen Kakoullis (verletzt) und Pileas (gesperrt). Das ist seit der Kadernominierung bekannt und erklärt, warum der Markt Zypern auswärts gleichauf sieht. Keine Korrektur.",
@@ -9599,14 +9616,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861146"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 16.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-zocker-02",
    "player": "zocker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "d598d5e914a905ef70b01fd1b444aecb",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9661,9 +9679,31 @@
     "best_odds": 3.88,
     "fair_odds": 3.897
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-12T19:03:20Z",
+    "goals": [
+     {
+      "min": 20,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 27,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 30,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": -0.0141,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 25,9 % (Pinnacle 3,66). Unser Wert: 25,9 %. Beste Quote 3,84 bei Matchbook (Median 3,68, 18 Anbieter), Erwartungswert -0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Belgien ohne Lukaku (Hüfte), Lavia (gesperrt) und Debast, Doku ist zurück. Die Türkei ohne Kenan Yıldız, Aral Şimşir und den gesperrten Bardakcı, dafür sind Arda Güler und Barış Alper Yılmaz wieder dabei. Ausgeglichen und bekannt, keine Korrektur.",
@@ -9671,7 +9711,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861145"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 1.4 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-kombi-01",
@@ -9924,7 +9965,7 @@
    "player": "stammtisch",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "c25477408b57267248b491fa5eab2572",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -9977,9 +10018,26 @@
     "best_odds": 2.43,
     "fair_odds": 2.447
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-12T19:03:20Z",
+    "goals": [
+     {
+      "min": 9,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 58,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": 0.0708,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,62 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -7,8 %.",
@@ -9987,14 +10045,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861146"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 7.1 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-stammtisch-02",
    "player": "stammtisch",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "d598d5e914a905ef70b01fd1b444aecb",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10049,9 +10108,31 @@
     "best_odds": 1.97,
     "fair_odds": 1.973
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-12T19:03:20Z",
+    "goals": [
+     {
+      "min": 20,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 27,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 30,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 38.0,
+   "profit": 18.0,
    "clv": -0.0369,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,9 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,7 %.",
@@ -10059,7 +10140,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861145"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 3.7 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-stammtisch-03",
