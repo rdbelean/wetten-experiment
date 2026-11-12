@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T19:03:20Z",
+ "generated_at": "2026-11-12T19:18:25Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,8 +33,8 @@
     "avg_ev": 0.0198,
     "expected_profit": 11.87,
     "expected_settled": 11.01,
-    "avg_clv": 0.0399,
-    "n_clv": 19,
+    "avg_clv": 0.034,
+    "n_clv": 20,
     "clv_positive": 14,
     "max_drawdown": 185.92
    },
@@ -122,8 +122,8 @@
     "avg_ev": 0.0045,
     "expected_profit": 2.7,
     "expected_settled": 2.28,
-    "avg_clv": 0.0029,
-    "n_clv": 19,
+    "avg_clv": 0.0015,
+    "n_clv": 20,
     "clv_positive": 11,
     "max_drawdown": 33.0
    },
@@ -11220,11 +11220,17 @@
    "kind": "filler",
    "stake": 20.0,
    "potential_payout": 38.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T19:18:25Z",
+    "fair_p": 0.4794,
+    "pinnacle_odds": 2.03,
+    "best_odds": 2.03,
+    "fair_odds": 2.086
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0796,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 52,2 % (Pinnacle 1,85). Unser Wert: 52,2 %. Beste Quote 1,92 bei Unibet NL (Median 1,81, 6 Anbieter), Erwartungswert +0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
@@ -11285,11 +11291,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 25.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T19:18:25Z",
+    "fair_p": 0.7677,
+    "pinnacle_odds": 1.29,
+    "best_odds": 1.29,
+    "fair_odds": 1.303
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.025,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,7 % (Pinnacle 1,25). Unser Wert: 78,7 %. Beste Quote 1,27 bei Unibet SE (Median 1,24, 20 Anbieter), Erwartungswert -0,0 %. Recherche: Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
    "research": "Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
@@ -12778,12 +12790,8 @@
   }
  },
  "system": {
-  "credits_remaining": 235,
+  "credits_remaining": 233,
   "last_actions": [
-   {
-    "t": "2026-11-12T00:46:41Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-12T00:56:45Z",
     "a": "Schlussquoten erfasst"
@@ -12839,6 +12847,10 @@
    {
     "t": "2026-11-12T19:03:20Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-12T19:18:25Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
