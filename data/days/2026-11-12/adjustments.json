@@ -1,0 +1,56 @@
+{
+  "written_at": "2026-11-12T08:19:11Z",
+  "summary": "Ein Fußball-Abend mit der Nations League: Frankreich muss in Mailand ohne Mbappé (von Zidane bestätigt), Thuram und Tchouaméni auskommen, Spanien ohne Lamine Yamal, Belgien ohne Lukaku. Diese News sind seit gestern öffentlich und stecken im Kurs, deshalb keine Korrekturen. Einziger Eingriff: ein Veto für 76ers–Raptors, weil Embiid und LeBron James fraglich sind und erst nach dem Wettzeitpunkt entschieden wird. NHL-Goalies waren beim Schreiben noch nicht bestätigt.",
+  "events": {
+    "c25477408b57267248b491fa5eab2572": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Armenien hat eine große Verletztenliste: Spielmacher Eduard Spertsyan fehlt, dazu Avagyan, Muradyan, Bueno und Geragusian, nur vier Innenverteidiger im Kader. Zypern fehlen Kakoullis (verletzt) und Pileas (gesperrt). Das ist seit der Kadernominierung bekannt und erklärt, warum der Markt Zypern auswärts gleichauf sieht. Keine Korrektur."
+    },
+    "3caa30ea2ac5a1be30724132ba10d82b": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Belarus fehlen Shumanskiy und Barkovskiy gesperrt, San Marino ohne Cevoli (verletzt) und Giacopetti (gesperrt). San Marino hat alle vier Spiele verloren, Belarus kann mit einem Sieg Gruppenerster werden. Bekannt und eingepreist, keine Korrektur."
+    },
+    "b2c881e252c7e0a61cb2e73eeb683885": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur."
+    },
+    "a98ff1ab79feb59277d989c656f16144": {
+      "veto": true,
+      "confidence": "mittel",
+      "notes": "Bei Philadelphia sind Joel Embiid (Plantarfasziitis) und LeBron James (Rücken) fraglich, Bona und Barlow fehlen. Toronto ohne Scottie Barnes (Leiste) und Kawhi Leonard (Knie). Ob Embiid und James spielen, entscheidet sich erst kurz vor dem Spiel und lange nach dem Wettzeitpunkt. Bei einem Favoriten zu 1,26 ist das Risiko zu groß, deshalb Veto."
+    },
+    "f3f429e773bfb2340ba2bb90f2b9dd1e": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Charlotte ohne Kon Knueppel (Bein), dazu sind Schröder, Brandon Miller, Grant Williams und Diabaté fraglich. Bei Phoenix steht nur ein Spieler auf dem Injury Report, Booker ist fit. Die Ausfälle stehen im offiziellen Bericht und sind im Kurs, keine Korrektur."
+    },
+    "c096e9bfabbbb93326413433b7c63511": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Zidane hat am Mittwoch bestätigt, dass Kylian Mbappé (Oberschenkel) gegen Italien fehlt, ebenso Thuram, Tchouaméni und Dembélé. Italien ohne Di Lorenzo und Gianluca Mancini. Die Mbappé-Nachricht kam am Vortag und steckt im Kurs von heute Morgen, keine Korrektur."
+    },
+    "4fc10c732f775c93a5b233a9985e4e35": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Real Madrid fehlen fünf Stammkräfte: Campazzo (Oberschenkel, unbestimmte Zeit), Maledon, Jantunen, Deck und Garuba. Bei Roter Stern fehlt nur Miljenović. Die Ausfälle sind seit gut einer Woche bekannt und erklären die vergleichsweise niedrige Madrid-Quote, keine Korrektur."
+    },
+    "87441c4ff41ea3d37812826345450408": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Spanien ist schon für das Viertelfinale qualifiziert und ohne Lamine Yamal (Knie), Oyarzabal ist wohl krank. Tschechien fehlen Sadílek (gesperrt), Hranáč, Karabec und Kričfaluši. Etwas Rotationsrisiko bei Spanien, aber das Team will Gruppenerster werden. Keine Korrektur."
+    },
+    "8a1174de9079b530bd6612e3fde6e2fa": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Tuchel bestätigt Kane in der Startelf. Guéhi ist verletzt (Dan Burn nachnominiert). England reicht ein Punkt fürs Viertelfinale. Keine Korrektur."
+    },
+    "d598d5e914a905ef70b01fd1b444aecb": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Belgien ohne Lukaku (Hüfte), Lavia (gesperrt) und Debast, Doku ist zurück. Die Türkei ohne Kenan Yıldız, Aral Şimşir und den gesperrten Bardakcı, dafür sind Arda Güler und Barış Alper Yılmaz wieder dabei. Ausgeglichen und bekannt, keine Korrektur."
+    }
+  }
+}

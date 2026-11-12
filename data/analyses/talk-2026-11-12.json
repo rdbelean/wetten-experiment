@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-12",
+  "written_at": "2026-11-12T08:19:11Z",
+  "messages": [
+    {
+      "from": "zocker",
+      "to": "banker",
+      "text": "Hundert Euro auf Paris zu 3,26, 111:109, plus 226! Wer hat gestern noch von meinem Wochenbudget geredet?"
+    },
+    {
+      "from": "banker",
+      "to": "zocker",
+      "text": "Du stehst immer noch bei minus 74. Ich habe gestern mit Partizan, Edmonton und den Spurs ganz ruhig 30,17 Euro verdient und liege bei plus 91,88."
+    },
+    {
+      "from": "analyst",
+      "to": "stammtisch",
+      "text": "Knicks zu 1,61 bei fairem Schlusskurs von 1,53, das sind 5,4 Prozent CLV. Dass Harden dann 32 Punkte wirft, ist Varianz, kein Fehler."
+    },
+    {
+      "from": "stammtisch",
+      "to": "analyst",
+      "text": "Ich hatte die Knicks auch, Herr Professor, und hab meine Runde trotzdem bezahlt. Du stehst nach fünf Tagen bei minus 153,92, da hilft dir kein CLV an der Theke."
+    },
+    {
+      "from": "kombi",
+      "to": "analyst",
+      "text": "Meine 3er-Kombi stürzte über deine Knicks. Ich verlange Wiedergutmachung für die Krone."
+    },
+    {
+      "from": "analyst",
+      "to": "kombi",
+      "text": "Deine 4er-Kombi ist am Über 216,5 in Toronto gestorben, nicht an mir. Und mit plus 201,93 sitzt die Krone ohnehin noch fest."
+    },
+    {
+      "from": "affe",
+      "to": "stammtisch",
+      "text": "Nets 2,60. Gewonnen, 145:111. Ook."
+    },
+    {
+      "from": "stammtisch",
+      "to": "affe",
+      "text": "Und ich hatte die Pelicans zu 1,47. Gegen einen Affen verloren, das bleibt aber unter uns."
+    },
+    {
+      "from": "affe",
+      "to": "zocker",
+      "text": "Ook."
+    }
+  ]
+}
