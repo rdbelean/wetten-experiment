@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T10:04:49Z",
+ "generated_at": "2026-11-12T16:47:23Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -211,9 +211,9 @@
     "avg_ev": 0.0185,
     "expected_profit": 9.23,
     "expected_settled": 9.22,
-    "avg_clv": 0.0002,
-    "n_clv": 5,
-    "clv_positive": 3,
+    "avg_clv": 0.0216,
+    "n_clv": 7,
+    "clv_positive": 4,
     "max_drawdown": 300.0
    },
    "days": [
@@ -389,9 +389,9 @@
     "avg_ev": -0.0519,
     "expected_profit": -31.16,
     "expected_settled": -27.01,
-    "avg_clv": -0.0673,
-    "n_clv": 23,
-    "clv_positive": 2,
+    "avg_clv": -0.0605,
+    "n_clv": 25,
+    "clv_positive": 3,
     "max_drawdown": 43.4
    },
    "days": [
@@ -478,8 +478,8 @@
     "avg_ev": -0.0539,
     "expected_profit": -32.33,
     "expected_settled": -26.04,
-    "avg_clv": -0.0259,
-    "n_clv": 18,
+    "avg_clv": -0.0288,
+    "n_clv": 19,
     "clv_positive": 5,
     "max_drawdown": 165.25
    },
@@ -10661,11 +10661,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 85.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T16:47:23Z",
+    "fair_p": 0.2706,
+    "pinnacle_odds": 3.48,
+    "best_odds": 3.5,
+    "fair_odds": 3.695
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.08,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,4 (Marktschnitt), Erwartungswert -9,2 %.",
    "research": null,
@@ -10725,11 +10731,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 52.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T16:47:23Z",
+    "fair_p": 0.4087,
+    "pinnacle_odds": 2.36,
+    "best_odds": 2.43,
+    "fair_odds": 2.447
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0708,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,62 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -7,8 %.",
    "research": null,
@@ -10791,11 +10803,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 38.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T16:47:23Z",
+    "fair_p": 0.5069,
+    "pinnacle_odds": 1.93,
+    "best_odds": 1.97,
+    "fair_odds": 1.973
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0369,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,9 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,7 %.",
    "research": null,
@@ -10855,11 +10873,17 @@
    "kind": "filler",
    "stake": 50.0,
    "potential_payout": 142.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T16:47:23Z",
+    "fair_p": 0.4087,
+    "pinnacle_odds": 2.36,
+    "best_odds": 2.43,
+    "fair_odds": 2.447
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.1648,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,2 % (Pinnacle 2,75). Unser Wert: 35,2 %. Beste Quote 2,85 bei 1xBet (Median 2,62, 16 Anbieter), Erwartungswert +0,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Armenien hat eine große Verletztenliste: Spielmacher Eduard Spertsyan fehlt, dazu Avagyan, Muradyan, Bueno und Geragusian, nur vier Innenverteidiger im Kader. Zypern fehlen Kakoullis (verletzt) und Pileas (gesperrt). Das ist seit der Kadernominierung bekannt und erklärt, warum der Markt Zypern auswärts gleichauf sieht. Keine Korrektur.",
    "research": "Armenien hat eine große Verletztenliste: Spielmacher Eduard Spertsyan fehlt, dazu Avagyan, Muradyan, Bueno und Geragusian, nur vier Innenverteidiger im Kader. Zypern fehlen Kakoullis (verletzt) und Pileas (gesperrt). Das ist seit der Kadernominierung bekannt und erklärt, warum der Markt Zypern auswärts gleichauf sieht. Keine Korrektur.",
@@ -10921,11 +10945,17 @@
    "kind": "filler",
    "stake": 50.0,
    "potential_payout": 192.1,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T16:47:23Z",
+    "fair_p": 0.2566,
+    "pinnacle_odds": 3.73,
+    "best_odds": 3.88,
+    "fair_odds": 3.897
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0141,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 25,9 % (Pinnacle 3,66). Unser Wert: 25,9 %. Beste Quote 3,84 bei Matchbook (Median 3,68, 18 Anbieter), Erwartungswert -0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Belgien ohne Lukaku (Hüfte), Lavia (gesperrt) und Debast, Doku ist zurück. Die Türkei ohne Kenan Yıldız, Aral Şimşir und den gesperrten Bardakcı, dafür sind Arda Güler und Barış Alper Yılmaz wieder dabei. Ausgeglichen und bekannt, keine Korrektur.",
    "research": "Belgien ohne Lukaku (Hüfte), Lavia (gesperrt) und Debast, Doku ist zurück. Die Türkei ohne Kenan Yıldız, Aral Şimşir und den gesperrten Bardakcı, dafür sind Arda Güler und Barış Alper Yılmaz wieder dabei. Ausgeglichen und bekannt, keine Korrektur.",
@@ -12666,12 +12696,8 @@
   }
  },
  "system": {
-  "credits_remaining": 237,
+  "credits_remaining": 235,
   "last_actions": [
-   {
-    "t": "2026-11-11T19:34:55Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-11T23:56:05Z",
     "a": "Schlussquoten erfasst"
@@ -12727,6 +12753,10 @@
    {
     "t": "2026-11-12T10:04:49Z",
     "a": "Wetten für 2026-11-12 platziert"
+   },
+   {
+    "t": "2026-11-12T16:47:23Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
