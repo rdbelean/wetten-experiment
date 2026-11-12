@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T00:56:45Z",
+ "generated_at": "2026-11-12T01:57:00Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,8 +122,8 @@
     "avg_ev": 0.0046,
     "expected_profit": 2.28,
     "expected_settled": 2.58,
-    "avg_clv": 0.0054,
-    "n_clv": 18,
+    "avg_clv": 0.0029,
+    "n_clv": 19,
     "clv_positive": 11,
     "max_drawdown": 33.0
    },
@@ -478,8 +478,8 @@
     "avg_ev": -0.0521,
     "expected_profit": -26.04,
     "expected_settled": -20.93,
-    "avg_clv": -0.0195,
-    "n_clv": 16,
+    "avg_clv": -0.0209,
+    "n_clv": 17,
     "clv_positive": 5,
     "max_drawdown": 130.75
    },
@@ -10152,11 +10152,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 63.75,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T01:57:00Z",
+    "fair_p": 0.3753,
+    "pinnacle_odds": 2.57,
+    "best_odds": 2.607,
+    "fair_odds": 2.665
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.043,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,55 (Tipico), Erwartungswert -4,0 %.",
    "research": null,
@@ -10211,11 +10217,17 @@
    "kind": "favorit",
    "stake": 33.0,
    "potential_payout": 49.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-12T01:57:00Z",
+    "fair_p": 0.639,
+    "pinnacle_odds": 1.54,
+    "best_odds": 1.549,
+    "fair_odds": 1.565
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0415,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 66,3 % (Pinnacle 1,47). Unser Wert: 66,3 %. Beste Quote 1,50 bei William Hill (Median 1,48, 11 Anbieter), Erwartungswert -0,5 %.",
    "research": null,
@@ -10875,12 +10887,8 @@
   }
  },
  "system": {
-  "credits_remaining": 260,
+  "credits_remaining": 258,
   "last_actions": [
-   {
-    "t": "2026-11-11T03:14:10Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-11T03:29:15Z",
     "a": "Wetten abgerechnet"
@@ -10935,6 +10943,10 @@
    },
    {
     "t": "2026-11-12T00:56:45Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-12T01:57:00Z",
     "a": "Schlussquoten erfasst"
    }
   ]
