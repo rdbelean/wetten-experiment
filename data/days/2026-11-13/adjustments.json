@@ -1,0 +1,81 @@
+{
+  "written_at": "2026-11-13T08:18:51Z",
+  "summary": "Letzter Wett-Tag mit Nations League, einem EuroLeague-Spitzenspiel und acht NBA-Partien. Die wichtigsten Ausfälle sind seit Tagen öffentlich und stecken im Kurs: Deutschland ohne Schlotterbeck und mit einem Debütanten im Tor, Serbien ohne Vlahović, Pavlović sowie die gesperrten Lukić und Maksimović; die Schweiz ohne Xhaka, Manzambi und Muheim, die Niederlande ohne van Dijk und Gravenberch; Barcelona in Athen ohne Punter und Makoundou; die Warriors ohne Curry, Butler und Porziņģis; Orlando ohne Banchero. Weil nichts davon frisch genug ist, um den Markt zu schlagen, gibt es keine Korrektur und kein Veto. Einzige offene Frage vor dem Wettzeitpunkt ist Jalen Suggs (Orlando), der erst kurz vor dem Spiel entschieden wird.",
+  "events": {
+    "2dbe5f3b6b2334665a10e6c5f9ff7d81": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur."
+    },
+    "b53069411f63a0d3aed21fa84d225faf": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Island führt die Gruppe C4 an und gewann das Hinspiel 3:0. Bulgarien wartet noch auf den ersten Sieg in der Nations League. Kurzfristige Ausfälle habe ich nicht gefunden, keine Korrektur."
+    },
+    "af4d45ae5e37dc2a0e146d2a9e9a926d": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Der Schweiz fehlen Kapitän Xhaka (Wade), Manzambi (Wade) und Muheim, nachnominiert wurden Schmidt und Nyakossi. Ein Punkt reicht der Schweiz zum Aufstieg, Slowenien hat den Klassenerhalt schon sicher. Die Ausfälle sind seit Anfang der Woche bekannt, keine Korrektur."
+    },
+    "9529ee7ca79126460eb063f53187f321": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Ich habe keine Team-News zu Liechtenstein gegen Aserbaidschan gefunden. Ohne Informationen gibt es keine Korrektur."
+    },
+    "199940cd0d3a9c7ad93be4063cb2df93": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Schottland unter Pocognoli muss gewinnen. In der Abwehr fehlen Welsh, Binks und McKenna (nachnominiert wurden Porteous und Bates), dafür sind McTominay, Tierney und Che Adams zurück. Nordmazedonien hat unter Sedloski in fünf Spielen kein Tor erzielt. Das ist bekannt, keine Korrektur."
+    },
+    "d0ee3d2f44cf592797f6ecae8de62edd": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Bei Serbien sagte Vlahović aus persönlichen Gründen ab, Pavlović ist verletzt, Lukić und Maksimović sind gesperrt, Trainer Paunović ebenfalls. Bei Deutschland fehlt Schlotterbeck (Sprunggelenk), im Tor steht unter Klopp ein Debütant. Beides ist seit Tagen bekannt und wiegt sich ungefähr auf, keine Korrektur."
+    },
+    "76416359b5453c01968e94702a375f16": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Bei Orlando fehlen Banchero (Knöchel), Isaac und Penda. Jalen Suggs (Knie) wird erst kurz vor dem Spiel entschieden, die Quellen widersprechen sich. Milwaukee (1–11) hat kaum Ausfälle, Turner steht mit Pause auf der Liste. Ein Handicap von −8,5 ohne Banchero und mit offenem Suggs ist riskant, aber eingepreist. Keine Korrektur."
+    },
+    "1fae7f34ec6035dffa74feb148ee26c7": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Golden State fehlen Curry, Butler, Porziņģis, Moody und Williams, Payton II ist fraglich. Bei San Antonio fehlt Quaintance, Vassell und Harris sind fraglich. Die Ausfälle stehen schon im offiziellen Report und erklären die Quote von 1,16, keine Korrektur."
+    },
+    "6eecb0b534f8cda6254b8a0884289e16": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Ich habe keine Team-News zu Andorra gegen Gibraltar gefunden, keine Korrektur."
+    },
+    "d04acca7f0f369fc53bf04cd3357cb0d": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Utah fehlen Markkanen, Jaren Jackson Jr. und Nurkić. Houston fehlen Capela und Adams, Smart ist gesperrt. Die Jazz sind stark dezimiert, das steht schon im Kurs von 1,09. Keine Korrektur."
+    },
+    "a51c350318d7570c2b74af08eedb9fcd": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Portland fehlen Morant (Oberschenkel), Sharpe, Krejci und Youngblood. Bei Sacramento sind Simmons und Raynaud draußen. Sabonis und Murray werden in nur einer Quelle als fraglich geführt. Der Favorit spielt ohne zwei Stars, aber der Markt kennt das, keine Korrektur."
+    },
+    "cc1ca0aea8a9aa6ad2e1537834fe0d04": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur."
+    },
+    "0010d3b2b15a2b8cb04053b0b1407cc5": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Den Niederlanden unter Xavi fehlen van Dijk, Gravenberch, Brobbey und Kenneth Taylor, Kapitän ist de Jong. Griechenland fehlen laut einer Quelle die gesperrten Zafeiris und Saliakas. Beide Teams haben 8 Punkte, es geht um den Gruppensieg. Für die Tore heißt das nichts Eindeutiges, keine Korrektur."
+    },
+    "6669b911691463c669a5c10574742e8e": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Bei den Knicks ist niemand auf dem Injury Report. Bei Indiana fehlen Haliburton und Sheppard, Nesmith ist fraglich. Das ist bekannt, keine Korrektur."
+    },
+    "58b860d500be69ebf853926aa1ac8271": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Bei Cleveland fehlt Mobley (Zeh), bei Miami sind Klay Thompson (Knöchel) und Larsson fraglich. Das ist eingepreist, keine Korrektur."
+    }
+  }
+}
