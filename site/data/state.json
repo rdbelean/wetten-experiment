@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-13T21:47:38Z",
+ "generated_at": "2026-11-13T23:58:43Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,9 +122,9 @@
     "avg_ev": 0.005,
     "expected_profit": 3.53,
     "expected_settled": 3.47,
-    "avg_clv": 0.0051,
-    "n_clv": 26,
-    "clv_positive": 17,
+    "avg_clv": 0.006,
+    "n_clv": 27,
+    "clv_positive": 18,
     "max_drawdown": 33.0
    },
    "days": [
@@ -14278,11 +14278,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 28.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-13T23:58:42Z",
+    "fair_p": 0.7354,
+    "pinnacle_odds": 1.35,
+    "best_odds": 1.44,
+    "fair_odds": 1.36
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0296,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,2 % (Pinnacle 1,38). Unser Wert: 71,2 %. Beste Quote 1,40 bei Everygame (Median 1,36, 23 Anbieter), Erwartungswert -0,3 %. Recherche: Bei den Knicks ist niemand auf dem Injury Report. Bei Indiana fehlen Haliburton und Sheppard, Nesmith ist fraglich. Das ist bekannt, keine Korrektur.",
    "research": "Bei den Knicks ist niemand auf dem Injury Report. Bei Indiana fehlen Haliburton und Sheppard, Nesmith ist fraglich. Das ist bekannt, keine Korrektur.",
@@ -15212,12 +15218,8 @@
   }
  },
  "system": {
-  "credits_remaining": 209,
+  "credits_remaining": 208,
   "last_actions": [
-   {
-    "t": "2026-11-12T19:33:30Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-12T20:03:38Z",
     "a": "Wetten abgerechnet"
@@ -15273,6 +15275,10 @@
    {
     "t": "2026-11-13T21:47:38Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-13T23:58:42Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
