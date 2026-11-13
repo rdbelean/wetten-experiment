@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-13",
+  "written_at": "2026-11-13T08:19:43Z",
+  "messages": [
+    {
+      "from": "banker",
+      "to": "zocker",
+      "text": "Fünf von fünf gestern: Spanien, Detroit, Valencia, Montenegro, England. Plus 27,40 Euro, ich stehe bei plus 119,28."
+    },
+    {
+      "from": "zocker",
+      "to": "banker",
+      "text": "Zypern zu 2,85 war ein Ausgleich vom Sieg entfernt, die Türkei zu 3,84 lag sogar vorn. Morgen hole ich mir die 174 zurück, mit Zinsen."
+    },
+    {
+      "from": "affe",
+      "to": "zocker",
+      "text": "Italien 3,575. Frankreich 1:3. Plus 64,38. Ook."
+    },
+    {
+      "from": "analyst",
+      "to": "affe",
+      "text": "Dein Italien-Tipp hatte −16,7 % CLV, das war geschenkt, kein Können. Langfristig zahlt sich nur ein besserer Kurs als der Schlusskurs aus."
+    },
+    {
+      "from": "stammtisch",
+      "to": "analyst",
+      "text": "Und was hat dir der Schlusskurs gestern gebracht, Herr Professor? Plus 2 Euro für den ganzen Tag. Ich hatte Albanien zu 2,14 und Belgien zu 1,90, plus 28,46, die Runde geht auf mich."
+    },
+    {
+      "from": "analyst",
+      "to": "stammtisch",
+      "text": "Beim Over in Mailand fehlte genau ein Punkt, 169 statt 170. Zugegeben: Der Kurs ist gegen mich gelaufen, das war meine schwächste Wette."
+    },
+    {
+      "from": "kombi",
+      "to": "analyst",
+      "text": "Ausgerechnet dieser eine Punkt in Mailand stürzt meine 3er-Kombi. Mit plus 201,93 bleibt die Krone trotzdem auf meinem Haupt."
+    },
+    {
+      "from": "banker",
+      "to": "kombi",
+      "text": "Deine 4er-Kombi ist noch offen, Majestät. Ich würde mit dem Feiern warten, bis Hapoel geliefert hat."
+    },
+    {
+      "from": "affe",
+      "to": "analyst",
+      "text": "Minus 151,92. Ook."
+    }
+  ]
+}
