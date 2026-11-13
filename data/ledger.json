@@ -11003,7 +11003,7 @@
    "player": "analyst",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "cc1ca0aea8a9aa6ad2e1537834fe0d04",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11055,9 +11055,31 @@
     "best_odds": 2.51,
     "fair_odds": 2.583
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T19:01:43Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 77,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 57.0,
+   "profit": 37.0,
    "clv": 0.1032,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,9 % (Pinnacle 2,68). Unser Wert: 35,9 %. Beste Quote 2,85 bei Unibet SE (Median 2,63, 15 Anbieter), Erwartungswert +2,4 %. Recherche: Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
@@ -11065,7 +11087,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861162"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 10.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-03",
@@ -11122,11 +11145,17 @@
    "kind": "filler",
    "stake": 40.0,
    "potential_payout": 49.6,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-13T19:01:42Z",
+    "fair_p": 0.829,
+    "pinnacle_odds": 1.19,
+    "best_odds": 1.2,
+    "fair_odds": 1.206
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.028,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 81,9 % (Pinnacle 1,20). Unser Wert: 81,9 %. Beste Quote 1,24 bei Marathonbet (Median 1,20, 20 Anbieter), Erwartungswert +1,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
    "research": "Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
@@ -11480,7 +11509,7 @@
    "player": "zocker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "cc1ca0aea8a9aa6ad2e1537834fe0d04",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11532,9 +11561,31 @@
     "best_odds": 2.51,
     "fair_odds": 2.583
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T19:01:43Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 77,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 161.03,
+   "profit": 104.53,
    "clv": 0.1032,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,9 % (Pinnacle 2,68). Unser Wert: 35,9 %. Beste Quote 2,85 bei Unibet SE (Median 2,63, 15 Anbieter), Erwartungswert +2,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
@@ -11542,7 +11593,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861162"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 10.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-zocker-02",
@@ -11694,8 +11746,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861162"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 1
+     }
     },
     {
      "event_id": "b53069411f63a0d3aed21fa84d225faf",
@@ -11867,7 +11922,7 @@
    "player": "stammtisch",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "cc1ca0aea8a9aa6ad2e1537834fe0d04",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11919,9 +11974,31 @@
     "best_odds": 2.51,
     "fair_odds": 2.583
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T19:01:43Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 77,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 52.6,
+   "profit": 32.6,
    "clv": 0.0181,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,63 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
@@ -11929,7 +12006,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861162"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-stammtisch-02",
