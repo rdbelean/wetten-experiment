@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-12T23:59:59Z",
+ "generated_at": "2026-11-13T00:30:11Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -17,22 +17,22 @@
    "id": "analyst",
    "totals": {
     "staked": 600.0,
-    "staked_settled": 580.0,
+    "staked_settled": 600.0,
     "returned": 448.08,
-    "profit": -131.92,
-    "roi": -0.2274,
-    "open_stake": 20.0,
-    "open_potential": 38.4,
+    "profit": -151.92,
+    "roi": -0.2532,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 10,
-    "lost": 12,
+    "lost": 13,
     "push": 0,
     "n_bets": 23,
-    "hit_rate": 0.4545,
+    "hit_rate": 0.4348,
     "avg_odds": 2.179,
     "max_odds_won": 3.891,
     "avg_ev": 0.0198,
     "expected_profit": 11.87,
-    "expected_settled": 11.82,
+    "expected_settled": 11.87,
     "avg_clv": 0.0319,
     "n_clv": 22,
     "clv_positive": 16,
@@ -82,16 +82,16 @@
     {
      "date": "2026-11-12",
      "staked": 100.0,
-     "profit": 22.0,
-     "cum_profit": -131.92,
-     "settled": 2,
+     "profit": 2.0,
+     "cum_profit": -151.92,
+     "settled": 3,
      "n_bets": 3
     },
     {
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -131.92,
+     "cum_profit": -151.92,
      "settled": 0,
      "n_bets": 0
     }
@@ -106,17 +106,17 @@
    "id": "banker",
    "totals": {
     "staked": 600.0,
-    "staked_settled": 560.0,
-    "returned": 668.68,
-    "profit": 108.68,
-    "roi": 0.1941,
-    "open_stake": 40.0,
-    "open_potential": 50.6,
-    "won": 20,
+    "staked_settled": 580.0,
+    "returned": 694.08,
+    "profit": 114.08,
+    "roi": 0.1967,
+    "open_stake": 20.0,
+    "open_potential": 25.2,
+    "won": 21,
     "lost": 2,
     "push": 0,
     "n_bets": 24,
-    "hit_rate": 0.9091,
+    "hit_rate": 0.913,
     "avg_odds": 1.324,
     "max_odds_won": 1.55,
     "avg_ev": 0.0045,
@@ -171,16 +171,16 @@
     {
      "date": "2026-11-12",
      "staked": 100.0,
-     "profit": 16.8,
-     "cum_profit": 108.68,
-     "settled": 3,
+     "profit": 22.2,
+     "cum_profit": 114.08,
+     "settled": 4,
      "n_bets": 5
     },
     {
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": 108.68,
+     "cum_profit": 114.08,
      "settled": 0,
      "n_bets": 0
     }
@@ -11193,7 +11193,7 @@
    "player": "analyst",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "ac858403bd96563aa897a9bb7554f103",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -11236,21 +11236,27 @@
     "best_odds": 2.03,
     "fair_odds": 2.086
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 83,
+    "away": 86,
+    "source": "The Odds API",
+    "t": "2026-11-13T00:30:11Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0796,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 52,2 % (Pinnacle 1,85). Unser Wert: 52,2 %. Beste Quote 1,92 bei Unibet NL (Median 1,81, 6 Anbieter), Erwartungswert +0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
-   "espn": null
+   "espn": null,
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 8.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-banker-03",
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "b2c881e252c7e0a61cb2e73eeb683885",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -11307,14 +11313,20 @@
     "best_odds": 1.29,
     "fair_odds": 1.303
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 87,
+    "source": "The Odds API",
+    "t": "2026-11-13T00:30:11Z"
+   },
+   "payout": 25.4,
+   "profit": 5.4,
    "clv": -0.025,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,7 % (Pinnacle 1,25). Unser Wert: 78,7 %. Beste Quote 1,27 bei Unibet SE (Median 1,24, 20 Anbieter), Erwartungswert -0,0 %. Recherche: Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
    "research": "Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
-   "espn": null
+   "espn": null,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 2.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-kombi-01",
@@ -13092,12 +13104,8 @@
   }
  },
  "system": {
-  "credits_remaining": 230,
+  "credits_remaining": 228,
   "last_actions": [
-   {
-    "t": "2026-11-12T03:57:33Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-12T04:57:48Z",
     "a": "Wetten abgerechnet"
@@ -13153,6 +13161,10 @@
    {
     "t": "2026-11-12T23:59:59Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-13T00:30:11Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }

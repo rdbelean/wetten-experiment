@@ -9205,7 +9205,7 @@
    "player": "analyst",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "ac858403bd96563aa897a9bb7554f103",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -9248,14 +9248,20 @@
     "best_odds": 2.03,
     "fair_odds": 2.086
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 83,
+    "away": 86,
+    "source": "The Odds API",
+    "t": "2026-11-13T00:30:11Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0796,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 52,2 % (Pinnacle 1,85). Unser Wert: 52,2 %. Beste Quote 1,92 bei Unibet NL (Median 1,81, 6 Anbieter), Erwartungswert +0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
-   "espn": null
+   "espn": null,
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 8.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-banker-01",
@@ -9430,7 +9436,7 @@
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "b2c881e252c7e0a61cb2e73eeb683885",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -9487,14 +9493,20 @@
     "best_odds": 1.29,
     "fair_odds": 1.303
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 87,
+    "source": "The Odds API",
+    "t": "2026-11-13T00:30:11Z"
+   },
+   "payout": 25.4,
+   "profit": 5.4,
    "clv": -0.025,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,7 % (Pinnacle 1,25). Unser Wert: 78,7 %. Beste Quote 1,27 bei Unibet SE (Median 1,24, 20 Anbieter), Erwartungswert -0,0 %. Recherche: Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
    "research": "Valencia weiter ohne Nikola Mirotić (Adduktoren) und Nate Reuvers (Fuß), Mo Gueye ist nach drei Spielen Pause fraglich. Bayern hatte in Runde 10 den vollen Kader, ein aktueller Bericht fehlte noch. Alles seit Tagen bekannt, keine Korrektur.",
-   "espn": null
+   "espn": null,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 2.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-banker-04",
