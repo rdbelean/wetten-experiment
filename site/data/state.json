@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-13T00:30:11Z",
+ "generated_at": "2026-11-13T03:01:00Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -462,22 +462,22 @@
    "id": "affe",
    "totals": {
     "staked": 600.0,
-    "staked_settled": 575.0,
+    "staked_settled": 600.0,
     "returned": 495.7,
-    "profit": -79.3,
-    "roi": -0.1379,
-    "open_stake": 25.0,
-    "open_potential": 56.25,
+    "profit": -104.3,
+    "roi": -0.1738,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 8,
-    "lost": 15,
+    "lost": 16,
     "push": 0,
     "n_bets": 24,
-    "hit_rate": 0.3478,
+    "hit_rate": 0.3333,
     "avg_odds": 2.572,
     "max_odds_won": 4.1,
     "avg_ev": -0.0539,
     "expected_profit": -32.33,
-    "expected_settled": -30.78,
+    "expected_settled": -32.33,
     "avg_clv": -0.0357,
     "n_clv": 22,
     "clv_positive": 5,
@@ -527,16 +527,16 @@
     {
      "date": "2026-11-12",
      "staked": 100.0,
-     "profit": 45.95,
-     "cum_profit": -79.3,
-     "settled": 3,
+     "profit": 20.95,
+     "cum_profit": -104.3,
+     "settled": 4,
      "n_bets": 4
     },
     {
      "date": "2026-11-13",
      "staked": 0,
      "profit": 0,
-     "cum_profit": -79.3,
+     "cum_profit": -104.3,
      "settled": 0,
      "n_bets": 0
     }
@@ -12379,7 +12379,7 @@
    "player": "affe",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "8b83d890c678327027f602ee80fe58cb",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -12427,9 +12427,14 @@
     "best_odds": 2.33,
     "fair_odds": 2.393
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 5,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-13T03:01:00Z"
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0597,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,25 (Marktschnitt), Erwartungswert -6,2 %.",
@@ -12437,7 +12442,8 @@
    "espn": {
     "path": "hockey/nhl",
     "id": "401892700"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 6.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-12-banker-02",
@@ -13107,10 +13113,6 @@
   "credits_remaining": 228,
   "last_actions": [
    {
-    "t": "2026-11-12T04:57:48Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-12T05:12:53Z",
     "a": "Wetten abgerechnet"
    },
@@ -13164,6 +13166,10 @@
    },
    {
     "t": "2026-11-13T00:30:11Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-13T03:01:00Z",
     "a": "Wetten abgerechnet"
    }
   ]
