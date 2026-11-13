@@ -9358,7 +9358,7 @@
    "player": "banker",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "d5c5ae8d56762b45d1ec4b85337878f3",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -9419,9 +9419,14 @@
     "best_odds": 1.245,
     "fair_odds": 1.253
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 140,
+    "away": 144,
+    "source": "ESPN",
+    "t": "2026-11-13T03:16:06Z"
+   },
+   "payout": 25.2,
+   "profit": 5.2,
    "clv": 0.0054,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 79,3 % (Pinnacle 1,24). Unser Wert: 79,3 %. Beste Quote 1,26 bei Unibet SE (Median 1,23, 24 Anbieter), Erwartungswert -0,0 %.",
@@ -9429,7 +9434,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909977"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-12-banker-03",
@@ -10105,8 +10111,11 @@
       "path": "basketball/nba",
       "id": "401909977"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 140,
+      "away": 144
+     }
     },
     {
      "event_id": "b09fb33b70c3456bcd7d9c834e1dfb97",
