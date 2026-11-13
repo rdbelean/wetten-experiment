@@ -10939,7 +10939,7 @@
    "player": "analyst",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9529ee7ca79126460eb063f53187f321",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -10992,9 +10992,21 @@
     "best_odds": 1.228,
     "fair_odds": 1.218
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 26,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 50.4,
+   "profit": 10.4,
    "clv": 0.0346,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 81,4 % (Pinnacle 1,20). Unser Wert: 81,4 %. Beste Quote 1,26 bei Unibet SE (Median 1,20, 16 Anbieter), Erwartungswert +2,5 %. Recherche: Ich habe keine Team-News zu Liechtenstein gegen Aserbaidschan gefunden. Ohne Informationen gibt es keine Korrektur.",
@@ -11002,7 +11014,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861153"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-02",
@@ -11172,7 +11185,7 @@
    "player": "banker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9529ee7ca79126460eb063f53187f321",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11225,9 +11238,21 @@
     "best_odds": 1.228,
     "fair_odds": 1.218
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 26,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 25.2,
+   "profit": 5.2,
    "clv": 0.0346,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 81,4 % (Pinnacle 1,20). Unser Wert: 81,4 %. Beste Quote 1,26 bei Unibet SE (Median 1,20, 16 Anbieter), Erwartungswert +2,5 %. Recherche: Ich habe keine Team-News zu Liechtenstein gegen Aserbaidschan gefunden. Ohne Informationen gibt es keine Korrektur.",
@@ -11235,14 +11260,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861153"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-banker-02",
    "player": "banker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "d0ee3d2f44cf592797f6ecae8de62edd",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11297,9 +11323,36 @@
     "best_odds": 1.265,
     "fair_odds": 1.262
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 3,
+      "side": "away",
+      "og": true
+     },
+     {
+      "min": 14,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 56,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 26.0,
+   "profit": 6.0,
    "clv": 0.0303,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,9 % (Pinnacle 1,26). Unser Wert: 77,9 %. Beste Quote 1,30 bei Unibet SE (Median 1,25, 18 Anbieter), Erwartungswert +1,3 %. Recherche: Bei Serbien sagte Vlahović aus persönlichen Gründen ab, Pavlović ist verletzt, Lukić und Maksimović sind gesperrt, Trainer Paunović ebenfalls. Bei Deutschland fehlt Schlotterbeck (Sprunggelenk), im Tor steht unter Klopp ein Debütant. Beides ist seit Tagen bekannt und wiegt sich ungefähr auf, keine Korrektur.",
@@ -11307,7 +11360,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861158"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.0 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-banker-03",
@@ -11619,7 +11673,7 @@
    "player": "zocker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "0010d3b2b15a2b8cb04053b0b1407cc5",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -11674,9 +11728,51 @@
     "best_odds": 6.51,
     "fair_odds": 6.734
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 7,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 6,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 12,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 18,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 33,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 40,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 59,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 61,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -43.5,
    "clv": -0.1239,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 17,1 % (Pinnacle 5,36). Unser Wert: 17,1 %. Beste Quote 5,90 bei Matchbook (Median 5,38, 18 Anbieter), Erwartungswert +1,1 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Den Niederlanden unter Xavi fehlen van Dijk, Gravenberch, Brobbey und Kenneth Taylor, Kapitän ist de Jong. Griechenland fehlen laut einer Quelle die gesperrten Zafeiris und Saliakas. Beide Teams haben 8 Punkte, es geht um den Gruppensieg. Für die Tore heißt das nichts Eindeutiges, keine Korrektur.",
@@ -11684,14 +11780,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861159"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 12.4 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-kombi-01",
    "player": "kombi",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9529ee7ca79126460eb063f53187f321+cc1ca0aea8a9aa6ad2e1537834fe0d04+b53069411f63a0d3aed21fa84d225faf",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -11721,9 +11818,16 @@
    "stake": 50.0,
    "potential_payout": 336.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "won"
+    ],
+    "t": "2026-11-13T21:47:38Z"
+   },
+   "payout": 335.76,
+   "profit": 285.76,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -11747,8 +11851,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861153"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 0,
+      "away": 1
+     }
     },
     {
      "event_id": "cc1ca0aea8a9aa6ad2e1537834fe0d04",
@@ -11796,14 +11903,18 @@
       "path": "soccer/uefa.nations",
       "id": "401861157"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 0,
+      "away": 5
+     }
     }
    ],
    "last_commence": "2026-11-13T19:45:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 6,72, Trefferchance 15,9 %, Erwartungswert +6,5 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 6,72, Trefferchance 15,9 %, Erwartungswert +6,5 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "3 von 3 Tipps gingen auf. Kombi gewonnen."
   },
   {
    "id": "2026-11-13-kombi-02",
@@ -11866,8 +11977,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861155"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 0
+     }
     },
     {
      "event_id": "d0ee3d2f44cf592797f6ecae8de62edd",
@@ -11889,8 +12003,11 @@
       "path": "soccer/uefa.nations",
       "id": "401861158"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 1,
+      "away": 3
+     }
     },
     {
      "event_id": "14487793fd7f64c0110226a5d95df8d0",
@@ -12038,7 +12155,7 @@
    "player": "stammtisch",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "6eecb0b534f8cda6254b8a0884289e16",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12091,9 +12208,26 @@
     "best_odds": 1.684,
     "fair_odds": 1.703
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 35,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 33.4,
+   "profit": 13.4,
    "clv": -0.0195,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,67 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -3,3 %.",
@@ -12101,14 +12235,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861155"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9529ee7ca79126460eb063f53187f321",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12161,9 +12296,21 @@
     "best_odds": 1.228,
     "fair_odds": 1.218
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 26,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 24.0,
+   "profit": 4.0,
    "clv": -0.0147,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,2 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,3 %.",
@@ -12171,14 +12318,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861153"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 1.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "b53069411f63a0d3aed21fa84d225faf",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12231,9 +12379,41 @@
     "best_odds": 1.77,
     "fair_odds": 1.77
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 5,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 17,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 21,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 52,
+      "side": "away",
+      "og": true
+     },
+     {
+      "min": 68,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 79,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 35.6,
+   "profit": 15.6,
    "clv": 0.0055,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,78 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -3,5 %.",
@@ -12241,14 +12421,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861157"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "eef1c96c424e42b66f49b7ec3bef1a5c",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12298,9 +12479,21 @@
     "best_odds": 2.577,
     "fair_odds": 2.647
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 42,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.1122,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,35 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -6,9 %.",
@@ -12308,14 +12501,15 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861154"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 11.2 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-affe-01",
    "player": "affe",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "b53069411f63a0d3aed21fa84d225faf",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12368,9 +12562,41 @@
     "best_odds": 5.085,
     "fair_odds": 5.333
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 5,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 17,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 21,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 52,
+      "side": "away",
+      "og": true
+     },
+     {
+      "min": 68,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 79,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.1684,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,435 (Marktschnitt), Erwartungswert -12,9 %.",
@@ -12378,7 +12604,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861157"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 16.8 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-affe-02",
@@ -12456,7 +12683,7 @@
    "player": "affe",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "eef1c96c424e42b66f49b7ec3bef1a5c",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12506,9 +12733,21 @@
     "best_odds": 3.08,
     "fair_odds": 3.137
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-13T21:47:38Z",
+    "goals": [
+     {
+      "min": 42,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -25.0,
    "clv": -0.0436,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,0 (Marktschnitt), Erwartungswert -5,6 %.",
@@ -12516,7 +12755,8 @@
    "espn": {
     "path": "soccer/uefa.nations",
     "id": "401861154"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 4.4 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-affe-04",
