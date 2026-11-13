@@ -1,0 +1,181 @@
+{
+ "day": "2026-11-13",
+ "placed_at": "2026-11-13T10:03:36Z",
+ "n_outcomes": 144,
+ "n_value": 2,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-13-01",
+  "2026-11-13-02",
+  "2026-11-13-03"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-13-01",
+   "2026-11-13-02",
+   "2026-11-13-03"
+  ],
+  "banker": [
+   "2026-11-13-banker-01",
+   "2026-11-13-banker-02",
+   "2026-11-13-banker-03",
+   "2026-11-13-banker-04",
+   "2026-11-13-banker-05"
+  ],
+  "zocker": [
+   "2026-11-13-zocker-01",
+   "2026-11-13-zocker-02"
+  ],
+  "kombi": [
+   "2026-11-13-kombi-01",
+   "2026-11-13-kombi-02"
+  ],
+  "stammtisch": [
+   "2026-11-13-stammtisch-01",
+   "2026-11-13-stammtisch-02",
+   "2026-11-13-stammtisch-03",
+   "2026-11-13-stammtisch-04",
+   "2026-11-13-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-13-affe-01",
+   "2026-11-13-affe-02",
+   "2026-11-13-affe-03",
+   "2026-11-13-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "Bulgaria",
+   "away": "Iceland",
+   "league": "Nations League",
+   "label": "Sieg Iceland",
+   "odds": 1.87,
+   "book_name": "Unibet SE",
+   "p": 0.5422,
+   "ev": 0.0139,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Andorra",
+   "away": "Gibraltar",
+   "league": "Nations League",
+   "label": "Sieg Andorra",
+   "odds": 1.75,
+   "book_name": "Unibet SE",
+   "p": 0.5792,
+   "ev": 0.0136,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Serbia",
+   "away": "Germany",
+   "league": "Nations League",
+   "label": "Sieg Germany",
+   "odds": 1.3,
+   "book_name": "Unibet SE",
+   "p": 0.7793,
+   "ev": 0.0131,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Netherlands",
+   "away": "Greece",
+   "league": "Nations League",
+   "label": "Sieg Greece",
+   "odds": 5.9,
+   "book_name": "Matchbook",
+   "p": 0.1714,
+   "ev": 0.0112,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Anadolu Efes",
+   "away": "Virtus Segafredo Bologna",
+   "league": "EuroLeague",
+   "label": "Sieg Anadolu Efes",
+   "odds": 1.53,
+   "book_name": "1xBet",
+   "p": 0.6609,
+   "ev": 0.0112,
+   "commence": "2026-11-13T17:30:00Z"
+  },
+  {
+   "home": "Houston Rockets",
+   "away": "Utah Jazz",
+   "league": "NBA",
+   "label": "Unter 219.5 Punkte",
+   "odds": 1.98,
+   "book_name": "1xBet",
+   "p": 0.5103,
+   "ev": 0.0103,
+   "commence": "2026-11-14T01:40:00Z"
+  },
+  {
+   "home": "Los Angeles Clippers",
+   "away": "Oklahoma City Thunder",
+   "league": "NBA",
+   "label": "Sieg Oklahoma City Thunder",
+   "odds": 1.38,
+   "book_name": "MyBookie",
+   "p": 0.7298,
+   "ev": 0.0071,
+   "commence": "2026-11-14T03:40:00Z"
+  },
+  {
+   "home": "Slovenia",
+   "away": "Switzerland",
+   "league": "Nations League",
+   "label": "Sieg Switzerland",
+   "odds": 1.75,
+   "book_name": "1xBet",
+   "p": 0.5731,
+   "ev": 0.0028,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Anadolu Efes",
+   "away": "Virtus Segafredo Bologna",
+   "league": "EuroLeague",
+   "label": "Unter 174.5 Punkte",
+   "odds": 2.0,
+   "book_name": "BetOnline",
+   "p": 0.5,
+   "ev": -0.0,
+   "commence": "2026-11-13T17:30:00Z"
+  },
+  {
+   "home": "Netherlands",
+   "away": "Greece",
+   "league": "Nations League",
+   "label": "Sieg Netherlands",
+   "odds": 1.62,
+   "book_name": "1xBet",
+   "p": 0.6168,
+   "ev": -0.0008,
+   "commence": "2026-11-13T19:45:00Z"
+  },
+  {
+   "home": "Chicago Bulls",
+   "away": "Atlanta Hawks",
+   "league": "NBA",
+   "label": "Sieg Atlanta Hawks",
+   "odds": 1.38,
+   "book_name": "Unibet SE",
+   "p": 0.7239,
+   "ev": -0.001,
+   "commence": "2026-11-14T01:10:00Z"
+  },
+  {
+   "home": "Serbia",
+   "away": "Germany",
+   "league": "Nations League",
+   "label": "Über 3.5 Tore",
+   "odds": 2.196,
+   "book_name": "Matchbook",
+   "p": 0.4547,
+   "ev": -0.0014,
+   "commence": "2026-11-13T19:45:00Z"
+  }
+ ]
+}

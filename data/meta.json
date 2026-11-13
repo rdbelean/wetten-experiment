@@ -1,37 +1,7 @@
 {
- "credits_remaining": 219,
- "credits_used": 281,
+ "credits_remaining": 212,
+ "credits_used": 288,
  "api_calls": [
-  {
-   "t": "2026-11-08T07:33:53Z",
-   "path": "/sports/soccer_epl/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-08T07:33:54Z",
-   "path": "/sports/soccer_epl/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-08T07:33:54Z",
-   "path": "/sports/soccer_germany_bundesliga2/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-08T07:33:54Z",
-   "path": "/sports/soccer_germany_bundesliga2/odds",
-   "cost": 2
-  },
-  {
-   "t": "2026-11-08T07:33:54Z",
-   "path": "/sports/soccer_germany_liga3/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-08T07:33:55Z",
-   "path": "/sports/soccer_germany_liga3/odds",
-   "cost": 2
-  },
   {
    "t": "2026-11-08T07:33:55Z",
    "path": "/sports/soccer_efl_champ/events",
@@ -1001,13 +971,39 @@
    "t": "2026-11-13T07:32:49Z",
    "path": "/sports/americanfootball_nfl/events",
    "cost": 0
+  },
+  {
+   "t": "2026-11-13T10:03:36Z",
+   "path": "/sports/soccer_uefa_nations_league/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-13T10:03:36Z",
+   "path": "/sports/soccer_uefa_nations_league/odds",
+   "cost": 2
+  },
+  {
+   "t": "2026-11-13T10:03:36Z",
+   "path": "/sports/basketball_nba/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-13T10:03:37Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 3
+  },
+  {
+   "t": "2026-11-13T10:03:37Z",
+   "path": "/sports/basketball_euroleague/events",
+   "cost": 0
+  },
+  {
+   "t": "2026-11-13T10:03:37Z",
+   "path": "/sports/basketball_euroleague/odds",
+   "cost": 2
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-11T01:58:46Z",
-   "a": "Schlussquoten erfasst"
-  },
   {
    "t": "2026-11-11T02:59:04Z",
    "a": "Schlussquoten erfasst"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-13T07:32:49Z",
    "a": "Kandidaten für 2026-11-13 vorbereitet"
+  },
+  {
+   "t": "2026-11-13T10:03:37Z",
+   "a": "Wetten für 2026-11-13 platziert"
   }
  ]
 }
