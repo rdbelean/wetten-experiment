@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-13T10:03:37Z",
+ "generated_at": "2026-11-13T16:45:57Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -33,9 +33,9 @@
     "avg_ev": 0.02,
     "expected_profit": 13.97,
     "expected_settled": 11.87,
-    "avg_clv": 0.0319,
-    "n_clv": 22,
-    "clv_positive": 16,
+    "avg_clv": 0.035,
+    "n_clv": 23,
+    "clv_positive": 17,
     "max_drawdown": 185.92
    },
    "days": [
@@ -211,9 +211,9 @@
     "avg_ev": 0.0185,
     "expected_profit": 11.09,
     "expected_settled": 9.23,
-    "avg_clv": 0.0216,
-    "n_clv": 7,
-    "clv_positive": 4,
+    "avg_clv": 0.0318,
+    "n_clv": 8,
+    "clv_positive": 5,
     "max_drawdown": 300.0
    },
    "days": [
@@ -389,9 +389,9 @@
     "avg_ev": -0.0506,
     "expected_profit": -35.44,
     "expected_settled": -31.16,
-    "avg_clv": -0.0546,
-    "n_clv": 28,
-    "clv_positive": 4,
+    "avg_clv": -0.0521,
+    "n_clv": 29,
+    "clv_positive": 5,
     "max_drawdown": 46.4
    },
    "days": [
@@ -12730,11 +12730,17 @@
    "kind": "value",
    "stake": 20.0,
    "potential_payout": 57.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-13T16:45:57Z",
+    "fair_p": 0.3871,
+    "pinnacle_odds": 2.51,
+    "best_odds": 2.51,
+    "fair_odds": 2.583
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.1032,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,9 % (Pinnacle 2,68). Unser Wert: 35,9 %. Beste Quote 2,85 bei Unibet SE (Median 2,63, 15 Anbieter), Erwartungswert +2,4 %. Recherche: Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
    "research": "Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
@@ -12909,11 +12915,17 @@
    "kind": "bauch",
    "stake": 20.0,
    "potential_payout": 52.6,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-13T16:45:57Z",
+    "fair_p": 0.3871,
+    "pinnacle_odds": 2.51,
+    "best_odds": 2.51,
+    "fair_odds": 2.583
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0181,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,63 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
    "research": null,
@@ -12972,11 +12984,17 @@
    "kind": "filler",
    "stake": 56.5,
    "potential_payout": 161.03,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-13T16:45:57Z",
+    "fair_p": 0.3871,
+    "pinnacle_odds": 2.51,
+    "best_odds": 2.51,
+    "fair_odds": 2.583
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.1032,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 35,9 % (Pinnacle 2,68). Unser Wert: 35,9 %. Beste Quote 2,85 bei Unibet SE (Median 2,63, 15 Anbieter), Erwartungswert +2,4 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
    "research": "Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
@@ -14816,12 +14834,8 @@
   }
  },
  "system": {
-  "credits_remaining": 212,
+  "credits_remaining": 211,
   "last_actions": [
-   {
-    "t": "2026-11-12T07:33:59Z",
-    "a": "Kandidaten für 2026-11-12 vorbereitet"
-   },
    {
     "t": "2026-11-12T10:04:49Z",
     "a": "Wetten für 2026-11-12 platziert"
@@ -14877,6 +14891,10 @@
    {
     "t": "2026-11-13T10:03:37Z",
     "a": "Wetten für 2026-11-13 platziert"
+   },
+   {
+    "t": "2026-11-13T16:45:57Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
