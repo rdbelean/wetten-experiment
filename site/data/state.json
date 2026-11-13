@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-13T07:32:49Z",
+ "generated_at": "2026-11-13T08:23:05Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -1490,8 +1490,8 @@
    "n_value": null,
    "research": {
     "used": false,
-    "summary": null,
-    "n_events": 0
+    "summary": "Letzter Wett-Tag mit Nations League, einem EuroLeague-Spitzenspiel und acht NBA-Partien. Die wichtigsten Ausfälle sind seit Tagen öffentlich und stecken im Kurs: Deutschland ohne Schlotterbeck und mit einem Debütanten im Tor, Serbien ohne Vlahović, Pavlović sowie die gesperrten Lukić und Maksimović; die Schweiz ohne Xhaka, Manzambi und Muheim, die Niederlande ohne van Dijk und Gravenberch; Barcelona in Athen ohne Punter und Makoundou; die Warriors ohne Curry, Butler und Porziņģis; Orlando ohne Banchero. Weil nichts davon frisch genug ist, um den Markt zu schlagen, gibt es keine Korrektur und kein Veto. Einzige offene Frage vor dem Wettzeitpunkt ist Jalen Suggs (Orlando), der erst kurz vor dem Spiel entschieden wird.",
+    "n_events": 15
    },
    "near_misses": [],
    "summary": null
@@ -11248,7 +11248,12 @@
    "payout": 0.0,
    "profit": -20.0,
    "clv": -0.0796,
-   "analysis": null,
+   "analysis": {
+    "text": "Mailand verlor gegen Žalgiris 83:86, mit 169 Punkten fehlte zum Über 169,5 genau ein Punkt. Knapp verloren, aber nicht unglücklich: Bis zum Anpfiff fiel die Quote auf Über von 1,85 auf 2,03 bei Pinnacle, der faire Schlusskurs lag bei 2,09, der CLV bei −8,0 %. Der Markt erwartete am Ende klar weniger Punkte. Einen ausführlichen Spielbericht habe ich nicht gefunden.",
+    "verdict": "fehler",
+    "lesson": "Eine einzelne weiche Quote (Unibet NL 1,92 bei Median 1,81 und nur sechs Anbietern) war bei Totals-Füllwetten mehrfach ein Zeichen für eine veraltete Linie und kein echter Vorteil. Solche Ausreißer sollten als Füller ausgeschlossen werden.",
+    "written_at": "2026-11-13T08:19:43Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 52,2 % (Pinnacle 1,85). Unser Wert: 52,2 %. Beste Quote 1,92 bei Unibet NL (Median 1,81, 6 Anbieter), Erwartungswert +0,3 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
    "espn": null,
@@ -11534,7 +11539,12 @@
    "payout": 52.0,
    "profit": 12.0,
    "clv": 0.0096,
-   "analysis": null,
+   "analysis": {
+    "text": "Montenegro schlug Lettland 2:1, das Spiel blieb aber bis zum Schluss offen: Die Führung in der 70. Minute glich Lettland nur zwei Minuten später aus, das Siegtor fiel erst in der 90. Minute. Die Quote 1,30 bei Unibet lag leicht über dem fairen Schlusskurs (1,29), der CLV war mit +1,0 % klein, aber positiv. Ein einwandfreier Kurs, der Sieg selbst hing an einem späten Tor. Einen ausführlichen Spielbericht habe ich nicht gefunden, die Einordnung beruht auf Ergebnis und Torminuten.",
+    "verdict": "glück",
+    "lesson": "Bei einem Favoriten zu 1,30 ist ein 1:1 kurz vor Schluss ein normales Szenario. Kleiner positiver CLV ist ein korrekter Füller, aber kein Grund für mehr Einsatz.",
+    "written_at": "2026-11-13T08:19:43Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 77,9 % (Pinnacle 1,26). Unser Wert: 77,9 %. Beste Quote 1,30 bei Unibet SE (Median 1,25, 16 Anbieter), Erwartungswert +1,2 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt.",
    "research": null,
    "espn": {
@@ -11624,7 +11634,12 @@
    "payout": 50.0,
    "profit": 10.0,
    "clv": 0.0124,
-   "analysis": null,
+   "analysis": {
+    "text": "Spanien gewann ohne Lamine Yamal in Tschechien kontrolliert 2:0, mit der Führung in der 39. Minute und dem zweiten Tor in der 90. Minute. Die Rotationssorge aus der Recherche hat sich nicht bestätigt. Die Quote 1,25 lag über dem fairen Schlusskurs (1,235), CLV +1,2 %. Eine solide Favoritenwette zum besten Preis am Markt.",
+    "verdict": "können",
+    "lesson": "Ein bereits qualifizierter Favorit mit Ausfällen war hier kein Grund zum Abschlag. Die Entscheidung, nicht zu korrigieren, war richtig.",
+    "written_at": "2026-11-13T08:19:43Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 80,6 % (Pinnacle 1,22). Unser Wert: 80,6 %. Beste Quote 1,25 bei Unibet SE (Median 1,22, 18 Anbieter), Erwartungswert +0,8 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Spanien ist schon für das Viertelfinale qualifiziert und ohne Lamine Yamal (Knie), Oyarzabal ist wohl krank. Tschechien fehlen Sadílek (gesperrt), Hranáč, Karabec und Kričfaluši. Etwas Rotationsrisiko bei Spanien, aber das Team will Gruppenerster werden. Keine Korrektur.",
    "research": "Spanien ist schon für das Viertelfinale qualifiziert und ohne Lamine Yamal (Knie), Oyarzabal ist wohl krank. Tschechien fehlen Sadílek (gesperrt), Hranáč, Karabec und Kričfaluši. Etwas Rotationsrisiko bei Spanien, aber das Team will Gruppenerster werden. Keine Korrektur.",
    "espn": {
@@ -12534,6 +12549,56 @@
   }
  ],
  "talk": [
+  {
+   "date": "2026-11-13",
+   "messages": [
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Fünf von fünf gestern: Spanien, Detroit, Valencia, Montenegro, England. Plus 27,40 Euro, ich stehe bei plus 119,28."
+    },
+    {
+     "from": "zocker",
+     "to": "banker",
+     "text": "Zypern zu 2,85 war ein Ausgleich vom Sieg entfernt, die Türkei zu 3,84 lag sogar vorn. Morgen hole ich mir die 174 zurück, mit Zinsen."
+    },
+    {
+     "from": "affe",
+     "to": "zocker",
+     "text": "Italien 3,575. Frankreich 1:3. Plus 64,38. Ook."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Dein Italien-Tipp hatte −16,7 % CLV, das war geschenkt, kein Können. Langfristig zahlt sich nur ein besserer Kurs als der Schlusskurs aus."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Und was hat dir der Schlusskurs gestern gebracht, Herr Professor? Plus 2 Euro für den ganzen Tag. Ich hatte Albanien zu 2,14 und Belgien zu 1,90, plus 28,46, die Runde geht auf mich."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Beim Over in Mailand fehlte genau ein Punkt, 169 statt 170. Zugegeben: Der Kurs ist gegen mich gelaufen, das war meine schwächste Wette."
+    },
+    {
+     "from": "kombi",
+     "to": "analyst",
+     "text": "Ausgerechnet dieser eine Punkt in Mailand stürzt meine 3er-Kombi. Mit plus 201,93 bleibt die Krone trotzdem auf meinem Haupt."
+    },
+    {
+     "from": "banker",
+     "to": "kombi",
+     "text": "Deine 4er-Kombi ist noch offen, Majestät. Ich würde mit dem Feiern warten, bis Hapoel geliefert hat."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Minus 151,92. Ook."
+    }
+   ]
+  },
   {
    "date": "2026-11-12",
    "messages": [
