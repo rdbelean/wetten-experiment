@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-14T06:26:18Z",
+ "generated_at": "2026-11-14T08:21:57Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -1476,7 +1476,11 @@
      "commence": "2026-11-13T02:10:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst gewann am 12.11. 2,00 € bei 100 € Einsatz (2 Siege, 1 Niederlage) und stand danach bei −151,92 €. Montenegro (2:1 in der 90. Minute) und Spanien (2:0 in Tschechien) waren korrekte Favoriten-Füller mit leicht positivem CLV. Das Über 169,5 in Mailand verfehlte die Linie um einen Punkt und war mit −8,0 % CLV die schwächste Wette. Tagessieger war der Stammtisch (+28,46 €, Albanien, Belgien, England), knapp vor dem Banker (+27,40 €, 5 von 5) und dem Affen (+20,95 €, Italien zu 3,575 mit −16,7 % CLV). Der Zocker verlor 100 €. Beide Kombis stehen im System noch offen, sind aber faktisch verloren: Bei der einen fehlte Mailand der eine Punkt, bei der anderen gewann Maccabi das Tel-Aviv-Derby gegen Hapoel.",
+    "lessons": "Totals-Füllwetten bei einzelnen weichen Quoten mit wenigen Anbietern sind die schlechteste Wettkategorie der Woche. Favoriten-Füller in der Nations League mit kleinem positivem CLV waren solide, aber ertragsarm.",
+    "written_at": "2026-11-14T08:17:08Z"
+   }
   },
   {
    "date": "2026-11-13",
@@ -1627,7 +1631,11 @@
      "commence": "2026-11-13T19:45:00Z"
     }
    ],
-   "summary": null
+   "summary": {
+    "text": "Der Analyst gewann am 13.11. 7,40 € bei 100 € Einsatz (2 Siege, 1 Niederlage) und schließt die Woche mit −144,52 € ab. Alle drei Wetten hatten positiven CLV: Moldau (+10,3 %, 2:1 gegen Kasachstan) und Aserbaidschan (+3,5 %, 1:0 in Liechtenstein) gewannen. Die Füllwette auf Panathinaikos (+2,8 %) ging verloren, weil Barcelona das letzte Viertel 33:17 gewann. Tagessieger war die Kombi mit +235,76 € (3er zu 6,72 mit Aserbaidschan, Moldau und Island; die 4er scheiterte an Houston/Utah Under). Dahinter lagen der Zocker (+61,03 €, Moldau zu 2,85, aber Griechenland 0:7), der Stammtisch (+45,60 €) und der Affe (+23,75 €). Der Banker hatte mit −48,80 € seinen schlechtesten Tag, weil drei NBA-Favoriten (OKC, Atlanta, Knicks) knapp verloren.",
+    "lessons": "Ein Tag, an dem Entscheidung und Ergebnis zusammenpassen: Die beiden echten Value-Wetten mit Pinnacle-Referenz gewannen, die Füllwette ohne echten Vorteil verlor. Der Banker zeigt, dass kleine Favoritenquoten in der NBA bei knappen Spielen schnell kippen.",
+    "written_at": "2026-11-14T08:17:08Z"
+   }
   }
  ],
  "bets": [
@@ -12763,7 +12771,12 @@
    "payout": 57.0,
    "profit": 37.0,
    "clv": 0.1032,
-   "analysis": null,
+   "analysis": {
+    "text": "Moldau schlug Kasachstan in Chișinău 2:1. Petru Popescu traf zweimal (39. und 77.), dazwischen glich Chesnokov aus (51.). Die Quote von 2,85 bei Unibet SE war deutlich besser als Pinnacle (2,68), und bis zum Anpfiff fiel Pinnacle sogar auf 2,51. Mit +10,3 % war das der zweitbeste CLV der Woche. Das 2:1 in der 77. Minute brauchte trotzdem etwas Glück.",
+    "verdict": "können",
+    "lesson": "Ausreißer-Quoten bei mittleren Außenseitern mit 15 Anbietern und Pinnacle-Referenz waren echter Wert und keine veraltete Linie; diese Kategorie verdient Vorrang vor Füllwetten.",
+    "written_at": "2026-11-14T08:17:08Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 35,9 % (Pinnacle 2,68). Unser Wert: 35,9 %. Beste Quote 2,85 bei Unibet SE (Median 2,63, 15 Anbieter), Erwartungswert +2,4 %. Recherche: Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
    "research": "Ich habe keine Team-News zu Moldau gegen Kasachstan gefunden (Anstoß 18:00 Uhr), keine Korrektur.",
    "espn": {
@@ -13314,7 +13327,12 @@
    "payout": 0.0,
    "profit": -40.0,
    "clv": 0.028,
-   "analysis": null,
+   "analysis": {
+    "text": "Panathinaikos führte vor dem letzten Viertel noch 57:43 und verlor 74:76. Barcelona, ohne Punter angereist, gewann das Schlussviertel 33:17; Justin Robinson machte 16 seiner 24 Punkte in den letzten fünf Minuten und traf den entscheidenden Dreier. Der Preis stimmte (1,24 gegen Pinnacle 1,20, Schlusskurs 1,19, CLV +2,8 %), der Einbruch nach einer 14-Punkte-Führung war Pech.",
+    "verdict": "pech",
+    "lesson": "Füllwette mit kleinem positivem CLV, aber 40 € auf eine Quote von 1,24 ist ein großes Risiko bei kleinem Ertrag; Füller sollten kleinere Einsätze bekommen.",
+    "written_at": "2026-11-14T08:17:08Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 81,9 % (Pinnacle 1,20). Unser Wert: 81,9 %. Beste Quote 1,24 bei Marathonbet (Median 1,20, 20 Anbieter), Erwartungswert +1,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
    "research": "Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
    "espn": null,
@@ -13394,7 +13412,12 @@
    "payout": 50.4,
    "profit": 10.4,
    "clv": 0.0346,
-   "analysis": null,
+   "analysis": {
+    "text": "Aserbaidschan gewann in Vaduz 1:0. Mahir Emreli traf in der 26. Minute, ein Treffer von Liechtenstein wurde nicht gegeben. Damit sicherte sich Aserbaidschan vorzeitig den Gruppensieg. Der Preis war gut: Unibet SE bot 1,26, während Pinnacle bei 1,20 lag und bis zum Anpfiff auf 1,19 fiel. Das ergibt einen CLV von +3,5 %.",
+    "verdict": "können",
+    "lesson": "Weiche Favoritenquoten in der Nations League, die klar über Pinnacle liegen, haben die ganze Woche positiven CLV gebracht.",
+    "written_at": "2026-11-14T08:17:08Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 81,4 % (Pinnacle 1,20). Unser Wert: 81,4 %. Beste Quote 1,26 bei Unibet SE (Median 1,20, 16 Anbieter), Erwartungswert +2,5 %. Recherche: Ich habe keine Team-News zu Liechtenstein gegen Aserbaidschan gefunden. Ohne Informationen gibt es keine Korrektur.",
    "research": "Ich habe keine Team-News zu Liechtenstein gegen Aserbaidschan gefunden. Ohne Informationen gibt es keine Korrektur.",
    "espn": {
@@ -14656,6 +14679,61 @@
  ],
  "talk": [
   {
+   "date": "2026-11-14",
+   "messages": [
+    {
+     "from": "kombi",
+     "to": "banker",
+     "text": "3er-Kombi zu 6,72: Aserbaidschan, Moldau, Island, plus 235,76 Euro. Die Krone sitzt fester denn je, plus 437,69 nach einer Woche."
+    },
+    {
+     "from": "banker",
+     "to": "kombi",
+     "text": "Und die beiden Kombis vom 12. hängen noch offen, Majestät. Mailand fehlte ein Punkt, und Maccabi hat das Derby gewonnen. Rechne mal 100 Euro ab."
+    },
+    {
+     "from": "kombi",
+     "to": "banker",
+     "text": "Und du? OKC, Atlanta, Knicks, alle drei weg, minus 48,80. Das ist der Moment, in dem ein Banker merkt, dass Favoriten auch verlieren."
+    },
+    {
+     "from": "zocker",
+     "to": "affe",
+     "text": "Moldau zu 2,85 mit 56,50 Euro, plus 104,53! Griechenland zu 5,90 war Pech, das 0:7 sagt gar nichts."
+    },
+    {
+     "from": "affe",
+     "to": "zocker",
+     "text": "Sieben. Null. Ook."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Plus 115 nach einer Woche, Herr Professor, und das ohne eine einzige CLV-Tabelle. Bauchgefühl, Moldau zu 2,63, die Runde geht auf mich."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Dein CLV liegt bei minus 5,0 Prozent, deine Erwartung bei minus 35 Euro. Du hast 150 Euro Glück gehabt, und meine Value-Wetten stehen bei plus 58,64."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Und dein Kontostand steht bei minus 144,52. Von deinen Value-Wetten allein kann ich mir kein Bier kaufen."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Barcelona dreht ein 43:57 im letzten Viertel, und ich stehe wieder als der Verlierer da. Das ist Varianz, einfach Varianz."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Bulls zu 3,40. Plus 60. Ook."
+    }
+   ]
+  },
+  {
    "date": "2026-11-13",
    "messages": [
     {
@@ -14961,7 +15039,18 @@
    ]
   }
  ],
- "weekly": null,
+ "weekly": {
+  "text": "Der Analyst beendet die Woche mit −144,52 € bei 700 € Einsatz (12 Siege, 14 Niederlagen, ROI −20,6 %) und ist damit Letzter. Erwartet waren laut Modell etwa +14 €. Die Entscheidungen waren dennoch klar besser als das Ergebnis: Der durchschnittliche CLV lag bei +3,5 %, 19 von 25 Wetten schlugen den Schlusskurs. Dieser Wert ist der beste aller Spieler. Entscheidend ist der Unterschied zwischen den Wettarten. Die 13 echten Value-Wetten (260 € Einsatz) brachten +58,64 €, und alle 12 mit erfasstem Schlusskurs hatten positiven CLV (im Schnitt +5,9 %). Die 13 Füllwetten, mit denen das Tagesbudget voll gemacht werden musste, kosteten bei 440 € Einsatz −203,16 € bei nur +1,2 % CLV. Darunter waren die schlechtesten Entscheidungen der Woche (NBA am 10.11., Über in Mailand). Die beste Entscheidung war Sunderland zu 3,89 (CLV +20 %). Die Hawks-Korrektur am 9.11. (CLV +19 %) war die stärkste Recherche, verlor aber trotzdem. Im Gesamtklassement liegt die Kombi vorn (+437,69 €, nach Abrechnung der beiden faktisch verlorenen Kombis vom 12.11. etwa +338 €). Dahinter folgen der Stammtisch (+115,06 €), der Banker (+70,48 €), der Affe (−80,55 €) und der Zocker (−112,97 €). Das ist fast reine Varianz: Die Kombi lebt von drei Treffern aus 14 Scheinen, der Stammtisch hatte −5,0 % CLV (erwartet etwa −35 €), der Banker nur +0,2 % CLV. Bei rund 30 Wetten pro Spieler liegt ein Minus von 145 € beim Analysten nur etwa eine Standardabweichung unter dem Erwartungswert. Eine Woche beweist also weder, dass das Modell funktioniert, noch dass es scheitert. Der CLV ist hier das aussagekräftigere Signal.",
+  "lessons": [
+   "Füllwetten abschaffen oder stark verkleinern: Das Budget nicht mehr zwanghaft voll setzen. Ungenutztes Geld ist besser als Wetten mit EV nahe null (Füller −203 €, Value-Wetten +59 €).",
+   "Totals-Wetten nur noch mit Pinnacle-Referenz und mindestens 10 Anbietern spielen; eine einzelne weiche Quote bei wenigen Büchern war mehrfach eine veraltete Linie.",
+   "Bei Favoriten mit mehreren Ausfällen keine Füllwetten setzen: Der Markt hat bei OKC und Cleveland bis zum Spiel gegen uns korrigiert.",
+   "Recherche-Korrekturen nur bei frischen Game-time-Entscheidungen von Stars (Muster Hawks/Dončić); bei bekannten Ausfällen keine Korrektur. Diese Linie hat sich bewährt.",
+   "Schlusskurs-Erfassung für alle Ligen sicherstellen (Telstar ohne CLV) und offene Kombis automatisch als verloren abrechnen, sobald ein Bein verloren ist (Kombis vom 12.11. hängen noch).",
+   "Erfolg weiter am CLV messen, nicht am Kontostand. Für ein Urteil über Können braucht es mehrere hundert Wetten."
+  ],
+  "written_at": "2026-11-14T08:17:08Z"
+ },
  "backtest": {
   "model": [
    {
