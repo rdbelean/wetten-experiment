@@ -11451,7 +11451,7 @@
    "player": "banker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "80ffc963f864f3d4fcefa82fd02b7d7b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -11511,9 +11511,14 @@
     "best_odds": 1.42,
     "fair_odds": 1.437
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 125,
+    "away": 117,
+    "source": "ESPN",
+    "t": "2026-11-14T03:55:04Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": -0.0398,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,4 % (Pinnacle 1,35). Unser Wert: 72,4 %. Beste Quote 1,38 bei Unibet SE (Median 1,35, 23 Anbieter), Erwartungswert -0,1 %.",
@@ -11521,7 +11526,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909299"
-   }
+   },
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 4.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-banker-05",
@@ -12642,7 +12648,7 @@
    "player": "affe",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8a40b260e8fa0d67c1f2bc2b39a24982",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -12702,9 +12708,14 @@
     "best_odds": 1.63,
     "fair_odds": 1.657
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 111,
+    "away": 142,
+    "source": "ESPN",
+    "t": "2026-11-14T03:55:04Z"
+   },
+   "payout": 38.75,
+   "profit": 13.75,
    "clv": -0.0647,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,55 (Tipico), Erwartungswert -7,1 %.",
@@ -12712,7 +12723,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909300"
-   }
+   },
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 6.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-13-affe-03",
@@ -12799,7 +12811,7 @@
    "player": "affe",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "won",
    "event_id": "80ffc963f864f3d4fcefa82fd02b7d7b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -12859,9 +12871,14 @@
     "best_odds": 3.15,
     "fair_odds": 3.287
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 125,
+    "away": 117,
+    "source": "ESPN",
+    "t": "2026-11-14T03:55:04Z"
+   },
+   "payout": 85.0,
+   "profit": 60.0,
    "clv": 0.0343,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,4 (Tipico), Erwartungswert -6,1 %.",
@@ -12869,7 +12886,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909299"
-   }
+   },
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   }
  ]
 }
