@@ -11957,7 +11957,7 @@
    "player": "kombi",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6eecb0b534f8cda6254b8a0884289e16+d0ee3d2f44cf592797f6ecae8de62edd+14487793fd7f64c0110226a5d95df8d0+d04acca7f0f369fc53bf04cd3357cb0d",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -11987,9 +11987,17 @@
    "stake": 50.0,
    "potential_payout": 344.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "open",
+     "lost"
+    ],
+    "t": "2026-11-14T04:25:37Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -12085,14 +12093,18 @@
       "path": "basketball/nba",
       "id": "401909301"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 125,
+      "away": 118
+     }
     }
    ],
    "last_commence": "2026-11-14T01:40:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 6,89, Trefferchance 15,2 %, Erwartungswert +4,9 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 6,89, Trefferchance 15,2 %, Erwartungswert +4,9 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-13-stammtisch-01",
