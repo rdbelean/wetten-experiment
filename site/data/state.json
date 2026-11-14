@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-14T00:18:50Z",
+ "generated_at": "2026-11-14T00:59:05Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -122,8 +122,8 @@
     "avg_ev": 0.005,
     "expected_profit": 3.53,
     "expected_settled": 3.47,
-    "avg_clv": 0.006,
-    "n_clv": 27,
+    "avg_clv": 0.0044,
+    "n_clv": 28,
     "clv_positive": 18,
     "max_drawdown": 33.0
    },
@@ -478,9 +478,9 @@
     "avg_ev": -0.0575,
     "expected_profit": -40.25,
     "expected_settled": -36.95,
-    "avg_clv": -0.0415,
-    "n_clv": 24,
-    "clv_positive": 5,
+    "avg_clv": -0.0395,
+    "n_clv": 26,
+    "clv_positive": 6,
     "max_drawdown": 194.3
    },
    "days": [
@@ -14361,11 +14361,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 38.75,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-14T00:59:05Z",
+    "fair_p": 0.6034,
+    "pinnacle_odds": 1.63,
+    "best_odds": 1.63,
+    "fair_odds": 1.657
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0647,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,55 (Tipico), Erwartungswert -7,1 %.",
    "research": null,
@@ -14432,11 +14438,17 @@
    "kind": "zufall",
    "stake": 25.0,
    "potential_payout": 85.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-14T00:59:05Z",
+    "fair_p": 0.3042,
+    "pinnacle_odds": 3.13,
+    "best_odds": 3.15,
+    "fair_odds": 3.287
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0343,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,4 (Tipico), Erwartungswert -6,1 %.",
    "research": null,
@@ -14503,11 +14515,17 @@
    "kind": "favorit",
    "stake": 20.0,
    "potential_payout": 27.6,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-14T00:59:05Z",
+    "fair_p": 0.6958,
+    "pinnacle_odds": 1.42,
+    "best_odds": 1.42,
+    "fair_odds": 1.437
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0398,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,4 % (Pinnacle 1,35). Unser Wert: 72,4 %. Beste Quote 1,38 bei Unibet SE (Median 1,35, 23 Anbieter), Erwartungswert -0,1 %.",
    "research": null,
@@ -15224,12 +15242,8 @@
   }
  },
  "system": {
-  "credits_remaining": 206,
+  "credits_remaining": 205,
   "last_actions": [
-   {
-    "t": "2026-11-12T21:49:04Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-12T23:49:54Z",
     "a": "Schlussquoten erfasst"
@@ -15285,6 +15299,10 @@
    {
     "t": "2026-11-14T00:18:50Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-14T00:59:05Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
