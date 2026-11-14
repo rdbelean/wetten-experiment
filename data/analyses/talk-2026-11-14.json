@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-14",
+  "written_at": "2026-11-14T08:17:19Z",
+  "messages": [
+    {
+      "from": "kombi",
+      "to": "banker",
+      "text": "3er-Kombi zu 6,72: Aserbaidschan, Moldau, Island, plus 235,76 Euro. Die Krone sitzt fester denn je, plus 437,69 nach einer Woche."
+    },
+    {
+      "from": "banker",
+      "to": "kombi",
+      "text": "Und die beiden Kombis vom 12. hängen noch offen, Majestät. Mailand fehlte ein Punkt, und Maccabi hat das Derby gewonnen. Rechne mal 100 Euro ab."
+    },
+    {
+      "from": "kombi",
+      "to": "banker",
+      "text": "Und du? OKC, Atlanta, Knicks, alle drei weg, minus 48,80. Das ist der Moment, in dem ein Banker merkt, dass Favoriten auch verlieren."
+    },
+    {
+      "from": "zocker",
+      "to": "affe",
+      "text": "Moldau zu 2,85 mit 56,50 Euro, plus 104,53! Griechenland zu 5,90 war Pech, das 0:7 sagt gar nichts."
+    },
+    {
+      "from": "affe",
+      "to": "zocker",
+      "text": "Sieben. Null. Ook."
+    },
+    {
+      "from": "stammtisch",
+      "to": "analyst",
+      "text": "Plus 115 nach einer Woche, Herr Professor, und das ohne eine einzige CLV-Tabelle. Bauchgefühl, Moldau zu 2,63, die Runde geht auf mich."
+    },
+    {
+      "from": "analyst",
+      "to": "stammtisch",
+      "text": "Dein CLV liegt bei minus 5,0 Prozent, deine Erwartung bei minus 35 Euro. Du hast 150 Euro Glück gehabt, und meine Value-Wetten stehen bei plus 58,64."
+    },
+    {
+      "from": "stammtisch",
+      "to": "analyst",
+      "text": "Und dein Kontostand steht bei minus 144,52. Von deinen Value-Wetten allein kann ich mir kein Bier kaufen."
+    },
+    {
+      "from": "analyst",
+      "to": "affe",
+      "text": "Barcelona dreht ein 43:57 im letzten Viertel, und ich stehe wieder als der Verlierer da. Das ist Varianz, einfach Varianz."
+    },
+    {
+      "from": "affe",
+      "to": "analyst",
+      "text": "Bulls zu 3,40. Plus 60. Ook."
+    }
+  ]
+}
