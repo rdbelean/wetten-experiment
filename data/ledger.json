@@ -11522,7 +11522,7 @@
    "player": "banker",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6669b911691463c669a5c10574742e8e",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -11582,9 +11582,14 @@
     "best_odds": 1.44,
     "fair_odds": 1.36
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 106,
+    "away": 104,
+    "source": "ESPN",
+    "t": "2026-11-14T02:59:43Z"
+   },
+   "payout": 0.0,
+   "profit": -20.0,
    "clv": 0.0296,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,2 % (Pinnacle 1,38). Unser Wert: 71,2 %. Beste Quote 1,40 bei Everygame (Median 1,36, 23 Anbieter), Erwartungswert -0,3 %. Recherche: Bei den Knicks ist niemand auf dem Injury Report. Bei Indiana fehlen Haliburton und Sheppard, Nesmith ist fraglich. Das ist bekannt, keine Korrektur.",
@@ -11592,7 +11597,8 @@
    "espn": {
     "path": "basketball/nba",
     "id": "401909296"
-   }
+   },
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 3.0 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-zocker-01",
