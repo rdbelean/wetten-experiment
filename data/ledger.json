@@ -11114,7 +11114,7 @@
    "player": "analyst",
    "day": "2026-11-13",
    "placed_at": "2026-11-13T10:03:36Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "2dbe5f3b6b2334665a10e6c5f9ff7d81",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -11171,14 +11171,20 @@
     "best_odds": 1.2,
     "fair_odds": 1.206
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 74,
+    "away": 76,
+    "source": "The Odds API",
+    "t": "2026-11-14T00:18:50Z"
+   },
+   "payout": 0.0,
+   "profit": -40.0,
    "clv": 0.028,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 81,9 % (Pinnacle 1,20). Unser Wert: 81,9 %. Beste Quote 1,24 bei Marathonbet (Median 1,20, 20 Anbieter), Erwartungswert +1,5 %. Füllwette: An diesem Tag gab es zu wenige echte Value-Wetten, das Budget wird aber immer komplett gesetzt. Recherche: Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
    "research": "Barcelona kommt geschwächt nach Athen: Kevin Punter (Knöchel, mehrere Wochen) und Yoan Makoundou (Knie) fehlen, Evbuomwan, Juan Núñez und Gibson sind fraglich. Bei Panathinaikos fehlt nur Mantzoukas. Das ist bekannt und erklärt den klaren Heimfavoriten, deshalb keine Korrektur.",
-   "espn": null
+   "espn": null,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 2.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-13-banker-01",
