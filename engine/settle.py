@@ -81,7 +81,7 @@ def _close(b, status, hs=None, as_=None, source=None):
     log(f"Abgerechnet {b['id']} {b['label']}: {status} {hs}:{as_} → {b['profit']:+.2f} €")
 
 
-def _settle_combo(b, now):
+def _settle_combo(b, now, results_by_event=None, odds_scores=None):
     """Kombi: jedes Bein einzeln über ESPN abrechnen; verloren, sobald ein Bein verliert."""
     changed = False
     for leg in b["legs"]:
@@ -98,7 +98,22 @@ def _settle_combo(b, now):
         elif e and e["status"] in VOID:
             leg["status"] = "void"
             changed = True
-    # Beine ohne ESPN-Zuordnung: nach 72 h als Push werten (Quote 1)
+    # Beine ohne ESPN: Ergebnis aus anderen abgerechneten Wetten aufs selbe Spiel übernehmen,
+    # sonst über die Ergebnis-Schnittstelle der Odds API (kostet 2 Credits je Sportart)
+    for leg in b["legs"]:
+        if leg["status"] != "open" or leg.get("espn"):
+            continue
+        if now < parse_ts(leg["commence"]) + timedelta(hours=C.SPORTS[leg["sport"]]["dur"] + 0.5):
+            continue
+        known = (results_by_event or {}).get(leg["event_id"])
+        if known is None and odds_scores is not None:
+            known = odds_scores(leg)
+        if known:
+            hs, as_ = known
+            leg["status"] = grade(leg, hs, as_)
+            leg["result"] = {"home": hs, "away": as_}
+            changed = True
+    # Letzte Rettung: Spiel ohne jedes Ergebnis nach 72 h als ungültig werten (Quote 1)
     for leg in b["legs"]:
         if leg["status"] == "open" and now > parse_ts(leg["commence"]) + timedelta(hours=72):
             leg["status"] = "void"
@@ -128,11 +143,32 @@ def settle(ledger):
     now = now_utc()
     changed = False
     fallback = defaultdict(list)
+    results_by_event = {x["event_id"]: (x["result"]["home"], x["result"]["away"]) for x in ledger["bets"]
+                        if x.get("market") != "combo" and (x.get("result") or {}).get("home") is not None}
+    score_cache = {}
+
+    def odds_scores(leg):
+        sk = leg["sport"]
+        if sk not in score_cache:
+            try:
+                score_cache[sk] = {e["id"]: e for e in (odds_api.scores(sk, days_from=3) or [])}
+            except Exception as ex:  # noqa: BLE001
+                log("scores Fehler", sk, ex)
+                score_cache[sk] = {}
+        e = score_cache[sk].get(leg["event_id"])
+        if not e or not e.get("completed") or not e.get("scores"):
+            return None
+        sc = {x["name"]: int(float(x["score"])) for x in e["scores"]}
+        names = list(sc)
+        hs = sc.get(leg["home"], sc[max(names, key=lambda n: similarity(n, leg["home"]))])
+        as_ = sc.get(leg["away"], sc[max(names, key=lambda n: similarity(n, leg["away"]))])
+        return hs, as_
+
     for b in ledger["bets"]:
         if b["status"] != "open":
             continue
         if b.get("market") == "combo":
-            changed = _settle_combo(b, now) or changed
+            changed = _settle_combo(b, now, results_by_event, odds_scores) or changed
             continue
         t = parse_ts(b["commence"])
         dur = C.SPORTS[b["sport"]]["dur"]
