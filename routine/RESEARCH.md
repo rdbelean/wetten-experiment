@@ -20,8 +20,11 @@ YESTERDAY=$(TZ=Europe/Berlin date -d yesterday +%F)
 `{"ok": true, "written_at": "<ISO-Zeit>", "note": "Routine kann Repo lesen und pushen"}`,
 committe, pushe (siehe Schritt 4) und beende dich.
 
-Das Experiment läuft vom 2026-11-07 bis 2026-11-13 (Wett-Tage). Ist `TODAY` nach
-2026-11-14, mach nur noch Schritt 3, falls `data/analyses/weekly.json` fehlt, und beende dich.
+Das Experiment läuft in Wochen (siehe `WEEKS` in `engine/config.py`):
+- **Woche 1:** 2026-11-07 bis 2026-11-13, jeden Tag genau 100 € pro Spieler (abgeschlossen, Fazit in `data/analyses/weekly.json`).
+- **Woche 2:** 2026-11-16 bis 2026-11-22, **1.000 € Wochenkasse** pro Spieler, kein Pflicht-Einsatz. Wetten tragen das Feld `week`.
+
+Ist `TODAY` nach dem letzten Tag der letzten Woche plus einem Tag, mach nur noch Schritt 3 und beende dich.
 
 ## 1. Analyse der abgerechneten Wetten (zuerst, dauert nicht lange)
 
@@ -75,7 +78,7 @@ noch nicht existiert. Grundlage sind die echten Ergebnisse aus `data/ledger.json
 
 ## 2. News-Recherche für heute (Hauptaufgabe)
 
-Warte, bis `data/days/$TODAY/candidates.json` existiert (bis zu 25 Minuten lang alle
+Warte, bis `data/days/$TODAY/candidates.json` existiert (bis zu 45 Minuten lang alle
 2 Minuten `git pull --rebase origin main`). Erscheint die Datei nicht, mach Schritt 1 fertig,
 pushe und beende dich. Existiert schon `data/days/$TODAY/picks.json`, sind die Wetten bereits
 platziert: dann nur Schritt 1.
@@ -126,9 +129,12 @@ Schreibe `data/days/$TODAY/adjustments.json`:
 - Auch Events **ohne** Korrektur, die du geprüft hast, mit kurzen `notes` eintragen: Die
   Notizen erscheinen bei den Wetten auf der Website.
 
-## 3. Wochenfazit (nur ab dem 2026-11-14)
+## 3. Wochenfazit (am Tag nach dem letzten Wett-Tag einer Woche, z. B. 2026-11-23 für Woche 2)
 
-Wenn alle Wetten abgerechnet sind und `data/analyses/weekly.json` fehlt:
+Wenn alle Wetten der Woche abgerechnet sind und `data/analyses/weekly-<Wochennummer>.json` fehlt
+(für Woche 2 also `weekly-2.json`). Bewerte in Woche 2 besonders, ob die neue Wochenkasse ohne Füllwetten
+dem Analysten geholfen hat, wie viel jeder Spieler von seinen 1.000 € tatsächlich eingesetzt hat, und ob die
+Kontrollgruppen wieder nur Glück hatten:
 
 ```json
 {"text": "Ehrliches Fazit der Woche in 6–10 Sätzen: Ergebnis des Analysten, Können vs. Glück (CLV!), beste und schlechteste Entscheidungen, und der Vergleich aller sechs Spieler: welche Strategie war vorn, war das Können oder Varianz (Stichprobe!), was lernen wir daraus.",

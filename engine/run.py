@@ -13,7 +13,7 @@ from . import config as C
 from . import pick as P
 from . import settle as S
 from .state import build
-from .util import day_dir, experiment_days, iso, load_env, log, now_utc, read_json, write_json
+from .util import day_dir, iso, load_env, log, now_utc, read_json, week_of, write_json
 
 
 def load_ledger():
@@ -36,7 +36,7 @@ def tick():
     now = now_utc().astimezone(C.TZ)
     ledger = load_ledger()
     today = now.date()
-    if today in experiment_days():
+    if week_of(today):
         dd = day_dir(today)
         hm = (now.hour, now.minute)
         if hm >= C.PREPARE_HOUR and not (dd / "candidates.json").exists():

@@ -21,6 +21,8 @@ def capture_closing(ledger):
     for b in ledger["bets"]:
         if b["status"] != "open" or b.get("closing") or b.get("market") == "combo":
             continue
+        if b.get("player", "analyst") not in C.VALUE_PLAYERS:
+            continue  # Credits sparen: Kontrollgruppen und Kombis ohne Schlusskurs
         t = parse_ts(b["commence"])
         if now < t - timedelta(minutes=C.CLOSING_WINDOW_MIN):
             continue

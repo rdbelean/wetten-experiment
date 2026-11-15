@@ -1158,3 +1158,45 @@ button.tk { font: inherit; border: 0; text-align: left; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) { .jp-bulbs, .jumbo.is-sweat, .jb-sweat, .tk.is-hot { animation: none !important; } }
 .sl-head { flex-wrap: wrap; }
 .sl-title { white-space: nowrap; }
+
+/* =====================================================================
+   Wochen: Umschalter, Archiv-Bericht
+   ===================================================================== */
+.wk-switch { flex: none; display: inline-flex; gap: 2px; padding: 3px; border-radius: 999px; background: rgba(255, 255, 255, .1); margin-right: 6px; }
+.wk { font: inherit; border: 0; background: none; color: #C5CEE3; font-size: .8125rem; font-weight: 750; padding: 5px 12px; border-radius: 999px; cursor: pointer; white-space: nowrap; min-height: 30px; }
+.wk[aria-pressed="true"] { background: #fff; color: var(--navy); font-style: italic; font-weight: 900; }
+.rp-table { background: #fff; border-radius: 12px; box-shadow: var(--shadow-1); overflow: hidden; margin-bottom: 14px; }
+.rp-row { display: grid; grid-template-columns: 190px 110px 100px 80px minmax(0, 1fr); gap: 12px; align-items: center; padding: 10px 16px; border-top: 1px solid var(--rule); font-size: .9375rem; color: var(--navy); }
+.rp-row:first-child { border-top: 0; }
+.rp-head { font-size: .75rem; font-weight: 700; color: #6A7590; background: #F5F7FB; padding-top: 8px; padding-bottom: 8px; }
+.rp-who { display: flex; align-items: center; gap: 8px; }
+.rp-who .av { width: 32px; height: 32px; }
+.rp-big { font-style: italic; font-weight: 900; font-size: 1.25rem; font-variation-settings: "wdth" 74; }
+.rp-row .pos, .rp-vs .pos, .rp-split .pos b { color: var(--win-solid); }
+.rp-row .neg, .rp-vs .neg, .rp-split .neg b { color: var(--loss-solid); }
+.rp-row small { display: block; font-size: .8125rem; color: #6A7590; line-height: 1.35; margin-top: 2px; }
+.verdict { font-style: italic; font-weight: 900; font-size: .8125rem; padding: 1px 10px; border-radius: 999px; }
+.v-luck { background: #FFF3B0; color: #6B5400; }
+.v-bad { background: #FDE2DA; color: #8A2A0A; }
+.v-norm { background: #E8EEFF; color: #1F3A9E; }
+.rp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.rp-card { background: #fff; border-radius: 12px; box-shadow: var(--shadow-1); padding: 16px 18px; color: var(--navy); }
+.rp-card h3 { font-style: italic; font-weight: 900; font-size: 1.125rem; margin: 0 0 10px; }
+.rp-card ul { margin: 0; padding-left: 18px; font-size: .9375rem; line-height: 1.5; color: #2E3A55; }
+.rp-card li { margin-bottom: 6px; }
+.rp-card p { margin: 0 0 8px; font-size: .9375rem; color: #2E3A55; }
+.rp-split { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px; }
+.rp-split > div { background: #F5F7FB; border-radius: 10px; padding: 10px 12px; display: flex; flex-direction: column; }
+.rp-split span { font-size: .8125rem; font-weight: 700; color: #6A7590; }
+.rp-split b { font-style: italic; font-weight: 900; font-size: 1.625rem; font-variation-settings: "wdth" 72; }
+.rp-split small { font-size: .75rem; color: #6A7590; line-height: 1.35; }
+.rp-replay { background: var(--navy); color: #fff; }
+.rp-replay p { color: #D6DDEE; }
+.rp-replay .linkish { color: var(--yel); }
+.rp-vs { display: flex; gap: 24px; margin-bottom: 10px; }
+.rp-vs small { display: block; font-size: .75rem; color: #A9B5D3; }
+.rp-vs b { font-style: italic; font-weight: 900; font-size: 2rem; font-variation-settings: "wdth" 70; }
+.rp-replay .rp-vs .pos { color: #5FD39A; }
+.rp-replay .rp-vs .neg { color: #FF8A5C; }
+@media (max-width: 900px) { .rp-grid { grid-template-columns: 1fr; } .rp-row { grid-template-columns: minmax(0, 1fr) auto; } .rp-head { display: none; } .rp-row > span:nth-child(3), .rp-row > span:nth-child(4) { display: none; } .rp-row > span:last-child { grid-column: 1 / -1; } }
+@media (max-width: 720px) { .wk { padding: 5px 10px; } .rp-split { grid-template-columns: 1fr; } }

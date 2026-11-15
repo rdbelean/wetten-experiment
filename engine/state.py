@@ -3,7 +3,9 @@ import json
 
 from . import config as C
 from .strategies import ORDER, PLAYERS
-from .util import day_dir, day_window, experiment_days, iso, now_utc, read_json, write_json
+from datetime import date
+
+from .util import current_week, day_dir, day_window, iso, now_utc, read_json, week_days, week_of, write_json
 
 
 def _merge_analysis(b):
@@ -49,9 +51,9 @@ def totals(bets):
     }
 
 
-def day_rows(bets):
+def day_rows(bets, dates):
     rows, cum = [], 0.0
-    for d in experiment_days():
+    for d in dates:
         dbets = [b for b in bets if b["day"] == d.isoformat()]
         ds = [b for b in dbets if b["status"] != "open"]
         p = sum(b["profit"] or 0 for b in ds)
@@ -59,6 +61,22 @@ def day_rows(bets):
         rows.append({"date": d.isoformat(), "staked": round(sum(b["stake"] for b in dbets), 2), "profit": round(p, 2),
                      "cum_profit": round(cum, 2), "settled": len(ds), "n_bets": len(dbets)})
     return rows
+
+
+def _day_meta(d):
+    dd = day_dir(d)
+    picks = read_json(dd / "picks.json") or {}
+    cand = read_json(dd / "candidates.json") or {}
+    adj = read_json(dd / "adjustments.json") or {}
+    frm, to = day_window(d)
+    return {
+        "date": d.isoformat(), "window": [iso(frm), iso(to)], "placed": bool(picks),
+        "n_candidates": cand.get("n_events"), "n_outcomes": picks.get("n_outcomes"), "n_value": picks.get("n_value"),
+        "research": {"used": picks.get("adjustments_used", False), "summary": adj.get("summary"),
+                     "n_events": len(adj.get("events", {}))},
+        "near_misses": picks.get("near_misses", []),
+        "summary": read_json(C.ANALYSES / f"day-{d.isoformat()}.json"),
+    }
 
 
 def _talk():
@@ -74,44 +92,48 @@ def _talk():
 def build(ledger):
     now = now_utc()
     bets = [_merge_analysis(dict(b)) for b in ledger["bets"]]
+    for b in bets:
+        if not b.get("week"):
+            w = week_of(date.fromisoformat(b["day"]))
+            b["week"] = w["id"] if w else C.WEEKS[0]["id"]
 
-    days = []
-    for d in experiment_days():
-        dd = day_dir(d)
-        picks = read_json(dd / "picks.json") or {}
-        cand = read_json(dd / "candidates.json") or {}
-        adj = read_json(dd / "adjustments.json") or {}
-        frm, to = day_window(d)
-        days.append({
-            "date": d.isoformat(), "window": [iso(frm), iso(to)], "placed": bool(picks),
-            "n_candidates": cand.get("n_events"), "n_outcomes": picks.get("n_outcomes"), "n_value": picks.get("n_value"),
-            "research": {"used": picks.get("adjustments_used", False), "summary": adj.get("summary"),
-                         "n_events": len(adj.get("events", {}))},
-            "near_misses": picks.get("near_misses", []),
-            "summary": read_json(C.ANALYSES / f"day-{d.isoformat()}.json"),
+    weeks = []
+    for w in C.WEEKS:
+        dates = week_days(w)
+        wb = [b for b in bets if b["week"] == w["id"]]
+        players_w = {}
+        for pid in ORDER:
+            pb = [b for b in wb if b["player"] == pid]
+            t = totals(pb)
+            t["budget"] = w["budget"]
+            t["remaining"] = round(max(0.0, w["budget"] - t["staked"]), 2)
+            players_w[pid] = {"totals": t, "days": day_rows(pb, dates)}
+        weeks.append({
+            "id": w["id"], "label": w["label"], "title": w["title"], "mode": w["mode"], "budget": w["budget"],
+            "daily": w["daily"], "start": w["start"].isoformat(), "n_days": w["days"],
+            "days": [_day_meta(d) for d in dates], "players": players_w,
+            "report": read_json(C.ANALYSES / f"week-{w['id']}-report.json"),
+            "weekly": read_json(C.ANALYSES / f"weekly-{w['id']}.json") or (read_json(C.ANALYSES / "weekly.json") if w["id"] == 1 else None),
         })
 
-    players = {}
-    for pid in ORDER:
-        pb = [b for b in bets if b["player"] == pid]
-        players[pid] = {**PLAYERS[pid], "id": pid, "totals": totals(pb), "days": day_rows(pb)}
-
     meta = read_json(C.META, {}) or {}
+    cur = current_week()
     state = {
-        "experiment": {"name": C.EXPERIMENT_NAME, "start": C.START_DAY.isoformat(), "days": C.NUM_DAYS,
-                       "daily_budget": C.DAILY_BUDGET, "total_budget": C.DAILY_BUDGET * C.NUM_DAYS},
+        "experiment": {"name": C.EXPERIMENT_NAME},
         "generated_at": iso(now),
-        "players": players,
+        "current_week": cur["id"],
+        "weeks": weeks,
+        "players": {pid: {**PLAYERS[pid], "id": pid} for pid in ORDER},
         "order": ORDER,
-        "days": days,
         "bets": sorted(bets, key=lambda b: (b["commence"], b["id"])),
         "talk": _talk(),
-        "weekly": read_json(C.ANALYSES / "weekly.json"),
         "backtest": read_json(C.DATA / "backtest.json"),
-        "rules": {"min_ev": C.MIN_EV, "coinflip_band": C.COINFLIP_BAND, "coinflip_min_ev": C.COINFLIP_MIN_EV,
-                  "min_odds": C.MIN_ODDS, "max_odds": C.MAX_ODDS, "max_stake": C.MAX_STAKE, "min_bets": C.MIN_BETS,
-                  "max_bets": C.MAX_BETS, "kelly_fraction": C.KELLY_FRACTION, "model_weight": C.MODEL_WEIGHT,
-                  "adj_cap": C.ADJ_CAP, "sports": {k: v["label"] for k, v in C.SPORTS.items()}},
+        "rules": {"min_ev": C.MIN_EV, "min_ev_other": C.MIN_EV_OTHER, "coinflip_band": C.COINFLIP_BAND,
+                  "coinflip_min_ev": C.COINFLIP_MIN_EV, "min_odds": C.MIN_ODDS, "max_odds": C.MAX_ODDS,
+                  "max_stake": C.MAX_STAKE, "stake_cap_weekly": C.STAKE_CAP_WEEKLY, "weekly_pace": C.WEEKLY_PACE,
+                  "kelly_fraction": C.KELLY_FRACTION, "model_weight": C.MODEL_WEIGHT,
+                  "adj_cap": C.ADJ_CAP, "excluded_books": sorted(C.EXCLUDED_BOOKS),
+                  "sports": {k: v["label"] for k, v in C.SPORTS.items()}},
         "system": {"credits_remaining": meta.get("credits_remaining"),
                    "last_actions": meta.get("last_actions", [])[-15:]},
     }

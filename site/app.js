@@ -21,7 +21,30 @@
   const wd = (iso) => fmt(iso, { weekday: "short" }).replace(".", "");
   const berlinDate = (d = new Date()) => new Intl.DateTimeFormat("en-CA", { timeZone: TZ }).format(d);
 
-  let state = null;
+  let state = null, rawState = null;
+  let selectedWeek = +(new URLSearchParams(location.search).get("woche") || 0) || null;
+  function weekView(raw, wid) {
+    const w = raw.weeks.find((x) => x.id === wid) || raw.weeks[raw.weeks.length - 1];
+    const end = new Date(new Date(w.days[w.days.length - 1].date + "T12:00:00").getTime() + 2 * 864e5).toISOString().slice(0, 10);
+    return {
+      ...raw, week: w, isArchive: w.id !== raw.current_week, days: w.days,
+      players: Object.fromEntries(raw.order.map((id) => [id, { ...raw.players[id], totals: w.players[id].totals, days: w.players[id].days }])),
+      bets: raw.bets.filter((b) => b.week === w.id),
+      talk: (raw.talk || []).filter((t) => t.date >= w.days[0].date && t.date <= end),
+      weekly: w.weekly,
+      experiment: { ...raw.experiment, days: w.n_days, daily_budget: w.daily, total_budget: w.budget, start: w.start, mode: w.mode },
+    };
+  }
+  function setWeek(wid) {
+    selectedWeek = wid;
+    const u = new URL(location.href);
+    if (wid === rawState.current_week) u.searchParams.delete("woche"); else u.searchParams.set("woche", wid);
+    history.replaceState(null, "", u);
+    state = weekView(rawState, wid);
+    selectedDay = null; open.clear(); simKey = ""; dayKey = "";
+    firstRender = true; render(); firstRender = false; pollLive();
+    window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" });
+  }
   let selectedDay = null;
   let view = decodeURIComponent(location.hash.slice(1)) || "vergleich";
   const P = () => state.players[view] || state.players.analyst;
@@ -41,7 +64,9 @@
     try {
       const r = await fetch(`data/state.json?t=${Date.now()}`, { cache: "no-store" });
       if (!r.ok) throw new Error(r.status);
-      state = await r.json();
+      rawState = await r.json();
+      if (selectedWeek == null || !rawState.weeks.some((w) => w.id === selectedWeek)) selectedWeek = rawState.current_week;
+      state = weekView(rawState, selectedWeek);
       detectNewResults();
       render();
       firstRender = false;
@@ -257,7 +282,8 @@
     let txt, short;
     if (i >= 0) { txt = `<b>Tag ${i + 1}</b> von ${state.experiment.days}`; short = `<b>Tag ${i + 1}</b>/${state.experiment.days}`; }
     else if (today < state.days[0].date) { txt = `Start am ${fmt(state.days[0].date + "T12:00:00", { weekday: "long", day: "numeric", month: "long" })}`; short = `Start ${fmt(state.days[0].date + "T12:00:00", { weekday: "short", day: "numeric", month: "numeric" })}`; }
-    else { txt = "Experiment beendet"; short = "Beendet"; }
+    else { txt = `${esc(state.week.label)} ist abgeschlossen`; short = "Abgeschlossen"; }
+    if (state.isArchive) { txt = `<b>${esc(state.week.label)}</b> (Archiv)`; short = `<b>${esc(state.week.label)}</b>`; }
     const lvTxt = lv ? `, <b>${lv} ${lv === 1 ? "Spiel" : "Spiele"} live</b>` : "";
     $("topStatus").innerHTML = `<span class="dot ${lv ? "is-live" : ""}"></span><span class="st-long">${txt}${lvTxt}, aktualisiert ${hhmm(state.generated_at)} Uhr</span><span class="st-short">${short}${lvTxt}</span>`;
   }
@@ -301,9 +327,11 @@
     odometer(bal, sgn(t.profit) + nf2.format(Math.abs(t.profit)));
     $("heroKicker").innerHTML = avatar(P().id) + (settled ? `${esc(P().name)}: Gewinn nach ${settled} abgerechneten ${settled === 1 ? "Wette" : "Wetten"}` : `${esc(P().name)}: noch keine Wette abgerechnet`);
     const total = state.experiment.total_budget;
-    let line = `<b>${eur0(total)} Spielgeld</b>, ${state.experiment.days} Tage, jeden Tag genau ${eur0(state.experiment.daily_budget)} gesetzt.`;
-    if (t.staked) line += ` Bisher ${eur(t.staked)} im Spiel, <b>${eur(t.returned)}</b> kamen zurück.`;
-    else line += " Die ersten Wetten gehen am Starttag um 11:00 Uhr raus.";
+    let line = state.experiment.mode === "weekly"
+      ? `<b>${eur0(total)} Wochenkasse</b>, kein Pflicht-Einsatz. Noch <b>${eur(t.remaining)}</b> in der Kasse.`
+      : `<b>${eur0(total)} Spielgeld</b>, ${state.experiment.days} Tage, jeden Tag genau ${eur0(state.experiment.daily_budget)} gesetzt.`;
+    if (t.staked) line += ` Bisher ${eur(t.staked)} gesetzt, <b>${eur(t.returned)}</b> kamen zurück.`;
+    else line += " Gewettet wird täglich um 11:00 Uhr, aber nur mit Vorteil.";
     $("heroLine").innerHTML = line;
     $("bSettled").style.width = `${(t.staked_settled / total) * 100}%`;
     $("bOpen").style.width = `${(t.open_stake / total) * 100}%`;
@@ -587,7 +615,7 @@
     const dayRows = [];
     state.days.forEach((d, i) => {
       const rows = state.order.map((id) => ({ id, ...state.players[id].days[i] }));
-      if (d.placed && rows.every((r) => r.n_bets && r.settled === r.n_bets)) {
+      if (d.placed && rows.some((r) => r.n_bets) && rows.every((r) => r.settled === r.n_bets)) {
         const top = rows.reduce((a, r) => (r.profit > a.profit ? r : a), rows[0]);
         stats[top.id].cups++;
         dayRows.push(...rows);
@@ -656,7 +684,7 @@
     const templates = {};
     for (const id of ids) {
       const byDay = {};
-      state.bets.filter((b) => b.player === id).forEach((b) => { (byDay[b.day] ||= []).push({ stake: b.stake, odds: b.odds, p: b.p ?? 1 / b.odds }); });
+      rawState.bets.filter((b) => b.player === id).forEach((b) => { (byDay[b.day] ||= []).push({ stake: b.stake, odds: b.odds, p: b.p ?? 1 / b.odds }); });
       templates[id] = Object.values(byDay);
     }
     const base = Object.fromEntries(ids.map((id) => [id, state.players[id].totals.profit]));
@@ -699,6 +727,39 @@
         <span class="sim-plus num">${pct(r.plus)}</span></div>`;
     }).join("");
     $("simNote").textContent = `${N.toLocaleString("de-DE")} simulierte Wochen, ${plural(open, "offene Wette", "offene Wetten")} und ${plural(remaining, "weiterer Tag", "weitere Tage")}. Der Balken zeigt, wo 80 % der Simulationen enden, der Strich den Mittelwert. Grundlage sind unsere eigenen Wahrscheinlichkeiten, das echte Ergebnis kann deutlich abweichen.`;
+  }
+
+  // ------------------------------------------------------------------ Wochenbericht / Archiv
+  function renderReport() {
+    const box = $("weekReport");
+    const prev = rawState.weeks.find((w) => w.id === state.week.id - 1);
+    const rep = state.week.report;
+    if (state.isArchive && rep) {
+      box.hidden = false;
+      $("reportTitle").textContent = rep.title;
+      $("reportLead").textContent = rep.headline;
+      const verdictCls = (v) => (/Glück/.test(v) ? "v-luck" : /Pech/.test(v) ? "v-bad" : "v-norm");
+      $("report").innerHTML = `
+        <div class="rp-table" role="table">
+          <div class="rp-row rp-head" role="row"><span>Spieler</span><span class="num">Ergebnis</span><span class="num">Erwartet</span><span class="num">CLV</span><span>Urteil</span></div>
+          ${rep.players.map((p) => `<div class="rp-row" role="row"><span class="rp-who">${avatar(p.id)}<b>${esc(p.name)}</b></span><span class="num rp-big ${p.profit >= 0 ? "pos" : "neg"}">${eur(p.profit, true)}</span><span class="num">${eur(p.expected, true)}</span><span class="num">${p.clv == null ? "–" : pct(p.clv, true)}</span><span><em class="verdict ${verdictCls(p.verdict)}">${esc(p.verdict)}</em><small>${esc(p.text)}</small></span></div>`).join("")}
+        </div>
+        <div class="rp-grid">
+          <article class="rp-card"><h3>Warum der Analyst verloren hat</h3>
+            <div class="rp-split">${rep.analyst_split.map((x) => `<div class="${x.profit >= 0 ? "pos" : "neg"}"><span>${esc(x.name)}</span><b>${eur(x.profit, true)}</b><small>${x.n} Wetten, ${eur0(x.stake)} Einsatz, CLV ${pct(x.clv, true)}, Schlusskurs ${x.clv_pos} von ${x.n_clv} geschlagen</small></div>`).join("")}</div>
+            <ul>${rep.analyst_points.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></article>
+          <article class="rp-card rp-replay"><h3>Nachgerechnet mit Wochenkasse</h3><div class="rp-vs"><div><small>Tatsächlich</small><b class="neg">${eur(rep.replay.actual, true)}</b></div><div><small>Mit neuen Regeln</small><b class="pos">${eur(rep.replay.replay, true)}</b></div></div><p>${esc(rep.replay.text)}</p></article>
+          <article class="rp-card"><h3>Regeln in ${esc(state.week.label)}</h3><ul>${rep.rules.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></article>
+          <article class="rp-card"><h3>Was sich danach geändert hat</h3><ul>${rep.changes.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></article>
+        </div>`;
+    } else if (!state.isArchive && prev?.report) {
+      box.hidden = false;
+      $("reportTitle").textContent = `Neue Regeln in ${state.week.label}`;
+      $("reportLead").textContent = state.week.title + ". Die Regeln sind die Lehren aus der Analyse von " + prev.label + ".";
+      $("report").innerHTML = `<div class="rp-grid"><article class="rp-card"><h3>Das ist neu</h3><ul>${prev.report.changes.map((t) => `<li>${esc(t)}</li>`).join("")}</ul></article>
+        <article class="rp-card rp-replay"><h3>${esc(prev.label)} im Rückblick</h3><p>${esc(prev.report.headline)}</p><button type="button" class="linkish" id="toArchive">Analyse von ${esc(prev.label)} lesen</button></article></div>`;
+      $("toArchive").addEventListener("click", () => setWeek(prev.id));
+    } else box.hidden = true;
   }
 
   // ------------------------------------------------------------------ Casino: Sound
@@ -834,12 +895,16 @@
     for (const w of loadWallet().bets) {
       if (w.status) continue;
       let winner = null;
+      const wk = rawState.weeks.find((x) => x.id === (w.week || 1));
+      if (!wk) continue;
       if (w.mkt === "day") {
-        const i = state.days.findIndex((d) => d.date === w.day);
-        const rows = state.order.map((id) => ({ id, ...state.players[id].days[i] }));
-        if (i >= 0 && rows.every((r) => r.n_bets && r.settled === r.n_bets)) winner = rows.reduce((a, r) => (r.profit > a.profit ? r : a), rows[0]).id;
-      } else if (state.days.every((d) => d.placed) && state.bets.every((b) => b.status !== "open")) {
-        winner = ranked()[0].id;
+        const i = wk.days.findIndex((d) => d.date === w.day);
+        const rows = rawState.order.map((id) => ({ id, ...wk.players[id].days[i] }));
+        if (i >= 0 && wk.days[i].placed && rows.every((r) => r.settled === r.n_bets)) winner = rows.reduce((a, r) => (r.profit > a.profit ? r : a), rows[0]).id;
+      } else {
+        const wbets = rawState.bets.filter((b) => b.week === wk.id);
+        const over = wk.days[wk.days.length - 1].date < berlinDate();
+        if (over && wbets.every((b) => b.status !== "open")) winner = rawState.order.map((id) => ({ id, p: wk.players[id].totals.profit })).sort((a, b) => b.p - a.p)[0].id;
       }
       if (!winner) continue;
       w.status = winner === w.player ? "won" : "lost";
@@ -857,7 +922,7 @@
     const w = loadWallet();
     const day = simulateDay();
     const weekOpen = state.bets.some((b) => b.status === "open") || state.days.some((d) => !d.placed);
-    const probs = tableMkt === "day" ? day?.rows : weekOpen ? Object.fromEntries(simulate().rows.map((r) => [r.id, r.win])) : null;
+    const probs = state.isArchive ? null : tableMkt === "day" ? day?.rows : weekOpen ? Object.fromEntries(simulate().rows.map((r) => [r.id, r.win])) : null;
     const chipsOn = (id) => w.bets.filter((b) => !b.status && b.player === id && b.mkt === tableMkt && (tableMkt === "week" || b.day === day?.date)).reduce((a, b) => a + b.chips, 0);
     const felt = $("felt");
     const denoms = [10, 50, 100, "all"];
@@ -873,7 +938,7 @@
       <div class="spots">${probs ? state.order.map((id) => {
         const on = chipsOn(id), odd = payoutOdds(probs[id] || 0);
         return `<button type="button" class="spot" data-p="${id}" data-o="${odd}">${avatar(id, "av-m")}<span class="sp-name">${esc(shortName(id))}</span><span class="sp-odds">${nf2.format(odd)}</span>${on ? `<span class="sp-on">${chipsFmt(on)}</span>` : ""}</button>`;
-      }).join("") : `<p class="felt-empty">${tableMkt === "day" ? "Gerade läuft kein Spieltag. Um 11:00 Uhr öffnet der Tisch wieder." : "Die Woche ist entschieden."}</p>`}</div>
+      }).join("") : `<p class="felt-empty">${state.isArchive ? "Das ist das Archiv. Gesetzt wird in der laufenden Woche." : tableMkt === "day" ? "Gerade läuft kein Spieltag. Um 11:00 Uhr öffnet der Tisch wieder." : "Die Woche ist entschieden."}</p>`}</div>
       <div class="felt-foot">${openBets.length ? `<span>Im Spiel: ${openBets.map((b) => `${chipsFmt(b.chips)} auf ${esc(shortName(b.player))} (${b.mkt === "day" ? "Tag" : "Woche"})`).join(", ")}</span>` : "<span>Noch nichts gesetzt. Chips antippen, dann Spieler wählen.</span>"}${recent.length ? `<span class="felt-hist">${recent.map((b) => `<em class="${b.status}">${b.status === "won" ? "+" + chipsFmt(b.chips * b.odds) : "−" + chipsFmt(b.chips)}</em>`).join(" ")}</span>` : ""}${w.chips < 10 && !openBets.length ? `<button type="button" class="refill" id="refill">Pleite? Das Haus gibt 200 Chips aus</button>` : ""}</div>`;
     felt.querySelectorAll("[data-m]").forEach((b) => b.addEventListener("click", () => { tableMkt = b.dataset.m; renderTable(); }));
     felt.querySelectorAll("[data-d]").forEach((b) => b.addEventListener("click", () => { tableDenom = b.dataset.d === "all" ? "all" : +b.dataset.d; sfx("chip"); renderTable(); }));
@@ -881,7 +946,7 @@
       const amt = tableDenom === "all" ? w.chips : Math.min(tableDenom, w.chips);
       if (amt < 1) { toast("Keine Chips mehr. Der Automat oder das Haus hilft dir aus.", true); return; }
       w.chips -= amt;
-      w.bets.push({ id: `${Date.now()}`, mkt: tableMkt, day: tableMkt === "day" ? day.date : null, player: b.dataset.p, chips: amt, odds: +b.dataset.o });
+      w.bets.push({ id: `${Date.now()}`, week: state.week.id, mkt: tableMkt, day: tableMkt === "day" ? day.date : null, player: b.dataset.p, chips: amt, odds: +b.dataset.o });
       if (w.bets.length > 40) w.bets = w.bets.slice(-40);
       saveWallet(); sfx("chip"); renderTable(); renderSlot();
     }));
@@ -1007,7 +1072,7 @@
     const box = $("stageMain");
     const e = pool.find((x) => x.key === stageKey);
     if (!e) {
-      box.innerHTML = `<article class="jumbo jumbo-empty"><p class="jb-idle">Gerade laufen keine Wetten</p><p class="jb-idle-sub">Täglich um 11:00 Uhr gehen 6 Spieler mit je 100 € an den Start.</p></article>`;
+      box.innerHTML = `<article class="jumbo jumbo-empty"><p class="jb-idle">Gerade laufen keine Wetten</p><p class="jb-idle-sub">${state.isArchive ? `${esc(state.week.label)} ist abgeschlossen. Alle Wetten und die Analyse stehen weiter unten.` : state.experiment.mode === "weekly" ? "Täglich um 11:00 Uhr setzen 6 Spieler aus ihrer Wochenkasse, aber nur mit Vorteil." : "Täglich um 11:00 Uhr gehen 6 Spieler mit je 100 € an den Start."}</p></article>`;
       return;
     }
     const m = e.espn ? matches[e.espn.id] : null;
@@ -1645,17 +1710,20 @@
   function renderTabs() {
     const box = $("tabs");
     const tabs = [["vergleich", "Vergleich", null], ...state.order.map((id) => [id, state.players[id].name, state.players[id]])];
-    box.innerHTML = tabs.map(([id, name, pl]) => {
+    const weeksHtml = `<span class="wk-switch" role="group" aria-label="Woche">${rawState.weeks.map((w) => `<button type="button" class="wk" aria-pressed="${w.id === state.week.id}" data-w="${w.id}">${esc(w.label)}${w.id === rawState.current_week ? "" : ""}</button>`).join("")}</span>`;
+    box.innerHTML = weeksHtml + tabs.map(([id, name, pl]) => {
       const t = pl?.totals;
       const val = t && t.staked_settled ? `<b class="${t.profit > 0 ? "t-pos" : t.profit < 0 ? "t-neg" : ""}">${eur(t.profit, true)}</b>` : "";
       return `<button class="tab" role="tab" aria-selected="${id === view}" data-v="${id}" style="--c:${pl ? pl.color : "#fff"}">${pl ? "<i></i>" : ""}${esc(name)} ${val}</button>`;
     }).join("");
     box.querySelectorAll(".tab").forEach((b) => b.addEventListener("click", () => { setView(b.dataset.v); window.scrollTo({ top: 0, behavior: REDUCED ? "auto" : "smooth" }); }));
+    box.querySelectorAll(".wk").forEach((b) => b.addEventListener("click", () => { if (+b.dataset.w !== state.week.id) setWeek(+b.dataset.w); }));
     const act = box.querySelector('.tab[aria-selected="true"]');
     if (act) box.scrollTo({ left: act.offsetLeft - box.clientWidth / 2 + act.clientWidth / 2, behavior: firstRender ? "auto" : "smooth" });
   }
 
   function renderCompare() {
+    $("boardTitle").textContent = `${state.week.label}: ${state.week.title}${state.isArchive ? " (Archiv)" : ""}`;
     const rows = ranked();
     const anyBets = rows.some((p) => p.totals.n_bets);
     const head = `<div class="lb-row lb-head" role="row"><span class="lb-rank">#</span><span>Spieler</span><span class="lb-num">Kontostand</span><span class="lb-num lb-roi">Rendite</span><span class="lb-num lb-hide-s">Treffer</span><span class="lb-num lb-hide-m lb-hide-s">Ø Quote</span><span class="lb-num lb-hide-m lb-hide-s">Größter Rückgang</span></div>`;
@@ -1672,6 +1740,7 @@
         <span class="lb-num lb-hide-m lb-hide-s">${t.staked_settled ? eur(-t.max_drawdown) : "–"}</span></div>`;
     }).join("");
     $("leaderboard").querySelectorAll(".lb-row.is-link").forEach((r) => r.addEventListener("click", () => setView(r.dataset.v)));
+    renderReport();
     renderTable();
     renderSlot();
     renderTalk();

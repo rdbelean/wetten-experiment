@@ -20,9 +20,24 @@ START_DAY = date(2026, 11, 7)
 NUM_DAYS = 7
 DAILY_BUDGET = 100.0
 
+# --- Wochen ---------------------------------------------------------------
+# Woche 1: jeden Tag genau 100 € (Pflicht). Woche 2: 1.000 € Wochenkasse, kein Pflicht-Einsatz.
+WEEKS = [
+    dict(id=1, start=date(2026, 11, 7), days=7, mode="daily", budget=700.0, daily=100.0,
+         label="Woche 1", title="Tagesbudget: jeden Tag genau 100 €"),
+    dict(id=2, start=date(2026, 11, 16), days=7, mode="weekly", budget=1000.0, daily=None,
+         label="Woche 2", title="Wochenkasse: 1.000 € pro Spieler, kein Pflicht-Einsatz"),
+]
+WEEKLY_PACE = 2.0             # Tagesrahmen höchstens das Doppelte des fairen Anteils (Restkasse / Resttage)
+STAKE_CAP_WEEKLY = 80.0       # Analyst: max. 80 € pro Wette
+MIN_EV_OTHER = 0.04           # NBA, NHL, EuroLeague, NFL: mind. +4 % Vorteil (Fußball bleibt bei +2 %)
+VALUE_PLAYERS = {"analyst", "banker", "zocker"}  # nur für diese werden Schlusskurse geholt (Credits sparen)
+# US-Offshore-Anbieter: in Deutschland nicht nutzbar, Quoten in Woche 1 oft veraltet (negativer CLV)
+EXCLUDED_BOOKS = {"everygame", "betonlineag", "mybookieag", "betanysports", "gtbets"}
+
 # Ein "Wett-Tag" D umfasst alle Events mit Anstoß von D 12:00 bis D+1 12:00 (Berlin).
 DAY_START_HOUR = 12
-PREPARE_HOUR = (8, 30)   # Quoten holen + Kandidaten für die Claude-Recherche
+PREPARE_HOUR = (9, 30)   # Quoten holen + Kandidaten für die Claude-Recherche
 PICK_HOUR = (11, 0)      # Wetten final platzieren
 
 # --- Auswahl- und Einsatzregeln ---------------------------------------------

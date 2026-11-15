@@ -54,8 +54,30 @@ def day_window(d: date):
     return start.astimezone(timezone.utc), (start + timedelta(days=1)).astimezone(timezone.utc)
 
 
+def week_days(w):
+    return [w["start"] + timedelta(days=i) for i in range(w["days"])]
+
+
+def week_of(d: date):
+    for w in C.WEEKS:
+        if d in week_days(w):
+            return w
+    return None
+
+
+def current_week(today: date = None):
+    """Laufende Woche, sonst die nächste kommende, sonst die letzte."""
+    today = today or now_utc().astimezone(C.TZ).date()
+    for w in C.WEEKS:
+        if today in week_days(w):
+            return w
+    upcoming = [w for w in C.WEEKS if w["start"] > today]
+    return upcoming[0] if upcoming else C.WEEKS[-1]
+
+
 def experiment_days():
-    return [C.START_DAY + timedelta(days=i) for i in range(C.NUM_DAYS)]
+    """Alle Wett-Tage über alle Wochen."""
+    return [d for w in C.WEEKS for d in week_days(w)]
 
 
 def day_dir(d: date) -> Path:

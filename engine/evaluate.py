@@ -27,6 +27,8 @@ def _collect(event, soccer=True):
     mk = {}
     for b in event.get("bookmakers", []):
         bk = b["key"]
+        if bk in C.EXCLUDED_BOOKS:
+            continue
         for m in b.get("markets", []):
             mkey = m["key"]
             base = "h2h" if mkey in ("h2h", "h2h_lay") else mkey
@@ -189,5 +191,6 @@ def passes(o):
     if not (C.MIN_ODDS <= o["odds"] <= C.MAX_ODDS):
         return False
     lo, hi = C.COINFLIP_BAND
-    need = C.COINFLIP_MIN_EV if lo <= o["p"] <= hi else C.MIN_EV
+    base = C.MIN_EV if o.get("group") == "Fußball" else C.MIN_EV_OTHER
+    need = max(C.COINFLIP_MIN_EV, base) if lo <= o["p"] <= hi else base
     return o["ev"] >= need

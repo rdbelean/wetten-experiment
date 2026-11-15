@@ -8,7 +8,7 @@ import requests
 from . import config as C
 from . import espn, odds_api
 from .evaluate import evaluate_event, passes
-from .util import day_dir, day_window, iso, log, now_utc, parse_ts, read_json, write_json
+from .util import day_dir, day_window, iso, log, now_utc, parse_ts, read_json, week_of, write_json
 
 
 # --------------------------------------------------------------------------- Kontext
@@ -154,7 +154,7 @@ def allocate(selected, budget=C.DAILY_BUDGET):
     return selected
 
 
-def select(outcomes, now):
+def select(outcomes, now, fillers=True):
     live_ok = [o for o in outcomes if parse_ts(o["commence"]) > now + timedelta(minutes=C.START_BUFFER_MIN)]
     value = sorted((o for o in live_ok if passes(o)), key=lambda o: -o["kelly"])
     chosen, used_events = [], set()
@@ -166,6 +166,8 @@ def select(outcomes, now):
         used_events.add(o["event_id"])
         if len(chosen) >= C.MAX_BETS:
             break
+    if not fillers:
+        return chosen
     if len(chosen) < C.MIN_BETS:
         fillers = sorted((o for o in live_ok if o["event_id"] not in used_events and not o["veto"]
                           and C.MIN_ODDS <= o["odds"] <= 3.0 and o["p"] >= 0.45 and o["ev"] >= C.FILLER_MIN_EV),
@@ -228,22 +230,22 @@ def pick(d: date, ledger):
     else:
         raw = fetch_day_odds(d)
     outcomes, _ = evaluate_all(raw, d, adjustments)
-    # Für aussichtsreiche Sportarten frische Quoten holen (spart Credits)
-    hot = sorted({o["sport"] for o in outcomes if o["ev"] > -0.005})
-    if prep and hot:
-        fresh = fetch_day_odds(d, sports=set(hot))
-        raw = {**raw, **fresh}
-        outcomes, _ = evaluate_all(raw, d, adjustments)
+    # Kein zweiter Quotenabruf mehr (Credits): die Quoten von 9:30 Uhr sind höchstens ~1,5 h alt.
 
     from .strategies import ORDER, PLAYERS, STRATEGIES
+    week = week_of(d)
     all_bets, by_player = [], {}
     for pid in ORDER:
+        ctx = budget_context(ledger, week, d, pid)
+        log(f"{PLAYERS[pid]['name']}: Kasse {ctx['cash']:.2f} €, Tagesrahmen {ctx['day_budget']:.2f} €")
         try:
-            chosen = STRATEGIES[pid](outcomes, now, d.isoformat())
+            chosen = STRATEGIES[pid](outcomes, now, d.isoformat(), ctx)
         except Exception as ex:  # noqa: BLE001 — ein Spieler darf die anderen nicht blockieren
             log("Strategie-Fehler", pid, ex)
             chosen = []
         bets = [_make_bet(o, d, now, pid, i, adjustments) for i, o in enumerate(chosen, 1)]
+        for b in bets:
+            b["week"] = week["id"]
         by_player[pid] = [b["id"] for b in bets]
         all_bets += bets
         log(f"pick {d} {PLAYERS[pid]['name']}: {len(bets)} Wetten, Einsatz {sum(b['stake'] for b in bets):.2f} €")
@@ -257,6 +259,30 @@ def pick(d: date, ledger):
     })
     ledger["bets"].extend(all_bets)
     return True
+
+
+CONTROLS = {"stammtisch", "affe"}
+
+
+def budget_context(ledger, week, d, pid):
+    """Wie viel darf ein Spieler heute setzen?
+    Woche mit Wochenkasse: Restkasse / Resttage, für Strategie-Spieler bis zum Doppelten (am letzten Tag alles).
+    Kontrollgruppen verteilen gleichmäßig."""
+    if week["mode"] == "daily":
+        return {"mode": "daily", "bankroll": week["daily"], "cash": week["daily"], "day_budget": week["daily"], "week": week["id"]}
+    days = [week["start"] + timedelta(days=i) for i in range(week["days"])]
+    staked = sum(b["stake"] for b in ledger["bets"]
+                 if b.get("player", "analyst") == pid and b.get("week") == week["id"])
+    cash = max(0.0, week["budget"] - staked)
+    rem = len([x for x in days if x >= d])
+    if rem <= 1:
+        day_budget = cash
+    elif pid in CONTROLS:
+        day_budget = cash / rem
+    else:
+        day_budget = min(cash, cash / rem * C.WEEKLY_PACE)
+    return {"mode": "weekly", "bankroll": week["budget"], "cash": round(cash, 2), "day_budget": round(day_budget, 2),
+            "days_left": rem, "week": week["id"]}
 
 
 BET_KEYS = ("event_id", "sport", "league", "group", "home", "away", "commence", "market", "point", "key", "label", "odds",

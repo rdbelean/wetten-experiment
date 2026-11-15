@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=43">
+<link rel="stylesheet" href="styles.css?v=51">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -101,7 +101,7 @@
 
 
   <div class="wrap board-compare" id="boardCompare" hidden>
-    <h1 class="board-kicker">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
+    <h1 class="board-kicker" id="boardTitle">Rangliste der Wett-Agentur: gleiche Spiele, gleiches Budget, sechs Strategien</h1>
     <div class="leaderboard" id="leaderboard" role="table" aria-label="Rangliste"></div>
   </div>
 
@@ -122,6 +122,10 @@
 
 <main class="wrap" id="main">
   <div id="compareView" hidden>
+    <section class="fun-sec" id="weekReport" aria-labelledby="reportTitle" hidden>
+      <div class="sec-head"><h2 id="reportTitle">Wochenanalyse</h2><p id="reportLead"></p></div>
+      <div id="report"></div>
+    </section>
     <section class="fun-sec" aria-labelledby="tableTitle">
       <div class="sec-head"><h2 id="tableTitle">Der Tisch</h2><p>1.000 Chips aufs Haus. Setz auf den Spieler, der den Tag oder die Woche gewinnt. Die Chips liegen nur in deinem Browser.</p></div>
       <div class="casino">
@@ -224,12 +228,12 @@
   <section class="method" aria-labelledby="methodTitle">
     <div class="sec-head"><h2 id="methodTitle">So entscheidet das System</h2><p>Der Weg von 25 Buchmachern zu den 100 € des Tages, Schritt für Schritt.</p></div>
     <ol class="steps">
-      <li><h3>Quoten von rund 25 Anbietern</h3><p>Jeden Morgen um 8:30 Uhr holt das System die Quoten für alle Spiele des Tages: Bundesliga, Premier League, weitere europäische Ligen, Nations League, NBA, NHL, NFL und EuroLeague. Dabei sind unter anderem Tipico, Pinnacle, Betfair, Unibet, William Hill und 1xBet.</p></li>
+      <li><h3>Quoten von rund 20 Anbietern</h3><p>Jeden Morgen um 9:30 Uhr holt das System die Quoten für alle Spiele des Tages: Bundesliga, Premier League, weitere europäische Ligen, Nations League, NBA, NHL, NFL und EuroLeague. Dabei sind unter anderem Tipico, Pinnacle, Betfair, Unibet, William Hill und 1xBet.</p></li>
       <li><h3>Faire Wahrscheinlichkeit</h3><p>Pinnacle gilt als genauester Buchmacher der Welt. Wir rechnen seine Marge heraus (Power-Methode) und mischen den Durchschnitt aller Anbieter sowie die Börsenkurse von Betfair dazu. Das ergibt den fairen Preis eines Spiels.</p></li>
       <li><h3>Tor-Modell mit xG</h3><p>Für Club-Fußball schätzt ein Dixon-Coles-Modell aus Toren und Expected Goals die Stärke jedes Teams. Im Backtest war es der Pinnacle-Quote nicht überlegen. Es zählt deshalb nur mit <span id="mw">5–8 %</span> als Tie-Breaker.</p></li>
       <li><h3>News-Recherche durch Claude</h3><p>Vor jedem Spieltag recherchiert Claude Verletzungen, Sperren, Aufstellungen und Rotation. Nur wenn eine Nachricht offenbar noch nicht in den Quoten steckt, darf sie die Wahrscheinlichkeit um höchstens <span id="adjcap">5</span> Prozentpunkte verschieben. Claude kann eine Wette auch blockieren.</p></li>
-      <li><h3>Nur Wetten mit Vorteil</h3><p>Gewettet wird, wenn die beste Quote am Markt über dem fairen Preis liegt: mindestens <span id="minev">+2 %</span> Erwartungswert, bei knappen Spielen (40–60 %) mindestens +4,5 %. Angebliche Vorteile über 15 % gelten als Datenfehler.</p></li>
-      <li><h3>Einsatz nach Kelly</h3><p>Pro Tag werden genau 100 € gesetzt. Wo der Vorteil am größten ist, kommt mehr Geld hin (Viertel-Kelly). Höchstens 40 € gehen auf eine Wette, und wenn möglich gibt es mindestens 3 Wetten. Gewinne werden nicht wieder eingesetzt.</p></li>
+      <li><h3>Nur Wetten mit Vorteil</h3><p>Gewettet wird nur, wenn die beste Quote über dem fairen Preis liegt: im Fußball mindestens <span id="minev">+2 %</span> Erwartungswert, bei NBA, NHL, EuroLeague und NFL mindestens +4 %, bei knappen Spielen (40–60 %) mindestens +4,5 %. Angebliche Vorteile über 15 % gelten als Datenfehler, US-Offshore-Buchmacher sind ausgeschlossen.</p></li>
+      <li><h3>Wochenkasse und Kelly</h3><p>Seit Woche 2 hat jeder Spieler 1.000 € für die ganze Woche, ohne Pflicht-Einsatz. Der Analyst setzt pro Tag höchstens das Doppelte des fairen Anteils (Restkasse geteilt durch Resttage), verteilt nach Kelly, höchstens 80 € pro Wette. Ohne Vorteil bleibt das Geld liegen. Gewinne werden nicht wieder eingesetzt.</p></li>
     </ol>
     <div class="evidence" id="evidence"></div>
   </section>
@@ -247,6 +251,6 @@
 
 <div class="moment" id="moment" hidden></div>
 <div class="fx-layer" id="fx" aria-hidden="true"></div>
-<script src="app.js?v=43" defer></script>
+<script src="app.js?v=51" defer></script>
 </body>
 </html>

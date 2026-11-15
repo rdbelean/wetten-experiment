@@ -1,0 +1,145 @@
+{
+ "title": "Woche 1: Was wir gelernt haben",
+ "headline": "Wer nach einer Woche vorn liegt, hatte fast immer Glück. Die Kontrollgruppe ohne jede Mathe landete auf Platz 2. Echtes Können zeigt sich am Closing Line Value, und dort liegt der Analyst klar vorn.",
+ "players": [
+  {
+   "id": "kombi",
+   "name": "Der Kombi-König",
+   "n": 14,
+   "stake": 700.0,
+   "profit": 337.69,
+   "expected": 21.41,
+   "z": 0.77,
+   "clv": null,
+   "clv_pos": 0,
+   "n_clv": 0,
+   "verdict": "Glück",
+   "text": "Drei Treffer aus 14 Scheinen, ein einziger Tag brachte +423 €. Der mathematische Erwartungswert lag nur knapp im Plus."
+  },
+  {
+   "id": "stammtisch",
+   "name": "Der Stammtisch",
+   "n": 35,
+   "stake": 700.0,
+   "profit": 115.06,
+   "expected": -35.44,
+   "z": 1.57,
+   "clv": -0.0501,
+   "clv_pos": 6,
+   "n_clv": 33,
+   "verdict": "Reines Glück",
+   "text": "Er hatte jeden Tag einen mathematischen Nachteil (Buchmacher-Marge, CLV −5 %) und hätte verlieren müssen."
+  },
+  {
+   "id": "banker",
+   "name": "Der Banker",
+   "n": 29,
+   "stake": 700.0,
+   "profit": 70.48,
+   "expected": 3.53,
+   "z": 0.89,
+   "clv": 0.0019,
+   "clv_pos": 18,
+   "n_clv": 29,
+   "verdict": "Glück",
+   "text": "Favoriten zum fairen Preis, praktisch ohne echten Vorteil (CLV +0,2 %). Das Plus ist Schwankung."
+  },
+  {
+   "id": "affe",
+   "name": "Der Affe",
+   "n": 28,
+   "stake": 700.0,
+   "profit": -80.55,
+   "expected": -40.25,
+   "z": -0.24,
+   "clv": -0.0395,
+   "clv_pos": 6,
+   "n_clv": 26,
+   "verdict": "Wie erwartet",
+   "text": "Zufällige Tipps zur Tipico-Quote verlieren im Schnitt die Marge. Genau das ist passiert."
+  },
+  {
+   "id": "zocker",
+   "name": "Der Zocker",
+   "n": 10,
+   "stake": 600.0,
+   "profit": -112.97,
+   "expected": 11.09,
+   "z": -0.33,
+   "clv": 0.0145,
+   "clv_pos": 5,
+   "n_clv": 9,
+   "verdict": "Normale Schwankung",
+   "text": "Bei Quoten um 5 sind 2 Treffer aus 10 genau der Schnitt. An einem Tag fand er gar nichts."
+  },
+  {
+   "id": "analyst",
+   "name": "Der Analyst",
+   "n": 26,
+   "stake": 700.0,
+   "profit": -144.52,
+   "expected": 13.97,
+   "z": -1.34,
+   "clv": 0.0347,
+   "clv_pos": 19,
+   "n_clv": 25,
+   "verdict": "Pech plus Regelfehler",
+   "text": "Bester Closing Line Value aller Spieler, aber die Pflicht, 100 € pro Tag zu setzen, zwang ihn zu Füllwetten ohne Vorteil."
+  }
+ ],
+ "analyst_split": [
+  {
+   "name": "Echte Value-Wetten",
+   "n": 13,
+   "stake": 260.0,
+   "profit": 58.64,
+   "expected": 10.39,
+   "z": 0.65,
+   "clv": 0.0594,
+   "clv_pos": 12,
+   "n_clv": 12
+  },
+  {
+   "name": "Füllwetten",
+   "n": 13,
+   "stake": 440.0,
+   "profit": -203.16,
+   "expected": 3.58,
+   "z": -2.24,
+   "clv": 0.0119,
+   "clv_pos": 7,
+   "n_clv": 13
+  }
+ ],
+ "analyst_points": [
+  "Der Hauptfehler war die Regel „100 € müssen jeden Tag raus“. Von Montag bis Donnerstag war Länderspielpause, das System fand 4 Tage lang keine einzige Wette mit echtem Vorteil, musste aber trotzdem 400 € setzen.",
+  "Die Einsätze standen dadurch auf dem Kopf: Die besten Wetten bekamen 3–5 € (Sunderland zu 3,89 mit +20 % CLV), Füllwetten wie NBA-Favoriten 30–40 €.",
+  "NBA war das Loch: 8 Wetten, -182.70 €, fast alles Füllwetten. Zum Teil Pech, aber der Basketball-Markt ist sehr effizient.",
+  "US-Offshore-Buchmacher wie Everygame, BetOnline und MyBookie hatten negativen CLV. Ihre Quoten waren vermutlich oft veraltet, in Deutschland kann man dort ohnehin nicht wetten.",
+  "Statistisch lag der Analyst rund 1,3 Standardabweichungen unter seinem Erwartungswert. Bei den Füllwetten allein 2,2. Also deutliches Pech zusätzlich zum schlechten Regelwerk."
+ ],
+ "replay": {
+  "text": "Nachgerechnet mit denselben Value-Wetten, aber Wochenkasse ohne Pflicht-Einsatz: Woche 1 hätte mit Plus geendet. Das ist eine Rückschau mit nur 13 Wetten, kein Beweis, zeigt aber, dass der Pflicht-Einsatz der Fehler war.",
+  "actual": -144.52,
+  "replay": 163.6,
+  "replay_stake": 609.2
+ },
+ "rules": [
+  "Jeder Spieler setzt jeden Tag genau 100 € (Pflicht).",
+  "Analyst: Value ab +2 % (bei 40–60 % Wahrscheinlichkeit ab +4,5 %), Viertel-Kelly, max. 40 € pro Wette, mind. 3 Wetten, notfalls Füllwetten.",
+  "Banker: 5 Favoriten, notfalls mit gelockerten Regeln.",
+  "Zocker: Außenseiter ab +4 %, notfalls Notfall-Wetten.",
+  "Kombi-König: 2 Kombis täglich, notfalls mit fairen Favoriten aufgefüllt.",
+  "Stammtisch und Affe: Kontrollgruppen zur Tipico-Quote.",
+  "Alle Buchmacher der Quoten-API, Quoten doppelt abgerufen (8:30 und 11:00 Uhr)."
+ ],
+ "changes": [
+  "1.000 € Wochenkasse pro Spieler, kein Pflicht-Einsatz, Unverbrauchtes bleibt in der Kasse.",
+  "Analyst: keine Füllwetten, Tagesrahmen höchstens das Doppelte des fairen Anteils, Kelly-Verteilung, max. 80 € pro Wette.",
+  "Fußball ab +2 % Vorteil, NBA, NHL, EuroLeague und NFL erst ab +4 %.",
+  "US-Offshore-Buchmacher ausgeschlossen.",
+  "Banker 3 % der Kasse pro Wette, Zocker halbes Kelly, Kombi nur aus echten Value-Tipps.",
+  "Stammtisch und Affe verteilen die Kasse gleichmäßig (etwa 143 € pro Tag).",
+  "Credits sparen: Quoten einmal täglich um 9:30 Uhr, Schlusskurse nur für Analyst, Banker und Zocker."
+ ]
+}
