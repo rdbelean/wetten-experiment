@@ -9890,7 +9890,7 @@
    "player": "kombi",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "030f628eb3a7ad16c3bca6884c18c56e+87441c4ff41ea3d37812826345450408+ac858403bd96563aa897a9bb7554f103",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -9920,9 +9920,16 @@
    "stake": 50.0,
    "potential_payout": 156.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "lost"
+    ],
+    "t": "2026-11-15T15:32:24Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -9995,21 +10002,25 @@
      "p": 0.5222,
      "ev": 0.0027,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 83,
+      "away": 86
+     }
     }
    ],
    "last_commence": "2026-11-12T19:45:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,8 %, Erwartungswert +2,3 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,8 %, Erwartungswert +2,3 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-12-kombi-02",
    "player": "kombi",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "8a1174de9079b530bd6612e3fde6e2fa+b2c881e252c7e0a61cb2e73eeb683885+d5c5ae8d56762b45d1ec4b85337878f3+b09fb33b70c3456bcd7d9c834e1dfb97",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -10039,9 +10050,17 @@
    "stake": 50.0,
    "potential_payout": 156.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "won",
+     "lost"
+    ],
+    "t": "2026-11-15T15:32:24Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -10088,8 +10107,11 @@
      "p": 0.7873,
      "ev": -0.0002,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 102,
+      "away": 87
+     }
     },
     {
      "event_id": "d5c5ae8d56762b45d1ec4b85337878f3",
@@ -10134,14 +10156,18 @@
      "p": 0.6611,
      "ev": -0.0018,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 80,
+      "away": 73
+     }
     }
    ],
    "last_commence": "2026-11-13T00:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,1 %, Erwartungswert -0,1 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,1 %, Erwartungswert -0,1 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "3 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-12-stammtisch-01",

@@ -6,7 +6,7 @@
   "daily_budget": 100.0,
   "total_budget": 700.0
  },
- "generated_at": "2026-11-14T08:21:57Z",
+ "generated_at": "2026-11-15T15:32:24Z",
  "players": {
   "analyst": {
    "name": "Der Analyst",
@@ -284,22 +284,22 @@
    "id": "kombi",
    "totals": {
     "staked": 700.0,
-    "staked_settled": 600.0,
+    "staked_settled": 700.0,
     "returned": 1037.69,
-    "profit": 437.69,
-    "roi": 0.7295,
-    "open_stake": 100.0,
-    "open_potential": 312.0,
+    "profit": 337.69,
+    "roi": 0.4824,
+    "open_stake": 0,
+    "open_potential": 0,
     "won": 3,
-    "lost": 9,
+    "lost": 11,
     "push": 0,
     "n_bets": 14,
-    "hit_rate": 0.25,
+    "hit_rate": 0.2143,
     "avg_odds": 5.697,
     "max_odds_won": 10.46,
     "avg_ev": 0.0306,
     "expected_profit": 21.41,
-    "expected_settled": 20.29,
+    "expected_settled": 21.41,
     "avg_clv": null,
     "n_clv": 0,
     "clv_positive": 0,
@@ -349,16 +349,16 @@
     {
      "date": "2026-11-12",
      "staked": 100.0,
-     "profit": 0,
-     "cum_profit": 201.93,
-     "settled": 0,
+     "profit": -100.0,
+     "cum_profit": 101.93,
+     "settled": 2,
      "n_bets": 2
     },
     {
      "date": "2026-11-13",
      "staked": 100.0,
      "profit": 235.76,
-     "cum_profit": 437.69,
+     "cum_profit": 337.69,
      "settled": 2,
      "n_bets": 2
     }
@@ -11198,7 +11198,7 @@
    "player": "kombi",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "8a1174de9079b530bd6612e3fde6e2fa+b2c881e252c7e0a61cb2e73eeb683885+d5c5ae8d56762b45d1ec4b85337878f3+b09fb33b70c3456bcd7d9c834e1dfb97",
    "sport": "combo",
    "league": "Kombi aus 4 Spielen",
@@ -11228,9 +11228,17 @@
    "stake": 50.0,
    "potential_payout": 156.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "won",
+     "lost"
+    ],
+    "t": "2026-11-15T15:32:24Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -11277,8 +11285,11 @@
      "p": 0.7873,
      "ev": -0.0002,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 102,
+      "away": 87
+     }
     },
     {
      "event_id": "d5c5ae8d56762b45d1ec4b85337878f3",
@@ -11323,14 +11334,18 @@
      "p": 0.6611,
      "ev": -0.0018,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 80,
+      "away": 73
+     }
     }
    ],
    "last_commence": "2026-11-13T00:10:00Z",
    "espn": null,
    "research": null,
-   "reason": "4 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,1 %, Erwartungswert -0,1 %. Alle Spiele müssen gewinnen."
+   "reason": "4 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,1 %, Erwartungswert -0,1 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "3 von 4 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-12-03",
@@ -11482,7 +11497,7 @@
    "player": "kombi",
    "day": "2026-11-12",
    "placed_at": "2026-11-12T10:04:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "030f628eb3a7ad16c3bca6884c18c56e+87441c4ff41ea3d37812826345450408+ac858403bd96563aa897a9bb7554f103",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -11512,9 +11527,16 @@
    "stake": 50.0,
    "potential_payout": 156.0,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "won",
+     "won",
+     "lost"
+    ],
+    "t": "2026-11-15T15:32:24Z"
+   },
+   "payout": 0.0,
+   "profit": -50.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -11587,14 +11609,18 @@
      "p": 0.5222,
      "ev": 0.0027,
      "espn": null,
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 83,
+      "away": 86
+     }
     }
    ],
    "last_commence": "2026-11-12T19:45:00Z",
    "espn": null,
    "research": null,
-   "reason": "3 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,8 %, Erwartungswert +2,3 %. Alle Spiele müssen gewinnen."
+   "reason": "3 Value-Tipps kombiniert. Gesamtquote 3,12, Trefferchance 32,8 %, Erwartungswert +2,3 %. Alle Spiele müssen gewinnen.",
+   "auto_analysis": "2 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-12-01",
@@ -15379,12 +15405,8 @@
   }
  },
  "system": {
-  "credits_remaining": 204,
+  "credits_remaining": 200,
   "last_actions": [
-   {
-    "t": "2026-11-13T07:32:49Z",
-    "a": "Kandidaten für 2026-11-13 vorbereitet"
-   },
    {
     "t": "2026-11-13T10:03:37Z",
     "a": "Wetten für 2026-11-13 platziert"
@@ -15439,6 +15461,10 @@
    },
    {
     "t": "2026-11-14T06:26:18Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-15T15:32:24Z",
     "a": "Wetten abgerechnet"
    }
   ]
