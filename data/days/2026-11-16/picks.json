@@ -1,0 +1,165 @@
+{
+ "day": "2026-11-16",
+ "placed_at": "2026-11-16T10:03:00Z",
+ "n_outcomes": 112,
+ "n_value": 0,
+ "adjustments_used": true,
+ "bets": [],
+ "by_player": {
+  "analyst": [],
+  "banker": [
+   "2026-11-16-banker-01",
+   "2026-11-16-banker-02",
+   "2026-11-16-banker-03"
+  ],
+  "zocker": [],
+  "kombi": [],
+  "stammtisch": [
+   "2026-11-16-stammtisch-01",
+   "2026-11-16-stammtisch-02",
+   "2026-11-16-stammtisch-03",
+   "2026-11-16-stammtisch-04",
+   "2026-11-16-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-16-affe-01",
+   "2026-11-16-affe-02",
+   "2026-11-16-affe-03",
+   "2026-11-16-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "Switzerland",
+   "away": "Scotland",
+   "league": "Nations League",
+   "label": "Über 2.5 Tore",
+   "odds": 2.12,
+   "book_name": "1xBet",
+   "p": 0.4829,
+   "ev": 0.0237,
+   "commence": "2026-11-16T19:45:00Z"
+  },
+  {
+   "home": "Greece",
+   "away": "Serbia",
+   "league": "Nations League",
+   "label": "Über 2.5 Tore",
+   "odds": 1.77,
+   "book_name": "1xBet",
+   "p": 0.5767,
+   "ev": 0.0208,
+   "commence": "2026-11-16T19:45:00Z"
+  },
+  {
+   "home": "Iceland",
+   "away": "Luxembourg",
+   "league": "Nations League",
+   "label": "Über 2.5 Tore",
+   "odds": 1.74,
+   "book_name": "1xBet",
+   "p": 0.5863,
+   "ev": 0.0202,
+   "commence": "2026-11-16T17:00:00Z"
+  },
+  {
+   "home": "Miami Heat",
+   "away": "Houston Rockets",
+   "league": "NBA",
+   "label": "Sieg Miami Heat",
+   "odds": 2.23,
+   "book_name": "Unibet SE",
+   "p": 0.4538,
+   "ev": 0.0119,
+   "commence": "2026-11-17T00:40:00Z"
+  },
+  {
+   "home": "Germany",
+   "away": "Netherlands",
+   "league": "Nations League",
+   "label": "Sieg Netherlands",
+   "odds": 3.78,
+   "book_name": "1xBet",
+   "p": 0.2673,
+   "ev": 0.0105,
+   "commence": "2026-11-16T19:45:00Z"
+  },
+  {
+   "home": "Faroe Islands",
+   "away": "Moldova",
+   "league": "Nations League",
+   "label": "Sieg Faroe Islands",
+   "odds": 1.85,
+   "book_name": "1xBet",
+   "p": 0.546,
+   "ev": 0.0101,
+   "commence": "2026-11-16T15:00:00Z"
+  },
+  {
+   "home": "Germany",
+   "away": "Netherlands",
+   "league": "Nations League",
+   "label": "Über 3.5 Tore",
+   "odds": 2.0,
+   "book_name": "1xBet",
+   "p": 0.5036,
+   "ev": 0.0073,
+   "commence": "2026-11-16T19:45:00Z"
+  },
+  {
+   "home": "Iceland",
+   "away": "Luxembourg",
+   "league": "Nations League",
+   "label": "Sieg Iceland",
+   "odds": 1.25,
+   "book_name": "1xBet",
+   "p": 0.8043,
+   "ev": 0.0054,
+   "commence": "2026-11-16T17:00:00Z"
+  },
+  {
+   "home": "Kazakhstan",
+   "away": "Slovakia",
+   "league": "Nations League",
+   "label": "Sieg Slovakia",
+   "odds": 1.94,
+   "book_name": "1xBet",
+   "p": 0.518,
+   "ev": 0.005,
+   "commence": "2026-11-16T15:00:00Z"
+  },
+  {
+   "home": "Boston Celtics",
+   "away": "Orlando Magic",
+   "league": "NBA",
+   "label": "Sieg Boston Celtics",
+   "odds": 1.31,
+   "book_name": "1xBet",
+   "p": 0.766,
+   "ev": 0.0035,
+   "commence": "2026-11-17T00:10:00Z"
+  },
+  {
+   "home": "North Macedonia",
+   "away": "Slovenia",
+   "league": "Nations League",
+   "label": "Sieg Slovenia",
+   "odds": 1.56,
+   "book_name": "Unibet SE",
+   "p": 0.6413,
+   "ev": 0.0004,
+   "commence": "2026-11-16T19:45:00Z"
+  },
+  {
+   "home": "Lithuania",
+   "away": "Liechtenstein",
+   "league": "Nations League",
+   "label": "Sieg Lithuania",
+   "odds": 1.13,
+   "book_name": "1xBet",
+   "p": 0.8849,
+   "ev": -0.0001,
+   "commence": "2026-11-16T17:00:00Z"
+  }
+ ]
+}
