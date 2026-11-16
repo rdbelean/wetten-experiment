@@ -13139,7 +13139,7 @@
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "5ae7a0b002778fc547ce96abf6bf8547",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13183,9 +13183,21 @@
    "stake": 28.86,
    "potential_payout": 50.5,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T17:04:59Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 50.5,
+   "profit": 21.64,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,75 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,5 %.",
@@ -13194,14 +13206,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861180"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-02",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "624805725e5cd075b0c5d77eb755bded",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13246,9 +13259,36 @@
    "stake": 28.5,
    "potential_payout": 52.73,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-16T17:04:59Z",
+    "goals": [
+     {
+      "min": 29,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 56,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 65,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.5,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,85 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,2 %.",
@@ -13257,7 +13297,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861181"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-03",
