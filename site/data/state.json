@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-16T08:32:39Z",
+ "generated_at": "2026-11-16T08:37:42Z",
  "current_week": 2,
  "weeks": [
   {
@@ -1793,8 +1793,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Am letzten Gruppenspieltag der Nations League sind alle wichtigen Ausfälle seit Tagen bekannt und in den Quoten enthalten: bei Deutschland Musiala, Gnabry und Anton, bei den Niederlanden van Dijk, de Jong, Gravenberch und Brobbey, bei Serbien zwei Sperren, bei Orlando Banchero. Motivationslage: Die Schweiz ist schon aufgestiegen (Rotation möglich), Schottland, Serbien und Island spielen noch um etwas. Frische, nicht eingepreiste News habe ich nicht gefunden, deshalb gibt es keine Korrekturen, nur Notizen.",
+      "n_events": 9
      },
      "near_misses": [],
      "summary": null
