@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-16T17:04:59Z",
+ "generated_at": "2026-11-16T19:00:50Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2130,22 +2130,22 @@
     "banker": {
      "totals": {
       "staked": 90.0,
-      "staked_settled": 0,
-      "returned": 0,
-      "profit": 0,
-      "roi": null,
-      "open_stake": 90.0,
-      "open_potential": 123.6,
-      "won": 0,
+      "staked_settled": 30.0,
+      "returned": 37.5,
+      "profit": 7.5,
+      "roi": 0.25,
+      "open_stake": 60.0,
+      "open_potential": 86.1,
+      "won": 1,
       "lost": 0,
       "push": 0,
       "n_bets": 3,
-      "hit_rate": null,
+      "hit_rate": 1.0,
       "avg_odds": 1.373,
-      "max_odds_won": null,
+      "max_odds_won": 1.25,
       "avg_ev": 0.0031,
       "expected_profit": 0.28,
-      "expected_settled": 0,
+      "expected_settled": 0.16,
       "avg_clv": 0.0144,
       "n_clv": 1,
       "clv_positive": 1,
@@ -2157,16 +2157,16 @@
       {
        "date": "2026-11-16",
        "staked": 90.0,
-       "profit": 0,
-       "cum_profit": 0.0,
-       "settled": 0,
+       "profit": 7.5,
+       "cum_profit": 7.5,
+       "settled": 1,
        "n_bets": 3
       },
       {
        "date": "2026-11-17",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       },
@@ -2174,7 +2174,7 @@
        "date": "2026-11-18",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       },
@@ -2182,7 +2182,7 @@
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       },
@@ -2190,7 +2190,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       },
@@ -2198,7 +2198,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       },
@@ -2206,7 +2206,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 7.5,
        "settled": 0,
        "n_bets": 0
       }
@@ -2385,22 +2385,22 @@
     "stammtisch": {
      "totals": {
       "staked": 142.86,
-      "staked_settled": 57.36,
-      "returned": 50.5,
-      "profit": -6.86,
-      "roi": -0.1196,
-      "open_stake": 85.5,
-      "open_potential": 122.41,
-      "won": 1,
+      "staked_settled": 142.86,
+      "returned": 172.91,
+      "profit": 30.05,
+      "roi": 0.2103,
+      "open_stake": 0,
+      "open_potential": 0,
+      "won": 4,
       "lost": 1,
       "push": 0,
       "n_bets": 5,
-      "hit_rate": 0.5,
+      "hit_rate": 0.8,
       "avg_odds": 1.579,
-      "max_odds_won": 1.75,
+      "max_odds_won": 1.98,
       "avg_ev": -0.0357,
       "expected_profit": -5.1,
-      "expected_settled": -2.47,
+      "expected_settled": -5.1,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2412,16 +2412,16 @@
       {
        "date": "2026-11-16",
        "staked": 142.86,
-       "profit": -6.86,
-       "cum_profit": -6.86,
-       "settled": 2,
+       "profit": 30.05,
+       "cum_profit": 30.05,
+       "settled": 5,
        "n_bets": 5
       },
       {
        "date": "2026-11-17",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       },
@@ -2429,7 +2429,7 @@
        "date": "2026-11-18",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       },
@@ -2437,7 +2437,7 @@
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       },
@@ -2445,7 +2445,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       },
@@ -2453,7 +2453,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       },
@@ -2461,7 +2461,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -6.86,
+       "cum_profit": 30.05,
        "settled": 0,
        "n_bets": 0
       }
@@ -2470,26 +2470,26 @@
     "affe": {
      "totals": {
       "staked": 142.86,
-      "staked_settled": 0,
+      "staked_settled": 36.36,
       "returned": 0,
-      "profit": 0,
-      "roi": null,
-      "open_stake": 142.86,
-      "open_potential": 270.43,
+      "profit": -36.36,
+      "roi": -1.0,
+      "open_stake": 106.5,
+      "open_potential": 154.08,
       "won": 0,
-      "lost": 0,
+      "lost": 1,
       "push": 0,
       "n_bets": 4,
-      "hit_rate": null,
+      "hit_rate": 0.0,
       "avg_odds": 1.885,
       "max_odds_won": null,
       "avg_ev": -0.0578,
       "expected_profit": -8.26,
-      "expected_settled": 0,
+      "expected_settled": -3.28,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
-      "max_drawdown": 0.0,
+      "max_drawdown": 36.36,
       "budget": 1000.0,
       "remaining": 857.14
      },
@@ -2497,16 +2497,16 @@
       {
        "date": "2026-11-16",
        "staked": 142.86,
-       "profit": 0,
-       "cum_profit": 0.0,
-       "settled": 0,
+       "profit": -36.36,
+       "cum_profit": -36.36,
+       "settled": 1,
        "n_bets": 4
       },
       {
        "date": "2026-11-17",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       },
@@ -2514,7 +2514,7 @@
        "date": "2026-11-18",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       },
@@ -2522,7 +2522,7 @@
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       },
@@ -2530,7 +2530,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       },
@@ -2538,7 +2538,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       },
@@ -2546,7 +2546,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": -36.36,
        "settled": 0,
        "n_bets": 0
       }
@@ -15992,7 +15992,7 @@
    "player": "affe",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "916289ed44f8362ac93035147b7c7fce",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -16034,9 +16034,31 @@
    "stake": 36.36,
    "potential_payout": 116.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -36.36,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,2 (Marktschnitt), Erwartungswert -9,0 %.",
@@ -16045,14 +16067,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861183"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-banker-01",
    "player": "banker",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "ac7d106a75439c4ad8a33b2668bd68df",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -16103,9 +16126,31 @@
     "best_odds": 1.24,
     "fair_odds": 1.232
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 37,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 37.5,
+   "profit": 7.5,
    "clv": 0.0144,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,4 % (Pinnacle 1,23). Unser Wert: 80,4 %. Beste Quote 1,25 bei 1xBet (Median 1,22, 14 Anbieter), Erwartungswert +0,5 %. Recherche: Island reicht ein Remis zum Aufstieg aus Liga C. Es fehlen Thordarson und Ingason, bei Luxemburg ist Natami gesperrt. Das Hinspiel endete 3:0, Island hat zuletzt 5:0 gegen Bulgarien gewonnen. Alles bekannt und im Kurs 1,25 enthalten, keine Korrektur.",
@@ -16114,14 +16159,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861182"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-16-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "916289ed44f8362ac93035147b7c7fce",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -16163,9 +16209,31 @@
    "stake": 28.5,
    "potential_payout": 56.43,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 56.43,
+   "profit": 27.93,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,98 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,3 %.",
@@ -16174,14 +16242,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861183"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "ac7d106a75439c4ad8a33b2668bd68df",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -16226,9 +16295,31 @@
    "stake": 28.5,
    "potential_payout": 34.63,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 37,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 34.63,
+   "profit": 6.13,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,215 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,3 %.",
@@ -16237,14 +16328,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861182"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "13eb6e805b513e9d1fbad120c68cd1a0",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -16289,9 +16381,31 @@
    "stake": 28.5,
    "potential_payout": 31.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 16,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 31.35,
+   "profit": 2.85,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,1 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,7 %.",
@@ -16300,7 +16414,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861184"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-affe-02",
@@ -17337,10 +17452,6 @@
   "credits_remaining": 186,
   "last_actions": [
    {
-    "t": "2026-11-13T19:31:55Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-13T21:47:38Z",
     "a": "Wetten abgerechnet"
    },
@@ -17394,6 +17505,10 @@
    },
    {
     "t": "2026-11-16T17:04:59Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-16T19:00:50Z",
     "a": "Wetten abgerechnet"
    }
   ]

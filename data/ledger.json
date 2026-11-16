@@ -12938,7 +12938,7 @@
    "player": "banker",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "ac7d106a75439c4ad8a33b2668bd68df",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -12989,9 +12989,31 @@
     "best_odds": 1.24,
     "fair_odds": 1.232
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 37,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 37.5,
+   "profit": 7.5,
    "clv": 0.0144,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,4 % (Pinnacle 1,23). Unser Wert: 80,4 %. Beste Quote 1,25 bei 1xBet (Median 1,22, 14 Anbieter), Erwartungswert +0,5 %. Recherche: Island reicht ein Remis zum Aufstieg aus Liga C. Es fehlen Thordarson und Ingason, bei Luxemburg ist Natami gesperrt. Das Hinspiel endete 3:0, Island hat zuletzt 5:0 gegen Bulgarien gewonnen. Alles bekannt und im Kurs 1,25 enthalten, keine Korrektur.",
@@ -13000,7 +13022,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861182"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-16-banker-02",
@@ -13305,7 +13328,7 @@
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "916289ed44f8362ac93035147b7c7fce",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13347,9 +13370,31 @@
    "stake": 28.5,
    "potential_payout": 56.43,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 56.43,
+   "profit": 27.93,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,98 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -4,3 %.",
@@ -13358,14 +13403,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861183"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "ac7d106a75439c4ad8a33b2668bd68df",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13410,9 +13456,31 @@
    "stake": 28.5,
    "potential_payout": 34.63,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 37,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 34.63,
+   "profit": 6.13,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,215 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,3 %.",
@@ -13421,14 +13489,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861182"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "13eb6e805b513e9d1fbad120c68cd1a0",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13473,9 +13542,31 @@
    "stake": 28.5,
    "potential_payout": 31.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 16,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 31.35,
+   "profit": 2.85,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,1 (Marktschnitt) ohne Quotenvergleich. Mathematischer Erwartungswert -2,7 %.",
@@ -13484,14 +13575,15 @@
     "path": "soccer/uefa.nations",
     "id": "401861184"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-affe-01",
    "player": "affe",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "916289ed44f8362ac93035147b7c7fce",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13533,9 +13625,31 @@
    "stake": 36.36,
    "potential_payout": 116.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-16T19:00:50Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 60,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -36.36,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,2 (Marktschnitt), Erwartungswert -9,0 %.",
@@ -13544,7 +13658,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861183"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-affe-02",
