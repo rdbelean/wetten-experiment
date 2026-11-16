@@ -1,0 +1,51 @@
+{
+  "written_at": "2026-11-16T08:36:18Z",
+  "summary": "Am letzten Gruppenspieltag der Nations League sind alle wichtigen Ausfälle seit Tagen bekannt und in den Quoten enthalten: bei Deutschland Musiala, Gnabry und Anton, bei den Niederlanden van Dijk, de Jong, Gravenberch und Brobbey, bei Serbien zwei Sperren, bei Orlando Banchero. Motivationslage: Die Schweiz ist schon aufgestiegen (Rotation möglich), Schottland, Serbien und Island spielen noch um etwas. Frische, nicht eingepreiste News habe ich nicht gefunden, deshalb gibt es keine Korrekturen, nur Notizen.",
+  "events": {
+    "2b656115b7829be9f778b0c011f7d722": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Letzter Spieltag in Liga B, Gruppe 1: Die Schweiz (13 Punkte) ist schon Gruppensieger und aufgestiegen, deshalb ist Rotation möglich, aber nicht bestätigt. Schottland (7) kann mit einem Sieg noch an Slowenien (8) vorbeiziehen und muss offensiv spielen. Keine bestätigten Ausfälle, keine Korrektur."
+    },
+    "f0a77086c85d161afcfc2f275e9e29fa": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Serbien fehlen Dragojevic und Zivkovic gesperrt (Rot gegen Deutschland), und es braucht Punkte gegen den direkten Abstieg. Griechenland hat laut Berichten keine Verletzten und kämpft nach dem 0:7 gegen die Niederlande um Platz 2. Die Sperren sind seit Tagen bekannt und eingepreist, keine Korrektur."
+    },
+    "ac7d106a75439c4ad8a33b2668bd68df": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Island reicht ein Remis zum Aufstieg aus Liga C. Es fehlen Thordarson und Ingason, bei Luxemburg ist Natami gesperrt. Das Hinspiel endete 3:0, Island hat zuletzt 5:0 gegen Bulgarien gewonnen. Alles bekannt und im Kurs 1,25 enthalten, keine Korrektur."
+    },
+    "55a62e5cc433daeb03502b34db05647e": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Deutschland ohne Musiala, Gnabry und Anton (Baku nachnominiert). Bei den Niederlanden fehlen van Dijk, Frenkie de Jong, Gravenberch und Brobbey. Es geht um den Gruppensieg in Liga A2. Die Ausfälle sind seit dem 8. bis 13.11. bekannt und eingepreist, keine Korrektur."
+    },
+    "11be2fc6d73e2a4e187a643b4c051093": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Für Montag gibt es noch keinen aktuellen Injury Report für Heat gegen Rockets. Miami kommt aus einem 133:121 gegen Cleveland (Adebayo und Antetokounmpo je 37 Punkte), bei Houston wurde VanVleet zuletzt geschont. Ohne bestätigte Ausfälle keine Korrektur."
+    },
+    "7c2ac54a119f461bf8fc1a23da536f29": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Bei Orlando fallen Banchero (hohe Knöchelverstauchung), Penda und Nelson aus, Isaac ist fraglich. Bei Boston steht Tatum nicht auf dem Report, Paul George ist fraglich (Krankheit). Banchero fehlt schon länger und ist eingepreist, keine Korrektur."
+    },
+    "5ae7a0b002778fc547ce96abf6bf8547": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Letzter Gruppenspieltag in Liga C, keine bekannten Ausfälle und keine Vorberichte mit Teamnews. Rotation bei Nebendarstellern ist möglich, keine Korrektur."
+    },
+    "624805725e5cd075b0c5d77eb755bded": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Für das Spiel am 16.11. gibt es keine Teamnews (nur Vorhersagen). Keine Korrektur."
+    },
+    "629f5b2cbc2b6986661cb280d37b0ecb": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Nordmazedonien steht schon als Gruppenletzter fest (0 Punkte, Relegation). Slowenien (8) verteidigt Platz 2 gegen Schottland. Teamnews gibt es nicht, keine Korrektur."
+    }
+  }
+}
