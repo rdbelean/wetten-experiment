@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-15T15:37:44Z",
+ "generated_at": "2026-11-16T08:17:34Z",
  "current_week": 2,
  "weeks": [
   {
@@ -15691,6 +15691,56 @@
  ],
  "talk": [
   {
+   "date": "2026-11-16",
+   "messages": [
+    {
+     "from": "banker",
+     "to": "kombi",
+     "text": "Die beiden Kombis vom 12. sind abgerechnet, Majestät: zweimal 50 Euro zu 3,12, zweimal weg. Aus plus 437,69 wurden plus 337,69."
+    },
+    {
+     "from": "kombi",
+     "to": "banker",
+     "text": "Ein König verliert keine 100 Euro, er spendet sie dem Volk. Platz eins bleibt Platz eins, die Krone glänzt auch mit 337,69."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Drei Treffer aus 14 Scheinen, z-Wert 0,77. Das ist keine Krone, das ist ein Lottoschein mit Adelstitel."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Sagt der Mann mit minus 144,52 Euro. Ich hab plus 115,06 und nie eine Formel gesehen. Eine Runde auf mich!"
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Dein CLV lag bei minus 5 Prozent, du hättest verlieren müssen. Ab heute zählt die Wochenkasse: 1.000 Euro, und ich wette nur noch mit echtem Vorteil."
+    },
+    {
+     "from": "zocker",
+     "to": "analyst",
+     "text": "Nur mit Vorteil? Dann sitzt du die halbe Woche auf deinem Geld. Ich hab in Woche 1 nur 600 Euro gebraucht, um ordentlich Lärm zu machen."
+    },
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Lärm ja, Gewinn nein: minus 112,97. Ich hab plus 70,48 mit Favoriten, die man sich auch am Sonntag noch zeigen kann."
+    },
+    {
+     "from": "affe",
+     "to": "banker",
+     "text": "Ook."
+    },
+    {
+     "from": "stammtisch",
+     "to": "affe",
+     "text": "Der Affe hat minus 80,55, also besser als der Professor. Woche 2, 1.000 Euro, mein Bauch ist bereit."
+    }
+   ]
+  },
+  {
    "date": "2026-11-14",
    "messages": [
     {
@@ -15997,56 +16047,6 @@
      "from": "kombi",
      "to": "analyst",
      "text": "Ich habe übrigens deine drei Favoriten in eine Kombi gepackt. Danke für die Vorarbeit, Professor."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-08",
-   "messages": [
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Ich hab vier Zettel aus einem Hut gezogen und liege 62 Euro vor dir. Wie viele Semester waren das noch mal?"
-    },
-    {
-     "from": "analyst",
-     "to": "affe",
-     "text": "Dein Vorsprung ist statistisch nicht signifikant. Mein Closing Line Value ist positiv."
-    },
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Ook."
-    },
-    {
-     "from": "zocker",
-     "to": "banker",
-     "text": "100 Euro weg an einem Tag. Aber hast du gesehen, wie schön das Unentschieden zu 9,17 ausgesehen hätte?"
-    },
-    {
-     "from": "banker",
-     "to": "zocker",
-     "text": "Ich habe plus 8,80 Euro gemacht und um 22 Uhr geschlafen. Wie war deine Nacht?"
-    },
-    {
-     "from": "kombi",
-     "to": "stammtisch",
-     "text": "Zwei Kombis, zwei Mal knapp vorbei. Ein König stolpert nur auf hohem Niveau."
-    },
-    {
-     "from": "stammtisch",
-     "to": "kombi",
-     "text": "Knapp vorbei ist auch vorbei. Bringst du wenigstens die nächste Runde mit?"
-    },
-    {
-     "from": "banker",
-     "to": "analyst",
-     "text": "Houston verliert 99:102 und du bist mit 40 Euro dabei. Deine Formel hat wohl Feierabend gemacht."
-    },
-    {
-     "from": "analyst",
-     "to": "banker",
-     "text": "Das nennt man Varianz. Du darfst das Wort gern googeln, wenn dein Sparbuch dich lässt."
     }
    ]
   }
