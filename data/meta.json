@@ -1,12 +1,7 @@
 {
- "credits_remaining": 186,
- "credits_used": 314,
+ "credits_remaining": 185,
+ "credits_used": 315,
  "api_calls": [
-  {
-   "t": "2026-11-08T10:04:59Z",
-   "path": "/sports/soccer_italy_serie_a/odds",
-   "cost": 2
-  },
   {
    "t": "2026-11-08T10:04:59Z",
    "path": "/sports/soccer_france_ligue_one/events",
@@ -1001,13 +996,14 @@
    "t": "2026-11-16T16:49:53Z",
    "path": "/sports/soccer_uefa_nations_league/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-16T19:31:00Z",
+   "path": "/sports/soccer_uefa_nations_league/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-12T02:57:17Z",
-   "a": "Wetten abgerechnet"
-  },
   {
    "t": "2026-11-12T03:57:33Z",
    "a": "Wetten abgerechnet"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-16T19:00:50Z",
    "a": "Wetten abgerechnet"
+  },
+  {
+   "t": "2026-11-16T19:31:00Z",
+   "a": "Schlussquoten erfasst"
   }
  ]
 }

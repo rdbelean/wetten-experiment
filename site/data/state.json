@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-16T19:00:50Z",
+ "generated_at": "2026-11-16T19:31:00Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2146,8 +2146,8 @@
       "avg_ev": 0.0031,
       "expected_profit": 0.28,
       "expected_settled": 0.16,
-      "avg_clv": 0.0144,
-      "n_clv": 1,
+      "avg_clv": 0.0066,
+      "n_clv": 2,
       "clv_positive": 1,
       "max_drawdown": 0.0,
       "budget": 1000.0,
@@ -16529,11 +16529,17 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 46.8,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-16T19:30:59Z",
+    "fair_p": 0.6402,
+    "pinnacle_odds": 1.54,
+    "best_odds": 1.55,
+    "fair_odds": 1.562
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.0013,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 64,1 % (Pinnacle 1,53). Unser Wert: 64,1 %. Beste Quote 1,56 bei Unibet SE (Median 1,51, 14 Anbieter), Erwartungswert +0,0 %. Recherche: Nordmazedonien steht schon als Gruppenletzter fest (0 Punkte, Relegation). Slowenien (8) verteidigt Platz 2 gegen Schottland. Teamnews gibt es nicht, keine Korrektur.",
    "research": "Nordmazedonien steht schon als Gruppenletzter fest (0 Punkte, Relegation). Slowenien (8) verteidigt Platz 2 gegen Schottland. Teamnews gibt es nicht, keine Korrektur.",
@@ -17449,12 +17455,8 @@
   }
  },
  "system": {
-  "credits_remaining": 186,
+  "credits_remaining": 185,
   "last_actions": [
-   {
-    "t": "2026-11-13T21:47:38Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-13T23:58:42Z",
     "a": "Schlussquoten erfasst"
@@ -17510,6 +17512,10 @@
    {
     "t": "2026-11-16T19:00:50Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-16T19:31:00Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
