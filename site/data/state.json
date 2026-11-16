@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-16T10:03:00Z",
+ "generated_at": "2026-11-16T16:49:53Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2146,9 +2146,9 @@
       "avg_ev": 0.0031,
       "expected_profit": 0.28,
       "expected_settled": 0,
-      "avg_clv": null,
-      "n_clv": 0,
-      "clv_positive": 0,
+      "avg_clv": 0.0144,
+      "n_clv": 1,
+      "clv_positive": 1,
       "max_drawdown": 0.0,
       "budget": 1000.0,
       "remaining": 910.0
@@ -16055,11 +16055,17 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 37.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-16T16:49:53Z",
+    "fair_p": 0.8115,
+    "pinnacle_odds": 1.22,
+    "best_odds": 1.24,
+    "fair_odds": 1.232
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0144,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,4 % (Pinnacle 1,23). Unser Wert: 80,4 %. Beste Quote 1,25 bei 1xBet (Median 1,22, 14 Anbieter), Erwartungswert +0,5 %. Recherche: Island reicht ein Remis zum Aufstieg aus Liga C. Es fehlen Thordarson und Ingason, bei Luxemburg ist Natami gesperrt. Das Hinspiel endete 3:0, Island hat zuletzt 5:0 gegen Bulgarien gewonnen. Alles bekannt und im Kurs 1,25 enthalten, keine Korrektur.",
    "research": "Island reicht ein Remis zum Aufstieg aus Liga C. Es fehlen Thordarson und Ingason, bei Luxemburg ist Natami gesperrt. Das Hinspiel endete 3:0, Island hat zuletzt 5:0 gegen Bulgarien gewonnen. Alles bekannt und im Kurs 1,25 enthalten, keine Korrektur.",
@@ -17287,12 +17293,8 @@
   }
  },
  "system": {
-  "credits_remaining": 187,
+  "credits_remaining": 186,
   "last_actions": [
-   {
-    "t": "2026-11-13T19:01:43Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-13T19:01:43Z",
     "a": "Wetten abgerechnet"
@@ -17348,6 +17350,10 @@
    {
     "t": "2026-11-16T10:03:00Z",
     "a": "Wetten für 2026-11-16 platziert"
+   },
+   {
+    "t": "2026-11-16T16:49:53Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
