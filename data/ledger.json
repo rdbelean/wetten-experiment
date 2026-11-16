@@ -13099,7 +13099,7 @@
    "player": "banker",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "629f5b2cbc2b6986661cb280d37b0ecb",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13150,9 +13150,31 @@
     "best_odds": 1.55,
     "fair_odds": 1.562
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-16T21:46:38Z",
+    "goals": [
+     {
+      "min": 29,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 66,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 46.8,
+   "profit": 16.8,
    "clv": -0.0013,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 64,1 % (Pinnacle 1,53). Unser Wert: 64,1 %. Beste Quote 1,56 bei Unibet SE (Median 1,51, 14 Anbieter), Erwartungswert +0,0 %. Recherche: Nordmazedonien steht schon als Gruppenletzter fest (0 Punkte, Relegation). Slowenien (8) verteidigt Platz 2 gegen Schottland. Teamnews gibt es nicht, keine Korrektur.",
@@ -13161,7 +13183,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861187"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 0.1 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-16-stammtisch-01",
@@ -13672,7 +13695,7 @@
    "player": "affe",
    "day": "2026-11-16",
    "placed_at": "2026-11-16T10:03:00Z",
-   "status": "open",
+   "status": "won",
    "event_id": "2b656115b7829be9f778b0c011f7d722",
    "sport": "soccer_uefa_nations_league",
    "league": "Nations League",
@@ -13717,9 +13740,36 @@
    "stake": 35.5,
    "potential_payout": 61.06,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-16T21:46:38Z",
+    "goals": [
+     {
+      "min": 22,
+      "side": "home",
+      "og": true
+     },
+     {
+      "min": 47,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 89,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 61.06,
+   "profit": 25.56,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,72 (Marktschnitt), Erwartungswert -4,0 %.",
@@ -13728,7 +13778,8 @@
     "path": "soccer/uefa.nations",
     "id": "401861186"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-16-affe-03",
