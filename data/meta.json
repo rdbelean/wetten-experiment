@@ -1005,10 +1005,6 @@
  ],
  "last_actions": [
   {
-   "t": "2026-11-12T07:33:59Z",
-   "a": "Kandidaten für 2026-11-12 vorbereitet"
-  },
-  {
    "t": "2026-11-12T10:04:49Z",
    "a": "Wetten für 2026-11-12 platziert"
   },
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-17T08:30:17Z",
    "a": "Kandidaten für 2026-11-17 vorbereitet"
+  },
+  {
+   "t": "2026-11-17T10:00:49Z",
+   "a": "Wetten für 2026-11-17 platziert"
   }
  ]
 }
