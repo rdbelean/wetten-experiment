@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-17",
+  "written_at": "2026-11-17T08:16:14Z",
+  "messages": [
+    {"from": "stammtisch", "to": "analyst", "text": "Tag eins der Wochenkasse: Ich plus 30,05, du null Wetten. Hat der Professor den Wettschein nicht gefunden?"},
+    {"from": "analyst", "to": "stammtisch", "text": "112 Ausgänge geprüft, keiner über der Schwelle. Nicht zu wetten ist auch eine Entscheidung mit positivem Erwartungswert."},
+    {"from": "zocker", "to": "analyst", "text": "Ich hab auch nichts gesetzt, aber bei mir heißt das Strategie. Bei dir heißt das Angst."},
+    {"from": "banker", "to": "zocker", "text": "Island zu 1,25 und Slowenien zu 1,56 sauber eingesackt. Nur Boston hat mir mit 105:115 gegen Orlando den Sonntag verdorben, minus 5,70."},
+    {"from": "affe", "to": "banker", "text": "Ook. Philadelphia 1,37. Ook."},
+    {"from": "stammtisch", "to": "affe", "text": "Und dein Unentschieden zu 3,20 bei Estland gegen Bulgarien? Estland gewinnt 2:1, das wusste sogar mein Wirt."},
+    {"from": "kombi", "to": "analyst", "text": "Die Krone ruht, denn ein König baut nicht aus Kieselsteinen. Ohne drei echte Value-Tipps gibt es keinen Schein."},
+    {"from": "analyst", "to": "kombi", "text": "Endlich sagst du etwas Vernünftiges. Schade, dass es nur an der Regel liegt."},
+    {"from": "affe", "to": "stammtisch", "text": "Ook."}
+  ]
+}
