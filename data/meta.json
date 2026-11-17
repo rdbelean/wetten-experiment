@@ -4,11 +4,6 @@
  "api_calls": [
   {
    "t": "2026-11-09T07:33:52Z",
-   "path": "/sports/soccer_germany_bundesliga2/events",
-   "cost": 0
-  },
-  {
-   "t": "2026-11-09T07:33:52Z",
    "path": "/sports/soccer_germany_liga3/events",
    "cost": 0
   },
@@ -1001,6 +996,11 @@
    "t": "2026-11-17T21:04:46Z",
    "path": "/sports/basketball_euroleague/scores",
    "cost": 2
+  },
+  {
+   "t": "2026-11-17T23:00:12Z",
+   "path": "/sports/basketball_euroleague/scores",
+   "cost": 0
   }
  ],
  "last_actions": [
