@@ -13948,7 +13948,7 @@
    "player": "banker",
    "day": "2026-11-17",
    "placed_at": "2026-11-17T10:00:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "d98d9ad5c0769750e7483d129766b628",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -14000,15 +14000,21 @@
     "best_odds": 1.26,
     "fair_odds": 1.258
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 117,
+    "away": 114,
+    "source": "The Odds API",
+    "t": "2026-11-17T23:05:14Z"
+   },
+   "payout": 37.8,
+   "profit": 7.8,
    "clv": 0.002,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 79,8 %. Unser Wert: 79,8 %. Beste Quote 1,26 bei Marathonbet (Median 1,22, 15 Anbieter), Erwartungswert +0,5 %. Recherche: Bayern spielt in dieser Woche eine Doppelrunde (danach kommt Baskonia). Der offizielle Injury Report für Runde 12 nennt keine neuen, nicht eingepreisten Ausfälle, keine Korrektur.",
    "research": "Bayern spielt in dieser Woche eine Doppelrunde (danach kommt Baskonia). Der offizielle Injury Report für Runde 12 nennt keine neuen, nicht eingepreisten Ausfälle, keine Korrektur.",
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.2 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-17-banker-02",
@@ -14684,7 +14690,7 @@
    "player": "affe",
    "day": "2026-11-17",
    "placed_at": "2026-11-17T10:00:48Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "d98d9ad5c0769750e7483d129766b628",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -14730,15 +14736,21 @@
    "stake": 35.5,
    "potential_payout": 145.55,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 117,
+    "away": 114,
+    "source": "The Odds API",
+    "t": "2026-11-17T23:05:14Z"
+   },
+   "payout": 0.0,
+   "profit": -35.5,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 4,1 (Marktschnitt), Erwartungswert -17,2 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   }
  ]
 }
