@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-17T19:49:30Z",
+ "generated_at": "2026-11-17T21:04:46Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2607,22 +2607,22 @@
     "affe": {
      "totals": {
       "staked": 285.72,
-      "staked_settled": 142.86,
-      "returned": 109.7,
-      "profit": -33.16,
-      "roi": -0.2321,
-      "open_stake": 142.86,
-      "open_potential": 300.88,
-      "won": 2,
+      "staked_settled": 179.22,
+      "returned": 155.51,
+      "profit": -23.71,
+      "roi": -0.1323,
+      "open_stake": 106.5,
+      "open_potential": 255.07,
+      "won": 3,
       "lost": 2,
       "push": 0,
       "n_bets": 8,
-      "hit_rate": 0.5,
+      "hit_rate": 0.6,
       "avg_odds": 1.998,
       "max_odds_won": 1.72,
       "avg_ev": -0.068,
       "expected_profit": -19.42,
-      "expected_settled": -8.26,
+      "expected_settled": -10.14,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2642,16 +2642,16 @@
       {
        "date": "2026-11-17",
        "staked": 142.86,
-       "profit": 0,
-       "cum_profit": -33.16,
-       "settled": 0,
+       "profit": 9.45,
+       "cum_profit": -23.71,
+       "settled": 1,
        "n_bets": 4
       },
       {
        "date": "2026-11-18",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -33.16,
+       "cum_profit": -23.71,
        "settled": 0,
        "n_bets": 0
       },
@@ -2659,7 +2659,7 @@
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -33.16,
+       "cum_profit": -23.71,
        "settled": 0,
        "n_bets": 0
       },
@@ -2667,7 +2667,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -33.16,
+       "cum_profit": -23.71,
        "settled": 0,
        "n_bets": 0
       },
@@ -2675,7 +2675,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -33.16,
+       "cum_profit": -23.71,
        "settled": 0,
        "n_bets": 0
       },
@@ -2683,7 +2683,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -33.16,
+       "cum_profit": -23.71,
        "settled": 0,
        "n_bets": 0
       }
@@ -16973,7 +16973,7 @@
    "player": "affe",
    "day": "2026-11-17",
    "placed_at": "2026-11-17T10:00:48Z",
-   "status": "open",
+   "status": "won",
    "event_id": "59c6c196fb73301d1d5fe3c1b5f4c6d4",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -17020,15 +17020,21 @@
    "stake": 36.36,
    "potential_payout": 45.81,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 80,
+    "away": 75,
+    "source": "The Odds API",
+    "t": "2026-11-17T21:04:46Z"
+   },
+   "payout": 45.81,
+   "profit": 9.45,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,26 (Marktschnitt), Erwartungswert -5,2 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-17-affe-04",
@@ -18353,12 +18359,8 @@
   }
  },
  "system": {
-  "credits_remaining": 173,
+  "credits_remaining": 171,
   "last_actions": [
-   {
-    "t": "2026-11-15T15:32:24Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-16T08:32:39Z",
     "a": "Kandidaten für 2026-11-16 vorbereitet"
@@ -18414,6 +18416,10 @@
    {
     "t": "2026-11-17T19:49:30Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-17T21:04:46Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }
