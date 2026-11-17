@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-17T08:30:17Z",
+ "generated_at": "2026-11-17T08:35:20Z",
  "current_week": 2,
  "weeks": [
   {
@@ -1948,8 +1948,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Der auffällige Spitzenwert des Tages (Baskonia zu 3,75, EV +13 %) ist ein Datenfehler: Matchbook führt Baskonia bei 1,87, dadurch steigt die faire Wahrscheinlichkeit auf 0,302. Alle 17 übrigen Anbieter liegen bei 0,26 bis 0,28. Ich korrigiere um −0,035 auf den Baskonia-Sieg und setze ein Veto. Für die Nations League sind die Motivationslagen bekannt und eingepreist: Österreich (Rangnick kündigt starke Rotation an) und Schweden stehen schon als Gruppensieger fest, Polen fehlen Cash und Kiwior, Dänemark reicht gegen Norwegen ein Remis. Sonst habe ich keine Korrekturen vorgenommen.",
+      "n_events": 11
      },
      "near_misses": [],
      "summary": null
