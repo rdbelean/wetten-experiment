@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-17T03:28:28Z",
+ "generated_at": "2026-11-17T08:20:09Z",
  "current_week": 2,
  "weeks": [
   {
@@ -1930,7 +1930,11 @@
        "commence": "2026-11-16T17:00:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Der Analyst hat am 16.11., dem ersten Tag der Wochenkasse, nichts gesetzt: Unter 112 geprüften Ausgängen erreichte keiner die neue Schwelle (Fußball +2 %, andere Sportarten +4 %). Der beste Beinahe-Tipp war Über 2,5 Tore bei Schweiz–Schottland (EV +2,37 % zu 2,12 bei 1xBet, aber ohne Pinnacle-Bestätigung unter der Schwelle). Das Spiel endete 4:0, die Wette hätte also gewonnen. Tagessieger war der Stammtisch mit +30,05 € (4 von 5 Nations-League-Favoriten zur Tipico-Quote, nur Slowakei kam in Kasachstan nicht über ein 2:2 hinaus). Der Banker verlor 5,70 €, weil Boston zu Hause 105:115 gegen Orlando verlor. Der Affe verlor 33,16 €, vor allem durch das Unentschieden-Tipp bei Estland–Bulgarien (2:1).",
+      "lessons": "Ein Nulltag ist in Woche 2 so gewollt: Am letzten Nations-League-Spieltag waren die Märkte effizient, alle News eingepreist und die besten Kanten lagen bei nur +2 %. Ein einzelner Tag, an dem der verpasste Tipp gewonnen hätte, ist kein Grund, die Schwelle zu senken. Auch der Stammtisch-Gewinn kommt von kleinen Favoritenquoten (1,10 bis 1,98) und sagt bei 5 Wetten nichts über Können aus.",
+      "written_at": "2026-11-17T08:16:14Z"
+     }
     },
     {
      "date": "2026-11-17",
@@ -16834,6 +16838,56 @@
  ],
  "talk": [
   {
+   "date": "2026-11-17",
+   "messages": [
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Tag eins der Wochenkasse: Ich plus 30,05, du null Wetten. Hat der Professor den Wettschein nicht gefunden?"
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "112 Ausgänge geprüft, keiner über der Schwelle. Nicht zu wetten ist auch eine Entscheidung mit positivem Erwartungswert."
+    },
+    {
+     "from": "zocker",
+     "to": "analyst",
+     "text": "Ich hab auch nichts gesetzt, aber bei mir heißt das Strategie. Bei dir heißt das Angst."
+    },
+    {
+     "from": "banker",
+     "to": "zocker",
+     "text": "Island zu 1,25 und Slowenien zu 1,56 sauber eingesackt. Nur Boston hat mir mit 105:115 gegen Orlando den Sonntag verdorben, minus 5,70."
+    },
+    {
+     "from": "affe",
+     "to": "banker",
+     "text": "Ook. Philadelphia 1,37. Ook."
+    },
+    {
+     "from": "stammtisch",
+     "to": "affe",
+     "text": "Und dein Unentschieden zu 3,20 bei Estland gegen Bulgarien? Estland gewinnt 2:1, das wusste sogar mein Wirt."
+    },
+    {
+     "from": "kombi",
+     "to": "analyst",
+     "text": "Die Krone ruht, denn ein König baut nicht aus Kieselsteinen. Ohne drei echte Value-Tipps gibt es keinen Schein."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Endlich sagst du etwas Vernünftiges. Schade, dass es nur an der Regel liegt."
+    },
+    {
+     "from": "affe",
+     "to": "stammtisch",
+     "text": "Ook."
+    }
+   ]
+  },
+  {
    "date": "2026-11-16",
    "messages": [
     {
@@ -17140,56 +17194,6 @@
      "from": "analyst",
      "to": "kombi",
      "text": "Bei sieben Tagen entscheidet die Varianz. Am Sonntag reden wir über den Erwartungswert."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-09",
-   "messages": [
-    {
-     "from": "kombi",
-     "to": "zocker",
-     "text": "Cowboys, Lions, Hoffenheim, alles durch: 50 Euro werden 178,82. So trägt man eine Krone."
-    },
-    {
-     "from": "zocker",
-     "to": "kombi",
-     "text": "Getafe zu 8,0 und Groningen zu 6,49 hätten mehr gebracht. Wenn sie gewonnen hätten."
-    },
-    {
-     "from": "banker",
-     "to": "zocker",
-     "text": "Fünf Favoriten, fünf Siege, plus 37,80 Euro. Du bist jetzt bei minus 200, oder?"
-    },
-    {
-     "from": "zocker",
-     "to": "banker",
-     "text": "Ich bin bei minus 200 und habe Mut. Du bist bei plus 46,60 und hast eine Rentenversicherung."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Fünf Heimfavoriten, plus 69 Euro, und ich hab dafür kein CLV gebraucht. Nur ein Bier."
-    },
-    {
-     "from": "analyst",
-     "to": "stammtisch",
-     "text": "Acht von acht Wetten mit positivem CLV, Sunderland zu 3,89 bei einem Schlusskurs von 3,24. Das ist Können, kein Bauchgefühl."
-    },
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Drei Mal Unentschieden getippt, drei Mal verloren. Ook."
-    },
-    {
-     "from": "analyst",
-     "to": "affe",
-     "text": "Du hast selbst 100 Euro verloren, mit zwei Remis-Tipps. Bei mir war wenigstens der Preis richtig."
-    },
-    {
-     "from": "kombi",
-     "to": "analyst",
-     "text": "Ich habe übrigens deine drei Favoriten in eine Kombi gepackt. Danke für die Vorarbeit, Professor."
     }
    ]
   }
