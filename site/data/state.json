@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-17T08:20:09Z",
+ "generated_at": "2026-11-17T08:30:17Z",
  "current_week": 2,
  "weeks": [
   {
@@ -1943,7 +1943,7 @@
       "2026-11-18T11:00:00Z"
      ],
      "placed": false,
-     "n_candidates": null,
+     "n_candidates": 33,
      "n_outcomes": null,
      "n_value": null,
      "research": {
@@ -17534,12 +17534,8 @@
   }
  },
  "system": {
-  "credits_remaining": 184,
+  "credits_remaining": 175,
   "last_actions": [
-   {
-    "t": "2026-11-14T03:29:54Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-14T03:55:04Z",
     "a": "Wetten abgerechnet"
@@ -17595,6 +17591,10 @@
    {
     "t": "2026-11-17T03:28:28Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-17T08:30:17Z",
+    "a": "Kandidaten für 2026-11-17 vorbereitet"
    }
   ]
  }
