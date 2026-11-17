@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-17T10:00:49Z",
+ "generated_at": "2026-11-17T17:49:05Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2283,9 +2283,9 @@
       "avg_ev": 0.0031,
       "expected_profit": 0.47,
       "expected_settled": 0.28,
-      "avg_clv": 0.0078,
-      "n_clv": 3,
-      "clv_positive": 2,
+      "avg_clv": 0.0064,
+      "n_clv": 4,
+      "clv_positive": 3,
       "max_drawdown": 30.0,
       "budget": 1000.0,
       "remaining": 850.0
@@ -17141,11 +17141,17 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 37.8,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-17T17:49:04Z",
+    "fair_p": 0.7952,
+    "pinnacle_odds": 1.24,
+    "best_odds": 1.26,
+    "fair_odds": 1.258
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.002,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 79,8 %. Unser Wert: 79,8 %. Beste Quote 1,26 bei Marathonbet (Median 1,22, 15 Anbieter), Erwartungswert +0,5 %. Recherche: Bayern spielt in dieser Woche eine Doppelrunde (danach kommt Baskonia). Der offizielle Injury Report für Runde 12 nennt keine neuen, nicht eingepreisten Ausfälle, keine Korrektur.",
    "research": "Bayern spielt in dieser Woche eine Doppelrunde (danach kommt Baskonia). Der offizielle Injury Report für Runde 12 nennt keine neuen, nicht eingepreisten Ausfälle, keine Korrektur.",
@@ -18341,12 +18347,8 @@
   }
  },
  "system": {
-  "credits_remaining": 175,
+  "credits_remaining": 174,
   "last_actions": [
-   {
-    "t": "2026-11-14T04:25:37Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-14T06:26:18Z",
     "a": "Wetten abgerechnet"
@@ -18402,6 +18404,10 @@
    {
     "t": "2026-11-17T10:00:49Z",
     "a": "Wetten für 2026-11-17 platziert"
+   },
+   {
+    "t": "2026-11-17T17:49:05Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
