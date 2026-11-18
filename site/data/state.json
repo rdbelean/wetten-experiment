@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-18T08:33:47Z",
+ "generated_at": "2026-11-18T08:38:50Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2103,8 +2103,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Ein reiner NBA- und NHL-Tag mit 16 Events. Kein Ausgang liegt auch nur in der Nähe der Schwelle von +4 % (Spitzenwert +1,3 % für Miami gegen Milwaukee). Die wichtigen Ausfälle (Curry und Butler bei Golden State, Haliburton bei Indiana, Banchero bei Orlando, Mobley bei Cleveland, drei Pelicans-Stammkräfte) waren vor dem Quotenabruf öffentlich und sind eingepreist. Deshalb gibt es keine Korrekturen und kein Veto. NHL-Goalies waren beim Schreiben noch nicht bestätigt.",
+      "n_events": 16
      },
      "near_misses": [],
      "summary": null
