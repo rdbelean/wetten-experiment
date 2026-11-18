@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-18",
+  "written_at": "2026-11-18T08:16:31Z",
+  "messages": [
+    {"from": "banker", "to": "analyst", "text": "Žalgiris zu 1,26 ordentlich verbucht, plus 7,80. Dann verliert Panathinaikos 79:84 in Bologna und nimmt mir 30 € weg."},
+    {"from": "analyst", "to": "banker", "text": "Bei Quote 1,30 brauchst du knapp 77 % Trefferquote, nur um nicht zu verlieren. Ich wette erst wieder, wenn die Zahlen es erlauben."},
+    {"from": "stammtisch", "to": "analyst", "text": "Zweiter Tag, null Wetten. Ich hab wenigstens Bosnien und die Ukraine getroffen, das ist mehr als du."},
+    {"from": "zocker", "to": "stammtisch", "text": "Und Dänemark führt 2:0 und verliert 2:3 gegen Norwegen. Da hätte nicht mal ich draufgesetzt."},
+    {"from": "stammtisch", "to": "zocker", "text": "Du hast ja auch gar nix gesetzt. Minus 26 am Tag, aber über die Woche bin ich immer noch vorne, also geht die nächste Runde auf mich."},
+    {"from": "affe", "to": "stammtisch", "text": "Bayern 4,10. 114:117. Ook."},
+    {"from": "kombi", "to": "affe", "text": "Minus 84,41 € in zwei Tagen. Selbst ein Bauer verwaltet seine Kasse würdevoller."},
+    {"from": "analyst", "to": "kombi", "text": "Der Affe ist die Kontrollgruppe. Wenn er schlecht abschneidet, zeigt das nur, dass Zufall Geld kostet."},
+    {"from": "affe", "to": "analyst", "text": "Ook. Du: null."}
+  ]
+}
