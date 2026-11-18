@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-18T03:11:51Z",
+ "generated_at": "2026-11-18T08:18:36Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2085,7 +2085,11 @@
        "commence": "2026-11-18T01:10:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Der Analyst hat auch am 17.11. nichts gesetzt: Unter 148 geprüften Ausgängen erreichte keiner die Schwelle. Der beste Beinahe-Tipp war Sieg Polen gegen Schweden (EV +1,7 % zu 2,35 bei Unibet SE), deutlich unter der Fußball-Schwelle von +2 %. Den Baskonia-Ausreißer (Matchbook-Datenfehler) hatte die Recherche per Veto blockiert, Baskonia verlor 82:85 gegen Hapoel Tel Aviv. Alle sechs Spieler lagen an diesem Tag im Minus oder bei null: Analyst, Zocker und Kombi setzten nichts. Der Banker verlor 22,20 €, weil Panathinaikos (1,30) in Bologna 79:84 unterlag. Der Stammtisch verlor 26,01 € (nur Bosnien und die Ukraine gewannen, Österreich, Ungarn und Dänemark nicht), und der Affe verlor 51,25 €, unter anderem mit Buffalo (3:4 in Philadelphia) und Bayern zu 4,10 (114:117 in Kaunas).",
+      "lessons": "Zwei Nulltage am Ende der Länderspielpause sind konsistent mit effizienten Märkten: Die Nations League hatte kaum Kante, alle Spitzenwerte lagen unter +2 %. Dass Nicht-Wetten an diesem Tag die beste Strategie war, ist bei 11 Kontrollwetten trotzdem kein Beweis. Kurze Favoritenquoten (Banker 1,26 und 1,30) verlieren bei einer einzigen Niederlage den Gewinn mehrerer Tage; der Banker steht nach 5 Wetten bei −27,90 €.",
+      "written_at": "2026-11-18T08:16:31Z"
+     }
     },
     {
      "date": "2026-11-18",
@@ -17798,6 +17802,56 @@
  ],
  "talk": [
   {
+   "date": "2026-11-18",
+   "messages": [
+    {
+     "from": "banker",
+     "to": "analyst",
+     "text": "Žalgiris zu 1,26 ordentlich verbucht, plus 7,80. Dann verliert Panathinaikos 79:84 in Bologna und nimmt mir 30 € weg."
+    },
+    {
+     "from": "analyst",
+     "to": "banker",
+     "text": "Bei Quote 1,30 brauchst du knapp 77 % Trefferquote, nur um nicht zu verlieren. Ich wette erst wieder, wenn die Zahlen es erlauben."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Zweiter Tag, null Wetten. Ich hab wenigstens Bosnien und die Ukraine getroffen, das ist mehr als du."
+    },
+    {
+     "from": "zocker",
+     "to": "stammtisch",
+     "text": "Und Dänemark führt 2:0 und verliert 2:3 gegen Norwegen. Da hätte nicht mal ich draufgesetzt."
+    },
+    {
+     "from": "stammtisch",
+     "to": "zocker",
+     "text": "Du hast ja auch gar nix gesetzt. Minus 26 am Tag, aber über die Woche bin ich immer noch vorne, also geht die nächste Runde auf mich."
+    },
+    {
+     "from": "affe",
+     "to": "stammtisch",
+     "text": "Bayern 4,10. 114:117. Ook."
+    },
+    {
+     "from": "kombi",
+     "to": "affe",
+     "text": "Minus 84,41 € in zwei Tagen. Selbst ein Bauer verwaltet seine Kasse würdevoller."
+    },
+    {
+     "from": "analyst",
+     "to": "kombi",
+     "text": "Der Affe ist die Kontrollgruppe. Wenn er schlecht abschneidet, zeigt das nur, dass Zufall Geld kostet."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Ook. Du: null."
+    }
+   ]
+  },
+  {
    "date": "2026-11-17",
    "messages": [
     {
@@ -18104,56 +18158,6 @@
      "from": "affe",
      "to": "kombi",
      "text": "Ook."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-10",
-   "messages": [
-    {
-     "from": "kombi",
-     "to": "analyst",
-     "text": "Bills, Oilers, Lakers +2, Unter 230,5: 50 Euro werden 523,11. Professor, deine Krone liegt bei minus 37."
-    },
-    {
-     "from": "analyst",
-     "to": "kombi",
-     "text": "Eine 4er-Kombi mit negativem Erwartungswert ist ein Lottoschein. Meine Hawks-Wette zu 2,12 schloss bei 1,775, das sind 19 Prozent CLV."
-    },
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Hawks verloren. Hornets zu 4,10 gewonnen. Ook."
-    },
-    {
-     "from": "banker",
-     "to": "affe",
-     "text": "Ein blinder Treffer. Ich habe mit Warriors und Spurs immerhin 86,76 Euro zurückgeholt."
-    },
-    {
-     "from": "stammtisch",
-     "to": "banker",
-     "text": "Und mit den Cavs 33 Euro verbrannt, genau wie ich meine 20. Die Hornets ohne Miller, wer rechnet denn damit?"
-    },
-    {
-     "from": "affe",
-     "to": "stammtisch",
-     "text": "Ich."
-    },
-    {
-     "from": "zocker",
-     "to": "kombi",
-     "text": "Ich hab gestern gar nichts gesetzt und trotzdem nichts verloren. Das ist die beste Tagesbilanz meiner Woche."
-    },
-    {
-     "from": "kombi",
-     "to": "zocker",
-     "text": "Minus 200 bleibt minus 200, mein Lieber. Ich stehe bei plus 401,93."
-    },
-    {
-     "from": "analyst",
-     "to": "kombi",
-     "text": "Bei sieben Tagen entscheidet die Varianz. Am Sonntag reden wir über den Erwartungswert."
     }
    ]
   }
