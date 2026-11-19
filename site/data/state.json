@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-19T08:31:57Z",
+ "generated_at": "2026-11-19T08:37:00Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2258,8 +2258,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Ein Tag mit NBA, NHL, EuroLeague und Thursday Night Football (Texans gegen Colts), 23 Events. Kein Ausgang kommt auch nur in die Nähe der Schwellen: Der Spitzenwert liegt bei +0,9 % (Unter 227,5 bei Bucks gegen Blazers). Die wichtigen Ausfälle (Curry, Butler und Porziņģis bei Golden State, Hunter bei Houston, Melli bei Fenerbahçe) waren vor dem Quotenabruf bekannt. Deshalb gibt es keine Korrekturen und kein Veto. NHL-Goalies waren beim Schreiben noch nicht bestätigt, einige Quellen ließen sich nicht abrufen.",
+      "n_events": 8
      },
      "near_misses": [],
      "summary": null
