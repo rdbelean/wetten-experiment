@@ -14775,7 +14775,7 @@
    "player": "banker",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "2adabff2dca8b2ed4b39540a6a25ffb2",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -14830,9 +14830,14 @@
     "best_odds": 1.2,
     "fair_odds": 1.202
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 97,
+    "away": 109,
+    "source": "ESPN",
+    "t": "2026-11-19T05:56:04Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": 0.0443,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 80,2 %. Unser Wert: 80,2 %. Beste Quote 1,25 bei Matchbook (Median 1,20, 18 Anbieter), Erwartungswert +0,7 %. Recherche: Geprüft: Luka Dončić wird als day-to-day geführt, die Quellen widersprechen sich aber. Bei Utah fehlt Jusuf Nurkić. Ohne bestätigten Status keine Korrektur.",
@@ -14841,7 +14846,8 @@
     "path": "basketball/nba",
     "id": "401910017"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 4.4 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-18-banker-02",
@@ -15298,7 +15304,7 @@
    "player": "affe",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4bdafbab228335fd29f62006a4bc932d",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15348,9 +15354,14 @@
    "stake": 36.36,
    "potential_payout": 112.72,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 107,
+    "away": 128,
+    "source": "ESPN",
+    "t": "2026-11-19T05:56:04Z"
+   },
+   "payout": 0.0,
+   "profit": -36.36,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,1 (Tipico), Erwartungswert -7,3 %.",
@@ -15359,7 +15370,8 @@
     "path": "basketball/nba",
     "id": "401910018"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-18-affe-02",
