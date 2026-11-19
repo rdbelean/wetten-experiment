@@ -1,0 +1,46 @@
+{
+  "written_at": "2026-11-19T08:33:32Z",
+  "summary": "Ein Tag mit NBA, NHL, EuroLeague und Thursday Night Football (Texans gegen Colts), 23 Events. Kein Ausgang kommt auch nur in die Nähe der Schwellen: Der Spitzenwert liegt bei +0,9 % (Unter 227,5 bei Bucks gegen Blazers). Die wichtigen Ausfälle (Curry, Butler und Porziņģis bei Golden State, Hunter bei Houston, Melli bei Fenerbahçe) waren vor dem Quotenabruf bekannt. Deshalb gibt es keine Korrekturen und kein Veto. NHL-Goalies waren beim Schreiben noch nicht bestätigt, einige Quellen ließen sich nicht abrufen.",
+  "events": {
+    "006df00e5e48650d849d1bb4cd81565d": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Geprüft: Giannis Antetokounmpo spielt inzwischen für Miami, das erklärt die klare Außenseiterrolle der Bucks zu Hause. Bei Portland sind Deni Avdija (Fuß) und Toumani Camara fraglich, Robert Williams III pausiert. Das ist öffentlich und eingepreist, keine Korrektur."
+    },
+    "66f9e83cf025d58acee12bce18661fb3": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Geprüft (Thursday Night Football): Bei Houston fehlt Danielle Hunter (Oberschenkel) zum zweiten Mal in Folge. Bei den Colts fallen Charvarius Ward, Bernhard Raimann und Jalen Travis aus, Sauce Gardner ist fraglich. Die Quellen sind teils widersprüchlich, alles war vor dem Quotenabruf bekannt. Keine Korrektur."
+    },
+    "20fa5e2d73cec494c113790161a89aec": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Geprüft: Dylan Harper (Hüfte) wird bei San Antonio als Ausfall geführt. Einen verlässlichen Clippers-Report und Wembanyamas Status fand ich nicht. Die Marktquote (rund 91 % für die Spurs) spricht dafür, dass er spielt. Ohne bestätigte News keine Korrektur."
+    },
+    "c65d74c382bec5dc7dacdb62b641728b": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Geprüft: Für Valencia und Virtus Bologna fand ich keine aktuellen Ausfallmeldungen zu diesem Spieltag. Keine Korrektur."
+    },
+    "3c082b72aa002131c276ff5e24bada1b": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Geprüft: Bei Golden State fallen Stephen Curry (Riss am schrägen Bauchmuskel), Jimmy Butler, Kristaps Porziņģis und Moses Moody aus, Al Horford soll zurückkehren. Die Ausfälle sind seit Tagen bekannt und erklären die Favoritenrolle von Memphis. Keine Korrektur."
+    },
+    "5ee4efd00c1daaebd8249ff44fd6ac9d": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Geprüft: Bei Minnesota fehlt Jaylen Clark (Oberschenkel). Die Angaben zu weiteren fraglichen Spielern widersprechen sich zwischen den Quellen. Keine Korrektur."
+    },
+    "0c64e1972e0525f5cf28265902eb43ab": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Geprüft: Fenerbahçe meldete am 18.11., dass Nicolò Melli am Knie operiert wurde und sechs bis acht Wochen ausfällt. Er ist ein Rollenspieler, die Nachricht ist am Vortag erschienen und sollte eingepreist sein. Keine Korrektur."
+    },
+    "9254f51920f7e6698241302a3f949978": {
+      "veto": false,
+      "confidence": "niedrig",
+      "notes": "Geprüft: Bei Baskonia fällt laut Cadena SER Vitoria Kenneth Faried (Oberschenkel) voraussichtlich aus, für Bayern fand ich keine neuen Meldungen. Klein und eingepreist, keine Korrektur."
+    }
+  }
+}
