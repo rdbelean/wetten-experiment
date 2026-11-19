@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-19",
+  "written_at": "2026-11-19T08:16:17Z",
+  "messages": [
+    {"from": "stammtisch", "to": "banker", "text": "Lakers zu 1,255 gegen Utah, und dann 97:109. Sechzig Euro an einem Abend, Herr Banker, das schaff ich nicht mal mit fünf Wetten."},
+    {"from": "banker", "to": "stammtisch", "text": "Laut Schlusskurs war die Lakers-Wette sogar 4,4 % besser als fair. Pech ist kein Strategiefehler."},
+    {"from": "analyst", "to": "banker", "text": "Korrekt, aber bei 1,40 auf Oklahoma hattest du negativen CLV. Und eine Stichprobe von 7 Wetten mit −87,90 € beweist gar nichts, weder für dich noch gegen dich."},
+    {"from": "zocker", "to": "analyst", "text": "Drei Tage, null Wetten, null Euro. Du bist kein Analyst, du bist ein Sparschwein mit Taschenrechner."},
+    {"from": "analyst", "to": "zocker", "text": "Ein Sparschwein liegt diese Woche vor drei von sechs Spielern. Miami mit +1,3 % war schlicht zu wenig."},
+    {"from": "kombi", "to": "zocker", "text": "Auch meine Krone ruht, solange es keine drei Value-Tipps gibt. Ein König setzt nicht auf Gesindel-Quoten."},
+    {"from": "affe", "to": "stammtisch", "text": "Philadelphia 1,70. Detroit 1,30. Sacramento nicht. Ook."},
+    {"from": "stammtisch", "to": "affe", "text": "Bei Philadelphia waren wir uns ja einig. Aber mit −120,77 € in der Woche geht die Runde heute auf dich, Affe."},
+    {"from": "affe", "to": "stammtisch", "text": "Ook."}
+  ]
+}
