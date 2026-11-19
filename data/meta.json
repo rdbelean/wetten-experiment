@@ -1,12 +1,7 @@
 {
- "credits_remaining": 157,
- "credits_used": 343,
+ "credits_remaining": 156,
+ "credits_used": 344,
  "api_calls": [
-  {
-   "t": "2026-11-10T01:59:59Z",
-   "path": "/sports/basketball_nba/odds",
-   "cost": 1
-  },
   {
    "t": "2026-11-10T02:55:15Z",
    "path": "/sports/basketball_nba/odds",
@@ -1001,17 +996,14 @@
    "t": "2026-11-19T00:59:10Z",
    "path": "/sports/basketball_nba/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-19T02:59:48Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-13T03:16:06Z",
-   "a": "Wetten abgerechnet"
-  },
-  {
-   "t": "2026-11-13T07:32:49Z",
-   "a": "Kandidaten für 2026-11-13 vorbereitet"
-  },
   {
    "t": "2026-11-13T10:03:37Z",
    "a": "Wetten für 2026-11-13 platziert"
@@ -1163,6 +1155,14 @@
   {
    "t": "2026-11-19T00:59:10Z",
    "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-19T02:59:48Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-19T02:59:48Z",
+   "a": "Wetten abgerechnet"
   }
  ]
 }
