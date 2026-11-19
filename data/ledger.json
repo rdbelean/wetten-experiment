@@ -15218,7 +15218,7 @@
    "player": "stammtisch",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6a72c23de4887e73345dde9bdc64eabe",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15268,9 +15268,14 @@
    "stake": 28.5,
    "potential_payout": 48.45,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 107,
+    "away": 137,
+    "source": "ESPN",
+    "t": "2026-11-19T03:30:00Z"
+   },
+   "payout": 0.0,
+   "profit": -28.5,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,7 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,1 %.",
@@ -15279,7 +15284,8 @@
     "path": "basketball/nba",
     "id": "401910011"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-18-affe-01",
@@ -15428,7 +15434,7 @@
    "player": "affe",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6a72c23de4887e73345dde9bdc64eabe",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15478,9 +15484,14 @@
    "stake": 35.5,
    "potential_payout": 60.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 107,
+    "away": 137,
+    "source": "ESPN",
+    "t": "2026-11-19T03:30:00Z"
+   },
+   "payout": 0.0,
+   "profit": -35.5,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,7 (Tipico), Erwartungswert -3,1 %.",
@@ -15489,7 +15500,8 @@
     "path": "basketball/nba",
     "id": "401910011"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-18-affe-04",
