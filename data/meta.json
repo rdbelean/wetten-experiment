@@ -1,12 +1,7 @@
 {
- "credits_remaining": 158,
- "credits_used": 342,
+ "credits_remaining": 157,
+ "credits_used": 343,
  "api_calls": [
-  {
-   "t": "2026-11-10T01:04:44Z",
-   "path": "/sports/americanfootball_nfl/odds",
-   "cost": 1
-  },
   {
    "t": "2026-11-10T01:59:59Z",
    "path": "/sports/basketball_nba/odds",
@@ -1001,13 +996,14 @@
    "t": "2026-11-18T08:33:47Z",
    "path": "/sports/americanfootball_nfl/events",
    "cost": 0
+  },
+  {
+   "t": "2026-11-19T00:59:10Z",
+   "path": "/sports/basketball_nba/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-13T03:01:00Z",
-   "a": "Wetten abgerechnet"
-  },
   {
    "t": "2026-11-13T03:16:06Z",
    "a": "Wetten abgerechnet"
@@ -1163,6 +1159,10 @@
   {
    "t": "2026-11-18T10:04:17Z",
    "a": "Wetten für 2026-11-18 platziert"
+  },
+  {
+   "t": "2026-11-19T00:59:10Z",
+   "a": "Schlussquoten erfasst"
   }
  ]
 }
