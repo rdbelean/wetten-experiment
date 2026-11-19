@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-19T03:30:00Z",
+ "generated_at": "2026-11-19T03:55:28Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2404,26 +2404,26 @@
     "banker": {
      "totals": {
       "staked": 210.0,
-      "staked_settled": 150.0,
+      "staked_settled": 180.0,
       "returned": 122.1,
-      "profit": -27.9,
-      "roi": -0.186,
-      "open_stake": 60.0,
-      "open_potential": 79.65,
+      "profit": -57.9,
+      "roi": -0.3217,
+      "open_stake": 30.0,
+      "open_potential": 37.65,
       "won": 3,
-      "lost": 2,
+      "lost": 3,
       "push": 0,
       "n_bets": 7,
-      "hit_rate": 0.6,
+      "hit_rate": 0.5,
       "avg_odds": 1.334,
       "max_odds_won": 1.56,
       "avg_ev": 0.0043,
       "expected_profit": 0.89,
-      "expected_settled": 0.47,
+      "expected_settled": 0.68,
       "avg_clv": 0.0012,
       "n_clv": 7,
       "clv_positive": 4,
-      "max_drawdown": 52.2,
+      "max_drawdown": 82.2,
       "budget": 1000.0,
       "remaining": 790.0
      },
@@ -2447,16 +2447,16 @@
       {
        "date": "2026-11-18",
        "staked": 60.0,
-       "profit": 0,
-       "cum_profit": -27.9,
-       "settled": 0,
+       "profit": -30.0,
+       "cum_profit": -57.9,
+       "settled": 1,
        "n_bets": 2
       },
       {
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -27.9,
+       "cum_profit": -57.9,
        "settled": 0,
        "n_bets": 0
       },
@@ -2464,7 +2464,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -27.9,
+       "cum_profit": -57.9,
        "settled": 0,
        "n_bets": 0
       },
@@ -2472,7 +2472,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -27.9,
+       "cum_profit": -57.9,
        "settled": 0,
        "n_bets": 0
       },
@@ -2480,7 +2480,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -27.9,
+       "cum_profit": -57.9,
        "settled": 0,
        "n_bets": 0
       }
@@ -2744,22 +2744,22 @@
     "affe": {
      "totals": {
       "staked": 428.58,
-      "staked_settled": 356.72,
-      "returned": 261.66,
-      "profit": -95.06,
-      "roi": -0.2665,
-      "open_stake": 71.86,
-      "open_potential": 158.87,
-      "won": 5,
+      "staked_settled": 392.22,
+      "returned": 307.81,
+      "profit": -84.41,
+      "roi": -0.2152,
+      "open_stake": 36.36,
+      "open_potential": 112.72,
+      "won": 6,
       "lost": 5,
       "push": 0,
       "n_bets": 12,
-      "hit_rate": 0.5,
+      "hit_rate": 0.5455,
       "avg_odds": 1.982,
       "max_odds_won": 1.72,
       "avg_ev": -0.0647,
       "expected_profit": -27.74,
-      "expected_settled": -22.92,
+      "expected_settled": -25.07,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2787,16 +2787,16 @@
       {
        "date": "2026-11-18",
        "staked": 142.86,
-       "profit": -10.65,
-       "cum_profit": -95.06,
-       "settled": 2,
+       "profit": 0.0,
+       "cum_profit": -84.41,
+       "settled": 3,
        "n_bets": 4
       },
       {
        "date": "2026-11-19",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -95.06,
+       "cum_profit": -84.41,
        "settled": 0,
        "n_bets": 0
       },
@@ -2804,7 +2804,7 @@
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -95.06,
+       "cum_profit": -84.41,
        "settled": 0,
        "n_bets": 0
       },
@@ -2812,7 +2812,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -95.06,
+       "cum_profit": -84.41,
        "settled": 0,
        "n_bets": 0
       },
@@ -2820,7 +2820,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -95.06,
+       "cum_profit": -84.41,
        "settled": 0,
        "n_bets": 0
       }
@@ -18455,7 +18455,7 @@
    "player": "affe",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "won",
    "event_id": "990b541d0ada46fce07ce8b502cf425c",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -18505,9 +18505,14 @@
    "stake": 35.5,
    "potential_payout": 46.15,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 109,
+    "away": 122,
+    "source": "ESPN",
+    "t": "2026-11-19T03:55:28Z"
+   },
+   "payout": 46.15,
+   "profit": 10.65,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,3 (Tipico), Erwartungswert -6,1 %.",
@@ -18516,14 +18521,15 @@
     "path": "basketball/nba",
     "id": "401910013"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-18-banker-02",
    "player": "banker",
    "day": "2026-11-18",
    "placed_at": "2026-11-18T10:04:16Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "e0d8f7b450122679865f9a80b048908b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -18579,9 +18585,14 @@
     "best_odds": 1.43,
     "fair_odds": 1.415
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 112,
+    "away": 117,
+    "source": "ESPN",
+    "t": "2026-11-19T03:55:28Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": -0.0103,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,9 % (Pinnacle 1,36). Unser Wert: 71,9 %. Beste Quote 1,40 bei Unibet SE (Median 1,34, 19 Anbieter), Erwartungswert +0,7 %. Recherche: Geprüft: Bis zum Recherchezeitpunkt kein aktueller Injury Report gefunden, der die Quoten in Frage stellt. Keine Korrektur.",
@@ -18590,7 +18601,8 @@
     "path": "basketball/nba",
     "id": "401910014"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 1.0 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-18-affe-01",
@@ -19435,10 +19447,6 @@
   "credits_remaining": 156,
   "last_actions": [
    {
-    "t": "2026-11-17T10:00:49Z",
-    "a": "Wetten für 2026-11-17 platziert"
-   },
-   {
     "t": "2026-11-17T17:49:05Z",
     "a": "Schlussquoten erfasst"
    },
@@ -19492,6 +19500,10 @@
    },
    {
     "t": "2026-11-19T03:30:00Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-19T03:55:28Z",
     "a": "Wetten abgerechnet"
    }
   ]
