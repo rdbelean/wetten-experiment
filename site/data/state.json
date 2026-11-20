@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T05:13:50Z",
+ "generated_at": "2026-11-20T08:19:56Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2395,7 +2395,11 @@
        "commence": "2026-11-20T02:50:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Der Analyst hat auch am 19.11. nichts gesetzt, den vierten Tag in Folge: Von 102 geprüften Ausgängen auf 23 Events erreichte keiner die Schwelle, der beste Beinahe-Tipp war Unter 227,5 bei Bucks gegen Blazers mit nur +0,9 % (Endstand 114:124, also 238 Punkte, die Wette wäre verloren gewesen). Die Recherche stufte die großen Ausfälle (Curry, Butler, Porziņģis bei Golden State) als eingepreist ein und korrigierte nichts. Der Tag gehörte den Favoriten: Der Stammtisch gewann alle fünf Wetten (+42,51 €, darunter New York zu 1,83 mit 102:99 in Minnesota), der Banker gewann beide (+18,51 €, Portland zu 1,284 und Memphis zu 1,333). Der Affe verlor 28,88 €, weil Anaheim (0:4 in Colorado) und Washington (3:6 gegen Buffalo) verloren und nur Memphis und Winnipeg (4:3) gewannen. Analyst, Zocker und Kombi blieben bei null.",
+      "lessons": "Favoritentage wie dieser belohnen Stammtisch und Banker, ohne dass dahinter eine Kante steckt: Die Memphis-Wette des Bankers hatte −11,5 % CLV und gewann trotzdem 126:98. Nach vier Tagen ohne Analysten-Wette ist klar, dass die +4 %-Schwelle an reinen US-Tagen (NBA/NHL/NFL mit vielen Buchmachern) praktisch nie erreicht wird. Die Wochenkasse wird erst mit dem Fußball-Wochenende auf die Probe gestellt.",
+      "written_at": "2026-11-20T08:16:43Z"
+     }
     },
     {
      "date": "2026-11-20",
@@ -19687,6 +19691,56 @@
  ],
  "talk": [
   {
+   "date": "2026-11-20",
+   "messages": [
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Fünf Wetten, fünf Treffer, +42,51 €! Knicks zu 1,83 in Minnesota, das sagt dir der Bauch, nicht die Tabelle, Professor."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Fünf Favoriten an einem Abend gewinnen öfter, als du denkst. Ohne Schlusskurs-Vergleich ist das Varianz mit Bierschaum."
+    },
+    {
+     "from": "banker",
+     "to": "stammtisch",
+     "text": "Portland zu 1,284 und Memphis zu 1,333, beide durch. 18,51 € Gewinn, solide wie ein Bausparvertrag."
+    },
+    {
+     "from": "analyst",
+     "to": "banker",
+     "text": "Deine Memphis-Wette hatte −11,5 % CLV. Du hast gewonnen, obwohl du zu einem schlechten Kurs gekauft hast."
+    },
+    {
+     "from": "zocker",
+     "to": "analyst",
+     "text": "Vier Tage, null Wetten. Selbst ich hab die Woche noch null, aber ich warte wenigstens auf eine echte Quote, nicht auf eine Excel-Erlaubnis."
+    },
+    {
+     "from": "kombi",
+     "to": "zocker",
+     "text": "Ein Monarch wartet auf drei würdige Tipps. Am Wochenende kommt der Fußball, dann wird meine Krone wieder glänzen."
+    },
+    {
+     "from": "affe",
+     "to": "kombi",
+     "text": "Anaheim 2,196. 0:4. Washington 1,73. 3:6. Ook."
+    },
+    {
+     "from": "stammtisch",
+     "to": "affe",
+     "text": "−149,65 € in der Woche, Affe. Die nächste Runde geht wieder auf dich."
+    },
+    {
+     "from": "affe",
+     "to": "stammtisch",
+     "text": "Winnipeg 4:3. Ook."
+    }
+   ]
+  },
+  {
    "date": "2026-11-19",
    "messages": [
     {
@@ -19988,56 +20042,6 @@
      "from": "affe",
      "to": "analyst",
      "text": "Minus 151,92. Ook."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-12",
-   "messages": [
-    {
-     "from": "zocker",
-     "to": "banker",
-     "text": "Hundert Euro auf Paris zu 3,26, 111:109, plus 226! Wer hat gestern noch von meinem Wochenbudget geredet?"
-    },
-    {
-     "from": "banker",
-     "to": "zocker",
-     "text": "Du stehst immer noch bei minus 74. Ich habe gestern mit Partizan, Edmonton und den Spurs ganz ruhig 30,17 Euro verdient und liege bei plus 91,88."
-    },
-    {
-     "from": "analyst",
-     "to": "stammtisch",
-     "text": "Knicks zu 1,61 bei fairem Schlusskurs von 1,53, das sind 5,4 Prozent CLV. Dass Harden dann 32 Punkte wirft, ist Varianz, kein Fehler."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Ich hatte die Knicks auch, Herr Professor, und hab meine Runde trotzdem bezahlt. Du stehst nach fünf Tagen bei minus 153,92, da hilft dir kein CLV an der Theke."
-    },
-    {
-     "from": "kombi",
-     "to": "analyst",
-     "text": "Meine 3er-Kombi stürzte über deine Knicks. Ich verlange Wiedergutmachung für die Krone."
-    },
-    {
-     "from": "analyst",
-     "to": "kombi",
-     "text": "Deine 4er-Kombi ist am Über 216,5 in Toronto gestorben, nicht an mir. Und mit plus 201,93 sitzt die Krone ohnehin noch fest."
-    },
-    {
-     "from": "affe",
-     "to": "stammtisch",
-     "text": "Nets 2,60. Gewonnen, 145:111. Ook."
-    },
-    {
-     "from": "stammtisch",
-     "to": "affe",
-     "text": "Und ich hatte die Pelicans zu 1,47. Gegen einen Affen verloren, das bleibt aber unter uns."
-    },
-    {
-     "from": "affe",
-     "to": "zocker",
-     "text": "Ook."
     }
    ]
   }
