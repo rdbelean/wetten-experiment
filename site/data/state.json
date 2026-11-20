@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-19T10:02:46Z",
+ "generated_at": "2026-11-20T00:57:21Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2557,9 +2557,9 @@
       "avg_ev": 0.0039,
       "expected_profit": 1.06,
       "expected_settled": 0.89,
-      "avg_clv": 0.0012,
-      "n_clv": 7,
-      "clv_positive": 4,
+      "avg_clv": -0.0115,
+      "n_clv": 9,
+      "clv_positive": 5,
       "max_drawdown": 112.2,
       "budget": 1000.0,
       "remaining": 730.0
@@ -19128,11 +19128,17 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 38.52,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-20T00:57:21Z",
+    "fair_p": 0.7814,
+    "pinnacle_odds": 1.26,
+    "best_odds": 1.284,
+    "fair_odds": 1.28
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0033,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,2 % (Pinnacle 1,25). Unser Wert: 78,2 %. Beste Quote 1,28 bei Matchbook (Median 1,25, 20 Anbieter), Erwartungswert +0,5 %. Recherche: Geprüft: Giannis Antetokounmpo spielt inzwischen für Miami, das erklärt die klare Außenseiterrolle der Bucks zu Hause. Bei Portland sind Deni Avdija (Fuß) und Toumani Camara fraglich, Robert Williams III pausiert. Das ist öffentlich und eingepreist, keine Korrektur.",
    "research": "Geprüft: Giannis Antetokounmpo spielt inzwischen für Miami, das erklärt die klare Außenseiterrolle der Bucks zu Hause. Bei Portland sind Deni Avdija (Fuß) und Toumani Camara fraglich, Robert Williams III pausiert. Das ist öffentlich und eingepreist, keine Korrektur.",
@@ -19197,11 +19203,17 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 39.99,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-20T00:57:21Z",
+    "fair_p": 0.6637,
+    "pinnacle_odds": 1.48,
+    "best_odds": 1.51,
+    "fair_odds": 1.507
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.1153,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 75,1 % (Pinnacle 1,31). Unser Wert: 75,1 %. Beste Quote 1,33 bei Matchbook (Median 1,29, 20 Anbieter), Erwartungswert +0,1 %. Recherche: Geprüft: Bei Golden State fallen Stephen Curry (Riss am schrägen Bauchmuskel), Jimmy Butler, Kristaps Porziņģis und Moses Moody aus, Al Horford soll zurückkehren. Die Ausfälle sind seit Tagen bekannt und erklären die Favoritenrolle von Memphis. Keine Korrektur.",
    "research": "Geprüft: Bei Golden State fallen Stephen Curry (Riss am schrägen Bauchmuskel), Jimmy Butler, Kristaps Porziņģis und Moses Moody aus, Al Horford soll zurückkehren. Die Ausfälle sind seit Tagen bekannt und erklären die Favoritenrolle von Memphis. Keine Korrektur.",
@@ -20300,12 +20312,8 @@
   }
  },
  "system": {
-  "credits_remaining": 146,
+  "credits_remaining": 145,
   "last_actions": [
-   {
-    "t": "2026-11-17T21:49:57Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-17T23:05:14Z",
     "a": "Wetten abgerechnet"
@@ -20361,6 +20369,10 @@
    {
     "t": "2026-11-19T10:02:46Z",
     "a": "Wetten für 2026-11-19 platziert"
+   },
+   {
+    "t": "2026-11-20T00:57:21Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
