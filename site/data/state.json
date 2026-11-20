@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T21:49:35Z",
+ "generated_at": "2026-11-20T22:04:40Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2763,22 +2763,22 @@
     "zocker": {
      "totals": {
       "staked": 6.0,
-      "staked_settled": 0,
-      "returned": 0,
-      "profit": 0,
-      "roi": null,
-      "open_stake": 6.0,
-      "open_potential": 45.0,
-      "won": 0,
+      "staked_settled": 6.0,
+      "returned": 45.0,
+      "profit": 39.0,
+      "roi": 6.5,
+      "open_stake": 0,
+      "open_potential": 0,
+      "won": 1,
       "lost": 0,
       "push": 0,
       "n_bets": 1,
-      "hit_rate": null,
+      "hit_rate": 1.0,
       "avg_odds": 7.5,
-      "max_odds_won": null,
+      "max_odds_won": 7.5,
       "avg_ev": 0.0795,
       "expected_profit": 0.48,
-      "expected_settled": 0,
+      "expected_settled": 0.48,
       "avg_clv": -0.1135,
       "n_clv": 1,
       "clv_positive": 0,
@@ -2822,16 +2822,16 @@
       {
        "date": "2026-11-20",
        "staked": 6.0,
-       "profit": 0,
-       "cum_profit": 0.0,
-       "settled": 0,
+       "profit": 39.0,
+       "cum_profit": 39.0,
+       "settled": 1,
        "n_bets": 1
       },
       {
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 39.0,
        "settled": 0,
        "n_bets": 0
       },
@@ -2839,7 +2839,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 0.0,
+       "cum_profit": 39.0,
        "settled": 0,
        "n_bets": 0
       }
@@ -2933,22 +2933,22 @@
     "stammtisch": {
      "totals": {
       "staked": 714.29,
-      "staked_settled": 628.79,
+      "staked_settled": 657.29,
       "returned": 653.82,
-      "profit": 25.03,
-      "roi": 0.0398,
-      "open_stake": 85.5,
-      "open_potential": 122.54,
+      "profit": -3.47,
+      "roi": -0.0053,
+      "open_stake": 57.0,
+      "open_potential": 81.22,
       "won": 15,
-      "lost": 7,
+      "lost": 8,
       "push": 0,
       "n_bets": 25,
-      "hit_rate": 0.6818,
+      "hit_rate": 0.6522,
       "avg_odds": 1.573,
       "max_odds_won": 2.15,
       "avg_ev": -0.0465,
       "expected_profit": -33.24,
-      "expected_settled": -29.19,
+      "expected_settled": -30.95,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2992,16 +2992,16 @@
       {
        "date": "2026-11-20",
        "staked": 142.85,
-       "profit": 3.92,
-       "cum_profit": 25.03,
-       "settled": 2,
+       "profit": -24.58,
+       "cum_profit": -3.47,
+       "settled": 3,
        "n_bets": 5
       },
       {
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 25.03,
+       "cum_profit": -3.47,
        "settled": 0,
        "n_bets": 0
       },
@@ -3009,7 +3009,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 25.03,
+       "cum_profit": -3.47,
        "settled": 0,
        "n_bets": 0
       }
@@ -20327,7 +20327,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "dcee36f9b8a9989972b6d4ddde76c4c7",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -20376,9 +20376,21 @@
    "stake": 28.5,
    "potential_payout": 41.32,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T22:04:40Z",
+    "goals": [
+     {
+      "min": 66,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.5,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,2 %.",
@@ -20387,14 +20399,15 @@
     "path": "soccer/esp.1",
     "id": "401882805"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-zocker-01",
    "player": "zocker",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "dcee36f9b8a9989972b6d4ddde76c4c7",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -20449,9 +20462,21 @@
     "best_odds": 8.056,
     "fair_odds": 8.46
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T22:04:40Z",
+    "goals": [
+     {
+      "min": 66,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 45.0,
+   "profit": 39.0,
    "clv": -0.1135,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 14,1 % (Pinnacle 6,44). Tor-Modell 20,7 %. Unser Wert: 14,4 %. Beste Quote 7,50 bei Unibet NL (Median 6,50, 18 Anbieter), Erwartungswert +8,0 %. Recherche: Athletic ohne Vivian, Guruzeta und Sannadi. Paredes und Yeray sind laut Berichten vom Freitag zurück im Training, die Abwehr ist also weniger geschwächt als befürchtet. Die Ausfälle waren öffentlich bekannt. Die 7,5 auf Espanyol liegt deutlich über Pinnacle (6,44), dahinter steckt keine News. Keine Korrektur.",
@@ -20460,7 +20485,8 @@
     "path": "soccer/esp.1",
     "id": "401882805"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 11.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-20-stammtisch-04",
@@ -21423,10 +21449,6 @@
   "credits_remaining": 126,
   "last_actions": [
    {
-    "t": "2026-11-19T03:55:28Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-19T05:56:04Z",
     "a": "Wetten abgerechnet"
    },
@@ -21480,6 +21502,10 @@
    },
    {
     "t": "2026-11-20T21:49:35Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-20T22:04:40Z",
     "a": "Wetten abgerechnet"
    }
   ]

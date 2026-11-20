@@ -16557,7 +16557,7 @@
    "player": "zocker",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "dcee36f9b8a9989972b6d4ddde76c4c7",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -16612,9 +16612,21 @@
     "best_odds": 8.056,
     "fair_odds": 8.46
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T22:04:40Z",
+    "goals": [
+     {
+      "min": 66,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 45.0,
+   "profit": 39.0,
    "clv": -0.1135,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 14,1 % (Pinnacle 6,44). Tor-Modell 20,7 %. Unser Wert: 14,4 %. Beste Quote 7,50 bei Unibet NL (Median 6,50, 18 Anbieter), Erwartungswert +8,0 %. Recherche: Athletic ohne Vivian, Guruzeta und Sannadi. Paredes und Yeray sind laut Berichten vom Freitag zurück im Training, die Abwehr ist also weniger geschwächt als befürchtet. Die Ausfälle waren öffentlich bekannt. Die 7,5 auf Espanyol liegt deutlich über Pinnacle (6,44), dahinter steckt keine News. Keine Korrektur.",
@@ -16623,7 +16635,8 @@
     "path": "soccer/esp.1",
     "id": "401882805"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 11.3 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-20-stammtisch-01",
@@ -16717,7 +16730,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "dcee36f9b8a9989972b6d4ddde76c4c7",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -16766,9 +16779,21 @@
    "stake": 28.5,
    "potential_payout": 41.32,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T22:04:40Z",
+    "goals": [
+     {
+      "min": 66,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.5,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,2 %.",
@@ -16777,7 +16802,8 @@
     "path": "soccer/esp.1",
     "id": "401882805"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-stammtisch-03",
