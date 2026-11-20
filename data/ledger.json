@@ -17262,7 +17262,7 @@
    "player": "affe",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "4ad857fe99063f02b73bb6edc4dc285c",
    "sport": "soccer_germany_liga3",
    "league": "3. Liga",
@@ -17306,15 +17306,21 @@
    "stake": 35.5,
    "potential_payout": 50.41,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 6,
+    "source": "The Odds API",
+    "t": "2026-11-20T22:34:47Z"
+   },
+   "payout": 50.41,
+   "profit": 14.91,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,42 (Tipico), Erwartungswert -6,2 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   }
  ]
 }
