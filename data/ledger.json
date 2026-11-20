@@ -15600,7 +15600,7 @@
    "player": "banker",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "006df00e5e48650d849d1bb4cd81565d",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15657,9 +15657,14 @@
     "best_odds": 1.284,
     "fair_odds": 1.28
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 114,
+    "away": 124,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 38.52,
+   "profit": 8.52,
    "clv": 0.0033,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 78,2 % (Pinnacle 1,25). Unser Wert: 78,2 %. Beste Quote 1,28 bei Matchbook (Median 1,25, 20 Anbieter), Erwartungswert +0,5 %. Recherche: Geprüft: Giannis Antetokounmpo spielt inzwischen für Miami, das erklärt die klare Außenseiterrolle der Bucks zu Hause. Bei Portland sind Deni Avdija (Fuß) und Toumani Camara fraglich, Robert Williams III pausiert. Das ist öffentlich und eingepreist, keine Korrektur.",
@@ -15668,14 +15673,15 @@
     "path": "basketball/nba",
     "id": "401910020"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 0.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-19-banker-02",
    "player": "banker",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3c082b72aa002131c276ff5e24bada1b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15732,9 +15738,14 @@
     "best_odds": 1.51,
     "fair_odds": 1.507
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 126,
+    "away": 98,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 39.99,
+   "profit": 9.99,
    "clv": -0.1153,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 75,1 % (Pinnacle 1,31). Unser Wert: 75,1 %. Beste Quote 1,33 bei Matchbook (Median 1,29, 20 Anbieter), Erwartungswert +0,1 %. Recherche: Geprüft: Bei Golden State fallen Stephen Curry (Riss am schrägen Bauchmuskel), Jimmy Butler, Kristaps Porziņģis und Moses Moody aus, Al Horford soll zurückkehren. Die Ausfälle sind seit Tagen bekannt und erklären die Favoritenrolle von Memphis. Keine Korrektur.",
@@ -15743,7 +15754,8 @@
     "path": "basketball/nba",
     "id": "401910019"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 11.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-19-stammtisch-01",
@@ -15815,7 +15827,7 @@
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3c082b72aa002131c276ff5e24bada1b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15866,9 +15878,14 @@
    "stake": 28.5,
    "potential_payout": 36.2,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 126,
+    "away": 98,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 36.2,
+   "profit": 7.7,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,27 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,7 %.",
@@ -15877,14 +15894,15 @@
     "path": "basketball/nba",
     "id": "401910019"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "20fa5e2d73cec494c113790161a89aec",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -15935,9 +15953,14 @@
    "stake": 28.5,
    "potential_payout": 30.21,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 124,
+    "away": 112,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 30.21,
+   "profit": 1.71,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,06 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,8 %.",
@@ -15946,14 +15969,15 @@
     "path": "basketball/nba",
     "id": "401910022"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "006df00e5e48650d849d1bb4cd81565d",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -16004,9 +16028,14 @@
    "stake": 28.5,
    "potential_payout": 34.77,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 114,
+    "away": 124,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 34.77,
+   "profit": 6.27,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,22 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,5 %.",
@@ -16015,14 +16044,15 @@
     "path": "basketball/nba",
     "id": "401910020"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "5ee4efd00c1daaebd8249ff44fd6ac9d",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -16073,9 +16103,14 @@
    "stake": 28.5,
    "potential_payout": 52.16,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 99,
+    "away": 102,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 52.16,
+   "profit": 23.66,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,83 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
@@ -16084,14 +16119,15 @@
     "path": "basketball/nba",
     "id": "401910021"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-01",
    "player": "affe",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3c082b72aa002131c276ff5e24bada1b",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -16142,9 +16178,14 @@
    "stake": 36.36,
    "potential_payout": 46.18,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 126,
+    "away": 98,
+    "source": "ESPN",
+    "t": "2026-11-20T03:58:29Z"
+   },
+   "payout": 46.18,
+   "profit": 9.82,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,27 (Tipico), Erwartungswert -4,7 %.",
@@ -16153,7 +16194,8 @@
     "path": "basketball/nba",
     "id": "401910019"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-02",
