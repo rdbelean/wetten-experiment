@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T03:58:29Z",
+ "generated_at": "2026-11-20T05:03:46Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2796,22 +2796,22 @@
     "stammtisch": {
      "totals": {
       "staked": 571.44,
-      "staked_settled": 542.58,
-      "returned": 560.52,
-      "profit": 17.94,
-      "roi": 0.0331,
-      "open_stake": 28.86,
-      "open_potential": 32.03,
-      "won": 13,
+      "staked_settled": 571.44,
+      "returned": 592.55,
+      "profit": 21.11,
+      "roi": 0.0369,
+      "open_stake": 0,
+      "open_potential": 0,
+      "won": 14,
       "lost": 6,
       "push": 0,
       "n_bets": 20,
-      "hit_rate": 0.6842,
+      "hit_rate": 0.7,
       "avg_odds": 1.591,
       "max_odds_won": 2.1,
       "avg_ev": -0.0463,
       "expected_profit": -26.46,
-      "expected_settled": -25.28,
+      "expected_settled": -26.46,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2847,16 +2847,16 @@
       {
        "date": "2026-11-19",
        "staked": 142.86,
-       "profit": 39.34,
-       "cum_profit": 17.94,
-       "settled": 4,
+       "profit": 42.51,
+       "cum_profit": 21.11,
+       "settled": 5,
        "n_bets": 5
       },
       {
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 17.94,
+       "cum_profit": 21.11,
        "settled": 0,
        "n_bets": 0
       },
@@ -2864,7 +2864,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 17.94,
+       "cum_profit": 21.11,
        "settled": 0,
        "n_bets": 0
       },
@@ -2872,7 +2872,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 17.94,
+       "cum_profit": 21.11,
        "settled": 0,
        "n_bets": 0
       }
@@ -19558,7 +19558,7 @@
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "66f9e83cf025d58acee12bce18661fb3",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -19605,9 +19605,14 @@
    "stake": 28.86,
    "potential_payout": 32.03,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 26,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-20T05:03:46Z"
+   },
+   "payout": 32.03,
+   "profit": 3.17,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,11 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,1 %.",
@@ -19616,7 +19621,8 @@
     "path": "football/nfl",
     "id": "401873066"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-02",
@@ -20369,10 +20375,6 @@
   "credits_remaining": 145,
   "last_actions": [
    {
-    "t": "2026-11-18T01:01:19Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-18T03:11:51Z",
     "a": "Wetten abgerechnet"
    },
@@ -20426,6 +20428,10 @@
    },
    {
     "t": "2026-11-20T03:58:29Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-20T05:03:46Z",
     "a": "Wetten abgerechnet"
    }
   ]

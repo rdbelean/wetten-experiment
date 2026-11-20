@@ -15762,7 +15762,7 @@
    "player": "stammtisch",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "66f9e83cf025d58acee12bce18661fb3",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -15809,9 +15809,14 @@
    "stake": 28.86,
    "potential_payout": 32.03,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 26,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-20T05:03:46Z"
+   },
+   "payout": 32.03,
+   "profit": 3.17,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,11 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,1 %.",
@@ -15820,7 +15825,8 @@
     "path": "football/nfl",
     "id": "401873066"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-stammtisch-02",
