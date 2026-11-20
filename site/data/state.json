@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T19:33:36Z",
+ "generated_at": "2026-11-20T19:49:09Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2779,8 +2779,8 @@
       "avg_ev": 0.0795,
       "expected_profit": 0.48,
       "expected_settled": 0,
-      "avg_clv": null,
-      "n_clv": 0,
+      "avg_clv": -0.1135,
+      "n_clv": 1,
       "clv_positive": 0,
       "max_drawdown": 0.0,
       "budget": 1000.0,
@@ -20340,11 +20340,17 @@
    "kind": "value",
    "stake": 6.0,
    "potential_payout": 45.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-20T19:49:07Z",
+    "fair_p": 0.1182,
+    "pinnacle_odds": 7.95,
+    "best_odds": 8.056,
+    "fair_odds": 8.46
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.1135,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 14,1 % (Pinnacle 6,44). Tor-Modell 20,7 %. Unser Wert: 14,4 %. Beste Quote 7,50 bei Unibet NL (Median 6,50, 18 Anbieter), Erwartungswert +8,0 %. Recherche: Athletic ohne Vivian, Guruzeta und Sannadi. Paredes und Yeray sind laut Berichten vom Freitag zurück im Training, die Abwehr ist also weniger geschwächt als befürchtet. Die Ausfälle waren öffentlich bekannt. Die 7,5 auf Espanyol liegt deutlich über Pinnacle (6,44), dahinter steckt keine News. Keine Korrektur.",
    "research": "Athletic ohne Vivian, Guruzeta und Sannadi. Paredes und Yeray sind laut Berichten vom Freitag zurück im Training, die Abwehr ist also weniger geschwächt als befürchtet. Die Ausfälle waren öffentlich bekannt. Die 7,5 auf Espanyol liegt deutlich über Pinnacle (6,44), dahinter steckt keine News. Keine Korrektur.",
@@ -21312,12 +21318,8 @@
   }
  },
  "system": {
-  "credits_remaining": 127,
+  "credits_remaining": 126,
   "last_actions": [
-   {
-    "t": "2026-11-19T02:59:48Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-19T02:59:48Z",
     "a": "Wetten abgerechnet"
@@ -21372,6 +21374,10 @@
    },
    {
     "t": "2026-11-20T19:33:36Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-20T19:49:09Z",
     "a": "Schlussquoten erfasst"
    }
   ]
