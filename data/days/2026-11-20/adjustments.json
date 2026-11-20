@@ -1,0 +1,34 @@
+{
+  "written_at": "2026-11-20T08:32:44Z",
+  "summary": "Freitag mit Bundesliga, La Liga, Ligue 1, League One, EuroLeague und NBA. Die wichtigsten News: Athletic fehlen Vivian (Wade, ca. zwei Wochen), Guruzeta und Sannadi, aber Paredes, Yeray, Yuri und Berenguer sind ins Mannschaftstraining zurückgekehrt. Bayern spielt ohne Neuer, Gnabry, Díaz, Saibari und Davies, Kompany ist zurück und Musiala vor dem Comeback. Orlando fehlt weiter Banchero. Alle diese Nachrichten waren vor dem Quotenabruf öffentlich und sind eingepreist. Deshalb gibt es heute keine Korrekturen und kein Veto. Der hohe Modellwert für Espanyol (+8 % zu 7,5) beruht auf einer Ausreißerquote und auf dem Modell, nicht auf News.",
+  "events": {
+    "dcee36f9b8a9989972b6d4ddde76c4c7": {
+      "confidence": "mittel",
+      "notes": "Athletic ohne Vivian, Guruzeta und Sannadi. Paredes und Yeray sind laut Berichten vom Freitag zurück im Training, die Abwehr ist also weniger geschwächt als befürchtet. Die Ausfälle waren öffentlich bekannt. Die 7,5 auf Espanyol liegt deutlich über Pinnacle (6,44), dahinter steckt keine News. Keine Korrektur."
+    },
+    "5dcc9d2b0da87770a4f49e924275be39": {
+      "confidence": "niedrig",
+      "notes": "Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur."
+    },
+    "cae480fb1195f0032554a268cb80eb44": {
+      "confidence": "hoch",
+      "notes": "Bayern ohne Neuer (Sehnen-Teilriss im Fuß), Gnabry, Díaz, Saibari und Davies. Kane, Olise und Stanišić sind fit, Kompany sitzt wieder auf der Bank. Köln fehlen Hübers und van den Berg. Alles ist bekannt und eingepreist, keine Korrektur."
+    },
+    "deb5feb11ba6d2e87bcf2f4183b255f3": {
+      "confidence": "niedrig",
+      "notes": "South-Yorkshire-Derby. Barnsley fehlt laut Berichten Verteidiger Shepherd (letztes Spiel seiner Sperre), aktuelle Kaderinfos zu Wednesday waren nicht verlässlich zu finden. Keine Korrektur."
+    },
+    "6e1faf38d3fed9e0396d6613891770e1": {
+      "confidence": "mittel",
+      "notes": "Orlando ohne Banchero (Sprunggelenk), Isaac, Penda und Nelson. Franz Wagner steht nicht im Injury Report. Das ist alles bekannt und im Kurs von 1,49 enthalten, keine Korrektur."
+    },
+    "9051693857c6a0e5e1bc6bb2b4f6fe35": {
+      "confidence": "niedrig",
+      "notes": "Für Pistons gegen Raptors war kein aktueller Injury Report vom 20.11. auffindbar. Ohne gesicherte News gibt es keine Korrektur auf das Handicap."
+    },
+    "17e3a8dc71275a88b19d0d6750a5052c": {
+      "confidence": "niedrig",
+      "notes": "Kein aktueller Injury Report für Thunder gegen Pelicans gefunden. Bei Trey Murphy III (Knie) war zuletzt eine Rückkehr in Aussicht. Keine Korrektur."
+    }
+  }
+}
