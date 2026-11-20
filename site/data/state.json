@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T08:30:21Z",
+ "generated_at": "2026-11-20T08:35:24Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2413,8 +2413,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Freitag mit Bundesliga, La Liga, Ligue 1, League One, EuroLeague und NBA. Die wichtigsten News: Athletic fehlen Vivian (Wade, ca. zwei Wochen), Guruzeta und Sannadi, aber Paredes, Yeray, Yuri und Berenguer sind ins Mannschaftstraining zurückgekehrt. Bayern spielt ohne Neuer, Gnabry, Díaz, Saibari und Davies, Kompany ist zurück und Musiala vor dem Comeback. Orlando fehlt weiter Banchero. Alle diese Nachrichten waren vor dem Quotenabruf öffentlich und sind eingepreist. Deshalb gibt es heute keine Korrekturen und kein Veto. Der hohe Modellwert für Espanyol (+8 % zu 7,5) beruht auf einer Ausreißerquote und auf dem Modell, nicht auf News.",
+      "n_events": 7
      },
      "near_misses": [],
      "summary": null
