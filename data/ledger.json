@@ -16214,7 +16214,7 @@
    "player": "affe",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "6675090a33dca8b7f340ea6375fb84e9",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -16251,9 +16251,14 @@
    "stake": 35.5,
    "potential_payout": 67.8,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-20T03:13:16Z"
+   },
+   "payout": 67.8,
+   "profit": 32.3,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,91 (Marktschnitt), Erwartungswert -2,7 %.",
@@ -16262,14 +16267,15 @@
     "path": "hockey/nhl",
     "id": "401892749"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-04",
    "player": "affe",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6e1de7988dd0c9689abb85f6b8399336",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -16306,9 +16312,14 @@
    "stake": 35.5,
    "potential_payout": 61.41,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 6,
+    "source": "ESPN",
+    "t": "2026-11-20T03:13:16Z"
+   },
+   "payout": 0.0,
+   "profit": -35.5,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,73 (Marktschnitt), Erwartungswert -4,0 %.",
@@ -16317,7 +16328,8 @@
     "path": "hockey/nhl",
     "id": "401892746"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   }
  ]
 }

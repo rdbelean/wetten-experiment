@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T00:57:21Z",
+ "generated_at": "2026-11-20T03:13:16Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2881,26 +2881,26 @@
     "affe": {
      "totals": {
       "staked": 571.44,
-      "staked_settled": 428.58,
-      "returned": 307.81,
-      "profit": -120.77,
-      "roi": -0.2818,
-      "open_stake": 142.86,
-      "open_potential": 253.35,
-      "won": 6,
-      "lost": 6,
+      "staked_settled": 499.58,
+      "returned": 375.61,
+      "profit": -123.97,
+      "roi": -0.2481,
+      "open_stake": 71.86,
+      "open_potential": 124.14,
+      "won": 7,
+      "lost": 7,
       "push": 0,
       "n_bets": 16,
       "hit_rate": 0.5,
       "avg_odds": 1.931,
-      "max_odds_won": 1.72,
+      "max_odds_won": 1.91,
       "avg_ev": -0.0591,
       "expected_profit": -33.76,
-      "expected_settled": -27.74,
+      "expected_settled": -30.12,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
-      "max_drawdown": 120.77,
+      "max_drawdown": 123.97,
       "budget": 1000.0,
       "remaining": 428.56
      },
@@ -2932,16 +2932,16 @@
       {
        "date": "2026-11-19",
        "staked": 142.86,
-       "profit": 0,
-       "cum_profit": -120.77,
-       "settled": 0,
+       "profit": -3.2,
+       "cum_profit": -123.97,
+       "settled": 2,
        "n_bets": 4
       },
       {
        "date": "2026-11-20",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -120.77,
+       "cum_profit": -123.97,
        "settled": 0,
        "n_bets": 0
       },
@@ -2949,7 +2949,7 @@
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -120.77,
+       "cum_profit": -123.97,
        "settled": 0,
        "n_bets": 0
       },
@@ -2957,7 +2957,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -120.77,
+       "cum_profit": -123.97,
        "settled": 0,
        "n_bets": 0
       }
@@ -18899,7 +18899,7 @@
    "player": "affe",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "won",
    "event_id": "6675090a33dca8b7f340ea6375fb84e9",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -18936,9 +18936,14 @@
    "stake": 35.5,
    "potential_payout": 67.8,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-20T03:13:16Z"
+   },
+   "payout": 67.8,
+   "profit": 32.3,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,91 (Marktschnitt), Erwartungswert -2,7 %.",
@@ -18947,14 +18952,15 @@
     "path": "hockey/nhl",
     "id": "401892749"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-04",
    "player": "affe",
    "day": "2026-11-19",
    "placed_at": "2026-11-19T10:02:46Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6e1de7988dd0c9689abb85f6b8399336",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -18991,9 +18997,14 @@
    "stake": 35.5,
    "potential_payout": 61.41,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 6,
+    "source": "ESPN",
+    "t": "2026-11-20T03:13:16Z"
+   },
+   "payout": 0.0,
+   "profit": -35.5,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,73 (Marktschnitt), Erwartungswert -4,0 %.",
@@ -19002,7 +19013,8 @@
     "path": "hockey/nhl",
     "id": "401892746"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-19-affe-01",
@@ -20315,10 +20327,6 @@
   "credits_remaining": 145,
   "last_actions": [
    {
-    "t": "2026-11-17T23:05:14Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-18T00:31:10Z",
     "a": "Wetten abgerechnet"
    },
@@ -20373,6 +20381,10 @@
    {
     "t": "2026-11-20T00:57:21Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-20T03:13:16Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }
