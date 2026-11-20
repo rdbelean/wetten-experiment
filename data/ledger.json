@@ -16390,7 +16390,7 @@
    "player": "analyst",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "5dcc9d2b0da87770a4f49e924275be39",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -16445,9 +16445,36 @@
     "best_odds": 3.64,
     "fair_odds": 3.534
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T21:49:35Z",
+    "goals": [
+     {
+      "min": 3,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 19,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 69,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -9.0,
    "clv": 0.0386,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,8 % (Pinnacle 3,46). Tor-Modell 29,3 %. Unser Wert: 27,9 %. Beste Quote 3,67 bei 1xBet (Median 3,33, 18 Anbieter), Erwartungswert +2,4 %. Recherche: Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur.",
@@ -16456,7 +16483,8 @@
     "path": "soccer/fra.1",
     "id": "401876395"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 3.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-20-banker-01",
@@ -16756,7 +16784,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "5dcc9d2b0da87770a4f49e924275be39",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -16805,9 +16833,36 @@
    "stake": 28.5,
    "potential_payout": 61.27,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T21:49:35Z",
+    "goals": [
+     {
+      "min": 3,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 19,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 69,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 61.27,
+   "profit": 32.77,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,15 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,7 %.",
@@ -16816,7 +16871,8 @@
     "path": "soccer/fra.1",
     "id": "401876395"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-stammtisch-04",
@@ -16955,7 +17011,7 @@
    "player": "affe",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "5dcc9d2b0da87770a4f49e924275be39",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -17004,9 +17060,36 @@
    "stake": 36.35,
    "potential_payout": 119.95,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T21:49:35Z",
+    "goals": [
+     {
+      "min": 3,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 19,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 69,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -36.35,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 3,3 (Tipico), Erwartungswert -7,9 %.",
@@ -17015,7 +17098,8 @@
     "path": "soccer/fra.1",
     "id": "401876395"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-affe-02",
