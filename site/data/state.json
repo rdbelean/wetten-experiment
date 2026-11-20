@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-20T10:00:51Z",
+ "generated_at": "2026-11-20T19:33:36Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2609,9 +2609,9 @@
       "avg_ev": 0.0241,
       "expected_profit": 0.22,
       "expected_settled": 0,
-      "avg_clv": null,
-      "n_clv": 0,
-      "clv_positive": 0,
+      "avg_clv": 0.0386,
+      "n_clv": 1,
+      "clv_positive": 1,
       "max_drawdown": 0.0,
       "budget": 1000.0,
       "remaining": 991.0
@@ -20002,11 +20002,17 @@
    "kind": "value",
    "stake": 9.0,
    "potential_payout": 33.03,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-20T19:33:34Z",
+    "fair_p": 0.283,
+    "pinnacle_odds": 3.4,
+    "best_odds": 3.64,
+    "fair_odds": 3.534
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0386,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 27,8 % (Pinnacle 3,46). Tor-Modell 29,3 %. Unser Wert: 27,9 %. Beste Quote 3,67 bei 1xBet (Median 3,33, 18 Anbieter), Erwartungswert +2,4 %. Recherche: Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur.",
    "research": "Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur.",
@@ -21306,12 +21312,8 @@
   }
  },
  "system": {
-  "credits_remaining": 128,
+  "credits_remaining": 127,
   "last_actions": [
-   {
-    "t": "2026-11-19T00:59:10Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-19T02:59:48Z",
     "a": "Schlussquoten erfasst"
@@ -21367,6 +21369,10 @@
    {
     "t": "2026-11-20T10:00:51Z",
     "a": "Wetten für 2026-11-20 platziert"
+   },
+   {
+    "t": "2026-11-20T19:33:36Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
