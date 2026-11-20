@@ -16602,7 +16602,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "cae480fb1195f0032554a268cb80eb44",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -16653,9 +16653,26 @@
    "stake": 28.85,
    "potential_payout": 30.29,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-20T21:34:31Z",
+    "goals": [
+     {
+      "min": 12,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 37,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.85,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,05 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -2,8 %.",
@@ -16664,7 +16681,8 @@
     "path": "soccer/ger.1",
     "id": "401884736"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-stammtisch-02",
