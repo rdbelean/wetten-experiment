@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T08:33:33Z",
+ "generated_at": "2026-11-21T08:38:36Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2568,8 +2568,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Großer Fußball-Samstag nach der Länderspielpause mit 20 geprüften Events. Wichtigste News: PSG bekommt Dembélé, Marquinhos, Mendes und Akliouche zurück. Arsenal fehlen Saka und Zubimendi. Palace spielt im ersten Spiel unter Thomas Frank ohne Sarr und den gesperrten Mateta. Groningen fehlt Torwart Vaessen gesperrt. Lyon und Strasbourg haben neue Trainer. Alle diese Meldungen waren vor dem Quotenabruf öffentlich und sind bei Pinnacle eingepreist. Deshalb gibt es heute keine Korrektur und kein Veto. Der höchste Wert (Nice zu 7,0) beruht auf einer Ausreißerquote von LeoVegas.",
+      "n_events": 20
      },
      "near_misses": [],
      "summary": null
