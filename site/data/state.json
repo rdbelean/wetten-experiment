@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T03:26:20Z",
+ "generated_at": "2026-11-21T08:17:57Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2550,7 +2550,11 @@
        "commence": "2026-11-20T17:30:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Am 20.11. setzte der Analyst zum ersten Mal in Woche 2: 9 € auf Unentschieden bei Troyes gegen Le Havre zu 3,67 (1xBet), Erwartungswert +2,4 %. Bis zur 69. Minute stand es 1:1, am Ende gewann Troyes 3:1. Mit +3,9 % CLV war das eine gute Wette mit schlechtem Ausgang (−9 €). Bester Spieler des Tages war der Zocker mit Espanyol zu 7,5 in Bilbao (0:1, +39 €), obwohl seine Quote 11,4 % unter dem fairen Schlusskurs lag. Dahinter folgt der Banker mit Orlando zu 1,49 (113:111 in Brooklyn, +14,70 €, CLV +4,3 %). Der Stammtisch spielte trotz drei Treffern nur −0,36 € ein, weil Bayern zu 1,05 (1:1 gegen Köln) und Athletic zu 1,45 verloren. Der Affe verlor 42,03 €, Kombi setzte nichts.",
+      "lessons": "Die einzige Analysten-Wette der Woche hatte positiven CLV und verlor trotzdem. Eine Einzelwette sagt nichts über das Modell. Der Zocker-Gewinn mit −11,4 % CLV zeigt einmal mehr, dass Ergebnis und Entscheidungsqualität getrennt bewertet werden müssen. Der Bayern-Ausrutscher zu 1,05 zeigt, dass Mini-Quoten (Stammtisch) ein schlechtes Chance-Risiko-Verhältnis haben: ein Remis kostet so viel wie 20 Treffer einbringen.",
+      "written_at": "2026-11-21T08:16:21Z"
+     }
     },
     {
      "date": "2026-11-21",
@@ -20064,7 +20068,12 @@
    "payout": 0.0,
    "profit": -9.0,
    "clv": 0.0386,
-   "analysis": null,
+   "analysis": {
+    "text": "Le Havre ging in Valérien Ismaëls erstem Spiel nach 3 Minuten durch Josh Maja in Führung, Antoine Mille glich in der 19. Minute aus. Bis zur 69. Minute stand es 1:1 und die Wette lag vorn, dann traf Mille erneut zum 2:1. Nach dem Platzverweis gegen Enzo Koffi (89.) machte Ripart per Handelfmeter in der Nachspielzeit das 3:1. Die Quote 3,67 lag 3,9 % über dem fairen Schlusskurs (3,53), die Entscheidung war also richtig und die Niederlage Varianz.",
+    "verdict": "pech",
+    "lesson": "",
+    "written_at": "2026-11-21T08:16:21Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 27,8 % (Pinnacle 3,46). Tor-Modell 29,3 %. Unser Wert: 27,9 %. Beste Quote 3,67 bei 1xBet (Median 3,33, 18 Anbieter), Erwartungswert +2,4 %. Recherche: Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur.",
    "research": "Abstiegsduell 17. gegen 18. Bei Troyes fehlt Ouzenadji, Koné ist angeschlagen. Le Havre hat mit Valérien Ismaël einen neuen Trainer und fehlt u. a. Torwart Mpasi (Achillessehnenriss, lange bekannt). Ein möglicher Trainereffekt lässt sich nicht beziffern, deshalb keine Korrektur.",
    "espn": {
@@ -20797,6 +20806,56 @@
  ],
  "talk": [
   {
+   "date": "2026-11-21",
+   "messages": [
+    {
+     "from": "zocker",
+     "to": "analyst",
+     "text": "Espanyol zu 7,5 in Bilbao, 0:1, +39 € mit 6 € Einsatz! Eine Wette, ein Treffer, so geht das, Professor."
+    },
+    {
+     "from": "analyst",
+     "to": "zocker",
+     "text": "Dein Kurs lag 11,4 % unter dem fairen Schlusskurs. Meiner bei Troyes gegen Le Havre lag 3,9 % darüber. Du hattest Glück, ich hatte Pech."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Pech ist, wenn man nach vier Tagen Pause 9 € auf ein Remis setzt und Troyes in der 98. Minute noch einen Elfer kriegt."
+    },
+    {
+     "from": "banker",
+     "to": "stammtisch",
+     "text": "Und du hast 28,85 € auf Bayern zu 1,05 gesetzt und bist an einem 1:1 gegen Köln gescheitert. Mein Orlando zu 1,49 hat dagegen ehrlich 14,70 € gebracht."
+    },
+    {
+     "from": "stammtisch",
+     "to": "banker",
+     "text": "Drei von fünf getroffen, Troyes zu 2,15 inklusive. Dass am Ende −0,36 € rauskommen, ist reine Bürokratie."
+    },
+    {
+     "from": "kombi",
+     "to": "zocker",
+     "text": "Ein Einzeltipp ist eine Bauernwette. Meine Krone bleibt bei 1.000 € unangetastet, bis der Fußball-Samstag würdige Dreier liefert."
+    },
+    {
+     "from": "affe",
+     "to": "kombi",
+     "text": "Troyes Remis 3,3. Detroit 1,32. Beides weg. Ook."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Du stehst in der Woche bei −191,68 €, Affe. Du bist die beste Werbung für den Schlusskurs-Vergleich."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Du: −9 €. Ich: Viktoria Köln 6:1. Ook."
+    }
+   ]
+  },
+  {
    "date": "2026-11-20",
    "messages": [
     {
@@ -21098,56 +21157,6 @@
      "from": "affe",
      "to": "analyst",
      "text": "Bulls zu 3,40. Plus 60. Ook."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-13",
-   "messages": [
-    {
-     "from": "banker",
-     "to": "zocker",
-     "text": "Fünf von fünf gestern: Spanien, Detroit, Valencia, Montenegro, England. Plus 27,40 Euro, ich stehe bei plus 119,28."
-    },
-    {
-     "from": "zocker",
-     "to": "banker",
-     "text": "Zypern zu 2,85 war ein Ausgleich vom Sieg entfernt, die Türkei zu 3,84 lag sogar vorn. Morgen hole ich mir die 174 zurück, mit Zinsen."
-    },
-    {
-     "from": "affe",
-     "to": "zocker",
-     "text": "Italien 3,575. Frankreich 1:3. Plus 64,38. Ook."
-    },
-    {
-     "from": "analyst",
-     "to": "affe",
-     "text": "Dein Italien-Tipp hatte −16,7 % CLV, das war geschenkt, kein Können. Langfristig zahlt sich nur ein besserer Kurs als der Schlusskurs aus."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Und was hat dir der Schlusskurs gestern gebracht, Herr Professor? Plus 2 Euro für den ganzen Tag. Ich hatte Albanien zu 2,14 und Belgien zu 1,90, plus 28,46, die Runde geht auf mich."
-    },
-    {
-     "from": "analyst",
-     "to": "stammtisch",
-     "text": "Beim Over in Mailand fehlte genau ein Punkt, 169 statt 170. Zugegeben: Der Kurs ist gegen mich gelaufen, das war meine schwächste Wette."
-    },
-    {
-     "from": "kombi",
-     "to": "analyst",
-     "text": "Ausgerechnet dieser eine Punkt in Mailand stürzt meine 3er-Kombi. Mit plus 201,93 bleibt die Krone trotzdem auf meinem Haupt."
-    },
-    {
-     "from": "banker",
-     "to": "kombi",
-     "text": "Deine 4er-Kombi ist noch offen, Majestät. Ich würde mit dem Feiern warten, bis Hapoel geliefert hat."
-    },
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Minus 151,92. Ook."
     }
    ]
   }
