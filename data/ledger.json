@@ -18841,7 +18841,7 @@
    "player": "affe",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "3885e90049f2430c338ff29a68c0bb47",
    "sport": "soccer_germany_bundesliga2",
    "league": "2. Bundesliga",
@@ -18892,9 +18892,31 @@
    "stake": 35.5,
    "potential_payout": 60.35,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T14:00:21Z",
+    "goals": [
+     {
+      "min": 34,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 57,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 60.35,
+   "profit": 24.85,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,7 (Tipico), Erwartungswert -3,5 %.",
@@ -18903,7 +18925,8 @@
     "path": "soccer/ger.2",
     "id": "401885054"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   }
  ]
 }
