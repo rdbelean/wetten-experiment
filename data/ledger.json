@@ -18187,7 +18187,7 @@
    "player": "zocker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "651c1847b5cdcc85e60a140edd2282c4",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -18239,9 +18239,41 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-21T18:21:31Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 32,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -6.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 15,3 % (Pinnacle 5,91). Tor-Modell 16,2 %. Unser Wert: 15,4 %. Beste Quote 7,00 bei LeoVegas (Median 6,00, 19 Anbieter), Erwartungswert +7,7 %. Recherche: PSG bekommt laut Luis Enrique Dembélé, Marquinhos, Nuno Mendes und Akliouche zurück, nur Kvaratskhelia und Longoni fehlen. Nice fehlen Abdelmonem, Abergel, Bombito und Mendy. Die Rückkehrer wurden am Freitag verkündet und sind bei Pinnacle (Nice 5,91) eingepreist. Die 7,0 von LeoVegas ist ein Ausreißer, keine News-Kante.",
@@ -18250,7 +18282,8 @@
     "path": "soccer/fra.1",
     "id": "401876398"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-zocker-02",
@@ -18906,7 +18939,7 @@
    "player": "affe",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "651c1847b5cdcc85e60a140edd2282c4",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -18956,9 +18989,41 @@
    "stake": 36.36,
    "potential_payout": 51.63,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-21T18:21:31Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 32,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 51.63,
+   "profit": 15.27,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,42 (Tipico), Erwartungswert -5,8 %.",
@@ -18967,7 +19032,8 @@
     "path": "soccer/fra.1",
     "id": "401876398"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-affe-02",

@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T17:01:14Z",
+ "generated_at": "2026-11-21T18:21:31Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2900,26 +2900,26 @@
     "zocker": {
      "totals": {
       "staked": 20.5,
-      "staked_settled": 6.0,
+      "staked_settled": 12.0,
       "returned": 45.0,
-      "profit": 39.0,
-      "roi": 6.5,
-      "open_stake": 14.5,
-      "open_potential": 73.88,
+      "profit": 33.0,
+      "roi": 2.75,
+      "open_stake": 8.5,
+      "open_potential": 31.88,
       "won": 1,
-      "lost": 0,
+      "lost": 1,
       "push": 0,
       "n_bets": 3,
-      "hit_rate": 1.0,
+      "hit_rate": 0.5,
       "avg_odds": 6.083,
       "max_odds_won": 7.5,
       "avg_ev": 0.0658,
       "expected_profit": 1.35,
-      "expected_settled": 0.48,
+      "expected_settled": 0.94,
       "avg_clv": -0.1135,
       "n_clv": 1,
       "clv_positive": 0,
-      "max_drawdown": 0.0,
+      "max_drawdown": 6.0,
       "budget": 1000.0,
       "remaining": 979.5
      },
@@ -2967,16 +2967,16 @@
       {
        "date": "2026-11-21",
        "staked": 14.5,
-       "profit": 0,
-       "cum_profit": 39.0,
-       "settled": 0,
+       "profit": -6.0,
+       "cum_profit": 33.0,
+       "settled": 1,
        "n_bets": 2
       },
       {
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": 39.0,
+       "cum_profit": 33.0,
        "settled": 0,
        "n_bets": 0
       }
@@ -3155,22 +3155,22 @@
     "affe": {
      "totals": {
       "staked": 857.15,
-      "staked_settled": 820.79,
-      "returned": 699.04,
-      "profit": -121.75,
-      "roi": -0.1483,
-      "open_stake": 36.36,
-      "open_potential": 51.63,
-      "won": 13,
+      "staked_settled": 857.15,
+      "returned": 750.67,
+      "profit": -106.48,
+      "roi": -0.1242,
+      "open_stake": 0,
+      "open_potential": 0,
+      "won": 14,
       "lost": 10,
       "push": 0,
       "n_bets": 24,
-      "hit_rate": 0.5652,
+      "hit_rate": 0.5833,
       "avg_odds": 1.864,
       "max_odds_won": 1.95,
       "avg_ev": -0.0606,
       "expected_profit": -51.95,
-      "expected_settled": -49.83,
+      "expected_settled": -51.95,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -3222,16 +3222,16 @@
       {
        "date": "2026-11-21",
        "staked": 142.86,
-       "profit": 69.93,
-       "cum_profit": -121.75,
-       "settled": 3,
+       "profit": 85.2,
+       "cum_profit": -106.48,
+       "settled": 4,
        "n_bets": 4
       },
       {
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -121.75,
+       "cum_profit": -106.48,
        "settled": 0,
        "n_bets": 0
       }
@@ -22409,7 +22409,7 @@
    "player": "affe",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "651c1847b5cdcc85e60a140edd2282c4",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -22459,9 +22459,41 @@
    "stake": 36.36,
    "potential_payout": 51.63,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-21T18:21:31Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 32,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 51.63,
+   "profit": 15.27,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,42 (Tipico), Erwartungswert -5,8 %.",
@@ -22470,14 +22502,15 @@
     "path": "soccer/fra.1",
     "id": "401876398"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-zocker-01",
    "player": "zocker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "651c1847b5cdcc85e60a140edd2282c4",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -22529,9 +22562,41 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 3,
+    "source": "ESPN",
+    "t": "2026-11-21T18:21:31Z",
+    "goals": [
+     {
+      "min": 8,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 31,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 32,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -6.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 15,3 % (Pinnacle 5,91). Tor-Modell 16,2 %. Unser Wert: 15,4 %. Beste Quote 7,00 bei LeoVegas (Median 6,00, 19 Anbieter), Erwartungswert +7,7 %. Recherche: PSG bekommt laut Luis Enrique Dembélé, Marquinhos, Nuno Mendes und Akliouche zurück, nur Kvaratskhelia und Longoni fehlen. Nice fehlen Abdelmonem, Abergel, Bombito und Mendy. Die Rückkehrer wurden am Freitag verkündet und sind bei Pinnacle (Nice 5,91) eingepreist. Die 7,0 von LeoVegas ist ein Ausreißer, keine News-Kante.",
@@ -22540,7 +22605,8 @@
     "path": "soccer/fra.1",
     "id": "401876398"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-05",
@@ -23510,10 +23576,6 @@
   "credits_remaining": 90,
   "last_actions": [
    {
-    "t": "2026-11-20T22:34:47Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-21T00:25:10Z",
     "a": "Schlussquoten erfasst"
    },
@@ -23567,6 +23629,10 @@
    },
    {
     "t": "2026-11-21T17:01:14Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-21T18:21:31Z",
     "a": "Wetten abgerechnet"
    }
   ]
