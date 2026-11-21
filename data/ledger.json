@@ -17511,7 +17511,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "d0128b7d64e40ca3f1ae1b288b47117a",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -17568,9 +17568,21 @@
     "best_odds": 2.67,
     "fair_odds": 2.701
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -22.0,
    "clv": 0.018,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 37,9 % (Pinnacle 2,57). Tor-Modell 35,9 %. Unser Wert: 37,8 %. Beste Quote 2,75 bei Unibet SE (Median 2,51, 20 Anbieter), Erwartungswert +3,9 %. Recherche: Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur.",
@@ -17579,7 +17591,8 @@
     "path": "soccer/ger.1",
     "id": "401884734"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 1.8 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-04",
@@ -18253,7 +18266,7 @@
    "player": "kombi",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "d0128b7d64e40ca3f1ae1b288b47117a+476da082e4c07bd9fa21d352af37ee61+9e8d72c6c27c1667be7b88416a36ca80",
    "sport": "combo",
    "league": "Kombi aus 3 Spielen",
@@ -18283,9 +18296,16 @@
    "stake": 40.0,
    "potential_payout": 539.2,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "legs": [
+     "lost",
+     "open",
+     "won"
+    ],
+    "t": "2026-11-21T16:31:06Z"
+   },
+   "payout": 0.0,
+   "profit": -40.0,
    "clv": null,
    "analysis": null,
    "legs": [
@@ -18309,8 +18329,11 @@
       "path": "soccer/ger.1",
       "id": "401884734"
      },
-     "status": "open",
-     "result": null
+     "status": "lost",
+     "result": {
+      "home": 1,
+      "away": 0
+     }
     },
     {
      "event_id": "476da082e4c07bd9fa21d352af37ee61",
@@ -18366,14 +18389,15 @@
    "espn": null,
    "research": null,
    "reason": "3 Value-Tipps kombiniert. Gesamtquote 13,48, Trefferchance 8,2 %, Erwartungswert +10,9 %. Alle Spiele müssen gewinnen.",
-   "week": 2
+   "week": 2,
+   "auto_analysis": "1 von 3 Tipps gingen auf. Ein einziger falscher Tipp reicht, damit die ganze Kombi verloren ist."
   },
   {
    "id": "2026-11-21-stammtisch-01",
    "player": "stammtisch",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "c24cf629b4eaf0ebc4ca2c5beb73747c",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -18424,9 +18448,36 @@
    "stake": 28.86,
    "potential_payout": 36.08,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 14,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 47,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 59,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 36.08,
+   "profit": 7.22,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,25 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,1 %.",
@@ -18435,14 +18486,15 @@
     "path": "soccer/ger.1",
     "id": "401884735"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-stammtisch-02",
    "player": "stammtisch",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "577976c4b042018534e14db9ce579cf6",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -18493,9 +18545,21 @@
    "stake": 28.5,
    "potential_payout": 44.18,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 80,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 44.18,
+   "profit": 15.68,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,55 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,4 %.",
@@ -18504,14 +18568,15 @@
     "path": "soccer/ger.1",
     "id": "401884731"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-stammtisch-03",
    "player": "stammtisch",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "d0128b7d64e40ca3f1ae1b288b47117a",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -18562,9 +18627,21 @@
    "stake": 28.5,
    "potential_payout": 69.83,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 25,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 69.83,
+   "profit": 41.33,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,5 %.",
@@ -18573,14 +18650,15 @@
     "path": "soccer/ger.1",
     "id": "401884734"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-stammtisch-04",
    "player": "stammtisch",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "c8bcd407a7b987234c72c62ec37246ef",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -18631,9 +18709,21 @@
    "stake": 28.5,
    "potential_payout": 56.14,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 68,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 56.14,
+   "profit": 27.64,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,97 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,4 %.",
@@ -18642,14 +18732,15 @@
     "path": "soccer/ger.1",
     "id": "401884728"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-stammtisch-05",
    "player": "stammtisch",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "ca93df81e976fbe345a6175bb24e3f19",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -18700,9 +18791,46 @@
    "stake": 28.5,
    "potential_payout": 41.89,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 5,
+    "source": "ESPN",
+    "t": "2026-11-21T16:31:06Z",
+    "goals": [
+     {
+      "min": 18,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 41,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 50,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 72,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 76,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 89,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 41.89,
+   "profit": 13.39,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,47 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -4,6 %.",
@@ -18711,7 +18839,8 @@
     "path": "soccer/ger.1",
     "id": "401884732"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-affe-01",
