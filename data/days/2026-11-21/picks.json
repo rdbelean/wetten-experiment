@@ -1,0 +1,187 @@
+{
+ "day": "2026-11-21",
+ "placed_at": "2026-11-21T10:03:58Z",
+ "n_outcomes": 471,
+ "n_value": 12,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-21-01",
+  "2026-11-21-02",
+  "2026-11-21-03",
+  "2026-11-21-04",
+  "2026-11-21-05",
+  "2026-11-21-06",
+  "2026-11-21-07",
+  "2026-11-21-08"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-21-01",
+   "2026-11-21-02",
+   "2026-11-21-03",
+   "2026-11-21-04",
+   "2026-11-21-05",
+   "2026-11-21-06",
+   "2026-11-21-07",
+   "2026-11-21-08"
+  ],
+  "banker": [
+   "2026-11-21-banker-01",
+   "2026-11-21-banker-02"
+  ],
+  "zocker": [
+   "2026-11-21-zocker-01",
+   "2026-11-21-zocker-02"
+  ],
+  "kombi": [
+   "2026-11-21-kombi-01"
+  ],
+  "stammtisch": [
+   "2026-11-21-stammtisch-01",
+   "2026-11-21-stammtisch-02",
+   "2026-11-21-stammtisch-03",
+   "2026-11-21-stammtisch-04",
+   "2026-11-21-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-21-affe-01",
+   "2026-11-21-affe-02",
+   "2026-11-21-affe-03",
+   "2026-11-21-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "Nice",
+   "away": "Paris Saint Germain",
+   "league": "Ligue 1",
+   "label": "Sieg Nice",
+   "odds": 7.0,
+   "book_name": "LeoVegas",
+   "p": 0.1539,
+   "ev": 0.0773,
+   "commence": "2026-11-21T16:15:00Z"
+  },
+  {
+   "home": "Manchester City",
+   "away": "Fulham",
+   "league": "Premier League",
+   "label": "Unter 3.5 Tore",
+   "odds": 1.91,
+   "book_name": "1xBet",
+   "p": 0.5436,
+   "ev": 0.0382,
+   "commence": "2026-11-21T12:30:00Z"
+  },
+  {
+   "home": "Strasbourg",
+   "away": "Brest",
+   "league": "Ligue 1",
+   "label": "Sieg Strasbourg",
+   "odds": 2.35,
+   "book_name": "Unibet SE",
+   "p": 0.4389,
+   "ev": 0.0313,
+   "commence": "2026-11-21T19:45:00Z"
+  },
+  {
+   "home": "Napoli",
+   "away": "Torino",
+   "league": "Serie A",
+   "label": "Über 2.5 Tore",
+   "odds": 1.76,
+   "book_name": "1xBet",
+   "p": 0.5856,
+   "ev": 0.0307,
+   "commence": "2026-11-21T19:45:00Z"
+  },
+  {
+   "home": "Chelsea",
+   "away": "Leeds United",
+   "league": "Premier League",
+   "label": "Unentschieden",
+   "odds": 3.75,
+   "book_name": "1xBet",
+   "p": 0.2747,
+   "ev": 0.0303,
+   "commence": "2026-11-21T15:00:00Z"
+  },
+  {
+   "home": "Elversberg",
+   "away": "SC Freiburg",
+   "league": "Bundesliga",
+   "label": "Unentschieden",
+   "odds": 4.07,
+   "book_name": "1xBet",
+   "p": 0.2516,
+   "ev": 0.0241,
+   "commence": "2026-11-21T14:30:00Z"
+  },
+  {
+   "home": "Groningen",
+   "away": "Heerenveen",
+   "league": "Eredivisie",
+   "label": "Sieg Heerenveen",
+   "odds": 2.5,
+   "book_name": "Unibet NL",
+   "p": 0.4096,
+   "ev": 0.0239,
+   "commence": "2026-11-21T20:00:00Z"
+  },
+  {
+   "home": "Chelsea",
+   "away": "Leeds United",
+   "league": "Premier League",
+   "label": "Sieg Leeds United",
+   "odds": 3.9,
+   "book_name": "Coolbet",
+   "p": 0.2606,
+   "ev": 0.0162,
+   "commence": "2026-11-21T15:00:00Z"
+  },
+  {
+   "home": "Tottenham Hotspur",
+   "away": "Ipswich Town",
+   "league": "Premier League",
+   "label": "Sieg Ipswich Town",
+   "odds": 6.5,
+   "book_name": "Unibet SE",
+   "p": 0.1563,
+   "ev": 0.0159,
+   "commence": "2026-11-21T15:00:00Z"
+  },
+  {
+   "home": "Union Berlin",
+   "away": "RB Leipzig",
+   "league": "Bundesliga",
+   "label": "Unter 3.5 Tore",
+   "odds": 1.83,
+   "book_name": "1xBet",
+   "p": 0.5551,
+   "ev": 0.0158,
+   "commence": "2026-11-21T14:30:00Z"
+  },
+  {
+   "home": "FC Utrecht",
+   "away": "SC Cambuur",
+   "league": "Eredivisie",
+   "label": "Sieg SC Cambuur",
+   "odds": 3.75,
+   "book_name": "Unibet NL",
+   "p": 0.2707,
+   "ev": 0.0151,
+   "commence": "2026-11-21T17:45:00Z"
+  },
+  {
+   "home": "Newcastle United",
+   "away": "Arsenal",
+   "league": "Premier League",
+   "label": "Unentschieden",
+   "odds": 4.52,
+   "book_name": "1xBet",
+   "p": 0.2242,
+   "ev": 0.0135,
+   "commence": "2026-11-21T17:30:00Z"
+  }
+ ]
+}
