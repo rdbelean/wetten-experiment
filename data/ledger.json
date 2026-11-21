@@ -16491,7 +16491,7 @@
    "player": "banker",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "6e1faf38d3fed9e0396d6613891770e1",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -16545,9 +16545,14 @@
     "best_odds": 1.427,
     "fair_odds": 1.429
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 111,
+    "away": 113,
+    "source": "ESPN",
+    "t": "2026-11-21T03:26:20Z"
+   },
+   "payout": 44.7,
+   "profit": 14.7,
    "clv": 0.0427,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 67,6 % (Pinnacle 1,45). Unser Wert: 67,6 %. Beste Quote 1,49 bei Unibet SE (Median 1,43, 17 Anbieter), Erwartungswert +0,7 %. Recherche: Orlando ohne Banchero (Sprunggelenk), Isaac, Penda und Nelson. Franz Wagner steht nicht im Injury Report. Das ist alles bekannt und im Kurs von 1,49 enthalten, keine Korrektur.",
@@ -16556,7 +16561,8 @@
     "path": "basketball/nba",
     "id": "401909306"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 4.3 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-20-zocker-01",
@@ -16983,7 +16989,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "6e1faf38d3fed9e0396d6613891770e1",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -17031,9 +17037,14 @@
    "stake": 28.5,
    "potential_payout": 39.9,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 111,
+    "away": 113,
+    "source": "ESPN",
+    "t": "2026-11-21T03:26:20Z"
+   },
+   "payout": 39.9,
+   "profit": 11.4,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,4 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,3 %.",
@@ -17042,7 +17053,8 @@
     "path": "basketball/nba",
     "id": "401909306"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-affe-01",
@@ -17214,7 +17226,7 @@
    "player": "affe",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "9051693857c6a0e5e1bc6bb2b4f6fe35",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -17262,9 +17274,14 @@
    "stake": 35.5,
    "potential_payout": 46.86,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 102,
+    "away": 105,
+    "source": "ESPN",
+    "t": "2026-11-21T03:26:20Z"
+   },
+   "payout": 0.0,
+   "profit": -35.5,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,32 (Tipico), Erwartungswert -4,1 %.",
@@ -17273,7 +17290,8 @@
     "path": "basketball/nba",
     "id": "401909308"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-affe-04",
