@@ -17599,7 +17599,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "476da082e4c07bd9fa21d352af37ee61",
    "sport": "soccer_efl_champ",
    "league": "Championship",
@@ -17656,9 +17656,21 @@
     "best_odds": 2.901,
     "fair_odds": 2.923
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T17:01:13Z",
+    "goals": [
+     {
+      "min": 82,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -18.0,
    "clv": -0.025,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 36,5 % (Pinnacle 2,67). Tor-Modell 34,1 %. Unser Wert: 36,3 %. Beste Quote 2,85 bei LeoVegas (Median 2,58, 20 Anbieter), Erwartungswert +3,4 %. Recherche: Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur.",
@@ -17667,7 +17679,8 @@
     "path": "soccer/eng.2",
     "id": "401880158"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Fehleinschätzung: Markt und Ergebnis lagen gegen uns. Unsere Quote war 2.5 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-21-05",
@@ -17742,7 +17755,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9f38413bdad666e2d2dfcc574dd12e66",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -17799,9 +17812,41 @@
     "best_odds": 2.59,
     "fair_odds": 2.593
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-21T17:01:13Z",
+    "goals": [
+     {
+      "min": 5,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 13,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 30,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 85,
+      "side": "home",
+      "og": true
+     }
+    ]
+   },
+   "payout": 39.75,
+   "profit": 24.75,
    "clv": 0.0221,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 38,3 % (Pinnacle 2,57). Tor-Modell 46,5 %. Unser Wert: 38,7 %. Beste Quote 2,65 bei Unibet SE (Median 2,46, 20 Anbieter), Erwartungswert +2,5 %. Recherche: Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur.",
@@ -17810,7 +17855,8 @@
     "path": "soccer/eng.1",
     "id": "401879235"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 2.2 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-07",
@@ -17885,7 +17931,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "57de0f27db6ae789cdb8c425f36880c9",
    "sport": "soccer_efl_champ",
    "league": "Championship",
@@ -17942,9 +17988,21 @@
     "best_odds": 3.303,
     "fair_odds": 3.38
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T17:01:13Z",
+    "goals": [
+     {
+      "min": 48,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -11.5,
    "clv": 0.0061,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 30,4 % (Pinnacle 3,16). Tor-Modell 28,8 %. Unser Wert: 30,2 %. Beste Quote 3,40 bei LeoVegas (Median 3,10, 20 Anbieter), Erwartungswert +2,9 %. Recherche: Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur.",
@@ -17953,7 +18011,8 @@
     "path": "soccer/eng.2",
     "id": "401880152"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 0.6 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-banker-01",
@@ -18915,7 +18974,7 @@
    "player": "affe",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "e3fa0f24bc7295cf598f156d7d489407",
    "sport": "soccer_england_league2",
    "league": "League Two",
@@ -18961,9 +19020,31 @@
    "stake": 35.5,
    "potential_payout": 69.22,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T17:01:14Z",
+    "goals": [
+     {
+      "min": 11,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 18,
+      "side": "home",
+      "og": true
+     },
+     {
+      "min": 49,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 69.22,
+   "profit": 33.72,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,95 (Tipico), Erwartungswert -12,0 %.",
@@ -18972,14 +19053,15 @@
     "path": "soccer/eng.4",
     "id": "401881263"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-affe-03",
    "player": "affe",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "17b291f71f74a662eb4bcad1957db62c",
    "sport": "soccer_efl_champ",
    "league": "Championship",
@@ -19030,9 +19112,26 @@
    "stake": 35.5,
    "potential_payout": 46.86,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T17:01:14Z",
+    "goals": [
+     {
+      "min": 40,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 54,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 46.86,
+   "profit": 11.36,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,32 (Tipico), Erwartungswert -7,3 %.",
@@ -19041,7 +19140,8 @@
     "path": "soccer/eng.2",
     "id": "401880157"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-affe-04",
