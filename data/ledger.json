@@ -17430,7 +17430,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9e8d72c6c27c1667be7b88416a36ca80",
    "sport": "soccer_italy_serie_a",
    "league": "Serie A",
@@ -17475,9 +17475,26 @@
     "best_odds": 1.72,
     "fair_odds": 1.691
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-21T16:00:57Z",
+    "goals": [
+     {
+      "min": 24,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 56,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 77.4,
+   "profit": 32.4,
    "clv": 0.0172,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 59,1 %. Tor-Modell 78,0 %. Unser Wert: 60,0 %. Beste Quote 1,72 bei 1xBet (Median 1,60, 8 Anbieter), Erwartungswert +3,3 %. Recherche: Como fehlen Kean, Addai und Jesús Rodríguez. Cagliari fehlen unter anderem Mina, Winks, Felici, Idrissi und Nzola. Bekannt und eingepreist, keine Korrektur.",
@@ -17486,7 +17503,8 @@
     "path": "soccer/ita.1",
     "id": "401875056"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.7 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-03",
@@ -18335,8 +18353,11 @@
       "path": "soccer/ita.1",
       "id": "401875056"
      },
-     "status": "open",
-     "result": null
+     "status": "won",
+     "result": {
+      "home": 2,
+      "away": 0
+     }
     }
    ],
    "last_commence": "2026-11-21T15:00:00Z",
