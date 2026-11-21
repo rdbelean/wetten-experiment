@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T14:00:21Z",
+ "generated_at": "2026-11-21T14:15:27Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2746,9 +2746,9 @@
       "avg_ev": 0.0301,
       "expected_profit": 6.96,
       "expected_settled": 0.22,
-      "avg_clv": 0.0279,
-      "n_clv": 2,
-      "clv_positive": 2,
+      "avg_clv": 0.0246,
+      "n_clv": 3,
+      "clv_positive": 3,
       "max_drawdown": 9.0,
       "budget": 1000.0,
       "remaining": 769.0
@@ -21400,11 +21400,17 @@
    "kind": "value",
    "stake": 22.0,
    "potential_payout": 60.5,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T14:15:25Z",
+    "fair_p": 0.3702,
+    "pinnacle_odds": 2.67,
+    "best_odds": 2.67,
+    "fair_odds": 2.701
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.018,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 37,9 % (Pinnacle 2,57). Tor-Modell 35,9 %. Unser Wert: 37,8 %. Beste Quote 2,75 bei Unibet SE (Median 2,51, 20 Anbieter), Erwartungswert +3,9 %. Recherche: Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur.",
    "research": "Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur.",
@@ -23200,12 +23206,8 @@
   }
  },
  "system": {
-  "credits_remaining": 93,
+  "credits_remaining": 92,
   "last_actions": [
-   {
-    "t": "2026-11-20T10:00:51Z",
-    "a": "Wetten für 2026-11-20 platziert"
-   },
    {
     "t": "2026-11-20T19:33:36Z",
     "a": "Schlussquoten erfasst"
@@ -23261,6 +23263,10 @@
    {
     "t": "2026-11-21T14:00:21Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-21T14:15:27Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
