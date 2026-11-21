@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T19:32:15Z",
+ "generated_at": "2026-11-21T19:47:22Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2746,9 +2746,9 @@
       "avg_ev": 0.0301,
       "expected_profit": 6.96,
       "expected_settled": 3.86,
-      "avg_clv": 0.0265,
-      "n_clv": 8,
-      "clv_positive": 7,
+      "avg_clv": 0.0272,
+      "n_clv": 9,
+      "clv_positive": 8,
       "max_drawdown": 40.0,
       "budget": 1000.0,
       "remaining": 769.0
@@ -22883,11 +22883,17 @@
    "kind": "value",
    "stake": 80.0,
    "potential_payout": 96.8,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T19:47:19Z",
+    "fair_p": 0.8532,
+    "pinnacle_odds": 1.16,
+    "best_odds": 1.19,
+    "fair_odds": 1.172
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0324,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 85,2 % (Pinnacle 1,16). Tor-Modell 71,0 %. Unser Wert: 84,5 %. Beste Quote 1,21 bei 1xBet (Median 1,16, 18 Anbieter), Erwartungswert +2,3 %. Recherche: Vinícius ist nach Sperre zurück, Real fehlen Rodrygo, Asencio und Mendy. Celta fehlen Borja Iglesias, Starfelt und Miguel Román. Der Wert für den Real-Sieg (1,21 gegen Pinnacle 1,16) kommt aus einer weichen Quote, nicht aus News.",
    "research": "Vinícius ist nach Sperre zurück, Real fehlen Rodrygo, Asencio und Mendy. Celta fehlen Borja Iglesias, Starfelt und Miguel Román. Der Wert für den Real-Sieg (1,21 gegen Pinnacle 1,16) kommt aus einer weichen Quote, nicht aus News.",
@@ -23591,12 +23597,8 @@
   }
  },
  "system": {
-  "credits_remaining": 89,
+  "credits_remaining": 88,
   "last_actions": [
-   {
-    "t": "2026-11-21T00:45:15Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-21T02:56:09Z",
     "a": "Wetten abgerechnet"
@@ -23651,6 +23653,10 @@
    },
    {
     "t": "2026-11-21T19:32:15Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-21T19:47:22Z",
     "a": "Schlussquoten erfasst"
    }
   ]
