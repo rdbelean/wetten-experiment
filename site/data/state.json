@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T00:25:10Z",
+ "generated_at": "2026-11-21T00:45:15Z",
  "current_week": 2,
  "weeks": [
   {
@@ -3018,22 +3018,22 @@
     "affe": {
      "totals": {
       "staked": 714.29,
-      "staked_settled": 643.29,
-      "returned": 472.2,
-      "profit": -171.09,
-      "roi": -0.266,
-      "open_stake": 71.0,
-      "open_potential": 97.27,
-      "won": 9,
+      "staked_settled": 678.79,
+      "returned": 522.61,
+      "profit": -156.18,
+      "roi": -0.2301,
+      "open_stake": 35.5,
+      "open_potential": 46.86,
+      "won": 10,
       "lost": 9,
       "push": 0,
       "n_bets": 20,
-      "hit_rate": 0.5,
+      "hit_rate": 0.5263,
       "avg_odds": 1.918,
       "max_odds_won": 1.91,
       "avg_ev": -0.0584,
       "expected_profit": -41.73,
-      "expected_settled": -38.85,
+      "expected_settled": -40.28,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -3077,16 +3077,16 @@
       {
        "date": "2026-11-20",
        "staked": 142.85,
-       "profit": -21.44,
-       "cum_profit": -171.09,
-       "settled": 2,
+       "profit": -6.53,
+       "cum_profit": -156.18,
+       "settled": 3,
        "n_bets": 4
       },
       {
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -171.09,
+       "cum_profit": -156.18,
        "settled": 0,
        "n_bets": 0
       },
@@ -3094,7 +3094,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -171.09,
+       "cum_profit": -156.18,
        "settled": 0,
        "n_bets": 0
       }
@@ -20174,7 +20174,7 @@
    "player": "affe",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "4036e139e287445bad9b5705a7edfe7c",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -20223,15 +20223,21 @@
    "stake": 35.5,
    "potential_payout": 50.41,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 91,
+    "away": 87,
+    "source": "The Odds API",
+    "t": "2026-11-21T00:45:15Z"
+   },
+   "payout": 50.41,
+   "profit": 14.91,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,42 (Marktschnitt), Erwartungswert -4,0 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-stammtisch-03",
@@ -21458,12 +21464,8 @@
   }
  },
  "system": {
-  "credits_remaining": 123,
+  "credits_remaining": 121,
   "last_actions": [
-   {
-    "t": "2026-11-19T10:02:46Z",
-    "a": "Wetten für 2026-11-19 platziert"
-   },
    {
     "t": "2026-11-20T00:57:21Z",
     "a": "Schlussquoten erfasst"
@@ -21519,6 +21521,10 @@
    {
     "t": "2026-11-21T00:25:10Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-21T00:45:15Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }

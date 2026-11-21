@@ -17138,7 +17138,7 @@
    "player": "affe",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "4036e139e287445bad9b5705a7edfe7c",
    "sport": "basketball_euroleague",
    "league": "EuroLeague",
@@ -17187,15 +17187,21 @@
    "stake": 35.5,
    "potential_payout": 50.41,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 91,
+    "away": 87,
+    "source": "The Odds API",
+    "t": "2026-11-21T00:45:15Z"
+   },
+   "payout": 50.41,
+   "profit": 14.91,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,42 (Marktschnitt), Erwartungswert -4,0 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-affe-03",
