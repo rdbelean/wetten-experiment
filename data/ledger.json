@@ -16911,7 +16911,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "f8ad540db00e4a4a360d67dfcb7a53b8",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -16959,9 +16959,14 @@
    "stake": 28.5,
    "potential_payout": 41.32,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 111,
+    "away": 97,
+    "source": "ESPN",
+    "t": "2026-11-21T02:56:09Z"
+   },
+   "payout": 41.32,
+   "profit": 12.82,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -2,7 %.",
@@ -16970,7 +16975,8 @@
     "path": "basketball/nba",
     "id": "401909305"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-stammtisch-05",

@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T00:45:15Z",
+ "generated_at": "2026-11-21T02:56:09Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2933,22 +2933,22 @@
     "stammtisch": {
      "totals": {
       "staked": 714.29,
-      "staked_settled": 657.29,
-      "returned": 653.82,
-      "profit": -3.47,
-      "roi": -0.0053,
-      "open_stake": 57.0,
-      "open_potential": 81.22,
-      "won": 15,
+      "staked_settled": 685.79,
+      "returned": 695.14,
+      "profit": 9.35,
+      "roi": 0.0136,
+      "open_stake": 28.5,
+      "open_potential": 39.9,
+      "won": 16,
       "lost": 8,
       "push": 0,
       "n_bets": 25,
-      "hit_rate": 0.6522,
+      "hit_rate": 0.6667,
       "avg_odds": 1.573,
       "max_odds_won": 2.15,
       "avg_ev": -0.0465,
       "expected_profit": -33.24,
-      "expected_settled": -30.95,
+      "expected_settled": -31.72,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -2992,16 +2992,16 @@
       {
        "date": "2026-11-20",
        "staked": 142.85,
-       "profit": -24.58,
-       "cum_profit": -3.47,
-       "settled": 3,
+       "profit": -11.76,
+       "cum_profit": 9.35,
+       "settled": 4,
        "n_bets": 5
       },
       {
        "date": "2026-11-21",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -3.47,
+       "cum_profit": 9.35,
        "settled": 0,
        "n_bets": 0
       },
@@ -3009,7 +3009,7 @@
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -3.47,
+       "cum_profit": 9.35,
        "settled": 0,
        "n_bets": 0
       }
@@ -20505,7 +20505,7 @@
    "player": "stammtisch",
    "day": "2026-11-20",
    "placed_at": "2026-11-20T10:00:50Z",
-   "status": "open",
+   "status": "won",
    "event_id": "f8ad540db00e4a4a360d67dfcb7a53b8",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -20553,9 +20553,14 @@
    "stake": 28.5,
    "potential_payout": 41.32,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 111,
+    "away": 97,
+    "source": "ESPN",
+    "t": "2026-11-21T02:56:09Z"
+   },
+   "payout": 41.32,
+   "profit": 12.82,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -2,7 %.",
@@ -20564,7 +20569,8 @@
     "path": "basketball/nba",
     "id": "401909305"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-20-affe-03",
@@ -21467,10 +21473,6 @@
   "credits_remaining": 121,
   "last_actions": [
    {
-    "t": "2026-11-20T00:57:21Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-20T03:13:16Z",
     "a": "Wetten abgerechnet"
    },
@@ -21524,6 +21526,10 @@
    },
    {
     "t": "2026-11-21T00:45:15Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-21T02:56:09Z",
     "a": "Wetten abgerechnet"
    }
   ]
