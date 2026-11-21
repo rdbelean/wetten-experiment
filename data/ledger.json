@@ -17944,7 +17944,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 42.06,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
@@ -18013,7 +18015,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 42.6,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,

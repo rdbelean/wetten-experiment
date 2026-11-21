@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T10:04:00Z",
+ "generated_at": "2026-11-21T12:34:37Z",
  "current_week": 2,
  "weeks": [
   {
@@ -21055,7 +21055,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 42.06,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
@@ -21124,7 +21126,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 42.6,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
