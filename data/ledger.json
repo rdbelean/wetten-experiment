@@ -17911,7 +17911,7 @@
    "player": "banker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "fdf73f409e6889c50c880086f9e22463",
    "sport": "soccer_england_league1",
    "league": "League One",
@@ -17959,9 +17959,21 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T14:30:32Z",
+    "goals": [
+     {
+      "min": 58,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,2 % (Pinnacle 1,38). Tor-Modell 76,0 %. Unser Wert: 71,6 %. Beste Quote 1,40 bei Matchbook (Median 1,36, 15 Anbieter), Erwartungswert +0,4 %.",
@@ -17970,14 +17982,15 @@
     "path": "soccer/eng.3",
     "id": "401880731"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-banker-02",
    "player": "banker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6ef39b0fd8839f6e93a3de32523e9807",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -18030,9 +18043,26 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T14:30:32Z",
+    "goals": [
+     {
+      "min": 16,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 57,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,3 % (Pinnacle 1,39). Tor-Modell 61,3 %. Unser Wert: 70,8 %. Beste Quote 1,42 bei 1xBet (Median 1,38, 20 Anbieter), Erwartungswert +0,6 %. Recherche: City kommt mit drei Liga-Niederlagen in Folge. Semenyo fehlt, Guéhi, Khusanov und Matheus Nunes sind fraglich. Fulham ist ohne Ausfälle und seit vier Spielen ungeschlagen. Der hohe Modellwert für Unter 3,5 stützt sich nicht auf News, keine Korrektur.",
@@ -18041,7 +18071,8 @@
     "path": "soccer/eng.1",
     "id": "401879233"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-zocker-01",

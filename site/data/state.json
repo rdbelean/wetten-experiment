@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T14:15:27Z",
+ "generated_at": "2026-11-21T14:30:32Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2815,26 +2815,26 @@
     "banker": {
      "totals": {
       "staked": 360.0,
-      "staked_settled": 300.0,
+      "staked_settled": 360.0,
       "returned": 245.31,
-      "profit": -54.69,
-      "roi": -0.1823,
-      "open_stake": 60.0,
-      "open_potential": 84.66,
+      "profit": -114.69,
+      "roi": -0.3186,
+      "open_stake": 0,
+      "open_potential": 0,
       "won": 6,
-      "lost": 4,
+      "lost": 6,
       "push": 0,
       "n_bets": 12,
-      "hit_rate": 0.6,
+      "hit_rate": 0.5,
       "avg_odds": 1.355,
       "max_odds_won": 1.56,
       "avg_ev": 0.0043,
       "expected_profit": 1.55,
-      "expected_settled": 1.27,
+      "expected_settled": 1.55,
       "avg_clv": -0.0061,
       "n_clv": 10,
       "clv_positive": 6,
-      "max_drawdown": 112.2,
+      "max_drawdown": 138.99,
       "budget": 1000.0,
       "remaining": 640.0
      },
@@ -2882,16 +2882,16 @@
       {
        "date": "2026-11-21",
        "staked": 60.0,
-       "profit": 0,
-       "cum_profit": -54.69,
-       "settled": 0,
+       "profit": -60.0,
+       "cum_profit": -114.69,
+       "settled": 2,
        "n_bets": 2
       },
       {
        "date": "2026-11-22",
        "staked": 0,
        "profit": 0,
-       "cum_profit": -54.69,
+       "cum_profit": -114.69,
        "settled": 0,
        "n_bets": 0
       }
@@ -21033,7 +21033,7 @@
    "player": "banker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "fdf73f409e6889c50c880086f9e22463",
    "sport": "soccer_england_league1",
    "league": "League One",
@@ -21081,9 +21081,21 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T14:30:32Z",
+    "goals": [
+     {
+      "min": 58,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,2 % (Pinnacle 1,38). Tor-Modell 76,0 %. Unser Wert: 71,6 %. Beste Quote 1,40 bei Matchbook (Median 1,36, 15 Anbieter), Erwartungswert +0,4 %.",
@@ -21092,14 +21104,15 @@
     "path": "soccer/eng.3",
     "id": "401880731"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-banker-02",
    "player": "banker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "6ef39b0fd8839f6e93a3de32523e9807",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -21152,9 +21165,26 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T14:30:32Z",
+    "goals": [
+     {
+      "min": 16,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 57,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 71,3 % (Pinnacle 1,39). Tor-Modell 61,3 %. Unser Wert: 70,8 %. Beste Quote 1,42 bei 1xBet (Median 1,38, 20 Anbieter), Erwartungswert +0,6 %. Recherche: City kommt mit drei Liga-Niederlagen in Folge. Semenyo fehlt, Guéhi, Khusanov und Matheus Nunes sind fraglich. Fulham ist ohne Ausfälle und seit vier Spielen ungeschlagen. Der hohe Modellwert für Unter 3,5 stützt sich nicht auf News, keine Korrektur.",
@@ -21163,7 +21193,8 @@
     "path": "soccer/eng.1",
     "id": "401879233"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-21-02",
@@ -23209,10 +23240,6 @@
   "credits_remaining": 92,
   "last_actions": [
    {
-    "t": "2026-11-20T19:33:36Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-20T19:49:09Z",
     "a": "Schlussquoten erfasst"
    },
@@ -23267,6 +23294,10 @@
    {
     "t": "2026-11-21T14:15:27Z",
     "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-21T14:30:32Z",
+    "a": "Wetten abgerechnet"
    }
   ]
  }
