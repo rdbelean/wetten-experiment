@@ -1,0 +1,106 @@
+{
+  "written_at": "2026-11-21T08:36:52Z",
+  "summary": "Großer Fußball-Samstag nach der Länderspielpause mit 20 geprüften Events. Wichtigste News: PSG bekommt Dembélé, Marquinhos, Mendes und Akliouche zurück. Arsenal fehlen Saka und Zubimendi. Palace spielt im ersten Spiel unter Thomas Frank ohne Sarr und den gesperrten Mateta. Groningen fehlt Torwart Vaessen gesperrt. Lyon und Strasbourg haben neue Trainer. Alle diese Meldungen waren vor dem Quotenabruf öffentlich und sind bei Pinnacle eingepreist. Deshalb gibt es heute keine Korrektur und kein Veto. Der höchste Wert (Nice zu 7,0) beruht auf einer Ausreißerquote von LeoVegas.",
+  "events": {
+    "651c1847b5cdcc85e60a140edd2282c4": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "PSG bekommt laut Luis Enrique Dembélé, Marquinhos, Nuno Mendes und Akliouche zurück, nur Kvaratskhelia und Longoni fehlen. Nice fehlen Abdelmonem, Abergel, Bombito und Mendy. Die Rückkehrer wurden am Freitag verkündet und sind bei Pinnacle (Nice 5,91) eingepreist. Die 7,0 von LeoVegas ist ein Ausreißer, keine News-Kante."
+    },
+    "13ac2151b9f6893cedb7f509e64eb070": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur."
+    },
+    "d0128b7d64e40ca3f1ae1b288b47117a": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur."
+    },
+    "6ef39b0fd8839f6e93a3de32523e9807": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "City kommt mit drei Liga-Niederlagen in Folge. Semenyo fehlt, Guéhi, Khusanov und Matheus Nunes sind fraglich. Fulham ist ohne Ausfälle und seit vier Spielen ungeschlagen. Der hohe Modellwert für Unter 3,5 stützt sich nicht auf News, keine Korrektur."
+    },
+    "d2113ca19873218496f8b2fe6c7e7c41": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur."
+    },
+    "476da082e4c07bd9fa21d352af37ee61": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur."
+    },
+    "9f38413bdad666e2d2dfcc574dd12e66": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur."
+    },
+    "9e8d72c6c27c1667be7b88416a36ca80": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Como fehlen Kean, Addai und Jesús Rodríguez. Cagliari fehlen unter anderem Mina, Winks, Felici, Idrissi und Nzola. Bekannt und eingepreist, keine Korrektur."
+    },
+    "4d6dd3defbbe20fa24b719f9fcdbf280": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Strasbourg spielt im ersten Spiel unter Vitor Matos ohne Panichelli, Oso, Gio Reyna und Baldé. Brest fehlen Le Guen, Chardonnet und Versini. Keine frische News, keine Korrektur."
+    },
+    "e59809eb38340e3bca323cef070dfd34": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Napoli fehlen Buongiorno, Di Lorenzo, Lobotka, Meret und weitere, De Bruyne und Anguissa sitzen wohl zunächst auf der Bank. Bei Torino ist Vlašić fraglich. Die Ausfälle sind bekannt, keine Korrektur."
+    },
+    "ac6cf70520a83c0949b4003bde53c709": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Chelsea fehlen João Pedro und Lacroix, Gittens trainiert wieder. Leeds meldet laut Farke keine Ausfälle, Stach, Rodon und Okafor sind fit. Eingepreist, keine Korrektur."
+    },
+    "57de0f27db6ae789cdb8c425f36880c9": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur."
+    },
+    "c8bcd407a7b987234c72c62ec37246ef": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Elversberg fehlt Kapitän Pinckert (Knöchel), eventuell auch Seifert. Freiburg fehlt nur der gesperrte Berkay Yılmaz. Keine Korrektur."
+    },
+    "cc8ea455586c0bdfcca464f1bf617843": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Groningen fehlen Torwart Vaessen und Hateboer (beide gesperrt) sowie Hernes, Janse und Jeng. Heerenveen hat keine Ausfälle. Die Sperren stehen seit dem letzten Spieltag fest und sind eingepreist, keine Korrektur."
+    },
+    "90af957b2f622a5cf805e60b151c54b9": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Vinícius ist nach Sperre zurück, Real fehlen Rodrygo, Asencio und Mendy. Celta fehlen Borja Iglesias, Starfelt und Miguel Román. Der Wert für den Real-Sieg (1,21 gegen Pinnacle 1,16) kommt aus einer weichen Quote, nicht aus News."
+    },
+    "e67ee3a6f93bb90b8aefcf3dd204477c": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Bei Tottenham kehren Bergvall, Savinho und Udogie zurück, Tel, Tosin, Mudryk, Xavi Simons und Odobert fehlen. Ipswich hat laut O'Neil alle 27 Spieler fit. Keine Korrektur."
+    },
+    "ca93df81e976fbe345a6175bb24e3f19": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Union fehlen Markgraf, Nsoki und Skov, Haberer ist krank und fraglich. Leipzig fehlen Guiu und Ouédraogo, Gruda und Baku sind von der Nationalelf zurück. Keine Korrektur."
+    },
+    "71bf9fe98c3e3be39cd1d059f8d71ae8": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Arsenal fehlen Saka (etwa acht Wochen) und Zubimendi (Oberschenkel aus der Länderspielpause), Saliba ist zurück. Newcastle fehlen Joelinton und Jaouen. Beides ist seit Artetas Pressekonferenz bekannt, keine Korrektur."
+    },
+    "67846fc0359aeff2d0b6f3f8a2a674f4": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Stuttgart fehlen Stiller und Jaquez, am Mittwoch folgt die Champions League bei Inter. Starke Rotation ist laut Hoeneß nicht angekündigt. Keine Korrektur."
+    },
+    "a620a95dde2d702247e888f21e2b1cf7": {
+      "veto": false,
+      "confidence": "mittel",
+      "notes": "Die Ausfalllisten für Utrecht und Cambuur sind widersprüchlich und teils veraltet, eine verlässliche frische Meldung gibt es nicht. Keine Korrektur."
+    }
+  }
+}
