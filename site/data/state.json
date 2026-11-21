@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T18:21:31Z",
+ "generated_at": "2026-11-21T19:32:15Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2746,9 +2746,9 @@
       "avg_ev": 0.0301,
       "expected_profit": 6.96,
       "expected_settled": 3.86,
-      "avg_clv": 0.0128,
-      "n_clv": 6,
-      "clv_positive": 5,
+      "avg_clv": 0.0265,
+      "n_clv": 8,
+      "clv_positive": 7,
       "max_drawdown": 40.0,
       "budget": 1000.0,
       "remaining": 769.0
@@ -2916,9 +2916,9 @@
       "avg_ev": 0.0658,
       "expected_profit": 1.35,
       "expected_settled": 0.94,
-      "avg_clv": -0.1135,
-      "n_clv": 1,
-      "clv_positive": 0,
+      "avg_clv": -0.0224,
+      "n_clv": 2,
+      "clv_positive": 1,
       "max_drawdown": 6.0,
       "budget": 1000.0,
       "remaining": 979.5
@@ -22662,11 +22662,17 @@
    "kind": "value",
    "stake": 17.0,
    "potential_payout": 63.75,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T19:32:13Z",
+    "fair_p": 0.285,
+    "pinnacle_odds": 3.42,
+    "best_odds": 3.45,
+    "fair_odds": 3.509
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0687,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,1 % (Pinnacle 3,44). Tor-Modell 25,2 %. Unser Wert: 27,9 %. Beste Quote 3,75 bei LeoVegas (Median 3,30, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
    "research": "Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
@@ -22730,11 +22736,17 @@
    "kind": "value",
    "stake": 13.5,
    "potential_payout": 48.2,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T19:32:13Z",
+    "fair_p": 0.2987,
+    "pinnacle_odds": 3.24,
+    "best_odds": 3.45,
+    "fair_odds": 3.348
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0664,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,9 % (Pinnacle 3,32). Tor-Modell 31,8 %. Unser Wert: 29,0 %. Beste Quote 3,57 bei 1xBet (Median 3,28, 19 Anbieter), Erwartungswert +3,5 %. Recherche: Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur.",
    "research": "Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur.",
@@ -22798,11 +22810,17 @@
    "kind": "value",
    "stake": 8.5,
    "potential_payout": 31.88,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T19:32:13Z",
+    "fair_p": 0.285,
+    "pinnacle_odds": 3.42,
+    "best_odds": 3.45,
+    "fair_odds": 3.509
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0687,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,1 % (Pinnacle 3,44). Tor-Modell 25,2 %. Unser Wert: 27,9 %. Beste Quote 3,75 bei LeoVegas (Median 3,30, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
    "research": "Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
@@ -23573,12 +23591,8 @@
   }
  },
  "system": {
-  "credits_remaining": 90,
+  "credits_remaining": 89,
   "last_actions": [
-   {
-    "t": "2026-11-21T00:25:10Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-21T00:45:15Z",
     "a": "Wetten abgerechnet"
@@ -23634,6 +23648,10 @@
    {
     "t": "2026-11-21T18:21:31Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-21T19:32:15Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
