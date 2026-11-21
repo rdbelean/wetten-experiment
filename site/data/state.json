@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T14:30:32Z",
+ "generated_at": "2026-11-21T14:45:41Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2746,9 +2746,9 @@
       "avg_ev": 0.0301,
       "expected_profit": 6.96,
       "expected_settled": 0.22,
-      "avg_clv": 0.0246,
-      "n_clv": 3,
-      "clv_positive": 3,
+      "avg_clv": 0.0128,
+      "n_clv": 6,
+      "clv_positive": 5,
       "max_drawdown": 9.0,
       "budget": 1000.0,
       "remaining": 769.0
@@ -21851,11 +21851,17 @@
    "kind": "value",
    "stake": 18.0,
    "potential_payout": 51.3,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T14:45:36Z",
+    "fair_p": 0.3421,
+    "pinnacle_odds": 2.85,
+    "best_odds": 2.901,
+    "fair_odds": 2.923
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.025,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 36,5 % (Pinnacle 2,67). Tor-Modell 34,1 %. Unser Wert: 36,3 %. Beste Quote 2,85 bei LeoVegas (Median 2,58, 20 Anbieter), Erwartungswert +3,4 %. Recherche: Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur.",
    "research": "Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur.",
@@ -21920,11 +21926,17 @@
    "kind": "value",
    "stake": 15.0,
    "potential_payout": 39.75,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T14:45:36Z",
+    "fair_p": 0.3857,
+    "pinnacle_odds": 2.53,
+    "best_odds": 2.59,
+    "fair_odds": 2.593
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0221,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 38,3 % (Pinnacle 2,57). Tor-Modell 46,5 %. Unser Wert: 38,7 %. Beste Quote 2,65 bei Unibet SE (Median 2,46, 20 Anbieter), Erwartungswert +2,5 %. Recherche: Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur.",
    "research": "Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur.",
@@ -21989,11 +22001,17 @@
    "kind": "value",
    "stake": 11.5,
    "potential_payout": 39.1,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-21T14:45:36Z",
+    "fair_p": 0.2959,
+    "pinnacle_odds": 3.25,
+    "best_odds": 3.303,
+    "fair_odds": 3.38
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0061,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 30,4 % (Pinnacle 3,16). Tor-Modell 28,8 %. Unser Wert: 30,2 %. Beste Quote 3,40 bei LeoVegas (Median 3,10, 20 Anbieter), Erwartungswert +2,9 %. Recherche: Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur.",
    "research": "Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur.",
@@ -23237,12 +23255,8 @@
   }
  },
  "system": {
-  "credits_remaining": 92,
+  "credits_remaining": 90,
   "last_actions": [
-   {
-    "t": "2026-11-20T19:49:09Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-20T21:34:31Z",
     "a": "Wetten abgerechnet"
@@ -23298,6 +23312,10 @@
    {
     "t": "2026-11-21T14:30:32Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-21T14:45:41Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
