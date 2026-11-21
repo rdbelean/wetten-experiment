@@ -17693,7 +17693,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "13ac2151b9f6893cedb7f509e64eb070",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -17749,9 +17749,26 @@
     "best_odds": 3.45,
     "fair_odds": 3.509
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T21:47:46Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 47,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -17.0,
    "clv": 0.0687,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,1 % (Pinnacle 3,44). Tor-Modell 25,2 %. Unser Wert: 27,9 %. Beste Quote 3,75 bei LeoVegas (Median 3,30, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
@@ -17760,7 +17777,8 @@
     "path": "soccer/fra.1",
     "id": "401876403"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-06",
@@ -17875,7 +17893,7 @@
    "player": "analyst",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "d2113ca19873218496f8b2fe6c7e7c41",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -17931,9 +17949,21 @@
     "best_odds": 3.45,
     "fair_odds": 3.348
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T21:47:46Z",
+    "goals": [
+     {
+      "min": 40,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -13.5,
    "clv": 0.0664,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,9 % (Pinnacle 3,32). Tor-Modell 31,8 %. Unser Wert: 29,0 %. Beste Quote 3,57 bei 1xBet (Median 3,28, 19 Anbieter), Erwartungswert +3,5 %. Recherche: Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur.",
@@ -17942,7 +17972,8 @@
     "path": "soccer/fra.1",
     "id": "401876402"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 6.6 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-08",
@@ -18308,7 +18339,7 @@
    "player": "zocker",
    "day": "2026-11-21",
    "placed_at": "2026-11-21T10:03:58Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "13ac2151b9f6893cedb7f509e64eb070",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -18364,9 +18395,26 @@
     "best_odds": 3.45,
     "fair_odds": 3.509
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-21T21:47:46Z",
+    "goals": [
+     {
+      "min": 39,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 47,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -8.5,
    "clv": 0.0687,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 28,1 % (Pinnacle 3,44). Tor-Modell 25,2 %. Unser Wert: 27,9 %. Beste Quote 3,75 bei LeoVegas (Median 3,30, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
@@ -18375,7 +18423,8 @@
     "path": "soccer/fra.1",
     "id": "401876403"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 6.9 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-21-kombi-01",
