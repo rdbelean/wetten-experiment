@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T08:31:49Z",
+ "generated_at": "2026-11-22T08:36:52Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2723,8 +2723,8 @@
      "n_value": null,
      "research": {
       "used": false,
-      "summary": null,
-      "n_events": 0
+      "summary": "Die frischesten News kommen aus der Bundesliga. Werder fehlen im Nordderby Weiser und Grüll (erst Samstag bestätigt), daher −0,01 auf den Werder-Sieg. Augsburg hat vor Mainz mehrere Abwehrausfälle, darunter kurzfristig Brackelmann (Infekt), daher +0,01 auf Mainz. Barças Abwehrsorgen (Christensen fehlt, Cubarsí fraglich), Mayfields Fragezeichen bei Tampa und die vielen Juve-Ausfälle sind im Pinnacle-Kurs enthalten. Die Werte bei Detroit, Sassuolo–Genoa (Remis) und Barça kommen aus weichen Einzelquoten, nicht aus News.",
+      "n_events": 21
      },
      "near_misses": [],
      "summary": null
