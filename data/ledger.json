@@ -20790,7 +20790,7 @@
    "player": "affe",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "95e13bf4ee868af6f8fe243270b31835",
    "sport": "icehockey_nhl",
    "league": "NHL",
@@ -20827,9 +20827,14 @@
    "stake": 36.35,
    "potential_payout": 82.88,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 5,
+    "source": "ESPN",
+    "t": "2026-11-22T20:41:06Z"
+   },
+   "payout": 0.0,
+   "profit": -36.35,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,28 (Marktschnitt), Erwartungswert -6,1 %.",
@@ -20838,7 +20843,8 @@
     "path": "hockey/nhl",
     "id": "401892768"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-affe-02",
