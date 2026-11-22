@@ -19508,7 +19508,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "41e2dd69bddd65d7e823d9ed61cc2afc",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -19561,9 +19561,14 @@
     "best_odds": 1.57,
     "fair_odds": 1.514
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 31,
+    "away": 21,
+    "source": "ESPN",
+    "t": "2026-11-22T21:46:25Z"
+   },
+   "payout": 128.0,
+   "profit": 48.0,
    "clv": 0.057,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 66,1 % (Pinnacle 1,49). Unser Wert: 66,1 %. Beste Quote 1,60 bei Marathonbet (Median 1,46, 16 Anbieter), Erwartungswert +5,7 %. Recherche: Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur.",
@@ -19572,7 +19577,8 @@
     "path": "football/nfl",
     "id": "401873072"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 5.7 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-03",
