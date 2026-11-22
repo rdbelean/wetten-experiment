@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T16:04:30Z",
+ "generated_at": "2026-11-22T16:34:38Z",
  "current_week": 2,
  "weeks": [
   {
@@ -3207,22 +3207,22 @@
     "stammtisch": {
      "totals": {
       "staked": 1000.0,
-      "staked_settled": 914.15,
+      "staked_settled": 943.0,
       "returned": 1016.22,
-      "profit": 102.07,
-      "roi": 0.1117,
-      "open_stake": 85.85,
-      "open_potential": 158.14,
+      "profit": 73.22,
+      "roi": 0.0776,
+      "open_stake": 57.0,
+      "open_potential": 90.34,
       "won": 23,
-      "lost": 9,
+      "lost": 10,
       "push": 0,
       "n_bets": 35,
-      "hit_rate": 0.7188,
+      "hit_rate": 0.697,
       "avg_odds": 1.604,
       "max_odds_won": 2.45,
       "avg_ev": -0.0474,
       "expected_profit": -47.39,
-      "expected_settled": -43.19,
+      "expected_settled": -43.7,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -3282,9 +3282,9 @@
       {
        "date": "2026-11-22",
        "staked": 142.85,
-       "profit": -23.94,
-       "cum_profit": 102.07,
-       "settled": 2,
+       "profit": -52.79,
+       "cum_profit": 73.22,
+       "settled": 3,
        "n_bets": 5
       }
      ]
@@ -23807,7 +23807,7 @@
    "player": "stammtisch",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "4c2262eccc903b9b1792325d09451c0a",
    "sport": "soccer_germany_bundesliga",
    "league": "Bundesliga",
@@ -23858,9 +23858,36 @@
    "stake": 28.85,
    "potential_payout": 67.8,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-22T16:34:38Z",
+    "goals": [
+     {
+      "min": 19,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 36,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 48,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 51,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.85,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 2,35 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -1,8 %.",
@@ -23869,7 +23896,8 @@
     "path": "soccer/ger.1",
     "id": "401884733"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-affe-04",
@@ -25374,10 +25402,6 @@
   "credits_remaining": 58,
   "last_actions": [
    {
-    "t": "2026-11-21T17:01:14Z",
-    "a": "Wetten abgerechnet"
-   },
-   {
     "t": "2026-11-21T18:21:31Z",
     "a": "Wetten abgerechnet"
    },
@@ -25431,6 +25455,10 @@
    },
    {
     "t": "2026-11-22T16:04:30Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-22T16:34:38Z",
     "a": "Wetten abgerechnet"
    }
   ]
