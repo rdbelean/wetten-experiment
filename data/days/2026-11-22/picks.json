@@ -1,0 +1,181 @@
+{
+ "day": "2026-11-22",
+ "placed_at": "2026-11-22T10:02:20Z",
+ "n_outcomes": 281,
+ "n_value": 5,
+ "adjustments_used": true,
+ "bets": [
+  "2026-11-22-01",
+  "2026-11-22-02",
+  "2026-11-22-03",
+  "2026-11-22-04",
+  "2026-11-22-05"
+ ],
+ "by_player": {
+  "analyst": [
+   "2026-11-22-01",
+   "2026-11-22-02",
+   "2026-11-22-03",
+   "2026-11-22-04",
+   "2026-11-22-05"
+  ],
+  "banker": [
+   "2026-11-22-banker-01",
+   "2026-11-22-banker-02",
+   "2026-11-22-banker-03",
+   "2026-11-22-banker-04",
+   "2026-11-22-banker-05"
+  ],
+  "zocker": [
+   "2026-11-22-zocker-01"
+  ],
+  "kombi": [],
+  "stammtisch": [
+   "2026-11-22-stammtisch-01",
+   "2026-11-22-stammtisch-02",
+   "2026-11-22-stammtisch-03",
+   "2026-11-22-stammtisch-04",
+   "2026-11-22-stammtisch-05"
+  ],
+  "affe": [
+   "2026-11-22-affe-01",
+   "2026-11-22-affe-02",
+   "2026-11-22-affe-03",
+   "2026-11-22-affe-04"
+  ]
+ },
+ "near_misses": [
+  {
+   "home": "FC Twente Enschede",
+   "away": "Willem II",
+   "league": "Eredivisie",
+   "label": "Sieg Willem II",
+   "odds": 34.0,
+   "book_name": "1xBet",
+   "p": 0.0324,
+   "ev": 0.1009,
+   "commence": "2026-11-22T11:15:00Z"
+  },
+  {
+   "home": "Augsburg",
+   "away": "FSV Mainz 05",
+   "league": "Bundesliga",
+   "label": "Sieg FSV Mainz 05",
+   "odds": 2.5,
+   "book_name": "Unibet SE",
+   "p": 0.418,
+   "ev": 0.0449,
+   "commence": "2026-11-22T14:30:00Z"
+  },
+  {
+   "home": "AC Milan",
+   "away": "Frosinone",
+   "league": "Serie A",
+   "label": "Über 3.5 Tore",
+   "odds": 2.137,
+   "book_name": "Matchbook",
+   "p": 0.4752,
+   "ev": 0.0154,
+   "commence": "2026-11-22T17:00:00Z"
+  },
+  {
+   "home": "Atalanta BC",
+   "away": "Inter Milan",
+   "league": "Serie A",
+   "label": "Sieg Inter Milan",
+   "odds": 1.6,
+   "book_name": "Unibet SE",
+   "p": 0.6343,
+   "ev": 0.0149,
+   "commence": "2026-11-22T19:45:00Z"
+  },
+  {
+   "home": "CA Osasuna",
+   "away": "Málaga",
+   "league": "La Liga",
+   "label": "Sieg Málaga",
+   "odds": 4.88,
+   "book_name": "1xBet",
+   "p": 0.2077,
+   "ev": 0.0134,
+   "commence": "2026-11-22T17:30:00Z"
+  },
+  {
+   "home": "Werder Bremen",
+   "away": "Hamburger SV",
+   "league": "Bundesliga",
+   "label": "Sieg Hamburger SV",
+   "odds": 5.802,
+   "book_name": "Matchbook",
+   "p": 0.1742,
+   "ev": 0.0109,
+   "commence": "2026-11-22T16:30:00Z"
+  },
+  {
+   "home": "Juventus",
+   "away": "Venezia",
+   "league": "Serie A",
+   "label": "Sieg Venezia",
+   "odds": 8.644,
+   "book_name": "Matchbook",
+   "p": 0.1168,
+   "ev": 0.0097,
+   "commence": "2026-11-22T11:30:00Z"
+  },
+  {
+   "home": "Paris FC",
+   "away": "Angers",
+   "league": "Ligue 1",
+   "label": "Sieg Paris FC",
+   "odds": 1.35,
+   "book_name": "1xBet",
+   "p": 0.7476,
+   "ev": 0.0093,
+   "commence": "2026-11-22T14:00:00Z"
+  },
+  {
+   "home": "Getafe",
+   "away": "Atlético Madrid",
+   "league": "La Liga",
+   "label": "Unter 2.5 Tore",
+   "odds": 1.84,
+   "book_name": "1xBet",
+   "p": 0.5484,
+   "ev": 0.0091,
+   "commence": "2026-11-22T20:00:00Z"
+  },
+  {
+   "home": "AC Milan",
+   "away": "Frosinone",
+   "league": "Serie A",
+   "label": "Unentschieden",
+   "odds": 4.83,
+   "book_name": "1xBet",
+   "p": 0.2089,
+   "ev": 0.0088,
+   "commence": "2026-11-22T17:00:00Z"
+  },
+  {
+   "home": "Getafe",
+   "away": "Atlético Madrid",
+   "league": "La Liga",
+   "label": "Sieg Getafe",
+   "odds": 7.664,
+   "book_name": "Matchbook",
+   "p": 0.1316,
+   "ev": 0.0086,
+   "commence": "2026-11-22T20:00:00Z"
+  },
+  {
+   "home": "Bologna",
+   "away": "Udinese",
+   "league": "Serie A",
+   "label": "Sieg Bologna",
+   "odds": 1.82,
+   "book_name": "1xBet",
+   "p": 0.554,
+   "ev": 0.0083,
+   "commence": "2026-11-22T14:00:00Z"
+  }
+ ]
+}
