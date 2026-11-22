@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T18:35:33Z",
+ "generated_at": "2026-11-22T20:00:54Z",
  "current_week": 2,
  "weeks": [
   {
@@ -3292,22 +3292,22 @@
     "affe": {
      "totals": {
       "staked": 1000.0,
-      "staked_settled": 928.15,
-      "returned": 809.24,
-      "profit": -118.91,
-      "roi": -0.1281,
-      "open_stake": 71.85,
-      "open_potential": 178.73,
-      "won": 15,
+      "staked_settled": 963.65,
+      "returned": 905.09,
+      "profit": -58.56,
+      "roi": -0.0608,
+      "open_stake": 36.35,
+      "open_potential": 82.88,
+      "won": 16,
       "lost": 11,
       "push": 0,
       "n_bets": 28,
-      "hit_rate": 0.5769,
+      "hit_rate": 0.5926,
       "avg_odds": 1.919,
-      "max_odds_won": 1.95,
+      "max_odds_won": 2.7,
       "avg_ev": -0.0598,
       "expected_profit": -59.77,
-      "expected_settled": -55.81,
+      "expected_settled": -57.54,
       "avg_clv": null,
       "n_clv": 0,
       "clv_positive": 0,
@@ -3367,9 +3367,9 @@
       {
        "date": "2026-11-22",
        "staked": 142.85,
-       "profit": -12.43,
-       "cum_profit": -118.91,
-       "settled": 2,
+       "profit": 47.92,
+       "cum_profit": -58.56,
+       "settled": 3,
        "n_bets": 4
       }
      ]
@@ -23904,7 +23904,7 @@
    "player": "affe",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "10086ee310a0c197eeab94286808acfa",
    "sport": "soccer_germany_liga3",
    "league": "3. Liga",
@@ -23948,15 +23948,21 @@
    "stake": 35.5,
    "potential_payout": 95.85,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 1,
+    "source": "The Odds API",
+    "t": "2026-11-22T20:00:54Z"
+   },
+   "payout": 95.85,
+   "profit": 60.35,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 2,7 (Tipico), Erwartungswert -4,9 %.",
    "research": null,
    "espn": null,
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-05",
@@ -25520,12 +25526,8 @@
   }
  },
  "system": {
-  "credits_remaining": 57,
+  "credits_remaining": 55,
   "last_actions": [
-   {
-    "t": "2026-11-22T08:31:49Z",
-    "a": "Kandidaten für 2026-11-22 vorbereitet"
-   },
    {
     "t": "2026-11-22T10:02:23Z",
     "a": "Wetten für 2026-11-22 platziert"
@@ -25580,6 +25582,10 @@
    },
    {
     "t": "2026-11-22T18:35:33Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-22T20:00:54Z",
     "a": "Wetten abgerechnet"
    }
   ]
