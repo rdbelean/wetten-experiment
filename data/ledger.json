@@ -19573,7 +19573,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "76d4698a8417f32cb059f14a469939f3",
    "sport": "soccer_italy_serie_a",
    "league": "Serie A",
@@ -19629,9 +19629,26 @@
     "best_odds": 3.48,
     "fair_odds": 3.28
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-22T16:04:30Z",
+    "goals": [
+     {
+      "min": 26,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 38,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -18.5,
    "clv": 0.0854,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,5 % (Pinnacle 3,24). Tor-Modell 29,1 %. Unser Wert: 29,4 %. Beste Quote 3,56 bei 1xBet (Median 3,24, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
@@ -19640,7 +19657,8 @@
     "path": "soccer/ita.1",
     "id": "401874960"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 8.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-04",
@@ -19696,11 +19714,17 @@
    "kind": "value",
    "stake": 9.5,
    "potential_payout": 33.73,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T16:04:28Z",
+    "fair_p": 0.2864,
+    "pinnacle_odds": 3.35,
+    "best_odds": 3.6,
+    "fair_odds": 3.492
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0167,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,1 % (Pinnacle 3,28). Tor-Modell 24,9 %. Unser Wert: 28,9 %. Beste Quote 3,55 bei Unibet SE (Median 3,25, 19 Anbieter), Erwartungswert +2,5 %. Recherche: Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
    "research": "Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
@@ -19928,7 +19952,7 @@
    "player": "banker",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "9e5d4a91e379ddffa179b02bf9e09530",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -19980,9 +20004,36 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-22T16:04:30Z",
+    "goals": [
+     {
+      "min": 47,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 55,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 65,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 72,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 40.5,
+   "profit": 10.5,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 75,0 % (Pinnacle 1,32). Tor-Modell 69,3 %. Unser Wert: 74,8 %. Beste Quote 1,35 bei 1xBet (Median 1,30, 19 Anbieter), Erwartungswert +0,9 %. Recherche: Angers fehlen der gesperrte Lefort, Diatta (verletzt) und Pona (krank), El Ouazzani ist zurück. Bei Paris FC ist Chergui fraglich. Keine Korrektur.",
@@ -19991,7 +20042,8 @@
     "path": "soccer/fra.1",
     "id": "401876397"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-banker-04",
@@ -20131,7 +20183,7 @@
    "player": "zocker",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "76d4698a8417f32cb059f14a469939f3",
    "sport": "soccer_italy_serie_a",
    "league": "Serie A",
@@ -20187,9 +20239,26 @@
     "best_odds": 3.48,
     "fair_odds": 3.28
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-22T16:04:30Z",
+    "goals": [
+     {
+      "min": 26,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 38,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -9.0,
    "clv": 0.0854,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,5 % (Pinnacle 3,24). Tor-Modell 29,1 %. Unser Wert: 29,4 %. Beste Quote 3,56 bei 1xBet (Median 3,24, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
@@ -20198,7 +20267,8 @@
     "path": "soccer/ita.1",
     "id": "401874960"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Richtige Entscheidung, falsches Ergebnis (Varianz). Langfristig sind solche Wetten profitabel. Unsere Quote war 8.5 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-stammtisch-01",
@@ -20343,7 +20413,7 @@
    "player": "stammtisch",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "230a356290e1a358e9dd2f7fa23de3b9",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -20394,9 +20464,26 @@
    "stake": 28.5,
    "potential_payout": 41.32,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 2,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-22T16:04:30Z",
+    "goals": [
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 90,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 0.0,
+   "profit": -28.5,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,45 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -6,2 %.",
@@ -20405,7 +20492,8 @@
     "path": "soccer/eng.1",
     "id": "401879234"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-stammtisch-04",

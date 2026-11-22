@@ -1,12 +1,7 @@
 {
- "credits_remaining": 59,
- "credits_used": 441,
+ "credits_remaining": 58,
+ "credits_used": 442,
  "api_calls": [
-  {
-   "t": "2026-11-13T10:03:36Z",
-   "path": "/sports/soccer_uefa_nations_league/events",
-   "cost": 0
-  },
   {
    "t": "2026-11-13T10:03:36Z",
    "path": "/sports/soccer_uefa_nations_league/odds",
@@ -1001,17 +996,14 @@
    "t": "2026-11-22T15:34:18Z",
    "path": "/sports/soccer_netherlands_eredivisie/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-22T16:04:28Z",
+   "path": "/sports/soccer_france_ligue_one/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-19T10:02:46Z",
-   "a": "Wetten für 2026-11-19 platziert"
-  },
-  {
-   "t": "2026-11-20T00:57:21Z",
-   "a": "Schlussquoten erfasst"
-  },
   {
    "t": "2026-11-20T03:13:16Z",
    "a": "Wetten abgerechnet"
@@ -1163,6 +1155,14 @@
   {
    "t": "2026-11-22T15:34:21Z",
    "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-22T16:04:30Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-22T16:04:30Z",
+   "a": "Wetten abgerechnet"
   }
  ]
 }
