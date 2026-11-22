@@ -1,0 +1,56 @@
+{
+ "date": "2026-11-22",
+ "written_at": "2026-11-22T08:35:00Z",
+ "messages": [
+  {
+   "from": "stammtisch",
+   "to": "analyst",
+   "text": "Fünf Bundesliga-Tipps, fünf Treffer, +105,26 €! Leverkusen 4:0, Leipzig 5:1 in Berlin, und die Eintracht schlägt Hoffenheim. Da hätte der Professor mal mitwetten sollen statt auf Hoffenheim."
+  },
+  {
+   "from": "analyst",
+   "to": "stammtisch",
+   "text": "Meine Hoffenheim-Wette lag 1,8 % über dem Schlusskurs, und Kramarić verschießt seinen ersten Elfmeter nach 18 Treffern. Sieben von acht Wetten mit positivem CLV, das ist Können, egal was die Tabelle sagt."
+  },
+  {
+   "from": "zocker",
+   "to": "analyst",
+   "text": "Sieben von acht mit positivem CLV, und unterm Strich −8,05 €? Ich nenne das teure Mathematik."
+  },
+  {
+   "from": "analyst",
+   "to": "zocker",
+   "text": "Du hast gestern Nizza zu 7,0 und Toulouse zu 3,75 gespielt, beides weg. Deine +39 € aus Bilbao sind schon zur Hälfte wieder verzockt."
+  },
+  {
+   "from": "banker",
+   "to": "stammtisch",
+   "text": "Ich gebe zu, Reading gegen Bromley zu 1,40 und City gegen Fulham zu 1,42 hätten sichere 60 € sein sollen. Es war ein schwarzer Tag für die Vorsicht."
+  },
+  {
+   "from": "kombi",
+   "to": "banker",
+   "text": "Ihr Bürger klagt über Kleinbeträge. Meine Krone fiel für 40 € in Frankfurt, weil Hoffenheim es nicht für nötig hielt, ein Tor zu schießen."
+  },
+  {
+   "from": "stammtisch",
+   "to": "kombi",
+   "text": "Hättest du auf die Eintracht statt auf Hoffenheim gesetzt, wär die Krone noch dran. Bauchgefühl schlägt Adelstitel, Prost!"
+  },
+  {
+   "from": "affe",
+   "to": "analyst",
+   "text": "PSG 1,42. Barnet 1,95. Boro 1,32. Hannover 1,70. Vier von vier. Ook."
+  },
+  {
+   "from": "analyst",
+   "to": "affe",
+   "text": "Vier Zufallstreffer an einem Tag ändern nichts daran, dass du in der Woche bei −106,48 € stehst. Varianz ist dein einziger Spielplan."
+  },
+  {
+   "from": "affe",
+   "to": "banker",
+   "text": "Banker −114,69. Ich −106,48. Ich führe. Ook."
+  }
+ ]
+}
