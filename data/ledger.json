@@ -19554,11 +19554,17 @@
    "kind": "value",
    "stake": 80.0,
    "potential_payout": 128.0,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T17:45:15Z",
+    "fair_p": 0.6606,
+    "pinnacle_odds": 1.49,
+    "best_odds": 1.57,
+    "fair_odds": 1.514
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.057,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 66,1 % (Pinnacle 1,49). Unser Wert: 66,1 %. Beste Quote 1,60 bei Marathonbet (Median 1,46, 16 Anbieter), Erwartungswert +5,7 %. Recherche: Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur.",
    "research": "Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur.",
@@ -19739,7 +19745,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "f0c241457472f32fc55b90b2b95b665b",
    "sport": "soccer_netherlands_eredivisie",
    "league": "Eredivisie",
@@ -19796,9 +19802,21 @@
     "best_odds": 4.822,
     "fair_odds": 4.88
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 0,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-22T17:45:15Z",
+    "goals": [
+     {
+      "min": 50,
+      "side": "away",
+      "og": false
+     }
+    ]
+   },
+   "payout": 32.62,
+   "profit": 25.12,
    "clv": -0.1087,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 23,0 % (Pinnacle 4,15). Tor-Modell 30,4 %. Unser Wert: 23,6 %. Beste Quote 4,35 bei Unibet SE (Median 4,00, 20 Anbieter), Erwartungswert +2,6 %. Recherche: Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur.",
@@ -19807,7 +19825,8 @@
     "path": "soccer/ned.1",
     "id": "401875542"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen, aber eher mit Glück – der Preis war am Ende nicht gut. Unsere Quote war 10.9 % schlechter als der faire Schlusskurs – der Markt hat gegen uns gearbeitet."
   },
   {
    "id": "2026-11-22-banker-01",

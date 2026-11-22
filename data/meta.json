@@ -1,12 +1,7 @@
 {
- "credits_remaining": 58,
- "credits_used": 442,
+ "credits_remaining": 57,
+ "credits_used": 443,
  "api_calls": [
-  {
-   "t": "2026-11-13T10:03:36Z",
-   "path": "/sports/soccer_uefa_nations_league/odds",
-   "cost": 2
-  },
   {
    "t": "2026-11-13T10:03:36Z",
    "path": "/sports/basketball_nba/events",
@@ -1001,17 +996,14 @@
    "t": "2026-11-22T16:04:28Z",
    "path": "/sports/soccer_france_ligue_one/odds",
    "cost": 1
+  },
+  {
+   "t": "2026-11-22T17:45:15Z",
+   "path": "/sports/americanfootball_nfl/odds",
+   "cost": 1
   }
  ],
  "last_actions": [
-  {
-   "t": "2026-11-20T03:58:29Z",
-   "a": "Wetten abgerechnet"
-  },
-  {
-   "t": "2026-11-20T05:03:46Z",
-   "a": "Wetten abgerechnet"
-  },
   {
    "t": "2026-11-20T05:13:50Z",
    "a": "Wetten abgerechnet"
@@ -1162,6 +1154,14 @@
   },
   {
    "t": "2026-11-22T16:34:38Z",
+   "a": "Wetten abgerechnet"
+  },
+  {
+   "t": "2026-11-22T17:45:15Z",
+   "a": "Schlussquoten erfasst"
+  },
+  {
+   "t": "2026-11-22T17:45:15Z",
    "a": "Wetten abgerechnet"
   }
  ]
