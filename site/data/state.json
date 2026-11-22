@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T12:48:37Z",
+ "generated_at": "2026-11-22T13:48:53Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2883,9 +2883,9 @@
       "avg_ev": 0.0344,
       "expected_profit": 14.68,
       "expected_settled": 6.96,
-      "avg_clv": 0.0276,
-      "n_clv": 10,
-      "clv_positive": 9,
+      "avg_clv": 0.0328,
+      "n_clv": 11,
+      "clv_positive": 10,
       "max_drawdown": 57.25,
       "budget": 1000.0,
       "remaining": 573.5
@@ -3053,9 +3053,9 @@
       "avg_ev": 0.0604,
       "expected_profit": 1.78,
       "expected_settled": 1.35,
-      "avg_clv": -0.0224,
-      "n_clv": 2,
-      "clv_positive": 1,
+      "avg_clv": 0.0135,
+      "n_clv": 3,
+      "clv_positive": 2,
       "max_drawdown": 14.5,
       "budget": 1000.0,
       "remaining": 970.5
@@ -23415,11 +23415,17 @@
    "kind": "value",
    "stake": 18.5,
    "potential_payout": 65.86,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T13:48:50Z",
+    "fair_p": 0.3049,
+    "pinnacle_odds": 3.14,
+    "best_odds": 3.48,
+    "fair_odds": 3.28
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0854,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,5 % (Pinnacle 3,24). Tor-Modell 29,1 %. Unser Wert: 29,4 %. Beste Quote 3,56 bei 1xBet (Median 3,24, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
    "research": "Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
@@ -23620,11 +23626,17 @@
    "kind": "value",
    "stake": 9.0,
    "potential_payout": 32.04,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T13:48:50Z",
+    "fair_p": 0.3049,
+    "pinnacle_odds": 3.14,
+    "best_odds": 3.48,
+    "fair_odds": 3.28
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.0854,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,5 % (Pinnacle 3,24). Tor-Modell 29,1 %. Unser Wert: 29,4 %. Beste Quote 3,56 bei 1xBet (Median 3,24, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
    "research": "Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
@@ -25191,12 +25203,8 @@
   }
  },
  "system": {
-  "credits_remaining": 61,
+  "credits_remaining": 60,
   "last_actions": [
-   {
-    "t": "2026-11-21T14:00:21Z",
-    "a": "Wetten abgerechnet"
-   },
    {
     "t": "2026-11-21T14:15:27Z",
     "a": "Schlussquoten erfasst"
@@ -25251,6 +25259,10 @@
    },
    {
     "t": "2026-11-22T12:48:37Z",
+    "a": "Schlussquoten erfasst"
+   },
+   {
+    "t": "2026-11-22T13:48:53Z",
     "a": "Schlussquoten erfasst"
    }
   ]
