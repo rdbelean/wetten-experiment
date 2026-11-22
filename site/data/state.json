@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T10:02:23Z",
+ "generated_at": "2026-11-22T12:48:37Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2883,9 +2883,9 @@
       "avg_ev": 0.0344,
       "expected_profit": 14.68,
       "expected_settled": 6.96,
-      "avg_clv": 0.0272,
-      "n_clv": 9,
-      "clv_positive": 8,
+      "avg_clv": 0.0276,
+      "n_clv": 10,
+      "clv_positive": 9,
       "max_drawdown": 57.25,
       "budget": 1000.0,
       "remaining": 573.5
@@ -23274,11 +23274,17 @@
    "kind": "value",
    "stake": 80.0,
    "potential_payout": 98.4,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T12:48:35Z",
+    "fair_p": 0.8382,
+    "pinnacle_odds": 1.18,
+    "best_odds": 1.22,
+    "fair_odds": 1.193
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": 0.031,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 83,8 % (Pinnacle 1,18). Tor-Modell 72,1 %. Unser Wert: 83,2 %. Beste Quote 1,23 bei 1xBet (Median 1,18, 18 Anbieter), Erwartungswert +2,3 %. Recherche: Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur.",
    "research": "Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur.",
@@ -25185,12 +25191,8 @@
   }
  },
  "system": {
-  "credits_remaining": 62,
+  "credits_remaining": 61,
   "last_actions": [
-   {
-    "t": "2026-11-21T13:45:16Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-21T14:00:21Z",
     "a": "Wetten abgerechnet"
@@ -25246,6 +25248,10 @@
    {
     "t": "2026-11-22T10:02:23Z",
     "a": "Wetten für 2026-11-22 platziert"
+   },
+   {
+    "t": "2026-11-22T12:48:37Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
