@@ -19402,7 +19402,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "214a79b6e08dbe3f508844936158c038",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -19457,9 +19457,41 @@
     "best_odds": 1.22,
     "fair_odds": 1.193
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-22T15:04:11Z",
+    "goals": [
+     {
+      "min": 5,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 7,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 57,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 61,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 67,
+      "side": "home",
+      "og": true
+     }
+    ]
+   },
+   "payout": 98.4,
+   "profit": 18.4,
    "clv": 0.031,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 83,8 % (Pinnacle 1,18). Tor-Modell 72,1 %. Unser Wert: 83,2 %. Beste Quote 1,23 bei 1xBet (Median 1,18, 18 Anbieter), Erwartungswert +2,3 %. Recherche: Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur.",
@@ -19468,7 +19500,8 @@
     "path": "soccer/esp.1",
     "id": "401882804"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 3.1 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-02",
@@ -20442,7 +20475,7 @@
    "player": "stammtisch",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "214a79b6e08dbe3f508844936158c038",
    "sport": "soccer_spain_la_liga",
    "league": "La Liga",
@@ -20491,9 +20524,41 @@
    "stake": 28.5,
    "potential_payout": 33.06,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 3,
+    "away": 2,
+    "source": "ESPN",
+    "t": "2026-11-22T15:04:11Z",
+    "goals": [
+     {
+      "min": 5,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 7,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 57,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 61,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 67,
+      "side": "home",
+      "og": true
+     }
+    ]
+   },
+   "payout": 33.06,
+   "profit": 4.56,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,16 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -3,5 %.",
@@ -20502,7 +20567,8 @@
     "path": "soccer/esp.1",
     "id": "401882804"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-affe-01",
