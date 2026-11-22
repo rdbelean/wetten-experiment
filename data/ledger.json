@@ -20565,7 +20565,7 @@
    "player": "stammtisch",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "4c08b213ed416e8f41e038f42a42b962",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -20616,9 +20616,36 @@
    "stake": 28.5,
    "potential_payout": 47.02,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-22T18:30:30Z",
+    "goals": [
+     {
+      "min": 10,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 13,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 66,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 82,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 47.02,
+   "profit": 18.52,
    "clv": null,
    "analysis": null,
    "reason": "Favorit eines der bekanntesten Spiele des Tages, gesetzt zur Quote 1,65 (Tipico) ohne Quotenvergleich. Mathematischer Erwartungswert -5,6 %.",
@@ -20627,7 +20654,8 @@
     "path": "soccer/eng.1",
     "id": "401878755"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-stammtisch-05",
@@ -20789,7 +20817,7 @@
    "player": "affe",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "4c08b213ed416e8f41e038f42a42b962",
    "sport": "soccer_epl",
    "league": "Premier League",
@@ -20840,9 +20868,36 @@
    "stake": 35.5,
    "potential_payout": 58.57,
    "closing": null,
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 4,
+    "away": 0,
+    "source": "ESPN",
+    "t": "2026-11-22T18:30:30Z",
+    "goals": [
+     {
+      "min": 10,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 13,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 66,
+      "side": "home",
+      "og": false
+     },
+     {
+      "min": 82,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 58.57,
+   "profit": 23.07,
    "clv": null,
    "analysis": null,
    "reason": "Zufällig gezogen. Quote 1,65 (Tipico), Erwartungswert -5,6 %.",
@@ -20851,7 +20906,8 @@
     "path": "soccer/eng.1",
     "id": "401878755"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-affe-03",
