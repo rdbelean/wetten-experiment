@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-21T22:02:50Z",
+ "generated_at": "2026-11-22T08:21:16Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2705,7 +2705,11 @@
        "commence": "2026-11-21T17:30:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Am 21.11. setzte der Analyst zum ersten Mal in Woche 2 in größerem Umfang: 8 Wetten, 222 € Einsatz und am Ende −8,05 €. Gewonnen haben Real Madrid zu 1,21 (2:1 nach 0:1), Como Unter 3,5 (2:0) und Coventry zu 2,65 (3:2 durch ein Eigentor in der 85. Minute). Verloren haben Hoffenheim (0:1, Kramarić verschoss einen Elfmeter), Lincoln (0:1 in der 82. Minute), Toulouse (1:1), sowie die Remis-Wetten Lille–Lyon (0:1) und Stoke–Birmingham (1:0). Sieben von acht Wetten hatten positiven CLV, im Schnitt +2,6 %. Die Entscheidungen waren also deutlich besser als das Ergebnis. Tagessieger war der Stammtisch mit fünf Bundesliga-Favoriten ohne Fehltreffer (+105,26 €), gefolgt vom Affen mit vier Zufallstreffern (+85,20 €). Banker (−60 €, Reading gegen Bromley 0:1 und City gegen Fulham 1:1), Zocker (−14,50 €) und Kombi (−40 €, Hoffenheim-Bein) verloren.",
+      "lessons": "Außenseiter- und Remis-Wetten mit +6 bis +7 % CLV (Toulouse, Lille–Lyon) verloren beide. Das ist bei Quoten über 3,5 normal und kein Modellfehler. Die einzige Wette mit negativem CLV (Lincoln, LeoVegas 2,85) war ein Team in einer Niederlagenserie, bei dem der Markt bis zum Anpfiff gegen uns lief. Zwei Trainerdebüts beim Gegner (Digard bei Lens, Vicens bei Lyon) gingen gegen uns aus. Der Tagessieg des Stammtischs mit Favoriten ohne CLV-Messung ist bei fünf Wetten reine Stichprobe.",
+      "written_at": "2026-11-22T08:35:00Z"
+     }
     },
     {
      "date": "2026-11-22",
@@ -21267,7 +21271,12 @@
    "payout": 77.4,
    "profit": 32.4,
    "clv": 0.0172,
-   "analysis": null,
+   "analysis": {
+    "text": "Como gewann 2:0 durch zwei Kopfballtore von Jacobo Ramón (24.) und Lucas Da Cunha (56.), beide nach Flanken von Yan Couto. Cagliari kam nie richtig ins Spiel, Caprile verhinderte ein höheres Ergebnis. Bei zwei Toren war Unter 3,5 nie in Gefahr, und die Quote 1,72 lag 1,7 % über dem fairen Schlusskurs.",
+    "verdict": "können",
+    "lesson": "",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 59,1 %. Tor-Modell 78,0 %. Unser Wert: 60,0 %. Beste Quote 1,72 bei 1xBet (Median 1,60, 8 Anbieter), Erwartungswert +3,3 %. Recherche: Como fehlen Kean, Addai und Jesús Rodríguez. Cagliari fehlen unter anderem Mina, Winks, Felici, Idrissi und Nzola. Bekannt und eingepreist, keine Korrektur.",
    "research": "Como fehlen Kean, Addai und Jesús Rodríguez. Cagliari fehlen unter anderem Mina, Winks, Felici, Idrissi und Nzola. Bekannt und eingepreist, keine Korrektur.",
    "espn": {
@@ -21486,7 +21495,12 @@
    "payout": 0.0,
    "profit": -22.0,
    "clv": 0.018,
-   "analysis": null,
+   "analysis": {
+    "text": "Burkardt brachte Frankfurt in der 25. Minute in Führung. Kramarić scheiterte in der 41. Minute mit einem Elfmeter an Atubolu, nachdem er seine letzten 18 Elfmeter alle verwandelt hatte. Auch Burkardt vergab einen Strafstoß, und Kabak sah in der Nachspielzeit Rot. Die xG-Werte waren fast gleich (etwa 2,2 zu 2,3, Hoffenheim leicht vorn). Die Quote 2,75 lag 1,8 % über dem Schlusskurs, die Niederlage war Varianz.",
+    "verdict": "pech",
+    "lesson": "",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 37,9 % (Pinnacle 2,57). Tor-Modell 35,9 %. Unser Wert: 37,8 %. Beste Quote 2,75 bei Unibet SE (Median 2,51, 20 Anbieter), Erwartungswert +3,9 %. Recherche: Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur.",
    "research": "Frankfurt fehlt Elias Baum (Gelb-Rot-Sperre), Can Uzun ist nach einer Erkältung fraglich. Hoffenheim fehlen Gendrey, Hajdari, Hranáč und De Cat. Eingepreist, keine Korrektur.",
    "espn": {
@@ -22024,7 +22038,12 @@
    "payout": 0.0,
    "profit": -18.0,
    "clv": -0.025,
-   "analysis": null,
+   "analysis": {
+    "text": "Lincoln hatte mehr Ballbesitz und sieben Ecken, scheiterte aber mehrfach an Wrexham-Torwart Patterson. In der 82. Minute traf George Thomason zum 0:1, es war Lincolns vierte Niederlage in Folge. Die Quote 2,85 (LeoVegas) lag 2,5 % unter dem fairen Schlusskurs (2,92), der Markt bewegte sich also gegen uns. Inhaltlich war das keine gute Wette.",
+    "verdict": "fehler",
+    "lesson": "Der vermeintliche Wert gegen den Markt-Schnitt verschwand bis zum Anpfiff. Bei Teams in einer Niederlagenserie gilt das Modell offenbar als zu optimistisch, daher die Mindest-EV in der Championship strenger prüfen.",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 36,5 % (Pinnacle 2,67). Tor-Modell 34,1 %. Unser Wert: 36,3 %. Beste Quote 2,85 bei LeoVegas (Median 2,58, 20 Anbieter), Erwartungswert +3,4 %. Recherche: Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur.",
    "research": "Lincoln fehlt McGrandles (Sperre), Kaboré ist fraglich. Wrexham fehlen Windass, O'Hare und Broadhead. Bekannte Ausfälle auf beiden Seiten, keine Korrektur.",
    "espn": {
@@ -22132,7 +22151,12 @@
    "payout": 39.75,
    "profit": 24.75,
    "clv": 0.0221,
-   "analysis": null,
+   "analysis": {
+    "text": "Ein wildes Spiel: Awoniyi (5.) und Sakamoto (30.) trafen für Coventry, Pino (13.) und Strand Larsen (45.+1) für Palace. Die Entscheidung fiel in der 85. Minute durch ein Eigentor von McNeil nach einem Abpraller. Die xG-Werte waren nahezu gleich (1,96 zu 1,91). Die Quote 2,65 lag 2,2 % über dem fairen Schlusskurs, die Wette war also gut, der Sieg selbst war aber Glückssache.",
+    "verdict": "glück",
+    "lesson": "",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 38,3 % (Pinnacle 2,57). Tor-Modell 46,5 %. Unser Wert: 38,7 %. Beste Quote 2,65 bei Unibet SE (Median 2,46, 20 Anbieter), Erwartungswert +2,5 %. Recherche: Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur.",
    "research": "Erstes Spiel von Thomas Frank als Palace-Trainer. Palace fehlen Sarr, Tomiyasu, Riad und der gesperrte Mateta, Strand Larsen ist fraglich. Coventry fehlen Mason-Clark, Wright und Amenda, Onyeka und Bobby Thomas sind zurück. Die Palace-Ausfälle sind seit Franks Pressekonferenz öffentlich, keine Korrektur.",
    "espn": {
@@ -22220,7 +22244,12 @@
    "payout": 0.0,
    "profit": -11.5,
    "clv": 0.0061,
-   "analysis": null,
+   "analysis": {
+    "text": "George Hirst traf kurz nach der Pause zum 1:0 für Stoke (48.). Ab der 63. Minute spielte Stoke nach Gelb-Rot gegen Bombino in Unterzahl, Birmingham kam aber nicht mehr zum Ausgleich. Die Remis-Quote 3,40 lag nur 0,6 % über dem fairen Schlusskurs, der Vorteil war also klein. Das Ergebnis war Varianz.",
+    "verdict": "pech",
+    "lesson": "",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 30,4 % (Pinnacle 3,16). Tor-Modell 28,8 %. Unser Wert: 30,2 %. Beste Quote 3,40 bei LeoVegas (Median 3,10, 20 Anbieter), Erwartungswert +2,9 %. Recherche: Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur.",
    "research": "Stoke fehlt Lamine Cissé, Bocat und Cresswell sind fraglich. Spitzenreiter Birmingham hat kaum Sorgen. Keine Korrektur.",
    "espn": {
@@ -22690,7 +22719,12 @@
    "payout": 0.0,
    "profit": -17.0,
    "clv": 0.0687,
-   "analysis": null,
+   "analysis": {
+    "text": "Russell-Rowe brachte Toulouse in der 39. Minute in Führung, Cuisance glich direkt nach der Pause aus (47.). Danach dominierte Lens im ersten Spiel unter Didier Digard klar (20:9 Schüsse, xG 1,98 zu 0,76), und nur Toulouse-Keeper Restes hielt das 1:1. Die Quote 3,75 lag 6,9 % über dem fairen Schlusskurs (3,51), die Entscheidung war gut. Ein Toulouse-Sieg war im Spielverlauf aber nie nah.",
+    "verdict": "pech",
+    "lesson": "Ein Trainerwechsel beim Gegner (Digard bei Lens) wurde nicht eingepreist. Bei Debüt-Trainern ist eine Außenseiterwette mit Vorsicht zu sehen, auch wenn der CLV stimmt.",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 28,1 % (Pinnacle 3,44). Tor-Modell 25,2 %. Unser Wert: 27,9 %. Beste Quote 3,75 bei LeoVegas (Median 3,30, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
    "research": "Lens fehlen weiter Edouard, Sima, Nawrocki, Ganiou und Chávez, Bulatović ist leicht fraglich. Bei Toulouse fällt Messali aus, Dønnum ist nach Sperre zurück. Alles länger bekannt, keine Korrektur.",
    "espn": {
@@ -22777,7 +22811,12 @@
    "payout": 0.0,
    "profit": -13.5,
    "clv": 0.0664,
-   "analysis": null,
+   "analysis": {
+    "text": "Lyon gewann im ersten Spiel unter Carlos Vicens durch ein Tor von Mads Bidstrup nach einem Gewühl im Strafraum (40.). In der Schlussphase drängte Lille mit allen Offensivkräften auf den Ausgleich, scheiterte aber an Lyon-Torwart Greif, der zum Spieler des Spiels gewählt wurde. Die Remis-Quote 3,57 lag 6,6 % über dem fairen Schlusskurs (3,35). Gute Entscheidung, knapp verloren.",
+    "verdict": "pech",
+    "lesson": "",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 28,9 % (Pinnacle 3,32). Tor-Modell 31,8 %. Unser Wert: 29,0 %. Beste Quote 3,57 bei 1xBet (Median 3,28, 19 Anbieter), Erwartungswert +3,5 %. Recherche: Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur.",
    "research": "Lyon spielt im ersten Spiel unter Carlos Vicens ohne Šulc, Morton, Ouédraogo und Openda. Lille fehlen Tiago Santos und Igamane, Ueda und Tagliafico sind fraglich. Ein Trainereffekt lässt sich nicht beziffern, keine Korrektur.",
    "espn": {
@@ -22965,7 +23004,12 @@
    "payout": 96.8,
    "profit": 16.8,
    "clv": 0.0324,
-   "analysis": null,
+   "analysis": {
+    "text": "Celta ging durch Pablo Durán früh in Führung, Mbappé schoss vor der Pause einen Elfmeter über das Tor. Real kam auf 25 Abschlüsse gegen 8, Bellingham glich in der 66. Minute aus und Carlos Espí traf in der 85. Minute nach einem Abpraller zum 2:1. Die Quote 1,21 lag 3,2 % über dem fairen Schlusskurs (1,17), die Wette war richtig und der Sieg verdient, wenn auch spät.",
+    "verdict": "können",
+    "lesson": "Weiche Favoritenquoten über dem Pinnacle-Kurs sind ein legitimer Vorteil. Der Einsatz von 80 € (Höchstbetrag) auf 1,21 ist aber ein großes Risiko für wenig Ertrag.",
+    "written_at": "2026-11-22T08:35:00Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 85,2 % (Pinnacle 1,16). Tor-Modell 71,0 %. Unser Wert: 84,5 %. Beste Quote 1,21 bei 1xBet (Median 1,16, 18 Anbieter), Erwartungswert +2,3 %. Recherche: Vinícius ist nach Sperre zurück, Real fehlen Rodrygo, Asencio und Mendy. Celta fehlen Borja Iglesias, Starfelt und Miguel Román. Der Wert für den Real-Sieg (1,21 gegen Pinnacle 1,16) kommt aus einer weichen Quote, nicht aus News.",
    "research": "Vinícius ist nach Sperre zurück, Real fehlen Rodrygo, Asencio und Mendy. Celta fehlen Borja Iglesias, Starfelt und Miguel Román. Der Wert für den Real-Sieg (1,21 gegen Pinnacle 1,16) kommt aus einer weichen Quote, nicht aus News.",
    "espn": {
@@ -22977,6 +23021,61 @@
   }
  ],
  "talk": [
+  {
+   "date": "2026-11-22",
+   "messages": [
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Fünf Bundesliga-Tipps, fünf Treffer, +105,26 €! Leverkusen 4:0, Leipzig 5:1 in Berlin, und die Eintracht schlägt Hoffenheim. Da hätte der Professor mal mitwetten sollen statt auf Hoffenheim."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Meine Hoffenheim-Wette lag 1,8 % über dem Schlusskurs, und Kramarić verschießt seinen ersten Elfmeter nach 18 Treffern. Sieben von acht Wetten mit positivem CLV, das ist Können, egal was die Tabelle sagt."
+    },
+    {
+     "from": "zocker",
+     "to": "analyst",
+     "text": "Sieben von acht mit positivem CLV, und unterm Strich −8,05 €? Ich nenne das teure Mathematik."
+    },
+    {
+     "from": "analyst",
+     "to": "zocker",
+     "text": "Du hast gestern Nizza zu 7,0 und Toulouse zu 3,75 gespielt, beides weg. Deine +39 € aus Bilbao sind schon zur Hälfte wieder verzockt."
+    },
+    {
+     "from": "banker",
+     "to": "stammtisch",
+     "text": "Ich gebe zu, Reading gegen Bromley zu 1,40 und City gegen Fulham zu 1,42 hätten sichere 60 € sein sollen. Es war ein schwarzer Tag für die Vorsicht."
+    },
+    {
+     "from": "kombi",
+     "to": "banker",
+     "text": "Ihr Bürger klagt über Kleinbeträge. Meine Krone fiel für 40 € in Frankfurt, weil Hoffenheim es nicht für nötig hielt, ein Tor zu schießen."
+    },
+    {
+     "from": "stammtisch",
+     "to": "kombi",
+     "text": "Hättest du auf die Eintracht statt auf Hoffenheim gesetzt, wär die Krone noch dran. Bauchgefühl schlägt Adelstitel, Prost!"
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "PSG 1,42. Barnet 1,95. Boro 1,32. Hannover 1,70. Vier von vier. Ook."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Vier Zufallstreffer an einem Tag ändern nichts daran, dass du in der Woche bei −106,48 € stehst. Varianz ist dein einziger Spielplan."
+    },
+    {
+     "from": "affe",
+     "to": "banker",
+     "text": "Banker −114,69. Ich −106,48. Ich führe. Ook."
+    }
+   ]
+  },
   {
    "date": "2026-11-21",
    "messages": [
@@ -23274,61 +23373,6 @@
      "from": "stammtisch",
      "to": "affe",
      "text": "Der Affe hat minus 80,55, also besser als der Professor. Woche 2, 1.000 Euro, mein Bauch ist bereit."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-14",
-   "messages": [
-    {
-     "from": "kombi",
-     "to": "banker",
-     "text": "3er-Kombi zu 6,72: Aserbaidschan, Moldau, Island, plus 235,76 Euro. Die Krone sitzt fester denn je, plus 437,69 nach einer Woche."
-    },
-    {
-     "from": "banker",
-     "to": "kombi",
-     "text": "Und die beiden Kombis vom 12. hängen noch offen, Majestät. Mailand fehlte ein Punkt, und Maccabi hat das Derby gewonnen. Rechne mal 100 Euro ab."
-    },
-    {
-     "from": "kombi",
-     "to": "banker",
-     "text": "Und du? OKC, Atlanta, Knicks, alle drei weg, minus 48,80. Das ist der Moment, in dem ein Banker merkt, dass Favoriten auch verlieren."
-    },
-    {
-     "from": "zocker",
-     "to": "affe",
-     "text": "Moldau zu 2,85 mit 56,50 Euro, plus 104,53! Griechenland zu 5,90 war Pech, das 0:7 sagt gar nichts."
-    },
-    {
-     "from": "affe",
-     "to": "zocker",
-     "text": "Sieben. Null. Ook."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Plus 115 nach einer Woche, Herr Professor, und das ohne eine einzige CLV-Tabelle. Bauchgefühl, Moldau zu 2,63, die Runde geht auf mich."
-    },
-    {
-     "from": "analyst",
-     "to": "stammtisch",
-     "text": "Dein CLV liegt bei minus 5,0 Prozent, deine Erwartung bei minus 35 Euro. Du hast 150 Euro Glück gehabt, und meine Value-Wetten stehen bei plus 58,64."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Und dein Kontostand steht bei minus 144,52. Von deinen Value-Wetten allein kann ich mir kein Bier kaufen."
-    },
-    {
-     "from": "analyst",
-     "to": "affe",
-     "text": "Barcelona dreht ein 43:57 im letzten Viertel, und ich stehe wieder als der Verlierer da. Das ist Varianz, einfach Varianz."
-    },
-    {
-     "from": "affe",
-     "to": "analyst",
-     "text": "Bulls zu 3,40. Plus 60. Ook."
     }
    ]
   }
