@@ -19671,7 +19671,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8e6ee05b6ac28dc2357f72b9f5a0643e",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -19727,9 +19727,26 @@
     "best_odds": 3.6,
     "fair_odds": 3.492
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-22T18:15:24Z",
+    "goals": [
+     {
+      "min": 27,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 33.73,
+   "profit": 24.23,
    "clv": 0.0167,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,1 % (Pinnacle 3,28). Tor-Modell 24,9 %. Unser Wert: 28,9 %. Beste Quote 3,55 bei Unibet SE (Median 3,25, 19 Anbieter), Erwartungswert +2,5 %. Recherche: Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
@@ -19738,7 +19755,8 @@
     "path": "soccer/fra.1",
     "id": "401876401"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.7 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-05",

@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T17:45:15Z",
+ "generated_at": "2026-11-22T18:15:24Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2867,22 +2867,22 @@
     "analyst": {
      "totals": {
       "staked": 426.5,
-      "staked_settled": 337.0,
-      "returned": 344.97,
-      "profit": 7.97,
-      "roi": 0.0236,
-      "open_stake": 89.5,
-      "open_potential": 161.73,
-      "won": 5,
+      "staked_settled": 346.5,
+      "returned": 378.7,
+      "profit": 32.2,
+      "roi": 0.0929,
+      "open_stake": 80.0,
+      "open_potential": 128.0,
+      "won": 6,
       "lost": 7,
       "push": 0,
       "n_bets": 14,
-      "hit_rate": 0.4167,
+      "hit_rate": 0.4615,
       "avg_odds": 2.847,
       "max_odds_won": 4.35,
       "avg_ev": 0.0344,
       "expected_profit": 14.68,
-      "expected_settled": 9.88,
+      "expected_settled": 10.12,
       "avg_clv": 0.0233,
       "n_clv": 14,
       "clv_positive": 12,
@@ -2942,9 +2942,9 @@
       {
        "date": "2026-11-22",
        "staked": 195.5,
-       "profit": 25.02,
-       "cum_profit": 7.97,
-       "settled": 3,
+       "profit": 49.25,
+       "cum_profit": 32.2,
+       "settled": 4,
        "n_bets": 5
       }
      ]
@@ -24051,7 +24051,7 @@
    "player": "analyst",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "8e6ee05b6ac28dc2357f72b9f5a0643e",
    "sport": "soccer_france_ligue_one",
    "league": "Ligue 1",
@@ -24107,9 +24107,26 @@
     "best_odds": 3.6,
     "fair_odds": 3.492
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 1,
+    "away": 1,
+    "source": "ESPN",
+    "t": "2026-11-22T18:15:24Z",
+    "goals": [
+     {
+      "min": 27,
+      "side": "away",
+      "og": false
+     },
+     {
+      "min": 45,
+      "side": "home",
+      "og": false
+     }
+    ]
+   },
+   "payout": 33.73,
+   "profit": 24.23,
    "clv": 0.0167,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 29,1 % (Pinnacle 3,28). Tor-Modell 24,9 %. Unser Wert: 28,9 %. Beste Quote 3,55 bei Unibet SE (Median 3,25, 19 Anbieter), Erwartungswert +2,5 %. Recherche: Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
@@ -24118,7 +24135,8 @@
     "path": "soccer/fra.1",
     "id": "401876401"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verdienter Treffer. Unsere Quote war 1.7 % besser als der faire Schlusskurs – der Markt hat sich in unsere Richtung bewegt."
   },
   {
    "id": "2026-11-22-affe-02",
@@ -25421,10 +25439,6 @@
   "credits_remaining": 57,
   "last_actions": [
    {
-    "t": "2026-11-21T19:47:22Z",
-    "a": "Schlussquoten erfasst"
-   },
-   {
     "t": "2026-11-21T21:47:46Z",
     "a": "Wetten abgerechnet"
    },
@@ -25478,6 +25492,10 @@
    },
    {
     "t": "2026-11-22T17:45:15Z",
+    "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-22T18:15:24Z",
     "a": "Wetten abgerechnet"
    }
   ]
