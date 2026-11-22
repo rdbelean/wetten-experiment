@@ -19938,7 +19938,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 40.5,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
