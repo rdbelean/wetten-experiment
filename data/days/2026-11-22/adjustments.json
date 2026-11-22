@@ -1,0 +1,100 @@
+{
+ "written_at": "2026-11-22T08:34:57Z",
+ "summary": "Die frischesten News kommen aus der Bundesliga. Werder fehlen im Nordderby Weiser und Grüll (erst Samstag bestätigt), daher −0,01 auf den Werder-Sieg. Augsburg hat vor Mainz mehrere Abwehrausfälle, darunter kurzfristig Brackelmann (Infekt), daher +0,01 auf Mainz. Barças Abwehrsorgen (Christensen fehlt, Cubarsí fraglich), Mayfields Fragezeichen bei Tampa und die vielen Juve-Ausfälle sind im Pinnacle-Kurs enthalten. Die Werte bei Detroit, Sassuolo–Genoa (Remis) und Barça kommen aus weichen Einzelquoten, nicht aus News.",
+ "events": {
+  "41e2dd69bddd65d7e823d9ed61cc2afc": {
+   "confidence": "mittel",
+   "notes": "Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur."
+  },
+  "f73ffb41e418d1a67544b0fbf261693a": {
+   "confidence": "mittel",
+   "notes": "Twente fehlen Torwart Unnerstall, Bruns und Thorvaldsen. Bei Schlusslicht Willem II fallen Kapitän Hoogma und Lachkar aus, Torwart Didillon-Hödl ist fraglich. Die Quote 34 auf Willem II liegt außerhalb des Quotenrahmens, keine Korrektur."
+  },
+  "76d4698a8417f32cb059f14a469939f3": {
+   "confidence": "niedrig",
+   "notes": "Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur."
+  },
+  "f0c241457472f32fc55b90b2b95b665b": {
+   "confidence": "niedrig",
+   "notes": "Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur."
+  },
+  "8e6ee05b6ac28dc2357f72b9f5a0643e": {
+   "confidence": "mittel",
+   "notes": "Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur."
+  },
+  "214a79b6e08dbe3f508844936158c038": {
+   "confidence": "mittel",
+   "notes": "Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur."
+  },
+  "4c2262eccc903b9b1792325d09451c0a": {
+   "h2h": {
+    "home": -0.01,
+    "draw": 0.0,
+    "away": 0.01
+   },
+   "confidence": "niedrig",
+   "notes": "Augsburg (sieben Spiele ohne Sieg) fehlen Banks, Matsima, Massengo und kurzfristig Brackelmann (Infekt), ein weiterer Innenverteidiger ist fraglich. Bei Mainz fehlt nur Kohr, Posch und Mwene sind nach Sperre zurück. Wegen der frischen Ausfälle in der Augsburger Abwehr: +0,01 auf Mainz."
+  },
+  "9a214142c9b31ad8233dccad53f75d6d": {
+   "h2h": {
+    "home": -0.01,
+    "draw": 0.005,
+    "away": 0.005
+   },
+   "confidence": "niedrig",
+   "notes": "Werder fehlen im Nordderby Weiser und Grüll, das wurde erst am Samstag bestätigt. Beim HSV ist Vušković nach seiner Sperre wieder im Kader. Daher −0,01 auf den Werder-Sieg."
+  },
+  "5faf836ce6c0fd72af5d1fe258c63bc6": {
+   "confidence": "mittel",
+   "notes": "Milan fehlen Saelemaekers, Gabbia, Tomori, Loftus-Cheek und Chukwueze, Pavlović ist fraglich, Maignan soll spielen. Frosinone fehlen Raimondo, Grillitsch und der gesperrte Bracaglia. Keine Korrektur."
+  },
+  "e22f82b10fe71d230248b88fef87e58f": {
+   "confidence": "mittel",
+   "notes": "Bei Inter fehlt Bonny, Lautaro soll laut Sky nur auf der Bank sitzen, Zieliński ist fraglich. Atalanta fehlen Hien, Kossounou und Pompei. Eingepreist, keine Korrektur."
+  },
+  "893268e5503c4e58fbf137e4b5db7e93": {
+   "confidence": "mittel",
+   "notes": "Osasuna hat Aimar Oroz, Herrando und Del Castillo zurück, es fehlen Bretones, Aitor Fernández und Rockson. Schlusslicht Málaga fehlen Rafita, Ochoa, Lobete, Calero und der gesperrte Aznou. Keine Korrektur."
+  },
+  "be2fcabc408be29ca01ce92ab266f8b7": {
+   "confidence": "mittel",
+   "notes": "Juve fehlen Yildiz, Kalulu, Locatelli, Thuram, Nico González und Milik. Venezia fehlen Šverko, Franjić und Adorante. Viele Juve-Ausfälle, aber bekannt. Die Venezia-Quote liegt außerhalb des Rahmens, keine Korrektur."
+  },
+  "9e5d4a91e379ddffa179b02bf9e09530": {
+   "confidence": "mittel",
+   "notes": "Angers fehlen der gesperrte Lefort, Diatta (verletzt) und Pona (krank), El Ouazzani ist zurück. Bei Paris FC ist Chergui fraglich. Keine Korrektur."
+  },
+  "7a62fe738bd20cfff6027c52fec05d51": {
+   "confidence": "mittel",
+   "notes": "Atlético fehlen Cuti Romero, Pubill und Lookman, Le Normand rückt in die Innenverteidigung. Seit der Pressekonferenz bekannt, keine Korrektur."
+  },
+  "5bc13c44b33981f3185400163388267e": {
+   "confidence": "mittel",
+   "notes": "Bologna (vier Siege in Folge) fehlen Holm, Miranda und Enem. Bei Udinese fallen Bertola und Gueye aus, Alaba und Zanoli sind fraglich, Davis ist angeschlagen. Keine Korrektur."
+  },
+  "230a356290e1a358e9dd2f7fa23de3b9": {
+   "confidence": "mittel",
+   "notes": "Brighton fehlen Mitoma, Ferguson und Yohanna. Hull fehlen Targett, Morita, Matazo und Ansah, Belloumi und Crooks sind zurück. Keine Korrektur."
+  },
+  "b192dbcfd675d0ee75492948b7d2a35f": {
+   "confidence": "mittel",
+   "notes": "Ajax hat Brandt, Berghuis, Kehrer und Gaaei zurück, Dolberg und Tsygankov fehlen. ADO spielt im ersten Spiel unter Maurice Steijn gegen dessen Ex-Klub, Pozo fehlt. Keine Korrektur."
+  },
+  "4c08b213ed416e8f41e038f42a42b962": {
+   "confidence": "mittel",
+   "notes": "Bei Liverpool sind van Dijk und Szoboszlai fit, Ekitike, Bradley und Leoni fehlen. United fehlen Rashford (Hüfte) und Shaw, bei Maguire und Dorgu entscheidet sich der Einsatz kurzfristig, Lisandro Martínez ist nach Sperre zurück. Keine Korrektur."
+  },
+  "403a88701352da05b0710a9e883b803e": {
+   "confidence": "niedrig",
+   "notes": "Bei den Cardinals ist QB Carson Beck (Rücken) questionable und fällt wohl aus, dann startet Josh Johnson. Den Chiefs fehlen RB Kenneth Walker III und Guard Trey Smith. Bei einer Quote von 1,09 ist das ohne Bedeutung, keine Korrektur."
+  },
+  "1940706a79cbcbafacdcbf231069716b": {
+   "confidence": "niedrig",
+   "notes": "Bei den Raiders ist TE Brock Bowers (Knöchel/Oberschenkel) questionable, bei den Broncos Safety Brandon Jones. Keine Korrektur."
+  },
+  "031fa761cc38e1b5afd9309b731b38b2": {
+   "confidence": "niedrig",
+   "notes": "Die Knicks spielen Back-to-back nach dem Spiel gegen Portland. Anunoby (Wade) war doubtful, Towns krank und questionable, Clarkson fällt aus. Für heute gibt es noch keinen Injury Report, keine Korrektur."
+  }
+ }
+}
