@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-22T15:04:11Z",
+ "generated_at": "2026-11-22T15:34:21Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2883,8 +2883,8 @@
       "avg_ev": 0.0344,
       "expected_profit": 14.68,
       "expected_settled": 8.8,
-      "avg_clv": 0.0328,
-      "n_clv": 11,
+      "avg_clv": 0.021,
+      "n_clv": 12,
       "clv_positive": 10,
       "max_drawdown": 57.25,
       "budget": 1000.0,
@@ -23903,11 +23903,17 @@
    "kind": "value",
    "stake": 7.5,
    "potential_payout": 32.62,
-   "closing": null,
+   "closing": {
+    "t": "2026-11-22T15:34:18Z",
+    "fair_p": 0.2049,
+    "pinnacle_odds": 4.6,
+    "best_odds": 4.822,
+    "fair_odds": 4.88
+   },
    "result": null,
    "payout": null,
    "profit": null,
-   "clv": null,
+   "clv": -0.1087,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 23,0 % (Pinnacle 4,15). Tor-Modell 30,4 %. Unser Wert: 23,6 %. Beste Quote 4,35 bei Unibet SE (Median 4,00, 20 Anbieter), Erwartungswert +2,6 %. Recherche: Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur.",
    "research": "Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur.",
@@ -25277,12 +25283,8 @@
   }
  },
  "system": {
-  "credits_remaining": 60,
+  "credits_remaining": 59,
   "last_actions": [
-   {
-    "t": "2026-11-21T14:45:41Z",
-    "a": "Schlussquoten erfasst"
-   },
    {
     "t": "2026-11-21T16:00:57Z",
     "a": "Wetten abgerechnet"
@@ -25338,6 +25340,10 @@
    {
     "t": "2026-11-22T15:04:11Z",
     "a": "Wetten abgerechnet"
+   },
+   {
+    "t": "2026-11-22T15:34:21Z",
+    "a": "Schlussquoten erfasst"
    }
   ]
  }
