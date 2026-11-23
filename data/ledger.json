@@ -19907,7 +19907,9 @@
    "kind": "favorit",
    "stake": 30.0,
    "potential_payout": 38.52,
-   "closing": null,
+   "closing": {
+    "missed": true
+   },
    "result": null,
    "payout": null,
    "profit": null,
@@ -20095,7 +20097,7 @@
    "player": "banker",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "8ba112fabf4e87639338a5f437c5abfe",
    "sport": "americanfootball_nfl",
    "league": "NFL",
@@ -20143,9 +20145,14 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 23,
+    "away": 18,
+    "source": "ESPN",
+    "t": "2026-11-23T01:12:44Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 72,0 % (Pinnacle 1,35). Unser Wert: 72,0 %. Beste Quote 1,40 bei Unibet SE (Median 1,36, 15 Anbieter), Erwartungswert +0,8 %.",
@@ -20154,7 +20161,8 @@
     "path": "football/nfl",
     "id": "401873069"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-banker-05",
