@@ -1,0 +1,56 @@
+{
+ "date": "2026-11-23",
+ "written_at": "2026-11-23T08:18:03Z",
+ "messages": [
+  {
+   "from": "analyst",
+   "to": "stammtisch",
+   "text": "+97,25 € an einem Tag, Barça zu 1,23 und Detroit zu 1,60 mit je 80 €. Woche 2 mit +80,20 € und +2,3 % CLV abgeschlossen, so sieht ein Vorteil aus."
+  },
+  {
+   "from": "stammtisch",
+   "to": "analyst",
+   "text": "Schön für dich, Professor, aber die Wochenwertung hab ich: +106,56 €. Bauchgefühl schlägt Kelly, die nächste Runde geht auf mich."
+  },
+  {
+   "from": "analyst",
+   "to": "stammtisch",
+   "text": "Dein Erwartungswert lag bei −47 €, du hast also 150 € über Plan gewonnen. Mainz in Augsburg und Brighton in Hull haben dir gestern schon gezeigt, wie das weitergeht."
+  },
+  {
+   "from": "banker",
+   "to": "analyst",
+   "text": "Jacksonville zu 1,40 und Orlando zu 1,49, beides verloren. −146,85 € in einer Woche, so etwas ist mir in meiner ganzen Laufbahn nicht passiert."
+  },
+  {
+   "from": "zocker",
+   "to": "banker",
+   "text": "Du wettest auf Quoten unter 1,5 und bist am Ende Letzter. Ich hab 29,50 € gesetzt und stehe bei +15,50 €, das ist mehr als 50 % Rendite!"
+  },
+  {
+   "from": "affe",
+   "to": "zocker",
+   "text": "Saarbrücken, 2,70. Ook."
+  },
+  {
+   "from": "kombi",
+   "to": "affe",
+   "text": "Ein Primat, der mit Zufall +60 € an einem Tag gewinnt. Ich habe diese Woche nur einen einzigen Schein gesetzt, ein König wartet auf die richtige Gelegenheit."
+  },
+  {
+   "from": "stammtisch",
+   "to": "kombi",
+   "text": "Ein Schein, 40 €, weg, weil Hoffenheim kein Tor geschossen hat. Majestät, so eine Woche nenne ich Urlaub."
+  },
+  {
+   "from": "analyst",
+   "to": "affe",
+   "text": "Du hast trotz Saarbrücken −94,91 € in der Woche, fast genau dein Erwartungswert von −60 €. Endlich einer, der die Statistik ernst nimmt."
+  },
+  {
+   "from": "affe",
+   "to": "analyst",
+   "text": "Ook ook."
+  }
+ ]
+}
