@@ -2,7 +2,7 @@
  "experiment": {
   "name": "Quotenlabor — 7 Tage, 700 € Spielgeld"
  },
- "generated_at": "2026-11-23T03:58:36Z",
+ "generated_at": "2026-11-23T08:20:02Z",
  "current_week": 2,
  "weeks": [
   {
@@ -2860,7 +2860,11 @@
        "commence": "2026-11-22T14:00:00Z"
       }
      ],
-     "summary": null
+     "summary": {
+      "text": "Der beste Tag des Analysten im ganzen Experiment: 5 Wetten, 195,50 € Einsatz und +97,25 €. Die beiden 80-€-Wetten auf Barcelona (3:2 nach 0:2) und Detroit (31:21) trugen zusammen +66,40 € bei. Dazu kamen das Remis Lorient–Rennes (1:1) und Fortuna zu 4,35 (1:0 in Deventer). Verloren ging nur das Remis Sassuolo–Genoa (0:2), ausgerechnet die Wette mit dem besten CLV (+8,5 %). Vier von fünf Wetten schlugen den Schlusskurs. Die einzige Ausnahme (Fortuna, −10,9 %) war die glücklichste. Im Tagesvergleich lag der Analyst klar vorn, vor dem Affen (+11,57 € dank Saarbrücken zu 2,70). Zocker (−9 €, ebenfalls Sassuolo–Genoa), Stammtisch (−19,45 €, Augsburg 3:1 gegen Mainz, Hull 2:0 gegen Brighton) und Banker (−32,16 €, Jacksonville und Orlando verloren) gingen ins Minus. Die Kombi setzte nichts.",
+      "lessons": "Die großen Einsätze lagen auf Favoriten mit weicher Einzelquote gegen eine stabile Pinnacle-Linie (Barça 1xBet 1,23 gegen Pinnacle 1,18, Detroit Marathonbet 1,60 gegen 1,49). Das ist das robusteste Muster der Woche. Remis-Wetten hatten in Woche 2 durchweg positiven CLV (+0,6 bis +8,5 %), aber nur eine von fünf ging durch. Das ist bei Quoten um 3,5 normal. Wetten mit negativem CLV gingen fast immer auf Außenseiter mit kurzfristigen Personal- oder Trainerthemen (Lincoln, Fortuna).",
+      "written_at": "2026-11-23T08:17:34Z"
+     }
     }
    ],
    "players": {
@@ -3376,7 +3380,18 @@
     }
    },
    "report": null,
-   "weekly": null
+   "weekly": {
+    "text": "Der Analyst beendet Woche 2 mit +80,20 € bei 426,50 € Einsatz (14 Wetten, 7 Siege, 7 Niederlagen, ROI +18,8 %). Er ist damit Zweiter hinter dem Stammtisch. Die neue Wochenkasse ohne Pflicht-Einsatz hat sichtbar geholfen. Montag bis Donnerstag setzte das System gar nichts, weil kein Vorteil da war. 57 % der Kasse blieben unberührt, statt sie wie in Woche 1 für Füllwetten auszugeben. Die Qualität der Entscheidungen blieb hoch: 12 von 14 Wetten schlugen den Schlusskurs, im Schnitt +2,3 % CLV. Erwartet waren laut Modell etwa +15 €. Das Ergebnis liegt also über Plan, und ein Teil davon ist Glück, etwa beim Fortuna-Treffer mit −10,9 % CLV. Die besten Entscheidungen waren Detroit zu 1,60 (Marathonbet gegen Pinnacle 1,49, +5,7 % CLV) und Barça zu 1,23 (+3,1 %). Beide waren mit dem Höchsteinsatz von 80 € belegt und haben zusammen +66 € gebracht. Die schwächste Entscheidung war Lincoln zu 2,85 (−2,5 % CLV, verloren). Die fünf Remis-Wetten hatten alle positiven CLV, nur eine ging durch. Das ist bei Quoten um 3,5 erwartbare Varianz. Der Wochenvergleich: Stammtisch +106,56 € (1.000 € eingesetzt), Analyst +80,20 € (426,50 €), Zocker +15,50 € (nur 29,50 €), Kombi −40 € (ein Schein), Affe −94,91 € (1.000 €), Banker −146,85 € (510 €, CLV −0,6 %). Der Stammtisch hatte wie in Woche 1 einen negativen Erwartungswert (etwa −47 €) und lag rund 150 € über Plan. Das ist Glück mit Tipico-Favoriten, kein Können. Der Affe dagegen lag ziemlich genau im Rahmen seines negativen Erwartungswerts. Der Banker hat gezeigt, dass kleine Quoten ohne Vorteil keine Sicherheit bieten: 8 Niederlagen bei 17 Wetten zu Quoten unter 1,75 sind Pech, aber sein CLV um null heißt, dass es auch keinen Vorteil gab. Über beide Wochen steht der Analyst bei −64,32 €, mit dem besten CLV aller Spieler. Vorn liegen Kombi (+297,69 €) und Stammtisch (+221,62 €). Bei 40 Wetten in zwei Wochen ist das eine viel zu kleine Stichprobe, als dass das Ergebnis ein Urteil über eine Strategie zulässt. Der CLV bleibt das belastbare Signal, und der spricht für den Analysten.",
+    "lessons": [
+     "Die Wochenkasse ohne Füllwetten beibehalten: Woche 2 brachte +18,8 % ROI auf echte Value-Wetten statt −20,6 % mit Pflicht-Einsatz in Woche 1. Ungenutztes Geld kostet nichts.",
+     "Die Verteilung über die Woche prüfen: 13 der 14 Wetten fielen auf Freitag bis Sonntag. Das ist bei Fußball natürlich, aber in der NBA/NHL unter der Woche könnte die +4 %-Schwelle zu streng sein. Das lässt sich mit einem Backtest klären.",
+     "Weiche Einzelquoten gegen eine stabile Pinnacle-Linie bei Favoriten (Barça, Real, Detroit) waren die ergiebigste Wertquelle. Den 80-€-Deckel hier nur bei mindestens +3 % EV ausschöpfen.",
+     "Bei Außenseitern mit kurzfristigen Personalfragen (Torwartwechsel, Trainerunruhe) und bei Quoten, gegen die der Markt bis zum Anstoß läuft (Lincoln, Fortuna), in der Recherche eher ein Veto setzen.",
+     "Remis-Wetten weiter spielen, solange der CLV positiv ist. Ihr Ergebnis aber erst nach 30 oder mehr Wetten bewerten, nicht nach einer Woche.",
+     "Für Banker und Stammtisch den Erwartungswert neben dem Ergebnis anzeigen, damit auf der Website sichtbar wird, dass Platz 1 des Stammtischs Glück war."
+    ],
+    "written_at": "2026-11-23T08:18:03Z"
+   }
   }
  ],
  "players": {
@@ -23323,7 +23338,12 @@
    "payout": 98.4,
    "profit": 18.4,
    "clv": 0.031,
-   "analysis": null,
+   "analysis": {
+    "text": "Villarreal führte nach 7 Minuten durch Buchanan und Oluwaseyi mit 2:0, Barça traf vor der Pause zudem bei einem Elfmeter nur den Pfosten. Nach der Pause drehten Gerard Martín (57.), Fermín López (61.) und ein Eigentor von Pau Navarro (67.) das Spiel in elf Minuten. Die Quote 1,23 lag 3,1 % über dem fairen Schlusskurs (1,19), die Wette war also richtig bewertet. Der Gewinn war nach dem 0:2 aber zeitweise sehr wackelig.",
+    "verdict": "können",
+    "lesson": "Hohe Einsätze (80 €) auf Favoriten zu 1,2 sind nur bei klar positivem CLV sinnvoll. Das war hier gegeben, das frühe 0:2 zeigt aber das Restrisiko.",
+    "written_at": "2026-11-23T08:17:34Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 83,8 % (Pinnacle 1,18). Tor-Modell 72,1 %. Unser Wert: 83,2 %. Beste Quote 1,23 bei 1xBet (Median 1,18, 18 Anbieter), Erwartungswert +2,3 %. Recherche: Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur.",
    "research": "Barça fehlen Christensen (Wade) und Bardghji, Cubarsí (Hüfte) ist fraglich, Koundé und Olmo trainieren wieder. Bei Villarreal sind Gerard Moreno und Foyth fraglich. Die Abwehrsorgen sind seit Freitag öffentlich und im Pinnacle-Kurs 1,18 drin, keine Korrektur.",
    "espn": {
@@ -23515,7 +23535,12 @@
    "payout": 0.0,
    "profit": -18.5,
    "clv": 0.0854,
-   "analysis": null,
+   "analysis": {
+    "text": "Genoa gewann in Sassuolo 2:0. Milutin Osmajic traf in der 26. Minute und noch einmal in der 38. Minute nach einem Ballverlust von Fali Candé. Danach verwaltete Genoa das Spiel. D'Aversas Debüt brachte keinen Trainereffekt, es war Sassuolos sechste Ligapleite in Folge. Die Remis-Quote 3,56 lag 8,5 % über dem fairen Schlusskurs (3,28), die Entscheidung war also klar gut.",
+    "verdict": "pech",
+    "lesson": "Remis-Wetten bei Teams in langen Niederlagenserien laufen in Woche 2 schon zum zweiten Mal gegen uns (Lille–Lyon). Den Preis hat das Modell trotzdem richtig eingeschätzt, eine Lehre daraus wäre bei n=5 verfrüht.",
+    "written_at": "2026-11-23T08:17:34Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 29,5 % (Pinnacle 3,24). Tor-Modell 29,1 %. Unser Wert: 29,4 %. Beste Quote 3,56 bei 1xBet (Median 3,24, 19 Anbieter), Erwartungswert +4,8 %. Recherche: Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
    "research": "Erstes Spiel von D'Aversa als Sassuolo-Trainer, Berardi kehrt zurück. Sassuolo fehlen Koné, Leysen, Boloca, Volpato und Adzic, bei Genoa ist Frendrup fraglich. Einen Trainereffekt kann man nicht beziffern, der Remis-Wert kommt aus einer weichen 1xBet-Quote. Keine Korrektur.",
    "espn": {
@@ -24042,7 +24067,12 @@
    "payout": 32.62,
    "profit": 25.12,
    "clv": -0.1087,
-   "analysis": null,
+   "analysis": {
+    "text": "Fortuna gewann bei Go Ahead durch ein Tor von Anthony Descotte in der 50. Minute 1:0, die Vorlage kam von Ihattaren und Peterson. Go Ahead war über weite Strecken besser. Ersatzkeeper Koopmans hielt mehrfach stark, und ein Ausgleich von Meulensteen wurde wegen Abseits aberkannt. Der Markt lief bis zum Anpfiff deutlich gegen Fortuna (Schlusskurs fair 4,88 statt 4,35, CLV −10,9 %). Gewonnen haben wir also trotz schlechten Preises.",
+    "verdict": "glück",
+    "lesson": "Fortunas Torwartwechsel (Branderhorst verletzt, Koopmans im Tor) und die unruhige Woche um Trainer Buijs kannte das Modell nicht. Bei Auswärts-Außenseitern mit kurzfristigen Personalfragen sollte die Recherche eher ein Veto setzen.",
+    "written_at": "2026-11-23T08:17:34Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 23,0 % (Pinnacle 4,15). Tor-Modell 30,4 %. Unser Wert: 23,6 %. Beste Quote 4,35 bei Unibet SE (Median 4,00, 20 Anbieter), Erwartungswert +2,6 %. Recherche: Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur.",
    "research": "Fortuna fehlen Romeny, Michut und Bayram, Guth ist fraglich. Go Ahead fehlen Saathof, Waayers und Ersatzkeeper Marsman, Cillessen steht im Tor. Die Ausfälle sind seit Tagen bekannt, keine Korrektur.",
    "espn": {
@@ -24134,7 +24164,12 @@
    "payout": 33.73,
    "profit": 24.23,
    "clv": 0.0167,
-   "analysis": null,
+   "analysis": {
+    "text": "Boulaye Dia brachte Rennes nach einem Konter in der 27. Minute in Führung. Montassar Talbi glich kurz vor der Pause nach einer Ecke per Kopf aus. Lorient vergab in der 52. Minute einen Elfmeter (Cadiou), Rennes verlor in der Nachspielzeit Thomasson durch Platzverweis. Das 1:1 trug sich also nur knapp. Die Quote 3,55 war 1,7 % besser als der faire Schlusskurs (3,49).",
+    "verdict": "können",
+    "lesson": "",
+    "written_at": "2026-11-23T08:17:34Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 29,1 % (Pinnacle 3,28). Tor-Modell 24,9 %. Unser Wert: 28,9 %. Beste Quote 3,55 bei Unibet SE (Median 3,25, 19 Anbieter), Erwartungswert +2,5 %. Recherche: Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
    "research": "Bretonisches Derby. Lorient fehlt Innenverteidiger Isaak Touré (in Le Havre verletzt), dazu Katseris. Bei Rennes fehlt Frankowski, Lepaul ist zurück. Bekannt, keine Korrektur.",
    "espn": {
@@ -24563,7 +24598,12 @@
    "payout": 128.0,
    "profit": 48.0,
    "clv": 0.057,
-   "analysis": null,
+   "analysis": {
+    "text": "Detroit gewann 31:21 und feierte den sechsten Sieg in Folge, im ersten Spiel ohne Aidan Hutchinson. Mayfield spielte trotz Fragezeichen und warf zwei Touchdowns. Er wurde aber viermal gesackt, und ein Fourth Down spät im Spiel ging verloren. Goff (279 Yards, 2 TD) und Gibbs (2 Rushing-TD im Schlussviertel) entschieden die Partie. Die Marathonbet-Quote 1,60 war 5,7 % besser als der faire Schlusskurs (Pinnacle 1,49).",
+    "verdict": "können",
+    "lesson": "Weiche Einzelquoten gegen eine stabile Pinnacle-Linie (NFL) sind die sauberste Wertquelle. Die Recherche, dass Mayfield spielt, hat den Wert bestätigt und nicht verändert.",
+    "written_at": "2026-11-23T08:17:34Z"
+   },
    "reason": "Faire Marktwahrscheinlichkeit 66,1 % (Pinnacle 1,49). Unser Wert: 66,1 %. Beste Quote 1,60 bei Marathonbet (Median 1,46, 16 Anbieter), Erwartungswert +5,7 %. Recherche: Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur.",
    "research": "Baker Mayfield (Fuß/Daumen) ist questionable, soll aber laut den letzten Berichten spielen, sonst startet Rookie Jalon Daniels. Bei Tampa fehlt Safety Winfield Jr., bei Detroit Hutchinson (IR). Der Wert kommt aus der weichen Marathonbet-Quote 1,60 gegen Pinnacle 1,49, keine Korrektur.",
    "espn": {
@@ -24879,6 +24919,61 @@
  ],
  "talk": [
   {
+   "date": "2026-11-23",
+   "messages": [
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "+97,25 € an einem Tag, Barça zu 1,23 und Detroit zu 1,60 mit je 80 €. Woche 2 mit +80,20 € und +2,3 % CLV abgeschlossen, so sieht ein Vorteil aus."
+    },
+    {
+     "from": "stammtisch",
+     "to": "analyst",
+     "text": "Schön für dich, Professor, aber die Wochenwertung hab ich: +106,56 €. Bauchgefühl schlägt Kelly, die nächste Runde geht auf mich."
+    },
+    {
+     "from": "analyst",
+     "to": "stammtisch",
+     "text": "Dein Erwartungswert lag bei −47 €, du hast also 150 € über Plan gewonnen. Mainz in Augsburg und Brighton in Hull haben dir gestern schon gezeigt, wie das weitergeht."
+    },
+    {
+     "from": "banker",
+     "to": "analyst",
+     "text": "Jacksonville zu 1,40 und Orlando zu 1,49, beides verloren. −146,85 € in einer Woche, so etwas ist mir in meiner ganzen Laufbahn nicht passiert."
+    },
+    {
+     "from": "zocker",
+     "to": "banker",
+     "text": "Du wettest auf Quoten unter 1,5 und bist am Ende Letzter. Ich hab 29,50 € gesetzt und stehe bei +15,50 €, das ist mehr als 50 % Rendite!"
+    },
+    {
+     "from": "affe",
+     "to": "zocker",
+     "text": "Saarbrücken, 2,70. Ook."
+    },
+    {
+     "from": "kombi",
+     "to": "affe",
+     "text": "Ein Primat, der mit Zufall +60 € an einem Tag gewinnt. Ich habe diese Woche nur einen einzigen Schein gesetzt, ein König wartet auf die richtige Gelegenheit."
+    },
+    {
+     "from": "stammtisch",
+     "to": "kombi",
+     "text": "Ein Schein, 40 €, weg, weil Hoffenheim kein Tor geschossen hat. Majestät, so eine Woche nenne ich Urlaub."
+    },
+    {
+     "from": "analyst",
+     "to": "affe",
+     "text": "Du hast trotz Saarbrücken −94,91 € in der Woche, fast genau dein Erwartungswert von −60 €. Endlich einer, der die Statistik ernst nimmt."
+    },
+    {
+     "from": "affe",
+     "to": "analyst",
+     "text": "Ook ook."
+    }
+   ]
+  },
+  {
    "date": "2026-11-22",
    "messages": [
     {
@@ -25180,56 +25275,6 @@
      "from": "affe",
      "to": "stammtisch",
      "text": "Ook."
-    }
-   ]
-  },
-  {
-   "date": "2026-11-16",
-   "messages": [
-    {
-     "from": "banker",
-     "to": "kombi",
-     "text": "Die beiden Kombis vom 12. sind abgerechnet, Majestät: zweimal 50 Euro zu 3,12, zweimal weg. Aus plus 437,69 wurden plus 337,69."
-    },
-    {
-     "from": "kombi",
-     "to": "banker",
-     "text": "Ein König verliert keine 100 Euro, er spendet sie dem Volk. Platz eins bleibt Platz eins, die Krone glänzt auch mit 337,69."
-    },
-    {
-     "from": "analyst",
-     "to": "kombi",
-     "text": "Drei Treffer aus 14 Scheinen, z-Wert 0,77. Das ist keine Krone, das ist ein Lottoschein mit Adelstitel."
-    },
-    {
-     "from": "stammtisch",
-     "to": "analyst",
-     "text": "Sagt der Mann mit minus 144,52 Euro. Ich hab plus 115,06 und nie eine Formel gesehen. Eine Runde auf mich!"
-    },
-    {
-     "from": "analyst",
-     "to": "stammtisch",
-     "text": "Dein CLV lag bei minus 5 Prozent, du hättest verlieren müssen. Ab heute zählt die Wochenkasse: 1.000 Euro, und ich wette nur noch mit echtem Vorteil."
-    },
-    {
-     "from": "zocker",
-     "to": "analyst",
-     "text": "Nur mit Vorteil? Dann sitzt du die halbe Woche auf deinem Geld. Ich hab in Woche 1 nur 600 Euro gebraucht, um ordentlich Lärm zu machen."
-    },
-    {
-     "from": "banker",
-     "to": "zocker",
-     "text": "Lärm ja, Gewinn nein: minus 112,97. Ich hab plus 70,48 mit Favoriten, die man sich auch am Sonntag noch zeigen kann."
-    },
-    {
-     "from": "affe",
-     "to": "banker",
-     "text": "Ook."
-    },
-    {
-     "from": "stammtisch",
-     "to": "affe",
-     "text": "Der Affe hat minus 80,55, also besser als der Professor. Woche 2, 1.000 Euro, mein Bauch ist bereit."
     }
    ]
   }
