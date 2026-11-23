@@ -19928,7 +19928,7 @@
    "player": "banker",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "won",
    "event_id": "15a079f55e23d26237844224f258c972",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -19981,9 +19981,14 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 145,
+    "away": 151,
+    "source": "ESPN",
+    "t": "2026-11-23T02:58:16Z"
+   },
+   "payout": 38.82,
+   "profit": 8.82,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 77,4 % (Pinnacle 1,27). Unser Wert: 77,4 %. Beste Quote 1,29 bei Matchbook (Median 1,25, 20 Anbieter), Erwartungswert +0,1 %.",
@@ -19992,7 +19997,8 @@
     "path": "basketball/nba",
     "id": "401910032"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Gewonnen. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-banker-03",
@@ -20169,7 +20175,7 @@
    "player": "banker",
    "day": "2026-11-22",
    "placed_at": "2026-11-22T10:02:20Z",
-   "status": "open",
+   "status": "lost",
    "event_id": "335ad5604b51b7742fd1dee92d78da35",
    "sport": "basketball_nba",
    "league": "NBA",
@@ -20222,9 +20228,14 @@
    "closing": {
     "missed": true
    },
-   "result": null,
-   "payout": null,
-   "profit": null,
+   "result": {
+    "home": 116,
+    "away": 96,
+    "source": "ESPN",
+    "t": "2026-11-23T02:58:16Z"
+   },
+   "payout": 0.0,
+   "profit": -30.0,
    "clv": null,
    "analysis": null,
    "reason": "Faire Marktwahrscheinlichkeit 67,3 % (Pinnacle 1,45). Unser Wert: 67,3 %. Beste Quote 1,49 bei Matchbook (Median 1,43, 20 Anbieter), Erwartungswert +0,3 %.",
@@ -20233,7 +20244,8 @@
     "path": "basketball/nba",
     "id": "401910031"
    },
-   "week": 2
+   "week": 2,
+   "auto_analysis": "Verloren. Keine Schlussquote erfasst, daher keine CLV-Bewertung."
   },
   {
    "id": "2026-11-22-zocker-01",
